@@ -1,0 +1,34 @@
+{
+  "scale_m_per_model_unit": 1.3171403295592672,
+  "scale_refit": false,
+  "summary": [
+    {
+      "state": "initial",
+      "common_pixels": 422380,
+      "rmse_m": 0.16111336492222994,
+      "absrel": 0.03559356807433139,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 436244,
+      "coverage_of_fixed": 0.9732896639120424
+    },
+    {
+      "state": "selected",
+      "common_pixels": 422380,
+      "rmse_m": 0.16111336492222994,
+      "absrel": 0.03559356807433139,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 436244,
+      "coverage_of_fixed": 0.9732896639120424
+    },
+    {
+      "state": "last",
+      "common_pixels": 422380,
+      "rmse_m": 0.1615834878163664,
+      "absrel": 0.03735090667285932,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 426749,
+      "coverage_of_fixed": 0.9521056811894265
+    }
+  ],
+  "scope": "same-input native depth; common support plus fixed coverage; no full 3D accuracy claim"
+}

@@ -19,4 +19,6 @@
 | E3 | Photo Ray-depth 위치 최적화 | 실행·평가 완료, 효과 실패: selected=초기 0회, last 악화 | [보고서](E3/tum-freiburg1_desk-E3-20261112-001/report.md) |
 | E3b | E0b 초기값의 Photo Ray-depth 최적화 | 완료: 200회 실제 이동, 손실 악화·selected=초기, 효과 실패 | [보고서](E3b/tum-freiburg1_desk-E3b-20261112-002/report.md), [RGB 전후](E3b/tum-freiburg1_desk-E3b-20261112-002/figures/rgb_comparison.png) |
 | E3c | E0c 색 조건 융합 초기값의 RGB 미분 정점 이동 | 완료: 양쪽 200회·E0c 106,464점 이동, RGB −2.333%·GT 깊이 악화 | [보고서](E3c/tum-freiburg1_desk-E3c-20261112-001/report.md), [RGB 전후](E3c/tum-freiburg1_desk-E3c-20261112-001/arms/treatment_E0c/figures/rgb_comparison.png) |
+| E3d | ADOP 방식 1픽셀·깊이 제한·근사 위치 기울기 | 완료: selected=초기, last 78,434점 이동·RGB/GT 악화. 실내 튜닝 중단 | [보고서](E3d/tum-freiburg1_desk-E3d-20261112-001/report.md), [원본 해상도 전후](E3d/tum-freiburg1_desk-E3d-20261112-001/figures/rgb_native_comparison.png) |
+| E0d / E3e | 드론 공동 추론·색 조건 융합 / 최소 ADOP 방식 정점 이동 | 예약·미실행: HKairport01/AMtown01 원본 입력 위치 대기 | [전환 계획](drone_transition.md) |
 | E4~E9 | 위치 최적화·제약·선택 비교 | 미착수 | — |

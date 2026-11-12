@@ -1,0 +1,46 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "torch": "2.15.0+cu132",
+  "cuda_runtime": "13.2",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "driver_snapshot": "NVIDIA GeForce RTX 5060, 8151 MiB, 396 MiB, 595.99.02",
+  "execution_context": "host GPU outside sandbox",
+  "wall_seconds": 11.595338818005985,
+  "peak_allocated_bytes": 68397056,
+  "peak_reserved_bytes": 115343360,
+  "project_commit_before_run": "b62e431ee57c730310e0575f715363d15b2bdb0e",
+  "source_files": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/README.md",
+      "bytes": 2542,
+      "sha256": "9e278bca754edab77e8a181351958b7b01f6e18c275a0358b6fcdf86c6d789e8"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/config.json",
+      "bytes": 3295,
+      "sha256": "f309fe4878515f72035b5d7bcb657357b96bc27cb23a5a677537e033cb2ebb89"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/geometry.py",
+      "bytes": 7942,
+      "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/renderer.py",
+      "bytes": 5552,
+      "sha256": "945d8d6ec2b47b8fa691d621d2728f943ebd3d5406718914e6a5720d3998f9c3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3d-20261112-001/stages/E3d/artifacts/source/run.py",
+      "bytes": 21054,
+      "sha256": "14f1586e4a67f44507423b34f3bbe58b27c58ed6b498c08e95de7cc135878436"
+    }
+  ]
+}

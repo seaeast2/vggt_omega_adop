@@ -1,0 +1,16 @@
+{
+  "indoor_improved": false,
+  "criteria": {
+    "positive_selected_step": false,
+    "photo_reduction": false,
+    "gt_rmse_reduction": false,
+    "absrel_not_increased": true,
+    "fixed_gt_coverage_preserved": true
+  },
+  "photo_fraction_reduction": 0.0,
+  "gt_rmse_fraction_reduction": 0.0,
+  "fixed_gt_coverage_drop": 0.0,
+  "next_action": "stop indoor tuning; switch to drone samples once original input paths are available",
+  "GT_used_in_checkpoint_selection": false,
+  "outdoor_improvement_is_hypothesis": true
+}

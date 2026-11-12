@@ -825,6 +825,7 @@ GT Depth는 **모델/손실의 입력으로 사용하지 않는다.** 평가에�
 | E3 | 공유 융합 | Photo | Ray-depth | 최소 가시성 | 최적화 기본선 |
 | E3b | E0b 순차 융합 점군 초기값 | Photo | Ray-depth | 기존 E3 초기 가시성·고정 RGB/카메라 | E0b 위의 실제 RGB 역전파 정점 이동 |
 | E3c | E0c 색 조건 융합 + E0b 대조군 | P2c compact_soft Photo | Ray-depth | 같은 active 정책·공통 학습 픽셀·고정 RGB/카메라/온도 | 색 조건 초기값의 미분 최적화 및 동일 렌더러 대조 |
+| E3d | E0c 색 조건 융합, E3c와 같은 초기점/색/카메라/후보/마스크 | ADOP 방식 1픽셀·1% 깊이 평균·이웃 삽입 근사 gradient | Ray-depth | 이동 범위·색·카메라 고정 | 실내 마지막 최소 ADOP 방식 비교, 미개선 시 드론 전환 |
 | E4 | 공유 융합 | Photo | XYZ | 최소 가시성 | XYZ vs Depth |
 | E5 | 공유 융합 | Photo+Anchor | XYZ | 관측 수 | 기하 보존 효과 |
 | E6 | 공유 융합 | Photo+Anchor+Surface | XYZ | 시차 가중치 | 표면 정규화 효과 |
@@ -863,6 +864,10 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 **E3c 사전 등록(2026-11-12):** E0c를 초기값으로 실제 RGB 역전파 정점 이동을 실행한다. 같은 E3c Run ID의 별도 arm에 E0b 초기값 대조군을 두고 P2c compact_soft·공통 E1/초기 support 학습 마스크·카메라·E0b 기준 고정 온도·Adam lr=.001·log ray delta±.05·200회를 동일 적용한다. RGB는 각 그룹 원본 관측의 채널 중앙값으로 고정하고, active는 기존 E3b와 같은 다중 출처/시차/초기 가시성 정책으로 arm별 선정한다. 두 arm 모두 실제 FP64 미분·FP32 감소 방향·독립 10회 최적화를 통과한 뒤 초기값·새 Adam으로 정식 실행한다. 사전 체크포인트 0/10/20/40/.../200에서 학습 손실 최소로 selected를 정하고 last도 보존한다. 선택 후 기존 E3b 초기 E0b의 단일 스케일로 GT 깊이·6개 상태 공통 영역·고정 영역 coverage를 평가한다. GT를 학습·튜닝·선택에 사용하지 않는다. 색 조건 처치에는 그룹/점 수/후보 변화가 함께 포함되며 같은 입력 시점 RGB 감소와 전체 3D 정확도는 구분한다. [실행 이력](experiments/pointmap_refinement/E3c/README.md).
 
 **E3c 실행 기록(2026-11-12):** `tum-freiburg1_desk-E3c-20261112-001`에서 E0c 419,864점과 E0b 대조군 341,325점에 동일 compact_soft·학습 픽셀·온도의 RGB 역전파를 각각 200회 적용했다. 두 arm의 실제 미분/10회 사전 검사 통과 후 초기값/새 Adam으로 정식 학습했다. E0c는 후보 106,687개 중 106,464점이 실제 이동했고 손실 0.047569260→0.046459407(−2.333%), selected=200이었다. 그러나 기존 고정 scale·여섯 상태 공통 380,948 GT 픽셀에서 E0c RMSE 0.161850584→0.165296362m, 고정 영역 coverage 97.328966→92.775135%로 악화했다. 같은 렌더러의 E0b도 RGB 감소·GT 악화였다. E0c 후보의 66.151%가 이동 한계에 도달했다. RGB 최적화 실행과 기하 개선 실패를 구분하며 원본·실제 last·대조군을 보존했다. [보고서](experiments/pointmap_refinement/E3c/tum-freiburg1_desk-E3c-20261112-001/report.md).
+
+**E3d 사전 등록 및 장면 전환(사용자 요청):** E0c 초기값에 ADOP 논문 §3.1의 1픽셀 정방향·앞면 1% fuzzy depth test·이웃 픽셀 가상 삽입 근사 gradient를 적용한다. 신경망/특징/카메라/톤매퍼 학습과 stochastic ghost dropout을 생략하는 로컬 최소 구현이며 ADOP 전체 재현으로 부르지 않는다. E3c의 RGB·카메라·CSR·active·학습 마스크·owner-ray 변수·Adam lr=.001·log 이동±.05·200회를 유지한다. 근사 gradient는 알려진 이웃 삽입 사례와 투영 Jacobian으로 검증하며 이산 정방향의 미소 유한차분과 같다고 주장하지 않는다. 사전 체크포인트의 RGB 최소로 선택한 뒤 기존 스케일의 GT를 평가한다. 실내 개선 기준은 RGB 손실≥1% 감소, GT RMSE≥1% 감소, AbsRel 비증가, 고정 GT coverage 저하≤0.5%p, selected>0의 동시 충족이다. 미충족이면 실내 추가 튜닝을 중단하고 HKairport01/AMtown01 같은 드론 샘플로 별도 실행한다. 야외 효과는 가설이며 GT 없는 장면의 RGB 개선을 기하 정확도로 판정하지 않는다. 현재 과거 드론 데이터 경로는 없어 로컬 입력 위치를 확인 중이다. [실행 이력](experiments/pointmap_refinement/E3d/README.md).
+
+**E3d 실행 및 드론 전환 결정(2026-11-12):** `tum-freiburg1_desk-E3d-20261112-001`에서 1픽셀·앞면 1%·ADOP mode-4 근사 기울기로 200회 실행했다. 제어 사례·투영 chain rule은 통과했으나 실제 장면의 감소 추정 방향 유한 이동은 초기 손실을 낮추지 못했다. Last에서 78,434점이 이동했고 RGB 0.047734269→0.048161422로 증가해 selected는 초기 0회였다. 기존 고정 스케일·공통 422,380 GT 픽셀에서 initial/last RMSE 0.161113365→0.161583488m, fixed coverage 97.328966→95.210568%였다. 사전 개선 기준은 false로 사용자 요청에 따라 실내 추가 튜닝을 중단한다. 후속 E0d(드론 새 Omega 추론·색 조건 융합), E3e(같은 최소 ADOP 방식 이동)를 예약하되 현재 HKairport01/AMtown01 원본 입력 위치가 없어 미실행이다. 야외 효과는 가설로 유지하며 GT 없는 RGB 개선을 기하 개선으로 부르지 않는다. [E3d 보고서](experiments/pointmap_refinement/E3d/tum-freiburg1_desk-E3d-20261112-001/report.md), [드론 전환 계획](experiments/pointmap_refinement/drone_transition.md).
 
 ### 13.1 제어 변수
 

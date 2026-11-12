@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "controlled_forward_surrogate_and_chain_rule": true,
+  "initial_XYZ_RGB_CSR_active_masks_exact_E3c_E0c_arm": true,
+  "fixed_colors_cameras_groups_counts": true,
+  "inactive_XYZ_unchanged_and_log_bounds": true,
+  "PLY_NPZ_PNG_reload": true,
+  "GT_after_selection_only": true,
+  "fixed_scale_no_refit": true,
+  "parents_and_source_unchanged": true,
+  "exact_gradient_not_claimed": true
+}

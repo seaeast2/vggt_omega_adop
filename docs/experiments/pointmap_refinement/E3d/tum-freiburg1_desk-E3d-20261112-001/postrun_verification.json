@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "artifact_hashes_verified": 78,
+  "inputs_verified": 7,
+  "GT_inputs_verified": 5,
+  "source_snapshot_matches": true,
+  "CSR_full_partition_all_states": true,
+  "selected_exact_initial": true,
+  "left_comparison_column_exact_128x96_then_4x_nearest": true,
+  "reference_native_resolution_hw": [
+    384,
+    512
+  ]
+}
