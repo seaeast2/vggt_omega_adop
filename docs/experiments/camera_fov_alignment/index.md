@@ -21,7 +21,7 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | C4a | 기존 coverage 기준 내 고정 선분 후보 보조 검증 | 완료 2회 / 실패 기록 0회 |
 | C5 | 색+깊이 융합·점 수 축소·표면 보존 | 완료 3회 / 실패 기록 0회 |
 | C5a | 융합 경계·연쇄 방지·기존 E0c 정확 재현 | 완료 1회 / 실패 기록 0회 |
-| C5b | C4a 보정값의 드론 융합 보조 비교 | 완료 1회 / 실패 기록 0회 |
+| C5b | C4a 보정값의 드론 융합 보조 비교 | 완료 2회 / 실패 기록 0회 |
 | C5c | 전체 산출물 해시·카메라·관측 매핑·PLY 종합 검증 | 미실행 |
 
 | 실행 | 상태 | 판정·보고서 |
@@ -44,6 +44,7 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | `hkairport01-C5-20261113-001` | completed | [COMPRESSION_CRITERIA_NOT_MET](C5/hkairport01-C5-20261113-001/report.md) |
 | `tum-freiburg1_desk-C5-20261113-001` | completed | [COMPRESSION_CRITERIA_NOT_MET](C5/tum-freiburg1_desk-C5-20261113-001/report.md) |
 | `synthetic-C5a-20261112-001` | completed | [TECHNICAL_PASS](C5a/synthetic-C5a-20261112-001/report.md) |
+| `amtown01-C5b-20261113-001` | completed | [COMPRESSION_CRITERIA_NOT_MET](C5b/amtown01-C5b-20261113-001/report.md) |
 | `hkairport01-C5b-20261113-001` | completed | [COMPRESSION_CRITERIA_NOT_MET](C5b/hkairport01-C5b-20261113-001/report.md) |
 
 대형 NPZ/PLY와 source snapshot은 `results/camera_fov_alignment/`의 각 Run ID/Stage에 보관한다. 이 목록은 새 실행이 끝날 때 갱신한다.

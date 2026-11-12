@@ -1,0 +1,56 @@
+{
+  "seed": 0,
+  "sift_features": 8192,
+  "ratio": 0.75,
+  "ransac_px": 1.5,
+  "ransac_confidence": 0.999,
+  "ransac_max_iters": 10000,
+  "confidence_percentile": 10,
+  "depth_support_range": 0.03,
+  "anchor_tiles": [
+    16,
+    12
+  ],
+  "coverage_tiles": [
+    4,
+    4
+  ],
+  "minimum_pair_total": 100,
+  "minimum_pair_fit": 50,
+  "minimum_pair_validation": 20,
+  "minimum_occupied_cells": 6,
+  "beta_bounds": [
+    0.9090909090909091,
+    1.1111111111111112
+  ],
+  "huber_delta": 0.01,
+  "prior_lambda": 0.001,
+  "z_sqrt_weight": 2.0,
+  "irls_iterations": 20,
+  "beta_tolerance": 1e-08,
+  "loss_relative_tolerance": 1e-08,
+  "coverage_loss_limit": 0.005,
+  "rank_relative_tolerance": 1e-06,
+  "condition_limit": 1000000.0,
+  "bound_tolerance": 0.0001,
+  "fusion_color_range": 30,
+  "fusion_depth_range": 0.03,
+  "fusion_depth_tolerance": 1e-08,
+  "nn_query_count_per_frame": 512,
+  "nearest_neighbor_backend": "OpenCV exact brute-force float32 L2; full target, fixed source queries",
+  "execution_context": "host CPU; no CUDA or model inference",
+  "experiment_code": "C5b",
+  "dataset": "amtown01",
+  "run_id": "amtown01-C5b-20261113-001",
+  "calibration_parent_code": "C4a",
+  "exploratory_amendment": true,
+  "calibrated_arms_available": true,
+  "calibration_decision": "INTERNAL_3D_IMPROVED",
+  "fusion_order": [
+    0,
+    1,
+    2
+  ],
+  "colors": "owner original RGB, no arithmetic color mixing",
+  "depth_gate": "full original-member and current-representative Z range / target D <= .03"
+}
