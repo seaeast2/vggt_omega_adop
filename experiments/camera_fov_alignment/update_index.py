@@ -29,6 +29,8 @@ def main():
         m=json.loads(p.read_text());manifests.append((p,m))
     text='''# Camera FoV Alignment 실험 현황
 
+**종료(2026-11-13):** 사용자 요청으로 C0~C5 및 보조 검증까지 완료 처리하고 추가 보정·융합 실험은 진행하지 않는다. 기존 결과를 모두 보존한다. 일반 VGGT 실내 3장 PLY 비교는 별도 [V0 계열](../vggt_baseline/index.md)로 분리한다.
+
 [실험 계획서](../../vggt_omega_fov_pointmap_alignment_experiment_plan.md)를 따른다. 카메라 중심·회전·원본 Depth를 고정하고 FoV 보정 후 재역투영한 프레임 간 점 차이를 최소화한다.
 
 C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건으로 점 수를 줄인다. 실제 연속 SLAM 검증과 구분한다. [기존 Pointmap Refinement 이력](../pointmap_refinement/index.md)은 보존한다.
