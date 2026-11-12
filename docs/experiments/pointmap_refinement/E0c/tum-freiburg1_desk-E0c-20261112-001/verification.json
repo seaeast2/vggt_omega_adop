@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "controlled_checks": {
+    "similar_rgb_known_depth_mean": true,
+    "mismatched_color_kept": true,
+    "threshold_30_31_boundary": true,
+    "mutually_different_candidates_not_jointly_fused": true,
+    "old_group_color_bridge_rejected": true,
+    "nonprojected_xyz_unchanged": true,
+    "threshold_255_replays_E0b_xyz_owner_uv_and_mapping_exactly": true
+  },
+  "RGB_bounds_recomputed_from_original_CSR": true,
+  "all_groups_obey_color_gate": true,
+  "all_original_observations_retained_in_one_CSR_group": true,
+  "color_rejected_and_nonprojected_xyz_unchanged": true,
+  "accepted_depth_mean_and_target_pixel": true,
+  "PLY_NPZ_PNG_reload": true,
+  "parents_unchanged": true
+}

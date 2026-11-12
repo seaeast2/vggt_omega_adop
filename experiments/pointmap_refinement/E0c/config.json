@@ -1,0 +1,20 @@
+{
+  "experiment_code": "E0c",
+  "e0_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "e0b_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b",
+  "gt_stage": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1",
+  "scale_reference_stage": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b",
+  "frame_order": [0,1,2],
+  "color_space": "original E0 preprocessed observation RGB, encoded 8-bit [0,255], no exposure correction",
+  "color_threshold_per_channel": 30,
+  "color_gate": "max channel range over every original observation in the proposed union <= threshold",
+  "candidate_order": "target pixel, minimum worst-channel distance of candidate color bounds to target RGB, stable current point index",
+  "geometry": "same E0b nearest-pixel projective association and unweighted current-representative camera-Z mean; accepted old points removed, rejected/unprojected old points retained",
+  "depth_normal_confidence_gates": false,
+  "baseline_replay_threshold": 255,
+  "palette_rgb": [[255,0,0],[0,255,0],[0,0,255]],
+  "gt_scale": "reuse E3b -002 initial-E0b scale unchanged; no E0c refit; GT loaded only after fusion",
+  "gt_mask": "fixed raw E0 valid front-Z and GT; common support of E0/E0b/E0c plus per-method coverage",
+  "optimization": false,
+  "camera_parameters_changed": false
+}

@@ -1,0 +1,34 @@
+{
+  "scale_m_per_model_unit": 1.3171403295592672,
+  "scale_refit_for_E0c": false,
+  "summary": [
+    {
+      "method": "E0",
+      "common_pixels": 424642,
+      "rmse_m": 0.15886336178857913,
+      "absrel": 0.03565685643764439,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 448216,
+      "coverage_of_fixed": 1.0
+    },
+    {
+      "method": "E0b",
+      "common_pixels": 424642,
+      "rmse_m": 0.14288719104539271,
+      "absrel": 0.03272470507170071,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 425307,
+      "coverage_of_fixed": 0.9488884823388724
+    },
+    {
+      "method": "E0c",
+      "common_pixels": 424642,
+      "rmse_m": 0.15411006873776034,
+      "absrel": 0.0340563895955577,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 436244,
+      "coverage_of_fixed": 0.9732896639120424
+    }
+  ],
+  "limitations": "same-input-view depth only; scale from prior E0b; intersection support; no independent view/full 3D/wall ROI claim"
+}
