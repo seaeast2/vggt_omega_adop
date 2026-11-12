@@ -83,12 +83,17 @@ def execute(stage,data,matches,support,dimension,out,diagnostic=False):
         'proposed_bound_limited':bound_limited,'coverage_rejected':not proposed_cov['passed'],
         'proposed_coverage':proposed_cov,'selected_coverage':selected['coverage'],
         'geometry_before':baseline,'geometry_after':after,'parameter_table':d.parameter_table(data,beta),
+        'geometry_proposed':d.geometry(data,matches,proposed),
         'proposed_parameter_table':d.parameter_table(data,proposed),'candidate_history':candidates}
     # Always preserve the actual unconstrained-in-coverage fitted candidate separately.
     before_xyz,before_k=d.export_map(data,np.ones(6),out/'initial',False)
     xyz,k=d.export_map(data,beta,out/'selected')
     if not np.array_equal(proposed,beta):
-        d.export_map(data,proposed,out/'proposed_not_selected',False)
+        proposed_xyz,proposed_k=d.export_map(data,proposed,out/'proposed_not_selected',False)
+        proposal_rows,_,_=d.render(data,proposed_xyz,proposed_k,out/'projections_proposed_not_selected')
+        c.panel(stage.path/f'artifacts/figures/{dimension}var_proposed_NOT_SELECTED.png',
+            [[data['rgb'][i],proposal_rows[i][1],proposal_rows[i][2]] for i in range(3)],
+            ['Input RGB native','Proposed RGB NOT SELECTED','Proposed source NOT SELECTED'])
     before_rows,_,_=d.render(data,before_xyz,before_k,out/'projections_initial')
     after_rows,_,projection=d.render(data,xyz,k,out/'projections_selected')
     rgb_rows=[[data['rgb'][i],before_rows[i][1],after_rows[i][1]] for i in range(3)]
