@@ -1,0 +1,121 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "mode": "all",
+      "points": 589824,
+      "coverage_fraction": 0.890625,
+      "render_seconds": 0.25851780200900976,
+      "psnr_fixed_all_mask": 18.721399992729477,
+      "psnr_common_mask": 17.985564025149028,
+      "psnr_all_pixels": 13.728123877163544,
+      "fixed_mask_pixels": 10944,
+      "common_mask_pixels": 6596
+    },
+    {
+      "frame": 0,
+      "mode": "own",
+      "points": 196608,
+      "coverage_fraction": 0.8780924479166666,
+      "render_seconds": 0.007821784995030612,
+      "psnr_fixed_all_mask": 17.658741545896298,
+      "psnr_common_mask": 22.68079077414132,
+      "psnr_all_pixels": 13.744549076685947,
+      "fixed_mask_pixels": 10944,
+      "common_mask_pixels": 6596
+    },
+    {
+      "frame": 0,
+      "mode": "cross",
+      "points": 393216,
+      "coverage_fraction": 0.5769856770833334,
+      "render_seconds": 0.007766636001178995,
+      "psnr_fixed_all_mask": 7.283522204529969,
+      "psnr_common_mask": 14.869965909212548,
+      "psnr_all_pixels": 7.048669079851683,
+      "fixed_mask_pixels": 10944,
+      "common_mask_pixels": 6596
+    },
+    {
+      "frame": 1,
+      "mode": "all",
+      "points": 589824,
+      "coverage_fraction": 0.8772786458333334,
+      "render_seconds": 0.01667894898855593,
+      "psnr_fixed_all_mask": 17.494533236937176,
+      "psnr_common_mask": 19.030183470122093,
+      "psnr_all_pixels": 13.049551606652221,
+      "fixed_mask_pixels": 10780,
+      "common_mask_pixels": 9695
+    },
+    {
+      "frame": 1,
+      "mode": "own",
+      "points": 196608,
+      "coverage_fraction": 0.8624674479166666,
+      "render_seconds": 0.007467019997420721,
+      "psnr_fixed_all_mask": 16.93731273843339,
+      "psnr_common_mask": 23.452508653276368,
+      "psnr_all_pixels": 13.400481635509466,
+      "fixed_mask_pixels": 10780,
+      "common_mask_pixels": 9695
+    },
+    {
+      "frame": 1,
+      "mode": "cross",
+      "points": 393216,
+      "coverage_fraction": 0.8519694010416666,
+      "render_seconds": 0.010098995000589639,
+      "psnr_fixed_all_mask": 12.84440451303061,
+      "psnr_common_mask": 16.295962634535925,
+      "psnr_all_pixels": 11.13638179856178,
+      "fixed_mask_pixels": 10780,
+      "common_mask_pixels": 9695
+    },
+    {
+      "frame": 2,
+      "mode": "all",
+      "points": 589824,
+      "coverage_fraction": 0.8343912760416666,
+      "render_seconds": 0.014703555993037298,
+      "psnr_fixed_all_mask": 16.683558744742715,
+      "psnr_common_mask": 16.885711647974155,
+      "psnr_all_pixels": 11.233484825006494,
+      "fixed_mask_pixels": 10253,
+      "common_mask_pixels": 6184
+    },
+    {
+      "frame": 2,
+      "mode": "own",
+      "points": 196608,
+      "coverage_fraction": 0.8433430989583334,
+      "render_seconds": 0.007448887001373805,
+      "psnr_fixed_all_mask": 17.69988862663951,
+      "psnr_common_mask": 22.743033900008047,
+      "psnr_all_pixels": 11.923563278389885,
+      "fixed_mask_pixels": 10253,
+      "common_mask_pixels": 6184
+    },
+    {
+      "frame": 2,
+      "mode": "cross",
+      "points": 393216,
+      "coverage_fraction": 0.536865234375,
+      "render_seconds": 0.008041376000619493,
+      "psnr_fixed_all_mask": 6.834621551185843,
+      "psnr_common_mask": 15.439683640729491,
+      "psnr_all_pixels": 6.316875276551144,
+      "fixed_mask_pixels": 10253,
+      "common_mask_pixels": 6184
+    }
+  ],
+  "peak_allocated_bytes": 775669760,
+  "peak_reserved_bytes": 1105199104,
+  "renderer": "unchanged P2 Gaussian hard front gate .03",
+  "torch": "2.15.0+cu132",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "execution_context": "host GPU outside sandbox",
+  "optimization_performed": false,
+  "cross_is_heldout": false,
+  "timing_scope": "single forward per condition, includes indexed GPU input selection"
+}

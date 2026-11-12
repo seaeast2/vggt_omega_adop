@@ -1,0 +1,350 @@
+{
+  "point_count": 589824,
+  "median_initial_depth": 0.9254972636699677,
+  "pairs": [
+    {
+      "source": 1,
+      "target": 0,
+      "source_points": 196608,
+      "in_frustum_observations": 113654,
+      "covered_target_pixels": 106591,
+      "fixed_evaluation_pixels": 103734,
+      "edge_safe_target_pixels": 189329,
+      "signed_relative_depth": {
+        "count": 103734,
+        "mean": -0.0030361304013323525,
+        "median": -0.002502212957762054,
+        "p95": 0.025945255586721276,
+        "max": 1.2019637687172553
+      },
+      "absolute_relative_depth": {
+        "count": 103734,
+        "mean": 0.018750720851353344,
+        "median": 0.010139257641629377,
+        "p95": 0.03791235103981107,
+        "max": 1.2019637687172553
+      },
+      "disagreement_fraction": 0.1608055218154125,
+      "in_front_fraction": 0.12259239979177512,
+      "behind_fraction": 0.03821312202363738
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "source_points": 196608,
+      "in_frustum_observations": 54521,
+      "covered_target_pixels": 49509,
+      "fixed_evaluation_pixels": 47916,
+      "edge_safe_target_pixels": 189329,
+      "signed_relative_depth": {
+        "count": 47916,
+        "mean": -0.0017741436503185546,
+        "median": 0.001124524277136003,
+        "p95": 0.05082253370962694,
+        "max": 1.1121748630677295
+      },
+      "absolute_relative_depth": {
+        "count": 47916,
+        "mean": 0.024546494466837446,
+        "median": 0.010721034623880046,
+        "p95": 0.07267672694017314,
+        "max": 1.1121748630677295
+      },
+      "disagreement_fraction": 0.2599340512563653,
+      "in_front_fraction": 0.1654562150429919,
+      "behind_fraction": 0.0944778362133734
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "source_points": 196608,
+      "in_frustum_observations": 125730,
+      "covered_target_pixels": 106498,
+      "fixed_evaluation_pixels": 103395,
+      "edge_safe_target_pixels": 188729,
+      "signed_relative_depth": {
+        "count": 103395,
+        "mean": -0.0006732081614591887,
+        "median": 0.002147403327719248,
+        "p95": 0.03186614392386913,
+        "max": 1.2992162046353233
+      },
+      "absolute_relative_depth": {
+        "count": 103395,
+        "mean": 0.023041466072802354,
+        "median": 0.010138594047646271,
+        "p95": 0.04444838141316206,
+        "max": 1.2992162046353233
+      },
+      "disagreement_fraction": 0.14064509889259635,
+      "in_front_fraction": 0.0506214033560617,
+      "behind_fraction": 0.09002369553653465
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "source_points": 196608,
+      "in_frustum_observations": 121239,
+      "covered_target_pixels": 108323,
+      "fixed_evaluation_pixels": 104520,
+      "edge_safe_target_pixels": 188729,
+      "signed_relative_depth": {
+        "count": 104520,
+        "mean": 0.000604983602880249,
+        "median": 0.0009854705589063912,
+        "p95": 0.03100182605738312,
+        "max": 1.0074021461744027
+      },
+      "absolute_relative_depth": {
+        "count": 104520,
+        "mean": 0.01920412948922871,
+        "median": 0.013469315486117999,
+        "p95": 0.044401430992998196,
+        "max": 1.0074021461744027
+      },
+      "disagreement_fraction": 0.16001722158438578,
+      "in_front_fraction": 0.10585533869115958,
+      "behind_fraction": 0.054161882893226175
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "source_points": 196608,
+      "in_frustum_observations": 58980,
+      "covered_target_pixels": 48754,
+      "fixed_evaluation_pixels": 47558,
+      "edge_safe_target_pixels": 188200,
+      "signed_relative_depth": {
+        "count": 47558,
+        "mean": 0.006686171118052806,
+        "median": -0.0013145090413562031,
+        "p95": 0.06390942514519121,
+        "max": 1.324736869372824
+      },
+      "absolute_relative_depth": {
+        "count": 47558,
+        "mean": 0.028421613017035916,
+        "median": 0.010866856399252774,
+        "p95": 0.07325524318064337,
+        "max": 1.324736869372824
+      },
+      "disagreement_fraction": 0.2650868413305858,
+      "in_front_fraction": 0.09729172799528996,
+      "behind_fraction": 0.16779511333529584
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "source_points": 196608,
+      "in_frustum_observations": 121509,
+      "covered_target_pixels": 108259,
+      "fixed_evaluation_pixels": 104967,
+      "edge_safe_target_pixels": 188200,
+      "signed_relative_depth": {
+        "count": 104967,
+        "mean": -0.003873885816577106,
+        "median": -0.001080242641843232,
+        "p95": 0.03896180453154233,
+        "max": 0.7401676418706699
+      },
+      "absolute_relative_depth": {
+        "count": 104967,
+        "mean": 0.019657165294617075,
+        "median": 0.013871111850672165,
+        "p95": 0.045888864963874704,
+        "max": 0.7401676418706699
+      },
+      "disagreement_fraction": 0.16253679727914488,
+      "in_front_fraction": 0.05818971676812713,
+      "behind_fraction": 0.10434708051101775
+    }
+  ],
+  "layers": [
+    {
+      "target": 0,
+      "two_or_more_views_pixels": 115179,
+      "three_views_pixels": 36471,
+      "raw_projected_layer_spread_model_units": {
+        "count": 115179,
+        "mean": 0.028436084630690455,
+        "median": 0.011332661790719012,
+        "p95": 0.11119627318986824,
+        "max": 0.9080933212813745
+      },
+      "raw_projected_layer_spread_relative": {
+        "count": 115179,
+        "mean": 0.02286132370029442,
+        "median": 0.011650075501158983,
+        "p95": 0.06639164656175787,
+        "max": 1.2019637685965703
+      },
+      "depth_compatible_pixels": 103405,
+      "compatible_layer_spread_relative": {
+        "count": 103405,
+        "mean": 0.013819646730580502,
+        "median": 0.009848922099288756,
+        "p95": 0.03410173541589252,
+        "max": 0.08412387310843858
+      },
+      "warning": "projected layer spread includes occlusion/different surfaces; compatible subset is censored at 5% by definition"
+    },
+    {
+      "target": 1,
+      "two_or_more_views_pixels": 166181,
+      "three_views_pixels": 41734,
+      "raw_projected_layer_spread_model_units": {
+        "count": 166181,
+        "mean": 0.03245329968349525,
+        "median": 0.013018952434872721,
+        "p95": 0.1120784263267034,
+        "max": 1.6364243097636124
+      },
+      "raw_projected_layer_spread_relative": {
+        "count": 166181,
+        "mean": 0.02519084026042631,
+        "median": 0.01521548048882946,
+        "p95": 0.0653452360155715,
+        "max": 1.2992162044171165
+      },
+      "depth_compatible_pixels": 157364,
+      "compatible_layer_spread_relative": {
+        "count": 157364,
+        "mean": 0.01649298193646757,
+        "median": 0.01413021339375355,
+        "p95": 0.043244506804642896,
+        "max": 0.096787587097257
+      },
+      "warning": "projected layer spread includes occlusion/different surfaces; compatible subset is censored at 5% by definition"
+    },
+    {
+      "target": 2,
+      "two_or_more_views_pixels": 113872,
+      "three_views_pixels": 38653,
+      "raw_projected_layer_spread_model_units": {
+        "count": 113872,
+        "mean": 0.03391321259986355,
+        "median": 0.013665346588592753,
+        "p95": 0.11476169612053677,
+        "max": 1.20213933299982
+      },
+      "raw_projected_layer_spread_relative": {
+        "count": 113872,
+        "mean": 0.02684541038803552,
+        "median": 0.016681680201680166,
+        "p95": 0.0701357724570945,
+        "max": 1.3247369500159636
+      },
+      "depth_compatible_pixels": 100519,
+      "compatible_layer_spread_relative": {
+        "count": 100519,
+        "mean": 0.015302565829528105,
+        "median": 0.01451697536518637,
+        "p95": 0.03722204855271824,
+        "max": 0.09825672212727829
+      },
+      "warning": "projected layer spread includes occlusion/different surfaces; compatible subset is censored at 5% by definition"
+    }
+  ],
+  "voxel_sensitivity": [
+    {
+      "fraction_of_median_depth": 0.0025,
+      "size_model_units": 0.0023137431591749194,
+      "origin_offset": 0.0,
+      "origin_xyz": [
+        -2.512353157391344,
+        -0.8168881665182779,
+        0.35278514249420334
+      ],
+      "occupied_voxels": 476874,
+      "multi_frame_voxels": 20533,
+      "points_in_multi_frame_voxels": 56024,
+      "points_in_multi_frame_voxels_fraction": 0.09498426649305555,
+      "three_frame_voxels": 898,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    },
+    {
+      "fraction_of_median_depth": 0.0025,
+      "size_model_units": 0.0023137431591749194,
+      "origin_offset": 0.5,
+      "origin_xyz": [
+        -2.5135100289709316,
+        -0.8180450380978653,
+        0.3516282709146159
+      ],
+      "occupied_voxels": 476668,
+      "multi_frame_voxels": 20545,
+      "points_in_multi_frame_voxels": 56004,
+      "points_in_multi_frame_voxels_fraction": 0.09495035807291667,
+      "three_frame_voxels": 945,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    },
+    {
+      "fraction_of_median_depth": 0.005,
+      "size_model_units": 0.004627486318349839,
+      "origin_offset": 0.0,
+      "origin_xyz": [
+        -2.512353157391344,
+        -0.8168881665182779,
+        0.35278514249420334
+      ],
+      "occupied_voxels": 240513,
+      "multi_frame_voxels": 17458,
+      "points_in_multi_frame_voxels": 125424,
+      "points_in_multi_frame_voxels_fraction": 0.212646484375,
+      "three_frame_voxels": 2210,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    },
+    {
+      "fraction_of_median_depth": 0.005,
+      "size_model_units": 0.004627486318349839,
+      "origin_offset": 0.5,
+      "origin_xyz": [
+        -2.514666900550519,
+        -0.8192019096774528,
+        0.3504713993350284
+      ],
+      "occupied_voxels": 240522,
+      "multi_frame_voxels": 17293,
+      "points_in_multi_frame_voxels": 124975,
+      "points_in_multi_frame_voxels_fraction": 0.21188524034288195,
+      "three_frame_voxels": 2199,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    },
+    {
+      "fraction_of_median_depth": 0.01,
+      "size_model_units": 0.009254972636699678,
+      "origin_offset": 0.0,
+      "origin_xyz": [
+        -2.512353157391344,
+        -0.8168881665182779,
+        0.35278514249420334
+      ],
+      "occupied_voxels": 87912,
+      "multi_frame_voxels": 9688,
+      "points_in_multi_frame_voxels": 201699,
+      "points_in_multi_frame_voxels_fraction": 0.3419647216796875,
+      "three_frame_voxels": 1580,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    },
+    {
+      "fraction_of_median_depth": 0.01,
+      "size_model_units": 0.009254972636699678,
+      "origin_offset": 0.5,
+      "origin_xyz": [
+        -2.5169806437096938,
+        -0.8215156528366278,
+        0.3481576561758535
+      ],
+      "occupied_voxels": 87789,
+      "multi_frame_voxels": 9663,
+      "points_in_multi_frame_voxels": 202163,
+      "points_in_multi_frame_voxels_fraction": 0.3427513970269097,
+      "three_frame_voxels": 1555,
+      "warning": "spatial co-occupancy is potential redundancy, not verified physical correspondences"
+    }
+  ],
+  "controlled_metric_checks": "passed",
+  "coordinates_changed": false,
+  "fusion_performed": false,
+  "gt_accuracy_evaluated": false
+}

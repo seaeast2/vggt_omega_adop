@@ -1,0 +1,8 @@
+{
+  "controlled_identical_layer": "zero spread",
+  "controlled_two_layer_z_gap": 0.04,
+  "controlled_relative_gap": 0.02,
+  "pair_mask_reload": "passed",
+  "render_npz_reload_and_psnr": "passed",
+  "status": "passed"
+}

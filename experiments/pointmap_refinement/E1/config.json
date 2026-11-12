@@ -1,0 +1,14 @@
+{
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "depth_edge_relative_threshold": 0.03,
+  "depth_disagreement_threshold": 0.03,
+  "layer_compatibility_threshold": 0.05,
+  "voxel_size_fractions_of_median_depth": [0.0025, 0.005, 0.01],
+  "voxel_origin_offsets": [0.0, 0.5],
+  "render_hw": [96, 128],
+  "renderer": "P2 Gaussian, radius=2px, sigma=0.65px, depth_rtol=0.03",
+  "coverage_threshold": 0.5,
+  "optimization": false,
+  "fusion": false,
+  "seed": 0
+}

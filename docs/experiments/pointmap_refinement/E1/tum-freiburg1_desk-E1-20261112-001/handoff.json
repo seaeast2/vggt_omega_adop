@@ -1,0 +1,62 @@
+{
+  "f0_observations": {
+    "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/f0/observations.npz",
+    "bytes": 20976590,
+    "sha256": "61ba80c7635bf00223b5011e6e0b59e27734ba386d1d2762064bd153084543bc"
+  },
+  "f0_ply": {
+    "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/f0/f0_observations.ply",
+    "bytes": 21823793,
+    "sha256": "07b981b42dec8949b8861d8920dfdec4955134be97387a23f9bad9eb64c50740"
+  },
+  "fixed_pair_evaluation_masks": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_0_to_1.npz",
+      "bytes": 1721021,
+      "sha256": "467b9e9aa73ea3019cba85eef8692ef9440f241c2bf85497545134ca5848f9ba"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_0_to_2.npz",
+      "bytes": 1204781,
+      "sha256": "68870693479fbefdbcc9171194e85ae1d7745cba0a9c3c178556a5cffd622090"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_1_to_0.npz",
+      "bytes": 1744139,
+      "sha256": "de21d5ddadaf2a0b129c64facd987780db469c616e863a6464f12e251fa41ed9"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_1_to_2.npz",
+      "bytes": 1779025,
+      "sha256": "ebce8ad51df45bf7f67d11b415b0a886362652befe2ebad70e9ba7cafffeda67"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_2_to_0.npz",
+      "bytes": 1214082,
+      "sha256": "f4c6dd988a063a9acf051d8b72c7d8ca5b284da115f811fce6153a3fe64cfeb2"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/diagnostics/pair_2_to_1.npz",
+      "bytes": 1778287,
+      "sha256": "91e865a5e00279aa91021a12579bf72099546e41aa06023326f01c9413e60dbd"
+    }
+  ],
+  "fixed_render_masks": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/renders/evaluation_masks_frame_0.npz",
+      "bytes": 1632,
+      "sha256": "983a4310efb283876166af213a911243579b5e4c1a1576a92ce24ad85f994f82"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/renders/evaluation_masks_frame_1.npz",
+      "bytes": 1899,
+      "sha256": "5d287b7c12ba310d154e541ee572e1ddaf45c1c04cd5193f9c344ea00280991c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1/artifacts/renders/evaluation_masks_frame_2.npz",
+      "bytes": 1821,
+      "sha256": "c7f7f0252276b6deccc76305735af732009872efa4a7eabeefbcfff7d37558cd"
+    }
+  ],
+  "policy": "Reuse initial target-pixel masks for comparison; report missing prediction coverage instead of silently dropping pixels. Do not equate layer spread or voxel co-occupancy with accuracy."
+}
