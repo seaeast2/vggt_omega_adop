@@ -1,0 +1,218 @@
+{
+  "repo": "sijieaaa/UAVScenes",
+  "revision": "04a224fd14b0b8fdfd2633e68f20471b85c611a5",
+  "archive_lfs_sha256": "c964fca708ecd6a79e0b05455b5124d543b05ea0929bd895f45fba08db9a36d9",
+  "full_archive_downloaded": false,
+  "full_archive_hash_locally_verified": false,
+  "verification": "pinned revision and ZIP member CRC/size plus extracted SHA256; not a full-archive SHA verification",
+  "records": [
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/metadata/sampleinfos_interpolated.json",
+      "bytes": 9454415,
+      "sha256": "dc53d5fead50913b7730e35eff3b908ed89c0e29ddebd180f1555034ace808d6",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/sampleinfos_interpolated.json",
+      "crc32": 1943251126,
+      "compressed_bytes": 1048695,
+      "role": "metadata"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606503.199938059.jpg",
+      "bytes": 858096,
+      "sha256": "82d150c8d2e70839cecd48c3c2c3a88ad013f26eca957f37993f395b36c77a89",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606503.199938059.jpg",
+      "crc32": 3660633677,
+      "compressed_bytes": 858159,
+      "role": "images"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606503.199938059_lidar1671606503.199938059.txt",
+      "bytes": 731813,
+      "sha256": "704af389959d9f03d1888abbde378125577fbc487a94bdd226c9586211ac26d1",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606503.199938059_lidar1671606503.199938059.txt",
+      "crc32": 779405566,
+      "compressed_bytes": 243033,
+      "role": "lidar"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606505.199927092.jpg",
+      "bytes": 856864,
+      "sha256": "502894d7ffaf5aba00a8287a40757532625d66abddf415a945511b419903e3c5",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606505.199927092.jpg",
+      "crc32": 3657043592,
+      "compressed_bytes": 856883,
+      "role": "images"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606505.199927092_lidar1671606505.199927092.txt",
+      "bytes": 731931,
+      "sha256": "f7c2c188ea6a3b6dc97240c6c21575262353a3531f2d5a0bf78d1d005b22ed2a",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606505.199927092_lidar1671606505.199927092.txt",
+      "crc32": 2374325611,
+      "compressed_bytes": 244684,
+      "role": "lidar"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606507.199824810.jpg",
+      "bytes": 858847,
+      "sha256": "4fc12e09e60deb6630f9daa724c7b4ff4db0e8a91acc6171cf2293de9d4fb4e0",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606507.199824810.jpg",
+      "crc32": 4135515991,
+      "compressed_bytes": 858889,
+      "role": "images"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606507.199824810_lidar1671606507.199824810.txt",
+      "bytes": 732456,
+      "sha256": "a206b04370a1bfac04ef91371a103d8d6fee2cf15d663543c5a6add0a7371a4a",
+      "archive_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606507.199824810_lidar1671606507.199824810.txt",
+      "crc32": 2892129305,
+      "compressed_bytes": 245601,
+      "role": "lidar"
+    }
+  ],
+  "range_transfers": [
+    {
+      "start": 28682115843,
+      "end": 28682115864,
+      "bytes": 22
+    },
+    {
+      "start": 28682115823,
+      "end": 28682115842,
+      "bytes": 20
+    },
+    {
+      "start": 28682115767,
+      "end": 28682115822,
+      "bytes": 56
+    },
+    {
+      "start": 28673094522,
+      "end": 28682115766,
+      "bytes": 9021245
+    },
+    {
+      "start": 16152793721,
+      "end": 16152793750,
+      "bytes": 30
+    },
+    {
+      "start": 16152793751,
+      "end": 16152793830,
+      "bytes": 80
+    },
+    {
+      "start": 16152793831,
+      "end": 16152793862,
+      "bytes": 32
+    },
+    {
+      "start": 16152793863,
+      "end": 16153652021,
+      "bytes": 858159
+    },
+    {
+      "start": 17654908931,
+      "end": 17654908960,
+      "bytes": 30
+    },
+    {
+      "start": 17654908961,
+      "end": 17654909073,
+      "bytes": 113
+    },
+    {
+      "start": 17654909074,
+      "end": 17654909105,
+      "bytes": 32
+    },
+    {
+      "start": 17654909106,
+      "end": 17655152138,
+      "bytes": 243033
+    },
+    {
+      "start": 16156231003,
+      "end": 16156231032,
+      "bytes": 30
+    },
+    {
+      "start": 16156231033,
+      "end": 16156231112,
+      "bytes": 80
+    },
+    {
+      "start": 16156231113,
+      "end": 16156231144,
+      "bytes": 32
+    },
+    {
+      "start": 16156231145,
+      "end": 16157088027,
+      "bytes": 856883
+    },
+    {
+      "start": 17655889595,
+      "end": 17655889624,
+      "bytes": 30
+    },
+    {
+      "start": 17655889625,
+      "end": 17655889737,
+      "bytes": 113
+    },
+    {
+      "start": 17655889738,
+      "end": 17655889769,
+      "bytes": 32
+    },
+    {
+      "start": 17655889770,
+      "end": 17656134453,
+      "bytes": 244684
+    },
+    {
+      "start": 16159660262,
+      "end": 16159660291,
+      "bytes": 30
+    },
+    {
+      "start": 16159660292,
+      "end": 16159660371,
+      "bytes": 80
+    },
+    {
+      "start": 16159660372,
+      "end": 16159660403,
+      "bytes": 32
+    },
+    {
+      "start": 16159660404,
+      "end": 16160519292,
+      "bytes": 858889
+    },
+    {
+      "start": 17656872590,
+      "end": 17656872619,
+      "bytes": 30
+    },
+    {
+      "start": 17656872620,
+      "end": 17656872732,
+      "bytes": 113
+    },
+    {
+      "start": 17656872733,
+      "end": 17656872764,
+      "bytes": 32
+    },
+    {
+      "start": 17656872765,
+      "end": 17657118365,
+      "bytes": 245601
+    }
+  ],
+  "network_bytes_this_process": 12329543,
+  "metadata": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/metadata/sampleinfos_interpolated.json",
+  "project_commit_before_run": "25d9bb2333b8f07afbee2af9e3228527a48e1b4f"
+}

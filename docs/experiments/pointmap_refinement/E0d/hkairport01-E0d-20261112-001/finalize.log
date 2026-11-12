@@ -1,0 +1,121 @@
+{
+  "scene": "HKairport01",
+  "raw_points": 663552,
+  "fused_points": 285825,
+  "point_reduction_fraction": 0.5692500361689814,
+  "native_hw": [
+    432,
+    512
+  ],
+  "render_hw": [
+    108,
+    128
+  ],
+  "source_frame_histogram": {
+    "1": 82096,
+    "2": 53267,
+    "3": 150462
+  },
+  "steps": [
+    {
+      "target_camera": 1,
+      "old_representatives": 221184,
+      "projected_candidates": 210609,
+      "accepted_old_points": 188446,
+      "color_rejected_points": 22163,
+      "individual_color_rejections": 22128,
+      "union_color_rejections": 35,
+      "kept_old_points": 32738,
+      "touched_target_pixels": 183469,
+      "new_target_points": 221184,
+      "output_points": 253922,
+      "target_xyz_displacement_max": 0.031394147556671935
+    },
+    {
+      "target_camera": 2,
+      "old_representatives": 253922,
+      "projected_candidates": 236217,
+      "accepted_old_points": 189281,
+      "color_rejected_points": 46936,
+      "individual_color_rejections": 44348,
+      "union_color_rejections": 2588,
+      "kept_old_points": 64641,
+      "touched_target_pixels": 178092,
+      "new_target_points": 221184,
+      "output_points": 285825,
+      "target_xyz_displacement_max": 0.033108232133402644
+    }
+  ],
+  "preparation": {
+    "points": 285825,
+    "multi_source_points": 203729,
+    "active_points": 176085,
+    "inactive_points": 109740,
+    "gt_loaded": false
+  },
+  "train_pixels": [
+    11531,
+    11582,
+    11591
+  ],
+  "max_RGB_group_range": 30,
+  "camera_projections": [
+    {
+      "camera": 0,
+      "map": "raw",
+      "native_coverage": 1.0
+    },
+    {
+      "camera": 0,
+      "map": "fused",
+      "native_coverage": 0.9432644314236112
+    },
+    {
+      "camera": 1,
+      "map": "raw",
+      "native_coverage": 1.0
+    },
+    {
+      "camera": 1,
+      "map": "fused",
+      "native_coverage": 0.9574245876736112
+    },
+    {
+      "camera": 2,
+      "map": "raw",
+      "native_coverage": 1.0
+    },
+    {
+      "camera": 2,
+      "map": "fused",
+      "native_coverage": 1.0
+    }
+  ],
+  "metadata_motion_proxy": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "metadata_translation_difference": 1.2175229860024168,
+      "seconds": 1.9999890327453613
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "metadata_translation_difference": 4.745366126716883,
+      "seconds": 1.9998977184295654
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "metadata_translation_difference": 5.961933527545765,
+      "seconds": 3.9998867511749268
+    }
+  ],
+  "GT_evaluated": false
+}

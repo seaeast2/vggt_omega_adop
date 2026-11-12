@@ -1,0 +1,264 @@
+{
+  "experiment_code": "E0d",
+  "run_id": "amtown01-E0d-20261112-001",
+  "scene": "AMtown01",
+  "status": "completed",
+  "phase": "baseline_ready",
+  "started_at": "2026-11-12T22:30:58.706567+09:00",
+  "inputs": [
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/catalog.json",
+      "bytes": 11551141,
+      "sha256": "3de2b8ea5a29f7581ee4030362f05202a3b159604764f25aa919000469d2bcc7"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/calibration_results.py",
+      "bytes": 4619,
+      "sha256": "fd42b246d9510a3a24ed533b008b023cd8a4d9c25b07b8e5acbcdc5e32da0e79"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/metadata/sampleinfos_interpolated.json",
+      "bytes": 16935811,
+      "sha256": "36df2da500f2f8eaf417760fefc77e895eab9d096752795d9540208055eac64a"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/images/1658137120.639091421.jpg",
+      "bytes": 856035,
+      "sha256": "4036b18728606d231217abe5f61d407dda72d43dcedef4aee381fe4d125d627c"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137120.639091421_lidar1658137120.624812945.txt",
+      "bytes": 733584,
+      "sha256": "f92c7a69f9903fd5aee9a13bbcd2c1d4877a793208f1ea2db43b0ee6e5301880"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/images/1658137122.638143493.jpg",
+      "bytes": 835810,
+      "sha256": "463f4e221afacbe64e0b776eb79eec2b3678b8101734464b47cb45ac4bdf6892"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137122.638143493_lidar1658137122.624924419.txt",
+      "bytes": 721055,
+      "sha256": "e413058468a4b72187ea09e06fae0f8250ac222aa0b08e7fadbaa9a1c2b46afd"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/images/1658137124.638372823.jpg",
+      "bytes": 856487,
+      "sha256": "b330d93445db7a470b1d2ddcce807e8dd508315297becd931a1efe7b59e596cd"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137124.638372823_lidar1658137124.624816523.txt",
+      "bytes": 732439,
+      "sha256": "7bc7e7d7dd17c7514b5d9aab6473c867355f5c7fad428329a236aa765ae7209e"
+    }
+  ],
+  "ended_at": "2026-11-12T22:33:31.696091+09:00",
+  "completion_criteria_met": true,
+  "artifacts": [
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/baseline/frames.json",
+      "bytes": 5260,
+      "sha256": "bd189afbba0881fa6a38e376ed14ce0ca1fb1998ef9020dd86110085cc03fb36"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/baseline/observations.npz",
+      "bytes": 20137151,
+      "sha256": "41291e90fbf16b456cb47a2f07c0d716bb5b34c8078b324688bb55f19725053e"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 7200111,
+      "sha256": "b3c2a8982d34082ac8a3c32fe5d2a604e6a1813cc32e8682bc664eb7a46b79b5"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137120.639091421.jpg",
+      "bytes": 856035,
+      "sha256": "4036b18728606d231217abe5f61d407dda72d43dcedef4aee381fe4d125d627c"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137122.638143493.jpg",
+      "bytes": 835810,
+      "sha256": "463f4e221afacbe64e0b776eb79eec2b3678b8101734464b47cb45ac4bdf6892"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137124.638372823.jpg",
+      "bytes": 856487,
+      "sha256": "b330d93445db7a470b1d2ddcce807e8dd508315297becd931a1efe7b59e596cd"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/calibration_results.py",
+      "bytes": 4619,
+      "sha256": "fd42b246d9510a3a24ed533b008b023cd8a4d9c25b07b8e5acbcdc5e32da0e79"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/download.json",
+      "bytes": 6161,
+      "sha256": "6adc46d44129f552c09d72f34d8a35c2b8619351b6cc611646b5c14c641e0cfb"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/frames.json",
+      "bytes": 5662,
+      "sha256": "5e6e40dd9a71d5b5d8386b59a7eba0c68446993a0ac1d9ef40d04256f136a655"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/figures/rgb_comparison.png",
+      "bytes": 4444248,
+      "sha256": "63266b6be8bd982ec1505d5d8df47bf793b80e045e18a8e309c981b2d6187f2b"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/figures/source_comparison.png",
+      "bytes": 2467263,
+      "sha256": "d998261ca272c8d39b0cab214c95dce1f34ebd8cd351c90f1f4821a14305ef6e"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/inference/metrics.json",
+      "bytes": 1100,
+      "sha256": "5c09e920c6852cc371cdd058763a8e63c3e566bd1c8077c41f7ebb4c682ebf69"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/inference/vggt_omega_raw.npz",
+      "bytes": 7200111,
+      "sha256": "b3c2a8982d34082ac8a3c32fe5d2a604e6a1813cc32e8682bc664eb7a46b79b5"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/initial/cameras_targets.npz",
+      "bytes": 2772353,
+      "sha256": "3301b48557e7dcd6530d9d67967af39c4e4f1b8dc8cfbc170140ff6b0ffcc4f9"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/initial/shared_map.npz",
+      "bytes": 24657455,
+      "sha256": "889432cd6e60c52c3223a5dc2e751441ffa933d88fc58c1c8a045ec374b84be5"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/initial/training_contract.npz",
+      "bytes": 1835,
+      "sha256": "c010550394dfb268b0aaaa1e63a5d5de66ca674b143fe7653429304a4544670c"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/after_frame_01.npz",
+      "bytes": 8169160,
+      "sha256": "472effa7048823fc77415dacda7ae65ca00a73eb758bc3be3a72dcb205066515"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/after_frame_02.npz",
+      "bytes": 9424298,
+      "sha256": "03822e3cca698e5f531a156172de75ff4ea0d4695ad9a1d3bd0046b1677553ca"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_map.npz",
+      "bytes": 14744984,
+      "sha256": "96c12e80f581c116f109d4912de5c307c9e94f9ed8721016788a1fcc32530fef"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_owner.ply",
+      "bytes": 11585208,
+      "sha256": "7ccda55e2e52b6426f3baa07e089c2c5f5183dcdba23b676327798f833ecf6c1"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_source_mix.ply",
+      "bytes": 11585208,
+      "sha256": "f932b3c51dda7cbce32b1e732b17c3c3a0677d5e2228f5db517f62b7a0332d29"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/maps/raw_source.ply",
+      "bytes": 22561088,
+      "sha256": "c28938188b53343fdc616fde9e64f345cd1aa25cfb50bf77788d1ddd4eae3619"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/README.md",
+      "bytes": 3123,
+      "sha256": "c37c7bf7a939d67d0dd9c29d74b7bd988fb8c8892dbc1a498354105a9839a354"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/config.json",
+      "bytes": 2104,
+      "sha256": "4a1049f5f9db1da020996cf3fc9c723f23f30340dfc4bdebc0c5919974dbdcfd"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/export.py",
+      "bytes": 21054,
+      "sha256": "14f1586e4a67f44507423b34f3bbe58b27c58ed6b498c08e95de7cc135878436"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/fetch_inputs.py",
+      "bytes": 6012,
+      "sha256": "4af43d3529187efd83f1d4c8b534681bd3ec6b50287b638faef8831035786f81"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/finalize.py",
+      "bytes": 9881,
+      "sha256": "339611bc991adb80bb08a8a019faf5f3fcc3cc36fb500ae3d7f1f9b48fe8dead"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/fusion_base.py",
+      "bytes": 17433,
+      "sha256": "d083c72da550e8e4e057ce8ae7a04b97c1d186a604f90fbc07302e8d65450419"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/fusion_color.py",
+      "bytes": 20459,
+      "sha256": "ecb130494afd7cdc81fb1db70416bcc8265581f5d9da990b6c671cc8af5b128d"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/geometry.py",
+      "bytes": 7942,
+      "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/infer.py",
+      "bytes": 3707,
+      "sha256": "a7d14b86e1e1d42dbcb438cc592fc1ff0b78a33014755f7d8c4f3398c2b7f871"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/remote_zip.py",
+      "bytes": 3174,
+      "sha256": "e7c1705b74cb2596ba25cb6bf1c53fd08cb50b97111ae6e3ee180bb98e0353c0"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/source/shared_preparation.py",
+      "bytes": 9820,
+      "sha256": "ae7a14055f3289a83fe8c0104040abddc2dd800f81126614a3cd64e3784a1f80"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/config_resolved.json",
+      "bytes": 2345,
+      "sha256": "69763e1c5d1dc8e721533799ec8fddcc750fdb5f661d43415843ca0ff93f2587"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/environment.json",
+      "bytes": 4114,
+      "sha256": "f1a19fb00bdb00740adafd48ecc413bbd913ad6e9357214b8b5c780927ecc451"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/evaluation/gt_reference_audit.json",
+      "bytes": 1131,
+      "sha256": "17b10f650c6e52f6e558c9e7af4fe7748eac7b86f83282a9330917188d9bb813"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/evaluation/metrics.json",
+      "bytes": 2561,
+      "sha256": "67627422557c211fce5cd1f3d5cd7c7c539ff1178ac724de2814711c55ac75f0"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/evaluation/verification.json",
+      "bytes": 515,
+      "sha256": "80102674a0813d178f1671113c18667b75368568c243c172e6e6624e78d0e421"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/logs/fetch.log",
+      "bytes": 5835,
+      "sha256": "541b837f20148462d06c53e183e92888feabeee23f1e1863b8ec4e5d4919e7c8"
+    },
+    {
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/logs/finalize.log",
+      "bytes": 2561,
+      "sha256": "67627422557c211fce5cd1f3d5cd7c7c539ff1178ac724de2814711c55ac75f0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fusion_controls": {
+    "similar_rgb_known_depth_mean": true,
+    "mismatched_color_kept": true,
+    "threshold_30_31_boundary": true,
+    "mutually_different_candidates_not_jointly_fused": true,
+    "old_group_color_bridge_rejected": true,
+    "nonprojected_xyz_unchanged": true
+  },
+  "all_RGB_groups_within_30": true,
+  "CSR_complete_partition": true,
+  "unprojection_camera_ray": true,
+  "NPZ_PLY_PNG_reload": true,
+  "new_joint_3frame_Omega_inference": true,
+  "GT_not_used": true
+}

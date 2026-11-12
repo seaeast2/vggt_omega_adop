@@ -1,0 +1,264 @@
+{
+  "experiment_code": "E0d",
+  "run_id": "hkairport01-E0d-20261112-001",
+  "scene": "HKairport01",
+  "status": "completed",
+  "phase": "baseline_ready",
+  "started_at": "2026-11-12T22:30:09.576119+09:00",
+  "inputs": [
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/catalog.json",
+      "bytes": 11551141,
+      "sha256": "3de2b8ea5a29f7581ee4030362f05202a3b159604764f25aa919000469d2bcc7"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/calibration_results.py",
+      "bytes": 4619,
+      "sha256": "fd42b246d9510a3a24ed533b008b023cd8a4d9c25b07b8e5acbcdc5e32da0e79"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/metadata/sampleinfos_interpolated.json",
+      "bytes": 9454415,
+      "sha256": "dc53d5fead50913b7730e35eff3b908ed89c0e29ddebd180f1555034ace808d6"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606503.199938059.jpg",
+      "bytes": 858096,
+      "sha256": "82d150c8d2e70839cecd48c3c2c3a88ad013f26eca957f37993f395b36c77a89"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606503.199938059_lidar1671606503.199938059.txt",
+      "bytes": 731813,
+      "sha256": "704af389959d9f03d1888abbde378125577fbc487a94bdd226c9586211ac26d1"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606505.199927092.jpg",
+      "bytes": 856864,
+      "sha256": "502894d7ffaf5aba00a8287a40757532625d66abddf415a945511b419903e3c5"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606505.199927092_lidar1671606505.199927092.txt",
+      "bytes": 731931,
+      "sha256": "f7c2c188ea6a3b6dc97240c6c21575262353a3531f2d5a0bf78d1d005b22ed2a"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/images/1671606507.199824810.jpg",
+      "bytes": 858847,
+      "sha256": "4fc12e09e60deb6630f9daa724c7b4ff4db0e8a91acc6171cf2293de9d4fb4e0"
+    },
+    {
+      "path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606507.199824810_lidar1671606507.199824810.txt",
+      "bytes": 732456,
+      "sha256": "a206b04370a1bfac04ef91371a103d8d6fee2cf15d663543c5a6add0a7371a4a"
+    }
+  ],
+  "ended_at": "2026-11-12T22:32:07.287201+09:00",
+  "completion_criteria_met": true,
+  "artifacts": [
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/frames.json",
+      "bytes": 5296,
+      "sha256": "5e6fcb83aaf5d43db3cebbbbc3e3b21b5841ed91c3c5d778641e1cee50974e95"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/observations.npz",
+      "bytes": 19544459,
+      "sha256": "58b3219828aea92b6f8d0df1fe9c3a0a08d3765c1169ff383df30b416605f355"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 6944360,
+      "sha256": "1a41d0be481e244afca2cf664a090e837dc4dcf75992da38e1e5a3649d91abbe"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606503.199938059.jpg",
+      "bytes": 858096,
+      "sha256": "82d150c8d2e70839cecd48c3c2c3a88ad013f26eca957f37993f395b36c77a89"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606505.199927092.jpg",
+      "bytes": 856864,
+      "sha256": "502894d7ffaf5aba00a8287a40757532625d66abddf415a945511b419903e3c5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606507.199824810.jpg",
+      "bytes": 858847,
+      "sha256": "4fc12e09e60deb6630f9daa724c7b4ff4db0e8a91acc6171cf2293de9d4fb4e0"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/calibration_results.py",
+      "bytes": 4619,
+      "sha256": "fd42b246d9510a3a24ed533b008b023cd8a4d9c25b07b8e5acbcdc5e32da0e79"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/download.json",
+      "bytes": 6277,
+      "sha256": "37920315cb6000fd6f6d3aed7a123cde92b795866a32de9a59911a6e68a68700"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/frames.json",
+      "bytes": 5698,
+      "sha256": "14cdc2f2e7bd9464de88788c4bfde7513b4ead4b734a0e43adbfb4eb9c11b157"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/figures/rgb_comparison.png",
+      "bytes": 4223045,
+      "sha256": "bffcb16ed08f6c99aceaf380768dfd8d7d7f1adff7d385b46a20c76217aee25b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/figures/source_comparison.png",
+      "bytes": 2182239,
+      "sha256": "9d1e7223dfb29d7692c6219334ccc97f83a8b876ab9d5d5adf6a286b496432c7"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/inference/metrics.json",
+      "bytes": 1102,
+      "sha256": "3adf020c69886bc62dca72df29c43d2689730105c588cd39840ccaa405feae5b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/inference/vggt_omega_raw.npz",
+      "bytes": 6944360,
+      "sha256": "1a41d0be481e244afca2cf664a090e837dc4dcf75992da38e1e5a3649d91abbe"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/cameras_targets.npz",
+      "bytes": 2656135,
+      "sha256": "01ec9c21777af2702ab23361d6f6d69fe3c23d7c9febb1ad0b1a7eaf0dd99c61"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/shared_map.npz",
+      "bytes": 21060704,
+      "sha256": "54311182baff84b31c1d14353cd68dfe467488a2545e57d0340ff76a819204f5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/training_contract.npz",
+      "bytes": 1150,
+      "sha256": "b2fc785936d041a22c896de1ac15e886fa3b3105389b69e011eb6a3c98c314f1"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/after_frame_01.npz",
+      "bytes": 6702981,
+      "sha256": "9a1e61cf0a2694452f2fdb35078d903320940f7b9c91b3dda52f89129a385757"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/after_frame_02.npz",
+      "bytes": 7943915,
+      "sha256": "37cf56555512c2d2243f9b5bc3bbb6f02c1240cc9888921312e208383f399672"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_map.npz",
+      "bytes": 12393349,
+      "sha256": "f0bc6c387b81fb058f25c76635e1e10bd4cd7e39486205130819406efd6c3006"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_owner.ply",
+      "bytes": 9718370,
+      "sha256": "36130f495e88e71a00b2e34d4a06d3d3eb00fe30e7e59be96959f20b9d9129e6"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/fused_source_mix.ply",
+      "bytes": 9718370,
+      "sha256": "52921880407d0e455ace565f0126d4ab6e112e3665db09e0844daf33157e8e2b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/maps/raw_source.ply",
+      "bytes": 22561088,
+      "sha256": "42119c25610aadb9f06be5d9350b37fd27a86ea37673467b26ee5bc1402d30d6"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/README.md",
+      "bytes": 3123,
+      "sha256": "c37c7bf7a939d67d0dd9c29d74b7bd988fb8c8892dbc1a498354105a9839a354"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/config.json",
+      "bytes": 2104,
+      "sha256": "4a1049f5f9db1da020996cf3fc9c723f23f30340dfc4bdebc0c5919974dbdcfd"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/export.py",
+      "bytes": 21054,
+      "sha256": "14f1586e4a67f44507423b34f3bbe58b27c58ed6b498c08e95de7cc135878436"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/fetch_inputs.py",
+      "bytes": 6012,
+      "sha256": "4af43d3529187efd83f1d4c8b534681bd3ec6b50287b638faef8831035786f81"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/finalize.py",
+      "bytes": 9881,
+      "sha256": "339611bc991adb80bb08a8a019faf5f3fcc3cc36fb500ae3d7f1f9b48fe8dead"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/fusion_base.py",
+      "bytes": 17433,
+      "sha256": "d083c72da550e8e4e057ce8ae7a04b97c1d186a604f90fbc07302e8d65450419"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/fusion_color.py",
+      "bytes": 20459,
+      "sha256": "ecb130494afd7cdc81fb1db70416bcc8265581f5d9da990b6c671cc8af5b128d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/geometry.py",
+      "bytes": 7942,
+      "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/infer.py",
+      "bytes": 3707,
+      "sha256": "a7d14b86e1e1d42dbcb438cc592fc1ff0b78a33014755f7d8c4f3398c2b7f871"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/remote_zip.py",
+      "bytes": 3174,
+      "sha256": "e7c1705b74cb2596ba25cb6bf1c53fd08cb50b97111ae6e3ee180bb98e0353c0"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/source/shared_preparation.py",
+      "bytes": 9820,
+      "sha256": "ae7a14055f3289a83fe8c0104040abddc2dd800f81126614a3cd64e3784a1f80"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/config_resolved.json",
+      "bytes": 2351,
+      "sha256": "db607e2abb3dd76553fbf68bed437eae1ce4d0c6746b26bf51456cd31633275e"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/environment.json",
+      "bytes": 4152,
+      "sha256": "8f03eecf46d6b50989b4eb7a0e63cacce7e8bd190e72696077c84a205943936c"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/evaluation/gt_reference_audit.json",
+      "bytes": 1132,
+      "sha256": "cd237329cc2384a066275e05f3693990e089d666e0fbf9cadee9fe9917cad14d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/evaluation/metrics.json",
+      "bytes": 2563,
+      "sha256": "3d1d0dcd4a6a2c7d81ec5f1725c63d439a64426607a043c8b5a99f741169bac5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/evaluation/verification.json",
+      "bytes": 515,
+      "sha256": "80102674a0813d178f1671113c18667b75368568c243c172e6e6624e78d0e421"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/logs/fetch.log",
+      "bytes": 5877,
+      "sha256": "4b5ffb6c3c60d6d251801a3b3f564fa141e4bca042425346d5fdbfd5854f8a31"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/logs/finalize.log",
+      "bytes": 2563,
+      "sha256": "3d1d0dcd4a6a2c7d81ec5f1725c63d439a64426607a043c8b5a99f741169bac5"
+    }
+  ]
+}

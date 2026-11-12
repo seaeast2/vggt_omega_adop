@@ -1,0 +1,199 @@
+{
+  "scene": "HKairport01",
+  "frames": [
+    {
+      "index": 126,
+      "timestamp": "1671606503.199938059",
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606503.199938059.jpg",
+      "image_sha256": "82d150c8d2e70839cecd48c3c2c3a88ad013f26eca957f37993f395b36c77a89",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606503.199938059_lidar1671606503.199938059.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606503.199938059.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606503.199938059_lidar1671606503.199938059.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "HKairport01",
+        "OriginalImageName": "1671606503.199938059.jpg",
+        "SortedImageID": 630,
+        "T4x4": [
+          [
+            0.997511963191547,
+            0.03942050335772533,
+            0.05844576293256486,
+            -120.10333695256708
+          ],
+          [
+            0.04708069228087751,
+            -0.9895770362207237,
+            -0.13609077044003384,
+            -19.82558733452494
+          ],
+          [
+            0.05247181818937977,
+            0.1385038385736374,
+            -0.9889708767179489,
+            0.8210801426286025
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1471.0653076171875,
+            0.0,
+            1172.3576676454904
+          ],
+          [
+            0.0,
+            1471.0653076171875,
+            1046.3674075128438
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    },
+    {
+      "index": 130,
+      "timestamp": "1671606505.199927092",
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606505.199927092.jpg",
+      "image_sha256": "502894d7ffaf5aba00a8287a40757532625d66abddf415a945511b419903e3c5",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606505.199927092_lidar1671606505.199927092.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606505.199927092.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606505.199927092_lidar1671606505.199927092.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "HKairport01",
+        "OriginalImageName": "1671606505.199927092.jpg",
+        "SortedImageID": 650,
+        "T4x4": [
+          [
+            0.9959679485309922,
+            0.04276314107754474,
+            0.07886164634439546,
+            -121.31534648472012
+          ],
+          [
+            0.055918557974519,
+            -0.9833341232047265,
+            -0.17299455776191894,
+            -19.940836637056563
+          ],
+          [
+            0.07014955718332695,
+            0.17670686434424,
+            -0.9817605225922509,
+            0.8316968125569417
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1471.0653076171875,
+            0.0,
+            1172.3576676454904
+          ],
+          [
+            0.0,
+            1471.0653076171875,
+            1046.3674075128438
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    },
+    {
+      "index": 134,
+      "timestamp": "1671606507.199824810",
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/data/1671606507.199824810.jpg",
+      "image_sha256": "4fc12e09e60deb6630f9daa724c7b4ff4db0e8a91acc6171cf2293de9d4fb4e0",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/lidar/image1671606507.199824810_lidar1671606507.199824810.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_CAM/1671606507.199824810.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_HKairport01/interval5_LIDAR/image1671606507.199824810_lidar1671606507.199824810.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "HKairport01",
+        "OriginalImageName": "1671606507.199824810.jpg",
+        "SortedImageID": 670,
+        "T4x4": [
+          [
+            0.9882696267940065,
+            0.04747227577106375,
+            0.1451534628920412,
+            -126.0537810935538
+          ],
+          [
+            0.07022507285486317,
+            -0.9852748582821611,
+            -0.15589064365636804,
+            -20.194650753846517
+          ],
+          [
+            0.1356155739543371,
+            0.16425540073368558,
+            -0.9770509605086379,
+            0.7954265972636847
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1471.0653076171875,
+            0.0,
+            1172.3576676454904
+          ],
+          [
+            0.0,
+            1471.0653076171875,
+            1046.3674075128438
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    }
+  ],
+  "metadata": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/HKairport01/metadata/sampleinfos_interpolated.json",
+  "network_bytes": 12329543
+}

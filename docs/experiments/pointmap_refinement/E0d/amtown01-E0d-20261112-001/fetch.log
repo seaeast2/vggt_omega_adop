@@ -1,0 +1,199 @@
+{
+  "scene": "AMtown01",
+  "frames": [
+    {
+      "index": 126,
+      "timestamp": "1658137120.639091421",
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137120.639091421.jpg",
+      "image_sha256": "4036b18728606d231217abe5f61d407dda72d43dcedef4aee381fe4d125d627c",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137120.639091421_lidar1658137120.624812945.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_CAM/1658137120.639091421.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_LIDAR/image1658137120.639091421_lidar1658137120.624812945.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "AMtown01",
+        "OriginalImageName": "1658137120.639091421.jpg",
+        "SortedImageID": 630,
+        "T4x4": [
+          [
+            0.3923075415887076,
+            -0.9198118257403539,
+            -0.006402971249423737,
+            -435.83369475504924
+          ],
+          [
+            -0.9180612486346089,
+            -0.39110995541157806,
+            -0.06478075743163328,
+            -49.67373183593304
+          ],
+          [
+            0.05708184096616989,
+            0.03129229947047591,
+            -0.9978789783464541,
+            1.2531721763680252
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1469.4898681640625,
+            0.0,
+            1174.0027077275518
+          ],
+          [
+            0.0,
+            1469.4898681640625,
+            1049.91204868583
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    },
+    {
+      "index": 130,
+      "timestamp": "1658137122.638143493",
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137122.638143493.jpg",
+      "image_sha256": "463f4e221afacbe64e0b776eb79eec2b3678b8101734464b47cb45ac4bdf6892",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137122.638143493_lidar1658137122.624924419.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_CAM/1658137122.638143493.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_LIDAR/image1658137122.638143493_lidar1658137122.624924419.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "AMtown01",
+        "OriginalImageName": "1658137122.638143493.jpg",
+        "SortedImageID": 650,
+        "T4x4": [
+          [
+            0.35857229769478316,
+            -0.9250749776454315,
+            0.12514868381324848,
+            -436.2822827280874
+          ],
+          [
+            -0.8738983306733417,
+            -0.37978410064137114,
+            -0.30342337508236183,
+            -48.65089253213807
+          ],
+          [
+            0.3282188522498831,
+            -0.0005680090927752115,
+            -0.9446015363069445,
+            1.2924858877840961
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1469.4898681640625,
+            0.0,
+            1174.0027077275518
+          ],
+          [
+            0.0,
+            1469.4898681640625,
+            1049.91204868583
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    },
+    {
+      "index": 134,
+      "timestamp": "1658137124.638372823",
+      "path": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/1658137124.638372823.jpg",
+      "image_sha256": "b330d93445db7a470b1d2ddcce807e8dd508315297becd931a1efe7b59e596cd",
+      "lidar_path": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/lidar/image1658137124.638372823_lidar1658137124.624816523.txt",
+      "image_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_CAM/1658137124.638372823.jpg",
+      "lidar_member": "interval5_CAM_LIDAR/interval5_AMtown01/interval5_LIDAR/image1658137124.638372823_lidar1658137124.624816523.txt",
+      "camera_metadata": {
+        "OriginalSceneName": "AMtown01",
+        "OriginalImageName": "1658137124.638372823.jpg",
+        "SortedImageID": 670,
+        "T4x4": [
+          [
+            0.39007741815301467,
+            -0.919911100755322,
+            0.040039662263934794,
+            -438.4580269150402
+          ],
+          [
+            -0.9097897054975489,
+            -0.39175516610366257,
+            -0.13715167371116874,
+            -43.82774557544053
+          ],
+          [
+            0.1418530916750183,
+            0.017072098237290837,
+            -0.9897404931819325,
+            1.2971127157297815
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "P3x3": [
+          [
+            1469.4898681640625,
+            0.0,
+            1174.0027077275518
+          ],
+          [
+            0.0,
+            1469.4898681640625,
+            1049.91204868583
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K1": 0.0,
+        "K2": 0.0,
+        "K3": 0.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "Width": 2448,
+        "Height": 2048
+      }
+    }
+  ],
+  "metadata": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/AMtown01/metadata/sampleinfos_interpolated.json",
+  "network_bytes": 12300420
+}

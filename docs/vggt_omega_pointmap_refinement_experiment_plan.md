@@ -869,6 +869,12 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 
 **E3d 실행 및 드론 전환 결정(2026-11-12):** `tum-freiburg1_desk-E3d-20261112-001`에서 1픽셀·앞면 1%·ADOP mode-4 근사 기울기로 200회 실행했다. 제어 사례·투영 chain rule은 통과했으나 실제 장면의 감소 추정 방향 유한 이동은 초기 손실을 낮추지 못했다. Last에서 78,434점이 이동했고 RGB 0.047734269→0.048161422로 증가해 selected는 초기 0회였다. 기존 고정 스케일·공통 422,380 GT 픽셀에서 initial/last RMSE 0.161113365→0.161583488m, fixed coverage 97.328966→95.210568%였다. 사전 개선 기준은 false로 사용자 요청에 따라 실내 추가 튜닝을 중단한다. 후속 E0d(드론 새 Omega 추론·색 조건 융합), E3e(같은 최소 ADOP 방식 이동)를 예약하되 현재 HKairport01/AMtown01 원본 입력 위치가 없어 미실행이다. 야외 효과는 가설로 유지하며 GT 없는 RGB 개선을 기하 개선으로 부르지 않는다. [E3d 보고서](experiments/pointmap_refinement/E3d/tum-freiburg1_desk-E3d-20261112-001/report.md), [드론 전환 계획](experiments/pointmap_refinement/drone_transition.md).
 
+**E0d 야외 입력 사전 등록(2026-11-12):** 사용자가 제공한 [UAVScenes HF](https://huggingface.co/datasets/sijieaaa/UAVScenes)의 revision `04a224fd14b0b8fdfd2633e68f20471b85c611a5`를 고정한다. HKairport01·AMtown01을 별도 Run ID로 실행하며 각 세 원본 영상을 공동 Omega 추론한다. Cache-only 120/124/128 구간의 메타데이터 이동이 작아, 이미지 확인·추론·최적화 전에 i≥120의 첫 4초 이동 proxy≥5m 구간을 선택하는 규칙으로 수정했다. 두 장면 모두 126/130/134다. T4x4의 translation 차이는 메타데이터 proxy이며 검증된 camera baseline으로 부르지 않는다. 같은 P0 모델·max_size 512·E0c 색 범위≤30 융합·E3c active 정책을 사용한다. 대응 LiDAR·pose·보정 파일은 있지만 좌표계/영상 왜곡 규약이 독립 검증되지 않아 이번 GT 정확도에는 사용하지 않는다. RGB·coverage·원본 해상도 경계·점군 변위만 구분해 보고한다. [E0d 실행 이력](experiments/pointmap_refinement/E0d/README.md).
+
+**E3e 사전 등록(2026-11-12):** 두 드론 장면의 E0d 색 조건 융합 초기값에 E3d와 바이트가 같은 1픽셀·1% 앞면 평균·이웃 삽입 surrogate renderer를 사용한다. 고정 RGB/카메라/CSR·점 수·active·초기 마스크에서 owner-ray log 거리만 Adam .001·범위±.05·200회 이동한다. 렌더는 입력 비율에 맞춘 128×108, native 비교는 512×432다. Selected는 사전 체크포인트의 RGB 최소로 고르고 실제 last도 저장한다. 광도 개선은 selected>0, RGB≥1% 감소, 초기 native 유효 영역·학습 영역 coverage 저하≤0.5%p 동시 충족으로 고정했다. 기하 정확도는 미평가로 유지하며 LiDAR/pose를 GT나 튜닝·선택에 사용하지 않는다. 동일 입력 한 그룹의 RGB 개선을 독립 시점/전체 3D 개선으로 부르지 않는다. [E3e 실행 이력](experiments/pointmap_refinement/E3e/README.md).
+
+**E0d 실행 기록(2026-11-12):** `hkairport01-E0d-20261112-001`, `amtown01-E0d-20261112-001`에서 각 원본 세 장을 공동 Omega 추론했다. 입력은 2448×2048→512×432, raw는 각각 663,552개 관측이다. 원본 RGB 채널 범위≤30 융합 결과 HKairport01 285,825점/active 176,085개, AMtown01 340,732점/active 168,315개다. 역투영·색 조건·전체 관측 CSR·파일 재로딩·41개 산출물/9개 입력 해시를 장면별 검증했다. 대응 LiDAR는 좌표계/영상 왜곡 규약 미검증으로 GT로 사용하지 않았고 기하 정확도를 평가하지 않았다. [E0d 보고서](experiments/pointmap_refinement/E0d/README.md).
+
 ### 13.1 제어 변수
 
 같은 장면에서 비교 실험 간 다음은 고정한다.

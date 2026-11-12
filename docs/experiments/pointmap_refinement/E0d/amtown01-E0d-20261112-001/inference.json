@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "mode": "max_size",
+  "count": 3,
+  "seed": 0,
+  "model_parameters": "float32; official internal autocast enabled",
+  "checkpoint": "checkpoints/vggt_omega_1b_512.pt",
+  "input_manifest": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/data/frames.json",
+  "forward_and_camera_seconds": 0.49345074901066255,
+  "load_and_inference_seconds": 10.211735912002041,
+  "shapes": {
+    "camera_and_register_tokens": [
+      1,
+      3,
+      17,
+      2048
+    ],
+    "pose_enc": [
+      1,
+      3,
+      9
+    ],
+    "depth": [
+      1,
+      3,
+      432,
+      512,
+      1
+    ],
+    "depth_conf": [
+      1,
+      3,
+      432,
+      512
+    ],
+    "images": [
+      1,
+      3,
+      3,
+      432,
+      512
+    ],
+    "extrinsics": [
+      1,
+      3,
+      3,
+      4
+    ],
+    "intrinsics": [
+      1,
+      3,
+      3,
+      3
+    ]
+  },
+  "npz_sha256": "b3c2a8982d34082ac8a3c32fe5d2a604e6a1813cc32e8682bc664eb7a46b79b5",
+  "peak_allocated_bytes": 5022880256,
+  "peak_reserved_bytes": 5318377472,
+  "process_seconds": 10.684168598003453
+}

@@ -1,0 +1,9 @@
+{
+  "checkpoint": "checkpoints/vggt_omega_1b_512.pt",
+  "sha256_verified_before_both_joint_inferences": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934",
+  "verification": "live hashlib.file_digest read, prior to first E0d inference; exact expected SHA assertion passed",
+  "omega_source_commit_verified": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6",
+  "joint_frame_count_per_scene": 3,
+  "execution_context": "host GPU outside sandbox",
+  "dataset_revision": "04a224fd14b0b8fdfd2633e68f20471b85c611a5"
+}

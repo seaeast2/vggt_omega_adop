@@ -1,0 +1,75 @@
+{
+  "experiment_code": "E3e",
+  "dataset": "AMtown01",
+  "parent_stage": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d",
+  "initial_map": "artifacts/initial/shared_map.npz",
+  "cameras_targets": "artifacts/initial/cameras_targets.npz",
+  "training_contract": "artifacts/initial/training_contract.npz",
+  "e0_stage": "results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d",
+  "renderer": "ADOP-style nearest one-pixel forward, fuzzy depth test 1%, mean of accepted fixed RGB",
+  "backward": "ADOP paper section 3.1 and official mode-4 neighbor insertion formula; symmetric left/right up/down pixel influences, perspective Jacobian; no direct depth-compositing gradient",
+  "official_commit": "ad8801583ad30e2e9e205947cb3602406d3aac0f",
+  "official_source": "https://github.com/darglein/ADOP/blob/ad8801583ad30e2e9e205947cb3602406d3aac0f/src/lib/rendering/PointRenderer.cu#L487-L624",
+  "paper": "https://arxiv.org/html/2110.06635v3#S3.SS1",
+  "omitted": [
+    "learned texture",
+    "neural renderer",
+    "tonemapper",
+    "environment map",
+    "normal culling",
+    "stochastic point discarding and ghost dropout",
+    "camera optimization",
+    "multiresolution pyramid"
+  ],
+  "approximation_scope": "local implementation of ADOP one-pixel/neighbor gradient ideas, not a reproduction of full ADOP or its ghost-dropout training configuration",
+  "fuzzy_depth_relative": 0.01,
+  "rounding": "floor(uv+0.5), integer pixel centers",
+  "empty_rgb": [
+    0,
+    0,
+    0
+  ],
+  "backward_border_margin": 2,
+  "render_hw": [
+    108,
+    128
+  ],
+  "train_mask": "frozen E0d initial coverage intersect initial raw predicted depth-edge/confidence mask and three-pixel border; missing pixels stay in loss",
+  "active_set": "unchanged E0d multi-source/parallax/source-visibility policy, arm-specific indices",
+  "position_parameter": "same owner-ray log distance as E3c",
+  "steps": 200,
+  "optimizer": "Adam; retained E3c settings to isolate renderer/backward change; original ADOP uses SGD for point positions",
+  "learning_rate": 0.001,
+  "gradient_clip_norm": 1.0,
+  "log_ray_delta_bound": 0.05,
+  "charbonnier_epsilon": 0.001,
+  "checkpoint_steps": [
+    0,
+    10,
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    180,
+    200
+  ],
+  "selection": "minimum fixed-mask RGB Charbonnier at checkpoint steps, never GT",
+  "validation": "known one-pixel/depth/mean cases; independent neighbor insertion gradient cases; perspective-chain Jacobian; actual discrete scene-loss probes. Surrogate is not required to equal infinitesimal forward finite differences",
+  "real_direction_probe_log_steps": [
+    0.001,
+    0.01,
+    0.05
+  ],
+  "gt_evaluation": "matched LiDAR and pose metadata retained, conventions unvalidated; no GT accuracy or metric scale evaluation",
+  "seed": 0,
+  "photometric_gate": {
+    "minimum_photo_fraction_reduction": 0.01,
+    "maximum_native_coverage_drop": 0.005,
+    "maximum_fixed_train_coverage_drop": 0.005
+  },
+  "outdoor_scope": "same-input three-frame paired rendering; not independent full-3D or heldout validation"
+}

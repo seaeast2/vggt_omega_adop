@@ -1,0 +1,64 @@
+{
+  "experiment_code": "E0d",
+  "dataset_repo": "sijieaaa/UAVScenes",
+  "dataset_revision": "04a224fd14b0b8fdfd2633e68f20471b85c611a5",
+  "archive": "interval5_CAM_LIDAR.zip",
+  "archive_size": 28682115865,
+  "archive_lfs_sha256": "c964fca708ecd6a79e0b05455b5124d543b05ea0929bd895f45fba08db9a36d9",
+  "catalog": "data/UAVScenes/04a224fd14b0b8fdfd2633e68f20471b85c611a5/catalog.json",
+  "scenes": [
+    "HKairport01",
+    "AMtown01"
+  ],
+  "selected_sorted_camera_indices": [
+    126,
+    130,
+    134
+  ],
+  "selection_reason": "before first inference: first sorted interval5 index i>=120 with norm(T[i+8].translation-T[i].translation)>=5; choose i,i+4,i+8. T translation is a metadata motion proxy, not independently validated camera baseline",
+  "selection_amendment": "initial cache-only proposal 120/124/128 had little metadata translation; superseded before any image inspection/inference/optimization by the deterministic motion rule; both scenes select 126/130/134",
+  "joint_input_count": 3,
+  "preprocess_mode": "max_size",
+  "image_resolution": 512,
+  "checkpoint": "checkpoints/vggt_omega_1b_512.pt",
+  "checkpoint_sha256": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934",
+  "omega_source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6",
+  "calibration_source_commit": "909250d14a4460b2a62ea25f08f12ce6367427ac",
+  "fusion": "unchanged E0c projective sequential mean and all-observation RGB channel range<=30; rejected/nonprojected previous points retained",
+  "color_threshold_per_channel": 30,
+  "frame_order": [
+    0,
+    1,
+    2
+  ],
+  "palette_rgb": [
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      255
+    ]
+  ],
+  "active_policy": "unchanged E3c multi-source, parallax, initial source visibility policy",
+  "visibility": {
+    "front_relative": 0.03,
+    "prior_relative": 0.03,
+    "prior_absolute_median_fraction": 0.002,
+    "depth_edge_relative": 0.03,
+    "confidence_quantile": 10
+  },
+  "render_downsample_factor": 4,
+  "gt_policy": "metadata and matched LiDAR retained but NOT used as validated depth GT: LiDAR coordinate frame and interval5 image distortion conventions lack verified author confirmation; no GT scale fit or geometry accuracy claim",
+  "seed": 0,
+  "scene": "HKairport01",
+  "run_id": "hkairport01-E0d-20261112-001"
+}
