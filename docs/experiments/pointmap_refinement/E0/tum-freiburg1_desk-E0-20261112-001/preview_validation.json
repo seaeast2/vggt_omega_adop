@@ -1,0 +1,16 @@
+{
+  "decoded_preview_shapes": [
+    [
+      1287,
+      1536,
+      3
+    ],
+    [
+      550,
+      1440,
+      3
+    ]
+  ],
+  "preview_rgb_pixels_match_canonical_input": true,
+  "status": "passed"
+}
