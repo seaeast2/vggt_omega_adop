@@ -18,3 +18,9 @@ C0 최초 실행에서 OpenCV FLANN KD-tree의 checks=-1 결과가 exhaustive �
 2. AKAZE: threshold=1e-4, 나머지 설치 버전 기본값.
 
 두 방법 모두 Hamming descriptor, 양방향 ratio 0.75·상호 일치, 같은 F-RANSAC·Depth/confidence gate·track split·지원 기준을 적용한다. ORB→AKAZE 순서에서 **처음 지원 조건을 통과한 방법**만 보완 실험 입력으로 선택하며 기하/validation/GT 점수로 고르지 않는다. 둘 다 실패하면 실제 지원 부족으로 남긴다. 이 사후 보완은 원래 SIFT 계획과 구분한 탐색적 amendment다.
+
+## C2a/C3a — 저지원 조건의 탐색적 수치 진단
+
+C1a의 ORB/AKAZE도 모든 쌍의 지원 기준을 통과하지 못했다. 원래 C2/C3는 지원 부족 gate를 유지하며 β=1을 보존한다. 실제 FoV 변경 시 수치 반응을 확인하기 위한 별도 C2a/C3a에서는 **원래 C1의 SIFT 대응과 고정 split을 그대로** 사용해 1변수/6변수 fit을 시도한다. 새 대응·임계값·FoV 범위·손실 가중치를 고르지 않는다.
+
+이 보조 실행은 rank가 충분할 때만 실시하고 `LOW_SUPPORT_DIAGNOSTIC_ONLY`로 고정 판정한다. 효과 성공이나 검증된 카메라 보정으로 승격하지 않는다. validation이 쌍별 1~6개뿐이라는 한계를 수치와 함께 남긴다. 원래 C3 지원 조건을 통과하지 않은 계수는 주 C5의 보정 입력에 사용하지 않는다. 드론 C4에는 이 지원 gate override를 적용하지 않는다.
