@@ -1,0 +1,23 @@
+{
+  "active_points": 67906,
+  "total_points": 510427,
+  "selected_step": 0,
+  "selected_by": "lowest checkpoint training Charbonnier; no GT",
+  "initial_photo_loss": 0.06458457559347153,
+  "selected_photo_loss": 0.06458457559347153,
+  "last_photo_loss": 0.17513018349806467,
+  "steps": 200,
+  "optimization_seconds": 10.556300222000573,
+  "peak_allocated_bytes": 655764480,
+  "peak_reserved_bytes": 893386752,
+  "parent_manifest": {
+    "path": "results/pointmap_refinement/tum-freiburg1_desk-E2-20261112-001/stages/E2/manifest.json",
+    "bytes": 15130,
+    "sha256": "4c77e0158c170139dd92a9488d11087debf063821b5bd28680e93cc1c53d7477"
+  },
+  "torch": "2.15.0+cu132",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "project_commit": "496ca8f1ab78d83f49997a57a60050ef10b940fd",
+  "execution_context": "host GPU outside sandbox",
+  "gt_accessed_during_training": false
+}

@@ -1,0 +1,9 @@
+{
+  "ray_parameterization": "passed",
+  "log_bounds_and_positive_distance": "passed",
+  "inactive_xyz_unchanged": "passed",
+  "all_other_shared_fields_frozen_except_current_visibility_and_optimizer_metadata": "passed",
+  "ply_npz_reload": "passed",
+  "gt_hash_and_initial_only_global_scale": "passed",
+  "status": "passed"
+}

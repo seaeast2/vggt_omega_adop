@@ -1,0 +1,37 @@
+{
+  "initial_loss": 0.06458457559347153,
+  "initial_gradient_norm": 0.0003380684647709131,
+  "adam_initial_direction_derivative_autograd": -0.0298866406083107,
+  "probes": [
+    {
+      "epsilon": 1e-06,
+      "plus_direction_loss": 0.06458559073507786,
+      "minus_direction_loss": 0.06458661518990993,
+      "central_derivative": -0.5122274160385132,
+      "first_order_predicted_plus": 0.06458454570683092
+    },
+    {
+      "epsilon": 1e-05,
+      "plus_direction_loss": 0.06459084525704384,
+      "minus_direction_loss": 0.06458479538559914,
+      "central_derivative": 0.3024935722351074,
+      "first_order_predicted_plus": 0.06458427672706545
+    },
+    {
+      "epsilon": 0.0001,
+      "plus_direction_loss": 0.06459502503275871,
+      "minus_direction_loss": 0.06458243913948536,
+      "central_derivative": 0.06292946636676788,
+      "first_order_predicted_plus": 0.0645815869294107
+    },
+    {
+      "epsilon": 0.001,
+      "plus_direction_loss": 0.06478231586515903,
+      "minus_direction_loss": 0.06462895311415195,
+      "central_derivative": 0.07668137550354004,
+      "first_order_predicted_plus": 0.06455468895286322
+    }
+  ],
+  "scope": "actual dense-scene initial topology; finite differences include changing hard front/stencil decisions; float32 small-epsilon precision also matters",
+  "positions_updated": false
+}

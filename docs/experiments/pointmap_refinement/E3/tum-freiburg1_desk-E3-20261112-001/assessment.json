@@ -1,0 +1,11 @@
+{
+  "execution": "completed",
+  "optimization_effect": "failed_under_current_configuration",
+  "selected_step": 0,
+  "selected_result": "initial geometry retained; no improved checkpoint found",
+  "last_step": 200,
+  "last_result": "moved geometry with degraded RGB and slightly worse scale-aligned same-view GT depth",
+  "gt_scope": "evaluation only, common pixels and one initial-only scale; no heldout/full 3D conclusion",
+  "inherited_metadata": "obs/owner/RGB/normal0/parallax are initial; visibility_initial frozen and visibility_estimated recomputed for exports",
+  "recommendation": "diagnose/freeze or smooth discrete visibility before increasing geometry freedom"
+}

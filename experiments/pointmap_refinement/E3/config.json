@@ -1,0 +1,17 @@
+{
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E2-20261112-001/stages/E2",
+  "gt_stage": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1",
+  "steps": 200,
+  "learning_rate": 0.001,
+  "log_ray_delta_bound": 0.05,
+  "gradient_clip_norm": 1.0,
+  "checkpoint_interval": 20,
+  "charbonnier_epsilon": 0.001,
+  "render_hw": [96, 128],
+  "renderer": "unchanged P2 Gaussian sigma=.65px radius=2px front gate=.03",
+  "train_mask": "initial E2 F1 alpha>=.5 intersect E1 fixed F0 mask; frozen throughout",
+  "selection": "lowest checkpoint training Charbonnier only; GT never used",
+  "gt_scale": "single median GT/predicted native front-Z ratio fitted on E2 initial only across all 3 cameras",
+  "gt_mask": "GT valid and baseline front coverage; common intersection with selected and last reported alongside missing coverage",
+  "seed": 0
+}

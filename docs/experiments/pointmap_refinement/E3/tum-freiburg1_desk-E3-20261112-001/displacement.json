@@ -1,0 +1,54 @@
+{
+  "selected": {
+    "all_points": {
+      "count": 510427,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "active_points": {
+      "count": 67906,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "active_relative_ray_distance": {
+      "count": 67906,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "moved_active_over_1e_8": 0,
+    "active_at_log_bound": 0,
+    "visible_in_at_least_two": 243163
+  },
+  "last": {
+    "all_points": {
+      "count": 510427,
+      "mean": 0.0017713951150319781,
+      "median": 0.0,
+      "p95": 0.014434950283744282,
+      "max": 0.09632704896599116
+    },
+    "active_points": {
+      "count": 67906,
+      "mean": 0.01331499270138762,
+      "median": 0.011540671566931966,
+      "p95": 0.036629333103988866,
+      "max": 0.09632704896599116
+    },
+    "active_relative_ray_distance": {
+      "count": 67906,
+      "mean": 0.014193621800534918,
+      "median": 0.012916642507017205,
+      "p95": 0.038806305305628966,
+      "max": 0.04877057620800714
+    },
+    "moved_active_over_1e_8": 65010,
+    "active_at_log_bound": 2456,
+    "visible_in_at_least_two": 234270
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "checkpoint_selection_and_export": "passed",
+  "frozen_rgb_csr_owner_and_initial_xyz": "passed",
+  "ply_positions_and_render_reload": "passed",
+  "single_initial_scale_and_pooled_gt_rmse_recalculation": "passed",
+  "status": "passed"
+}

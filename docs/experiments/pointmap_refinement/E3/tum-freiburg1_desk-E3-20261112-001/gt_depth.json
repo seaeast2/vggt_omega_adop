@@ -1,0 +1,136 @@
+{
+  "scale_gt_m_per_model_unit": 1.3228912022012644,
+  "scale_fit": "median GT/initial E2 native nearest-pixel front depth; one global factor across three cameras; never refit",
+  "gt_files": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1/artifacts/gt/aligned_0.npz",
+      "bytes": 74507,
+      "sha256": "8e634293a1fd188bbde8436fc60054b805ec7ab405a955b4c738b2dbb3f2963f"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1/artifacts/gt/aligned_1.npz",
+      "bytes": 78531,
+      "sha256": "40c39e5ff71be0759603f8902567ac8388b9a2e98b15d8f384755da970f9d950"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1/artifacts/gt/aligned_2.npz",
+      "bytes": 78727,
+      "sha256": "f7271eef88982cf4391d37e7b779aadfc5565d864a2e72df13c308f76848dd5d"
+    }
+  ],
+  "gt_used_in_training_or_selection": false,
+  "rows": [
+    {
+      "method": "initial",
+      "frame": 0,
+      "fixed_initial_gt_pixels": 160241,
+      "covered_fixed_pixels": 160241,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 157265,
+      "rmse_m_common": 0.11828605440789175,
+      "absrel_common": 0.031121607596177298
+    },
+    {
+      "method": "initial",
+      "frame": 1,
+      "fixed_initial_gt_pixels": 144103,
+      "covered_fixed_pixels": 144103,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 141269,
+      "rmse_m_common": 0.17448180019581835,
+      "absrel_common": 0.03645876868088569
+    },
+    {
+      "method": "initial",
+      "frame": 2,
+      "fixed_initial_gt_pixels": 143800,
+      "covered_fixed_pixels": 143800,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 140866,
+      "rmse_m_common": 0.19458678641566354,
+      "absrel_common": 0.04325381297164648
+    },
+    {
+      "method": "initial",
+      "frame": "pooled",
+      "common_pixels": 439400,
+      "rmse_m_common": 0.16411664271313176,
+      "absrel_common": 0.03672695728142199
+    },
+    {
+      "method": "selected",
+      "frame": 0,
+      "fixed_initial_gt_pixels": 160241,
+      "covered_fixed_pixels": 160241,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 157265,
+      "rmse_m_common": 0.11828605440789175,
+      "absrel_common": 0.031121607596177298
+    },
+    {
+      "method": "selected",
+      "frame": 1,
+      "fixed_initial_gt_pixels": 144103,
+      "covered_fixed_pixels": 144103,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 141269,
+      "rmse_m_common": 0.17448180019581835,
+      "absrel_common": 0.03645876868088569
+    },
+    {
+      "method": "selected",
+      "frame": 2,
+      "fixed_initial_gt_pixels": 143800,
+      "covered_fixed_pixels": 143800,
+      "coverage_of_fixed": 1.0,
+      "common_pixels": 140866,
+      "rmse_m_common": 0.19458678641566354,
+      "absrel_common": 0.04325381297164648
+    },
+    {
+      "method": "selected",
+      "frame": "pooled",
+      "common_pixels": 439400,
+      "rmse_m_common": 0.16411664271313176,
+      "absrel_common": 0.03672695728142199
+    },
+    {
+      "method": "last",
+      "frame": 0,
+      "fixed_initial_gt_pixels": 160241,
+      "covered_fixed_pixels": 157265,
+      "coverage_of_fixed": 0.9814279741139909,
+      "common_pixels": 157265,
+      "rmse_m_common": 0.11928703085097657,
+      "absrel_common": 0.03338880759358424
+    },
+    {
+      "method": "last",
+      "frame": 1,
+      "fixed_initial_gt_pixels": 144103,
+      "covered_fixed_pixels": 141269,
+      "coverage_of_fixed": 0.9803335114466736,
+      "common_pixels": 141269,
+      "rmse_m_common": 0.17485348864250952,
+      "absrel_common": 0.03825270529004339
+    },
+    {
+      "method": "last",
+      "frame": 2,
+      "fixed_initial_gt_pixels": 143800,
+      "covered_fixed_pixels": 140866,
+      "coverage_of_fixed": 0.979596662030598,
+      "common_pixels": 140866,
+      "rmse_m_common": 0.19475704986432346,
+      "absrel_common": 0.044120610965135657
+    },
+    {
+      "method": "last",
+      "frame": "pooled",
+      "common_pixels": 439400,
+      "rmse_m_common": 0.16456725766396577,
+      "absrel_common": 0.03839305014574183
+    }
+  ],
+  "limitations": "same-input-view, scale-aligned image depth only; common mask depends on all output coverages; all fixed-mask coverage also reported; no heldout or full 3D accuracy claim"
+}
