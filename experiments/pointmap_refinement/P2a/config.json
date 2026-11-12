@@ -1,0 +1,20 @@
+{
+  "pytorch3d_commit": "fdd657494ea5151cd66e19a1594494f1e1d592a1",
+  "e0_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "p2_stage": "results/pointmap_refinement/tum-freiburg1_desk-P2-20261112-002/stages/P2",
+  "backends": ["p2", "standard", "matched"],
+  "render_hw": [96, 128],
+  "points_per_pixel": 16,
+  "radius_pixels": 2.0,
+  "matched_sigma_pixels": 0.65,
+  "matched_depth_rtol": 0.03,
+  "plane_matched_depth_rtol": 1000.0,
+  "synthetic_steps": 200,
+  "synthetic_lr": 0.02,
+  "finite_difference_eps": [0.001, 0.0003],
+  "finite_difference_rtol": 0.02,
+  "finite_difference_atol": 0.002,
+  "timing_warmup": 2,
+  "timing_repeats": 5,
+  "seed": 0
+}

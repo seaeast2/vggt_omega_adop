@@ -906,6 +906,8 @@ Phase는 구현 순서이며 실험코드와 다르다. Phase 0은 P0, Phase 1�
 
 **P2 완료 기록(2026-11-12):** 001의 hard visibility 평면 최적화는 실패하여 보존했다. 002에서는 가림 선택을 분리한 합성 평면의 평균 3D 오차 0.204354→0.000003034, 단일 점·평면의 유한차분 검사를 통과했다. E0에서 선택한 36,864점의 3시점 RGB·Depth·Coverage 및 유한한 위치 Gradient를 확인했다. 실제 좌표 최적화와 GT 정확도 평가는 미실행이며 hard visibility 경계는 불연속이다. [P2 보고서](experiments/pointmap_refinement/P2/tum-freiburg1_desk-P2-20261112-002/report.md).
 
+**P2a 추가 비교(2026-11-12):** 별도 환경에서 공식 PyTorch3D 0.7.9를 C++20 빌드 설정 패치로 CUDA 설치하고 동일 입력의 p2/standard/matched를 비교했다. 단일 점·경계 밖 평면 Gradient는 통과했으나 standard의 합성 기하 회복과 경계 Gradient에는 실패가 있었다. matched의 초기 RGB PSNR 상승은 실제 기하 정확도 향상을 뜻하지 않는다. 설치·비교는 완료했으며 기존 P2 기본선을 교체하지 않는다. [P2a 보고서](experiments/pointmap_refinement/P2a/tum-freiburg1_desk-P2a-20261112-001/report.md).
+
 ### Phase 3. 공유점 융합·가시성
 
 - [ ] F0 단순 연결 Baseline.

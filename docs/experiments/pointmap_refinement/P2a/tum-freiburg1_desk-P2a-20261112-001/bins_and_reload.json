@@ -1,0 +1,47 @@
+{
+  "bin_comparisons": [
+    {
+      "frame": 0,
+      "backend": "standard",
+      "bin_size": "auto",
+      "median_seconds": 0.005987996002659202,
+      "rgb_max_difference_from_naive_bins": 0.0001494884490966797
+    },
+    {
+      "frame": 0,
+      "backend": "matched",
+      "bin_size": "auto",
+      "median_seconds": 0.005993990998831578,
+      "rgb_max_difference_from_naive_bins": 0.0
+    },
+    {
+      "frame": 1,
+      "backend": "standard",
+      "bin_size": "auto",
+      "median_seconds": 0.005988616001559421,
+      "rgb_max_difference_from_naive_bins": 0.0
+    },
+    {
+      "frame": 1,
+      "backend": "matched",
+      "bin_size": "auto",
+      "median_seconds": 0.005992705002427101,
+      "rgb_max_difference_from_naive_bins": 1.1920928955078125e-07
+    },
+    {
+      "frame": 2,
+      "backend": "standard",
+      "bin_size": "auto",
+      "median_seconds": 0.005978925997624174,
+      "rgb_max_difference_from_naive_bins": 0.0
+    },
+    {
+      "frame": 2,
+      "backend": "matched",
+      "bin_size": "auto",
+      "median_seconds": 0.005989338998915628,
+      "rgb_max_difference_from_naive_bins": 0.0
+    }
+  ],
+  "saved_outputs": "passed"
+}

@@ -1,0 +1,23 @@
+{
+  "upstream_commit": "fdd657494ea5151cd66e19a1594494f1e1d592a1",
+  "patch": "experiments/pointmap_refinement/P2a/pytorch3d-cxx20.patch",
+  "extension": "/home/hlee221212/works/gradresearch/vggt_omega_adop/.venvs/p2a/lib/python3.11/site-packages/pytorch3d/_C.cpython-311-x86_64-linux-gnu.so",
+  "extension_sha256": "6a8f3fa564241d8e0824ea463f8ed033743049e485f9c9d4b6d3292bce5fe4c9",
+  "build_attempts": [
+    {
+      "standard": "C++17",
+      "exit_code": 1,
+      "reason": "ATen requires C++20"
+    },
+    {
+      "standard": "C++20",
+      "exit_code": 0
+    }
+  ],
+  "flags": {
+    "MAX_JOBS": 2,
+    "TORCH_CUDA_ARCH_LIST": "12.0",
+    "FORCE_CUDA": 1
+  },
+  "load_note": "import torch before directly importing pytorch3d._C"
+}
