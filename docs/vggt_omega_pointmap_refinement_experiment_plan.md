@@ -1,6 +1,7 @@
 # VGGT-Ω 기반 단일 공유 Point Cloud의 다중 시점 미분 가능 렌더링을 통한 기하 재정렬 실험 계획서
 
-> 상태: 설계 초안 v1.0 · 작성일: 2026-11-12  
+> 상태: 설계 초안 v1.1 · 작성일: 2026-11-12 · 갱신일: 2026-11-12<br>
+> 연구 용도: 대학원 졸업논문 실험 — VGGT-Ω 초기 Point Cloud를 원본 RGB 영상으로 정렬·보정할 수 있는지 검증<br>
 > 실행 환경: NVIDIA RTX 5060 8GB VRAM, 단일 GPU  
 > 핵심 범위: RGB 영상 → VGGT-Ω 초기 기하 → **하나의 공유 3D Point Cloud** → 다중 카메라 미분 가능 렌더링 → **동일한 3D 점 좌표의 공동 최적화**  
 > 제외 범위: 영상 생성, 새로운 장면의 생성·완성, 동적 장면 모델링, 별도의 렌더링 표현 학습  
@@ -16,6 +17,7 @@
 6. 최적화는 다중 카메라 RGB 손실로 시작하되, 단순 자기 시점 복원과 과적합을 피하기 위한 **다중 시점 관측·가시성 검사 및 기하 Prior**를 반드시 포함한다.
 7. 최종 판단은 **미사용 카메라에서의 영상 재현**과 **Ground Truth 기반 3D 기하 정확도**를 별도로 측정한다. 학습 영상 PSNR의 상승만으로 성공이라고 주장하지 않는다.
 8. ADOP의 접근은 참고하지만, 본 연구에서 **ADOP 전체 신경 렌더링 파이프라인을 재구현하지 않는다.** 최초 구현은 최소 기능의 미분 가능 Point Renderer를 사용한다.
+9. **실험코드별로 실행 코드, 중간 결과, 최종 결과와 보고서를 구분한다.** E0~E9의 의미는 13절을 따르며, 실행 회차마다 고유 Run ID를 부여하고 기존 결과를 덮어쓰지 않는다. 폴더 구조와 보고 규칙은 11.1절 및 17절을 따른다.
 
 ---
 
@@ -26,6 +28,8 @@
 VGGT-Ω에 동일 장면의 N개 RGB 이미지를 입력하면 각 시점의 카메라 파라미터와 깊이 영상이 나온다. 이 정보에서 월드 좌표계의 점들을 생성하면 하나의 3D 공간에 여러 관측이 모인다. 그러나 동일한 표면의 관측들이 서로 정확하게 일치한다고 보장할 수는 없다. 카메라 및 깊이 예측 오차는 벽·바닥·물체 표면의 중복 층, 두께 증가, 공간적 이탈로 나타날 수 있다.
 
 본 실험의 목적은 **하나의 공유 Point Cloud를 여러 카메라에서 반복 투영하여 원본 RGB 영상과 비교하고, 그 오차를 3D 점의 위치로 역전파해 동일한 장면의 기하학적 정합성을 개선할 수 있는지** 검증하는 것이다.
+
+본 프로젝트는 **대학원 졸업논문을 위한 실험 저장소**로 운영한다. 여기서 Point Cloud 정렬은 원본 RGB 관측을 이용한 공유점 위치의 보정을 뜻하며, GT 비교를 위한 좌표계 정렬과는 구분한다. 논문에 사용할 수 있도록 실험 조건, 중간 산출물, 실패 기록과 최종 판단의 근거를 실험코드와 실행 회차로 추적한다.
 
 이 연구는 카메라별 Depth Map을 독립적으로 예쁘게 보정하는 것이 아니다. 하나의 공유 변수인 3D 점 X_k를 수정했을 때 **그 점을 보는 모든 카메라에 동시에 영향이 미치는** 구조를 목표로 한다.
 
@@ -614,7 +618,22 @@ X_k=X_k^0+\alpha_k n_k^0
 ~~~text
 vggt_omega_adop/
 ├── docs/
-│   └── vggt_omega_pointmap_refinement_experiment_plan.md
+│   ├── vggt_omega_pointmap_refinement_experiment_plan.md
+│   └── experiments/
+│       └── pointmap_refinement/
+│           ├── index.md                 # 전체 실험 현황과 보고서 링크
+│           └── E3/                      # E0~E9 및 세부 코드별 동일 구조
+│               ├── README.md            # 목적·조건·실행 이력 요약
+│               └── <run_id>/
+│                   ├── progress.md      # 중간 결과 및 실패·변경 기록
+│                   ├── report.md        # 해당 실행의 결과 보고서
+│                   └── figures/         # 보고서용 비교 이미지·그래프
+├── experiments/
+│   └── pointmap_refinement/
+│       └── E3/
+│           ├── README.md               # 재현 절차와 완료 기준
+│           ├── configs/                # 실험별 설정 및 변경 조건
+│           └── scripts/                # 실험별 실행 진입점
 ├── configs/
 │   ├── default_3views.yaml
 │   └── ablations.yaml
@@ -639,11 +658,21 @@ vggt_omega_adop/
 │   ├── run_inference.sh
 │   ├── run_refinement.sh
 │   └── run_ablation.sh
-├── data/                 # 로컬 데이터: .gitignore
-└── outputs/              # 체크포인트/중간 산출물: .gitignore
+├── data/                 # 원본 데이터: .gitignore
+├── checkpoints/          # 모델 가중치: .gitignore
+├── thirdparty/           # Commit을 고정한 외부 코드: .gitignore
+└── results/
+    └── pointmap_refinement/
+        └── <run_id>/
+            └── stages/
+                └── E3/  # 실험코드별 중간·최종 산출물, 상세 구조는 17.1절
 ~~~
 
 **주의:** 위는 앞으로의 권장 구조이다. 현재 해당 파일들이 존재한다는 뜻이 아니다.
+
+운영 방식은 참고 저장소 [gradresearch_vggt_mast3r_slam의 README](https://github.com/seaeast2/gradresearch_vggt_mast3r_slam/blob/main/README.md)와 [E0 재현 절차](https://github.com/seaeast2/gradresearch_vggt_mast3r_slam/blob/main/experiments/pointmap_comparison/E0/README.md)를 따른다. 실험코드별 재현 코드와 실행 회차별 `results/<연구명>/<run_id>/stages/<실험코드>/`를 분리하고, 설정·로그·Manifest·해시를 보존한다. 이번 프로젝트에서는 **중간·최종 보고서도 `docs/experiments/pointmap_refinement/<실험코드>/<run_id>/`로 분리**한다.
+
+`src/`와 공통 `configs/`, `scripts/`는 공통 구현이며, 실험별 설정과 진입점은 `experiments/pointmap_refinement/<실험코드>/`에 둔다. 코드·설정·보고서·소규모 보고용 그림은 Git으로 관리하고, 원본 데이터·모델·외부 코드·대용량 `results/`는 제외한다. 제외된 파일은 보고서에 저장 위치·출처·해시·재생성 절차를 기록한다. 참고 저장소의 모델·데이터·실험 결과 수치는 이번 실험의 결과로 옮기지 않는다.
 
 ### 11.2 VGGT-Ω 추론 단계(실제 API 기반 의사 코드)
 
@@ -676,7 +705,8 @@ with torch.inference_mode():
 ### 11.3 공유점 최적화 단계(인터페이스 의사 코드)
 
 ~~~python
-state = load_inference_artifacts(scene_id)
+state = load_inference_artifacts(config.source_artifact_path)
+# 입력 경로는 source experiment/run ID 및 SHA-256과 함께 기록한다.
 observations = unproject_to_observations(state)
 shared = fuse_observations(observations, state.cameras)
 
@@ -782,6 +812,8 @@ GT Depth는 **모델/손실의 입력으로 사용하지 않는다.** 평가에�
 
 ## 13. 실험 매트릭스 및 Ablation
 
+**실험코드는 아래 비교 조건을 식별한다.** 참고 저장소의 동명 코드와 연구 내용이 같다는 뜻은 아니다. 환경 준비를 위해 E0의 의미를 바꾸지 않으며, 준비·합성 검증은 `P0`(환경), `P1`(좌표계), `P2`(Renderer/Gradient)로 별도 기록한다. 이 코드들도 17절의 동일한 격리·보고 규칙을 적용한다.
+
 | ID | 초기 표현 | Renderer/Loss | 위치 변수 | 가시성/기하 제약 | 목적 |
 | --- | --- | --- | --- | --- | --- |
 | E0 | VGGT-Ω 원본 역투영 | 없음 | 없음 | 없음 | 원본 기준 |
@@ -796,6 +828,8 @@ GT Depth는 **모델/손실의 입력으로 사용하지 않는다.** 평가에�
 | E9 | 공유 융합 | E7 설정 | 최적 점만 | 선택 기준 비교 | Selective Refinement |
 
 E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/E2를 만들어 정당한 초기 비교기준을 확보한다.
+
+동일 실험의 세부 비교 조건은 `E3a`, `E3b`처럼 소문자 접미사를 사용하고, 실행 전에 해당 코드의 목적·변경 변수·비교 기준을 등록한다. 동일 조건의 장면·Seed·재실행은 새로운 Run ID로 구분한다. 등록된 코드의 의미를 바꾸어 과거 결과와 섞지 않는다.
 
 ### 13.1 제어 변수
 
@@ -829,15 +863,21 @@ s_k = f(\text{cross-view residual},\text{confidence},
 
 ## 14. 단계별 실행 계획 및 완료 기준
 
+Phase는 구현 순서이며 실험코드와 다르다. Phase 0은 P0, Phase 1은 P1 및 E0, Phase 2는 P2, Phase 3은 E1/E2, Phase 4는 E3~E7, Phase 5는 E8/E9 및 반복 평가에 대응한다. 모든 단계에서 실제 사용한 실험코드·Run ID·산출물 경로를 기록하며, 각 실험의 완료에는 17절의 결과 검증과 보고서 작성도 포함한다.
+
 ### Phase 0. 환경/실측 (가장 먼저)
 
-- [ ] CUDA, 드라이버, PyTorch, GPU 모델, OS, Python 버전 기록.
+- [x] CUDA, 드라이버, PyTorch, GPU 모델, OS, Python 버전 기록.
 - [ ] 공식 1B-512 Checkpoint 접근·로드 가능 확인.
 - [ ] 2장 / 3장 / 4장 VGGT-Ω 추론, peak VRAM 및 시간 측정.
 - [ ] max_size와 balanced를 같은 장면에서 비교.
 - [ ] 중간 파일 저장 후 종료된 프로세스에서 GPU 메모리 회수 확인.
 
 **완료 기준:** 3장 입력의 고정된 카메라·Depth·Confidence·RGB 파일을 재현 가능하게 생성. 3장 실패 시 2장/해상도 축소로 최소 PoC를 지속한다.
+
+**2026-11-12 실행 기록:** `smoke-P0-20261112-001`에서 호스트 CUDA 계산과 RGB 전처리 6개 조합을 검증했다. 공식 체크포인트가 HTTP 401 / GatedRepo이고 실험 프로세스에서 인증정보를 확인하지 못해 실제 모델 추론은 미실행이다. **P0 미완료**이며 상세 근거는 [P0 결과 보고서](experiments/pointmap_refinement/P0/smoke-P0-20261112-001/report.md)를 따른다.
+
+**인증 후 재시도:** `smoke-P0-20261112-002`에서 호스트 로그인을 확인하고 CUDA·전처리를 재검증했다. 공식 파일 서버는 HTTP 403 / GatedRepo와 함께 모델 접근 신청 검토 대기 상태를 반환했다. 로그인 문제는 해결됐으나 가중치 다운로드·추론은 여전히 미실행이다. **P0 미완료**이며 [재시도 보고서](experiments/pointmap_refinement/P0/smoke-P0-20261112-002/report.md)에 기록한다.
 
 ### Phase 1. 기하 및 데이터 계약
 
@@ -938,31 +978,50 @@ s_k = f(\text{cross-view residual},\text{confidence},
 
 ### 17.1 저장 대상
 
+모든 실행은 다음 세 경로를 같은 실험코드와 Run ID로 연결한다.
+
+| 구분 | 경로 | 저장 내용 |
+| --- | --- | --- |
+| 재현 코드·설정 | `experiments/pointmap_refinement/<experiment_code>/` | 목적, 실행 절차, 설정, 스크립트 |
+| 중간·최종 산출물 | `results/pointmap_refinement/<run_id>/stages/<experiment_code>/` | Manifest, 설정 사본, 로그, 추론·최적화·평가 파일 |
+| 중간·최종 보고서 | `docs/experiments/pointmap_refinement/<experiment_code>/<run_id>/` | 진행 기록, 결과 보고서, 보고용 그림 |
+
+예를 들어 E3의 첫 실행은 Run ID를 `sceneA-E3-20261112-001`로 두고, 결과는 `results/pointmap_refinement/sceneA-E3-20261112-001/stages/E3/`, 보고서는 `docs/experiments/pointmap_refinement/E3/sceneA-E3-20261112-001/`에 저장한다. 날짜는 실행 시작일의 한국 시간(Asia/Seoul)을 사용한다. 아래 구조는 실험 특성에 따라 필요한 파일을 생성하며, 평가 전용 E0~E2에는 최적화 로그가 필수가 아니다.
+
 ~~~text
-outputs/<scene_id>/<run_id>/
+results/pointmap_refinement/<run_id>/stages/<experiment_code>/
+├── manifest.json               # 상태, 입력/출력 경로, 출처, SHA-256
 ├── config_resolved.yaml
 ├── environment.json
-├── inference.npz               # 원래 VGGT-Ω 출력 + 전처리 정보
-├── observations.npz
-├── shared_map_initial.npz
-├── shared_map_final.npz
-├── camera_visibility.npz
-├── training_log.csv
-├── metrics.json
-├── rendered_before/
-├── rendered_after/
-├── rendered_heldout/
-├── comparison_geometry/
-└── debug/
-    ├── gradient_distribution.png
-    ├── displacement_histogram.png
-    ├── visibility_count.png
-    ├── depth_residual.png
-    └── fusion_clusters.png
+├── logs/                       # 실행 명령, stdout/stderr, 종료 코드
+│   └── training_log.csv
+├── artifacts/
+│   ├── data/                   # 입력 목록, 분할, 전처리 메타데이터
+│   ├── inference/
+│   │   └── vggt_omega_raw.npz   # 모델 출력과 전처리된 RGB
+│   ├── geometry/
+│   │   ├── observations.npz
+│   │   ├── shared_map_initial.npz
+│   │   ├── shared_map_final.npz
+│   │   ├── camera_visibility.npz
+│   │   ├── shared_initial.ply
+│   │   └── shared_refined.ply
+│   ├── optimization/           # 중간 Checkpoint, 변위·Gradient 기록
+│   ├── renders/
+│   │   ├── before/
+│   │   ├── after/
+│   │   └── heldout/
+│   └── debug/                  # Fusion/Visibility/Depth 잔차 시각화
+└── evaluation/
+    ├── metrics.json
+    └── comparison_geometry/
 ~~~
+
+Stage A~G는 처리 단계 이름이며 실험코드가 아니다. 동일 실험의 중간 처리는 위의 `artifacts/` 아래에서 구분하고, 각 단계의 입력·출력·완료 상태를 Manifest에 기록한다.
 
 ### 17.2 실험별 메타데이터
 
+- Experiment code, Run ID, Scene ID, 목적, 비교 대상 실험코드와 Run ID.
 - 모델명/Checkpoint SHA256, 코드 Git Commit, 입력 이미지 파일 목록 및 해시.
 - CUDA/PyTorch/PyTorch3D 버전, GPU 드라이버, fp16/bf16/fp32 설정.
 - Image preprocess 방식, 실제 H×W, Pixel coordinate 규약.
@@ -970,8 +1029,28 @@ outputs/<scene_id>/<run_id>/
 - 학습/평가 View ID, Fixed/Trainable 변수, Seed.
 - 사용한 GT의 정렬 자유도, 단위, 무효 깊이 처리.
 - 마지막/최적 Validation Checkpoint와 중단 이유.
+- 시작·종료 시각과 시간대, 실행 명령, 종료 코드, 실행 상태(`planned`/`running`/`completed`/`failed`/`stopped`).
+- 원본 입력·중간·최종 산출물의 경로와 SHA-256, 중간·최종 보고서 경로.
+- 재사용한 상위 실험 산출물의 코드·Run ID·Manifest 경로·해시 및 재사용 이유.
 
-### 17.3 결과표 권장 형태
+### 17.3 실행 격리 및 중간 결과 보존
+
+1. Run ID 형식은 `<scene_id>-<experiment_code>-<YYYYMMDD>-<NNN>`으로 통일한다. 재실행·Seed 변경·실패 후 재시도는 새 번호를 사용하며, 대상 폴더가 이미 있으면 실행을 중단한다.
+2. 실행 전에 설정을 확정하고 사본을 저장한다. 진행 중 조건을 바꿔야 하면 현재 실행의 중단 이유를 남기고 새 Run ID에서 실행한다.
+3. 실패·OOM·수동 중단도 로그, 생성된 중간 파일, 마지막 Checkpoint와 함께 보존한다. 완료된 실행의 결과는 덮어쓰지 않는다.
+4. E0 추론이나 E2 융합 결과를 후속 실험에서 재사용할 때는 원본을 읽기 전용 입력으로 취급한다. 경로만 암묵적으로 공유하지 않고 17.2절의 출처와 해시를 기록한다.
+5. Point Cloud는 점 수, 유한 XYZ 여부와 해시를 검증하고, NPZ/Checkpoint는 로드 가능 여부와 필수 필드를 검사한다. 생성된 파일이 있다는 사실만으로 실행 완료나 기하 개선을 판정하지 않는다.
+
+### 17.4 중간·최종 보고서
+
+- **`progress.md`:** 실행 목적과 조건, 단계별 수행 여부, 중간 지표·그림의 상대경로, 오류·OOM·중단 이유, 다음 확인 항목을 기록한다. 구현 완료·실행 완료·평가 완료를 구분한다.
+- **`report.md`:** 실험코드·Run ID, 연구 질문/가설, 데이터와 학습·평가 분할, 재현 명령·설정·환경, 비교 기준, 전후 정량 지표와 시각화, 실행 시간·VRAM, 산출물 검증, 성공/부분 성공/실패 판단 및 한계를 포함한다. 실패한 실행도 보고서를 남긴다.
+- **실험별 `README.md`:** 각 Run ID와 보고서 링크, 조건 차이, 실행 상태 및 결과 판단을 표로 정리한다.
+- **전체 `index.md`:** P0~P2, E0~E9 및 세부 코드별 목적, 최신 실행·보고서 링크와 진행 상태를 관리한다. 새 실행이 기존 실행의 이력을 대체하지 않도록 한다.
+
+보고서의 그림·표는 산출물 경로와 연결하고, 논문에 인용할 결과는 Run ID·코드 Commit·설정·입력 해시로 역추적 가능해야 한다. GT가 없으면 기하 정확도 개선 여부는 **미검증**으로 적으며, 정성 비교와 관측 일관성 결과로 주장을 제한한다. 실행 상태 `completed`와 연구 결과의 성공 판정은 별개다.
+
+### 17.5 결과표 권장 형태
 
 | Scene | Views | Method | #Points | Train PSNR | Heldout PSNR | GT Depth RMSE | Chamfer | Coverage | VRAM | Time |
 | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -981,6 +1060,8 @@ outputs/<scene_id>/<run_id>/
 | scene_A | 3 | E7 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
 
 TBD는 측정 이전임을 뜻한다. 수치를 미리 기입하지 않는다.
+
+실제 결과표에는 각 행의 Run ID·Seed·보고서 링크를 추가한다. 전체 비교표를 만들더라도 근거가 되는 실험코드별 보고서와 중간 결과는 해당 폴더에 유지한다.
 
 ---
 

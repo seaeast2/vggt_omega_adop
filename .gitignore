@@ -1,0 +1,9 @@
+.venvs/
+.python/
+.cache/
+data/
+checkpoints/
+thirdparty/
+results/
+__pycache__/
+*.py[cod]

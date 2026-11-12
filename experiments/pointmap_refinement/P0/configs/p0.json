@@ -1,0 +1,13 @@
+{
+  "experiment_code": "P0",
+  "source_url": "https://github.com/facebookresearch/vggt-omega.git",
+  "source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6",
+  "checkpoint_repo": "facebook/VGGT-Omega",
+  "checkpoint_filename": "vggt_omega_1b_512.pt",
+  "dataset_url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+  "rgb_indices_zero_based": [30, 40, 50, 60],
+  "frame_counts": [2, 3, 4],
+  "preprocess_modes": ["max_size", "balanced"],
+  "image_resolution": 512,
+  "seed": 0
+}
