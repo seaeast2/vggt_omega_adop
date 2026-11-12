@@ -1,0 +1,302 @@
+{
+  "decision": "TECHNICAL_PASS",
+  "checks": {
+    "initial_raw_max_abs_error": 1.9121001315625108e-07,
+    "raw_point_count": 589824,
+    "self_projection_max_px": 2.2737367544323206e-13,
+    "self_z_max_error": 8.881784197001252e-16,
+    "affine_max_error": 8.881784197001252e-16,
+    "transpose_vs_inverse_max": 5.794123492108838e-08
+  },
+  "synthetic_recovery": [
+    {
+      "perturbation": -0.05,
+      "beta_expected": [
+        1.0526315789473684,
+        0.9523809523809523,
+        0.9523809523809523,
+        1.0526315789473684,
+        1.0526315789473684,
+        1.0526315789473684
+      ],
+      "beta_recovered": [
+        1.0526315789473706,
+        0.9523809523809539,
+        0.9523809523809537,
+        1.0526315789473708,
+        1.05263157894737,
+        1.052631578947369
+      ],
+      "relative_focal_error_max": 2.3203661214665774e-15,
+      "rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          5.991442718495489,
+          5.1723318056081355,
+          4.04434906140673,
+          3.628168889073901,
+          2.0632016356635483,
+          1.7477153514726815
+        ],
+        "condition": 3.4281570585547043,
+        "identifiable": true
+      },
+      "kkt": 3.0499622725201807e-14,
+      "boundary_control": false
+    },
+    {
+      "perturbation": 0.05,
+      "beta_expected": [
+        0.9523809523809523,
+        1.0526315789473684,
+        1.0526315789473684,
+        0.9523809523809523,
+        0.9523809523809523,
+        0.9523809523809523
+      ],
+      "beta_recovered": [
+        0.9523809523809522,
+        1.052631578947366,
+        1.0526315789473697,
+        0.9523809523809514,
+        0.9523809523809528,
+        0.9523809523809569
+      ],
+      "relative_focal_error_max": 4.779510121011299e-15,
+      "rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          6.405206455174383,
+          5.2217039583027445,
+          4.352589694564637,
+          3.788912154684183,
+          2.0308977888282502,
+          1.788141844171662
+        ],
+        "condition": 3.5820460642156315,
+        "identifiable": true
+      },
+      "kkt": 6.433520280587595e-14,
+      "boundary_control": false
+    },
+    {
+      "perturbation": -0.1,
+      "beta_expected": [
+        1.1111111111111112,
+        0.9090909090909091,
+        0.9090909090909091,
+        1.1111111111111112,
+        1.1111111111111112,
+        1.1111111111111112
+      ],
+      "beta_recovered": [
+        1.111111111111111,
+        0.9090909090909091,
+        0.9090909090909091,
+        1.1111111111111112,
+        1.1111111111111112,
+        1.1111111111111112
+      ],
+      "relative_focal_error_max": 1.9984014443252816e-16,
+      "rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          5.90254836820184,
+          5.0571213167535305,
+          3.960845980320774,
+          3.514248736966552,
+          2.0444811293908307,
+          1.7064838921485002
+        ],
+        "condition": 3.458894862916288,
+        "identifiable": true
+      },
+      "kkt": 5.743433237263174e-15,
+      "boundary_control": true
+    },
+    {
+      "perturbation": 0.1,
+      "beta_expected": [
+        0.9090909090909091,
+        1.1111111111111112,
+        1.1111111111111112,
+        0.9090909090909091,
+        0.9090909090909091,
+        0.9090909090909091
+      ],
+      "beta_recovered": [
+        0.9090909090909091,
+        1.1111111111111112,
+        1.111111111111111,
+        0.9090909090909105,
+        0.9090909090909091,
+        0.9090909090909097
+      ],
+      "relative_focal_error_max": 1.587618925213974e-15,
+      "rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          6.666940317783903,
+          5.221535692878313,
+          4.537013855893234,
+          3.8722019596573936,
+          1.983876928186566,
+          1.784766390374087
+        ],
+        "condition": 3.7354694450440165,
+        "identifiable": true
+      },
+      "kkt": 2.4009823055886725e-16,
+      "boundary_control": true
+    }
+  ],
+  "solver_grid_controls": [
+    {
+      "unconstrained_truth": 0.7,
+      "solution": [
+        0.9090909090909091
+      ],
+      "kkt": 0.0
+    },
+    {
+      "unconstrained_truth": 1.02,
+      "solution": [
+        1.0199999999999998
+      ],
+      "kkt": 1.1546319456101628e-15
+    },
+    {
+      "unconstrained_truth": 1.4,
+      "solution": [
+        1.1111111111111112
+      ],
+      "kkt": 0.0
+    }
+  ],
+  "robust_control": {
+    "converged": true,
+    "max_beta_error": 0.0001299446166704854,
+    "history": [
+      {
+        "iteration": 0,
+        "beta": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "loss": 0.0003093343833698248,
+        "data_loss": 0.0003093343833698248,
+        "prior_loss": 0.0,
+        "delta_beta": 0.0,
+        "relative_loss_change": 0.0,
+        "kkt": 0.0
+      },
+      {
+        "iteration": 1,
+        "beta": [
+          1.0196859569813477,
+          0.9803651450960981,
+          1.0296496576486902,
+          0.9898696815716066,
+          1.010017652701321,
+          0.9701045233615324
+        ],
+        "loss": 0.00011336714769849897,
+        "data_loss": 0.0001129090005537324,
+        "prior_loss": 4.5814714476656294e-07,
+        "delta_beta": 0.02989547663846759,
+        "relative_loss_change": 0.6335126200214127,
+        "kkt": 2.2137036669901689e-16
+      },
+      {
+        "iteration": 2,
+        "beta": [
+          1.019893580607116,
+          0.9801301925845366,
+          1.0298894182180802,
+          0.9899672300696172,
+          1.0100300263468154,
+          0.96998101521057
+        ],
+        "loss": 0.00011334483459823451,
+        "data_loss": 0.00011288044485385174,
+        "prior_loss": 4.643897443827617e-07,
+        "delta_beta": 0.0002397605693900129,
+        "relative_loss_change": 0.00019682157236416604,
+        "kkt": 9.336607008358921e-16
+      },
+      {
+        "iteration": 3,
+        "beta": [
+          1.019893934403504,
+          0.9801299450122365,
+          1.029889721534067,
+          0.9899676064346546,
+          1.010029911306834,
+          0.9699807917876622
+        ],
+        "loss": 0.00011334483454039337,
+        "data_loss": 0.00011288043719575664,
+        "prior_loss": 4.643973446367281e-07,
+        "delta_beta": 3.7636503746885097e-07,
+        "relative_loss_change": 5.103112335249867e-10,
+        "kkt": 5.213386146396548e-16
+      },
+      {
+        "iteration": 4,
+        "beta": [
+          1.0198939350451097,
+          0.9801299446166705,
+          1.0298897220884247,
+          0.98996760721192,
+          1.0100299110107458,
+          0.9699807913952132
+        ],
+        "loss": 0.00011334483454039319,
+        "data_loss": 0.00011288043718302079,
+        "prior_loss": 4.6439735737239893e-07,
+        "delta_beta": 7.772653631832327e-10,
+        "relative_loss_change": 1.554396843431865e-15,
+        "kkt": 3.2291182938291516e-16
+      }
+    ]
+  },
+  "degeneracy_controls": {
+    "parallel_depth_only_coefficients_zero": true,
+    "repeated_observations_rank_deficient": true
+  },
+  "nearest_neighbor_float32_backend_vs_bruteforce": "passed",
+  "inputs": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 5980036,
+      "sha256": "d820f18f5bb683efb89d331f82262b68e5cec55a7bbadf379d8091721a26afa4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/observations.npz",
+      "bytes": 20976590,
+      "sha256": "61ba80c7635bf00223b5011e6e0b59e27734ba386d1d2762064bd153084543bc"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/frames.json",
+      "bytes": 1070,
+      "sha256": "d004cdac4d1150fbb23ce5e1a24933b9f6479f06dd2ee28495675e7ed0abf70e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/manifest.json",
+      "bytes": 7861,
+      "sha256": "e90721675b0e2ed9733a3999a53ebe1453a9222cef031f5acfc856d56d1431aa"
+    }
+  ],
+  "scientific_improvement": false,
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 0.33365817701269407,
+  "process_peak_rss_mib": 602.9921875
+}
