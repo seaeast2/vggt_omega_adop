@@ -17,9 +17,11 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | C2a | 원래 실내 sparse 대응의 저지원 공통 보정 진단 | 완료 1회 / 실패 기록 0회 |
 | C3 | 프레임별 수평·수직 FoV 6개 보정 | 완료 1회 / 실패 기록 0회 |
 | C3a | 원래 실내 sparse 대응의 저지원 6변수 진단 | 완료 1회 / 실패 기록 0회 |
-| C4 | HKairport01·AMtown01 비교 | 완료 1회 / 실패 기록 0회 |
+| C4 | HKairport01·AMtown01 비교 | 완료 2회 / 실패 기록 0회 |
+| C4a | 기존 coverage 기준 내 고정 선분 후보 보조 검증 | 미실행 |
 | C5 | 색+깊이 융합·점 수 축소·표면 보존 | 미실행 |
 | C5a | 융합 경계·연쇄 방지·기존 E0c 정확 재현 | 완료 1회 / 실패 기록 0회 |
+| C5b | C4a 보정값의 드론 융합 보조 비교 | 미실행 |
 
 | 실행 | 상태 | 판정·보고서 |
 | --- | --- | --- |
@@ -33,6 +35,7 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | `tum-freiburg1_desk-C2a-20261112-001` | completed | [LOW_SUPPORT_DIAGNOSTIC_ONLY](C2a/tum-freiburg1_desk-C2a-20261112-001/report.md) |
 | `tum-freiburg1_desk-C3-20261112-001` | completed | [NOT_ENOUGH_SUPPORT](C3/tum-freiburg1_desk-C3-20261112-001/report.md) |
 | `tum-freiburg1_desk-C3a-20261112-001` | completed | [LOW_SUPPORT_DIAGNOSTIC_ONLY](C3a/tum-freiburg1_desk-C3a-20261112-001/report.md) |
+| `amtown01-C4-20261113-001` | completed | [EFFECT_NOT_ESTABLISHED](C4/amtown01-C4-20261113-001/report.md) |
 | `hkairport01-C4-20261113-001` | completed | [EFFECT_NOT_ESTABLISHED](C4/hkairport01-C4-20261113-001/report.md) |
 | `synthetic-C5a-20261112-001` | completed | [TECHNICAL_PASS](C5a/synthetic-C5a-20261112-001/report.md) |
 
