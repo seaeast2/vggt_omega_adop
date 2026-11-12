@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "experiment_code": "C0",
+  "run_id": "synthetic-C0-20261112-001",
+  "dataset": "synthetic",
+  "started_at": "2026-11-12T23:41:01.327701+09:00",
+  "parents": [],
+  "project_commit_at_start": "a2b57197e74d2534f4afd35c05dc35d922d702f6",
+  "gt_accuracy_evaluated": false,
+  "ended_at": "2026-11-12T23:41:01.754645+09:00",
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/camera_fov_alignment/C0/run.py\", line 104, in main\n    assert np.allclose(dist[:,0],exact.min(1),rtol=2e-6,atol=1e-6)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

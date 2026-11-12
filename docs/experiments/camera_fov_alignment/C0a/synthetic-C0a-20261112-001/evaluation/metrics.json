@@ -1,0 +1,11 @@
+{
+  "decision": "TECHNICAL_PASS",
+  "flann_wrong_neighbors": 1,
+  "flann_squared_distance_error_max": 0.03273472189903259,
+  "replacement": "exact float32 BFMatcher L2, 512 fixed query points per frame against full target frame",
+  "replacement_vs_numpy_exhaustive": "passed",
+  "scientific_improvement": false,
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 0.009133368992479518,
+  "process_peak_rss_mib": 602.9921875
+}

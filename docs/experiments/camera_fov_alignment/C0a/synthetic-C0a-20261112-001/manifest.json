@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "experiment_code": "C0a",
+  "run_id": "synthetic-C0a-20261112-001",
+  "dataset": "synthetic",
+  "started_at": "2026-11-12T23:42:23.197254+09:00",
+  "parents": [],
+  "project_commit_at_start": "a2b57197e74d2534f4afd35c05dc35d922d702f6",
+  "gt_accuracy_evaluated": false,
+  "ended_at": "2026-11-12T23:42:23.206519+09:00",
+  "decision": "TECHNICAL_PASS",
+  "execution_completed": true,
+  "scientific_improvement": false,
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/artifacts/source/C0/README.md",
+      "bytes": 531,
+      "sha256": "23cd4c3c7014bf60749afb9238fc220a3a634df42f99ea702063abbe4db07e4c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/artifacts/source/C0/run.py",
+      "bytes": 7705,
+      "sha256": "cfab06eec3bbc4fe350535510862f32979faa859aa4d4f6e244088ab514a8659"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/artifacts/source/C0a/run.py",
+      "bytes": 2323,
+      "sha256": "3841532cc5bdefec9bcf7ec3ffc2fe10aec024706a2fc008df2845ac502f7a45"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/artifacts/source/experiment_plan.md",
+      "bytes": 37247,
+      "sha256": "1cef2749b5757b4963edf8b8481ca90f4257887bcca6988ceb8fae4ee90587c9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/config_resolved.json",
+      "bytes": 1210,
+      "sha256": "3db2b927c1348818a1e7fef1ece38c61359eb59856051d300cfa214667025a02"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/environment.json",
+      "bytes": 350,
+      "sha256": "235c160f241511bde302b95313c33bd2f77463d8e962292d79f6a5d7b815cefe"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/evaluation/metrics.json",
+      "bytes": 429,
+      "sha256": "55ebf66a24ef05840ae637e38b7743cab36f289dd9e4ea6f76a2dcaddc035064"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/synthetic-C0a-20261112-001/stages/C0a/logs/run.log",
+      "bytes": 1278,
+      "sha256": "140c42f0dd9a2385b73665a6eb8ece24ba0e68fa627e897349bec524c17ceefd"
+    }
+  ]
+}
