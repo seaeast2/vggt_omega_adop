@@ -41,13 +41,19 @@ def pair_support(matches,h,w):
     return {'pairs':rows,'passed':all(r['passed'] for r in rows)}
 
 
-def extract(data,output,stage):
+def extract(data,output,stage,detector='SIFT'):
     output.mkdir(parents=True,exist_ok=True)
     cv2.setNumThreads(2);cv2.setRNGSeed(0)
-    sift=cv2.SIFT_create(nfeatures=8192)
+    if detector=='SIFT':
+        feature=cv2.SIFT_create(nfeatures=8192);norm=cv2.NORM_L2
+    elif detector=='ORB':
+        feature=cv2.ORB_create(nfeatures=8192,fastThreshold=7);norm=cv2.NORM_HAMMING
+    elif detector=='AKAZE':
+        feature=cv2.AKAZE_create(threshold=1e-4);norm=cv2.NORM_HAMMING
+    else:raise ValueError(detector)
     keys=[];descriptors=[]
     for i,rgb in enumerate(data['rgb']):
-        kp,desc=sift.detectAndCompute(cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY),None)
+        kp,desc=feature.detectAndCompute(cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY),None)
         keys.append(np.array([p.pt for p in kp],float).reshape(-1,2));descriptors.append(desc)
         np.savez_compressed(output/f'features_{i}.npz',uv=keys[-1],descriptor=desc)
     offsets=np.r_[0,np.cumsum([len(x) for x in keys])]
@@ -60,7 +66,7 @@ def extract(data,output,stage):
         aa,bb=find(a),find(b)
         if aa!=bb:parent[max(aa,bb)]=min(aa,bb)
     edges=[];reports=[]
-    bf=cv2.BFMatcher(cv2.NORM_L2)
+    bf=cv2.BFMatcher(norm)
     for i,j in itertools.combinations(range(3),2):
         def ratio_pairs(a,b):
             if descriptors[a] is None or descriptors[b] is None or len(descriptors[b])<2:return set()
@@ -83,7 +89,7 @@ def extract(data,output,stage):
             ransac_inliers=inlier,fundamental=fundamental)
         reports.append({'pair':[i,j],'features':[len(keys[i]),len(keys[j])],
             'forward_ratio':len(forward),'mutual_ratio':len(mutual),'ransac_inliers':len(accepted)})
-        stage.log('image_correspondences',**reports[-1])
+        stage.log('image_correspondences',detector=detector,**reports[-1])
     groups={}
     for i,a,j,b in edges:
         for camera,index in [(i,a),(j,b)]:
@@ -124,7 +130,7 @@ def extract(data,output,stage):
     np.savez_compressed(output/'matches.npz',**matches)
     c.json_write(output/'tracks.json',tracks)
     support=pair_support(matches,h,w)
-    report={'image_pair_matching':reports,'conflicting_tracks_discarded':conflict,
+    report={'detector':detector,'image_pair_matching':reports,'conflicting_tracks_discarded':conflict,
         'retained_tracks':len(tracks),'pair_observations':len(rows),'support':support,
         'confidence_thresholds':[float(np.percentile(x[np.isfinite(x)],10)) for x in data['conf']],
         'fundamental_matrix_is_not_correspondence_GT':True,
