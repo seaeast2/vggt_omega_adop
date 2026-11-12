@@ -883,13 +883,15 @@ Phase는 구현 순서이며 실험코드와 다르다. Phase 0은 P0, Phase 1�
 
 ### Phase 1. 기하 및 데이터 계약
 
-- [ ] OpenCV world-to-camera round-trip 구현.
-- [ ] 자기 카메라 재투영 오차 분포 확인(올바른 변환 시 수치 오차 수준).
-- [ ] 타 카메라 투영/Depth/유효영역/패딩 검사.
-- [ ] GT Depth와 전처리 RGB 정렬 테스트.
-- [ ] 관측 출처가 보존된 Point Cloud 저장.
+- [x] OpenCV world-to-camera round-trip 구현.
+- [x] 자기 카메라 재투영 오차 분포 확인(올바른 변환 시 수치 오차 수준).
+- [x] 타 카메라 투영/Depth/유효영역/패딩 검사.
+- [x] GT Depth와 전처리 RGB 정렬 테스트.
+- [x] 관측 출처가 보존된 Point Cloud 저장.
 
 **완료 기준:** 합성 카메라/평면에서 3D→2D→3D 변환과 좌표계 방향 오류가 없음.
+
+**2026-11-12 완료:** `tum-freiburg1_desk-P1-20261112-001`에서 공식 역투영 일치, 합성 기하와 오류 대조군, 자기 시점 최대 재투영 오차 0.000045px, GT 시간·격자 연계 및 출처 보존 589,824점 저장을 검증했다. GT의 물리적 등록 정확도나 모델 기하 정확도 개선을 의미하지 않는다. [P1 보고서](experiments/pointmap_refinement/P1/tum-freiburg1_desk-P1-20261112-001/report.md).
 
 ### Phase 2. Renderer 최소 기능
 

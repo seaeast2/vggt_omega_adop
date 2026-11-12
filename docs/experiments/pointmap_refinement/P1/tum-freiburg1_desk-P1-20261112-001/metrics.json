@@ -1,0 +1,198 @@
+{
+  "synthetic": {
+    "roundtrip_pixel_max": 0.0,
+    "rotation_negative_control_pixel_max": 73.41837964873892,
+    "half_pixel_negative_control": 0.5,
+    "plane_and_axis_checks": "passed",
+    "positive_depth_frustum_padding_checks": "passed"
+  },
+  "rotation_orthogonality_max": 7.01552345105938e-08,
+  "official_unprojection_max_difference": 0.0,
+  "self_reprojection": [
+    {
+      "frame": 0,
+      "pixel_error": {
+        "count": 196608,
+        "median": 7.919098015415001e-06,
+        "p95": 1.4338286062568928e-05,
+        "max": 1.5578619719299165e-05
+      },
+      "z_error": {
+        "count": 196608,
+        "median": 1.0879075418301909e-10,
+        "p95": 1.9164984044195416e-10,
+        "max": 2.2594304205370008e-10
+      }
+    },
+    {
+      "frame": 1,
+      "pixel_error": {
+        "count": 196608,
+        "median": 1.5491486052856517e-05,
+        "p95": 2.461395442887908e-05,
+        "max": 2.639554833940578e-05
+      },
+      "z_error": {
+        "count": 196608,
+        "median": 7.556288317278614e-09,
+        "p95": 2.5252477753312517e-08,
+        "max": 3.240468249288142e-08
+      }
+    },
+    {
+      "frame": 2,
+      "pixel_error": {
+        "count": 196608,
+        "median": 2.1849324097025896e-05,
+        "p95": 3.69917122754696e-05,
+        "max": 4.499600686835642e-05
+      },
+      "z_error": {
+        "count": 196608,
+        "median": 6.303567318122205e-08,
+        "p95": 2.082565888184007e-07,
+        "max": 2.3066018917106135e-07
+      }
+    }
+  ],
+  "point_count": 589824,
+  "invalid_count": 0,
+  "cross_view": [
+    {
+      "source": 0,
+      "target": 1,
+      "total": 196608,
+      "in_frustum_positive": 125730,
+      "front_candidates": 121937,
+      "relative_depth_residual": {
+        "count": 125730,
+        "median": 0.010891103101956024,
+        "p95": 0.1152526677670699,
+        "max": 1.3597650425793917
+      },
+      "agreement_5percent_fraction": 0.9204247196373181,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "total": 196608,
+      "in_frustum_positive": 58980,
+      "front_candidates": 57308,
+      "relative_depth_residual": {
+        "count": 58980,
+        "median": 0.011614014981871007,
+        "p95": 0.0866098623309922,
+        "max": 1.324736869372824
+      },
+      "agreement_5percent_fraction": 0.7842997626314004,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    },
+    {
+      "source": 1,
+      "target": 0,
+      "total": 196608,
+      "in_frustum_positive": 113654,
+      "front_candidates": 112455,
+      "relative_depth_residual": {
+        "count": 113654,
+        "median": 0.01098042206891742,
+        "p95": 0.0620106606837916,
+        "max": 1.297627414880909
+      },
+      "agreement_5percent_fraction": 0.941506678163549,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "total": 196608,
+      "in_frustum_positive": 121509,
+      "front_candidates": 119646,
+      "relative_depth_residual": {
+        "count": 121509,
+        "median": 0.015782282241175827,
+        "p95": 0.0711978068308117,
+        "max": 1.3702279056400615
+      },
+      "agreement_5percent_fraction": 0.9315194759235942,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "total": 196608,
+      "in_frustum_positive": 54521,
+      "front_candidates": 53824,
+      "relative_depth_residual": {
+        "count": 54521,
+        "median": 0.011257290616508073,
+        "p95": 0.09457886963257078,
+        "max": 1.2125931710863358
+      },
+      "agreement_5percent_fraction": 0.788466829295134,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "total": 196608,
+      "in_frustum_positive": 121239,
+      "front_candidates": 119298,
+      "relative_depth_residual": {
+        "count": 121239,
+        "median": 0.013146259471194464,
+        "p95": 0.07176305833531349,
+        "max": 1.7638921563395031
+      },
+      "agreement_5percent_fraction": 0.9338166761520633,
+      "interpretation": "predicted depth consistency, not GT accuracy or confirmed correspondence"
+    }
+  ],
+  "gt_grid_alignment": [
+    {
+      "frame": 0,
+      "rgb_timestamp": "1305031453.791716",
+      "depth_timestamp": "1305031453.805041",
+      "delta_seconds": 0.013324975967407227,
+      "raw_sha256": "27ef8a8cff8d9368fb17eb4bd860702fc6f9f30ad2d91b99e9b40c14973cbdd5",
+      "valid_fraction": 0.8153788248697916,
+      "shape": [
+        384,
+        512
+      ],
+      "resize_mapping_check": "passed"
+    },
+    {
+      "frame": 1,
+      "rgb_timestamp": "1305031454.127701",
+      "depth_timestamp": "1305031454.141030",
+      "delta_seconds": 0.013329029083251953,
+      "raw_sha256": "e1ead03801f0a4df6da091e9d0f575f33df8ad8b540a0ff47a398f5d091c1213",
+      "valid_fraction": 0.7330576578776041,
+      "shape": [
+        384,
+        512
+      ],
+      "resize_mapping_check": "passed"
+    },
+    {
+      "frame": 2,
+      "rgb_timestamp": "1305031454.459913",
+      "depth_timestamp": "1305031454.470741",
+      "delta_seconds": 0.010828018188476562,
+      "raw_sha256": "0f75399a952814581982c9717963f63fa905e56290e8baaf22a894dc4b86a5f7",
+      "valid_fraction": 0.7314961751302084,
+      "shape": [
+        384,
+        512
+      ],
+      "resize_mapping_check": "passed"
+    }
+  ],
+  "gt_accuracy_evaluated": false,
+  "pixel_convention": "integer u,v as official demo; original RGB resize sampling uses centre mapping",
+  "depth_convention": "camera Z, not Euclidean ray distance",
+  "world_convention": "OpenCV camera-from-world, arbitrary predicted scale",
+  "padding": "none in these same-size input frames; synthetic mask rejection tested"
+}

@@ -1,0 +1,9 @@
+{
+  "rgb_original_hash_and_bicubic_reproduction": "passed",
+  "observation_source_pixel_rgb_depth": "passed",
+  "unique_frame_pixel_ids": true,
+  "all_saved_xyz_finite": true,
+  "resize_intrinsics_affine_contract": "passed",
+  "gt_intrinsics_usage": "default K used only for transform test; not for GT metric accuracy",
+  "status": "passed"
+}

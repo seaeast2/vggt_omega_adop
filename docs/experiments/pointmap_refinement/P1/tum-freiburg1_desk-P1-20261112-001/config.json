@@ -1,0 +1,12 @@
+{
+  "input": "results/pointmap_refinement/smoke-P0-20261112-003/stages/P0/artifacts/inference/max_size_n03/vggt_omega_raw.npz",
+  "input_sha256": "d820f18f5bb683efb89d331f82262b68e5cec55a7bbadf379d8091721a26afa4",
+  "parent_stage": "results/pointmap_refinement/smoke-P0-20261112-003/stages/P0",
+  "archive": "data/pointmap_refinement/tum/rgbd_dataset_freiburg1_desk.tgz",
+  "archive_sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c",
+  "pixel_tolerance": 0.001,
+  "zbuffer_relative_tolerance": 0.01,
+  "seed": 0,
+  "description": "CPU geometry contract; all positive finite points; no fusion or optimization; GT evaluation grid only",
+  "run_id": "tum-freiburg1_desk-P1-20261112-001"
+}
