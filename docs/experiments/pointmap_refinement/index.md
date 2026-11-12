@@ -9,6 +9,7 @@
 | P2 | Renderer·Gradient 검증 | 완료: 최소 렌더·안정 영역 Gradient 통과, 가림 경계 제한 기록 | [보고서](P2/tum-freiburg1_desk-P2-20261112-002/report.md), [실행 이력](P2/README.md) |
 | P2a | PyTorch3D 설치·렌더러 비교 | 완료: CUDA 설치·3방식 비교. 기본 Alpha 기하 회복 실패 및 경계 제한 포함 | [보고서](P2a/tum-freiburg1_desk-P2a-20261112-001/report.md) |
 | E0 | 보정 전 원본 점군 기준선 | 완료: 589,824점 보존·검증 및 시각화 | [보고서](E0/tum-freiburg1_desk-E0-20261112-001/report.md) |
+| E0a | 원본 점군의 프레임별 색상·카메라 투영 | 완료: 빨강/초록/파랑 PLY·3개 카메라의 전체/타 출처/단독 출처 투영·버퍼 검증 | [보고서](E0a/tum-freiburg1_desk-E0a-20261112-001/report.md), [전체 패널](E0a/tum-freiburg1_desk-E0a-20261112-001/figures/overview.png) |
 | E1 | 단순 연결 F0 평가 | 완료: 예측 불일치·층 퍼짐·잠재 중복·출처별 RGB 진단 | [보고서](E1/tum-freiburg1_desk-E1-20261112-001/report.md) |
 | E2 | 공유점 융합·가시성 평가 | 완료: 510,427점 F1 생성·검증. RGB 소폭 저하·기하 개선 미확인 | [보고서](E2/tum-freiburg1_desk-E2-20261112-001/report.md) |
 | E3 | Photo Ray-depth 위치 최적화 | 실행·평가 완료, 효과 실패: selected=초기 0회, last 악화 | [보고서](E3/tum-freiburg1_desk-E3-20261112-001/report.md) |

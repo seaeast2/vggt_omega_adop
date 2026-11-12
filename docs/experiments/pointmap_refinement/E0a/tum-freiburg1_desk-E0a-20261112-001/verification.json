@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "parent_inputs_unchanged": true,
+  "all_and_per_source_ply_reload": true,
+  "xyz_and_provenance_exact": true,
+  "palette_by_frame_id_exact": true,
+  "png_lossless_reload": true,
+  "npz_buffers_reload": true,
+  "front_winner_depth_and_source": true,
+  "controlled_occlusion_and_negative_z": true,
+  "self_projection": [
+    {
+      "camera": 0,
+      "full_own_coverage": true,
+      "own_pixel_indices_exact": true,
+      "max_own_depth_error": 2.2594304205370008e-10
+    },
+    {
+      "camera": 1,
+      "full_own_coverage": true,
+      "own_pixel_indices_exact": true,
+      "max_own_depth_error": 3.240468249288142e-08
+    },
+    {
+      "camera": 2,
+      "full_own_coverage": true,
+      "own_pixel_indices_exact": true,
+      "max_own_depth_error": 2.3066018917106135e-07
+    }
+  ]
+}

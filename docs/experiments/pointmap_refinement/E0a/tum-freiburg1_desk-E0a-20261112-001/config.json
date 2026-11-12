@@ -1,0 +1,31 @@
+{
+  "experiment_code": "E0a",
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "palette_rgb": [
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      255
+    ]
+  ],
+  "projection": "native 512x384; OpenCV predicted camera-from-world; nearest pixel; minimum positive camera Z",
+  "pixel_footprint": "one nearest pixel; no splat or alpha",
+  "pixel_bounds": "[-0.5, width-0.5) and [-0.5, height-0.5); numpy rint",
+  "equal_depth_tie": "lower source frame_id, then lower original observation index",
+  "near_front_relative_threshold": 0.03,
+  "confidence_filter": false,
+  "fusion": false,
+  "optimization": false,
+  "gt_used": false,
+  "run_id": "tum-freiburg1_desk-E0a-20261112-001"
+}

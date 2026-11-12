@@ -1,0 +1,162 @@
+{
+  "experiment_code": "E0a",
+  "points": 589824,
+  "source_point_counts": [
+    196608,
+    196608,
+    196608
+  ],
+  "palette_rgb": [
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      255
+    ]
+  ],
+  "render_hw": [
+    384,
+    512
+  ],
+  "camera_results": [
+    {
+      "camera": 0,
+      "covered_pixels": 196608,
+      "total_pixels": 196608,
+      "cross_covered_pixels": 118922,
+      "winner_pixels_by_source": [
+        125067,
+        49570,
+        21971
+      ],
+      "source_in_frustum_points": [
+        196608,
+        113939,
+        54710
+      ],
+      "source_covered_pixels": [
+        196608,
+        106862,
+        49689
+      ],
+      "exact_front_depth_tie_pixels": 0,
+      "two_or_more_source_overlap_pixels": 118922,
+      "near_front_support_histogram": [
+        0,
+        105710,
+        63608,
+        27290
+      ],
+      "near_front_bitmask_histogram": {
+        "0": 0,
+        "1": 84419,
+        "2": 14110,
+        "3": 53409,
+        "4": 7181,
+        "5": 8580,
+        "6": 1619,
+        "7": 27290
+      },
+      "projected_depth_spread_relative_median": 0.012165098054502022,
+      "projected_depth_spread_relative_p95": 0.07454669277644203,
+      "warning": "Projected spread includes occlusion/distinct surfaces; no wall ROI/correspondence GT; not physical wall thickness."
+    },
+    {
+      "camera": 1,
+      "covered_pixels": 196608,
+      "total_pixels": 196608,
+      "cross_covered_pixels": 172567,
+      "winner_pixels_by_source": [
+        41441,
+        117938,
+        37229
+      ],
+      "source_in_frustum_points": [
+        126056,
+        196608,
+        121571
+      ],
+      "source_covered_pixels": [
+        106801,
+        196608,
+        108622
+      ],
+      "exact_front_depth_tie_pixels": 0,
+      "two_or_more_source_overlap_pixels": 172567,
+      "near_front_support_histogram": [
+        0,
+        56664,
+        109166,
+        30778
+      ],
+      "near_front_bitmask_histogram": {
+        "0": 0,
+        "1": 6833,
+        "2": 37839,
+        "3": 53362,
+        "4": 11992,
+        "5": 678,
+        "6": 55126,
+        "7": 30778
+      },
+      "projected_depth_spread_relative_median": 0.015754951713339866,
+      "projected_depth_spread_relative_p95": 0.0915449763207664,
+      "warning": "Projected spread includes occlusion/distinct surfaces; no wall ROI/correspondence GT; not physical wall thickness."
+    },
+    {
+      "camera": 2,
+      "covered_pixels": 196608,
+      "total_pixels": 196608,
+      "cross_covered_pixels": 117752,
+      "winner_pixels_by_source": [
+        25719,
+        50080,
+        120809
+      ],
+      "source_in_frustum_points": [
+        59174,
+        121792,
+        196608
+      ],
+      "source_covered_pixels": [
+        48941,
+        108522,
+        196608
+      ],
+      "exact_front_depth_tie_pixels": 0,
+      "two_or_more_source_overlap_pixels": 117752,
+      "near_front_support_histogram": [
+        0,
+        102712,
+        65485,
+        28411
+      ],
+      "near_front_bitmask_histogram": {
+        "0": 0,
+        "1": 4000,
+        "2": 7084,
+        "3": 1032,
+        "4": 91628,
+        "5": 6883,
+        "6": 57570,
+        "7": 28411
+      },
+      "projected_depth_spread_relative_median": 0.017034093428510227,
+      "projected_depth_spread_relative_p95": 0.0849350978640741,
+      "warning": "Projected spread includes occlusion/distinct surfaces; no wall ROI/correspondence GT; not physical wall thickness."
+    }
+  ],
+  "wall_roi_or_gt_accuracy_evaluated": false,
+  "coordinates_changed": false,
+  "camera_parameters_changed": false,
+  "cpu_seconds": 1.7815251260035438
+}
