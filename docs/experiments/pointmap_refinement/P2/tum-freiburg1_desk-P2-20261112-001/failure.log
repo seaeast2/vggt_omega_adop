@@ -1,0 +1,14 @@
+/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/pointmap_refinement/P2/run.py:60: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  initial=float(torch.linalg.norm((rays*z)-gt,dim=1).mean())
+Traceback (most recent call last):
+  File "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/pointmap_refinement/P2/run.py", line 125, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/pointmap_refinement/P2/run.py", line 85, in main
+    syn=synthetic(c,s);print('synthetic passed',syn['plane_initial_mean_3d_error'],syn['plane_final_mean_3d_error'],flush=True)
+        ^^^^^^^^^^^^^^
+  File "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/pointmap_refinement/P2/run.py", line 67, in synthetic
+    final=history[-1]['mean_3d_error'];assert final<initial*.2,(initial,final)
+                                              ^^^^^^^^^^^^^^^^
+AssertionError: (0.20435449303474254, 0.25252768960882466)

@@ -1,0 +1,71 @@
+{
+  "plane_xyz_finite_differences": [
+    {
+      "point": 0,
+      "epsilon": 1e-05,
+      "autograd": [
+        0.002546911259764482,
+        -0.0002085921754250342,
+        0.0009271562423549033
+      ],
+      "finite_difference": [
+        0.002546911227903868,
+        -0.00020859220092308767,
+        0.000927156239369925
+      ],
+      "max_abs_error": 3.1860613973477836e-11,
+      "passed": true
+    },
+    {
+      "point": 40,
+      "epsilon": 1e-05,
+      "autograd": [
+        0.0004057061522910047,
+        9.136306881666007e-05,
+        6.253757516486264e-05
+      ],
+      "finite_difference": [
+        0.0004057061461846915,
+        9.136307182262998e-05,
+        6.253757512926851e-05
+      ],
+      "max_abs_error": 6.106313208981834e-12,
+      "passed": true
+    },
+    {
+      "point": 80,
+      "epsilon": 1e-05,
+      "autograd": [
+        0.0006463943202474202,
+        -7.892282365227569e-06,
+        -5.1879875687997385e-05
+      ],
+      "finite_difference": [
+        0.000646394322594522,
+        -7.892277033728216e-06,
+        -5.1879875975725444e-05
+      ],
+      "max_abs_error": 5.331499352989751e-12,
+      "passed": true
+    }
+  ],
+  "visibility_threshold_sweep": [
+    {
+      "back_z": 2.0599,
+      "blue_max": 0.4006822292095564
+    },
+    {
+      "back_z": 2.06,
+      "blue_max": 0.4006822292095564
+    },
+    {
+      "back_z": 2.0601,
+      "blue_max": 0.0
+    }
+  ],
+  "hard_boundary_derivative_valid": false,
+  "render_reload": "passed",
+  "plane_initial_3d_error": 0.20435449303474254,
+  "plane_final_3d_error": 3.0335383961739956e-06,
+  "scope": "smooth region checks passed; hard visibility transition remains discontinuous"
+}

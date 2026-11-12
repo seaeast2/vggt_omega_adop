@@ -1,0 +1,49 @@
+{
+  "selected_points": 36864,
+  "source_total": 589824,
+  "stride": 4,
+  "render_hw": [
+    96,
+    128
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "coverage_fraction": 0.822021484375,
+      "fixed_initial_mask_pixels": 10101,
+      "mse_initial_mask": 0.017526132985949516,
+      "psnr_initial_mask": 17.56313897261948,
+      "psnr_all_pixels": 11.830239521155923,
+      "render_seconds": 0.06104722400777973,
+      "xyz_gradient_norm": 0.10621483623981476,
+      "gradient_nonzero_points": 18632
+    },
+    {
+      "frame": 1,
+      "coverage_fraction": 0.8091634114583334,
+      "fixed_initial_mask_pixels": 9943,
+      "mse_initial_mask": 0.01963409222662449,
+      "psnr_initial_mask": 17.069891733383777,
+      "psnr_all_pixels": 11.544231006936759,
+      "render_seconds": 0.0010613100021146238,
+      "xyz_gradient_norm": 0.10307445377111435,
+      "gradient_nonzero_points": 22447
+    },
+    {
+      "frame": 2,
+      "coverage_fraction": 0.758056640625,
+      "fixed_initial_mask_pixels": 9315,
+      "mse_initial_mask": 0.022623715922236443,
+      "psnr_initial_mask": 16.454360611266406,
+      "psnr_all_pixels": 10.197270786869627,
+      "render_seconds": 0.0007456560124410316,
+      "xyz_gradient_norm": 0.10853224992752075,
+      "gradient_nonzero_points": 19583
+    }
+  ],
+  "peak_allocated_bytes": 51098112,
+  "peak_reserved_bytes": 62914560,
+  "real_geometry_updated": false,
+  "gt_accuracy_evaluated": false,
+  "interpretation": "self-view RGB diagnostic with fixed initial masks; no heldout or geometry improvement claim"
+}

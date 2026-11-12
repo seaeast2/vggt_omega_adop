@@ -897,12 +897,14 @@ Phase는 구현 순서이며 실험코드와 다르다. Phase 0은 P0, Phase 1�
 
 ### Phase 2. Renderer 최소 기능
 
-- [ ] PyTorch3D 설치/동작 또는 최소 Soft Point Splat 대안 구현.
-- [ ] 고정 Point Cloud의 RGB + Depth + Coverage 출력.
-- [ ] 합성 점·평면의 XY, Z Gradient 유한차분 검증.
-- [ ] 계산 불가 지점·가림 경계의 Gradient와 마스크 기록.
+- [x] PyTorch3D 설치/동작 또는 최소 Soft Point Splat 대안 구현.
+- [x] 고정 Point Cloud의 RGB + Depth + Coverage 출력.
+- [x] 합성 점·평면의 XY, Z Gradient 유한차분 검증.
+- [x] 계산 불가 지점·가림 경계의 Gradient와 마스크 기록.
 
 **완료 기준:** 두 카메라 합성 장면에서 3D 이동 방향을 일관되게 회복. 값만 내려가고 3D 오차가 남는 경우 원인 분석.
+
+**P2 완료 기록(2026-11-12):** 001의 hard visibility 평면 최적화는 실패하여 보존했다. 002에서는 가림 선택을 분리한 합성 평면의 평균 3D 오차 0.204354→0.000003034, 단일 점·평면의 유한차분 검사를 통과했다. E0에서 선택한 36,864점의 3시점 RGB·Depth·Coverage 및 유한한 위치 Gradient를 확인했다. 실제 좌표 최적화와 GT 정확도 평가는 미실행이며 hard visibility 경계는 불연속이다. [P2 보고서](experiments/pointmap_refinement/P2/tum-freiburg1_desk-P2-20261112-002/report.md).
 
 ### Phase 3. 공유점 융합·가시성
 

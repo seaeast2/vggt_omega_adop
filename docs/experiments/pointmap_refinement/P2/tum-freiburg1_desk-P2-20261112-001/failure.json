@@ -1,0 +1,6 @@
+{
+  "plane_initial_mean_3d_error": 0.20435449303474254,
+  "plane_final_mean_3d_error": 0.25252768960882466,
+  "criterion_final_below": 0.04087089860694851,
+  "failure": "plane geometry recovery failed with hard front-layer gating"
+}
