@@ -1,0 +1,16 @@
+{
+  "photometric_improved_with_coverage": false,
+  "criteria": {
+    "positive_selected_step": false,
+    "photo_reduction": false,
+    "native_initial_coverage_preserved": true,
+    "fixed_train_coverage_preserved": true
+  },
+  "photo_fraction_reduction": 0.0,
+  "native_initial_coverage_drop": 0.0,
+  "fixed_train_coverage_drop": 0.0,
+  "geometry_accuracy_evaluated": false,
+  "GT_used_in_checkpoint_selection": false,
+  "next_action": "report paired photometric/coverage and qualitative evidence; do not interpret RGB gain as geometry accuracy",
+  "scope": "one three-frame group; no heldout camera; same-input rendering diagnostic only"
+}

@@ -1,0 +1,449 @@
+{
+  "status": "completed",
+  "experiment_code": "E3e",
+  "run_id": "hkairport01-E3e-20261112-001",
+  "started_at": "2026-11-12T22:33:54.481180+09:00",
+  "ended_at": "2026-11-12T22:34:05.292735+09:00",
+  "completion_criteria_met": true,
+  "inputs": [
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/manifest.json",
+      "bytes": 12133,
+      "sha256": "80c26445c302d804ec8a7dcd36b49f10c69b789e46217c41ccd5ed3457cffcb1"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/shared_map.npz",
+      "bytes": 21060704,
+      "sha256": "54311182baff84b31c1d14353cd68dfe467488a2545e57d0340ff76a819204f5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/cameras_targets.npz",
+      "bytes": 2656135,
+      "sha256": "01ec9c21777af2702ab23361d6f6d69fe3c23d7c9febb1ad0b1a7eaf0dd99c61"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/initial/training_contract.npz",
+      "bytes": 1150,
+      "sha256": "b2fc785936d041a22c896de1ac15e886fa3b3105389b69e011eb6a3c98c314f1"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 6944360,
+      "sha256": "1a41d0be481e244afca2cf664a090e837dc4dcf75992da38e1e5a3649d91abbe"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/frames.json",
+      "bytes": 5296,
+      "sha256": "5e6fcb83aaf5d43db3cebbbbc3e3b21b5841ed91c3c5d778641e1cee50974e95"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/evaluation/gt_reference_audit.json",
+      "bytes": 1132,
+      "sha256": "cd237329cc2384a066275e05f3693990e089d666e0fbf9cadee9fe9917cad14d"
+    }
+  ],
+  "gt_inputs": [],
+  "photometric_improved": false,
+  "artifacts": [
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0000.npz",
+      "bytes": 267626,
+      "sha256": "38a64ca7c706af5acd55687afe3d348858f9722156e89acd182d29f1558b7ccc"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0000.pt",
+      "bytes": 711859,
+      "sha256": "1d840c56035979a734f9fbce5cca7ffdc83ca11bda71c98dd7281b7a856f77da"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0010.npz",
+      "bytes": 899654,
+      "sha256": "03584f63638aa9d172593b499673b65a2474a9fd3f97400f884b366a5dabb0cb"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0010.pt",
+      "bytes": 2121261,
+      "sha256": "5f17c5f98701367d9d9158178371c6886eb71ab0ea93cc16003bc2affac063c6"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0020.npz",
+      "bytes": 900332,
+      "sha256": "9a823708261b88842d23d77186f4484ea241dcd45fd92295cecb963369ca371c"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0020.pt",
+      "bytes": 2121261,
+      "sha256": "62a082fe87bded0c44b0ea63593f695c6c5eab256f7f21a81855dfad0cd8471e"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0040.npz",
+      "bytes": 907074,
+      "sha256": "e388d66f68866ae45597a0d4cbc26cea412c0e8999454a1538580cf248a47310"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0040.pt",
+      "bytes": 2121261,
+      "sha256": "666f1e0147f528dd435306e8a6af840176561dffa2e71e2d781fe9946ef9fdf5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0060.npz",
+      "bytes": 863689,
+      "sha256": "5165bd084784f4599112d56858a429a5a34455e2b19088c947d03b7ca5a3107b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0060.pt",
+      "bytes": 2121261,
+      "sha256": "f969968274e1c185f817fc1584e9488069ccafc644aab9048a8d1c4e27f15a59"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0080.npz",
+      "bytes": 859092,
+      "sha256": "2646d13de28bb50aeb0b6333c4a719dfd3dfcacd0f04014605854754aa8aee0b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0080.pt",
+      "bytes": 2121261,
+      "sha256": "e487b448a81a9431fd5b62019f8808ba4db3b325064bc13b8c3417ffe6984276"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0100.npz",
+      "bytes": 858553,
+      "sha256": "20be245ed91a18b77e4306928b05a1b0cd06425038453a78a96ec1517ebfd545"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0100.pt",
+      "bytes": 2121261,
+      "sha256": "e40b093329addf2b232b3a9450b76ae241b78c73f1ab64058e75896526d3a45a"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0120.npz",
+      "bytes": 858715,
+      "sha256": "b245d7e8a4c98633e49721eed4ac0edb1b359de559b03d696e37d37136b0b23f"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0120.pt",
+      "bytes": 2121261,
+      "sha256": "6132cce70e9eb36af81a23fb0e803dc60df190639760ecdd514d082b8448dc31"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0140.npz",
+      "bytes": 858591,
+      "sha256": "7b676cf2daaa07a1f688f306d025fbf9b11d5b2ebf8afe88a598faf0efb5dbb7"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0140.pt",
+      "bytes": 2121261,
+      "sha256": "3a164c168001e1a300a03358f1e8641b04b86d5db31c7a6e8e9acda200568de5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0160.npz",
+      "bytes": 858578,
+      "sha256": "0baf1e5727dd5c8edb75c58eed9f4326e0b4086d3c9a34c6b85fb48d4b28a172"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0160.pt",
+      "bytes": 2121261,
+      "sha256": "904e4bbab3ced6b93d6dd59fb1b7f25965b5b0dd5067eb22d9ea54a050c230c6"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0180.npz",
+      "bytes": 858621,
+      "sha256": "ef7c9a3ef6420ee9bd14f2be9586dd995c511e96a44028fd48fd3644cb741ecf"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0180.pt",
+      "bytes": 2121261,
+      "sha256": "eb95ee063556a085a1c92522cc829b69e7eb031f0021611490878b7c129e026b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0200.npz",
+      "bytes": 858676,
+      "sha256": "d2c4f73bba67e6960b972ec145bf2863a6088e0c3debace9b34bc1d1c8dcc24b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/checkpoints/step_0200.pt",
+      "bytes": 2121261,
+      "sha256": "f3d2bf6ebb975a76f6755d1dd61d99d08c66fdfde0994ecb306fa23740b726e0"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/figures/rgb_comparison.png",
+      "bytes": 2162680,
+      "sha256": "60280fa2e5d1a7601ebf0a6eafdb023c82d4918a568fae41a7179f7cc96243a3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/figures/rgb_native_comparison.png",
+      "bytes": 5743526,
+      "sha256": "580fca816a37517ad3d6ba87e2db916cc759f63922f48cad7dca14c8c555b6d2"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/figures/source_comparison.png",
+      "bytes": 1195504,
+      "sha256": "eed345d50101d0645426719f156f8605c228861e1aef389891cf86df05f982ec"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/initial/cameras_targets_masks.npz",
+      "bytes": 2657263,
+      "sha256": "669368e77f1c75101b39fd81e5d71b655216fbafad4615d1bae962cf5c9cef48"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/initial/shared_map.npz",
+      "bytes": 21060704,
+      "sha256": "54311182baff84b31c1d14353cd68dfe467488a2545e57d0340ff76a819204f5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/initial_owner.ply",
+      "bytes": 9718370,
+      "sha256": "37f9df7a5c02c91691a8ace4cabe52815154166ae4b4ed1c24dc0e52d0131156"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/initial_source_mix.ply",
+      "bytes": 9718370,
+      "sha256": "f59659b44275ba10b4db979e455fb5120410d3e1ffca1db5e45a6b50b054aa5d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/last_owner.ply",
+      "bytes": 9718370,
+      "sha256": "26c6c0f16682dc585ce04c6e3b06aae8b64bd54236998475ca975eb44963768d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/last_source_mix.ply",
+      "bytes": 9718370,
+      "sha256": "1ced2b9e313920eecbbfe0ed564bca1995aa124e2572f8d9fb4d15482f9c8e96"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/selected_owner.ply",
+      "bytes": 9718370,
+      "sha256": "37f9df7a5c02c91691a8ace4cabe52815154166ae4b4ed1c24dc0e52d0131156"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/selected_source_mix.ply",
+      "bytes": 9718370,
+      "sha256": "f59659b44275ba10b4db979e455fb5120410d3e1ffca1db5e45a6b50b054aa5d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/shared_map_initial.npz",
+      "bytes": 27685461,
+      "sha256": "52baa1e343b0aaf1b7eda687f1f25094967d4903d986c9ec81f5e52656316fc8"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/shared_map_last.npz",
+      "bytes": 28454822,
+      "sha256": "353d04f5b25c94cf1f0a0888648e49c447bf681d82222608c6b428e0b8c35666"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/maps/shared_map_selected.npz",
+      "bytes": 27685461,
+      "sha256": "52baa1e343b0aaf1b7eda687f1f25094967d4903d986c9ec81f5e52656316fc8"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_0.npz",
+      "bytes": 292889,
+      "sha256": "750038860ca1b9d20601b56355c8e08c55c32045ebd17f471a27cdfb406da057"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_1.npz",
+      "bytes": 292316,
+      "sha256": "96bfef31a87172f8a72fd675429838b81f629413f1d82b6fd17c0622de7dda2d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_2.npz",
+      "bytes": 288290,
+      "sha256": "a07f69f06a2c68606623b97643c987dc5b72dce74d8e1fb8b8776e3b78335796"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_native_rgb_0.png",
+      "bytes": 479753,
+      "sha256": "df7b4434c4093965934d427848894d63dd8877c4a4af5b334881b57b2a95da40"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_native_rgb_1.png",
+      "bytes": 467991,
+      "sha256": "c8f2b4bcbf47c969484685c1805ffae844ee5a08601c6e54cb200c4dd1bb497d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/initial_native_rgb_2.png",
+      "bytes": 435080,
+      "sha256": "93eae5dd5d3887cb7bfb640a404556cbff4b038b6d73d9a08acbe159bb940f33"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_0.npz",
+      "bytes": 256590,
+      "sha256": "0814610f80b2048bbd37aa321f4f2d790aa82d64c123b6463842ced168ac1916"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_1.npz",
+      "bytes": 256033,
+      "sha256": "10f33667a19deebf3a8da5dc1be7736445447cb87075cee6eb4ae01f697d16fb"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_2.npz",
+      "bytes": 255502,
+      "sha256": "293f67fed29ffc146e3987613f6ebd71c47884da449021aa59f2d5df4809aed7"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_native_rgb_0.png",
+      "bytes": 539292,
+      "sha256": "d1b2886dad3984dac9e657d873fa59bcee444d799ed64ca3fcb726a5b753b8ba"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_native_rgb_1.png",
+      "bytes": 531111,
+      "sha256": "4f3653169bfd891a792f74be65ad5326a77ef8b323105999ca6e3db594fc4be5"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/last_native_rgb_2.png",
+      "bytes": 447762,
+      "sha256": "dcdfe3de4170eedb8cc2177f5ac213148e5ce01a74d2b127eca11b5bec7a6b8b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/native_depth_initial.npz",
+      "bytes": 4415371,
+      "sha256": "67c05733b43c94a26e42f8a821575859ef264634ef04c30e95d44f619ef649b3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/native_depth_last.npz",
+      "bytes": 4315110,
+      "sha256": "c090020db019d2c86c562f16f7b79905f185a7808f1cee9badb292b8e840c515"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/native_depth_selected.npz",
+      "bytes": 4415371,
+      "sha256": "67c05733b43c94a26e42f8a821575859ef264634ef04c30e95d44f619ef649b3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_0.npz",
+      "bytes": 292915,
+      "sha256": "24cd31a0e681db69dee158d33dcf07bf1929121b88423424b40bdbe9d671a569"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_1.npz",
+      "bytes": 292235,
+      "sha256": "d2146ab88fdf715729a860c1533653f354e797c5ed84bf7ed7673acf44ae9397"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_2.npz",
+      "bytes": 288280,
+      "sha256": "de04cf3fee6cc0ea0c528bb5fe2579867e3c9e78dada26ac61fc90d4c148c6e6"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_native_rgb_0.png",
+      "bytes": 479752,
+      "sha256": "1621609f4b8a9be155896fba039ae72f165be4ef8f9fa2565b91c1688433dbc7"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_native_rgb_1.png",
+      "bytes": 467987,
+      "sha256": "93852d133c7d895f0567cbd45271f60acfc9a1c910921863bceb5e775930109a"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/renders/selected_native_rgb_2.png",
+      "bytes": 435080,
+      "sha256": "0eb1ba8a1200dcf350670f71c65b9e25c08b84d07385440bc919b1cc0013f6b9"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/README.md",
+      "bytes": 2268,
+      "sha256": "f7c096b752d0d7d7936e5ec3e73dc00a15810db24685cd150e12d0ab5736487d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/amtown01.json",
+      "bytes": 3101,
+      "sha256": "4e272516169975356b4f28a69f79ea38ac48e51be6dfb88a995f840652d6dd6d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/geometry.py",
+      "bytes": 7942,
+      "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/hkairport01.json",
+      "bytes": 3110,
+      "sha256": "60c2924c713d360a86e42da380fd833757d28b7183fbc5713fd7c5377aa8fe1b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/renderer.py",
+      "bytes": 5552,
+      "sha256": "945d8d6ec2b47b8fa691d621d2728f943ebd3d5406718914e6a5720d3998f9c3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/run.py",
+      "bytes": 20461,
+      "sha256": "352b320a4d28b181717b62114146a8a61b90899c46119e503ff41f18bd877a48"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/config_resolved.json",
+      "bytes": 3154,
+      "sha256": "a2bf1be63beeb332bac5732cb0585ef5fdd26df235573b69a754af07f58d0738"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/environment.json",
+      "bytes": 2115,
+      "sha256": "0a1e104795357beeb95f5f22cba1baf007e33ca981e7c352fa189f2cd6301cc3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/checkpoint_history.json",
+      "bytes": 7644,
+      "sha256": "d96cdd1ece460295ae8132add9dcbfdde976254a81b8a274c6815e92cce59c9e"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/controlled_checks.json",
+      "bytes": 638,
+      "sha256": "684d441b1dcc1aa810ec6f37a8db14a5c4530b035089fe7c79f4260120fc72a4"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/decision.json",
+      "bytes": 643,
+      "sha256": "1492d9ad2f2e8f7ec77d4a590ca9b802c6ffc3c0007b8761ab376d6c5890135c"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/displacement.json",
+      "bytes": 690,
+      "sha256": "bd3a8b6007f2d4378074d05b0743447ea74880c485189a507e6deec760766340"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/gt_reference_audit.json",
+      "bytes": 1132,
+      "sha256": "cd237329cc2384a066275e05f3693990e089d666e0fbf9cadee9fe9917cad14d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/native_coverage.json",
+      "bytes": 670,
+      "sha256": "a9f73fe9ab8b4e4e60c6cac01a8597ec401f2bef44426c43e67d1fe56c8f94de"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/real_direction_diagnostic.json",
+      "bytes": 944,
+      "sha256": "9b68ea4a8cee9182b3a77eb7e25c81f3837854ea49464d43eda057e8b8950d0a"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/step_log.json",
+      "bytes": 25742,
+      "sha256": "9a1dfe886577bc948eb554420b8692153cc3ab4f2a6bf4cb452f45c19dfae421"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/training.json",
+      "bytes": 314,
+      "sha256": "229279a4829d2c548295bf642ed7efc6908494275cdccce2776af87381921f83"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/evaluation/verification.json",
+      "bytes": 410,
+      "sha256": "6c84e8bc3c08af57a32a8643d549d563e174b87aec570e54bff3fb0ca1a0cac4"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/logs/run.log",
+      "bytes": 8420,
+      "sha256": "40837fc9f7cf2ef83627e7e82db4b435dbc03aef553cf15b5e9beeb476470657"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/progress.md",
+      "bytes": 1088,
+      "sha256": "f67bf185e231bf1bd00364dc740cf325c66b38dcb6455717f5e4748c7e1fb48b"
+    }
+  ]
+}

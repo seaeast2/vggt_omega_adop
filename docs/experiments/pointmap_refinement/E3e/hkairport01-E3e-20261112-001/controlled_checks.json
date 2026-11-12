@@ -1,0 +1,25 @@
+{
+  "one_pixel_no_spatial_spread": true,
+  "fuzzy_1_percent_and_near_mean": true,
+  "far_depth_and_outside_rejected": true,
+  "neighbor_insertion_cases": [
+    {
+      "neighbor_Z": 2.0,
+      "expected_du": 0.16666666666666666,
+      "actual_du": 0.16666666666666666
+    },
+    {
+      "neighbor_Z": 0.5,
+      "expected_du": 0.0,
+      "actual_du": 0.0
+    },
+    {
+      "neighbor_Z": 1.005,
+      "expected_du": 0.08333333333333333,
+      "actual_du": 0.08333333333333333
+    }
+  ],
+  "perspective_chain_rule": true,
+  "fixed_color_no_gradient": true,
+  "infinitesimal_forward_finite_difference_not_a_surrogate_validity_test": true
+}

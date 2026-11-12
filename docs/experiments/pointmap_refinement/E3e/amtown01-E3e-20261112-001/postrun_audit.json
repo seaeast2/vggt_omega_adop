@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "sealed_artifacts_verified": 80,
+  "inputs_verified": 7,
+  "GT_inputs": 0,
+  "CSR_partition_all_663552_observations": true,
+  "all_metadata_RGB_and_inactive_fixed": true,
+  "selected_equals_initial": true,
+  "last_owner_projection_shift_max_native_pixels": 6.399701854288741e-08,
+  "last_observed_nonowner_pixel_shift": {
+    "pairs": 252483,
+    "mean": 0.32603243264277365,
+    "median": 0.21001426252560249,
+    "p95": 1.2950200410000912,
+    "max": 1.5356106652739665
+  },
+  "comparison_left_column_exact_128x108_then_4x_nearest": true
+}

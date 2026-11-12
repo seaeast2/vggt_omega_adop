@@ -1,0 +1,51 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "torch": "2.15.0+cu132",
+  "cuda_runtime": "13.2",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "driver_snapshot": "NVIDIA GeForce RTX 5060, 8151 MiB, 400 MiB, 595.99.02",
+  "execution_context": "host GPU outside sandbox",
+  "wall_seconds": 10.8098562600062,
+  "peak_allocated_bytes": 66959872,
+  "peak_reserved_bytes": 119537664,
+  "project_commit_before_run": "25d9bb2333b8f07afbee2af9e3228527a48e1b4f",
+  "source_files": [
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/README.md",
+      "bytes": 2268,
+      "sha256": "f7c096b752d0d7d7936e5ec3e73dc00a15810db24685cd150e12d0ab5736487d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/amtown01.json",
+      "bytes": 3101,
+      "sha256": "4e272516169975356b4f28a69f79ea38ac48e51be6dfb88a995f840652d6dd6d"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/geometry.py",
+      "bytes": 7942,
+      "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/hkairport01.json",
+      "bytes": 3110,
+      "sha256": "60c2924c713d360a86e42da380fd833757d28b7183fbc5713fd7c5377aa8fe1b"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/renderer.py",
+      "bytes": 5552,
+      "sha256": "945d8d6ec2b47b8fa691d621d2728f943ebd3d5406718914e6a5720d3998f9c3"
+    },
+    {
+      "path": "results/pointmap_refinement/hkairport01-E3e-20261112-001/stages/E3e/artifacts/source/run.py",
+      "bytes": 20461,
+      "sha256": "352b320a4d28b181717b62114146a8a61b90899c46119e503ff41f18bd877a48"
+    }
+  ]
+}

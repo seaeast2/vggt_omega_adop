@@ -1,0 +1,35 @@
+[
+  {
+    "state": "initial",
+    "fixed_initial_pixels": 639866,
+    "covered_fixed_pixels": 639866,
+    "coverage_of_initial": 1.0,
+    "coverage_by_camera": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "state": "selected",
+    "fixed_initial_pixels": 639866,
+    "covered_fixed_pixels": 639866,
+    "coverage_of_initial": 1.0,
+    "coverage_by_camera": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "state": "last",
+    "fixed_initial_pixels": 639866,
+    "covered_fixed_pixels": 590971,
+    "coverage_of_initial": 0.9235855632273007,
+    "coverage_by_camera": [
+      0.8795420463721306,
+      0.8869968893441068,
+      0.9999909470310788
+    ]
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "step": 0,
+    "photo_loss": 0.028672800709803895,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 26.29994784907579,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 24.28051725407492,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 26.443869037251247,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.0,
+    "points_at_bound": 0
+  },
+  {
+    "step": 10,
+    "photo_loss": 0.033386534700791046,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 25.154514259940527,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 22.97266642730502,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 25.445228132803273,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.010124187916517258,
+    "points_at_bound": 0
+  },
+  {
+    "step": 20,
+    "photo_loss": 0.037576025972763695,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 24.19028459832161,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 22.337648541462226,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 24.209352944142026,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.02092961221933365,
+    "points_at_bound": 0
+  },
+  {
+    "step": 40,
+    "photo_loss": 0.041031970332066216,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.56967026530353,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 22.048880768991847,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.411543159648076,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.04607049748301506,
+    "points_at_bound": 0
+  },
+  {
+    "step": 60,
+    "photo_loss": 0.04176221167047818,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.37710583203912,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 22.034056905386254,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.355692158204974,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 16265
+  },
+  {
+    "step": 80,
+    "photo_loss": 0.042016261567672096,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.3047719415293,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.939712333173237,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.337054116516363,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18185
+  },
+  {
+    "step": 100,
+    "photo_loss": 0.04209862152735392,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.31821262113791,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.923901964775897,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.371179783071327,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18688
+  },
+  {
+    "step": 120,
+    "photo_loss": 0.04220794141292572,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.253387303107505,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.924434266608834,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.38909389913131,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18851
+  },
+  {
+    "step": 140,
+    "photo_loss": 0.042348487923542656,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.219690369998077,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.91831673101836,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.362675174625977,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18880
+  },
+  {
+    "step": 160,
+    "photo_loss": 0.04232962056994438,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.18053391629009,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.924342605252715,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.38438172388045,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18892
+  },
+  {
+    "step": 180,
+    "photo_loss": 0.042386215180158615,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.112625297673233,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.931188508985887,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.35590632060677,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18949
+  },
+  {
+    "step": 200,
+    "photo_loss": 0.04241728037595749,
+    "frames": [
+      {
+        "camera": 0,
+        "psnr_fixed_train_mask": 23.089530542866193,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 1,
+        "psnr_fixed_train_mask": 21.932597676010275,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      },
+      {
+        "camera": 2,
+        "psnr_fixed_train_mask": 23.374765937079445,
+        "coverage_fixed_train_mask": 1.0,
+        "coverage_all": 1.0
+      }
+    ],
+    "delta_abs_max": 0.05000000074505806,
+    "points_at_bound": 18967
+  }
+]

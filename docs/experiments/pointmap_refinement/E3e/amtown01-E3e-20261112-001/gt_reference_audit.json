@@ -1,0 +1,35 @@
+{
+  "matched_lidar_and_pose_metadata_present": true,
+  "validated_depth_GT_available": false,
+  "used_for_fusion_or_active_or_RGB_targets": false,
+  "reason": "LiDAR XYZ frame and distortion/rectification convention of interval5 images not independently verified; metadata T4x4 pose direction unconfirmed. Do not fit GT depth scale or claim geometric accuracy.",
+  "official_calibration_source_commit": "909250d14a4460b2a62ea25f08f12ce6367427ac",
+  "calibration_mapping": "HKairport01 -> HK_GNSS_calibration; AMtown01 -> AMtown_calibration",
+  "author_issue_without_confirmation": "https://github.com/sijieaaa/UAVScenes/issues/18",
+  "metadata_motion_proxy": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "metadata_translation_difference": 1.1175763861354515,
+      "seconds": 1.9990520477294922
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "metadata_translation_difference": 5.291184247453157,
+      "seconds": 2.0002293586730957
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "metadata_translation_difference": 6.408167086993705,
+      "seconds": 3.999281406402588
+    }
+  ]
+}

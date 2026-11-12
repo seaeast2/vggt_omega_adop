@@ -1,0 +1,11 @@
+{
+  "steps": 200,
+  "selected_step": 0,
+  "initial_photo_loss": 0.028672800709803895,
+  "selected_photo_loss": 0.028672800709803895,
+  "last_photo_loss": 0.04241728037595749,
+  "points": 340732,
+  "active_points": 168315,
+  "optimization_seconds": 2.483453773005749,
+  "GT_used_for_training_or_selection": false
+}

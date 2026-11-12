@@ -1,0 +1,32 @@
+{
+  "gradient_norm": 0.00030394585337489843,
+  "nonzero_gradient_parameters": 158305,
+  "surrogate_direction_inner_product": -0.027489595115184784,
+  "probes": [
+    {
+      "epsilon": 0.001,
+      "plus_loss": 0.028714044019579887,
+      "minus_loss": 0.028778064996004105,
+      "initial_loss": 0.028672801330685616,
+      "actual_plus_decreases": false,
+      "central_secant": -0.03201048821210861
+    },
+    {
+      "epsilon": 0.01,
+      "plus_loss": 0.03414340876042843,
+      "minus_loss": 0.03597541432827711,
+      "initial_loss": 0.028672801330685616,
+      "actual_plus_decreases": false,
+      "central_secant": -0.09160027839243412
+    },
+    {
+      "epsilon": 0.05,
+      "plus_loss": 0.037517729215323925,
+      "minus_loss": 0.042791398242115974,
+      "initial_loss": 0.028672801330685616,
+      "actual_plus_decreases": false,
+      "central_secant": -0.052736690267920494
+    }
+  ],
+  "exact_forward_derivative_claimed": false
+}
