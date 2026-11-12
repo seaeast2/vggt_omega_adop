@@ -1,0 +1,148 @@
+{
+  "source_observations": 589824,
+  "shared_points": 510427,
+  "point_reduction_fraction": 0.13461134168836808,
+  "groups_by_observation_count": {
+    "1": 439425,
+    "2": 62607,
+    "3": 8395
+  },
+  "observations_in_multi_groups": 150399,
+  "spatial_radius_model_units": 0.009254972636699678,
+  "depth_absolute_model_units": 0.0018509945273399353,
+  "candidate_stats": [
+    {
+      "frames": [
+        0,
+        1
+      ],
+      "in_frustum_candidates": 125730,
+      "accepted_pair_edges": 49427,
+      "independent_gate_pass_counts": [
+        118125,
+        55544,
+        84540,
+        99879,
+        83288,
+        96741
+      ]
+    },
+    {
+      "frames": [
+        0,
+        2
+      ],
+      "in_frustum_candidates": 58980,
+      "accepted_pair_edges": 21193,
+      "independent_gate_pass_counts": [
+        55505,
+        26103,
+        39955,
+        29500,
+        39335,
+        44246
+      ]
+    },
+    {
+      "frames": [
+        1,
+        2
+      ],
+      "in_frustum_candidates": 121509,
+      "accepted_pair_edges": 42058,
+      "independent_gate_pass_counts": [
+        114155,
+        48065,
+        85841,
+        103778,
+        85309,
+        95233
+      ]
+    }
+  ],
+  "grouping": {
+    "accepted_unions": 79397,
+    "rejected_frame_conflicts": 9959,
+    "rejected_nonclique_unions": 14927
+  },
+  "displacement_model_units": {
+    "count": 589824,
+    "mean": 0.0004415644908387945,
+    "median": 0.0,
+    "p95": 0.0027835841319564653,
+    "max": 0.007662192908590788
+  },
+  "parallax_multi_max_degrees": {
+    "count": 71002,
+    "mean": 4.9432036886192465,
+    "median": 4.080256591992784,
+    "p95": 9.44663693099645,
+    "max": 10.221021485793273
+  },
+  "visibility_sensitivity": [
+    {
+      "camera": 0,
+      "relative_threshold": 0.01,
+      "visible_points": 181973
+    },
+    {
+      "camera": 0,
+      "relative_threshold": 0.03,
+      "visible_points": 216418
+    },
+    {
+      "camera": 0,
+      "relative_threshold": 0.05,
+      "visible_points": 223615
+    },
+    {
+      "camera": 1,
+      "relative_threshold": 0.01,
+      "visible_points": 199959
+    },
+    {
+      "camera": 1,
+      "relative_threshold": 0.03,
+      "visible_points": 264246
+    },
+    {
+      "camera": 1,
+      "relative_threshold": 0.05,
+      "visible_points": 273459
+    },
+    {
+      "camera": 2,
+      "relative_threshold": 0.01,
+      "visible_points": 190140
+    },
+    {
+      "camera": 2,
+      "relative_threshold": 0.03,
+      "visible_points": 241681
+    },
+    {
+      "camera": 2,
+      "relative_threshold": 0.05,
+      "visible_points": 245910
+    }
+  ],
+  "visible_in_at_least_two": 243163,
+  "multi_groups_visible_in_all_source_cameras": 67906,
+  "confidence_quantile_ranges": [
+    [
+      2.3965134143829347,
+      13.643568134307865
+    ],
+    [
+      1.426243007183075,
+      12.242836284637454
+    ],
+    [
+      1.3291521549224854,
+      12.436067008972168
+    ]
+  ],
+  "position_optimization": false,
+  "fusion_performed": true,
+  "gt_accuracy_evaluated": false
+}

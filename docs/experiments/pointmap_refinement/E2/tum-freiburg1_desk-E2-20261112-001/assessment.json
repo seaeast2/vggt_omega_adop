@@ -1,0 +1,8 @@
+{
+  "execution": "completed",
+  "representation": "shared_points_created_and_verified",
+  "quality_gain": "not_established",
+  "fixed_e1_mask_rgb": "decreased_in_all_three_views",
+  "gt_accuracy": "not_evaluated",
+  "position_optimization": false
+}

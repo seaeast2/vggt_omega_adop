@@ -833,6 +833,8 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 
 **E1 완료 기록(2026-11-12):** `tum-freiburg1_desk-E1-20261112-001`에서 전체 F0 589,824점을 유지해 6개 방향 깊이 잔차, projected layer spread, voxel co-occupancy와 all/own/cross RGB를 평가했다. 경계 제외 타 시점 잔차 중앙값은 1.01~1.39%, 3% 초과 비율은 14.1~26.5%였다. 가림·다른 표면·픽셀 이산화가 포함된 예측 간 진단이며 GT 오류나 실제 표면 두께로 단정하지 않는다. 원본 F0와 초기 평가 마스크를 E2 비교용으로 고정했다. [E1 보고서](experiments/pointmap_refinement/E1/tum-freiburg1_desk-E1-20261112-001/report.md).
 
+**E2 완료 기록(2026-11-12):** `tum-freiburg1_desk-E2-20261112-001`에서 원본 관측 589,824개를 CSR로 모두 보존하면서 F1 대표점 510,427개를 생성했다. 공간·왕복 투영·깊이·법선 gate, 고유 프레임·모든 쌍 제약과 가시성 검증을 통과했다. 고정 E1 마스크의 RGB PSNR은 약 0.10~0.24dB 낮아졌고, 기하 진단은 coverage 변화·동일 대표점의 구조적 일치를 포함하므로 실제 정확도 향상은 미확인이다. 원본 F0와 불리한 결과를 보존했다. [E2 보고서](experiments/pointmap_refinement/E2/tum-freiburg1_desk-E2-20261112-001/report.md).
+
 동일 실험의 세부 비교 조건은 `E3a`, `E3b`처럼 소문자 접미사를 사용하고, 실행 전에 해당 코드의 목적·변경 변수·비교 기준을 등록한다. 동일 조건의 장면·Seed·재실행은 새로운 Run ID로 구분한다. 등록된 코드의 의미를 바꾸어 과거 결과와 섞지 않는다.
 
 ### 13.1 제어 변수
@@ -912,11 +914,11 @@ Phase는 구현 순서이며 실험코드와 다르다. Phase 0은 P0, Phase 1�
 
 ### Phase 3. 공유점 융합·가시성
 
-- [ ] F0 단순 연결 Baseline.
-- [ ] F1 공간·Depth·재투영·Normal 기반 공유점 융합.
-- [ ] 관측 목록, owner, observation-count, parallax 저장.
-- [ ] Z-buffer/Depth Agreement 기반 visibility.
-- [ ] Mask 변화·중복 레이어·오탐 융합 시각화.
+- [x] F0 단순 연결 Baseline.
+- [x] F1 공간·Depth·재투영·Normal 기반 공유점 융합.
+- [x] 관측 목록, owner, observation-count, parallax 저장.
+- [x] Z-buffer/Depth Agreement 기반 visibility.
+- [x] Mask 변화·중복 레이어·융합 위험 진단 시각화(GT로 오탐 여부 확정은 미실행).
 
 **완료 기준:** 공유점이 단지 여러 프레임의 concatenation이 아니라 실제 관측 그룹을 갖고 있음을 디버그 뷰로 확인.
 

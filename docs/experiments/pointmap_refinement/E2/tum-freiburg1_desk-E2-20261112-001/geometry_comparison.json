@@ -1,0 +1,247 @@
+{
+  "pairs": [
+    {
+      "source": 1,
+      "target": 0,
+      "fixed_pixels": 103734,
+      "covered_after": 97112,
+      "missing_after": 6622,
+      "coverage_of_fixed": 0.9361636493338732,
+      "before_abs_relative": {
+        "count": 103734,
+        "mean": 0.018750720851353344,
+        "median": 0.010139257641629377,
+        "p95": 0.03791235103981107,
+        "max": 1.2019637687172553
+      },
+      "after_abs_relative_covered_only": {
+        "count": 97112,
+        "mean": 0.01889771681563002,
+        "median": 0.010802364776707287,
+        "p95": 0.03940280525538504,
+        "max": 1.2019637687172553
+      },
+      "before_disagreement_fraction": 0.1608055218154125,
+      "after_disagreement_covered_only": 0.17193549715792075,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "fixed_pixels": 47916,
+      "covered_after": 44443,
+      "missing_after": 3473,
+      "coverage_of_fixed": 0.9275189915685783,
+      "before_abs_relative": {
+        "count": 47916,
+        "mean": 0.024546494466837446,
+        "median": 0.010721034623880046,
+        "p95": 0.07267672694017314,
+        "max": 1.1121748630677295
+      },
+      "after_abs_relative_covered_only": {
+        "count": 44443,
+        "mean": 0.025443919972848755,
+        "median": 0.01149134315990048,
+        "p95": 0.07420706606251666,
+        "max": 1.1121748630677295
+      },
+      "before_disagreement_fraction": 0.2599340512563653,
+      "after_disagreement_covered_only": 0.2737888981391895,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "fixed_pixels": 103395,
+      "covered_after": 103207,
+      "missing_after": 188,
+      "coverage_of_fixed": 0.9981817302577494,
+      "before_abs_relative": {
+        "count": 103395,
+        "mean": 0.023041466072802354,
+        "median": 0.010138594047646271,
+        "p95": 0.04444838141316206,
+        "max": 1.2992162046353233
+      },
+      "after_abs_relative_covered_only": {
+        "count": 103207,
+        "mean": 0.022465431401464866,
+        "median": 0.0100603335443137,
+        "p95": 0.04454859317899014,
+        "max": 1.2992162046353233
+      },
+      "before_disagreement_fraction": 0.14064509889259635,
+      "after_disagreement_covered_only": 0.1409109847200287,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "fixed_pixels": 104520,
+      "covered_after": 102905,
+      "missing_after": 1615,
+      "coverage_of_fixed": 0.9845484117872177,
+      "before_abs_relative": {
+        "count": 104520,
+        "mean": 0.01920412948922871,
+        "median": 0.013469315486117999,
+        "p95": 0.044401430992998196,
+        "max": 1.0074021461744027
+      },
+      "after_abs_relative_covered_only": {
+        "count": 102905,
+        "mean": 0.019023681238052256,
+        "median": 0.013940111250368238,
+        "p95": 0.04472676329435132,
+        "max": 1.0074021461744023
+      },
+      "before_disagreement_fraction": 0.16001722158438578,
+      "after_disagreement_covered_only": 0.16252854574607647,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "fixed_pixels": 47558,
+      "covered_after": 46783,
+      "missing_after": 775,
+      "coverage_of_fixed": 0.9837041086673115,
+      "before_abs_relative": {
+        "count": 47558,
+        "mean": 0.028421613017035916,
+        "median": 0.010866856399252774,
+        "p95": 0.07325524318064337,
+        "max": 1.324736869372824
+      },
+      "after_abs_relative_covered_only": {
+        "count": 46783,
+        "mean": 0.02822052522152292,
+        "median": 0.010753589997102722,
+        "p95": 0.07357857332419167,
+        "max": 1.324736869372824
+      },
+      "before_disagreement_fraction": 0.2650868413305858,
+      "after_disagreement_covered_only": 0.2689652224098497,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "fixed_pixels": 104967,
+      "covered_after": 103334,
+      "missing_after": 1633,
+      "coverage_of_fixed": 0.9844427296197853,
+      "before_abs_relative": {
+        "count": 104967,
+        "mean": 0.019657165294617075,
+        "median": 0.013871111850672165,
+        "p95": 0.045888864963874704,
+        "max": 0.7401676418706699
+      },
+      "after_abs_relative_covered_only": {
+        "count": 103334,
+        "mean": 0.019312021459480834,
+        "median": 0.01432539110712109,
+        "p95": 0.046328684202447075,
+        "max": 0.7401676418706699
+      },
+      "before_disagreement_fraction": 0.16253679727914488,
+      "after_disagreement_covered_only": 0.16523119205682543,
+      "warning": "after residual excludes missing but missing counts explicitly retained; not a full fixed-mask accuracy score"
+    }
+  ],
+  "layers": [
+    {
+      "target": 0,
+      "fixed_pixels": 115179,
+      "after_two_view_pixels": 111123,
+      "missing_after": 4056,
+      "before_relative_spread": {
+        "count": 115179,
+        "mean": 0.02286132370029442,
+        "median": 0.011650075501158983,
+        "p95": 0.06639164656175787,
+        "max": 1.2019637685965703
+      },
+      "after_relative_spread_covered_only": {
+        "count": 111123,
+        "mean": 0.02185261214693384,
+        "median": 0.011350835044773225,
+        "p95": 0.06691227140613827,
+        "max": 1.2019637685965703
+      },
+      "same_shared_point_pixels": 33363,
+      "distinct_shared_point_pixels": 77760,
+      "distinct_point_spread": {
+        "count": 77760,
+        "mean": 0.03122849562247594,
+        "median": 0.02023616039093469,
+        "p95": 0.07613397889497894,
+        "max": 1.2019637685965703
+      },
+      "warning": "same shared point gives zero spread by construction, not independent confirmation"
+    },
+    {
+      "target": 1,
+      "fixed_pixels": 166181,
+      "after_two_view_pixels": 165021,
+      "missing_after": 1160,
+      "before_relative_spread": {
+        "count": 166181,
+        "mean": 0.02519084026042631,
+        "median": 0.01521548048882946,
+        "p95": 0.0653452360155715,
+        "max": 1.2992162044171165
+      },
+      "after_relative_spread_covered_only": {
+        "count": 165021,
+        "mean": 0.02411958630341323,
+        "median": 0.014931426972045424,
+        "p95": 0.06550206793279634,
+        "max": 1.2992162044171165
+      },
+      "same_shared_point_pixels": 42249,
+      "distinct_shared_point_pixels": 122772,
+      "distinct_point_spread": {
+        "count": 122772,
+        "mean": 0.03241975573726545,
+        "median": 0.019629979787164596,
+        "p95": 0.08141769932139686,
+        "max": 1.2992162044171165
+      },
+      "warning": "same shared point gives zero spread by construction, not independent confirmation"
+    },
+    {
+      "target": 2,
+      "fixed_pixels": 113872,
+      "after_two_view_pixels": 112969,
+      "missing_after": 903,
+      "before_relative_spread": {
+        "count": 113872,
+        "mean": 0.02684541038803552,
+        "median": 0.016681680201680166,
+        "p95": 0.0701357724570945,
+        "max": 1.3247369500159636
+      },
+      "after_relative_spread_covered_only": {
+        "count": 112969,
+        "mean": 0.02576708771131269,
+        "median": 0.016384933600918448,
+        "p95": 0.07032283920777853,
+        "max": 1.3247369500159636
+      },
+      "same_shared_point_pixels": 25527,
+      "distinct_shared_point_pixels": 87442,
+      "distinct_point_spread": {
+        "count": 87442,
+        "mean": 0.03328929040574647,
+        "median": 0.019936775492772646,
+        "p95": 0.08226575801990746,
+        "max": 1.3247369500159636
+      },
+      "warning": "same shared point gives zero spread by construction, not independent confirmation"
+    }
+  ],
+  "gt_accuracy_evaluated": false
+}

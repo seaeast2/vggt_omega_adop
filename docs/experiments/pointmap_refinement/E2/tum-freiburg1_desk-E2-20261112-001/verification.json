@@ -1,0 +1,13 @@
+{
+  "controlled_identical_cross_frame_merge": "passed",
+  "same_frame_conflict_rejected": "passed",
+  "nonclique_chain_rejected": "passed",
+  "all_observations_assigned_once": "passed",
+  "all_groups_unique_frames_and_cliques": "passed",
+  "all_pair_spatial_bounds": "passed",
+  "weighted_xyz_and_median_rgb": "passed",
+  "no_post_fusion_optimizer_update": "passed",
+  "ply_npz_and_render_reload": "passed",
+  "e1_fixed_masks_unchanged": "passed",
+  "status": "passed"
+}

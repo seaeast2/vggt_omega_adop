@@ -1,0 +1,20 @@
+{
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E1-20261112-001/stages/E1",
+  "spatial_radius_fraction_of_median_depth": 0.01,
+  "fusion_depth_absolute_fraction": 0.002,
+  "fusion_depth_relative": 0.02,
+  "mutual_reprojection_pixels": 1.0,
+  "normal_angle_degrees": 30.0,
+  "normal_edge_relative": 0.03,
+  "confidence_weight_quantiles": [10, 90],
+  "confidence_weight_range": [0.1, 1.0],
+  "visibility_depth_relative": 0.03,
+  "visibility_relative_sweep": [0.01, 0.03, 0.05],
+  "visibility_absolute_fraction": 0.002,
+  "visibility_zbuffer_relative": 0.03,
+  "visibility_target_confidence_quantile": 10,
+  "render_hw": [96, 128],
+  "renderer": "unchanged P2 Gaussian, sigma=.65, radius=2, front gate=.03; equal point opacity",
+  "position_optimization": false,
+  "seed": 0
+}

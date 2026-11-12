@@ -1,0 +1,7 @@
+{
+  "candidate_count": 67906,
+  "ray_contract": "unit world ray through fused xyz0 from owner camera; distance is Euclidean ray length, not camera Z",
+  "owner_pixel_note": "fused representative need not lie on the original owner observation pixel ray; use the fused-point ray to preserve initial XYZ",
+  "candidate_note": "multi-observed, nonzero parallax and estimated visible in all source cameras; not proof of photometric observability or correctness",
+  "positions_optimized": false
+}
