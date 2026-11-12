@@ -1,0 +1,7 @@
+{
+  "path": "results/vggt_baseline/tum-freiburg1_desk-V0-20261113-001/stages/V0/artifacts/inference/vggt_raw.npz",
+  "sha256": "fd4385cc62b10e0e755dd5fd3a04a66d836a2517162de1cdddd0320a2c81d29a",
+  "joint_inference_completed": true,
+  "ply_export_completed": false,
+  "recovery_run": "tum-freiburg1_desk-V0-20261113-002"
+}

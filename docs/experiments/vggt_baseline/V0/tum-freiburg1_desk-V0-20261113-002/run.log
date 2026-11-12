@@ -1,0 +1,3 @@
+{"time": "2026-11-13T07:57:01.988710+09:00", "event": "input_ready", "shape": [3, 3, 392, 518], "frame_indices": [30, 40, 50], "source_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce"}
+{"time": "2026-11-13T07:57:10.960890+09:00", "event": "joint_forward_finished", "seconds": 1.1961438700091094, "peak_allocated_bytes": 6002635264, "peak_reserved_bytes": 7103053824}
+{"time": "2026-11-13T07:57:13.306828+09:00", "event": "completed", "point_count": 609168, "primary_ply": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/vggt_baseline/tum-freiburg1_desk-V0-20261113-002/stages/V0/artifacts/maps/vggt_depth_rgb.ply"}

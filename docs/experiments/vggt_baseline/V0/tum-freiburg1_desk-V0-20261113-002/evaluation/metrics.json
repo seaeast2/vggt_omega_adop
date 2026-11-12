@@ -1,0 +1,58 @@
+{
+  "decision": "PLY_CREATED_VERIFIED",
+  "point_count_per_geometry": 609168,
+  "frame_point_counts": [
+    203056,
+    203056,
+    203056
+  ],
+  "input_original_wh": [
+    640,
+    480
+  ],
+  "processed_wh": [
+    518,
+    392
+  ],
+  "omega_processed_wh": [
+    512,
+    384
+  ],
+  "same_original_input_files_and_order": true,
+  "joint_inference": {
+    "forward_seconds": 1.1961438700091094,
+    "joint_forward_calls": 1,
+    "batch_size": 1,
+    "frames_in_batch": 3,
+    "peak_allocated_bytes": 6002635264,
+    "peak_reserved_bytes": 7103053824
+  },
+  "strict_state_dict_load": "passed",
+  "all_arrays_finite": true,
+  "positive_depth": true,
+  "ply_reload_xyz_rgb_owner_count": "passed",
+  "npz_reload": "passed",
+  "self_projection_checks": [
+    {
+      "camera": 0,
+      "self_projection_max_px": 1.5243180314428173e-05,
+      "self_relative_z_error_max": 3.0320132958480856e-09
+    },
+    {
+      "camera": 1,
+      "self_projection_max_px": 3.064961944954092e-05,
+      "self_relative_z_error_max": 2.059412519168402e-08
+    },
+    {
+      "camera": 2,
+      "self_projection_max_px": 4.134582451342794e-05,
+      "self_relative_z_error_max": 1.3983058376612457e-07
+    }
+  ],
+  "fusion_performed": false,
+  "confidence_filter_performed": false,
+  "icp_or_scale_alignment_performed": false,
+  "geometry_accuracy_evaluated": false,
+  "method_comparison": "qualitative only; native grids and model coordinate systems differ",
+  "elapsed_seconds": 17.16194290999556
+}

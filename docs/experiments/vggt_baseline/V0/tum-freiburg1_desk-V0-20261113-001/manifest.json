@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "experiment_code": "V0",
+  "run_id": "tum-freiburg1_desk-V0-20261113-001",
+  "started_at": "2026-11-13T07:55:47.470189+09:00",
+  "project_commit_at_start": "b65bc218faaaae8db1b679430e4dbccc26f15241",
+  "execution_context": "host GPU outside sandbox",
+  "model": "original facebook/VGGT-1B",
+  "ended_at": "2026-11-13T07:56:05.726823+09:00",
+  "error": "cannot select an axis to squeeze out which has size not equal to one",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/vggt_baseline/V0/run.py\", line 126, in main\n    official_xyz=unproject_depth_map_to_point_map(depth,es,ks)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/thirdparty/vggt/vggt/utils/geometry.py\", line 39, in unproject_depth_map_to_point_map\n    depth_map[frame_idx].squeeze(-1), extrinsics_cam[frame_idx], intrinsics_cam[frame_idx]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: cannot select an axis to squeeze out which has size not equal to one\n"
+}

@@ -1,0 +1,38 @@
+{
+  "experiment_code": "V0",
+  "run_id": "tum-freiburg1_desk-V0-20261113-001",
+  "dataset": "tum-freiburg1_desk",
+  "frame_order": [
+    30,
+    40,
+    50
+  ],
+  "frame_count": 3,
+  "joint_forward_calls": 1,
+  "checkpoint": {
+    "repository": "facebook/VGGT-1B",
+    "revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "filename": "model.pt",
+    "path": "checkpoints/vggt_1b/model.pt",
+    "bytes": 5026874952,
+    "sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "expected_hf_lfs_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "hash_verified": true,
+    "download_method": "verified parallel HTTP byte ranges after stalled SDK Xet download",
+    "sdk_prefix_bytes_preserved": 3546163304,
+    "prefix_redownloaded_after_full_hash_mismatch": false,
+    "range_seconds": 116.81682560098125
+  },
+  "official_source_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "preprocessing": "official load_and_preprocess_images(mode=crop)",
+  "model_parameters_dtype": "float32",
+  "outer_autocast": "torch.bfloat16",
+  "seed": 0,
+  "fusion": false,
+  "camera_refinement": false,
+  "vertex_refinement": false,
+  "confidence_filter": false,
+  "primary_geometry": "official depth unprojection using predicted cameras",
+  "additional_geometry": "raw direct point-head output",
+  "execution_context": "host GPU outside sandbox"
+}

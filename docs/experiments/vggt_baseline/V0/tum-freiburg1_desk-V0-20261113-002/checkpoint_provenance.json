@@ -1,0 +1,14 @@
+{
+  "repository": "facebook/VGGT-1B",
+  "revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+  "filename": "model.pt",
+  "path": "checkpoints/vggt_1b/model.pt",
+  "bytes": 5026874952,
+  "sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+  "expected_hf_lfs_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+  "hash_verified": true,
+  "download_method": "verified parallel HTTP byte ranges after stalled SDK Xet download",
+  "sdk_prefix_bytes_preserved": 3546163304,
+  "prefix_redownloaded_after_full_hash_mismatch": false,
+  "range_seconds": 116.81682560098125
+}
