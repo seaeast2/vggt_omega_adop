@@ -1,0 +1,72 @@
+{
+  "camera_results": [
+    {
+      "camera": 0,
+      "probe_dark_pixels_before": 836,
+      "probe_dark_pixels_after": 158,
+      "median_alpha_probe_dark": 0.0229476410895586,
+      "probe_dark_in_training_mask": 79,
+      "alpha_below_epsilon_pixels": 109,
+      "methods": [
+        {
+          "method": "saved_black_background",
+          "psnr_fixed_e1_mask": 16.433824438260945,
+          "charbonnier_fixed_training_mask": 0.059554025530815125
+        },
+        {
+          "method": "alpha_removed_diagnostic",
+          "psnr_fixed_e1_mask": 18.340572462113006,
+          "charbonnier_fixed_training_mask": 0.05607064813375473
+        }
+      ]
+    },
+    {
+      "camera": 1,
+      "probe_dark_pixels_before": 1119,
+      "probe_dark_pixels_after": 135,
+      "median_alpha_probe_dark": 0.02420838735997677,
+      "probe_dark_in_training_mask": 77,
+      "alpha_below_epsilon_pixels": 74,
+      "methods": [
+        {
+          "method": "saved_black_background",
+          "psnr_fixed_e1_mask": 15.901651385811682,
+          "charbonnier_fixed_training_mask": 0.05550369247794151
+        },
+        {
+          "method": "alpha_removed_diagnostic",
+          "psnr_fixed_e1_mask": 18.62853355666762,
+          "charbonnier_fixed_training_mask": 0.04965059831738472
+        }
+      ]
+    },
+    {
+      "camera": 2,
+      "probe_dark_pixels_before": 1411,
+      "probe_dark_pixels_after": 139,
+      "median_alpha_probe_dark": 0.007655674125999212,
+      "probe_dark_in_training_mask": 51,
+      "alpha_below_epsilon_pixels": 114,
+      "methods": [
+        {
+          "method": "saved_black_background",
+          "psnr_fixed_e1_mask": 16.107410247921752,
+          "charbonnier_fixed_training_mask": 0.06241341680288315
+        },
+        {
+          "method": "alpha_removed_diagnostic",
+          "psnr_fixed_e1_mask": 18.210058441931746,
+          "charbonnier_fixed_training_mask": 0.05481911823153496
+        }
+      ]
+    }
+  ],
+  "probe_dark_before": 3366,
+  "probe_dark_after": 432,
+  "probe_dark_in_training_mask": 207,
+  "probe_dark_reduction_fraction": 0.8716577540106951,
+  "geometry_or_cameras_changed": false,
+  "new_optimization": false,
+  "gt_accessed": false,
+  "limitations": "Cached-buffer color diagnosis only; alpha removal does not validate visibility or gradients; probes are brightness heuristics, not ground truth."
+}

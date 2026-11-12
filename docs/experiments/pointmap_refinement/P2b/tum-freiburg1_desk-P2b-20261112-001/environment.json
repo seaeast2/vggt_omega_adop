@@ -1,0 +1,34 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "execution_context": "host CPU; GPU unused",
+  "seconds": 0.12885741000354756,
+  "source_files": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2b-20261112-001/stages/P2b/artifacts/source/README.md",
+      "bytes": 1502,
+      "sha256": "300491677aaef337a122925086cb92f8fefdee3462874f2982d8ee72d4928526"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2b-20261112-001/stages/P2b/artifacts/source/config.json",
+      "bytes": 481,
+      "sha256": "3588d73cae92b54829cc8eb20ee4332eed26e2632c12edf43d62dd39c6750b2c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2b-20261112-001/stages/P2b/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2b-20261112-001/stages/P2b/artifacts/source/renderer.py",
+      "bytes": 1760,
+      "sha256": "d2a4641b88e924ea04b4ee81c6d373669842c5ee57cb0f29e2239c247d769fd0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2b-20261112-001/stages/P2b/artifacts/source/run.py",
+      "bytes": 6380,
+      "sha256": "ac8083ffd8c49741cdbdb45bee7d0eca936c0fff88856abfd4c787b393e74b10"
+    }
+  ]
+}

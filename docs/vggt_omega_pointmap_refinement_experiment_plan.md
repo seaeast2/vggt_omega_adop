@@ -850,6 +850,8 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 
 **E3b 실행 기록(2026-11-12):** `tum-freiburg1_desk-E3b-20261112-002`에서 E0b의 341,325점을 정확히 초기화하고 135,193개 후보에 Photo-only Ray-depth 역전파를 200회 적용했다. 실제 126,222점이 이동했지만 RGB 손실은 0.059157→0.209852로 악화했고 selected는 초기 step 0이었다. 초기 기준 단일 GT scale=1.3171403295592672, 공통 402,577픽셀에서 RMSE는 0.146852→0.147653m, AbsRel은 3.374634→3.653819%였다. 초기/selected/실제 이동 last를 보존했고 현재 설정의 효과는 실패로 기록한다. [보고서](experiments/pointmap_refinement/E3b/tum-freiburg1_desk-E3b-20261112-002/report.md).
 
+**P2b 검은 테두리 진단(2026-11-12):** `tum-freiburg1_desk-P2b-20261112-001`에서 E3b의 E0b 초기 RGB/alpha 버퍼만 재사용했다. 좌표·가림 변경 없이 alpha 곱을 제거한 진단에서 밝은 목표 영역의 어두운 픽셀 프로브가 3,366→432개로 감소했다. 현재 검은 배경 합성이 테두리에 크게 기여하지만, 해당 초기 픽셀 중 학습 마스크 안은 207개여서 최적화 실패 전체의 원인으로 단정하지 않는다. Default P2·E3b·GT·Gradient는 변경/재학습하지 않았다. [보고서](experiments/pointmap_refinement/P2b/tum-freiburg1_desk-P2b-20261112-001/report.md).
+
 ### 13.1 제어 변수
 
 같은 장면에서 비교 실험 간 다음은 고정한다.

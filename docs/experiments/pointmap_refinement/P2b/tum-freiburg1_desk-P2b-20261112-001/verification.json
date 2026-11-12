@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "input_hashes_unchanged": true,
+  "recomposite_matches_cached_rgb_on_valid_alpha": true,
+  "normalized_rgb_finite_and_in_range": true,
+  "same_fixed_masks": true,
+  "png_npz_reload": true,
+  "no_geometry_or_training_change": true
+}

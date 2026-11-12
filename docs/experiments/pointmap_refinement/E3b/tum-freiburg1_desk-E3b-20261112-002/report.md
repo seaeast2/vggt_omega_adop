@@ -82,6 +82,8 @@ last의 오차는 소폭 악화했다. 고정 영역 coverage는 Camera 0/1/2에
 
 ## 실행·저장 검증
 
+**후속 렌더 진단:** 사용자가 초기 E0b 영상의 검은 테두리를 지적해 별도 [P2b](../../P2b/tum-freiburg1_desk-P2b-20261112-001/report.md)에서 저장 RGB/alpha만으로 색 합성의 영향을 분리했다. 좌표 변화 없이 alpha 곱 제거 시 검은 띠가 크게 줄었으므로 초기 검은 테두리를 E0b 기하 오류만으로 해석하지 않는다. 다만 초기 밝기 프로브의 어두운 픽셀 3,366개 중 학습 마스크 안은 207개여서 그 테두리만으로 본 Run의 실패 전체를 설명할 수 없다. 현재 hard 가림/stencil의 미분 불일치는 별도 문제이며, 원본 E3b 결과나 수치를 변경하지 않았다.
+
 2026-11-12, Asia/Seoul. 준비·GT 평가·출력 검증은 호스트 CPU, 역전파는 **샌드박스 밖 RTX 5060**에서 실행했다. Python 3.11.18 / PyTorch 2.15.0+cu132 / NumPy 1.26.4 / OpenCV 4.11.0이다. 200회 wall time은 체크포인트 평가/저장을 포함해 **6.821896초**, PyTorch peak allocated **381.622MiB**, reserved **610MiB**다. 모델 동시 추론 자원이나 GPU 전체 메모리 사용량은 아니다.
 
 [재현 안내](../../../../../experiments/pointmap_refinement/E3b/README.md)의 prepare→train→evaluate 순서로 실행했고 모두 종료 코드 0이다. [설정](config.json), [준비](preparation.json), [학습](training.json), [체크포인트 이력](checkpoint_history.json), [변위](displacement.json), [GT 평가](gt_depth.json), [방향 진단](direction_diagnostic.json), [검증](verification.json), [환경](environment.json), [Manifest](manifest.json)을 보존했다.

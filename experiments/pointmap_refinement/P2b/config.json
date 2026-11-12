@@ -1,0 +1,13 @@
+{
+  "experiment_code": "P2b",
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b",
+  "states": ["initial"],
+  "diagnostic": "unpremultiply cached initial RGB by cached alpha; no point/camera/visibility change or rerender",
+  "alpha_epsilon": 0.000001,
+  "bright_reference_threshold": 0.25,
+  "dark_render_threshold": 0.12,
+  "charbonnier_epsilon": 0.001,
+  "new_training": false,
+  "renderer_default_changed": false,
+  "gt_used": false
+}

@@ -8,6 +8,7 @@
 | P1 | 좌표계·역투영 검증 | 완료: 좌표·GT 격자·관측 출처 검사 통과 | [보고서](P1/tum-freiburg1_desk-P1-20261112-001/report.md) |
 | P2 | Renderer·Gradient 검증 | 완료: 최소 렌더·안정 영역 Gradient 통과, 가림 경계 제한 기록 | [보고서](P2/tum-freiburg1_desk-P2-20261112-002/report.md), [실행 이력](P2/README.md) |
 | P2a | PyTorch3D 설치·렌더러 비교 | 완료: CUDA 설치·3방식 비교. 기본 Alpha 기하 회복 실패 및 경계 제한 포함 | [보고서](P2a/tum-freiburg1_desk-P2a-20261112-001/report.md) |
+| P2b | E0b 초기 렌더 검은 테두리·alpha 진단 | 완료: 동일 버퍼의 alpha 곱 제거로 검은 띠 감소. 가림/미분 수정·재학습은 미실행 | [보고서](P2b/tum-freiburg1_desk-P2b-20261112-001/report.md), [비교 그림](P2b/tum-freiburg1_desk-P2b-20261112-001/figures/comparison.png) |
 | E0 | 보정 전 원본 점군 기준선 | 완료: 589,824점 보존·검증 및 시각화 | [보고서](E0/tum-freiburg1_desk-E0-20261112-001/report.md) |
 | E0a | 원본 점군의 프레임별 색상·카메라 투영 | 완료: 빨강/초록/파랑 PLY·3개 카메라의 전체/타 출처/단독 출처 투영·버퍼 검증 | [보고서](E0a/tum-freiburg1_desk-E0a-20261112-001/report.md), [전체 패널](E0a/tum-freiburg1_desk-E0a-20261112-001/figures/overview.png) |
 | E0b | 다음 카메라 픽셀의 깊이 평균·이전 점 치환 | 완료: 341,325점, 순차 평균·삭제·출처 추적 검증. GT 정확도 미평가 | [보고서](E0b/tum-freiburg1_desk-E0b-20261112-001/report.md), [전후 패널](E0b/tum-freiburg1_desk-E0b-20261112-001/figures/comparison.png) |
