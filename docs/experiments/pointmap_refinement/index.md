@@ -2,7 +2,7 @@
 
 계획은 [실험 계획서](../../vggt_omega_pointmap_refinement_experiment_plan.md)를 따른다. 실행 완료와 연구 결과의 성공은 별도로 판단한다.
 
-**현재 상태:** 사용자 요청으로 카메라 고정·개별 정점 RGB 이동 방법은 E3e까지 종료했다. 기존 결과를 보존하고 미착수 E4~E9는 실행하지 않는다. 후속 FoV 보정·원본 Depth 재역투영 방식과 색+깊이 근접 융합·점 수 축소 비교는 [별도 계획서](../../vggt_omega_fov_pointmap_alignment_experiment_plan.md)와 [C0~C5 현황](../camera_fov_alignment/index.md)에 분리했으며 아직 실험하지 않았다.
+**현재 상태:** 사용자 요청으로 카메라 고정·개별 정점 RGB 이동 방법은 E3e까지 종료했다. 기존 결과를 보존하고 미착수 E4~E9는 실행하지 않는다. 후속 FoV 보정·원본 Depth 재역투영과 색+깊이 융합은 [별도 계획서](../../vggt_omega_fov_pointmap_alignment_experiment_plan.md)의 C0~C5와 보조 검증까지 실행·평가했다. [C 계열 현황](../camera_fov_alignment/index.md) 및 [종합 결과](../camera_fov_alignment/summary.md)에 실제 효과·지원 부족·미충족 기준을 구분했다.
 
 | 코드 | 목적 | 실행 상태 | 실행 및 보고서 |
 | --- | --- | --- | --- |

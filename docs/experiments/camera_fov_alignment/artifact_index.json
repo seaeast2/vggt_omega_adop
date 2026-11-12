@@ -1,0 +1,137 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "bytes": 15153146,
+    "sha256": "02e944664980fc883f3bf2a9723b2e0a9a8b79ea8f8521f75b71ef77bc7d89ad",
+    "relative_path": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "dataset": "tum-freiburg1_desk",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "bytes": 15153146,
+    "sha256": "698624038644db6f4e81539c6dfd34ee7d2cf26176804c5c89d02cf38af18903",
+    "relative_path": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "dataset": "tum-freiburg1_desk",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "bytes": 17431367,
+    "sha256": "3d206ab6a40ea53d4f151d5d79c4b02a3d642bc20b1a21886b75ad653ebb26b0",
+    "relative_path": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "dataset": "tum-freiburg1_desk",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "bytes": 9727018,
+    "sha256": "5907229707ddb77a5a735bf32a7faca99e29cc9ae9fcef31fd185c87866ab1c5",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "dataset": "hkairport01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "bytes": 9727018,
+    "sha256": "405848b60a80ac373cde5f9b61e08bd17b93c89f6d0087faebc30cf280e0d07e",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "dataset": "hkairport01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "bytes": 12353809,
+    "sha256": "fcb0dde423f6099218fbef935fa4e08f2803ee8e256d984fdecb12c802e0cab2",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "dataset": "hkairport01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "bytes": 11655464,
+    "sha256": "e11ff6db9109de13d8c83ca80678e56d8c986a63ee955105d7f1ef23038af644",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+    "dataset": "amtown01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "bytes": 11655464,
+    "sha256": "57f8a3af018001f2ed903240f0974d54a0b8341481a52ed344ffd2e96510b845",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+    "dataset": "amtown01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "bytes": 14691084,
+    "sha256": "4e1a92ff6f7c95ccc7f16c46b0c1cf6df2bdfdf996476c4477f5539ca49067f3",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+    "dataset": "amtown01",
+    "experiment_code": "C5",
+    "arm": "B"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_source.ply",
+    "bytes": 9465626,
+    "sha256": "024e22f4b8a4e9affc498c19bcf9c249ed932e5d4c1991a3192844a8cd72c3f9",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_source.ply",
+    "dataset": "hkairport01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_rgb.ply",
+    "bytes": 9465626,
+    "sha256": "6f866a018fb935c3580281c0ede7b7931baee228cfeff95e157667ebd165e87c",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_rgb.ply",
+    "dataset": "hkairport01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+    "bytes": 12068990,
+    "sha256": "59c04e046018abd513919bdead1b06a39faff9febd7a669db1b96da108d83502",
+    "relative_path": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+    "dataset": "hkairport01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_source.ply",
+    "bytes": 11299926,
+    "sha256": "8793fc4871b78231d4229db73fdbf1b44c029fc1552b5d78c1f10af863f63b68",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_source.ply",
+    "dataset": "amtown01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_rgb.ply",
+    "bytes": 11299926,
+    "sha256": "e283e47de52e13864e38e214e91b5238c19b8f9b3ad20178d1f9c2dc370b6e25",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/all_rgb.ply",
+    "dataset": "amtown01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+    "bytes": 14298406,
+    "sha256": "c61d51b945a6bad7b146d0e449fe9ffe107ee21f6bf561119d5da32e2f3a9aba",
+    "relative_path": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+    "dataset": "amtown01",
+    "experiment_code": "C5b",
+    "arm": "D"
+  }
+]

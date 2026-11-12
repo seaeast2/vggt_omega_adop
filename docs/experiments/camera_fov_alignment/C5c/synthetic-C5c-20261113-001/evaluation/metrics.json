@@ -1,0 +1,196 @@
+{
+  "decision": "ARCHIVE_AND_PROTOCOL_PASS",
+  "completed_runs_verified": [
+    "amtown01-C4-20261113-001",
+    "amtown01-C4a-20261113-001",
+    "amtown01-C5-20261113-001",
+    "amtown01-C5b-20261113-001",
+    "hkairport01-C4-20261113-001",
+    "hkairport01-C4a-20261113-001",
+    "hkairport01-C5-20261113-001",
+    "hkairport01-C5b-20261113-001",
+    "synthetic-C0-20261112-002",
+    "synthetic-C0a-20261112-001",
+    "synthetic-C0b-20261112-001",
+    "synthetic-C5a-20261112-001",
+    "tum-freiburg1_desk-C1-20261112-001",
+    "tum-freiburg1_desk-C1a-20261112-001",
+    "tum-freiburg1_desk-C2-20261112-001",
+    "tum-freiburg1_desk-C2a-20261112-001",
+    "tum-freiburg1_desk-C3-20261112-001",
+    "tum-freiburg1_desk-C3a-20261112-001",
+    "tum-freiburg1_desk-C5-20261113-001"
+  ],
+  "preserved_failed_runs": [
+    {
+      "run_id": "synthetic-C0-20261112-001",
+      "error": "",
+      "traceback_preserved": true
+    }
+  ],
+  "artifact_hash_records_verified": 1759,
+  "artifact_bytes_read_including_repeat_parent_records": 3880270696,
+  "camera_parameter_files_verified": [
+    "results/camera_fov_alignment/amtown01-C4-20261113-001/stages/C4/artifacts/arms/C2/parameters.npz",
+    "results/camera_fov_alignment/amtown01-C4-20261113-001/stages/C4/artifacts/arms/C3/parameters.npz",
+    "results/camera_fov_alignment/amtown01-C4a-20261113-001/stages/C4a/artifacts/fit/parameters.npz",
+    "results/camera_fov_alignment/hkairport01-C4-20261113-001/stages/C4/artifacts/arms/C2/parameters.npz",
+    "results/camera_fov_alignment/hkairport01-C4-20261113-001/stages/C4/artifacts/arms/C3/parameters.npz",
+    "results/camera_fov_alignment/hkairport01-C4a-20261113-001/stages/C4a/artifacts/fit/parameters.npz",
+    "results/camera_fov_alignment/tum-freiburg1_desk-C2-20261112-001/stages/C2/artifacts/fit/parameters.npz",
+    "results/camera_fov_alignment/tum-freiburg1_desk-C2a-20261112-001/stages/C2a/artifacts/fit/parameters.npz",
+    "results/camera_fov_alignment/tum-freiburg1_desk-C3-20261112-001/stages/C3/artifacts/fit/parameters.npz",
+    "results/camera_fov_alignment/tum-freiburg1_desk-C3a-20261112-001/stages/C3a/artifacts/fit/parameters.npz"
+  ],
+  "fusion_maps_verified": [
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/C/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+      "points": 342799,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/D/map.npz",
+      "points": 342799,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5-20261113-001/stages/C5/artifacts/arms/A/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/C/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/B/map.npz",
+      "points": 342799,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+      "points": 332342,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/amtown01-C5b-20261113-001/stages/C5b/artifacts/arms/A/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+      "points": 286080,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/map.npz",
+      "points": 286080,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/C/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/B/map.npz",
+      "points": 286080,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/D/map.npz",
+      "points": 278392,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/hkairport01-C5b-20261113-001/stages/C5b/artifacts/arms/A/map.npz",
+      "points": 663552,
+      "observations": 663552,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+      "points": 445672,
+      "observations": 589824,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    },
+    {
+      "map": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/A/map.npz",
+      "points": 589824,
+      "observations": 589824,
+      "ply_rgb_and_source_verified": true,
+      "csr_colors_camera_and_steps_verified": true
+    }
+  ],
+  "original_raw_hashes_reverified": {
+    "tum-freiburg1_desk": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 5980036,
+      "sha256": "d820f18f5bb683efb89d331f82262b68e5cec55a7bbadf379d8091721a26afa4"
+    },
+    "hkairport01": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/hkairport01-E0d-20261112-001/stages/E0d/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 6944360,
+      "sha256": "1a41d0be481e244afca2cf664a090e837dc4dcf75992da38e1e5a3649d91abbe"
+    },
+    "amtown01": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/amtown01-E0d-20261112-001/stages/E0d/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 7200111,
+      "sha256": "b3c2a8982d34082ac8a3c32fe5d2a604e6a1813cc32e8682bc664eb7a46b79b5"
+    }
+  },
+  "report_links_passed": true,
+  "scientific_improvement": false,
+  "continuous_slam_tested": false,
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 6.733993898000335,
+  "process_peak_rss_mib": 602.9921875
+}

@@ -18,6 +18,7 @@ DESCRIPTIONS={
     'C5':'색+깊이 융합·점 수 축소·표면 보존',
     'C5a':'융합 경계·연쇄 방지·기존 E0c 정확 재현',
     'C5b':'C4a 보정값의 드론 융합 보조 비교',
+    'C5c':'전체 산출물 해시·카메라·관측 매핑·PLY 종합 검증',
 }
 
 
@@ -49,6 +50,7 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
         decision=m.get('decision','FAILED' if m['status']=='failed' else m['status'])
         text+=f'| `{m["run_id"]}` | {m["status"]} | [{decision}]({report}) |\n'
     text+='\n대형 NPZ/PLY와 source snapshot은 `results/camera_fov_alignment/`의 각 Run ID/Stage에 보관한다. 이 목록은 새 실행이 끝날 때 갱신한다.\n'
+    if (docs/'summary.md').exists():text+='\n[전체 결과와 최종 판정](summary.md) · [보조 검증·amendment](amendments.md)\n'
     (docs/'index.md').write_text(text)
 
 
