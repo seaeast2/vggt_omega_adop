@@ -1,0 +1,24 @@
+{
+  "reason": "User explicitly requested deletion of comparison-only E3b and reuse of code for E0b-initialized RGB-gradient optimization",
+  "old_run_id": "tum-freiburg1_desk-E3b-20261112-001",
+  "old_manifest_sha256": "7b996915c4c2604e6dfba913823ac668b1a79f6b3558fe7a007281222669e874",
+  "prior_commit": "6de932f167f577ddcb7b7b500412da53eb69444e",
+  "deleted": [
+    {
+      "path": "experiments/pointmap_refinement/E3b",
+      "files": 3,
+      "bytes": 22649
+    },
+    {
+      "path": "docs/experiments/pointmap_refinement/E3b",
+      "files": 37,
+      "bytes": 6232314
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-001",
+      "files": 72,
+      "bytes": 137887227
+    }
+  ],
+  "new_run_id": "tum-freiburg1_desk-E3b-20261112-002"
+}

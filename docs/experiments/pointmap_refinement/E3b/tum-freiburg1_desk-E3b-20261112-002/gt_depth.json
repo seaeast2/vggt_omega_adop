@@ -1,0 +1,130 @@
+{
+  "scale_m_per_model_unit": 1.3171403295592672,
+  "scale_fit": "median GT/initial E0b native front-Z, once after training",
+  "gt_used_in_training_or_selection": false,
+  "summary": [
+    {
+      "state": "initial",
+      "points": 341325,
+      "common_pixels": 402577,
+      "rmse_m": 0.1468516438797727,
+      "absrel": 0.03374633831444189,
+      "fixed_pixels": 425327,
+      "covered_fixed_pixels": 425327,
+      "coverage_of_fixed": 1.0
+    },
+    {
+      "state": "selected",
+      "points": 341325,
+      "common_pixels": 402577,
+      "rmse_m": 0.1468516438797727,
+      "absrel": 0.03374633831444189,
+      "fixed_pixels": 425327,
+      "covered_fixed_pixels": 425327,
+      "coverage_of_fixed": 1.0
+    },
+    {
+      "state": "last",
+      "points": 341325,
+      "common_pixels": 402577,
+      "rmse_m": 0.14765316669017747,
+      "absrel": 0.03653818748837871,
+      "fixed_pixels": 425327,
+      "covered_fixed_pixels": 402577,
+      "coverage_of_fixed": 0.9465117427297115
+    }
+  ],
+  "per_camera": [
+    {
+      "state": "initial",
+      "camera": 0,
+      "fixed_pixels": 146688,
+      "covered_fixed_pixels": 146688,
+      "common_pixels": 133124,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.10894249958076373,
+      "absrel": 0.029382093056258295
+    },
+    {
+      "state": "initial",
+      "camera": 1,
+      "fixed_pixels": 134844,
+      "covered_fixed_pixels": 134844,
+      "common_pixels": 125658,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.14122666081525867,
+      "absrel": 0.030940844205818722
+    },
+    {
+      "state": "initial",
+      "camera": 2,
+      "fixed_pixels": 143795,
+      "covered_fixed_pixels": 143795,
+      "common_pixels": 143795,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.17877019613437223,
+      "absrel": 0.040238348220570805
+    },
+    {
+      "state": "selected",
+      "camera": 0,
+      "fixed_pixels": 146688,
+      "covered_fixed_pixels": 146688,
+      "common_pixels": 133124,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.10894249958076373,
+      "absrel": 0.029382093056258295
+    },
+    {
+      "state": "selected",
+      "camera": 1,
+      "fixed_pixels": 134844,
+      "covered_fixed_pixels": 134844,
+      "common_pixels": 125658,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.14122666081525867,
+      "absrel": 0.030940844205818722
+    },
+    {
+      "state": "selected",
+      "camera": 2,
+      "fixed_pixels": 143795,
+      "covered_fixed_pixels": 143795,
+      "common_pixels": 143795,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.17877019613437223,
+      "absrel": 0.040238348220570805
+    },
+    {
+      "state": "last",
+      "camera": 0,
+      "fixed_pixels": 146688,
+      "covered_fixed_pixels": 133124,
+      "common_pixels": 133124,
+      "coverage_of_fixed": 0.9075316317626527,
+      "rmse_m": 0.11144746480473287,
+      "absrel": 0.03355888100991097
+    },
+    {
+      "state": "last",
+      "camera": 1,
+      "fixed_pixels": 134844,
+      "covered_fixed_pixels": 125658,
+      "common_pixels": 125658,
+      "coverage_of_fixed": 0.9318768354543028,
+      "rmse_m": 0.14192477327746106,
+      "absrel": 0.03374261783228351
+    },
+    {
+      "state": "last",
+      "camera": 2,
+      "fixed_pixels": 143795,
+      "covered_fixed_pixels": 143795,
+      "common_pixels": 143795,
+      "coverage_of_fixed": 1.0,
+      "rmse_m": 0.17870593108168537,
+      "absrel": 0.04173936199017046
+    }
+  ],
+  "limitations": "same-input-view scale-aligned depth; common support is coverage-dependent; no heldout/full 3D/wall ROI claim"
+}

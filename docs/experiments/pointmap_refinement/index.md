@@ -14,5 +14,5 @@
 | E1 | 단순 연결 F0 평가 | 완료: 예측 불일치·층 퍼짐·잠재 중복·출처별 RGB 진단 | [보고서](E1/tum-freiburg1_desk-E1-20261112-001/report.md) |
 | E2 | 공유점 융합·가시성 평가 | 완료: 510,427점 F1 생성·검증. RGB 소폭 저하·기하 개선 미확인 | [보고서](E2/tum-freiburg1_desk-E2-20261112-001/report.md) |
 | E3 | Photo Ray-depth 위치 최적화 | 실행·평가 완료, 효과 실패: selected=초기 0회, last 악화 | [보고서](E3/tum-freiburg1_desk-E3-20261112-001/report.md) |
-| E3b | E0b와 기존 E3 결과 비교 | 완료: 공통 GT 깊이 오차 E0b 우세, coverage 열세. 새 학습 없음 | [보고서](E3b/tum-freiburg1_desk-E3b-20261112-001/report.md), [깊이 비교](E3b/tum-freiburg1_desk-E3b-20261112-001/figures/depth_comparison.png) |
+| E3b | E0b 초기값의 Photo Ray-depth 최적화 | 완료: 200회 실제 이동, 손실 악화·selected=초기, 효과 실패 | [보고서](E3b/tum-freiburg1_desk-E3b-20261112-002/report.md), [RGB 전후](E3b/tum-freiburg1_desk-E3b-20261112-002/figures/rgb_comparison.png) |
 | E4~E9 | 위치 최적화·제약·선택 비교 | 미착수 | — |

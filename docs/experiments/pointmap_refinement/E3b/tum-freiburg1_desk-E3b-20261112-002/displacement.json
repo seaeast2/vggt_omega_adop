@@ -1,0 +1,38 @@
+{
+  "selected": {
+    "moved_active_over_1e_8": 0,
+    "active_displacement": {
+      "count": 135193,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "all_displacement": {
+      "count": 341325,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "bound_points": 0
+  },
+  "last": {
+    "moved_active_over_1e_8": 126222,
+    "active_displacement": {
+      "count": 135193,
+      "mean": 0.01727289685830238,
+      "median": 0.01570485200317433,
+      "p95": 0.040217754619817865,
+      "max": 0.13661254957515784
+    },
+    "all_displacement": {
+      "count": 341325,
+      "mean": 0.006841499289429354,
+      "median": 0.0,
+      "p95": 0.03063259929021286,
+      "max": 0.13661254957515784
+    },
+    "bound_points": 4799
+  }
+}

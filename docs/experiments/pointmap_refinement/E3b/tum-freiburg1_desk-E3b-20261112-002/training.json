@@ -1,0 +1,18 @@
+{
+  "initial_points": 341325,
+  "active_points": 135193,
+  "steps": 200,
+  "selected_step": 0,
+  "selected_by": "lowest checkpoint training Charbonnier; no GT",
+  "initial_photo_loss": 0.05915704493721326,
+  "selected_photo_loss": 0.05915704493721326,
+  "last_photo_loss": 0.2098519305388133,
+  "optimization_seconds": 6.821895777000464,
+  "peak_allocated_bytes": 400159744,
+  "peak_reserved_bytes": 639631360,
+  "torch": "2.15.0+cu132",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "driver_snapshot": "NVIDIA GeForce RTX 5060, 8151 MiB, 896 MiB, 595.99.02",
+  "execution_context": "host GPU outside sandbox",
+  "gt_read_during_training": false
+}

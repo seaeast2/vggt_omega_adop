@@ -1,0 +1,36 @@
+{
+  "initial_loss": 0.05915704369544983,
+  "gradient_norm": 0.0006565845105797052,
+  "autograd_adam_direction_derivative": -0.07269264757633209,
+  "probes": [
+    {
+      "epsilon": 1e-06,
+      "plus_loss": 0.05915767140686512,
+      "minus_loss": 0.059156665578484535,
+      "central_derivative": 0.5029141902923584,
+      "first_order_predicted_plus": 0.059156971002802254
+    },
+    {
+      "epsilon": 1e-05,
+      "plus_loss": 0.05915717966854572,
+      "minus_loss": 0.05915594846010208,
+      "central_derivative": 0.06156042218208312,
+      "first_order_predicted_plus": 0.059156316768974065
+    },
+    {
+      "epsilon": 0.0001,
+      "plus_loss": 0.05917254462838173,
+      "minus_loss": 0.059168484061956406,
+      "central_derivative": 0.02030283212661743,
+      "first_order_predicted_plus": 0.05914977443069219
+    },
+    {
+      "epsilon": 0.001,
+      "plus_loss": 0.05943964421749115,
+      "minus_loss": 0.05942274443805218,
+      "central_derivative": 0.008449889719486237,
+      "first_order_predicted_plus": 0.0590843510478735
+    }
+  ],
+  "scope": "full initial scene; changing hard visibility/stencil and float32 precision are included in finite differences"
+}

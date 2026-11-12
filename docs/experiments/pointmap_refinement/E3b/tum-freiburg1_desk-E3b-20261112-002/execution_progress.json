@@ -1,0 +1,65 @@
+{
+  "events": [
+    {
+      "time": "2026-11-12T19:52:56.106520+09:00",
+      "phase": "prepared",
+      "active_points": 135193
+    },
+    {
+      "time": "2026-11-12T19:53:19.730366+09:00",
+      "phase": "trained",
+      "initial_points": 341325,
+      "active_points": 135193,
+      "steps": 200,
+      "selected_step": 0,
+      "selected_by": "lowest checkpoint training Charbonnier; no GT",
+      "initial_photo_loss": 0.05915704493721326,
+      "selected_photo_loss": 0.05915704493721326,
+      "last_photo_loss": 0.2098519305388133,
+      "optimization_seconds": 6.821895777000464,
+      "peak_allocated_bytes": 400159744,
+      "peak_reserved_bytes": 639631360,
+      "torch": "2.15.0+cu132",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "driver_snapshot": "NVIDIA GeForce RTX 5060, 8151 MiB, 896 MiB, 595.99.02",
+      "execution_context": "host GPU outside sandbox",
+      "gt_read_during_training": false
+    },
+    {
+      "time": "2026-11-12T19:53:36.251901+09:00",
+      "phase": "evaluated",
+      "gt_summary": [
+        {
+          "state": "initial",
+          "points": 341325,
+          "common_pixels": 402577,
+          "rmse_m": 0.1468516438797727,
+          "absrel": 0.03374633831444189,
+          "fixed_pixels": 425327,
+          "covered_fixed_pixels": 425327,
+          "coverage_of_fixed": 1.0
+        },
+        {
+          "state": "selected",
+          "points": 341325,
+          "common_pixels": 402577,
+          "rmse_m": 0.1468516438797727,
+          "absrel": 0.03374633831444189,
+          "fixed_pixels": 425327,
+          "covered_fixed_pixels": 425327,
+          "coverage_of_fixed": 1.0
+        },
+        {
+          "state": "last",
+          "points": 341325,
+          "common_pixels": 402577,
+          "rmse_m": 0.14765316669017747,
+          "absrel": 0.03653818748837871,
+          "fixed_pixels": 425327,
+          "covered_fixed_pixels": 402577,
+          "coverage_of_fixed": 0.9465117427297115
+        }
+      ]
+    }
+  ]
+}

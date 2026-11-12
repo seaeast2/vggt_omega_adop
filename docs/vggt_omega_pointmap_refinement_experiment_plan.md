@@ -822,7 +822,7 @@ GT Depth는 **모델/손실의 입력으로 사용하지 않는다.** 평가에�
 | E1 | 단순 연결(F0) | 평가만 | 없음 | 없음 | 중복 표면 문제 측정 |
 | E2 | 공유 융합(F1) | 평가만 | 없음 | 융합만 | 데이터 연관 효과 |
 | E3 | 공유 융합 | Photo | Ray-depth | 최소 가시성 | 최적화 기본선 |
-| E3b | E0/E0b/기존 E3 selected·last | 동일 native front-Z·GT 깊이 평가 | 없음 | 기존 E3 단일 스케일·공통 마스크 | 순차 평균 융합과 기존 최적화 결과의 사후 비교 |
+| E3b | E0b 순차 융합 점군 초기값 | Photo | Ray-depth | 기존 E3 초기 가시성·고정 RGB/카메라 | E0b 위의 실제 RGB 역전파 정점 이동 |
 | E4 | 공유 융합 | Photo | XYZ | 최소 가시성 | XYZ vs Depth |
 | E5 | 공유 융합 | Photo+Anchor | XYZ | 관측 수 | 기하 보존 효과 |
 | E6 | 공유 융합 | Photo+Anchor+Surface | XYZ | 시차 가중치 | 표면 정규화 효과 |
@@ -846,7 +846,9 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 
 **E0b 융합 기준선 기록(2026-11-12):** `tum-freiburg1_desk-E0b-20261112-001`에서 E0를 0→1→2 순서로 처리했다. 다음 카메라의 같은 픽셀에 투영되는 현재 지도 점의 Z와 새 관측 Z를 산술 평균해 새 픽셀 시선의 점 하나로 치환하고 이전 대응점을 삭제했다. 깊이/법선/가림 gate는 없으며 비중첩 이전 점을 보존했다. 589,824개 원본 관측의 출처를 CSR로 추적하면서 최종 341,325점(42.13% 감소)을 생성했다. Camera 0/1/2의 한 픽셀 투영 coverage는 91.25/93.04/100%다. 단일 층·최신 owner 색과 점 수 감소는 정의상 결과이며 정확도 증거가 아니다. 알려진 평균값·시선·치환·비중첩 보존·출처 분할·저장 검증을 통과했고 GT 정확도는 평가하지 않았다. [E0b 보고서](experiments/pointmap_refinement/E0b/tum-freiburg1_desk-E0b-20261112-001/report.md).
 
-**E3b 비교 기록(2026-11-12):** `tum-freiburg1_desk-E3b-20261112-001`에서 저장된 E0/E0b/E3 selected(step 0)/last(step 200)를 새 학습 없이 비교했다. 기존 E3 스케일 1.3228912022012644m/model-unit을 그대로 사용했고 기존 E3 깊이·GT 지표를 재현했다. 네 방법 공통 416,835픽셀에서 RMSE는 E0 0.159959m, E0b 0.144257m, E3 selected 0.159963m, E3 last 0.160427m다. 초기 GT 고정 448,144픽셀의 coverage는 각각 100/94.897/100/98.049%다. 공통 영역에서 E0b 깊이 오차는 낮지만 누락 영역이 증가했으므로 기하 정확도 전반의 개선으로 일반화하지 않는다. 같은 출처 혼합색 PLY·2D, GT 깊이·오차 패널과 부모 해시/저장 검증을 보존했다. [E3b 보고서](experiments/pointmap_refinement/E3b/tum-freiburg1_desk-E3b-20261112-001/report.md).
+**E3b 재지정(2026-11-12, 사용자 명시 요청):** 비교만 수행했던 E3b 코드·보고서·로컬 `tum-freiburg1_desk-E3b-20261112-001`을 삭제했다. 이전 내용은 Git 커밋 `6de932f167f577ddcb7b7b500412da53eb69444e`에만 남긴다. 현재 E3b는 E0b 점군 초기값에서 원본 RGB 손실을 역전파하는 미분 위치 최적화이며, 새 Run ID `tum-freiburg1_desk-E3b-20261112-002`로 실행한다. 이번 명시 요청에 한해 코드 의미를 변경하며 E0b/E3 등 기존 결과는 유지한다. [E3b 실행 이력](experiments/pointmap_refinement/E3b/README.md).
+
+**E3b 실행 기록(2026-11-12):** `tum-freiburg1_desk-E3b-20261112-002`에서 E0b의 341,325점을 정확히 초기화하고 135,193개 후보에 Photo-only Ray-depth 역전파를 200회 적용했다. 실제 126,222점이 이동했지만 RGB 손실은 0.059157→0.209852로 악화했고 selected는 초기 step 0이었다. 초기 기준 단일 GT scale=1.3171403295592672, 공통 402,577픽셀에서 RMSE는 0.146852→0.147653m, AbsRel은 3.374634→3.653819%였다. 초기/selected/실제 이동 last를 보존했고 현재 설정의 효과는 실패로 기록한다. [보고서](experiments/pointmap_refinement/E3b/tum-freiburg1_desk-E3b-20261112-002/report.md).
 
 ### 13.1 제어 변수
 

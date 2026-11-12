@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "initial_xyz_and_CSR_exact_E0b": true,
+  "inactive_xyz_exactly_fixed": true,
+  "active_xyz_equals_ray_gradient_parameterization": true,
+  "log_bounds": true,
+  "last_actual_movement_nonzero": true,
+  "all_metadata_fixed": true,
+  "point_count_fixed": true,
+  "ply_npz_png_reload": true,
+  "train_masks_and_targets_fixed": true,
+  "GT_after_training_and_selection_only": true,
+  "single_initial_only_GT_scale": true,
+  "parent_and_executed_source_hashes": true
+}
