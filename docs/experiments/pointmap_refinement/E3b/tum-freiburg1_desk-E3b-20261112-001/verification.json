@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "parent_hashes_unchanged": true,
+  "all_source_assignments_counts_and_bits": true,
+  "E3_selected_is_initial": true,
+  "E3_native_depth_exact_cached_match": true,
+  "E3_old_GT_scores_reproduced_to_1e_12": true,
+  "known_depth_error_metric_check": true,
+  "single_inherited_scale_no_refit": true,
+  "one_common_support_all_methods": true,
+  "all_method_coverage_reported": true,
+  "ply_xyz_rgb_metadata_reload": true,
+  "png_lossless_reload": true,
+  "native_depth_npz_reload": true
+}

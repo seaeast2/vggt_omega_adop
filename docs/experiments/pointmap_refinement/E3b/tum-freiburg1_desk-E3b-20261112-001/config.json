@@ -1,0 +1,47 @@
+{
+  "experiment_code": "E3b",
+  "e0_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "e0b_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b",
+  "e3_stage": "results/pointmap_refinement/tum-freiburg1_desk-E3-20261112-001/stages/E3",
+  "gt_stage": "results/pointmap_refinement/tum-freiburg1_desk-P1-20261112-001/stages/P1",
+  "methods": [
+    "E0",
+    "E0b",
+    "E3_selected",
+    "E3_last"
+  ],
+  "primary_comparison": "existing E0b and E3 outputs; evaluation only; no optimization on E0b",
+  "gt_scale": "reuse E3 evaluation/gt_depth.json scale unchanged for every method; no refit",
+  "fixed_gt_mask": "reuse E3 initial fixed_gt_mask; report covered fraction and missing count",
+  "common_gt_mask": "fixed_gt_mask intersect finite positive native front depth from all four methods",
+  "native_depth_projection": "unchanged E1 front_map used by E3 GT evaluation; predicted camera; 512x384; strict projected center in [0,W-1]x[0,H-1]",
+  "color_projection": "unchanged E0a front; nearest-pixel cell bounds [-0.5,W-0.5); identical for all methods",
+  "palette_rgb": [
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      255
+    ]
+  ],
+  "point_color": "equal average of distinct original source frame palette; owner palette exports separately",
+  "error_display_max_m": 0.25,
+  "depth_display_gt_percentiles": [
+    1,
+    99
+  ],
+  "new_training": false,
+  "rgb_reconstruction_score": false,
+  "wall_roi": null,
+  "heldout_evaluation": false,
+  "run_id": "tum-freiburg1_desk-E3b-20261112-001"
+}

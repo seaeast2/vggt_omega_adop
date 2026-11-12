@@ -1,0 +1,363 @@
+{
+  "scale_m_per_model_unit": 1.3228912022012644,
+  "scale_source": "results/pointmap_refinement/tum-freiburg1_desk-E3-20261112-001/stages/E3/evaluation/gt_depth.json",
+  "refit_per_method": false,
+  "fixed_gt_pixels": 448144,
+  "common_pixels": 416835,
+  "common_pixels_by_camera": [
+    143919,
+    132058,
+    140858
+  ],
+  "summary": [
+    {
+      "method": "E0",
+      "points": 589824,
+      "pixels": 416835,
+      "rmse_m": 0.1599590302449664,
+      "absrel": 0.03589403018946909,
+      "fixed_gt_pixels": 448144,
+      "covered_fixed_pixels": 448144,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0
+    },
+    {
+      "method": "E0b",
+      "points": 341325,
+      "pixels": 416835,
+      "rmse_m": 0.14425710572901543,
+      "absrel": 0.033682030695312476,
+      "fixed_gt_pixels": 448144,
+      "covered_fixed_pixels": 425275,
+      "missing_fixed_pixels": 22869,
+      "coverage_of_fixed": 0.9489695276518262
+    },
+    {
+      "method": "E3_selected",
+      "points": 510427,
+      "pixels": 416835,
+      "rmse_m": 0.15996343144719186,
+      "absrel": 0.035912277626758714,
+      "fixed_gt_pixels": 448144,
+      "covered_fixed_pixels": 448144,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0
+    },
+    {
+      "method": "E3_last",
+      "points": 510427,
+      "pixels": 416835,
+      "rmse_m": 0.1604273502813023,
+      "absrel": 0.03759016282211696,
+      "fixed_gt_pixels": 448144,
+      "covered_fixed_pixels": 439400,
+      "missing_fixed_pixels": 8744,
+      "coverage_of_fixed": 0.9804884144382163
+    }
+  ],
+  "per_camera": [
+    {
+      "method": "E0",
+      "camera": 0,
+      "fixed_gt_pixels": 160241,
+      "covered_fixed_pixels": 160241,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 143919,
+        "squared_error_sum_m2": 1699.3055512828792,
+        "absrel_sum": 4223.475326767041,
+        "rmse_m": 0.10866174415707133,
+        "absrel": 0.029346197005030893,
+        "median_abs_error_m": 0.01831955855713785
+      },
+      "covered_only_not_same_support": {
+        "pixels": 160241,
+        "squared_error_sum_m2": 2198.8680277578233,
+        "absrel_sum": 4914.923017741486,
+        "rmse_m": 0.11714203355477579,
+        "absrel": 0.03067206905686738,
+        "median_abs_error_m": 0.01805830561600108
+      }
+    },
+    {
+      "method": "E0",
+      "camera": 1,
+      "fixed_gt_pixels": 144103,
+      "covered_fixed_pixels": 144103,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 132058,
+        "squared_error_sum_m2": 3631.9598768904125,
+        "absrel_sum": 4645.221685968138,
+        "rmse_m": 0.16583957008150735,
+        "absrel": 0.035175617425435325,
+        "median_abs_error_m": 0.01712304654335517
+      },
+      "covered_only_not_same_support": {
+        "pixels": 144103,
+        "squared_error_sum_m2": 4325.4013284726625,
+        "absrel_sum": 5209.247989842967,
+        "rmse_m": 0.17325137638567523,
+        "absrel": 0.03614947634569001,
+        "median_abs_error_m": 0.017016882018390467
+      }
+    },
+    {
+      "method": "E0",
+      "camera": 2,
+      "fixed_gt_pixels": 143800,
+      "covered_fixed_pixels": 143800,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 140858,
+        "squared_error_sum_m2": 5334.246430584323,
+        "absrel_sum": 6093.191061292165,
+        "rmse_m": 0.19460131865212782,
+        "absrel": 0.04325768547964734,
+        "median_abs_error_m": 0.025553948765107637
+      },
+      "covered_only_not_same_support": {
+        "pixels": 143800,
+        "squared_error_sum_m2": 5341.998155212674,
+        "absrel_sum": 6142.011557275518,
+        "rmse_m": 0.19274025260350403,
+        "absrel": 0.04271218050956549,
+        "median_abs_error_m": 0.025026443768917994
+      }
+    },
+    {
+      "method": "E0b",
+      "camera": 0,
+      "fixed_gt_pixels": 160241,
+      "covered_fixed_pixels": 146657,
+      "missing_fixed_pixels": 13584,
+      "coverage_of_fixed": 0.9152276882945064,
+      "common": {
+        "pixels": 143919,
+        "squared_error_sum_m2": 1598.0838495554854,
+        "absrel_sum": 4191.482190066788,
+        "rmse_m": 0.10537575878365146,
+        "absrel": 0.029123897401085248,
+        "median_abs_error_m": 0.017372611326310627
+      },
+      "covered_only_not_same_support": {
+        "pixels": 146657,
+        "squared_error_sum_m2": 1599.732911080783,
+        "absrel_sum": 4229.077050207742,
+        "rmse_m": 0.10444131741749746,
+        "absrel": 0.028836516840026333,
+        "median_abs_error_m": 0.017167555829114445
+      }
+    },
+    {
+      "method": "E0b",
+      "camera": 1,
+      "fixed_gt_pixels": 144103,
+      "covered_fixed_pixels": 134830,
+      "missing_fixed_pixels": 9273,
+      "coverage_of_fixed": 0.9356501946524362,
+      "common": {
+        "pixels": 132058,
+        "squared_error_sum_m2": 2463.4998212463656,
+        "absrel_sum": 3965.294150730125,
+        "rmse_m": 0.13658213894961685,
+        "absrel": 0.03002691355866456,
+        "median_abs_error_m": 0.016908391955082924
+      },
+      "covered_only_not_same_support": {
+        "pixels": 134830,
+        "squared_error_sum_m2": 2486.8104102678985,
+        "absrel_sum": 4014.933197217982,
+        "rmse_m": 0.13580884980967498,
+        "absrel": 0.029777743804924588,
+        "median_abs_error_m": 0.01676721638498313
+      }
+    },
+    {
+      "method": "E0b",
+      "camera": 2,
+      "fixed_gt_pixels": 143800,
+      "covered_fixed_pixels": 143788,
+      "missing_fixed_pixels": 12,
+      "coverage_of_fixed": 0.9999165507649513,
+      "common": {
+        "pixels": 140858,
+        "squared_error_sum_m2": 4612.799595358096,
+        "absrel_sum": 5883.072924083664,
+        "rmse_m": 0.18096372805757618,
+        "absrel": 0.04176598364369552,
+        "median_abs_error_m": 0.02544863560580768
+      },
+      "covered_only_not_same_support": {
+        "pixels": 143788,
+        "squared_error_sum_m2": 4620.358246593569,
+        "absrel_sum": 5929.39672095043,
+        "rmse_m": 0.17925715679547413,
+        "absrel": 0.04123707625775746,
+        "median_abs_error_m": 0.02491101814771257
+      }
+    },
+    {
+      "method": "E3_selected",
+      "camera": 0,
+      "fixed_gt_pixels": 160241,
+      "covered_fixed_pixels": 160241,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 143919,
+        "squared_error_sum_m2": 1701.4741087572788,
+        "absrel_sum": 4239.337706253218,
+        "rmse_m": 0.10873105603210884,
+        "absrel": 0.02945641441542269,
+        "median_abs_error_m": 0.018373830994923512
+      },
+      "covered_only_not_same_support": {
+        "pixels": 160241,
+        "squared_error_sum_m2": 2202.0714738020934,
+        "absrel_sum": 4934.338107398973,
+        "rmse_m": 0.11722733235487343,
+        "absrel": 0.030793230867249787,
+        "median_abs_error_m": 0.018095964322897062
+      }
+    },
+    {
+      "method": "E3_selected",
+      "camera": 1,
+      "fixed_gt_pixels": 144103,
+      "covered_fixed_pixels": 144103,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 132058,
+        "squared_error_sum_m2": 3630.8777614347314,
+        "absrel_sum": 4637.387585172598,
+        "rmse_m": 0.16581486290727698,
+        "absrel": 0.03511629424323099,
+        "median_abs_error_m": 0.017064651613520776
+      },
+      "covered_only_not_same_support": {
+        "pixels": 144103,
+        "squared_error_sum_m2": 4324.164966290975,
+        "absrel_sum": 5200.9945890570725,
+        "rmse_m": 0.1732266137402796,
+        "absrel": 0.03609220202950024,
+        "median_abs_error_m": 0.016950547529243187
+      }
+    },
+    {
+      "method": "E3_selected",
+      "camera": 2,
+      "fixed_gt_pixels": 143800,
+      "covered_fixed_pixels": 143800,
+      "missing_fixed_pixels": 0,
+      "coverage_of_fixed": 1.0,
+      "common": {
+        "pixels": 140858,
+        "squared_error_sum_m2": 5333.746910357236,
+        "absrel_sum": 6092.768953124153,
+        "rmse_m": 0.1945922068148724,
+        "absrel": 0.043254688786750865,
+        "median_abs_error_m": 0.025441956304862456
+      },
+      "covered_only_not_same_support": {
+        "pixels": 143800,
+        "squared_error_sum_m2": 5341.337660356182,
+        "absrel_sum": 6139.624529614235,
+        "rmse_m": 0.19272833684866347,
+        "absrel": 0.04269558087353432,
+        "median_abs_error_m": 0.02487145720885403
+      }
+    },
+    {
+      "method": "E3_last",
+      "camera": 0,
+      "fixed_gt_pixels": 160241,
+      "covered_fixed_pixels": 157265,
+      "missing_fixed_pixels": 2976,
+      "coverage_of_fixed": 0.9814279741139909,
+      "common": {
+        "pixels": 143919,
+        "squared_error_sum_m2": 1736.0963543296434,
+        "absrel_sum": 4570.140265882318,
+        "rmse_m": 0.10983173551410651,
+        "absrel": 0.031754947337615726,
+        "median_abs_error_m": 0.023307135449204708
+      },
+      "covered_only_not_same_support": {
+        "pixels": 157265,
+        "squared_error_sum_m2": 2237.785919359217,
+        "absrel_sum": 5250.8908262050245,
+        "rmse_m": 0.11928703085097657,
+        "absrel": 0.03338880759358424,
+        "median_abs_error_m": 0.02304242628408404
+      }
+    },
+    {
+      "method": "E3_last",
+      "camera": 1,
+      "fixed_gt_pixels": 144103,
+      "covered_fixed_pixels": 141269,
+      "missing_fixed_pixels": 2834,
+      "coverage_of_fixed": 0.9803335114466736,
+      "common": {
+        "pixels": 132058,
+        "squared_error_sum_m2": 3648.871984028316,
+        "absrel_sum": 4883.841573352921,
+        "rmse_m": 0.166225235019463,
+        "absrel": 0.03698254988984326,
+        "median_abs_error_m": 0.02021294998765566
+      },
+      "covered_only_not_same_support": {
+        "pixels": 141269,
+        "squared_error_sum_m2": 4319.1220278842575,
+        "absrel_sum": 5403.921423619139,
+        "rmse_m": 0.17485348864250952,
+        "absrel": 0.03825270529004339,
+        "median_abs_error_m": 0.020257030940219467
+      }
+    },
+    {
+      "method": "E3_last",
+      "camera": 2,
+      "fixed_gt_pixels": 143800,
+      "covered_fixed_pixels": 140866,
+      "missing_fixed_pixels": 2934,
+      "coverage_of_fixed": 0.979596662030598,
+      "common": {
+        "pixels": 140858,
+        "squared_error_sum_m2": 5343.086844936146,
+        "absrel_sum": 6214.9136807218865,
+        "rmse_m": 0.1947625076896695,
+        "absrel": 0.04412183674851188,
+        "median_abs_error_m": 0.027913610233230135
+      },
+      "covered_only_not_same_support": {
+        "pixels": 140866,
+        "squared_error_sum_m2": 5343.090833196267,
+        "absrel_sum": 6215.093984214799,
+        "rmse_m": 0.19475704986432346,
+        "absrel": 0.044120610965135657,
+        "median_abs_error_m": 0.02791322192182466
+      }
+    }
+  ],
+  "historical_E3_reproduction": [
+    {
+      "method": "E3_selected",
+      "pixels": 439400,
+      "rmse_m": 0.16411664271313176,
+      "absrel": 0.03672695728142198
+    },
+    {
+      "method": "E3_last",
+      "pixels": 439400,
+      "rmse_m": 0.16456725766396577,
+      "absrel": 0.03839305014574184
+    }
+  ],
+  "limitations": "Same input-view scale-aligned image depth; intersection support depends on coverage; missing pixels reported separately; no heldout/full 3D/wall ROI claim."
+}
