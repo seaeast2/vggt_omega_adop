@@ -1,0 +1,30 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+  "execution_context": "host CPU; GPU unused",
+  "project_commit_before_run": "7a720bc92b986385fd311bea1745f7a3825c2b68",
+  "source_files": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/source/README.md",
+      "bytes": 2423,
+      "sha256": "9c4ea0e07ab0bb2e3ff7856ada456e7690c345abe5ead6888db4fd8939ba3203"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/source/config.json",
+      "bytes": 1041,
+      "sha256": "b0ae07ad8ab24b3db49187f2bfa525fce96e8c4c0eb071d482707478ec3ae2a0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/source/e0a_projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/source/run.py",
+      "bytes": 17433,
+      "sha256": "d083c72da550e8e4e057ce8ae7a04b97c1d186a604f90fbc07302e8d65450419"
+    }
+  ]
+}

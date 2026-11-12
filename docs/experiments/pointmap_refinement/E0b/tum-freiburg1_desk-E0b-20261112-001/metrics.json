@@ -1,0 +1,86 @@
+{
+  "input_observations": 589824,
+  "final_points": 341325,
+  "point_reduction_fraction": 0.4213104248046875,
+  "steps": [
+    {
+      "target_camera": 1,
+      "old_representatives": 196608,
+      "removed_old_representatives": 126056,
+      "kept_old_representatives": 70552,
+      "touched_target_pixels": 106801,
+      "new_target_points": 196608,
+      "output_points": 267160,
+      "max_old_points_per_target_pixel": 7,
+      "changed_target_depth_mean_abs": 0.017224724862411483,
+      "target_xyz_displacement_max": 0.8058320573729635
+    },
+    {
+      "target_camera": 2,
+      "old_representatives": 267160,
+      "removed_old_representatives": 122443,
+      "kept_old_representatives": 144717,
+      "touched_target_pixels": 108796,
+      "new_target_points": 196608,
+      "output_points": 341325,
+      "max_old_points_per_target_pixel": 8,
+      "changed_target_depth_mean_abs": 0.01669195922858183,
+      "target_xyz_displacement_max": 0.8283768291751997
+    }
+  ],
+  "final_owner_counts": [
+    69899,
+    74818,
+    196608
+  ],
+  "distinct_source_frame_histogram": {
+    "1": 169859,
+    "2": 128239,
+    "3": 43227
+  },
+  "original_observation_count": 589824,
+  "max_observations_per_group": 17,
+  "owner_displacement_model_units": {
+    "mean": 0.009065506862810548,
+    "max": 0.8283768291751997,
+    "moved_over_1e_8": 171466
+  },
+  "camera_projections": [
+    {
+      "camera": 0,
+      "before_covered_pixels": 196608,
+      "after_covered_pixels": 179399,
+      "total_pixels": 196608,
+      "front_owner_counts": [
+        69895,
+        62096,
+        47408
+      ]
+    },
+    {
+      "camera": 1,
+      "before_covered_pixels": 196608,
+      "after_covered_pixels": 182928,
+      "total_pixels": 196608,
+      "front_owner_counts": [
+        0,
+        74817,
+        108111
+      ]
+    },
+    {
+      "camera": 2,
+      "before_covered_pixels": 196608,
+      "after_covered_pixels": 196608,
+      "total_pixels": 196608,
+      "front_owner_counts": [
+        0,
+        0,
+        196608
+      ]
+    }
+  ],
+  "wall_roi_or_gt_accuracy_evaluated": false,
+  "cpu_seconds": 2.894945932988776,
+  "limitations": "Same-pixel association can fuse different surfaces; order-dependent; fewer points/latest-owner color is by construction, not accuracy evidence."
+}

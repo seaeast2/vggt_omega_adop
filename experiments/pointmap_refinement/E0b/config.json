@@ -1,0 +1,16 @@
+{
+  "experiment_code": "E0b",
+  "parent_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0",
+  "comparison_stage": "results/pointmap_refinement/tum-freiburg1_desk-E0a-20261112-001/stages/E0a",
+  "frame_order": [0, 1, 2],
+  "palette_rgb": [[255, 0, 0], [0, 255, 0], [0, 0, 255]],
+  "association": "nearest pixel in the next predicted camera; positive camera Z; no depth/normal/confidence gate",
+  "fusion": "arithmetic mean of all projected current-map-point Z and one new observation Z at each target pixel",
+  "weights": "one per current representative point and one per new observation; no historical-observation-count weighting",
+  "replacement": "one point on the next camera pixel ray at mean Z; remove all associated old map points; retain unassociated old points",
+  "pixel_bounds": "[-0.5,width-0.5) and [-0.5,height-0.5); numpy rint",
+  "color": "latest owner frame palette; additional distinct-source palette mean",
+  "optimization": false,
+  "camera_parameters_changed": false,
+  "gt_used": false
+}

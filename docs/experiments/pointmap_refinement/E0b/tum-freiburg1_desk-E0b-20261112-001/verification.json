@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "controlled_checks": {
+    "camera_z_mean_known_values": true,
+    "old_point_removal_mapping": true,
+    "unprojected_old_point_preserved": true,
+    "historical_count_not_used": true
+  },
+  "new_points_follow_target_pixel_and_mean_z": true,
+  "unassociated_old_and_target_points_exactly_unchanged": true,
+  "removed_old_to_new_mapping": true,
+  "all_original_observations_in_one_CSR_group": true,
+  "ply_and_npz_reload": true,
+  "png_lossless_reload": true,
+  "parents_unchanged": true
+}
