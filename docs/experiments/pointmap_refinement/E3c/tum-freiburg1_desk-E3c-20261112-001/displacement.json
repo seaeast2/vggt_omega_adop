@@ -1,0 +1,72 @@
+{
+  "control_E0b": {
+    "initial": {
+      "moved_over_1e_8": 0,
+      "active_displacement_model_units": {
+        "count": 135193,
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "points_at_bound": 0
+    },
+    "selected": {
+      "moved_over_1e_8": 134851,
+      "active_displacement_model_units": {
+        "count": 135193,
+        "mean": 0.044304462998692125,
+        "median": 0.04294904079106082,
+        "p95": 0.08053218902186972,
+        "max": 0.14468580996642283
+      },
+      "points_at_bound": 94585
+    },
+    "last": {
+      "moved_over_1e_8": 134851,
+      "active_displacement_model_units": {
+        "count": 135193,
+        "mean": 0.044304462998692125,
+        "median": 0.04294904079106082,
+        "p95": 0.08053218902186972,
+        "max": 0.14468580996642283
+      },
+      "points_at_bound": 94585
+    }
+  },
+  "treatment_E0c": {
+    "initial": {
+      "moved_over_1e_8": 0,
+      "active_displacement_model_units": {
+        "count": 106687,
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "points_at_bound": 0
+    },
+    "selected": {
+      "moved_over_1e_8": 106464,
+      "active_displacement_model_units": {
+        "count": 106687,
+        "mean": 0.04297318024775549,
+        "median": 0.04169327642926471,
+        "p95": 0.08334034463520135,
+        "max": 0.14468580996642283
+      },
+      "points_at_bound": 70574
+    },
+    "last": {
+      "moved_over_1e_8": 106464,
+      "active_displacement_model_units": {
+        "count": 106687,
+        "mean": 0.04297318024775549,
+        "median": 0.04169327642926471,
+        "p95": 0.08334034463520135,
+        "max": 0.14468580996642283
+      },
+      "points_at_bound": 70574
+    }
+  }
+}

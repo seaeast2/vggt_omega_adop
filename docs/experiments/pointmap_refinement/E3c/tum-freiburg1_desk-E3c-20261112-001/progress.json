@@ -1,0 +1,95 @@
+{
+  "events": [
+    {
+      "time": "2026-11-12T21:14:45.247443+09:00",
+      "phase": "prepared",
+      "arms": {
+        "control_E0b": {
+          "points": 341325,
+          "multi_source_points": 171466,
+          "active_points": 135193,
+          "inactive_points": 206132,
+          "gt_loaded": false
+        },
+        "treatment_E0c": {
+          "points": 419864,
+          "multi_source_points": 129182,
+          "active_points": 106687,
+          "inactive_points": 313177,
+          "gt_loaded": false
+        }
+      },
+      "same_active_policy": true,
+      "active_indices_arm_specific": true,
+      "E0b_preparation_exactly_reproduces_E3b_initial": true,
+      "temperatures_identical_between_arms": [
+        0.09041110278030895,
+        0.09357169677591856,
+        0.08572922916200763
+      ],
+      "gt_read": false
+    },
+    {
+      "time": "2026-11-12T21:15:05.879711+09:00",
+      "phase": "preflight",
+      "arm": "control_E0b",
+      "passed": true
+    },
+    {
+      "time": "2026-11-12T21:15:07.813499+09:00",
+      "phase": "preflight",
+      "arm": "treatment_E0c",
+      "passed": true
+    },
+    {
+      "time": "2026-11-12T21:15:20.579185+09:00",
+      "phase": "trained_arm",
+      "arm": "control_E0b",
+      "initial_points": 341325,
+      "active_points": 135193,
+      "steps": 200,
+      "selected_step": 200,
+      "initial_photo_loss": 0.044564712792634964,
+      "selected_photo_loss": 0.04227103851735592,
+      "last_photo_loss": 0.04227103851735592,
+      "optimization_seconds": 12.03651078400435,
+      "max_checkpoint_fixed_mask_support_drop": 0.0,
+      "selected_by": "minimum checkpoint training Charbonnier only",
+      "GT_read": false
+    },
+    {
+      "time": "2026-11-12T21:15:36.910505+09:00",
+      "phase": "trained_arm",
+      "arm": "treatment_E0c",
+      "initial_points": 419864,
+      "active_points": 106687,
+      "steps": 200,
+      "selected_step": 200,
+      "initial_photo_loss": 0.047569260001182556,
+      "selected_photo_loss": 0.04645940661430359,
+      "last_photo_loss": 0.04645940661430359,
+      "optimization_seconds": 15.506588417993044,
+      "max_checkpoint_fixed_mask_support_drop": 0.0,
+      "selected_by": "minimum checkpoint training Charbonnier only",
+      "GT_read": false
+    },
+    {
+      "time": "2026-11-12T21:16:02.054439+09:00",
+      "phase": "evaluated",
+      "comparison": {
+        "control_E0b": {
+          "photo_fraction_reduction": 0.05146839576756146,
+          "GT_RMSE_change_m": 0.00467982227478228,
+          "GT_AbsRel_change": 0.012944293534705734,
+          "fixed_coverage_change": -0.06298525710818004
+        },
+        "treatment_E0c": {
+          "photo_fraction_reduction": 0.023331314946908543,
+          "GT_RMSE_change_m": 0.0034457774054125756,
+          "GT_AbsRel_change": 0.00908258961689782,
+          "fixed_coverage_change": -0.045538311885340965
+        }
+      }
+    }
+  ]
+}

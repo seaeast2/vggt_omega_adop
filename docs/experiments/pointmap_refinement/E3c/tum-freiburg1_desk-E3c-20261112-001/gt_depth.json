@@ -1,0 +1,250 @@
+{
+  "scale_m_per_model_unit": 1.3171403295592672,
+  "scale_refit": false,
+  "GT_used_for_training_or_selection": false,
+  "summary": [
+    {
+      "arm": "control_E0b",
+      "state": "initial",
+      "common_pixels": 380948,
+      "rmse_m": 0.14998762414000663,
+      "absrel": 0.03451934772860724,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 425307,
+      "coverage_of_fixed": 0.9488884823388724
+    },
+    {
+      "arm": "control_E0b",
+      "state": "selected",
+      "common_pixels": 380948,
+      "rmse_m": 0.1546674464147889,
+      "absrel": 0.047463641263312976,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 397076,
+      "coverage_of_fixed": 0.8859032252306923
+    },
+    {
+      "arm": "control_E0b",
+      "state": "last",
+      "common_pixels": 380948,
+      "rmse_m": 0.1546674464147889,
+      "absrel": 0.047463641263312976,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 397076,
+      "coverage_of_fixed": 0.8859032252306923
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "initial",
+      "common_pixels": 380948,
+      "rmse_m": 0.16185058444521166,
+      "absrel": 0.035971787522878676,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 436244,
+      "coverage_of_fixed": 0.9732896639120424
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "selected",
+      "common_pixels": 380948,
+      "rmse_m": 0.16529636185062424,
+      "absrel": 0.045054377139776496,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 415833,
+      "coverage_of_fixed": 0.9277513520267014
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "last",
+      "common_pixels": 380948,
+      "rmse_m": 0.16529636185062424,
+      "absrel": 0.045054377139776496,
+      "fixed_pixels": 448216,
+      "covered_fixed_pixels": 415833,
+      "coverage_of_fixed": 0.9277513520267014
+    }
+  ],
+  "per_camera": [
+    {
+      "arm": "control_E0b",
+      "state": "initial",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11182632168305791,
+      "absrel": 0.030455566584656316,
+      "covered_fixed_pixels": 146688,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "control_E0b",
+      "state": "initial",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.1455424256593017,
+      "absrel": 0.03167171593204589,
+      "covered_fixed_pixels": 134830,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "control_E0b",
+      "state": "initial",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.1787738338433668,
+      "absrel": 0.04023878529045348,
+      "covered_fixed_pixels": 143789,
+      "fixed_pixels": 143803
+    },
+    {
+      "arm": "control_E0b",
+      "state": "selected",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11950438052408102,
+      "absrel": 0.04222685752546356,
+      "covered_fixed_pixels": 129403,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "control_E0b",
+      "state": "selected",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.15266237986837858,
+      "absrel": 0.05017368047028701,
+      "covered_fixed_pixels": 123883,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "control_E0b",
+      "state": "selected",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.1803531613114002,
+      "absrel": 0.04967646636180156,
+      "covered_fixed_pixels": 143790,
+      "fixed_pixels": 143803
+    },
+    {
+      "arm": "control_E0b",
+      "state": "last",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11950438052408102,
+      "absrel": 0.04222685752546356,
+      "covered_fixed_pixels": 129403,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "control_E0b",
+      "state": "last",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.15266237986837858,
+      "absrel": 0.05017368047028701,
+      "covered_fixed_pixels": 123883,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "control_E0b",
+      "state": "last",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.1803531613114002,
+      "absrel": 0.04967646636180156,
+      "covered_fixed_pixels": 143790,
+      "fixed_pixels": 143803
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "initial",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11262244753757679,
+      "absrel": 0.02960050222456291,
+      "covered_fixed_pixels": 153831,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "initial",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.1669282229874857,
+      "absrel": 0.035512200479960655,
+      "covered_fixed_pixels": 138624,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "initial",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.19028486552818472,
+      "absrel": 0.041701072781575935,
+      "covered_fixed_pixels": 143789,
+      "fixed_pixels": 143803
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "selected",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11726956414838588,
+      "absrel": 0.03633313107422785,
+      "covered_fixed_pixels": 141631,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "selected",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.17226364348694592,
+      "absrel": 0.048809539463501826,
+      "covered_fixed_pixels": 130412,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "selected",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.1919204239170471,
+      "absrel": 0.049352441517835216,
+      "covered_fixed_pixels": 143790,
+      "fixed_pixels": 143803
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "last",
+      "camera": 0,
+      "common_pixels": 120915,
+      "rmse_m": 0.11726956414838588,
+      "absrel": 0.03633313107422785,
+      "covered_fixed_pixels": 141631,
+      "fixed_pixels": 160310
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "last",
+      "camera": 1,
+      "common_pixels": 116244,
+      "rmse_m": 0.17226364348694592,
+      "absrel": 0.048809539463501826,
+      "covered_fixed_pixels": 130412,
+      "fixed_pixels": 144103
+    },
+    {
+      "arm": "treatment_E0c",
+      "state": "last",
+      "camera": 2,
+      "common_pixels": 143789,
+      "rmse_m": 0.1919204239170471,
+      "absrel": 0.049352441517835216,
+      "covered_fixed_pixels": 143790,
+      "fixed_pixels": 143803
+    }
+  ],
+  "limitations": "same input cameras; one prior E0b scale; intersection of all six arm states plus fixed coverage; no heldout/full 3D/wall GT claim"
+}

@@ -1,0 +1,72 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+  "CPU_preparation": {
+    "project_commit_before_run": "d9ee1de938524b52b825aa88c5fe88f386c05d8a",
+    "source_files": [
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/README.md",
+        "bytes": 2846,
+        "sha256": "fb6f5ead38551e6104c81c43235243f2f8eae789e8564d75daf63339e83ff3ce"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/config.json",
+        "bytes": 2935,
+        "sha256": "4e796b9a611602aebc65441fc9851a4db3ba1c23463632c2fd16d2510d58787c"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/evaluate.py",
+        "bytes": 13689,
+        "sha256": "5e13e90aa22524b8aba80a6b1057101a9482ca68b6c8e00d8e9f47b5f5e48c91"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/geometry.py",
+        "bytes": 7942,
+        "sha256": "c2c9f2e20eabf907b556dd9b3a04a2e3c12e476bd0ca62fa7fb7010e59476af2"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/prepare.py",
+        "bytes": 9820,
+        "sha256": "ae7a14055f3289a83fe8c0104040abddc2dd800f81126614a3cd64e3784a1f80"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/projection.py",
+        "bytes": 16043,
+        "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/renderer.py",
+        "bytes": 2749,
+        "sha256": "5dbf534213b5ee0b6d3d59da730cf8db02afff53cc81e7fb3124c7482b8b232e"
+      },
+      {
+        "path": "results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/artifacts/source/train.py",
+        "bytes": 14513,
+        "sha256": "43902ff7bfef273c4fcdf1a5c34767de6a438a30e3680191022b10c6f730d0c0"
+      }
+    ]
+  },
+  "GPU_training": {
+    "torch": "2.15.0+cu132",
+    "cuda_runtime": "13.2",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "driver_snapshot": "NVIDIA GeForce RTX 5060, 8151 MiB, 1754 MiB, 595.99.02",
+    "execution_context": "host GPU outside sandbox",
+    "wall_seconds": 33.97591346199624,
+    "peak_allocated_bytes": 1101027840,
+    "peak_reserved_bytes": 1539309568,
+    "train_pixels_by_camera": [
+      10944,
+      10780,
+      10253
+    ],
+    "temperatures": [
+      0.09041110278030895,
+      0.09357169677591856,
+      0.08572922916200763
+    ],
+    "GT_loaded": false
+  }
+}

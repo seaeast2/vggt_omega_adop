@@ -1,0 +1,28 @@
+{
+  "control_E0b": {
+    "initial_points": 341325,
+    "active_points": 135193,
+    "steps": 200,
+    "selected_step": 200,
+    "initial_photo_loss": 0.044564712792634964,
+    "selected_photo_loss": 0.04227103851735592,
+    "last_photo_loss": 0.04227103851735592,
+    "optimization_seconds": 12.03651078400435,
+    "max_checkpoint_fixed_mask_support_drop": 0.0,
+    "selected_by": "minimum checkpoint training Charbonnier only",
+    "GT_read": false
+  },
+  "treatment_E0c": {
+    "initial_points": 419864,
+    "active_points": 106687,
+    "steps": 200,
+    "selected_step": 200,
+    "initial_photo_loss": 0.047569260001182556,
+    "selected_photo_loss": 0.04645940661430359,
+    "last_photo_loss": 0.04645940661430359,
+    "optimization_seconds": 15.506588417993044,
+    "max_checkpoint_fixed_mask_support_drop": 0.0,
+    "selected_by": "minimum checkpoint training Charbonnier only",
+    "GT_read": false
+  }
+}

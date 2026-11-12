@@ -1,0 +1,27 @@
+{
+  "arms": {
+    "control_E0b": {
+      "points": 341325,
+      "multi_source_points": 171466,
+      "active_points": 135193,
+      "inactive_points": 206132,
+      "gt_loaded": false
+    },
+    "treatment_E0c": {
+      "points": 419864,
+      "multi_source_points": 129182,
+      "active_points": 106687,
+      "inactive_points": 313177,
+      "gt_loaded": false
+    }
+  },
+  "same_active_policy": true,
+  "active_indices_arm_specific": true,
+  "E0b_preparation_exactly_reproduces_E3b_initial": true,
+  "temperatures_identical_between_arms": [
+    0.09041110278030895,
+    0.09357169677591856,
+    0.08572922916200763
+  ],
+  "gt_read": false
+}

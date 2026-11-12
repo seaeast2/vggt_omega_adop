@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "both_initial_XYZ_CSR_exact_parents": true,
+  "original_observation_partition_preserved": true,
+  "inactive_XYZ_exactly_fixed": true,
+  "active_XYZ_matches_log_ray_gradient": true,
+  "point_count_colors_cameras_topology_fixed": true,
+  "same_frozen_train_masks_and_temperatures": true,
+  "both_preflights_passed": true,
+  "both_formal_200_step_runs_and_nonzero_movement": true,
+  "bounds_PLY_NPZ_PNG_reload": true,
+  "GT_after_training_selection_only": true,
+  "scale_reused_without_refit": true,
+  "parent_and_executed_source_hashes_unchanged": true
+}

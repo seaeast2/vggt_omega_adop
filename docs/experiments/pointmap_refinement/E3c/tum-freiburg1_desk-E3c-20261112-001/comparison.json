@@ -1,0 +1,14 @@
+{
+  "control_E0b": {
+    "photo_fraction_reduction": 0.05146839576756146,
+    "GT_RMSE_change_m": 0.00467982227478228,
+    "GT_AbsRel_change": 0.012944293534705734,
+    "fixed_coverage_change": -0.06298525710818004
+  },
+  "treatment_E0c": {
+    "photo_fraction_reduction": 0.023331314946908543,
+    "GT_RMSE_change_m": 0.0034457774054125756,
+    "GT_AbsRel_change": 0.00908258961689782,
+    "fixed_coverage_change": -0.045538311885340965
+  }
+}
