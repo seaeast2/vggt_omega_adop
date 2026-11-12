@@ -1,0 +1,43 @@
+{
+  "decision": "TECHNICAL_PASS",
+  "boundary_controls": [
+    {
+      "old_color": 130,
+      "old_z": 100.0,
+      "accepted": true
+    },
+    {
+      "old_color": 131,
+      "old_z": 100.0,
+      "accepted": false
+    },
+    {
+      "old_color": 100,
+      "old_z": 97.0,
+      "accepted": true
+    },
+    {
+      "old_color": 100,
+      "old_z": 96.999,
+      "accepted": false
+    },
+    {
+      "old_color": 100,
+      "old_z": 120.0,
+      "accepted": false
+    }
+  ],
+  "candidate_depth_chaining_rejected": true,
+  "original_member_depth_chaining_rejected": true,
+  "depth_disabled_exact_E0c_replay": true,
+  "legacy_file": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0c-20261112-001/stages/E0c/artifacts/maps/fused_map.npz",
+    "bytes": 16479179,
+    "sha256": "bdaa577990a84f4e89183310172cbcbcbdc940c4539d8b7cf448eb56f2772eda"
+  },
+  "replay_representative_points": 419864,
+  "scientific_improvement": false,
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 0.4206685820099665,
+  "process_peak_rss_mib": 602.9921875
+}
