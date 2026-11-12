@@ -33,7 +33,7 @@ def effect(initial,final,rank_ok,converged,bound_limited,support_ok,coverage_ok)
         'per_pair_z_guard_pass':bool(pairz)}
 
 
-def execute(stage,data,matches,support,dimension,out,diagnostic=False):
+def execute(stage,data,matches,support,dimension,out,diagnostic=False,candidate_policy='irls_only'):
     out.mkdir(parents=True,exist_ok=True)
     train=matching.subset(matches,~matches['validation'])
     a,b,w,ids=c.build_system(data,train)
@@ -58,6 +58,16 @@ def execute(stage,data,matches,support,dimension,out,diagnostic=False):
             curve.append({'beta':float(value),'data_loss':float(w@c.huber(np.linalg.norm(aa@candidate+b,axis=1)))})
         sensitivity.append({'variable':variable,'curve':curve})
     c.json_write(out/'sensitivity.json',sensitivity)
+    if candidate_policy=='fixed_segment17' and attempted:
+        # Pre-fixed alpha grid. It uses fit loss and fixed coverage, never validation/GT.
+        for index,alpha in enumerate(np.linspace(0.,1.,17)):
+            coefficient=1+alpha*(raw_beta-1)
+            data_loss=float(w@c.huber(np.linalg.norm(aa@coefficient+b,axis=1)))
+            prior_loss=float(.001*np.mean((coefficient-1)**2))
+            history.append({'iteration':100+index,'candidate_kind':'fixed_segment',
+                'alpha':float(alpha),'beta':coefficient.tolist(),
+                'loss':data_loss+prior_loss,'data_loss':data_loss,'prior_loss':prior_loss})
+    else:assert candidate_policy=='irls_only' or not attempted
     candidates=[]
     for row in history:
         beta=np.repeat(row['beta'][0],6) if dimension==1 else np.array(row['beta'])
@@ -76,7 +86,7 @@ def execute(stage,data,matches,support,dimension,out,diagnostic=False):
         result['unqualified_decision']=result['decision']
         result['decision']='LOW_SUPPORT_DIAGNOSTIC_ONLY'
         result['scientific_improvement']=False
-    metrics=result|{'dimension':dimension,'support':support,'rank':rank,
+    metrics=result|{'dimension':dimension,'support':support,'rank':rank,'candidate_policy':candidate_policy,
         'optimization_attempted':attempted,'converged':converged,
         'diagnostic_override':diagnostic,'selected_beta':beta.tolist(),
         'proposed_beta':proposed.tolist(),'selected_iteration':selected['iteration'],
