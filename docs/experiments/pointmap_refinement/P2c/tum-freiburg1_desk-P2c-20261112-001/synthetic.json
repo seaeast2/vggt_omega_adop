@@ -1,0 +1,161 @@
+{
+  "occlusion": {
+    "outside_compact": {
+      "legacy": {
+        "rgb": [
+          0.0010948742807764648,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.0010948742807764648
+      },
+      "normalized_hard": {
+        "rgb": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.0010948742807764648
+      },
+      "compact_hard": {
+        "rgb": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "depth": 1.2,
+        "alpha": 0.6321205588285577
+      },
+      "compact_soft": {
+        "rgb": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "depth": 1.2,
+        "alpha": 0.6321205588285577
+      }
+    },
+    "weak_inside": {
+      "legacy": {
+        "rgb": [
+          0.009176451080165147,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.009176451080165147
+      },
+      "normalized_hard": {
+        "rgb": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.009176451080165147
+      },
+      "compact_hard": {
+        "rgb": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.6321208962760332
+      },
+      "compact_soft": {
+        "rgb": [
+          5.65099263300895e-06,
+          0.0,
+          0.999994349007367
+        ],
+        "depth": 1.1999988698014734,
+        "alpha": 0.6321208962760332
+      }
+    },
+    "strong_front": {
+      "legacy": {
+        "rgb": [
+          0.6321205588285577,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.6321205588285577
+      },
+      "normalized_hard": {
+        "rgb": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.6321205588285577
+      },
+      "compact_hard": {
+        "rgb": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "depth": 1.0,
+        "alpha": 0.8646647167633873
+      },
+      "compact_soft": {
+        "rgb": [
+          0.9987289837369187,
+          0.0,
+          0.001271016263081359
+        ],
+        "depth": 1.0012710162630813,
+        "alpha": 0.8646647167633873
+      }
+    }
+  },
+  "occlusion_controls_pass": true,
+  "boundary_finite_differences": [
+    {
+      "epsilon": 0.0001,
+      "autograd": 0.028129861107802853,
+      "finite_difference": 0.028144402977048344,
+      "passed": true
+    },
+    {
+      "epsilon": 1e-05,
+      "autograd": 0.028129861107802853,
+      "finite_difference": 0.02813131461110174,
+      "passed": true
+    }
+  ],
+  "plane_finite_differences": [
+    {
+      "epsilon": 0.0001,
+      "autograd": 0.06371831016910345,
+      "finite_difference": 0.06371830717467712,
+      "passed": true
+    },
+    {
+      "epsilon": 1e-05,
+      "autograd": 0.06371831016910345,
+      "finite_difference": 0.06371831014068129,
+      "passed": true
+    }
+  ],
+  "plane_initial": {
+    "step": 0,
+    "depth": 2.6,
+    "loss": 0.00790822982325244,
+    "mean_3d_error": 0.20435449303474254
+  },
+  "plane_final": {
+    "step": 100,
+    "depth": 2.4007482874011337,
+    "loss": 1.4083791685703362e-07,
+    "mean_3d_error": 0.0007645794625148635
+  },
+  "plane_recovery_pass": true,
+  "all_passed": true
+}

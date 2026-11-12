@@ -1,0 +1,158 @@
+[
+  {
+    "variant": "legacy",
+    "dtype": "torch.float32",
+    "initial_loss": 0.05915704928338528,
+    "gradient_norm": 0.0006565845105797052,
+    "autograd_direction": -0.0726926326751709,
+    "probes": [
+      {
+        "epsilon": 1e-05,
+        "plus_loss": 0.05915718153119087,
+        "minus_loss": 0.05915595032274723,
+        "initial_loss": 0.05915704928338528,
+        "finite_difference": 0.06156042218208312,
+        "autograd": -0.0726926326751709,
+        "relative_error": 1.8468591646304466,
+        "actual_plus_decreases": false
+      },
+      {
+        "epsilon": 0.0001,
+        "plus_loss": 0.05917254462838173,
+        "minus_loss": 0.059168482199311256,
+        "initial_loss": 0.05915704928338528,
+        "finite_difference": 0.020312145352363586,
+        "autograd": -0.0726926326751709,
+        "relative_error": 1.2794250889650536,
+        "actual_plus_decreases": false
+      },
+      {
+        "epsilon": 0.001,
+        "plus_loss": 0.0594396460801363,
+        "minus_loss": 0.05942274443805218,
+        "initial_loss": 0.05915704928338528,
+        "finite_difference": 0.008450821042060852,
+        "autograd": -0.0726926326751709,
+        "relative_error": 1.1162541612686334,
+        "actual_plus_decreases": false
+      }
+    ]
+  },
+  {
+    "variant": "normalized_hard",
+    "dtype": "torch.float32",
+    "initial_loss": 0.053513459861278534,
+    "gradient_norm": 0.0003746377187781036,
+    "autograd_direction": -0.04635090008378029,
+    "probes": [
+      {
+        "epsilon": 1e-05,
+        "plus_loss": 0.053514303639531136,
+        "minus_loss": 0.0535118542611599,
+        "initial_loss": 0.053513459861278534,
+        "finite_difference": 0.12246891856193541,
+        "autograd": -0.04635090008378029,
+        "relative_error": 3.642212305274981,
+        "actual_plus_decreases": false
+      },
+      {
+        "epsilon": 0.0001,
+        "plus_loss": 0.053510017693042755,
+        "minus_loss": 0.053510600700974464,
+        "initial_loss": 0.053513459861278534,
+        "finite_difference": -0.0029150396585464478,
+        "autograd": -0.04635090008378029,
+        "relative_error": 0.937109319273683,
+        "actual_plus_decreases": true
+      },
+      {
+        "epsilon": 0.001,
+        "plus_loss": 0.05352386459708214,
+        "minus_loss": 0.05358202010393143,
+        "initial_loss": 0.053513459861278534,
+        "finite_difference": -0.02907775342464447,
+        "autograd": -0.04635090008378029,
+        "relative_error": 0.37266043653767716,
+        "actual_plus_decreases": false
+      }
+    ]
+  },
+  {
+    "variant": "compact_hard",
+    "dtype": "torch.float32",
+    "initial_loss": 0.047410182654857635,
+    "gradient_norm": 0.00038146431325003505,
+    "autograd_direction": -0.04887007921934128,
+    "probes": [
+      {
+        "epsilon": 1e-05,
+        "plus_loss": 0.047408416867256165,
+        "minus_loss": 0.04741028044372797,
+        "initial_loss": 0.047410182654857635,
+        "finite_difference": -0.09317882359027861,
+        "autograd": -0.04887007921934128,
+        "relative_error": 0.9066640586373613,
+        "actual_plus_decreases": true
+      },
+      {
+        "epsilon": 0.0001,
+        "plus_loss": 0.04740266501903534,
+        "minus_loss": 0.047425136901438236,
+        "initial_loss": 0.047410182654857635,
+        "finite_difference": -0.1123594120144844,
+        "autograd": -0.04887007921934128,
+        "relative_error": 1.2991452809025936,
+        "actual_plus_decreases": true
+      },
+      {
+        "epsilon": 0.001,
+        "plus_loss": 0.04735160991549492,
+        "minus_loss": 0.0474947988986969,
+        "initial_loss": 0.047410182654857635,
+        "finite_difference": -0.0715944916009903,
+        "autograd": -0.04887007921934128,
+        "relative_error": 0.46499643022177445,
+        "actual_plus_decreases": true
+      }
+    ]
+  },
+  {
+    "variant": "compact_soft",
+    "dtype": "torch.float32",
+    "initial_loss": 0.0426250696182251,
+    "gradient_norm": 0.00035227261832915246,
+    "autograd_direction": -0.056955333799123764,
+    "probes": [
+      {
+        "epsilon": 1e-05,
+        "plus_loss": 0.04262449685484171,
+        "minus_loss": 0.04262563772499561,
+        "initial_loss": 0.0426250696182251,
+        "finite_difference": -0.05704350769519805,
+        "autograd": -0.056955333799123764,
+        "relative_error": 0.0015481235942759874,
+        "actual_plus_decreases": true
+      },
+      {
+        "epsilon": 0.0001,
+        "plus_loss": 0.04261937364935875,
+        "minus_loss": 0.042630767449736595,
+        "initial_loss": 0.0426250696182251,
+        "finite_difference": -0.05696900188922882,
+        "autograd": -0.056955333799123764,
+        "relative_error": 0.0002399791063162383,
+        "actual_plus_decreases": true
+      },
+      {
+        "epsilon": 0.001,
+        "plus_loss": 0.04256842564791441,
+        "minus_loss": 0.04268231801688671,
+        "initial_loss": 0.0426250696182251,
+        "finite_difference": -0.05694618448615074,
+        "autograd": -0.056955333799123764,
+        "relative_error": 0.00016064014312147215,
+        "actual_plus_decreases": true
+      }
+    ]
+  }
+]

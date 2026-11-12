@@ -1,0 +1,1110 @@
+[
+  {
+    "variant": "legacy",
+    "initial_loss": 0.05915704742074013,
+    "last_loss": 0.07156214118003845,
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.05915704742074013,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 16.433824438260945,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.869873046875
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.901651385811682,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.8502604166666666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 16.107410247921752,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.8252766927083334
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "loss": 0.05943964794278145,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 16.35952255891813,
+            "support_coverage_fixed_train_mask": 0.9974334600760456,
+            "coverage_all": 0.868408203125
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.857298667861247,
+            "support_coverage_fixed_train_mask": 0.9979377393695374,
+            "coverage_all": 0.8494466145833334
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 16.10227878780027,
+            "support_coverage_fixed_train_mask": 0.9990876837303598,
+            "coverage_all": 0.8252766927083334
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "loss": 0.05992409773170948,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 16.243996804813104,
+            "support_coverage_fixed_train_mask": 0.995722433460076,
+            "coverage_all": 0.8673502604166666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.779052610573018,
+            "support_coverage_fixed_train_mask": 0.9947952469802612,
+            "coverage_all": 0.8477376302083334
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 16.05964129443827,
+            "support_coverage_fixed_train_mask": 0.9983781044095287,
+            "coverage_all": 0.82470703125
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "loss": 0.06068163551390171,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 16.09272748395537,
+            "support_coverage_fixed_train_mask": 0.992680608365019,
+            "coverage_all": 0.864990234375
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.683770827018593,
+            "support_coverage_fixed_train_mask": 0.9915545517038201,
+            "coverage_all": 0.84521484375
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.996585297179422,
+            "support_coverage_fixed_train_mask": 0.9974657881398885,
+            "coverage_all": 0.8241373697916666
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "loss": 0.061615969985723495,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 15.941198501608756,
+            "support_coverage_fixed_train_mask": 0.9902091254752852,
+            "coverage_all": 0.8633626302083334
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.563950853295626,
+            "support_coverage_fixed_train_mask": 0.9888048708632033,
+            "coverage_all": 0.843017578125
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.9315853199222,
+            "support_coverage_fixed_train_mask": 0.9966548403446528,
+            "coverage_all": 0.8234049479166666
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "loss": 0.06276425532996655,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 15.77171132051409,
+            "support_coverage_fixed_train_mask": 0.9885931558935361,
+            "coverage_all": 0.86181640625
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.448030687156663,
+            "support_coverage_fixed_train_mask": 0.9864480015712462,
+            "coverage_all": 0.8417154947916666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.86014232051159,
+            "support_coverage_fixed_train_mask": 0.9950329447541815,
+            "coverage_all": 0.822265625
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "loss": 0.06404607370495796,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 15.594702922476598,
+            "support_coverage_fixed_train_mask": 0.9865969581749049,
+            "coverage_all": 0.8602701822916666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.319343977730496,
+            "support_coverage_fixed_train_mask": 0.9836983207306295,
+            "coverage_all": 0.8399251302083334
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.766433973214617,
+            "support_coverage_fixed_train_mask": 0.9945261023821591,
+            "coverage_all": 0.8219401041666666
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "loss": 0.06564969569444656,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 15.385862379450007,
+            "support_coverage_fixed_train_mask": 0.9837452471482889,
+            "coverage_all": 0.858154296875
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.207614906749944,
+            "support_coverage_fixed_train_mask": 0.9809486398900128,
+            "coverage_all": 0.8380533854166666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.6621986486906,
+            "support_coverage_fixed_train_mask": 0.9928028383172833,
+            "coverage_all": 0.8204752604166666
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "loss": 0.06738049909472466,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 15.18797412538599,
+            "support_coverage_fixed_train_mask": 0.9817490494296578,
+            "coverage_all": 0.856689453125
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 15.057993211981094,
+            "support_coverage_fixed_train_mask": 0.9778061475007365,
+            "coverage_all": 0.83544921875
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.5432657713287,
+            "support_coverage_fixed_train_mask": 0.991180942726812,
+            "coverage_all": 0.8189290364583334
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "loss": 0.06930827908217907,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 14.983691401141922,
+            "support_coverage_fixed_train_mask": 0.9796577946768061,
+            "coverage_all": 0.8553873697916666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 14.912166352993648,
+            "support_coverage_fixed_train_mask": 0.9747618579986251,
+            "coverage_all": 0.83349609375
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.425779797201722,
+            "support_coverage_fixed_train_mask": 0.9900658895083629,
+            "coverage_all": 0.8177083333333334
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "loss": 0.07156214118003845,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 14.785058446370796,
+            "support_coverage_fixed_train_mask": 0.9767110266159695,
+            "coverage_all": 0.853271484375
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 14.709708966403724,
+            "support_coverage_fixed_train_mask": 0.9704409309633704,
+            "coverage_all": 0.8302408854166666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 15.267560407695957,
+            "support_coverage_fixed_train_mask": 0.9879371515458693,
+            "coverage_all": 0.8158365885416666
+          }
+        ]
+      }
+    ],
+    "moved_points_over_1e_8": 125834,
+    "active_displacement_mean": 0.005925325349594096,
+    "active_displacement_max": 0.024896150173189153,
+    "max_fixed_mask_support_drop": 0.029559069036629637,
+    "loss_decreased": false,
+    "support_preserved": false
+  },
+  {
+    "variant": "normalized_hard",
+    "initial_loss": 0.053513459861278534,
+    "last_loss": 0.05544912628829479,
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.053513459861278534,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.35428665269407,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.869873046875
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.639323865083636,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.8502604166666666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.218620639517326,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 0.8252766927083334
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "loss": 0.053523870185017586,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.31420601154256,
+            "support_coverage_fixed_train_mask": 0.9988593155893536,
+            "coverage_all": 0.8700358072916666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.637855488105018,
+            "support_coverage_fixed_train_mask": 0.9980359422567023,
+            "coverage_all": 0.8495279947916666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.229174525584067,
+            "support_coverage_fixed_train_mask": 0.9994931576279777,
+            "coverage_all": 0.82568359375
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "loss": 0.05360014922916889,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.285620562509777,
+            "support_coverage_fixed_train_mask": 0.9980038022813689,
+            "coverage_all": 0.8700358072916666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.62016701495177,
+            "support_coverage_fixed_train_mask": 0.996661101836394,
+            "coverage_all": 0.8486328125
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.22686739288713,
+            "support_coverage_fixed_train_mask": 0.9991890522047643,
+            "coverage_all": 0.8256022135416666
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "loss": 0.05370773747563362,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.23642665099163,
+            "support_coverage_fixed_train_mask": 0.9961977186311787,
+            "coverage_all": 0.8685709635416666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.598001882334096,
+            "support_coverage_fixed_train_mask": 0.9952862614160857,
+            "coverage_all": 0.8478190104166666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.227053198367003,
+            "support_coverage_fixed_train_mask": 0.9982767359351242,
+            "coverage_all": 0.8246256510416666
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "loss": 0.05383635312318802,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.197227618834187,
+            "support_coverage_fixed_train_mask": 0.9949619771863117,
+            "coverage_all": 0.8680013020833334
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.560821194299354,
+            "support_coverage_fixed_train_mask": 0.9930275950112933,
+            "coverage_all": 0.845947265625
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.21496633568576,
+            "support_coverage_fixed_train_mask": 0.9973644196654841,
+            "coverage_all": 0.82373046875
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "loss": 0.054042620584368706,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.136582769922846,
+            "support_coverage_fixed_train_mask": 0.9933460076045627,
+            "coverage_all": 0.8662109375
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.51985914274802,
+            "support_coverage_fixed_train_mask": 0.9905725228321712,
+            "coverage_all": 0.8446451822916666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.20320798060412,
+            "support_coverage_fixed_train_mask": 0.9965534718702483,
+            "coverage_all": 0.8229166666666666
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "loss": 0.05429946072399616,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.06714019097647,
+            "support_coverage_fixed_train_mask": 0.9909695817490495,
+            "coverage_all": 0.8638509114583334
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.473446248095417,
+            "support_coverage_fixed_train_mask": 0.9884120593145439,
+            "coverage_all": 0.8434244791666666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.1788911220367,
+            "support_coverage_fixed_train_mask": 0.9950329447541815,
+            "coverage_all": 0.8216959635416666
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "loss": 0.0545507725328207,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.00647191791271,
+            "support_coverage_fixed_train_mask": 0.9884980988593156,
+            "coverage_all": 0.862060546875
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.46195126618814,
+            "support_coverage_fixed_train_mask": 0.9851713640381027,
+            "coverage_all": 0.8404947916666666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.1269225737626,
+            "support_coverage_fixed_train_mask": 0.9939178915357324,
+            "coverage_all": 0.8203125
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "loss": 0.05487184785306454,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 17.942893589033893,
+            "support_coverage_fixed_train_mask": 0.9863117870722433,
+            "coverage_all": 0.8602701822916666
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.393023546863006,
+            "support_coverage_fixed_train_mask": 0.9816360601001669,
+            "coverage_all": 0.8380533854166666
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.10270862550319,
+            "support_coverage_fixed_train_mask": 0.99249873289407,
+            "coverage_all": 0.8191731770833334
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "loss": 0.05519629269838333,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 17.87165770967367,
+            "support_coverage_fixed_train_mask": 0.9821292775665399,
+            "coverage_all": 0.857421875
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.343674662624675,
+            "support_coverage_fixed_train_mask": 0.9763331041932632,
+            "coverage_all": 0.8340657552083334
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.083071513207262,
+            "support_coverage_fixed_train_mask": 0.9899645210339585,
+            "coverage_all": 0.8168131510416666
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "loss": 0.05544912628829479,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 17.826424176955854,
+            "support_coverage_fixed_train_mask": 0.979467680608365,
+            "coverage_all": 0.855224609375
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 18.2993548018175,
+            "support_coverage_fixed_train_mask": 0.9710301482863596,
+            "coverage_all": 0.8304036458333334
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 18.077312657917066,
+            "support_coverage_fixed_train_mask": 0.9871262037506335,
+            "coverage_all": 0.814697265625
+          }
+        ]
+      }
+    ],
+    "moved_points_over_1e_8": 125593,
+    "active_displacement_mean": 0.005906624163858889,
+    "active_displacement_max": 0.02489616597575419,
+    "max_fixed_mask_support_drop": 0.028969851713640415,
+    "loss_decreased": false,
+    "support_preserved": false
+  },
+  {
+    "variant": "compact_hard",
+    "initial_loss": 0.04741018544882536,
+    "last_loss": 0.04769316967576742,
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.04741018544882536,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.03139781506524,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.563932853354114,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.443567131173875,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "loss": 0.04735161177814007,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.036980467458157,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.565659176035368,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.4448347785168,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "loss": 0.047326874919235706,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.039732984979775,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.560130631840146,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.444476369052584,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "loss": 0.047304386273026466,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.040622772551846,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.55588294221976,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.435445464145836,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "loss": 0.047259869053959846,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.03672352088613,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.55658007181465,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.42694476894889,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "loss": 0.04725092090666294,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.03878178838101,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.54631739395704,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.420467417296603,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "loss": 0.047282624989748,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.02492038188005,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.51559520282724,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.412143975376132,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "loss": 0.047342490404844284,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.99976858116308,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.49768682787543,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.401113210769523,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "loss": 0.047421845607459545,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.967256640262143,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.48745330592167,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.39117268244178,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "loss": 0.047554618678987026,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.928396547177783,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.4497761551412,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.369955455944282,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "loss": 0.04769316967576742,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 18.87124502166913,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 19.414077110478203,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 19.374603230127608,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      }
+    ],
+    "moved_points_over_1e_8": 124587,
+    "active_displacement_mean": 0.0065214669504438895,
+    "active_displacement_max": 0.025725608837091823,
+    "max_fixed_mask_support_drop": 0.0,
+    "loss_decreased": false,
+    "support_preserved": true
+  },
+  {
+    "variant": "compact_soft",
+    "initial_loss": 0.04262506775557995,
+    "last_loss": 0.04208706598728895,
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.04262506775557995,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.751591914820356,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.445916713832325,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.83016992282006,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "loss": 0.042568426579236984,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.76158614010969,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.45125870516019,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.83352164920073,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "loss": 0.04251239448785782,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.771399652945455,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.456536004553897,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.836854972508675,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "loss": 0.04245699290186167,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.78103540426857,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.461742138470612,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.840166141099488,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "loss": 0.04240222088992596,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.790492159361193,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.466880528435567,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.84345231976861,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "loss": 0.042348023504018784,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.79977410755807,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.471946669000246,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.846715925072658,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "loss": 0.042294480837881565,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.808888597145252,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.476942289030653,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.849951330791907,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "loss": 0.042241647839546204,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.817842675151457,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.48187282759631,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.853158472034092,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "loss": 0.042189487256109715,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.826641526405908,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.486737201917766,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.856338524722915,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "loss": 0.04213798977434635,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.835293124912084,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.491536038506812,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.859491427580764,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "loss": 0.04208706598728895,
+        "frames": [
+          {
+            "camera": 0,
+            "psnr_fixed_e1_mask": 19.84380318663762,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 1,
+            "psnr_fixed_e1_mask": 21.49626711595797,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          },
+          {
+            "camera": 2,
+            "psnr_fixed_e1_mask": 21.862618051366027,
+            "support_coverage_fixed_train_mask": 1.0,
+            "coverage_all": 1.0
+          }
+        ]
+      }
+    ],
+    "moved_points_over_1e_8": 133555,
+    "active_displacement_mean": 0.007990420871959227,
+    "active_displacement_max": 0.027503284100874513,
+    "max_fixed_mask_support_drop": 0.0,
+    "loss_decreased": true,
+    "support_preserved": true
+  }
+]

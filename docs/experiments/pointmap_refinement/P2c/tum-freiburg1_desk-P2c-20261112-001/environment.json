@@ -1,0 +1,45 @@
+{
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "torch": "2.15.0+cu132",
+  "cuda_runtime": "13.2",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "execution_context": "host GPU outside sandbox",
+  "project_commit_before_run": "2d3d235003711ffb35cc04ef589137967e746210",
+  "wall_seconds": 12.238599371994496,
+  "peak_allocated_bytes": 839785472,
+  "peak_reserved_bytes": 1147142144,
+  "source_files": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/README.md",
+      "bytes": 2393,
+      "sha256": "7be83e6f14fadda8ba0a917fc00689bfb7d704b2c8c6e5a04d03b40181feaa3f"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/config.json",
+      "bytes": 1584,
+      "sha256": "a7f903798ccd830960b4e436252e1644be05568da9a2d21d24a4544e61ff93a3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/legacy.py",
+      "bytes": 1760,
+      "sha256": "d2a4641b88e924ea04b4ee81c6d373669842c5ee57cb0f29e2239c247d769fd0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/renderer.py",
+      "bytes": 2749,
+      "sha256": "5dbf534213b5ee0b6d3d59da730cf8db02afff53cc81e7fb3124c7482b8b232e"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/run.py",
+      "bytes": 20475,
+      "sha256": "a3e74a0de58352cc4655b3f125c9cad2a27dbff57fa28f61d6a66b3a789a45a1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ready_for_E3b": true,
+  "synthetic_passed": true,
+  "full_scene_float64_direction_passed": true,
+  "float32_actual_descent_passed": true,
+  "short_loss_decreased": true,
+  "short_support_preserved": true,
+  "real_points": 341325,
+  "active_points": 135193,
+  "fixed_temperature_by_camera": [
+    0.09041110278030895,
+    0.09357169677591856,
+    0.08572922916200763
+  ],
+  "legacy_cached_rgb_max_difference": 1.1324882507324219e-06,
+  "real_GT_evaluated": false,
+  "full_E3b_training_performed": false,
+  "limitations": "Renderer/derivative diagnostics only; soft depth weighting is approximate visibility; GT geometry, heldout views and long optimization unverified."
+}

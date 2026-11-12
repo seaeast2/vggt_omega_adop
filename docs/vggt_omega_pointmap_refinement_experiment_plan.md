@@ -852,6 +852,8 @@ E3~E9는 전체 시스템 완성이 확인된 이후 실행한다. 먼저 E0/E1/
 
 **P2b 검은 테두리 진단(2026-11-12):** `tum-freiburg1_desk-P2b-20261112-001`에서 E3b의 E0b 초기 RGB/alpha 버퍼만 재사용했다. 좌표·가림 변경 없이 alpha 곱을 제거한 진단에서 밝은 목표 영역의 어두운 픽셀 프로브가 3,366→432개로 감소했다. 현재 검은 배경 합성이 테두리에 크게 기여하지만, 해당 초기 픽셀 중 학습 마스크 안은 207개여서 최적화 실패 전체의 원인으로 단정하지 않는다. Default P2·E3b·GT·Gradient는 변경/재학습하지 않았다. [보고서](experiments/pointmap_refinement/P2b/tum-freiburg1_desk-P2b-20261112-001/report.md).
 
+**P2c 실행 기록(2026-11-12):** `tum-freiburg1_desk-P2c-20261112-001`에서 기존/alpha 제거/compact+hard/compact+soft를 분리 비교했다. compact_soft는 합성 가림·stencil 경계·평면 회복 및 실제 전체 E0b의 float64 방향 미분(상대 오차 3.26e-9~3.60e-7)을 통과했다. 같은 active 135,193개·초기 마스크의 10회 Adam에서 손실 0.042625→0.042087, 지원도 감소 0%p였고 133,555점이 실제 이동했다. 사전 기준에 따라 ready_for_E3b=true이며 실제 GT/200회 학습은 미실행이다. 이전 P2 default와 E3b는 보존한다. [보고서](experiments/pointmap_refinement/P2c/tum-freiburg1_desk-P2c-20261112-001/report.md).
+
 ### 13.1 제어 변수
 
 같은 장면에서 비교 실험 간 다음은 고정한다.

@@ -1,0 +1,528 @@
+{
+  "experiment_code": "P2c",
+  "run_id": "tum-freiburg1_desk-P2c-20261112-001",
+  "status": "completed",
+  "started_at": "2026-11-12T20:33:49.054892+09:00",
+  "ended_at": "2026-11-12T20:34:01.294209+09:00",
+  "completion_criteria_met": true,
+  "ready_for_E3b": true,
+  "inputs": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/manifest.json",
+      "bytes": 25799,
+      "sha256": "797490e9fecd10d2c3b011df0a30dd24192919d701c41d1dc59ebc02f4b11caa"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/initial/shared_map_initial.npz",
+      "bytes": 23735115,
+      "sha256": "750d7cbc6b3b42be3d324856c328312a9ca9175663d60dba3fcdc3a61fde29b6"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/initial/cameras_and_targets.npz",
+      "bytes": 257163,
+      "sha256": "be8f4252bc5b104a0235864c41a50345da5315af7d1cd5758ab1e403a9f3cdf2"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/renders/initial_frame_0.npz",
+      "bytes": 279334,
+      "sha256": "931601e76fda13396463168a9238dcb572465625332a71197bb279a992178fd3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/renders/initial_frame_1.npz",
+      "bytes": 282126,
+      "sha256": "4138da35e42033f4a4868b6a4221ce80401656d675409f26a351ef5ce295ed50"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/renders/initial_frame_2.npz",
+      "bytes": 278629,
+      "sha256": "d67b97fe9b139dd709ee77ab2122b81a8bb2e2ce0c20f5d083b6e65e3ffcf143"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/initial/frames.json",
+      "bytes": 1070,
+      "sha256": "d004cdac4d1150fbb23ce5e1a24933b9f6479f06dd2ee28495675e7ed0abf70e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_00.npz",
+      "bytes": 205530,
+      "sha256": "c1c37d4073dc0b7f3767f0fbfa05dbfdef272ad7db716f2404e50d3cbf9c17c4"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_01.npz",
+      "bytes": 650816,
+      "sha256": "b1afdd46ed4e802aae63dc6ee42add7ad3115f63d55a68293a364be23d78aabd"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_02.npz",
+      "bytes": 655394,
+      "sha256": "9e2eec8ae9f1f0a7f0508d9a1912f1c69ee9d2d27ed5f2be1e8722a9e1486735"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_03.npz",
+      "bytes": 654707,
+      "sha256": "d737e80851fdc4aa6f3494c125212a245366fbdd6b40967ca67ac64af86063ef"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_04.npz",
+      "bytes": 654999,
+      "sha256": "e2fcb080c23b2d2872c36fd587cd6aaa9603fcb1e9dc77f0026d37a88f5bf3f2"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_05.npz",
+      "bytes": 653794,
+      "sha256": "9c9ba065bcd19c6e43469b927378b39e94dc25f25fb95dc36059c24a01e2dfad"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_06.npz",
+      "bytes": 653084,
+      "sha256": "932bf1240a40d065c3a6ba868db1b38b2f6b31f1c22c210e82db124273736eff"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_07.npz",
+      "bytes": 655203,
+      "sha256": "a73dd50975b5185505762579494e5585b9f978a4372966ec7aae90bbfd9f02fd"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_08.npz",
+      "bytes": 660947,
+      "sha256": "2fd494c76e050940cfbb9109412f5060958a8e9398699c96f9d5114ce2366d22"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_09.npz",
+      "bytes": 664657,
+      "sha256": "248ad32e8785bff32ee58873ea044c618407ee989571087aa236cff1da6e8c95"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_hard_step_10.npz",
+      "bytes": 665628,
+      "sha256": "51f261f142a579d9ddf8a9c32c8e559628ee0f6a44c9b2e072b82b6fb3497790"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_00.npz",
+      "bytes": 205530,
+      "sha256": "c1c37d4073dc0b7f3767f0fbfa05dbfdef272ad7db716f2404e50d3cbf9c17c4"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_01.npz",
+      "bytes": 673687,
+      "sha256": "c9e08576f17eb930725eb6d437f0683cc93e6eaa48f573d66f3939fe35df4230"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_02.npz",
+      "bytes": 677532,
+      "sha256": "7be3a43868edce65e0594c82c20a6fa7e70edd082eff18ced1707aafa397f42a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_03.npz",
+      "bytes": 675130,
+      "sha256": "7e92c16f8740706443ad9e90d34d31d8e67d2acd970cb06233c710b7cc3cd033"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_04.npz",
+      "bytes": 674446,
+      "sha256": "ffb1bf0efc8b19c1abced92105daebe3ef4e0139f0e65f5e4d8ffbb584a472ff"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_05.npz",
+      "bytes": 672276,
+      "sha256": "b66ec7ce68d6119a348e736201037f19621aa127b2b358a12e27ddfa98db76cd"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_06.npz",
+      "bytes": 671209,
+      "sha256": "364e0b681b2ff1a9cd37855f13e03abaaeb6e0e845fb3b12d844d29d7ad92800"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_07.npz",
+      "bytes": 673418,
+      "sha256": "15ab6f42bc26842e75d9567c0713d01a4b00d238911682765ddfddeb9c0be1cd"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_08.npz",
+      "bytes": 679606,
+      "sha256": "083e029a01b547f5e74e48939be92cb0c2a78cdd3d1935c2bd2152c3c5823fcc"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_09.npz",
+      "bytes": 681559,
+      "sha256": "2741baadf428c2ad020464d763c6be019beef40656536c4c3e84ca9905223714"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/compact_soft_step_10.npz",
+      "bytes": 681297,
+      "sha256": "99811718643ef1610b34a15269fc5a466bc95eb7abdf563f86b19f9e58954ddd"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_00.npz",
+      "bytes": 205530,
+      "sha256": "c1c37d4073dc0b7f3767f0fbfa05dbfdef272ad7db716f2404e50d3cbf9c17c4"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_01.npz",
+      "bytes": 657556,
+      "sha256": "c1968383b77618774acf7341f931624abf61265bf79868a9c8d53e8834f3a957"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_02.npz",
+      "bytes": 664397,
+      "sha256": "bf8f81acf266bf06736ab8202e93771ee70c71a978212f3ceb2f00bf9dc7e097"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_03.npz",
+      "bytes": 665250,
+      "sha256": "76814139b46d0703628a3a60043ba2bc266f2a13ae0d79b5087055759a983e4a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_04.npz",
+      "bytes": 666090,
+      "sha256": "c77f83356061f405a9bd4680ce6a1207168aa5aac55ca4ae4ce155f7faf4292f"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_05.npz",
+      "bytes": 665315,
+      "sha256": "dfd2448a07a40e28f5ff1395de451724ba71dc77054c60c1b57d41ff57434a4a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_06.npz",
+      "bytes": 663997,
+      "sha256": "c52eb96510fdb3dce0ddb14a12dc8cb306ee645192d5c39550b0d119fb57bdb6"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_07.npz",
+      "bytes": 665593,
+      "sha256": "8d7bb81db6ecad09629ec6d30820c01eea96a1501704187fc0bcfb1635b67cb8"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_08.npz",
+      "bytes": 670128,
+      "sha256": "bfcf4cb7f4004eaffc2ab96625f74bd6de5d0770319f594ff84fc5e4620351cb"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_09.npz",
+      "bytes": 675274,
+      "sha256": "148e09ee347d23d2a83325aff0c5545dd0667eb1a53fa2ac98fd47ac49d904a6"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/legacy_step_10.npz",
+      "bytes": 676624,
+      "sha256": "9c6225004f365af232361797af2126ce351e479511ffac6ad1c9b89397af5dd3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_00.npz",
+      "bytes": 205530,
+      "sha256": "c1c37d4073dc0b7f3767f0fbfa05dbfdef272ad7db716f2404e50d3cbf9c17c4"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_01.npz",
+      "bytes": 660919,
+      "sha256": "42b00e802962f7e47e251d86e50d5b985829870e58e57217a2dfe62cf307fd5a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_02.npz",
+      "bytes": 665984,
+      "sha256": "f68d553ea651bcd803f5da4dab4d06669deea38b15bcb09512e16a7c2409bed8"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_03.npz",
+      "bytes": 666660,
+      "sha256": "b5af43c55c922473ec9a3e3179d4d39444d08271ae6ab89bc63099a179cc9f4c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_04.npz",
+      "bytes": 667455,
+      "sha256": "d21e9ea30f5b77bba7a0c37b50b3cafeab41f1e67668069db3f049b2ef72ec04"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_05.npz",
+      "bytes": 666353,
+      "sha256": "371f518c63dbb52371b7e337e29b560b4650e6d79fe24dd46d4646ed912ddd4b"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_06.npz",
+      "bytes": 664857,
+      "sha256": "765aaf7ba1613e0164a71ef8de161644b45a6d4543c66d550f1da911a6b63609"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_07.npz",
+      "bytes": 666373,
+      "sha256": "edc39874cdb7e9b757263b9f758a692a8c7383e6bdfa3f8f74a52a14875edc48"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_08.npz",
+      "bytes": 670762,
+      "sha256": "b59a14c7f227337662c2cea605ed722ca978efa9b565a46e0bf0b0faa1569718"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_09.npz",
+      "bytes": 675863,
+      "sha256": "a931875cc5eea9d5f47cc4dacf1ba3ed7430ed5cd5c9d5fa42fe5d26ccae9280"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/checkpoints/normalized_hard_step_10.npz",
+      "bytes": 677204,
+      "sha256": "2a72253f0896f707604ed23083a371febc9ab69cb04e1aef86a2ff456e17dc7e"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/figures/initial_ablation.png",
+      "bytes": 2039208,
+      "sha256": "c43ded4fcbb0fff59d99821d8e5fc51865c4ced32eca55c6b0b3978721e49fcc"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/figures/soft_short_comparison.png",
+      "bytes": 1228499,
+      "sha256": "bfd7d652bc16205a9943f8ef8ea8d619665deb2a02b919bf24f592991a4fcf16"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/compact_hard_short_final.npz",
+      "bytes": 16243025,
+      "sha256": "4acf04767824faebeef1dea75436fe2bbbd5ab50131ab2157af12e9eed3e8e29"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/compact_hard_short_source_mix.ply",
+      "bytes": 9898671,
+      "sha256": "227de7bd967fe9de95032782a06d8b32e09fd4ec2efb7c0eecb6117977d33d0c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/compact_soft_short_final.npz",
+      "bytes": 16255687,
+      "sha256": "356f23edb23e22eecfd51ac2d2e583d608a731b1c59225ad39daf1e78c7a0d9a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/compact_soft_short_source_mix.ply",
+      "bytes": 9898671,
+      "sha256": "74f5de8fdad0c41d2f136f9da944e015ce2ded6ecbedd7b131b0e56c9e5e7ae2"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/legacy_short_final.npz",
+      "bytes": 16257084,
+      "sha256": "15f8f52d4a955cc65e335de770b1db735241a8efb03ad802d1cd050f3c8d6d79"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/legacy_short_source_mix.ply",
+      "bytes": 9898671,
+      "sha256": "faa7ad4b9c0f40d8c85057ee71e3b4008314383bc281a950c7597c41bc7eaed9"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/normalized_hard_short_final.npz",
+      "bytes": 16258428,
+      "sha256": "7c8edfa9377dc7fc225d3eb1490f821f65ec39ae802323895b74fef05e119b7c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/maps/normalized_hard_short_source_mix.ply",
+      "bytes": 9898671,
+      "sha256": "a7a98ad719904f7737f6f55f729ba30a2f3ecd7cc189ca24ae211ce937cfbb48"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_00_camera_0.npz",
+      "bytes": 259101,
+      "sha256": "d3ec4116835b807993860b96d59815a3a6e323c18f04585e72377a51b037b1b4"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_00_camera_1.npz",
+      "bytes": 258930,
+      "sha256": "ab99f69eb83b8f54a959e3821bb30340a533d1addc14f1689dc9d28277a3d6c9"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_00_camera_2.npz",
+      "bytes": 254436,
+      "sha256": "1683de114f97480a67cddebad2e9f62bda420dbb93792c5906e56babbaf91d16"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_10_camera_0.npz",
+      "bytes": 259245,
+      "sha256": "2e10286b159a28083bf019d2247e2a5b8938082fdb11e3a6ffacd958ebd9aa92"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_10_camera_1.npz",
+      "bytes": 258982,
+      "sha256": "80cee5fd561aad7e48269ed019594ec5df1b1cbc87f81c4f563d12b196d2c3c3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_hard_step_10_camera_2.npz",
+      "bytes": 254484,
+      "sha256": "2d09b7b7d1c075dad305ad163f440ecdef6b490f987f5ad2c3013212ba046139"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_00_camera_0.npz",
+      "bytes": 259579,
+      "sha256": "947cefdc4eeb86e25572f936ebada1a1c7b64ba509d742c0e69144a9d5d41f6b"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_00_camera_1.npz",
+      "bytes": 259703,
+      "sha256": "90a7a2a626a67619cf6c86ce357e37a8d2600311b31c073456505bd405801bb8"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_00_camera_2.npz",
+      "bytes": 255438,
+      "sha256": "2f1cd367eeff1487bce15a432d9a387fdc0c28eb015aa22fdadbfa4f163db61c"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_10_camera_0.npz",
+      "bytes": 259707,
+      "sha256": "75fd19a4176647d68ecc5f6a821b7c373d563854d07092a4d32453239dd397a0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_10_camera_1.npz",
+      "bytes": 259707,
+      "sha256": "b5b0f9d0a0f21d7af493afdb6e2504d169b97bd2efb72cf6afce1901e4a63e76"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/compact_soft_step_10_camera_2.npz",
+      "bytes": 255477,
+      "sha256": "b630edcbf42b1eab3f98795c5f929b7e579e92b54611cebeaf6b5a5f31ffdfb0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_00_camera_0.npz",
+      "bytes": 278526,
+      "sha256": "aaf3b50eba067a4aedbf394cfe4d91f762f4a7ca266b0fa8cc3190a2d74bf51a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_00_camera_1.npz",
+      "bytes": 281120,
+      "sha256": "9eb557dd99f2445613b2339c47273eb5874c7a0373bcaf145f6321b02646b61a"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_00_camera_2.npz",
+      "bytes": 277677,
+      "sha256": "0d1de7ec175f38d707b8b104e9af2c2e17571302851137c3ee3b8cd8d9f409f5"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_10_camera_0.npz",
+      "bytes": 282042,
+      "sha256": "bcb0b82d998d827961e94703eb77d6c8eb5981cc1bb959a69940178d82ccec3e"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_10_camera_1.npz",
+      "bytes": 285778,
+      "sha256": "2075cbd5f6f2d9c128e37c679054727e169d4cc2cc8e5c60edb97ad055d13f96"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/legacy_step_10_camera_2.npz",
+      "bytes": 281281,
+      "sha256": "1f5580b537670ff120c8cb53e0bd8f7147bddde73f8aa48c4ca5eeab990cdc21"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_00_camera_0.npz",
+      "bytes": 276263,
+      "sha256": "b21d9d505a80805d7301430f61a8cc03467c6df3e6d5b5c858a9bbc6b2fce2a3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_00_camera_1.npz",
+      "bytes": 278525,
+      "sha256": "ffdc11f962b23d69603ddc09fe716207b58deb02007be529156148620452abc8"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_00_camera_2.npz",
+      "bytes": 273801,
+      "sha256": "7d8d554f1cb5fa3052450dc8ef76ba040b5fe4d45eb62cdf068532742a1f4d37"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_10_camera_0.npz",
+      "bytes": 279522,
+      "sha256": "e86b62cab8a74142bf5e175b589988f3e421527c441ec4ac75d3317583776e91"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_10_camera_1.npz",
+      "bytes": 282799,
+      "sha256": "e054c8dba893955807d7f23f619df95a9710c672efcadc055fb5ed6b898b0ecc"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/renders/normalized_hard_step_10_camera_2.npz",
+      "bytes": 277371,
+      "sha256": "1a2ab99d5e820952da1aa2accdfb8e990348244c888cc7216c5c1796c7a978c6"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/README.md",
+      "bytes": 2393,
+      "sha256": "7be83e6f14fadda8ba0a917fc00689bfb7d704b2c8c6e5a04d03b40181feaa3f"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/config.json",
+      "bytes": 1584,
+      "sha256": "a7f903798ccd830960b4e436252e1644be05568da9a2d21d24a4544e61ff93a3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/legacy.py",
+      "bytes": 1760,
+      "sha256": "d2a4641b88e924ea04b4ee81c6d373669842c5ee57cb0f29e2239c247d769fd0"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/projection.py",
+      "bytes": 16043,
+      "sha256": "815496efbc17dbfd59c713ef1eb7c86094a9892dec421ccfdf3c6e7e23cd8239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/renderer.py",
+      "bytes": 2749,
+      "sha256": "5dbf534213b5ee0b6d3d59da730cf8db02afff53cc81e7fb3124c7482b8b232e"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/source/run.py",
+      "bytes": 20475,
+      "sha256": "a3e74a0de58352cc4655b3f125c9cad2a27dbff57fa28f61d6a66b3a789a45a1"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/artifacts/synthetic/plane.npz",
+      "bytes": 3778,
+      "sha256": "f108ea0cfc4c4e3ca2da840be84edf67e982afac757b3169e7195d7da4bbcee3"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/config_resolved.json",
+      "bytes": 1693,
+      "sha256": "cc793b8fd625b01a6ebc81ff94bc6807c68ac91cf843adf9a33456982bcb94de"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/environment.json",
+      "bytes": 1843,
+      "sha256": "52f9dbc3b2a4478eb9c7aad5b5d9311231ae4e35296054f18fe32d0712489636"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/decision.json",
+      "bytes": 676,
+      "sha256": "753bb4da2eb6377667696600ca844741c3d252127f15ce629e802250dda543c9"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/real_float32_directions.json",
+      "bytes": 5123,
+      "sha256": "91a1ff2b7b12f846110134be53a31ad1b3b4fad04cc0023ecc3daefb6e056239"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/real_float64_direction.json",
+      "bytes": 871,
+      "sha256": "86d6d7a9de83f077cf1cfdeb8f230765a57d947bca3d4c1cdd3ed458cb6e4ac5"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/short_optimization.json",
+      "bytes": 32869,
+      "sha256": "1da3f97c34a6756de9b22eebf1954c3c9703615cd1cb68c31563bce5e2a3807b"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/synthetic.json",
+      "bytes": 3244,
+      "sha256": "45ba22e927069d251f495918fc0bb9f2c82dbe3bb69d5919cabdace9ebbab56b"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/synthetic_plane_history.json",
+      "bytes": 13602,
+      "sha256": "24f025c4ad481c6a966386e18b9434c309284a9533364decdc9b5e154d8e7030"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/evaluation/verification.json",
+      "bytes": 306,
+      "sha256": "06027176b3537ed39968e7e2adad07f114eac1de0d5b626d3f12f6647c77d015"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/logs/run.log",
+      "bytes": 6218,
+      "sha256": "f0a71ccc21343acb8408fb129d5fce2ab9851c43916514795abce1f626a6a336"
+    },
+    {
+      "path": "results/pointmap_refinement/tum-freiburg1_desk-P2c-20261112-001/stages/P2c/progress.md",
+      "bytes": 901,
+      "sha256": "948a258f8cd62017c6ead84b05737ab1efb1d5705ee1505e586a26b764063a70"
+    }
+  ]
+}
