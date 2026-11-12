@@ -1,0 +1,188 @@
+{
+  "decision": "TECHNICAL_PASS",
+  "controls": [
+    {
+      "mode": "pure_rotation",
+      "full_3d_rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          5.087042946345481,
+          3.897247329344241,
+          3.45903794500199,
+          2.5592575885274815,
+          1.7307354127333214,
+          1.163874722681464
+        ],
+        "condition": 4.370782221840325,
+        "identifiable": true
+      },
+      "depth_only_rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          1.0713966749623887,
+          0.6230846159139155,
+          0.4752652439912628,
+          0.3675909129908454,
+          0.2952857249065011,
+          0.21937513086435773
+        ],
+        "condition": 4.883856573627965,
+        "identifiable": true
+      },
+      "initial_consistency_max": 9.367506770274758e-16,
+      "note": "pure rotation/planarity are not blanket impossibility claims; fixed depth may constrain FoV"
+    },
+    {
+      "mode": "planar_scene",
+      "full_3d_rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          8.153245410413097,
+          5.138046793813437,
+          4.2644026549066885,
+          2.928162330433645,
+          2.4533609412602804,
+          1.454279323897571
+        ],
+        "condition": 5.606381990333071,
+        "identifiable": true
+      },
+      "depth_only_rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          1.7000973634639953,
+          0.7027943706232832,
+          0.680926968053249,
+          0.3832979892767149,
+          0.32747914744645035,
+          0.23968711096613055
+        ],
+        "condition": 7.092986171059615,
+        "identifiable": true
+      },
+      "initial_consistency_max": 7.494005416219807e-16,
+      "note": "pure rotation/planarity are not blanket impossibility claims; fixed depth may constrain FoV"
+    },
+    {
+      "mode": "parallel_cameras",
+      "full_3d_rank": {
+        "rank": 6,
+        "dimension": 6,
+        "singular_values": [
+          4.003288836074896,
+          3.2955506770579666,
+          2.535531347804538,
+          2.379736343338032,
+          1.2557244026522465,
+          0.44470446331456265
+        ],
+        "condition": 9.00213325100621,
+        "identifiable": true
+      },
+      "depth_only_rank": {
+        "rank": 0,
+        "dimension": 6,
+        "singular_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "condition": null,
+        "identifiable": false
+      },
+      "initial_consistency_max": 1.942890293094024e-16,
+      "note": "pure rotation/planarity are not blanket impossibility claims; fixed depth may constrain FoV"
+    },
+    {
+      "mode": "identical_camera_observations",
+      "full_3d_rank": {
+        "rank": 4,
+        "dimension": 6,
+        "singular_values": [
+          3.3165993208220126,
+          3.316599320822012,
+          2.366281970235918,
+          2.3662819702359172,
+          2.7420980837951424e-16,
+          1.1256077556386282e-16
+        ],
+        "condition": 2.946496507515886e+16,
+        "identifiable": false
+      },
+      "depth_only_rank": {
+        "rank": 0,
+        "dimension": 6,
+        "singular_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "condition": null,
+        "identifiable": false
+      },
+      "initial_consistency_max": 0.0,
+      "note": "pure rotation/planarity are not blanket impossibility claims; fixed depth may constrain FoV"
+    }
+  ],
+  "insufficient_support_rejected": {
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "total": 0,
+        "fit": 0,
+        "validation": 0,
+        "occupied_4x4_cells": [
+          0,
+          0
+        ],
+        "passed": false
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "total": 0,
+        "fit": 0,
+        "validation": 0,
+        "occupied_4x4_cells": [
+          0,
+          0
+        ],
+        "passed": false
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "total": 0,
+        "fit": 0,
+        "validation": 0,
+        "occupied_4x4_cells": [
+          0,
+          0
+        ],
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "scientific_improvement": false,
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 0.007192441000370309,
+  "process_peak_rss_mib": 602.9921875
+}

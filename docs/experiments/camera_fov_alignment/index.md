@@ -10,7 +10,7 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | --- | --- | --- |
 | C0 | 역투영·solver·합성 복구 검증 | 완료 1회 / 실패 기록 1회 |
 | C0a | 최근접 검색 실패 진단·정확한 BF 방식 검증 | 완료 1회 / 실패 기록 0회 |
-| C0b | 관측 퇴화·순수 회전·평면 합성 제어 | 미실행 |
+| C0b | 관측 퇴화·순수 회전·평면 합성 제어 | 완료 1회 / 실패 기록 0회 |
 | C1 | 실내 raw 기준선·고정 대응·split·식별 가능성 | 미실행 |
 | C2 | 공통 β 1개 보정 | 미실행 |
 | C3 | 프레임별 수평·수직 FoV 6개 보정 | 미실행 |
@@ -22,5 +22,6 @@ C5에서는 고정된 보정값에서 원본 RGB 유사도·깊이 근접 조건
 | `synthetic-C0-20261112-001` | failed | [FAILED](C0/synthetic-C0-20261112-001/report.md) |
 | `synthetic-C0-20261112-002` | completed | [TECHNICAL_PASS](C0/synthetic-C0-20261112-002/report.md) |
 | `synthetic-C0a-20261112-001` | completed | [TECHNICAL_PASS](C0a/synthetic-C0a-20261112-001/report.md) |
+| `synthetic-C0b-20261112-001` | completed | [TECHNICAL_PASS](C0b/synthetic-C0b-20261112-001/report.md) |
 
 대형 NPZ/PLY와 source snapshot은 `results/camera_fov_alignment/`의 각 Run ID/Stage에 보관한다. 이 목록은 새 실행이 끝날 때 갱신한다.
