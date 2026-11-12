@@ -1,0 +1,692 @@
+{
+  "status": "completed",
+  "experiment_code": "C5",
+  "run_id": "hkairport01-C5-20261113-001",
+  "dataset": "hkairport01",
+  "started_at": "2026-11-13T00:06:33.955730+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C4-20261113-001/stages/C4/manifest.json",
+      "bytes": 65526,
+      "sha256": "04f48a829c5a6828e2a9b68cc48f698e443c27d8ab8c7f99f86e3f6b3561f2a4"
+    }
+  ],
+  "project_commit_at_start": "a6c6f53cf69fcd57167530d89f5aa3f3d41ef90f",
+  "gt_accuracy_evaluated": false,
+  "ended_at": "2026-11-13T00:06:49.962187+09:00",
+  "decision": "COMPRESSION_CRITERIA_NOT_MET",
+  "execution_completed": true,
+  "scientific_improvement": false,
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/all_rgb.ply",
+      "bytes": 22561066,
+      "sha256": "b9da7191f1175bfc03f10f33932caab5ffb8161a0a36c539e09c9482ebf979e9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/all_source.ply",
+      "bytes": 22561066,
+      "sha256": "546d0e07cbc65eb236a34f0edd7524612fc9fe728ea1346548709705a3531c6d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/map.npz",
+      "bytes": 24730117,
+      "sha256": "49c6d9a8d71dd0a60ef0202dc627791c9d7bd61a64293afcae2c65761af357b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/metrics.json",
+      "bytes": 1517,
+      "sha256": "d31730f7b6ec35d5afdd5fe85ac0490a99061ea2d3a86546c090a13b8b135264"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_front.npz",
+      "bytes": 1756589,
+      "sha256": "65e278689a64a79699a5435d3eec3f90c6dbcddd96f453408d1b58ad3832f9e5"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_only_source_0.png",
+      "bytes": 1644,
+      "sha256": "f59cf41a20e89f52d9aebc91d985ebb8354e2ad83330d43abdf5600bf5a5a214"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_only_source_1.png",
+      "bytes": 9124,
+      "sha256": "a39601e0b7b572cddd957ab21a5edc2583016242135be452dd1a09de9c2d9a57"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_only_source_2.png",
+      "bytes": 27323,
+      "sha256": "9fd4f1588b4ebffd5136868fc50acc453a6fe46d7da31ec9052078aaeb354a8f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_other_source.png",
+      "bytes": 33027,
+      "sha256": "3824c2521b9371b61473c3f40391ee81051774d3c87b8126f49b069568e3a5ac"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_rgb.png",
+      "bytes": 459858,
+      "sha256": "588f8133badc1f029b0044d877b8f0946a7e74c4b7cf005d54e7db2674d6f52a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_0_source.png",
+      "bytes": 37908,
+      "sha256": "a3c99b410c1099e040fd9ab3f8f2d7cb78db2fe80bdd5c6982f92a89c766eaf4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_front.npz",
+      "bytes": 1653404,
+      "sha256": "520f151f3a13a97936bb2860e6e7bba4b37eff39847f4d127b02d8c3ea7b8e00"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_only_source_0.png",
+      "bytes": 9422,
+      "sha256": "ce85a74bc37e15e1f3d8e5a1635206d9ad051d336bf8897001829807d1f9f1e7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_only_source_1.png",
+      "bytes": 1806,
+      "sha256": "24ce9b6c9627ba481773356297d486622923a13f2b48210c5824c765c004064a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_only_source_2.png",
+      "bytes": 23846,
+      "sha256": "f5f5a082f8536d2f38114adf55f8d2aedc4fc20a38bcaed4a088ce748f200b17"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_other_source.png",
+      "bytes": 36790,
+      "sha256": "e04a2161599960427327277cdbceb12b98540c0a4798b83dae125584a5f6d92c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_rgb.png",
+      "bytes": 457686,
+      "sha256": "371153b894a9e51bb7dab3730a8428da777a41c4415b4503342d7701d600527f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_1_source.png",
+      "bytes": 36494,
+      "sha256": "7aa6a588730d32163851ca4977e3a09165c89eac4ede9904ab219ba727283c53"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_front.npz",
+      "bytes": 1683915,
+      "sha256": "7dc64234c7c35d41f328a8a3a3ac415f00080d4635e0b23428970a746a5180e1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_only_source_0.png",
+      "bytes": 21656,
+      "sha256": "d95b3262653c77aa81ab3c40234e7ba3add473c61f25eac59c85475ced799775"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_only_source_1.png",
+      "bytes": 19242,
+      "sha256": "6378352b33f10537c54676afff0c527530fd81cfd87453364eff4b4c040b837c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_only_source_2.png",
+      "bytes": 1914,
+      "sha256": "643b66d96f4b7bfda38709c66e05a10eca4e410413acaf6280f9b48e028d65cd"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_other_source.png",
+      "bytes": 33171,
+      "sha256": "9e186d707b4d333bb90e6c051431a0f4cbe642281fbe3e41a9a6de94684b1144"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_rgb.png",
+      "bytes": 459079,
+      "sha256": "8d9851ca5f7de5dc58deb22280c8d677246678bd6f10bf9721aa36f0232f7d79"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/A/projections/camera_2_source.png",
+      "bytes": 34450,
+      "sha256": "30ff75524a9cd4bcff07939d1b3aa65eda1742416d1bfec5a5152d0f4bca30cb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply",
+      "bytes": 9727018,
+      "sha256": "405848b60a80ac373cde5f9b61e08bd17b93c89f6d0087faebc30cf280e0d07e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/all_source.ply",
+      "bytes": 9727018,
+      "sha256": "5907229707ddb77a5a735bf32a7faca99e29cc9ae9fcef31fd185c87866ab1c5"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/map.npz",
+      "bytes": 12353809,
+      "sha256": "fcb0dde423f6099218fbef935fa4e08f2803ee8e256d984fdecb12c802e0cab2"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/metrics.json",
+      "bytes": 3031,
+      "sha256": "5b2bae78963bf2f407f3fd8e4a8b5728ff4557d4d52669fe419a6593295e635b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_front.npz",
+      "bytes": 1848181,
+      "sha256": "db85c5ed2545b2aa3cfe000aad08a25d59cfd5b56ad2cb717ae5717c26445690"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_only_source_0.png",
+      "bytes": 23570,
+      "sha256": "9ebbabe7666bc37595243a3d7fecf2a593a5df572ebd001150934a4e49669d75"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_only_source_1.png",
+      "bytes": 32882,
+      "sha256": "a1e4f45cd8e04ac19d3fd45cb65d8beecd99ea3224c66ad2c9c387290603befa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_only_source_2.png",
+      "bytes": 28213,
+      "sha256": "6792ac319757055d6c43cf6cceb2771aa276c88271e269980ed14f2641b9a0e8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_other_source.png",
+      "bytes": 46689,
+      "sha256": "3470ac98c7825993d377601004f5697bb3971c969827b8eb16f39cadde5e17f3"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_rgb.png",
+      "bytes": 502098,
+      "sha256": "7ef566974fb35f421f04b221b2729913d1e7d59701a35fbeb3bca7687fd8a1ae"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_0_source.png",
+      "bytes": 54566,
+      "sha256": "7e272a4f88d016d162d626df14df5ec8f2194c589b5be2192a02cf694a5fa1f9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_front.npz",
+      "bytes": 1890033,
+      "sha256": "71d7de4485b7f8b1f843c2b8d643c6fc5d66dd7ef987fd3d6bb31ae65a5fe427"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_only_source_0.png",
+      "bytes": 22603,
+      "sha256": "c85c368bae08d87dea51f95277d02d0ac14f7896960695868aa3847c1c50cf54"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_only_source_1.png",
+      "bytes": 33440,
+      "sha256": "e2f3798b8045d8aff8770598e9b35264d5a04cf20495cccbf25b5ed1c73a0182"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_only_source_2.png",
+      "bytes": 24318,
+      "sha256": "3f77c12d9fcf48a9086f11329b14a69caf713f6bade0d45d2b956718a115421a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_other_source.png",
+      "bytes": 38199,
+      "sha256": "65c387eff9ee248138c26880d74f468954783183c3d11313d9e87223a43859db"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_rgb.png",
+      "bytes": 494429,
+      "sha256": "674a07fc7687905588100f9b25f3f706333a9c4432b6e3a9295dad6d80e48ddf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_1_source.png",
+      "bytes": 50961,
+      "sha256": "fcb58a7878ecfb7f35b2460bd63441e0d2997c239be6220f089d251d6e5d3cfa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_front.npz",
+      "bytes": 1899404,
+      "sha256": "5f209aa7bbc4784544faf6d7b1c74667a747c583c19116d04dbadac513815d55"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_only_source_0.png",
+      "bytes": 22931,
+      "sha256": "451e20093eb005ee483756b8a490fdd5b01dac29a0a87adc3f3df06eceee2e2b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_only_source_1.png",
+      "bytes": 33144,
+      "sha256": "4607126be6839c2f82f3b6e737405b6b32267c669f20e82a51fe8bdc5a14436c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_only_source_2.png",
+      "bytes": 1914,
+      "sha256": "643b66d96f4b7bfda38709c66e05a10eca4e410413acaf6280f9b48e028d65cd"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_other_source.png",
+      "bytes": 44322,
+      "sha256": "e795988c1a074c2f3c8257a2a311f28eb6c3e169eaaa7c26ed8ad3c5ee82132d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_rgb.png",
+      "bytes": 462800,
+      "sha256": "c52c37b9705051093b874c55efd3d1fed5f56f22b56d070ef7553ceebd45e886"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/projections/camera_2_source.png",
+      "bytes": 30633,
+      "sha256": "31440e5fd39927007fc0e5b200808971ff5bc2e223221fc206f19acfd9e9b314"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/steps/after_frame_01.npz",
+      "bytes": 14445030,
+      "sha256": "1f0e9e49babb5627f8dc501b5986ac6924e115a8f31b1c9cf8bb995a220f3040"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/B/steps/after_frame_02.npz",
+      "bytes": 16527148,
+      "sha256": "45e5ad462fa1a7e075be0c7a2d8d7db72c23131d17aaf13cfc76cd4a201631e7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/all_rgb.ply",
+      "bytes": 22561066,
+      "sha256": "b9da7191f1175bfc03f10f33932caab5ffb8161a0a36c539e09c9482ebf979e9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/all_source.ply",
+      "bytes": 22561066,
+      "sha256": "546d0e07cbc65eb236a34f0edd7524612fc9fe728ea1346548709705a3531c6d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/map.npz",
+      "bytes": 24730117,
+      "sha256": "49c6d9a8d71dd0a60ef0202dc627791c9d7bd61a64293afcae2c65761af357b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/metrics.json",
+      "bytes": 1517,
+      "sha256": "d6639c28a495923475cdac54f170199678fecbf19fccb3fc17a611d396a95149"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_front.npz",
+      "bytes": 1756589,
+      "sha256": "65e278689a64a79699a5435d3eec3f90c6dbcddd96f453408d1b58ad3832f9e5"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_only_source_0.png",
+      "bytes": 1644,
+      "sha256": "f59cf41a20e89f52d9aebc91d985ebb8354e2ad83330d43abdf5600bf5a5a214"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_only_source_1.png",
+      "bytes": 9124,
+      "sha256": "a39601e0b7b572cddd957ab21a5edc2583016242135be452dd1a09de9c2d9a57"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_only_source_2.png",
+      "bytes": 27323,
+      "sha256": "9fd4f1588b4ebffd5136868fc50acc453a6fe46d7da31ec9052078aaeb354a8f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_other_source.png",
+      "bytes": 33027,
+      "sha256": "3824c2521b9371b61473c3f40391ee81051774d3c87b8126f49b069568e3a5ac"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_rgb.png",
+      "bytes": 459858,
+      "sha256": "588f8133badc1f029b0044d877b8f0946a7e74c4b7cf005d54e7db2674d6f52a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_0_source.png",
+      "bytes": 37908,
+      "sha256": "a3c99b410c1099e040fd9ab3f8f2d7cb78db2fe80bdd5c6982f92a89c766eaf4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_front.npz",
+      "bytes": 1653404,
+      "sha256": "520f151f3a13a97936bb2860e6e7bba4b37eff39847f4d127b02d8c3ea7b8e00"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_only_source_0.png",
+      "bytes": 9422,
+      "sha256": "ce85a74bc37e15e1f3d8e5a1635206d9ad051d336bf8897001829807d1f9f1e7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_only_source_1.png",
+      "bytes": 1806,
+      "sha256": "24ce9b6c9627ba481773356297d486622923a13f2b48210c5824c765c004064a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_only_source_2.png",
+      "bytes": 23846,
+      "sha256": "f5f5a082f8536d2f38114adf55f8d2aedc4fc20a38bcaed4a088ce748f200b17"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_other_source.png",
+      "bytes": 36790,
+      "sha256": "e04a2161599960427327277cdbceb12b98540c0a4798b83dae125584a5f6d92c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_rgb.png",
+      "bytes": 457686,
+      "sha256": "371153b894a9e51bb7dab3730a8428da777a41c4415b4503342d7701d600527f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_1_source.png",
+      "bytes": 36494,
+      "sha256": "7aa6a588730d32163851ca4977e3a09165c89eac4ede9904ab219ba727283c53"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_front.npz",
+      "bytes": 1683915,
+      "sha256": "7dc64234c7c35d41f328a8a3a3ac415f00080d4635e0b23428970a746a5180e1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_only_source_0.png",
+      "bytes": 21656,
+      "sha256": "d95b3262653c77aa81ab3c40234e7ba3add473c61f25eac59c85475ced799775"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_only_source_1.png",
+      "bytes": 19242,
+      "sha256": "6378352b33f10537c54676afff0c527530fd81cfd87453364eff4b4c040b837c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_only_source_2.png",
+      "bytes": 1914,
+      "sha256": "643b66d96f4b7bfda38709c66e05a10eca4e410413acaf6280f9b48e028d65cd"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_other_source.png",
+      "bytes": 33171,
+      "sha256": "9e186d707b4d333bb90e6c051431a0f4cbe642281fbe3e41a9a6de94684b1144"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_rgb.png",
+      "bytes": 459079,
+      "sha256": "8d9851ca5f7de5dc58deb22280c8d677246678bd6f10bf9721aa36f0232f7d79"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/C/projections/camera_2_source.png",
+      "bytes": 34450,
+      "sha256": "30ff75524a9cd4bcff07939d1b3aa65eda1742416d1bfec5a5152d0f4bca30cb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/all_rgb.ply",
+      "bytes": 9727018,
+      "sha256": "405848b60a80ac373cde5f9b61e08bd17b93c89f6d0087faebc30cf280e0d07e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/all_source.ply",
+      "bytes": 9727018,
+      "sha256": "5907229707ddb77a5a735bf32a7faca99e29cc9ae9fcef31fd185c87866ab1c5"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/map.npz",
+      "bytes": 12353809,
+      "sha256": "fcb0dde423f6099218fbef935fa4e08f2803ee8e256d984fdecb12c802e0cab2"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/metrics.json",
+      "bytes": 3031,
+      "sha256": "3dd4cb5d465e6cf8a96cd50f6a87f558afbcae3e90899eb50bf27dcfd2fe9a42"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_front.npz",
+      "bytes": 1848181,
+      "sha256": "db85c5ed2545b2aa3cfe000aad08a25d59cfd5b56ad2cb717ae5717c26445690"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_only_source_0.png",
+      "bytes": 23570,
+      "sha256": "9ebbabe7666bc37595243a3d7fecf2a593a5df572ebd001150934a4e49669d75"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_only_source_1.png",
+      "bytes": 32882,
+      "sha256": "a1e4f45cd8e04ac19d3fd45cb65d8beecd99ea3224c66ad2c9c387290603befa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_only_source_2.png",
+      "bytes": 28213,
+      "sha256": "6792ac319757055d6c43cf6cceb2771aa276c88271e269980ed14f2641b9a0e8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_other_source.png",
+      "bytes": 46689,
+      "sha256": "3470ac98c7825993d377601004f5697bb3971c969827b8eb16f39cadde5e17f3"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_rgb.png",
+      "bytes": 502098,
+      "sha256": "7ef566974fb35f421f04b221b2729913d1e7d59701a35fbeb3bca7687fd8a1ae"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_0_source.png",
+      "bytes": 54566,
+      "sha256": "7e272a4f88d016d162d626df14df5ec8f2194c589b5be2192a02cf694a5fa1f9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_front.npz",
+      "bytes": 1890033,
+      "sha256": "71d7de4485b7f8b1f843c2b8d643c6fc5d66dd7ef987fd3d6bb31ae65a5fe427"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_only_source_0.png",
+      "bytes": 22603,
+      "sha256": "c85c368bae08d87dea51f95277d02d0ac14f7896960695868aa3847c1c50cf54"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_only_source_1.png",
+      "bytes": 33440,
+      "sha256": "e2f3798b8045d8aff8770598e9b35264d5a04cf20495cccbf25b5ed1c73a0182"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_only_source_2.png",
+      "bytes": 24318,
+      "sha256": "3f77c12d9fcf48a9086f11329b14a69caf713f6bade0d45d2b956718a115421a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_other_source.png",
+      "bytes": 38199,
+      "sha256": "65c387eff9ee248138c26880d74f468954783183c3d11313d9e87223a43859db"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_rgb.png",
+      "bytes": 494429,
+      "sha256": "674a07fc7687905588100f9b25f3f706333a9c4432b6e3a9295dad6d80e48ddf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_1_source.png",
+      "bytes": 50961,
+      "sha256": "fcb58a7878ecfb7f35b2460bd63441e0d2997c239be6220f089d251d6e5d3cfa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_front.npz",
+      "bytes": 1899404,
+      "sha256": "5f209aa7bbc4784544faf6d7b1c74667a747c583c19116d04dbadac513815d55"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_only_source_0.png",
+      "bytes": 22931,
+      "sha256": "451e20093eb005ee483756b8a490fdd5b01dac29a0a87adc3f3df06eceee2e2b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_only_source_1.png",
+      "bytes": 33144,
+      "sha256": "4607126be6839c2f82f3b6e737405b6b32267c669f20e82a51fe8bdc5a14436c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_only_source_2.png",
+      "bytes": 1914,
+      "sha256": "643b66d96f4b7bfda38709c66e05a10eca4e410413acaf6280f9b48e028d65cd"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_other_source.png",
+      "bytes": 44322,
+      "sha256": "e795988c1a074c2f3c8257a2a311f28eb6c3e169eaaa7c26ed8ad3c5ee82132d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_rgb.png",
+      "bytes": 462800,
+      "sha256": "c52c37b9705051093b874c55efd3d1fed5f56f22b56d070ef7553ceebd45e886"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/projections/camera_2_source.png",
+      "bytes": 30633,
+      "sha256": "31440e5fd39927007fc0e5b200808971ff5bc2e223221fc206f19acfd9e9b314"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/steps/after_frame_01.npz",
+      "bytes": 14445030,
+      "sha256": "1f0e9e49babb5627f8dc501b5986ac6924e115a8f31b1c9cf8bb995a220f3040"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/arms/D/steps/after_frame_02.npz",
+      "bytes": 16527148,
+      "sha256": "45e5ad462fa1a7e075be0c7a2d8d7db72c23131d17aaf13cfc76cd4a201631e7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/figures/fusion_fixed_initial_K.png",
+      "bytes": 7064693,
+      "sha256": "5a0549f8aa120b673be904c7712af24062b6de1a8e4a56518fa0181bfd9f7f12"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/figures/fusion_rgb_comparison.png",
+      "bytes": 7064693,
+      "sha256": "5a0549f8aa120b673be904c7712af24062b6de1a8e4a56518fa0181bfd9f7f12"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/figures/fusion_source_comparison.png",
+      "bytes": 2118814,
+      "sha256": "014597b232e9496efb46d83432ce70a0b6114e6b67b764e66bbfa185a432f447"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/inputs.json",
+      "bytes": 1106,
+      "sha256": "bc803e2d52454404de17cb351dab5305df6ac7e2406359acd2d28cc10ab7d59e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C0/README.md",
+      "bytes": 531,
+      "sha256": "23cd4c3c7014bf60749afb9238fc220a3a634df42f99ea702063abbe4db07e4c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C0/run.py",
+      "bytes": 7705,
+      "sha256": "cfab06eec3bbc4fe350535510862f32979faa859aa4d4f6e244088ab514a8659"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C0a/run.py",
+      "bytes": 2323,
+      "sha256": "3841532cc5bdefec9bcf7ec3ffc2fe10aec024706a2fc008df2845ac502f7a45"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C0b/run.py",
+      "bytes": 3491,
+      "sha256": "5dfd4cf82eca505659f6a8e2f98253cd5bc4c29631541ca8d80982641fc294be"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C1/run.py",
+      "bytes": 577,
+      "sha256": "f087dd7ca456394e11c35d411b119d96858b3f8564a4d299e8956ca7bf5f1f54"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C1a/run.py",
+      "bytes": 2687,
+      "sha256": "6c56d4564198972ff4fb36a1d7e8ef6a598d42b4bfe60c1aff3f6358652a2447"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C2/run.py",
+      "bytes": 166,
+      "sha256": "c21a385ed2e35066a6c5b86263bf896bcd3c9eb95a67387a01c3c65c4a780105"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C2a/run.py",
+      "bytes": 269,
+      "sha256": "b6e102f44e763cba84d9ef5c3e8a47bdc5088b43b37b777926686a737a4bc92a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C3/run.py",
+      "bytes": 166,
+      "sha256": "704c94378ef11f41d8c50d6666366d78708cd1d054fdfce0826dbe523b66f743"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C3a/run.py",
+      "bytes": 269,
+      "sha256": "3ec636cdc35b224345e33562d2d2b5c8a61ac541ddcacab7ed523982cca0c34a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C4/run.py",
+      "bytes": 1364,
+      "sha256": "b85aa5a5e0e7ca9dc4c6fbda0b0bcd3ef454fe6ff81ceeca67a53031b16f2220"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C4a/run.py",
+      "bytes": 1816,
+      "sha256": "61db5668c8f59797214edd8169faf8682707a6c6109ca81fdde911c5fc1622cb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C5/run.py",
+      "bytes": 10686,
+      "sha256": "aa2ce544f3d3f755088d5c34c2d9ed290a51ab1d569f3cb46087ac97c67655f1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/C5a/run.py",
+      "bytes": 3516,
+      "sha256": "5ccd2502c5e82834a34e327fd93ffe9b12abaaa7d12a87cf5e818ff2b6541b14"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/baseline.py",
+      "bytes": 3343,
+      "sha256": "88fa3562398051f49c58742137ccb603718f18194a208066157f05bf947aa3fb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/diagnostics.py",
+      "bytes": 10293,
+      "sha256": "be489ce578d2d00944d6a2cf174f9a0c0f52e06500d0705fb5400063b534a280"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/experiment_plan.md",
+      "bytes": 37247,
+      "sha256": "1cef2749b5757b4963edf8b8481ca90f4257887bcca6988ceb8fae4ee90587c9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/fit.py",
+      "bytes": 11224,
+      "sha256": "ecd94750c5fbd2748291f740014758efa9142ce67b75d8d2ea93e47d2c7e47f4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/fusion.py",
+      "bytes": 9571,
+      "sha256": "a2b0a5b26c519e966e8ff081d90db65135a1a12589b5e90c68d8c034eb671f08"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/matching.py",
+      "bytes": 7368,
+      "sha256": "6c43c247cadbe99fdbcb7239d018e400c2d4dfd2e7eb07a5272c726f1c49281e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/artifacts/source/update_index.py",
+      "bytes": 2894,
+      "sha256": "bfffffdb396f75cf319f64bbcd257197768599b2069f9558b54ff02e2914e816"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/config_resolved.json",
+      "bytes": 1509,
+      "sha256": "b40f9dd675117b07b34cf0ce3903f9f61547846232d404909b14577f48b136ab"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/environment.json",
+      "bytes": 350,
+      "sha256": "235c160f241511bde302b95313c33bd2f77463d8e962292d79f6a5d7b815cefe"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/evaluation/metrics.json",
+      "bytes": 15214,
+      "sha256": "7cd030c45b45ebaf728fce8f4b95271ec000deca1e50b392c92a197eb5b065a9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/hkairport01-C5-20261113-001/stages/C5/logs/run.log",
+      "bytes": 3589,
+      "sha256": "6349dd0bf677a93c8d3ea6484f0adcd0ded323d11a5caa2353afc6e62d869b6a"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "decision": "COMPRESSION_CRITERIA_NOT_MET",
+  "calibration_parent_code": "C4",
+  "exploratory_amendment": false,
+  "arms": {
+    "A": {
+      "raw_observations": 663552,
+      "representative_points": 663552,
+      "reduction_fraction": 0.0,
+      "geometry_array_bytes": 15925248,
+      "all_map_array_bytes": 55738376,
+      "beta": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intrinsics": [
+        [
+          [
+            348.3797607421875,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            351.8713073730469,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            348.2563171386719,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            350.0933532714844,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            345.7070007324219,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            348.2242736816406,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "projection": [
+        {
+          "camera": 0,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 212938
+        },
+        {
+          "camera": 1,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 216643
+        },
+        {
+          "camera": 2,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 210427
+        }
+      ],
+      "resident_map_core_bytes": 30523392,
+      "npz_bytes": 24730117,
+      "total_preparation_and_export_seconds": 3.034740506001981,
+      "source_visualization": "owner color; full multi-frame membership retained separately"
+    },
+    "B": {
+      "steps": [
+        {
+          "target_camera": 1,
+          "old_representatives": 221184,
+          "projected_candidates": 210609,
+          "accepted_old_points": 188346,
+          "color_rejected_only": 22149,
+          "depth_rejected_only": 100,
+          "both_rejected": 14,
+          "kept_old_points": 32838,
+          "new_target_points": 221184,
+          "output_points": 254022,
+          "touched_target_pixels": 183374,
+          "maximum_group_depth_range_at_acceptance": 0.029953420892262585,
+          "maximum_color_range_at_acceptance": 30
+        },
+        {
+          "target_camera": 2,
+          "old_representatives": 254022,
+          "projected_candidates": 236285,
+          "accepted_old_points": 189126,
+          "color_rejected_only": 46763,
+          "depth_rejected_only": 227,
+          "both_rejected": 169,
+          "kept_old_points": 64896,
+          "new_target_points": 221184,
+          "output_points": 286080,
+          "touched_target_pixels": 177976,
+          "maximum_group_depth_range_at_acceptance": 0.029992739141143584,
+          "maximum_color_range_at_acceptance": 30
+        }
+      ],
+      "raw_observations": 663552,
+      "representative_points": 286080,
+      "reduction_fraction": 0.5688657407407407,
+      "observation_count": {
+        "count": 286080,
+        "mean": 2.319463087248322,
+        "median": 3.0,
+        "p90": 3.0,
+        "max": 12.0
+      },
+      "multi_frame_group_fraction": 0.7120700503355705,
+      "seconds": 2.1013376449991483,
+      "geometry_array_bytes": 6865920,
+      "all_map_array_bytes": 30070280,
+      "raw_observation_arrays_bytes": 24551424,
+      "full_member_color_range_verified": true,
+      "stagewise_full_member_depth_range_verified": true,
+      "all_original_observations_partitioned_once": true,
+      "raw_colors_not_averaged": true,
+      "beta": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intrinsics": [
+        [
+          [
+            348.3797607421875,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            351.8713073730469,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            348.2563171386719,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            350.0933532714844,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            345.7070007324219,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            348.2242736816406,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "projection": [
+        {
+          "camera": 0,
+          "covered_pixels": 208698,
+          "coverage": 0.9435492621527778,
+          "other_source_covered_pixels": 200995
+        },
+        {
+          "camera": 1,
+          "covered_pixels": 211819,
+          "coverage": 0.9576596860532407,
+          "other_source_covered_pixels": 200878
+        },
+        {
+          "camera": 2,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 39862
+        }
+      ],
+      "resident_map_core_bytes": 13159680,
+      "npz_bytes": 12353809,
+      "total_preparation_and_export_seconds": 3.920351198001299,
+      "source_visualization": "owner color; full multi-frame membership retained separately"
+    },
+    "C": {
+      "raw_observations": 663552,
+      "representative_points": 663552,
+      "reduction_fraction": 0.0,
+      "geometry_array_bytes": 15925248,
+      "all_map_array_bytes": 55738376,
+      "beta": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intrinsics": [
+        [
+          [
+            348.3797607421875,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            351.8713073730469,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            348.2563171386719,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            350.0933532714844,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            345.7070007324219,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            348.2242736816406,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "projection": [
+        {
+          "camera": 0,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 212938
+        },
+        {
+          "camera": 1,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 216643
+        },
+        {
+          "camera": 2,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 210427
+        }
+      ],
+      "resident_map_core_bytes": 30523392,
+      "npz_bytes": 24730117,
+      "total_preparation_and_export_seconds": 3.001447582995752,
+      "source_visualization": "owner color; full multi-frame membership retained separately"
+    },
+    "D": {
+      "steps": [
+        {
+          "target_camera": 1,
+          "old_representatives": 221184,
+          "projected_candidates": 210609,
+          "accepted_old_points": 188346,
+          "color_rejected_only": 22149,
+          "depth_rejected_only": 100,
+          "both_rejected": 14,
+          "kept_old_points": 32838,
+          "new_target_points": 221184,
+          "output_points": 254022,
+          "touched_target_pixels": 183374,
+          "maximum_group_depth_range_at_acceptance": 0.029953420892262585,
+          "maximum_color_range_at_acceptance": 30
+        },
+        {
+          "target_camera": 2,
+          "old_representatives": 254022,
+          "projected_candidates": 236285,
+          "accepted_old_points": 189126,
+          "color_rejected_only": 46763,
+          "depth_rejected_only": 227,
+          "both_rejected": 169,
+          "kept_old_points": 64896,
+          "new_target_points": 221184,
+          "output_points": 286080,
+          "touched_target_pixels": 177976,
+          "maximum_group_depth_range_at_acceptance": 0.029992739141143584,
+          "maximum_color_range_at_acceptance": 30
+        }
+      ],
+      "raw_observations": 663552,
+      "representative_points": 286080,
+      "reduction_fraction": 0.5688657407407407,
+      "observation_count": {
+        "count": 286080,
+        "mean": 2.319463087248322,
+        "median": 3.0,
+        "p90": 3.0,
+        "max": 12.0
+      },
+      "multi_frame_group_fraction": 0.7120700503355705,
+      "seconds": 2.1068462549883407,
+      "geometry_array_bytes": 6865920,
+      "all_map_array_bytes": 30070280,
+      "raw_observation_arrays_bytes": 24551424,
+      "full_member_color_range_verified": true,
+      "stagewise_full_member_depth_range_verified": true,
+      "all_original_observations_partitioned_once": true,
+      "raw_colors_not_averaged": true,
+      "beta": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intrinsics": [
+        [
+          [
+            348.3797607421875,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            351.8713073730469,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            348.2563171386719,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            350.0933532714844,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            345.7070007324219,
+            0.0,
+            256.0
+          ],
+          [
+            0.0,
+            348.2242736816406,
+            216.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "projection": [
+        {
+          "camera": 0,
+          "covered_pixels": 208698,
+          "coverage": 0.9435492621527778,
+          "other_source_covered_pixels": 200995
+        },
+        {
+          "camera": 1,
+          "covered_pixels": 211819,
+          "coverage": 0.9576596860532407,
+          "other_source_covered_pixels": 200878
+        },
+        {
+          "camera": 2,
+          "covered_pixels": 221184,
+          "coverage": 1.0,
+          "other_source_covered_pixels": 39862
+        }
+      ],
+      "resident_map_core_bytes": 13159680,
+      "npz_bytes": 12353809,
+      "total_preparation_and_export_seconds": 3.918156587998965,
+      "source_visualization": "owner color; full multi-frame membership retained separately"
+    }
+  },
+  "comparisons": {
+    "A_to_B": {
+      "decision": "COMPRESSION_CRITERIA_NOT_MET",
+      "reduction_fraction": 0.5688657407407407,
+      "cameras": [
+        {
+          "camera": 0,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 208698,
+          "lost_pixels": 12486,
+          "coverage_loss_fraction": 0.05645073784722221,
+          "front_z_relative_change": {
+            "count": 208698,
+            "mean": 0.0022359571139143656,
+            "median": 0.001598837111245352,
+            "p90": 0.005097758152802339,
+            "max": 0.0406962666073824
+          },
+          "coverage_pass": false,
+          "depth_preservation_pass": true
+        },
+        {
+          "camera": 1,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 211819,
+          "lost_pixels": 9365,
+          "coverage_loss_fraction": 0.0423403139467593,
+          "front_z_relative_change": {
+            "count": 211819,
+            "mean": 0.0022071617937021774,
+            "median": 0.0015895556463960442,
+            "p90": 0.005012023365374672,
+            "max": 0.03755583339400122
+          },
+          "coverage_pass": false,
+          "depth_preservation_pass": true
+        },
+        {
+          "camera": 2,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 221184,
+          "lost_pixels": 0,
+          "coverage_loss_fraction": 0.0,
+          "front_z_relative_change": {
+            "count": 221184,
+            "mean": 0.002228175120856881,
+            "median": 0.0016177263968666933,
+            "p90": 0.005081454862678092,
+            "max": 0.04908826514500525
+          },
+          "coverage_pass": true,
+          "depth_preservation_pass": true
+        }
+      ],
+      "passed": false,
+      "gt_accuracy_improvement": false
+    },
+    "C_to_D": {
+      "decision": "COMPRESSION_CRITERIA_NOT_MET",
+      "reduction_fraction": 0.5688657407407407,
+      "cameras": [
+        {
+          "camera": 0,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 208698,
+          "lost_pixels": 12486,
+          "coverage_loss_fraction": 0.05645073784722221,
+          "front_z_relative_change": {
+            "count": 208698,
+            "mean": 0.0022359571139143656,
+            "median": 0.001598837111245352,
+            "p90": 0.005097758152802339,
+            "max": 0.0406962666073824
+          },
+          "coverage_pass": false,
+          "depth_preservation_pass": true
+        },
+        {
+          "camera": 1,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 211819,
+          "lost_pixels": 9365,
+          "coverage_loss_fraction": 0.0423403139467593,
+          "front_z_relative_change": {
+            "count": 211819,
+            "mean": 0.0022071617937021774,
+            "median": 0.0015895556463960442,
+            "p90": 0.005012023365374672,
+            "max": 0.03755583339400122
+          },
+          "coverage_pass": false,
+          "depth_preservation_pass": true
+        },
+        {
+          "camera": 2,
+          "initial_covered_pixels": 221184,
+          "retained_pixels": 221184,
+          "lost_pixels": 0,
+          "coverage_loss_fraction": 0.0,
+          "front_z_relative_change": {
+            "count": 221184,
+            "mean": 0.002228175120856881,
+            "median": 0.0016177263968666933,
+            "p90": 0.005081454862678092,
+            "max": 0.04908826514500525
+          },
+          "coverage_pass": true,
+          "depth_preservation_pass": true
+        }
+      ],
+      "passed": false,
+      "gt_accuracy_improvement": false
+    }
+  },
+  "calibrated_arms_available": true,
+  "calibration_decision": "EFFECT_NOT_ESTABLISHED",
+  "scientific_improvement": false,
+  "point_reduction_verified": true,
+  "continuous_slam_tested": false,
+  "fov_effect_inferred_from_fusion": false,
+  "per_arm_peak_memory_available": false,
+  "memory_note": "array bytes per arm; process peak RSS applies to entire run, not individual arms",
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 16.00595061700733,
+  "process_peak_rss_mib": 602.9921875
+}
