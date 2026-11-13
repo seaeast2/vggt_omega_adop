@@ -1,0 +1,8 @@
+{"time": "2026-11-13T17:05:50.027656+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I1-20261113-001"}
+{"time": "2026-11-13T17:05:55.595379+09:00", "event": "detector", "frame": 0, "detections": 7}
+{"time": "2026-11-13T17:05:55.820718+09:00", "event": "detector", "frame": 1, "detections": 5}
+{"time": "2026-11-13T17:05:56.045571+09:00", "event": "detector", "frame": 2, "detections": 4}
+{"time": "2026-11-13T17:17:10.110570+09:00", "event": "sam_frame", "frame": 0, "semantic_masks": 7, "automatic_pre_nms": 1316, "automatic_post_nms": 150, "raw_candidates": 1323, "exact_unique": 1309, "uncovered_fraction": 0.08405558268229167, "batch": 16, "seconds": 132.9181634169945}
+{"time": "2026-11-13T17:19:44.651734+09:00", "event": "sam_frame", "frame": 1, "semantic_masks": 5, "automatic_pre_nms": 1467, "automatic_post_nms": 142, "raw_candidates": 1472, "exact_unique": 1445, "uncovered_fraction": 0.110137939453125, "batch": 16, "seconds": 154.37869832699653}
+{"time": "2026-11-13T17:21:37.099027+09:00", "event": "sam_frame", "frame": 2, "semantic_masks": 4, "automatic_pre_nms": 1217, "automatic_post_nms": 133, "raw_candidates": 1221, "exact_unique": 1198, "uncovered_fraction": 0.119842529296875, "batch": 16, "seconds": 112.30904573900625}
+{"time": "2026-11-13T17:21:38.629128+09:00", "event": "completed", "decision": "FULL_IMAGE_CANDIDATES_TAGGED", "criteria": true}
