@@ -122,12 +122,17 @@ def classify(path,code):
 def main():
     rows=[]
     for path in sorted((ROOT/'results').rglob('*.ply')):
-        relative=path.relative_to(ROOT);parts=relative.parts;i=parts.index('stages')
-        series,code,run=parts[1],parts[i+1],parts[i-1]
+        relative=path.relative_to(ROOT);parts=relative.parts
+        if 'stages' in parts:
+            i=parts.index('stages');series,code,run=parts[1],parts[i+1],parts[i-1]
+        else:
+            assert parts[1]=='ply_visualization' and parts[2].startswith('E3b_pixel_rgb-')
+            series,code,run=parts[1],'E3b',parts[2]
         assert code in PURPOSE,code
         count,geometry,color,file_hash=read(path)
         kind,color_kind,state,arm,subset=classify(relative,code)
         report=Path('docs/experiments')/series/code/run/'report.md'
+        if series=='ply_visualization':report=Path('docs/ply_visualization')/(run+'.json')
         assert (ROOT/report).is_file(),report
         rows.append({'series':series,'experiment_code':code,'run_id':run,
             'dataset':run.split(f'-{code}-',1)[0],'purpose':PURPOSE[code],

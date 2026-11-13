@@ -1,11 +1,12 @@
 {
   "summary": {
-    "files": 204,
-    "run_stage_folders": 31,
+    "files": 207,
+    "run_stage_folders": 32,
     "experiment_codes": 24,
     "ordered_xyz_exact_groups": 66,
     "counts_by_series": {
       "camera_fov_alignment": 131,
+      "ply_visualization": 3,
       "pointmap_refinement": 66,
       "vggt_baseline": 7
     },
@@ -3028,6 +3029,75 @@
       "same_xyz_as": "results/camera_fov_alignment/tum-freiburg1_desk-C5-20261113-001/stages/C5/artifacts/arms/B/all_rgb.ply"
     },
     {
+      "series": "ply_visualization",
+      "experiment_code": "E3b",
+      "run_id": "E3b_pixel_rgb-001",
+      "dataset": "E3b_pixel_rgb-001",
+      "purpose": "E0b 단순 융합 점군을 초기값으로 고정 RGB 미분 정점 이동 200회 적용",
+      "historical_verdict_scope": "RGB 손실/PSNR/coverage 기준; selected=initial, last 별도",
+      "arm": "",
+      "state": "초기 상태",
+      "geometry_kind": "Depth 역투영 또는 그 점군의 위치 이동",
+      "color_kind": "원본/owner 관측 RGB",
+      "subset": "전체 점군",
+      "vertex_count": 341325,
+      "bytes": 11605377,
+      "relative_path": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply",
+      "absolute_path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply",
+      "report": "docs/ply_visualization/E3b_pixel_rgb-001.json",
+      "file_sha256": "a0bf151730aab0b5b99a70722987d9b08fb8962f6d4f3a5d1b14757e518c6fc4",
+      "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
+      "rgb_sha256": "b5d95e09a8751bfa4739005703dc7b17d903b8ff80fa4c5a22590afbbec8732f",
+      "same_xyz_group": "G021",
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
+    },
+    {
+      "series": "ply_visualization",
+      "experiment_code": "E3b",
+      "run_id": "E3b_pixel_rgb-001",
+      "dataset": "E3b_pixel_rgb-001",
+      "purpose": "E0b 단순 융합 점군을 초기값으로 고정 RGB 미분 정점 이동 200회 적용",
+      "historical_verdict_scope": "RGB 손실/PSNR/coverage 기준; selected=initial, last 별도",
+      "arm": "",
+      "state": "마지막 실제 이동 상태; 선택 결과와 별개",
+      "geometry_kind": "Depth 역투영 또는 그 점군의 위치 이동",
+      "color_kind": "원본/owner 관측 RGB",
+      "subset": "전체 점군",
+      "vertex_count": 341325,
+      "bytes": 11605377,
+      "relative_path": "results/ply_visualization/E3b_pixel_rgb-001/last_pixel_rgb.ply",
+      "absolute_path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3b_pixel_rgb-001/last_pixel_rgb.ply",
+      "report": "docs/ply_visualization/E3b_pixel_rgb-001.json",
+      "file_sha256": "26d9d6d5d59eba37aebefd3fbdc9e2c00beea125e2f9fa81a868d3e2c2e60e32",
+      "ordered_xyz_f64_sha256": "f1777af763251afabf594e080f08b38150cf936db65beccbba39dc1af8f1ce5f",
+      "rgb_sha256": "b5d95e09a8751bfa4739005703dc7b17d903b8ff80fa4c5a22590afbbec8732f",
+      "same_xyz_group": "G062",
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/last_pixel_rgb.ply"
+    },
+    {
+      "series": "ply_visualization",
+      "experiment_code": "E3b",
+      "run_id": "E3b_pixel_rgb-001",
+      "dataset": "E3b_pixel_rgb-001",
+      "purpose": "E0b 단순 융합 점군을 초기값으로 고정 RGB 미분 정점 이동 200회 적용",
+      "historical_verdict_scope": "RGB 손실/PSNR/coverage 기준; selected=initial, last 별도",
+      "arm": "",
+      "state": "선택한 상태; 초기값일 수도 있음",
+      "geometry_kind": "Depth 역투영 또는 그 점군의 위치 이동",
+      "color_kind": "원본/owner 관측 RGB",
+      "subset": "전체 점군",
+      "vertex_count": 341325,
+      "bytes": 11605377,
+      "relative_path": "results/ply_visualization/E3b_pixel_rgb-001/selected_pixel_rgb.ply",
+      "absolute_path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3b_pixel_rgb-001/selected_pixel_rgb.ply",
+      "report": "docs/ply_visualization/E3b_pixel_rgb-001.json",
+      "file_sha256": "a0bf151730aab0b5b99a70722987d9b08fb8962f6d4f3a5d1b14757e518c6fc4",
+      "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
+      "rgb_sha256": "b5d95e09a8751bfa4739005703dc7b17d903b8ff80fa4c5a22590afbbec8732f",
+      "same_xyz_group": "G021",
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
+    },
+    {
       "series": "pointmap_refinement",
       "experiment_code": "E0d",
       "run_id": "amtown01-E0d-20261112-001",
@@ -3646,7 +3716,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3669,7 +3739,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bbfa7434cdbf87a72bff4a47af3de4a2671e053d97fbf32888eb50d5e8256aae",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3715,7 +3785,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3899,7 +3969,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3922,7 +3992,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bbfa7434cdbf87a72bff4a47af3de4a2671e053d97fbf32888eb50d5e8256aae",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3945,7 +4015,7 @@
       "ordered_xyz_f64_sha256": "f1777af763251afabf594e080f08b38150cf936db65beccbba39dc1af8f1ce5f",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G062",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/maps/last_owner.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/last_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3968,7 +4038,7 @@
       "ordered_xyz_f64_sha256": "f1777af763251afabf594e080f08b38150cf936db65beccbba39dc1af8f1ce5f",
       "rgb_sha256": "bbfa7434cdbf87a72bff4a47af3de4a2671e053d97fbf32888eb50d5e8256aae",
       "same_xyz_group": "G062",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E3b-20261112-002/stages/E3b/artifacts/maps/last_owner.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/last_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -3991,7 +4061,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -4014,7 +4084,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bbfa7434cdbf87a72bff4a47af3de4a2671e053d97fbf32888eb50d5e8256aae",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -4037,7 +4107,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bdcbffe91c56ae3dcf6b5b66819ff98c8efc893b06aacb615f8198ccb0f8a517",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
@@ -4060,7 +4130,7 @@
       "ordered_xyz_f64_sha256": "52783bc51db18afb0c7da2714f8d1dd13b190991ea404e5e5e93494d235b59c7",
       "rgb_sha256": "bbfa7434cdbf87a72bff4a47af3de4a2671e053d97fbf32888eb50d5e8256aae",
       "same_xyz_group": "G021",
-      "same_xyz_as": "results/pointmap_refinement/tum-freiburg1_desk-E0b-20261112-001/stages/E0b/artifacts/maps/fused_owner_colors.ply"
+      "same_xyz_as": "results/ply_visualization/E3b_pixel_rgb-001/initial_pixel_rgb.ply"
     },
     {
       "series": "pointmap_refinement",
