@@ -150,7 +150,7 @@ def main():
         'experiments_modified':False}
     output=ROOT/'docs/ply_inventory';output.mkdir(parents=True,exist_ok=True)
     with (output/'files.csv').open('w',encoding='utf-8-sig',newline='') as stream:
-        writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(stream,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(rows)
     (output/'files.json').write_text(json.dumps({'summary':summary,'files':rows},indent=2,ensure_ascii=False)+'\n')
     print(json.dumps(summary,ensure_ascii=False,indent=2))
 
