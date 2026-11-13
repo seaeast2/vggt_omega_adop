@@ -8,6 +8,8 @@
 
 실행 결과는 [종합 보고서](experiments/point_line_depth_refinement/summary.md)와 [구현·검증 기록](experiments/point_line_depth_refinement/amendments.md)을 따른다. 아래 내용은 사전 계획이며 실제 지원 부족·기술 검증·수치 변화는 실행 보고서와 구분한다.
 
+관련 후속 조사: [PlanarGS에서 재사용할 수 있는 요소](research/planargs_reuse_review.md). 이 링크는 문헌 조사이며 새 평면 보정 실험의 실행 완료를 뜻하지 않는다.
+
 ## 1. 배경과 범위
 
 사용자는 C3a의 `proposed_not_selected` PLY에서 기존 실험보다 높은 표면 정합도를 육안으로 확인했다. 이 관찰을 후속 실험의 출발점으로 삼는다. 기존 C 계열의 자동 판정은 해당 후보의 표면이 실제로 나쁘다는 증거가 아니다. 반대로 육안 관찰만으로 실제 깊이 정확도가 검증된 것도 아니다.

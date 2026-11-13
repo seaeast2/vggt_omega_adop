@@ -1,0 +1,124 @@
+{
+  "reviewed_at": "2026-11-13",
+  "repository": "https://github.com/SJTU-ViSYS-team/PlanarGS",
+  "commit": "a68f22043e95146c4f1c52cc0e471a6a90e86f73",
+  "retrieval": "GitHub recursive tree + selected raw text files; no model installation or inference",
+  "paper_version": "https://arxiv.org/html/2510.23930v1",
+  "scope": "static source review; not a runtime test",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10666,
+      "sha256": "a82c18a0d2300f874f4c4e1872ced928149480d36c9bdd85884d91a0ed0529ef",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "e43736802d47e4b4227161f26375738bad9eee8c11ec6cf3c582d7304aa496e2",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/LICENSE"
+    },
+    {
+      "path": "run_lp3.py",
+      "bytes": 7985,
+      "sha256": "57f6ac5a011cbd7a929399e62de3d8b9178d55c186f176b807c38b1c61311098",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/run_lp3.py"
+    },
+    {
+      "path": "run_geomprior.py",
+      "bytes": 2637,
+      "sha256": "671a0535d61d77d89421a4c3c6a23e019bd4d223b29601c3902227d4426198d7",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/run_geomprior.py"
+    },
+    {
+      "path": "train.py",
+      "bytes": 13131,
+      "sha256": "900c9b88ccf091588a26b02ab38e349ca50c49054acab8208c3b1a6e7b29fb67",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/train.py"
+    },
+    {
+      "path": "render.py",
+      "bytes": 7021,
+      "sha256": "b6cf708d2de9568e909ba19cbeec10a4e125bcd1a2622a26bb03a35b158f5f10",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/render.py"
+    },
+    {
+      "path": "arguments/__init__.py",
+      "bytes": 5327,
+      "sha256": "bc44bd6594ba55ab403f5b8dff84e093c87eff45ca99d6875dc4c792ee3b74e3",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/arguments/__init__.py"
+    },
+    {
+      "path": "lp3/run_groundedsam.py",
+      "bytes": 4233,
+      "sha256": "7e749e3a293bb57fcb6657695b5b821bc42bd21ff8eaca2f9ec68b1da8cb0311",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/lp3/run_groundedsam.py"
+    },
+    {
+      "path": "lp3/box_migrate.py",
+      "bytes": 3463,
+      "sha256": "b8b4eb5fea5830be0d8a6f2d0348a659ee2c2539083e3e0df8659243af53b912",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/lp3/box_migrate.py"
+    },
+    {
+      "path": "lp3/color_cluster.py",
+      "bytes": 3979,
+      "sha256": "fe447f306356ec7d49b25dd011a96d1477fe2bf89959e01eb73c3fe1ba0f5e5d",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/lp3/color_cluster.py"
+    },
+    {
+      "path": "lp3/mask_refine.py",
+      "bytes": 6382,
+      "sha256": "a8647508d0349b69712e4f5f9122152b1731048d66ef87710f119e919cb2f5e1",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/lp3/mask_refine.py"
+    },
+    {
+      "path": "planar/co_planar.py",
+      "bytes": 2288,
+      "sha256": "1fb7f92b8a75de654b7a2eeb4b7ada9b23b7e1a4a5d9150b2c5da39507346c37",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/planar/co_planar.py"
+    },
+    {
+      "path": "planar/densify_points.py",
+      "bytes": 2851,
+      "sha256": "2b2d2188e9cc68cd2b9e292cbc2cd13bad4f807c3af3e2a45695739b6c814e07",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/planar/densify_points.py"
+    },
+    {
+      "path": "geomprior/align_opt.py",
+      "bytes": 3734,
+      "sha256": "12edcd406f7c58d7d100767ff3f0c25744484205b5c65e1e3d59a00b9333d4a6",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/geomprior/align_opt.py"
+    },
+    {
+      "path": "geomprior/run_dust3r.py",
+      "bytes": 8240,
+      "sha256": "f9aa4e7a3d8367df3f89156515ff198bcb827a5d8c07f05ce9f407b98012b8b2",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/geomprior/run_dust3r.py"
+    },
+    {
+      "path": "common_utils/graphics_utils.py",
+      "bytes": 6020,
+      "sha256": "176362e50896509128074c0a1fd41de9eb7b262eca9a539e0659e025d7e26327",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/common_utils/graphics_utils.py"
+    },
+    {
+      "path": "common_utils/loss_utils.py",
+      "bytes": 2563,
+      "sha256": "beaa6459b1c38b6674d2b006a3bc40c355740e25460c0faa39c92fe97f2b075a",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/common_utils/loss_utils.py"
+    },
+    {
+      "path": "scene/gaussian_model.py",
+      "bytes": 29244,
+      "sha256": "db141de91a50c7d798a234908437d95bba87bc07b8c89dc145e266109e18c332",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/scene/gaussian_model.py"
+    },
+    {
+      "path": "scene/dataset_readers.py",
+      "bytes": 6004,
+      "sha256": "254809541f0a478c52cda5449d273a11055addaf24113645224b35ac627fbba2",
+      "url": "https://github.com/SJTU-ViSYS-team/PlanarGS/blob/a68f22043e95146c4f1c52cc0e471a6a90e86f73/scene/dataset_readers.py"
+    }
+  ]
+}
