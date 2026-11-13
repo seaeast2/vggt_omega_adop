@@ -3,8 +3,8 @@ from geometry import normals,components,geometric_regions
 from scipy import ndimage
 import hashlib
 
-def run():
- st=Stage('H2',parents=[latest('H0a'),latest('H1')],extra={'geometry_wall_review_rule':'Frozen RGB rectangles; >=100 rectangle points, >=5pct candidate fraction; no corrected geometry used. Candidate generation itself uses no image segmentation.','raw_duplicate_policy':'Identical/overlapping masks remain stored; pixels in >1 candidate are ambiguous and excluded.'})
+def run(code='H2',dedup=False):
+ st=Stage(code,parents=[latest('H0a'),latest('H1')],extra={'geometry_wall_review_rule':'Frozen RGB rectangles; >=100 rectangle points, >=5pct candidate fraction; no corrected geometry used. Candidate generation itself uses no image segmentation.','raw_duplicate_policy':'SAM predicted-IoU rank mask NMS at mask IoU>0.5; remaining overlaps ambiguous' if dedup else 'Identical/overlapping masks remain stored; pixels in >1 candidate are ambiguous and excluded.', 'mask_nms_supplement':dedup})
  try:
   data=load();h,w=data['depth'].shape[1:];size=h*w;minimum=int(np.ceil(.005*size));out=st.path/'artifacts/masks';out.mkdir(parents=True)
   start=time.perf_counter();nn,ev,valid=normals(data,7);n7time=time.perf_counter()-start;start=time.perf_counter();n21,e21,v21=normals(data,21);n21time=time.perf_counter()-start
@@ -40,7 +40,13 @@ def run():
    np.savez_compressed(out/f'camera_{i}_{method}_labels.npz',labels=labs,ambiguous=ambiguity)
    colors=np.random.default_rng(0).integers(30,255,(max(counter,1),3));show=data['rgb'][i].copy();hit=labs>=0;show[hit]=np.rint(.5*show[hit]+.5*colors[labs[hit]]).astype(np.uint8);show[ambiguity]=[255,0,255];c.image_write(st.path/f'artifacts/figures/camera_{i}_{method}_overlay.png',show)
   for i in range(3):
-   with np.load(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') as z:raw=z['masks'].copy()
+   with np.load(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') as z:raw=z['masks'].copy();sam_scores=z['sam_scores'].copy()
+   if dedup:
+    order=np.argsort(-sam_scores,kind='stable');kept=[];decisions=[]
+    for a in order:
+     ious=[float(np.sum(raw[a]&raw[b])/max(1,np.sum(raw[a]|raw[b]))) for b in kept];reject=any(v>.5 for v in ious);decisions.append({'original_index':int(a),'sam_score':float(sam_scores[a]),'iou_with_preceding_kept':ious,'retained':not reject})
+     if not reject:kept.append(int(a))
+    c.json_write(out/f'camera_{i}_mask_nms.json',{'ranking':'SAM predicted IoU descending, stable index ties','iou_threshold':.5,'decisions':decisions,'no_corrected_geometry_used':True});raw=raw[kept]
    # Boundaries/confidence affect support and movement only; no observations are removed.
    rawinner=[ndimage.binary_erosion(mask,structure=np.ones((3,3)),iterations=3)&border&valid[i] for mask in raw]
    union=raw.any(0) if len(raw) else np.zeros((h,w),bool);rois['object_boundary'][i]=ndimage.binary_dilation(union,iterations=3)^ndimage.binary_erosion(union,iterations=3);rois['non_target'][i]=~ndimage.binary_dilation(union,iterations=3)
@@ -67,6 +73,6 @@ def run():
   gplane=next((ROOT/'results/point_line_depth_refinement').glob('tum-freiburg1_desk-G1-*/stages/G1/artifacts/observations/wall_reference.npz'));gp=np.load(gplane);uv,z,vis=c.project(data['xyz'],data['k'][0],data['e'][0],h,w);old=vis&(uv[:,0]>=220)&(uv[:,0]<390)&(uv[:,1]>=5)&(uv[:,1]<65);oldids=np.flatnonzero(old)
   np.savez_compressed(out/'fixed_wall_reference.npz',ids=oldids,center=gp['center'],normal=gp['normal'],rgb_rectangles=np.array(rects));c.json_write(out/'frozen_roi_provenance.json',{'prior_G1_plane':c.record(gplane),'old_G6_wall_camera0_rectangle':[220,5,390,65],'old_ROI_source_counts':[int(np.sum(data['fid'][oldids]==i)) for i in range(3)],'new_rectangles':rects,'new_own_source_counts':[int(x.sum()) for x in wallroi],'freeze_before_corrected_output':True,'known_holdout_track_ids':sorted(int(x) for x in trackhold),'match_source':c.record(matchfile)})
   counts={k:{'candidates':len(v),'points':sum(x['points'] for x in v),'fit':sum(x['fit_count'] for x in v),'holdout':sum(x['holdout_count'] for x in v)} for k,v in sets.items()}
-  st.finish({'decision':'CANDIDATES_SPLITS_ROIS_FROZEN','candidate_support':counts,'candidates':sets,'normal7_vs21_angle_degree':c.stats(angle[valid&v21]),'timing_seconds':{'normals7':n7time,'normals21_diagnostic':n21time,'candidate_refinement':time.perf_counter()-start},'geometry_wall_review':review,'split_heldout_fraction':float(split.mean()),'known_holdout_excluded_fit':True,'raw_masks_sha256':[c.record(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') for i in range(3)]},'# H2 후보·평가 분리 동결\n\n7×7 PCA 법선, 원본 confidence 하위 10% 제외, 3 px 마스크 erosion과 독립 8 px 영상 border를 적용했다. seed 0의 법선 K-means 5개/10회 및 연결 성분으로 원시 마스크를 분리했다. 21×21은 진단만 했다. 후보 최소 면적은 984 px다.\n\n기하 전용 군은 7×7 이웃 그래프에서 법선 15°·양방향 국소 접평면 거리/원본 Z 0.5%로 생성했다. RGB에서 사전에 정한 벽 사각형 지지 100 px·후보 5% 이상 규칙으로 벽 후보를 표시했으며 영상 마스크는 생성에 사용하지 않았다. 이 검토 규칙과 모든 기하 영역의 수용/제외를 보존했다.\n\n16×12 타일 SHA256으로 fit/holdout을 고정하고, 알려진 보류 track 관측 3 px 주변을 추가로 fit에서 제외했다. 중복 후보 관측은 모호로 제외한다. 벽/경계/비대상 ROI를 보정 결과 생성 전에 고정했다. 기존 G6 벽 ROI와 새 RGB 사각형 ROI를 구분했다. 정답 분할 없이 정확도라고 부르지 않는다.')
+  st.finish({'decision':'CANDIDATES_SPLITS_ROIS_FROZEN','candidate_support':counts,'candidates':sets,'normal7_vs21_angle_degree':c.stats(angle[valid&v21]),'timing_seconds':{'normals7':n7time,'normals21_diagnostic':n21time,'candidate_refinement':time.perf_counter()-start},'geometry_wall_review':review,'split_heldout_fraction':float(split.mean()),'known_holdout_excluded_fit':True,'raw_masks_sha256':[c.record(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') for i in range(3)]},f'# {code} 후보·평가 분리 동결\n\n' + ('보조 H2b는 H1 원본 마스크를 수정하지 않고 SAM predicted-IoU 순서의 mask IoU>0.5 NMS로 중복 후보만 제거했다. 나머지 규칙·ROI·split은 H2와 같다. 이는 기본 군을 대체하지 않는 진단이다.\n\n' if dedup else '') + '7×7 PCA 법선, 원본 confidence 하위 10% 제외, 3 px 마스크 erosion과 독립 8 px 영상 border를 적용했다. seed 0의 법선 K-means 5개/10회 및 연결 성분으로 원시 마스크를 분리했다. 21×21은 진단만 했다. 후보 최소 면적은 984 px다.\n\n기하 전용 군은 7×7 이웃 그래프에서 법선 15°·양방향 국소 접평면 거리/원본 Z 0.5%로 생성했다. RGB에서 사전에 정한 벽 사각형 지지 100 px·후보 5% 이상 규칙으로 벽 후보를 표시했으며 영상 마스크는 생성에 사용하지 않았다. 이 검토 규칙과 모든 기하 영역의 수용/제외를 보존했다.\n\n16×12 타일 SHA256으로 fit/holdout을 고정하고, 알려진 보류 track 관측 3 px 주변을 추가로 fit에서 제외했다. 중복 후보 관측은 모호로 제외한다. 벽/경계/비대상 ROI를 보정 결과 생성 전에 고정했다. 기존 G6 벽 ROI와 새 RGB 사각형 ROI를 구분했다. 정답 분할 없이 정확도라고 부르지 않는다.')
  except Exception as e:st.fail(e);raise
 if __name__=='__main__':run()

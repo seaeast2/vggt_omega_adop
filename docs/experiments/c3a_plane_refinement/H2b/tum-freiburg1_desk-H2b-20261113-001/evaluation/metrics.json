@@ -1,0 +1,657 @@
+{
+  "decision": "CANDIDATES_SPLITS_ROIS_FROZEN",
+  "candidate_support": {
+    "raw": {
+      "candidates": 3,
+      "points": 60239,
+      "fit": 46089,
+      "holdout": 14150
+    },
+    "refined": {
+      "candidates": 8,
+      "points": 44978,
+      "fit": 33958,
+      "holdout": 11020
+    },
+    "geometry": {
+      "candidates": 3,
+      "points": 152048,
+      "fit": 122780,
+      "holdout": 29268
+    }
+  },
+  "candidates": {
+    "raw": [
+      {
+        "candidate_id": 0,
+        "method": "raw",
+        "frame": 0,
+        "mask_index": 0,
+        "points": 32133,
+        "fit_count": 24045,
+        "holdout_count": 8088,
+        "occupied_4x4": 6,
+        "support_4x4": [
+          [
+            4431,
+            7816,
+            11147,
+            7936
+          ],
+          [
+            0,
+            0,
+            433,
+            370
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 9690
+      },
+      {
+        "candidate_id": 7,
+        "method": "raw",
+        "frame": 1,
+        "mask_index": 0,
+        "points": 18981,
+        "fit_count": 14444,
+        "holdout_count": 4537,
+        "occupied_4x4": 4,
+        "support_4x4": [
+          [
+            0,
+            1590,
+            6583,
+            10244
+          ],
+          [
+            0,
+            0,
+            0,
+            564
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 409
+      },
+      {
+        "candidate_id": 10,
+        "method": "raw",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 9125,
+        "fit_count": 7600,
+        "holdout_count": 1525,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            1289,
+            0,
+            0,
+            7496
+          ],
+          [
+            340,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 5178
+      }
+    ],
+    "refined": [
+      {
+        "candidate_id": 1,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 0,
+        "points": 1203,
+        "fit_count": 201,
+        "holdout_count": 1002,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            1203,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 0
+      },
+      {
+        "candidate_id": 2,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 1,
+        "points": 1122,
+        "fit_count": 525,
+        "holdout_count": 597,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            1122,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 0
+      },
+      {
+        "candidate_id": 3,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 2,
+        "points": 1497,
+        "fit_count": 1497,
+        "holdout_count": 0,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            137,
+            1351,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 329
+      },
+      {
+        "candidate_id": 4,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 3,
+        "points": 14864,
+        "fit_count": 11750,
+        "holdout_count": 3114,
+        "occupied_4x4": 5,
+        "support_4x4": [
+          [
+            0,
+            3360,
+            8015,
+            2995
+          ],
+          [
+            0,
+            0,
+            256,
+            238
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 7608
+      },
+      {
+        "candidate_id": 5,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 4,
+        "points": 3079,
+        "fit_count": 1886,
+        "holdout_count": 1193,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            0,
+            430,
+            2642
+          ],
+          [
+            0,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 496
+      },
+      {
+        "candidate_id": 8,
+        "method": "refined",
+        "frame": 1,
+        "mask_index": 0,
+        "points": 16503,
+        "fit_count": 12419,
+        "holdout_count": 4084,
+        "occupied_4x4": 4,
+        "support_4x4": [
+          [
+            0,
+            958,
+            5328,
+            9770
+          ],
+          [
+            0,
+            0,
+            0,
+            447
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 100
+      },
+      {
+        "candidate_id": 11,
+        "method": "refined",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 1288,
+        "fit_count": 1288,
+        "holdout_count": 0,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            0,
+            0,
+            1288
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 917
+      },
+      {
+        "candidate_id": 12,
+        "method": "refined",
+        "frame": 2,
+        "mask_index": 1,
+        "points": 5422,
+        "fit_count": 4392,
+        "holdout_count": 1030,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            0,
+            0,
+            5422
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 3558
+      }
+    ],
+    "geometry": [
+      {
+        "candidate_id": 6,
+        "method": "geometry",
+        "frame": 0,
+        "mask_index": 0,
+        "points": 137160,
+        "fit_count": 109900,
+        "holdout_count": 27260,
+        "occupied_4x4": 16,
+        "support_4x4": [
+          [
+            5109,
+            8288,
+            10880,
+            9893
+          ],
+          [
+            7146,
+            10969,
+            11662,
+            9331
+          ],
+          [
+            9892,
+            12058,
+            9721,
+            10919
+          ],
+          [
+            9945,
+            9400,
+            787,
+            1160
+          ]
+        ],
+        "wall_rgb_roi_points": 9180
+      },
+      {
+        "candidate_id": 9,
+        "method": "geometry",
+        "frame": 1,
+        "mask_index": 0,
+        "points": 2626,
+        "fit_count": 2626,
+        "holdout_count": 0,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            2626,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 2427
+      },
+      {
+        "candidate_id": 13,
+        "method": "geometry",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 12262,
+        "fit_count": 10254,
+        "holdout_count": 2008,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            0,
+            3428,
+            8681
+          ],
+          [
+            0,
+            0,
+            0,
+            153
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 5690
+      }
+    ]
+  },
+  "normal7_vs21_angle_degree": {
+    "count": 525267,
+    "mean": 8.188866084889861,
+    "median": 3.27364340508973,
+    "p90": 18.662597417191197,
+    "max": 89.99784619197744
+  },
+  "timing_seconds": {
+    "normals7": 0.4919915829959791,
+    "normals21_diagnostic": 0.481643992010504,
+    "candidate_refinement": 1.3513395819754805
+  },
+  "geometry_wall_review": [
+    {
+      "frame": 0,
+      "region": 0,
+      "points": 149057,
+      "wall_roi_points": 9690,
+      "wall_fraction": 0.06500868795158898,
+      "include_in_wall_experiment": true,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 0,
+      "region": 1,
+      "points": 14271,
+      "wall_roi_points": 0,
+      "wall_fraction": 0.0,
+      "include_in_wall_experiment": false,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 1,
+      "region": 0,
+      "points": 3648,
+      "wall_roi_points": 3266,
+      "wall_fraction": 0.8952850877192983,
+      "include_in_wall_experiment": true,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 1,
+      "region": 1,
+      "points": 153343,
+      "wall_roi_points": 410,
+      "wall_fraction": 0.0026737444813261773,
+      "include_in_wall_experiment": false,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 1,
+      "region": 2,
+      "points": 6735,
+      "wall_roi_points": 0,
+      "wall_fraction": 0.0,
+      "include_in_wall_experiment": false,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 2,
+      "region": 0,
+      "points": 8495,
+      "wall_roi_points": 0,
+      "wall_fraction": 0.0,
+      "include_in_wall_experiment": false,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 2,
+      "region": 1,
+      "points": 15125,
+      "wall_roi_points": 6915,
+      "wall_fraction": 0.4571900826446281,
+      "include_in_wall_experiment": true,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    },
+    {
+      "frame": 2,
+      "region": 2,
+      "points": 140013,
+      "wall_roi_points": 0,
+      "wall_fraction": 0.0,
+      "include_in_wall_experiment": false,
+      "reviewer": "Codex frozen original RGB rectangle rule; no semantic GT"
+    }
+  ],
+  "split_heldout_fraction": 0.18303087022569445,
+  "known_holdout_excluded_fit": true,
+  "raw_masks_sha256": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H1-20261113-001/stages/H1/artifacts/masks/camera_0_masks.npz",
+      "bytes": 4316671,
+      "sha256": "acc0c5ecf80852d578fc7a919d302d0cf6800502ae735d07f4035c92ce9d5a79"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H1-20261113-001/stages/H1/artifacts/masks/camera_1_masks.npz",
+      "bytes": 4304331,
+      "sha256": "70a58d32a6f5c8266ebd52a73495a61616839db3c9f69addf7ad935911bca4cf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H1-20261113-001/stages/H1/artifacts/masks/camera_2_masks.npz",
+      "bytes": 4084720,
+      "sha256": "92b93fcea945ae062d0b5247888f78953190694a59182f9f8a5c37a3a0c3367f"
+    }
+  ],
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 3.643579867988592,
+  "process_peak_rss_mib": 461.26953125
+}

@@ -45,7 +45,7 @@ def visibility(data,xyz):
  return {'frustum_pairs':rows,'pixel_coverage':pixel,'passed':all(r['passed'] for r in rows+pixel)}
 
 def wall_metrics(data,xyz,out):
- f=np.load(latest('H2')/'artifacts/masks/fixed_wall_reference.npz');ids=f['ids'];center=f['center'];normal=f['normal'];Dref=float(np.median(data['d0'][ids]));dist=(xyz[ids]-center)@normal;med=[];rows=[]
+ f=np.load(observation_stage()/'artifacts/masks/fixed_wall_reference.npz');ids=f['ids'];center=f['center'];normal=f['normal'];Dref=float(np.median(data['d0'][ids]));dist=(xyz[ids]-center)@normal;med=[];rows=[]
  for i in range(3):
   vals=dist[data['fid'][ids]==i];rows.append({'frame':i,'count':len(vals),'signed_distance':c.stats(vals),'thickness_p95_p05':float(np.percentile(vals,95)-np.percentile(vals,5)) if len(vals) else None})
   if len(vals)>=50:med.append(float(np.median(vals)))
@@ -69,7 +69,7 @@ def arm(st,data,name,groups,soft=False):
  for i in range(3):
   ids=data['fid']==i;relative[ids]=abs((xyz[ids]-data['xyz'][ids])@data['e'][i,2,:3])/data['d0'][ids]
  preservation=inv['all_invariants_passed'] and vis['passed'];state='proposed' if preservation else 'initial';initial=latest('H0a')/'artifacts/baseline/A0_C3a';(out/'initial').symlink_to(os.path.relpath(initial,out),target_is_directory=True);(out/'retained').symlink_to(state,target_is_directory=True)
- roi=np.load(latest('H2')/'artifacts/masks/splits_rois.npz');roirows={}
+ roi=np.load(observation_stage()/'artifacts/masks/splits_rois.npz');roirows={}
  for key in ['wall_interior','object_boundary','non_target']:
   mask=roi[key].ravel();roirows[key]={'points':int(mask.sum()),'changed':int(np.sum(mask&(zdelta>0))),'relative_move':c.stats(relative[mask&(zdelta>0)]),'per_frame_changed':[int(np.sum(mask&(zdelta>0)&(data['fid']==i))) for i in range(3)]}
  row={'name':name,'soft':soft,'groups':planerecords,'valid_planes':len(planerecords),'shared_planes':sum(len(r['fit']['frames'])>=2 for r in planerecords),'accepted_points':int(accepted.sum()),'changed_points':int(np.sum(zdelta>0)),'accepted_fraction':float(accepted.mean()),'relative_depth_move':c.stats(relative[accepted]),'invariants':inv,'visibility':vis,'geometry':geo,'fixed_wall':wall,'roi_movement':roirows,'retained_state':state,'preservation_passed':preservation,'decision':'NO_SHARED_PLANE' if not groups and 'SHARED' in name else ('NO_VALID_PLANE' if not planerecords else 'LOW_SUPPORT_DIAGNOSTIC_ONLY'),'timing_seconds':{'reprojection':update_time,'arm_total':time.perf_counter()-t},'initial':c.record(initial/'pointmap.npz'),'proposed':c.record(out/'proposed/pointmap.npz'),'retained_equals_initial':state=='initial' or np.array_equal(xyz,data['xyz'])}

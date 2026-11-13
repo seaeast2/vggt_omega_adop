@@ -67,3 +67,7 @@ def export(data,xyz,out,accepted=None,local=None,shared=None,target_depth=None):
 def commit_stage(code):
  # Called explicitly by shell, not during experiment execution.
  pass
+
+
+def observation_stage():
+ return latest(os.environ.get("H_OBSERVATION_STAGE","H2"))
