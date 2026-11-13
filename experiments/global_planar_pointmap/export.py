@@ -49,7 +49,7 @@ def reproject(dataset):
                 _,win,_=c.front(x,d['k'][f],d['e'][f],*d['depth'].shape[1:]);photo=np.zeros_like(d['rgb'][f]);hit=win>=0;photo[hit]=d['raw_rgb'][win[hit]];rgb.append(photo)
             rows.append([d['rgb'][f],*rgb])
         c.panel(st.path/'artifacts/figures/initial_proposed.png',rows,['Original RGB','B1 initial','A4 proposed'])
-        st.finish(dict(decision='HARD_REPROJECTION_PASSED',checks=checks,visibility=cov,accepted=int(acc.sum()),retained='proposed' if cov['passed'] else 'initial'),
+        st.finish(dict(decision='HARD_REPROJECTION_PASSED' if cov['passed'] else 'HARD_REPROJECTION_PASSED_RETAIN_INITIAL',checks=checks,visibility=cov,accepted=int(acc.sum()),retained='proposed' if cov['passed'] else 'initial'),
             '# I7 전체 frame 재투영\n\n확정 소속 전체를 같은 world plane과 자기 픽셀 광선의 교차로 이동했다. 최대 이동 한도는 없으며 수치 평행·음의 깊이·비유한 교차만 거절한다. '
             'plane 식·자기 투영·unit normal·unknown XYZ bitwise 보존을 검사하고 initial/proposed/retained PLY를 모두 생성했다. '
             'B1 기준 frustum loss가 0.5 percentage point를 넘으면 retained는 initial이다. proposed는 삭제하지 않는다.')
@@ -117,6 +117,7 @@ def bundle_verify(out):
     for rec in manifest['files']:
         path=out/rec['name'];assert c.record(path)['sha256']==rec['sha256'],f'bundle hash mismatch: {path}'
     registry=json.loads((out/'planes.json').read_text());z=np.load(out/'pointmap.npz');ass=np.load(out/'assignments.npz')
+    assert manifest['state']==registry['state']==str(z['state'])
     source=json.loads((out/'source_provenance.json').read_text())
     for name,digest in source['immutable_arrays'].items():assert ahash(z[name])==digest,name
     assert np.array_equal(z['observation_id'],ass['observation_id'])
@@ -195,8 +196,12 @@ def bundle(dataset):
         with np.load(path/'proposed.npz') as z:xyz,pids=z['xyz'],z['plane_id']
         with np.load(path/'retained.npz') as z:ret,rp,state=z['xyz'],z['plane_id'],str(z['retained_state'])
         root=st.path/'artifacts/bundle';checks={}
+        original_planes,original_ids,original_fits=solve.registry_load(dataset,'I4')
         for name,x,p in [('initial',d['xyz'],np.full(len(pids),-1,np.int32)),('proposed',xyz,pids),('retained',ret,rp)]:
-            checks[name]=write_bundle(root/name,d,x,p,planes,ids,fs,name,audit['relations'],audit.get('versions',[]))
+            initial_state=name=='initial' or (name=='retained' and state=='initial')
+            pp,ii,ff=(original_planes,original_ids,original_fits) if initial_state else (planes,ids,fs)
+            versions=audit.get('versions',[])[:1] if initial_state else audit.get('versions',[])
+            checks[name]=write_bundle(root/name,d,x,p,pp,ii,ff,name,audit['relations'],versions)
         # Reject a deliberately mismatched state hash; do not alter original successful bundle.
         test=root/'mismatch_probe';mismatch_rejected=False;wrong=json.loads(json.dumps(planes))
         for p in wrong:p['plane'][3]+=.1
@@ -291,7 +296,7 @@ def arm_data(dataset,arm):
     return d,pp,ii,ff,pids,xyz
 
 def comparison(dataset):
-    st=Stage('I9',dataset,[latest('I8',dataset)]);review=FAMILY/'ply_review'/st.run_id;review.mkdir(parents=True)
+    st=Stage('I9',dataset,[latest(code,dataset) for code in ['I8','I6a','I6b','I5','I3']]);review=FAMILY/'ply_review'/st.run_id;review.mkdir(parents=True)
     try:
         results=[];inventory=[];out=st.path/'artifacts/comparisons';out.mkdir()
         records,masks=solve.tags_load(dataset);d0=load(dataset,True);category=np.full(len(d0['ids']),-1,np.int16)
@@ -308,6 +313,8 @@ def comparison(dataset):
             row=dict(arm=arm,assigned_count=int((pids>=0).sum()),assigned_fraction=float(np.mean(pids>=0)),unknown_fraction=float(np.mean(pids<0)),planes=len(set(pids[pids>=0])),
                 per_frame=[dict(frame=f,assigned_fraction=float(np.mean(pids[d['fid']==f]>=0))) for f in range(3)],
                 heldout=match_metrics(d,xyz,pids),visibility=visibility(d,xyz),seconds=time.perf_counter()-t)
+            source_codes={'A1':'I3','A2':'I4','A3':'I5','A4':'I6','A5':'I6b','A6':'I6a','B1s':'I2','A0':'I1'}
+            if arm in source_codes:row['source_stage']=c.record(latest(source_codes[arm],dataset)/'manifest.json')
             byplane=[]
             for p in planes:
                 ids=np.flatnonzero(pids==p['plane_id'])
@@ -327,7 +334,7 @@ def comparison(dataset):
             c.json_write(out/f'{arm}.json',row)
         for name,code in [('M1','H4f'),('M2','H4g')]:
             ps=sorted((ROOT/'results/c3a_plane_refinement').glob(f'tum-freiburg1_desk-{code}-*/stages/{code}/manifest.json'))
-            if ps:inventory.append(dict(arm=name,historical_reference=c.record(ps[-1]),input_to_automatic_pipeline=False))
+            if ps:inventory.append(dict(arm=name,historical_reference=c.record(ps[-1]),input_to_automatic_pipeline=False,applicability='historical primary window only; not extra-window baseline'))
         c.json_write(st.path/'evaluation/arms.json',results);c.json_write(st.path/'evaluation/ply_inventory.json',inventory)
         table='\n'.join(f"| {r['arm']} | {r['planes']} | {r['assigned_fraction']:.4%} | {r['visibility']['maximum_frustum_loss']:.4%} |" for r in results)
         st.finish(dict(decision='COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM',arms=len(results),raw_observations=len(d['ids']),

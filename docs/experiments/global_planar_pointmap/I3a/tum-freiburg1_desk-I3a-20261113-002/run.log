@@ -1,0 +1,6 @@
+{"time": "2026-11-13T17:59:54.971678+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I3a-20261113-002"}
+{"time": "2026-11-13T17:59:58.791214+09:00", "event": "region_progress", "proposal": 0, "total": 110, "planes": 3}
+{"time": "2026-11-13T17:59:59.769166+09:00", "event": "region_progress", "proposal": 50, "total": 142, "planes": 68}
+{"time": "2026-11-13T18:00:00.617450+09:00", "event": "region_progress", "proposal": 100, "total": 153, "planes": 143}
+{"time": "2026-11-13T18:00:00.902463+09:00", "event": "region_progress", "proposal": 150, "total": 157, "planes": 175}
+{"time": "2026-11-13T18:00:01.398108+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}
