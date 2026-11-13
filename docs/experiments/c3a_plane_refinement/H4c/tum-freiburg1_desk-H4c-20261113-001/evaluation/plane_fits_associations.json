@@ -1,0 +1,1865 @@
+{
+  "raw": {
+    "candidates": [
+      {
+        "candidate_id": 0,
+        "method": "raw",
+        "frame": 0,
+        "mask_index": 1,
+        "points": 8283,
+        "fit_count": 5225,
+        "holdout_count": 3058,
+        "occupied_4x4": 9,
+        "support_4x4": [
+          [
+            664,
+            36,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            497,
+            20
+          ],
+          [
+            0,
+            0,
+            2254,
+            4595
+          ],
+          [
+            0,
+            0,
+            0,
+            205
+          ]
+        ],
+        "wall_rgb_roi_points": 0,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.05980839802074777,
+            0.8015267003995232,
+            0.5949604222743261,
+            -0.6214703136673387
+          ],
+          "centroid": [
+            0.3204331003199978,
+            0.1073172032945338,
+            0.8677688466033021
+          ],
+          "eigenvalues": [
+            1.319743359253111e-06,
+            0.006007456505361703,
+            0.024698147610579466
+          ],
+          "second_first_ratio": 0.24323510410911975,
+          "second_axis_span_depth": 0.36033119159194466,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 5225,
+              "inliers": 4587,
+              "fraction": 0.8778947368421053
+            }
+          ],
+          "count": 5225,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 12,
+          "normalized_residual": {
+            "count": 5225,
+            "mean": 0.003968804818568871,
+            "median": 0.0009417611807452884,
+            "p90": 0.006635462439261903,
+            "max": 0.1509847756723772
+          },
+          "inlier_fraction": 0.8778947368421053,
+          "reference_depth": 0.8604060411453247
+        },
+        "holdout_before_move": {
+          "count": 3058,
+          "mean": 0.0025306126064811394,
+          "median": 0.0006910300159178956,
+          "p90": 0.0025196850168500494,
+          "max": 0.17293287482459033
+        }
+      },
+      {
+        "candidate_id": 10,
+        "method": "raw",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 9125,
+        "fit_count": 7600,
+        "holdout_count": 1525,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            1289,
+            0,
+            0,
+            7496
+          ],
+          [
+            340,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 5178,
+        "fit": {
+          "valid": false,
+          "reason": "INSUFFICIENT_INLIERS",
+          "plane": [
+            0.37473727547500624,
+            -0.4177982927023808,
+            0.827657272658523,
+            -1.4012763354898967
+          ],
+          "centroid": [
+            -0.6103665873702858,
+            -0.6050876408466012,
+            1.663972407053568
+          ],
+          "eigenvalues": [
+            1.0434478997624736e-05,
+            0.0043838738706573795,
+            0.01318192456005355
+          ],
+          "second_first_ratio": 0.33256705807149384,
+          "second_axis_span_depth": 0.158945391369309,
+          "frames": [
+            {
+              "frame": 2,
+              "fit_count": 7600,
+              "inliers": 5260,
+              "fraction": 0.6921052631578948
+            }
+          ],
+          "count": 7600,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 20,
+          "normalized_residual": {
+            "count": 7600,
+            "mean": 0.14788246184154455,
+            "median": 0.0019660475668355723,
+            "p90": 0.7160303416958829,
+            "max": 0.7566147454959705
+          },
+          "inlier_fraction": 0.6921052631578948,
+          "reference_depth": 1.6662535071372986
+        },
+        "holdout_before_move": {
+          "count": 1525,
+          "mean": 0.03403731799254176,
+          "median": 0.003124232249771647,
+          "p90": 0.00797959761233616,
+          "max": 0.7562070740299828
+        }
+      }
+    ],
+    "association": {
+      "pair_tests": [],
+      "joint_tests": [],
+      "unassociated_candidates": [
+        0
+      ],
+      "shared_groups": 0,
+      "association_seconds": 9.450013749301434e-06
+    }
+  },
+  "refined": {
+    "candidates": [
+      {
+        "candidate_id": 1,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 0,
+        "points": 1030,
+        "fit_count": 171,
+        "holdout_count": 859,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            1030,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 0,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.4055507989472411,
+            -0.45763051453523684,
+            0.7912666185550035,
+            -1.36854896472959
+          ],
+          "centroid": [
+            -0.6015562843792864,
+            -0.5796315752076784,
+            1.702654287285003
+          ],
+          "eigenvalues": [
+            7.112184127513495e-08,
+            0.0002014280209369738,
+            0.0012869764959457643
+          ],
+          "second_first_ratio": 0.15651258711523694,
+          "second_axis_span_depth": 0.0333546149760003,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 171,
+              "inliers": 171,
+              "fraction": 1.0
+            }
+          ],
+          "count": 171,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 171,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 2,
+          "normalized_residual": {
+            "count": 171,
+            "mean": 0.000118781542127506,
+            "median": 8.400230434894057e-05,
+            "p90": 0.00028395328673850467,
+            "max": 0.00046318594586622596
+          },
+          "inlier_fraction": 1.0,
+          "reference_depth": 1.7020174264907837
+        },
+        "holdout_before_move": {
+          "count": 859,
+          "mean": 0.0027894407230002654,
+          "median": 0.0024158911713416703,
+          "p90": 0.005793790660339546,
+          "max": 0.007562394534772102
+        }
+      },
+      {
+        "candidate_id": 2,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 5,
+        "points": 6947,
+        "fit_count": 4182,
+        "holdout_count": 2765,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2239,
+            4523
+          ],
+          [
+            0,
+            0,
+            0,
+            185
+          ]
+        ],
+        "wall_rgb_roi_points": 0,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.05625332802480565,
+            0.8072550888852905,
+            0.5875157738775493,
+            -0.6146175305155337
+          ],
+          "centroid": [
+            0.32589005487482536,
+            0.11814066006943043,
+            0.8525992042857469
+          ],
+          "eigenvalues": [
+            6.025151364596093e-07,
+            0.0017483110539651212,
+            0.010705487315749352
+          ],
+          "second_first_ratio": 0.16330980574729165,
+          "second_axis_span_depth": 0.1977444779052316,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 4182,
+              "inliers": 4170,
+              "fraction": 0.9971305595408895
+            }
+          ],
+          "count": 4182,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 3,
+          "normalized_residual": {
+            "count": 4182,
+            "mean": 0.0006933093112070394,
+            "median": 0.0005484564649164332,
+            "p90": 0.0012738255744336486,
+            "max": 0.006792799962667208
+          },
+          "inlier_fraction": 0.9971305595408895,
+          "reference_depth": 0.8457947373390198
+        },
+        "holdout_before_move": {
+          "count": 2765,
+          "mean": 0.0007329349068959966,
+          "median": 0.0006764202512925273,
+          "p90": 0.001414640005456492,
+          "max": 0.0049083366912895075
+        }
+      },
+      {
+        "candidate_id": 3,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 6,
+        "points": 1050,
+        "fit_count": 335,
+        "holdout_count": 715,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            1050,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 0,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.4096737461463473,
+            -0.37155821652465804,
+            0.8331337908472046,
+            -1.385471589106909
+          ],
+          "centroid": [
+            -0.8580086239317622,
+            -0.6183825837571576,
+            1.809085266863947
+          ],
+          "eigenvalues": [
+            1.462725576099039e-06,
+            0.0005940800335315744,
+            0.004551887783313917
+          ],
+          "second_first_ratio": 0.13051289087339177,
+          "second_axis_span_depth": 0.053869621762062884,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 335,
+              "inliers": 335,
+              "fraction": 1.0
+            }
+          ],
+          "count": 335,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 335,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 2,
+          "normalized_residual": {
+            "count": 335,
+            "mean": 0.0005251891131273342,
+            "median": 0.0003968965998835748,
+            "p90": 0.0011335141540862641,
+            "max": 0.00184660145950944
+          },
+          "inlier_fraction": 1.0,
+          "reference_depth": 1.8098331689834595
+        },
+        "holdout_before_move": {
+          "count": 715,
+          "mean": 0.0019667936558018942,
+          "median": 0.0014794113183877178,
+          "p90": 0.004334939928378442,
+          "max": 0.009890385253975228
+        }
+      },
+      {
+        "candidate_id": 4,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 9,
+        "points": 1484,
+        "fit_count": 1484,
+        "holdout_count": 0,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            584,
+            516,
+            0
+          ],
+          [
+            0,
+            0,
+            384,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 54,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.4368123163569324,
+            -0.498159220950134,
+            0.7490209548879434,
+            -1.2854802824008091
+          ],
+          "centroid": [
+            0.09639586350116638,
+            -0.3440257197114011,
+            1.4311933337295912
+          ],
+          "eigenvalues": [
+            4.617915157588648e-06,
+            0.00048387482717910806,
+            0.03447351810313925
+          ],
+          "second_first_ratio": 0.014036131320610563,
+          "second_axis_span_depth": 0.06109024143764643,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 1484,
+              "inliers": 1484,
+              "fraction": 1.0
+            }
+          ],
+          "count": 1484,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 1484,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 2,
+          "normalized_residual": {
+            "count": 1484,
+            "mean": 0.001238535106704707,
+            "median": 0.0010752494043713419,
+            "p90": 0.0023674007017661473,
+            "max": 0.004204585638328197
+          },
+          "inlier_fraction": 1.0,
+          "reference_depth": 1.4403056502342224
+        }
+      },
+      {
+        "candidate_id": 5,
+        "method": "refined",
+        "frame": 0,
+        "mask_index": 10,
+        "points": 1755,
+        "fit_count": 1505,
+        "holdout_count": 250,
+        "occupied_4x4": 6,
+        "support_4x4": [
+          [
+            887,
+            390,
+            243,
+            158
+          ],
+          [
+            0,
+            0,
+            53,
+            24
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 304,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.45275149357071853,
+            -0.5174281182547101,
+            0.7261433932143663,
+            -1.2640537408868255
+          ],
+          "centroid": [
+            -0.24864643307523537,
+            -0.5419580275679896,
+            1.5096253339201258
+          ],
+          "eigenvalues": [
+            7.010433798913145e-06,
+            0.004341100574054443,
+            0.15447469566223088
+          ],
+          "second_first_ratio": 0.0281023410044228,
+          "second_axis_span_depth": 0.16267968795433493,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 1505,
+              "inliers": 1287,
+              "fraction": 0.8551495016611296
+            }
+          ],
+          "count": 1505,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 1505,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 4,
+          "normalized_residual": {
+            "count": 1505,
+            "mean": 0.0023911266421700406,
+            "median": 0.0013486138717336226,
+            "p90": 0.0071976830685139695,
+            "max": 0.024212934451407684
+          },
+          "inlier_fraction": 0.8551495016611296,
+          "reference_depth": 1.620043158531189
+        },
+        "holdout_before_move": {
+          "count": 250,
+          "mean": 0.0006410697471892328,
+          "median": 0.0005619665078787997,
+          "p90": 0.0012636021519247585,
+          "max": 0.005599768634721874
+        }
+      },
+      {
+        "candidate_id": 7,
+        "method": "refined",
+        "frame": 1,
+        "mask_index": 0,
+        "points": 990,
+        "fit_count": 538,
+        "holdout_count": 452,
+        "occupied_4x4": 4,
+        "support_4x4": [
+          [
+            0,
+            92,
+            704,
+            167
+          ],
+          [
+            0,
+            0,
+            0,
+            27
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 38,
+        "fit": {
+          "valid": false,
+          "reason": "INSUFFICIENT_INLIERS",
+          "plane": [
+            0.4136044017335054,
+            -0.5902926134489846,
+            0.6931709957681704,
+            -1.2582908404028001
+          ],
+          "centroid": [
+            -0.41690662942770507,
+            -0.5610414120477398,
+            1.5862560072305023
+          ],
+          "eigenvalues": [
+            1.2801897823909734e-05,
+            0.0025121913601330566,
+            0.16559735283344368
+          ],
+          "second_first_ratio": 0.01517048018672011,
+          "second_axis_span_depth": 0.11742069288017828,
+          "frames": [
+            {
+              "frame": 1,
+              "fit_count": 538,
+              "inliers": 358,
+              "fraction": 0.6654275092936803
+            }
+          ],
+          "count": 538,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 538,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 14,
+          "normalized_residual": {
+            "count": 538,
+            "mean": 0.0056750681083184325,
+            "median": 0.0026496315479955512,
+            "p90": 0.01660799917598771,
+            "max": 0.04687885956094184
+          },
+          "inlier_fraction": 0.6654275092936803,
+          "reference_depth": 1.70742529630661
+        },
+        "holdout_before_move": {
+          "count": 452,
+          "mean": 0.008584790203791872,
+          "median": 0.006695838688467293,
+          "p90": 0.016236733386360024,
+          "max": 0.030394474653575896
+        }
+      },
+      {
+        "candidate_id": 8,
+        "method": "refined",
+        "frame": 1,
+        "mask_index": 1,
+        "points": 1232,
+        "fit_count": 1232,
+        "holdout_count": 0,
+        "occupied_4x4": 2,
+        "support_4x4": [
+          [
+            0,
+            520,
+            712,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 81,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.38318481524510717,
+            -0.3519105568541193,
+            0.8540072349460496,
+            -1.421208707185167
+          ],
+          "centroid": [
+            -0.6779502643654862,
+            -0.554945142172419,
+            1.7396783530410012
+          ],
+          "eigenvalues": [
+            6.333462025514506e-06,
+            0.0005069887686455216,
+            0.02564069034900951
+          ],
+          "second_first_ratio": 0.01977282053426094,
+          "second_axis_span_depth": 0.048314771833457296,
+          "frames": [
+            {
+              "frame": 1,
+              "fit_count": 1232,
+              "inliers": 1218,
+              "fraction": 0.9886363636363636
+            }
+          ],
+          "count": 1232,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 1232,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 4,
+          "normalized_residual": {
+            "count": 1232,
+            "mean": 0.0010921504062725398,
+            "median": 0.0007988130615768003,
+            "p90": 0.002389371972686379,
+            "max": 0.010324297513121777
+          },
+          "inlier_fraction": 0.9886363636363636,
+          "reference_depth": 1.8641430139541626
+        }
+      },
+      {
+        "candidate_id": 11,
+        "method": "refined",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 1288,
+        "fit_count": 1288,
+        "holdout_count": 0,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            0,
+            0,
+            1288
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 917,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.546340477487739,
+            -0.5582624964076657,
+            0.6243837503996645,
+            -1.0728083464979077
+          ],
+          "centroid": [
+            -0.510662004053746,
+            -0.64062215380177,
+            1.5922393018006695
+          ],
+          "eigenvalues": [
+            5.269014683321725e-06,
+            0.0007580540132682414,
+            0.005641547315391487
+          ],
+          "second_first_ratio": 0.134369876009032,
+          "second_axis_span_depth": 0.07209271613977553,
+          "frames": [
+            {
+              "frame": 2,
+              "fit_count": 1288,
+              "inliers": 1288,
+              "fraction": 1.0
+            }
+          ],
+          "count": 1288,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 1288,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 2,
+          "normalized_residual": {
+            "count": 1288,
+            "mean": 0.0012025039759546018,
+            "median": 0.001016191045265926,
+            "p90": 0.0023673560368259548,
+            "max": 0.004838375175876729
+          },
+          "inlier_fraction": 1.0,
+          "reference_depth": 1.5276317596435547
+        }
+      },
+      {
+        "candidate_id": 12,
+        "method": "refined",
+        "frame": 2,
+        "mask_index": 1,
+        "points": 5422,
+        "fit_count": 4392,
+        "holdout_count": 1030,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            0,
+            0,
+            5422
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 3558,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.3633524314925757,
+            -0.4119789133171098,
+            0.8356125809910278,
+            -1.4182971450177124
+          ],
+          "centroid": [
+            -0.6149809652846776,
+            -0.5958488947356773,
+            1.6709595160297595
+          ],
+          "eigenvalues": [
+            7.0362684703590065e-06,
+            0.0036890181211747036,
+            0.009870150957222538
+          ],
+          "second_first_ratio": 0.37375498481867125,
+          "second_axis_span_depth": 0.14697929408181978,
+          "frames": [
+            {
+              "frame": 2,
+              "fit_count": 4392,
+              "inliers": 4140,
+              "fraction": 0.9426229508196722
+            }
+          ],
+          "count": 4392,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 13,
+          "normalized_residual": {
+            "count": 4392,
+            "mean": 0.0016154509033066,
+            "median": 0.0012495186510406851,
+            "p90": 0.0030158555118442484,
+            "max": 0.00916348055483524
+          },
+          "inlier_fraction": 0.9426229508196722,
+          "reference_depth": 1.6529481410980225
+        },
+        "holdout_before_move": {
+          "count": 1030,
+          "mean": 0.0031774947245104593,
+          "median": 0.0030278181765558436,
+          "p90": 0.005676734397180746,
+          "max": 0.010404916731543243
+        }
+      }
+    ],
+    "association": {
+      "pair_tests": [
+        {
+          "a": 1,
+          "b": 8,
+          "normal_angle_degree": 7.163963465345671,
+          "centroid_relative_distances": [
+            0.0037259368685575796,
+            0.006964592982961296
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 1,
+              "source_points": 1030,
+              "in_frustum": 1030,
+              "mask_overlap_points": 241,
+              "valid_unique_pixels": 202,
+              "overlap_fraction": 0.23792697290930506,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 200,
+              "valid_unique_pixels": 200,
+              "overlap_fraction": 0.16233766233766234,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 1,
+          "b": 11,
+          "normal_angle_degree": 13.808042109779167,
+          "centroid_relative_distances": [
+            0.008675971356332602,
+            0.014790406254506703
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1030,
+              "in_frustum": 1030,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 1288,
+              "in_frustum": 871,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 1,
+          "b": 12,
+          "normal_angle_degree": 4.376351708858047,
+          "centroid_relative_distances": [
+            0.014501171375387525,
+            0.013976157926211479
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1030,
+              "in_frustum": 1030,
+              "mask_overlap_points": 1027,
+              "valid_unique_pixels": 979,
+              "overlap_fraction": 0.9969450101832994,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 5422,
+              "in_frustum": 5081,
+              "mask_overlap_points": 1063,
+              "valid_unique_pixels": 955,
+              "overlap_fraction": 0.2110497237569061,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 2,
+          "b": 8,
+          "normal_angle_degree": 76.15969458309559,
+          "centroid_relative_distances": [
+            0.7209570080077172,
+            0.04219005983908653
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 1,
+              "source_points": 6947,
+              "in_frustum": 813,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 2,
+          "b": 11,
+          "normal_angle_degree": 86.95665205263167,
+          "centroid_relative_distances": [
+            0.5064654702329907,
+            0.14730235505534656
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 6947,
+              "in_frustum": 0,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 1288,
+              "in_frustum": 871,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 2,
+          "b": 12,
+          "normal_angle_degree": 79.69993790512831,
+          "centroid_relative_distances": [
+            0.7520891443364268,
+            0.0898390167823601
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 6947,
+              "in_frustum": 0,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 5422,
+              "in_frustum": 5081,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 3,
+          "b": 8,
+          "normal_angle_degree": 2.2364357058235123,
+          "centroid_relative_distances": [
+            0.006963449960913603,
+            0.004093444083863692
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 1,
+              "source_points": 1050,
+              "in_frustum": 1050,
+              "mask_overlap_points": 176,
+              "valid_unique_pixels": 141,
+              "overlap_fraction": 0.16987951807228915,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 134,
+              "valid_unique_pixels": 134,
+              "overlap_fraction": 0.10876623376623376,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 3,
+          "b": 11,
+          "normal_angle_degree": 17.928096595580513,
+          "centroid_relative_distances": [
+            0.036903920355441516,
+            0.01970344931252446
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1050,
+              "in_frustum": 1050,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 1288,
+              "in_frustum": 871,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 3,
+          "b": 12,
+          "normal_angle_degree": 3.525826124615682,
+          "centroid_relative_distances": [
+            0.02011142784119284,
+            0.014451606666649847
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1050,
+              "in_frustum": 1050,
+              "mask_overlap_points": 741,
+              "valid_unique_pixels": 673,
+              "overlap_fraction": 0.7054507337526206,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 5422,
+              "in_frustum": 5081,
+              "mask_overlap_points": 697,
+              "valid_unique_pixels": 678,
+              "overlap_fraction": 0.1498342541436464,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 4,
+          "b": 8,
+          "normal_angle_degree": 10.778759014950325,
+          "centroid_relative_distances": [
+            0.02843530595399273,
+            0.0011322773252710574
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 1,
+              "source_points": 1484,
+              "in_frustum": 1127,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 4,
+          "b": 11,
+          "normal_angle_degree": 10.124411812825656,
+          "centroid_relative_distances": [
+            0.045495297446148254,
+            0.0021004407763071742
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1484,
+              "in_frustum": 0,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 1288,
+              "in_frustum": 871,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 4,
+          "b": 12,
+          "normal_angle_degree": 8.174647510623018,
+          "centroid_relative_distances": [
+            0.031671732987052024,
+            0.003448522515180174
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1484,
+              "in_frustum": 0,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 5422,
+              "in_frustum": 5081,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 5,
+          "b": 8,
+          "normal_angle_degree": 12.654812690903595,
+          "centroid_relative_distances": [
+            0.022551582044848216,
+            0.011048815709495332
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 1,
+              "source_points": 1755,
+              "in_frustum": 1446,
+              "mask_overlap_points": 36,
+              "valid_unique_pixels": 35,
+              "overlap_fraction": 0.02631578947368421,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 35,
+              "valid_unique_pixels": 35,
+              "overlap_fraction": 0.028409090909090908,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 5,
+          "b": 11,
+          "normal_angle_degree": 8.266781936910933,
+          "centroid_relative_distances": [
+            0.022521876314023474,
+            0.004966354562440243
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1755,
+              "in_frustum": 1064,
+              "mask_overlap_points": 239,
+              "valid_unique_pixels": 237,
+              "overlap_fraction": 0.22614503816793893,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 1288,
+              "in_frustum": 871,
+              "mask_overlap_points": 299,
+              "valid_unique_pixels": 242,
+              "overlap_fraction": 0.3538011695906433,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 5,
+          "b": 12,
+          "normal_angle_degree": 10.116582284142444,
+          "centroid_relative_distances": [
+            0.014756539086184954,
+            0.012596950659491792
+          ],
+          "directions": [
+            {
+              "source": 0,
+              "target": 2,
+              "source_points": 1755,
+              "in_frustum": 1064,
+              "mask_overlap_points": 793,
+              "valid_unique_pixels": 779,
+              "overlap_fraction": 0.7433206106870229,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 2,
+              "target": 0,
+              "source_points": 5422,
+              "in_frustum": 5081,
+              "mask_overlap_points": 919,
+              "valid_unique_pixels": 770,
+              "overlap_fraction": 0.17016574585635358,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 8,
+          "b": 11,
+          "normal_angle_degree": 20.10969616224931,
+          "centroid_relative_distances": [
+            0.02530281329912624,
+            0.02072557753571502
+          ],
+          "directions": [
+            {
+              "source": 1,
+              "target": 2,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            },
+            {
+              "source": 2,
+              "target": 1,
+              "source_points": 1288,
+              "in_frustum": 815,
+              "mask_overlap_points": 0,
+              "valid_unique_pixels": 0,
+              "overlap_fraction": 0.0,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": false
+            }
+          ],
+          "passed": false
+        },
+        {
+          "a": 8,
+          "b": 12,
+          "normal_angle_degree": 3.775206978704383,
+          "centroid_relative_distances": [
+            0.009490040819423074,
+            0.012198230487093177
+          ],
+          "directions": [
+            {
+              "source": 1,
+              "target": 2,
+              "source_points": 1232,
+              "in_frustum": 1232,
+              "mask_overlap_points": 1006,
+              "valid_unique_pixels": 1006,
+              "overlap_fraction": 0.8165584415584416,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            },
+            {
+              "source": 2,
+              "target": 1,
+              "source_points": 5422,
+              "in_frustum": 4976,
+              "mask_overlap_points": 1299,
+              "valid_unique_pixels": 1008,
+              "overlap_fraction": 0.25932595832261385,
+              "behind_target_occluded": 0,
+              "in_front_depth_mismatch": 0,
+              "passed": true
+            }
+          ],
+          "passed": false
+        }
+      ],
+      "joint_tests": [],
+      "unassociated_candidates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11,
+        12
+      ],
+      "shared_groups": 0,
+      "association_seconds": 0.0072642359882593155
+    }
+  },
+  "geometry": {
+    "candidates": [
+      {
+        "candidate_id": 6,
+        "method": "geometry",
+        "frame": 0,
+        "mask_index": 0,
+        "points": 137160,
+        "fit_count": 109871,
+        "holdout_count": 27289,
+        "occupied_4x4": 16,
+        "support_4x4": [
+          [
+            5109,
+            8288,
+            10880,
+            9893
+          ],
+          [
+            7146,
+            10969,
+            11662,
+            9331
+          ],
+          [
+            9892,
+            12058,
+            9721,
+            10919
+          ],
+          [
+            9945,
+            9400,
+            787,
+            1160
+          ]
+        ],
+        "wall_rgb_roi_points": 9180,
+        "fit": {
+          "valid": false,
+          "reason": "INSUFFICIENT_INLIERS",
+          "plane": [
+            0.06523426649274744,
+            0.8063402419045098,
+            0.5878434355851307,
+            -0.617837249839993
+          ],
+          "centroid": [
+            0.020424195240587358,
+            0.12620914597793872,
+            0.8756368583651765
+          ],
+          "eigenvalues": [
+            4.629651307489867e-06,
+            0.0295706921929562,
+            0.07744596654713058
+          ],
+          "second_first_ratio": 0.38182352821383714,
+          "second_axis_span_depth": 0.7366376234436355,
+          "frames": [
+            {
+              "frame": 0,
+              "fit_count": 109871,
+              "inliers": 30864,
+              "fraction": 0.2809112504664561
+            }
+          ],
+          "count": 109871,
+          "ransac_trials": 422,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 20,
+          "normalized_residual": {
+            "count": 109871,
+            "mean": 0.06894770414297562,
+            "median": 0.02374307662387633,
+            "p90": 0.19673838133768798,
+            "max": 0.4150597744802109
+          },
+          "inlier_fraction": 0.2809112504664561,
+          "reference_depth": 0.9337633848190308
+        },
+        "holdout_before_move": {
+          "count": 27289,
+          "mean": 0.07419512162645013,
+          "median": 0.01853315377501141,
+          "p90": 0.21452917009045344,
+          "max": 0.37836435431880844
+        }
+      },
+      {
+        "candidate_id": 9,
+        "method": "geometry",
+        "frame": 1,
+        "mask_index": 0,
+        "points": 2626,
+        "fit_count": 2626,
+        "holdout_count": 0,
+        "occupied_4x4": 1,
+        "support_4x4": [
+          [
+            0,
+            2626,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 2427,
+        "fit": {
+          "valid": true,
+          "reason": "VALID",
+          "plane": [
+            0.42308222788993616,
+            -0.25030001752804487,
+            0.8708336980555754,
+            -1.1357561874854392
+          ],
+          "centroid": [
+            -1.0461563844982127,
+            -0.5463778767583942,
+            1.6554342952615737
+          ],
+          "eigenvalues": [
+            1.2619097242196052e-05,
+            0.003120832922662307,
+            0.012947086947817883
+          ],
+          "second_first_ratio": 0.24104518145591783,
+          "second_axis_span_depth": 0.11696808972742852,
+          "frames": [
+            {
+              "frame": 1,
+              "fit_count": 2626,
+              "inliers": 2312,
+              "fraction": 0.8804265041888805
+            }
+          ],
+          "count": 2626,
+          "ransac_trials": 64,
+          "ransac_scoring_points": 2626,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 6,
+          "normalized_residual": {
+            "count": 2626,
+            "mean": 0.003243084159184089,
+            "median": 0.0015445464015667516,
+            "p90": 0.0065215776898804,
+            "max": 0.07711920410570139
+          },
+          "inlier_fraction": 0.8804265041888805,
+          "reference_depth": 1.9104155898094177
+        }
+      },
+      {
+        "candidate_id": 13,
+        "method": "geometry",
+        "frame": 2,
+        "mask_index": 0,
+        "points": 12262,
+        "fit_count": 10254,
+        "holdout_count": 2008,
+        "occupied_4x4": 3,
+        "support_4x4": [
+          [
+            0,
+            0,
+            3428,
+            8681
+          ],
+          [
+            0,
+            0,
+            0,
+            153
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "wall_rgb_roi_points": 5690,
+        "fit": {
+          "valid": false,
+          "reason": "INSUFFICIENT_INLIERS",
+          "plane": [
+            0.3657040816483038,
+            -0.4102131732587534,
+            0.8354553711304721,
+            -1.4148614555814072
+          ],
+          "centroid": [
+            -0.6093331434191523,
+            -0.5936121891466034,
+            1.668777988143127
+          ],
+          "eigenvalues": [
+            9.27633785559529e-06,
+            0.004976197653918507,
+            0.010231125664880492
+          ],
+          "second_first_ratio": 0.48637831426505435,
+          "second_axis_span_depth": 0.16332742291176705,
+          "frames": [
+            {
+              "frame": 2,
+              "fit_count": 10254,
+              "inliers": 5297,
+              "fraction": 0.5165788960405695
+            }
+          ],
+          "count": 10254,
+          "ransac_trials": 71,
+          "ransac_scoring_points": 4096,
+          "ransac_scoring_cap": 4096,
+          "irls_iterations": 9,
+          "normalized_residual": {
+            "count": 10254,
+            "mean": 0.036835510969987086,
+            "median": 0.004084451465744161,
+            "p90": 0.10751196301104653,
+            "max": 0.1333220927432378
+          },
+          "inlier_fraction": 0.5165788960405695,
+          "reference_depth": 1.727625846862793
+        },
+        "holdout_before_move": {
+          "count": 2008,
+          "mean": 0.006430395740332196,
+          "median": 0.0035057520453536314,
+          "p90": 0.017309990875449554,
+          "max": 0.0824668099282397
+        }
+      }
+    ],
+    "association": {
+      "pair_tests": [],
+      "joint_tests": [],
+      "unassociated_candidates": [
+        9
+      ],
+      "shared_groups": 0,
+      "association_seconds": 1.3541022781282663e-05
+    }
+  }
+}
