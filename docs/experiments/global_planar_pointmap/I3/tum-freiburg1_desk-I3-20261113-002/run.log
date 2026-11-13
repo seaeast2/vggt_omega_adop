@@ -1,0 +1,16 @@
+{"time": "2026-11-13T17:45:46.230700+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I3-20261113-002"}
+{"time": "2026-11-13T17:45:50.725974+09:00", "event": "region_progress", "proposal": 0, "total": 554, "planes": 3}
+{"time": "2026-11-13T17:45:51.775848+09:00", "event": "region_progress", "proposal": 50, "total": 580, "planes": 66}
+{"time": "2026-11-13T17:45:52.414592+09:00", "event": "region_progress", "proposal": 100, "total": 589, "planes": 118}
+{"time": "2026-11-13T17:45:52.996577+09:00", "event": "region_progress", "proposal": 150, "total": 596, "planes": 177}
+{"time": "2026-11-13T17:45:53.865343+09:00", "event": "region_progress", "proposal": 200, "total": 623, "planes": 252}
+{"time": "2026-11-13T17:45:54.306159+09:00", "event": "region_progress", "proposal": 250, "total": 627, "planes": 293}
+{"time": "2026-11-13T17:45:54.904542+09:00", "event": "region_progress", "proposal": 300, "total": 632, "planes": 352}
+{"time": "2026-11-13T17:45:55.545937+09:00", "event": "region_progress", "proposal": 350, "total": 639, "planes": 416}
+{"time": "2026-11-13T17:45:56.305562+09:00", "event": "region_progress", "proposal": 400, "total": 663, "planes": 483}
+{"time": "2026-11-13T17:45:56.762787+09:00", "event": "region_progress", "proposal": 450, "total": 663, "planes": 537}
+{"time": "2026-11-13T17:45:57.576057+09:00", "event": "region_progress", "proposal": 500, "total": 680, "planes": 607}
+{"time": "2026-11-13T17:45:58.720885+09:00", "event": "region_progress", "proposal": 550, "total": 698, "planes": 711}
+{"time": "2026-11-13T17:45:58.912542+09:00", "event": "region_progress", "proposal": 600, "total": 698, "planes": 734}
+{"time": "2026-11-13T17:45:59.056877+09:00", "event": "region_progress", "proposal": 650, "total": 698, "planes": 748}
+{"time": "2026-11-13T17:46:00.684369+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}

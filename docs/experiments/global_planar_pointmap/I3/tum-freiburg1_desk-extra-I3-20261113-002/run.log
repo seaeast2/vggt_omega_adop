@@ -1,0 +1,21 @@
+{"time": "2026-11-13T17:45:47.397637+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I3-20261113-002"}
+{"time": "2026-11-13T17:45:52.655355+09:00", "event": "region_progress", "proposal": 0, "total": 870, "planes": 3}
+{"time": "2026-11-13T17:45:53.274744+09:00", "event": "region_progress", "proposal": 50, "total": 878, "planes": 60}
+{"time": "2026-11-13T17:45:53.712116+09:00", "event": "region_progress", "proposal": 100, "total": 883, "planes": 113}
+{"time": "2026-11-13T17:45:54.111138+09:00", "event": "region_progress", "proposal": 150, "total": 883, "planes": 160}
+{"time": "2026-11-13T17:45:54.540271+09:00", "event": "region_progress", "proposal": 200, "total": 883, "planes": 208}
+{"time": "2026-11-13T17:45:55.162195+09:00", "event": "region_progress", "proposal": 250, "total": 896, "planes": 271}
+{"time": "2026-11-13T17:45:55.685663+09:00", "event": "region_progress", "proposal": 300, "total": 902, "planes": 321}
+{"time": "2026-11-13T17:45:56.214561+09:00", "event": "region_progress", "proposal": 350, "total": 907, "planes": 383}
+{"time": "2026-11-13T17:45:56.540458+09:00", "event": "region_progress", "proposal": 400, "total": 907, "planes": 424}
+{"time": "2026-11-13T17:45:56.971474+09:00", "event": "region_progress", "proposal": 450, "total": 910, "planes": 475}
+{"time": "2026-11-13T17:45:57.522100+09:00", "event": "region_progress", "proposal": 500, "total": 918, "planes": 539}
+{"time": "2026-11-13T17:45:58.036879+09:00", "event": "region_progress", "proposal": 550, "total": 925, "planes": 594}
+{"time": "2026-11-13T17:45:58.461842+09:00", "event": "region_progress", "proposal": 600, "total": 925, "planes": 645}
+{"time": "2026-11-13T17:45:58.821243+09:00", "event": "region_progress", "proposal": 650, "total": 925, "planes": 690}
+{"time": "2026-11-13T17:45:59.519717+09:00", "event": "region_progress", "proposal": 700, "total": 930, "planes": 763}
+{"time": "2026-11-13T17:46:00.263376+09:00", "event": "region_progress", "proposal": 750, "total": 930, "planes": 844}
+{"time": "2026-11-13T17:46:00.963261+09:00", "event": "region_progress", "proposal": 800, "total": 932, "planes": 932}
+{"time": "2026-11-13T17:46:01.772495+09:00", "event": "region_progress", "proposal": 850, "total": 940, "planes": 1012}
+{"time": "2026-11-13T17:46:02.127433+09:00", "event": "region_progress", "proposal": 900, "total": 940, "planes": 1051}
+{"time": "2026-11-13T17:46:03.720578+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}
