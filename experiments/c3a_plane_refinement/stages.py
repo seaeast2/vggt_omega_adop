@@ -16,8 +16,8 @@ def candidates(data):
 def clean(entry):return {k:v for k,v in entry.items() if k not in ['ids','fit_ids','holdout_ids']}
 
 def run(code):
- suffix='b' if code.endswith('b') else '';main=code[:-1] if suffix else code
- if suffix:os.environ['H_OBSERVATION_STAGE']='H2b'
+ suffix=code[-1] if code[-1].isalpha() else '';main=code[:-1] if suffix else code
+ if suffix:os.environ['H_OBSERVATION_STAGE']='H2'+suffix
  parents=[observation_stage()]
  if main in ['H4','H5']:parents.append(latest('H3'+suffix))
  if main=='H5':parents.append(latest('H4'+suffix))

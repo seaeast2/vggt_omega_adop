@@ -3,8 +3,8 @@ from geometry import normals,components,geometric_regions
 from scipy import ndimage
 import hashlib
 
-def run(code='H2',dedup=False):
- st=Stage(code,parents=[latest('H0a'),latest('H1')],extra={'geometry_wall_review_rule':'Frozen RGB rectangles; >=100 rectangle points, >=5pct candidate fraction; no corrected geometry used. Candidate generation itself uses no image segmentation.','raw_duplicate_policy':'SAM predicted-IoU rank mask NMS at mask IoU>0.5; remaining overlaps ambiguous' if dedup else 'Identical/overlapping masks remain stored; pixels in >1 candidate are ambiguous and excluded.', 'mask_nms_supplement':dedup})
+def run(code='H2',dedup=False,strict_tracks=False):
+ st=Stage(code,parents=[latest('H0a'),latest('H1')],extra={'geometry_wall_review_rule':'Frozen RGB rectangles; >=100 rectangle points, >=5pct candidate fraction; no corrected geometry used. Candidate generation itself uses no image segmentation.','raw_duplicate_policy':'SAM predicted-IoU rank mask NMS at mask IoU>0.5; remaining overlaps ambiguous' if dedup else 'Identical/overlapping masks remain stored; pixels in >1 candidate are ambiguous and excluded.', 'mask_nms_supplement':dedup,'strict_known_track_propagation':strict_tracks})
  try:
   data=load();h,w=data['depth'].shape[1:];size=h*w;minimum=int(np.ceil(.005*size));out=st.path/'artifacts/masks';out.mkdir(parents=True)
   start=time.perf_counter();nn,ev,valid=normals(data,7);n7time=time.perf_counter()-start;start=time.perf_counter();n21,e21,v21=normals(data,21);n21time=time.perf_counter()-start
@@ -19,7 +19,27 @@ def run(code='H2',dedup=False):
    if match['track_id'][ix] not in trackhold:continue
    for frame,uv in [(int(pair[0]),match['uv_i'][ix]),(int(pair[1]),match['uv_j'][ix])]:
     x,y=np.rint(uv).astype(int);yy,xx=np.ogrid[:h,:w];known_holdout[frame]|=((xx-x)**2+(yy-y)**2<=9)
-  split|=known_holdout;c.json_write(out/'tile_split.json',tile_rows)
+  split|=known_holdout
+  trackobs={}
+  for ix,pair in enumerate(match['pair']):
+   for frame,key in zip(pair,['uv_i','uv_j']):
+    x,y=np.rint(match[key][ix]).astype(int);trackobs.setdefault(int(match['track_id'][ix]),[]).append((int(frame),int(x),int(y)))
+  mixed_before=[tid for tid,obs in trackobs.items() if any(split[f,y,x] for f,x,y in obs) and not all(split[f,y,x] for f,x,y in obs)]
+  if strict_tracks:
+   # Monotone propagation handles nearby/overlapping tracked footprints as well.
+   for iteration in range(100):
+    changed=False
+    for tid,obs in trackobs.items():
+     if not any(split[f,y,x] for f,x,y in obs):continue
+     for f,x,y in obs:
+      yy,xx=np.ogrid[:h,:w];disk=(xx-x)**2+(yy-y)**2<=9
+      if np.any(disk&~split[f]):changed=True
+      split[f]|=disk;known_holdout[f]|=disk
+    if not changed:break
+   assert not any(any(split[f,y,x] for f,x,y in obs) and not all(split[f,y,x] for f,x,y in obs) for obs in trackobs.values())
+  mixed_after=[tid for tid,obs in trackobs.items() if any(split[f,y,x] for f,x,y in obs) and not all(split[f,y,x] for f,x,y in obs)]
+  c.json_write(out/'track_split_audit.json',{'known_tracks':len(trackobs),'mixed_before':mixed_before,'mixed_after':mixed_after,'strict_propagation':strict_tracks,'contract_passed':not mixed_after})
+  c.json_write(out/'tile_split.json',tile_rows)
   rects=[(220,8,390,65),(70,8,220,65),(365,8,500,60)];wallroi=np.zeros((3,h,w),bool)
   for i,(x0,y0,x1,y1) in enumerate(rects):wallroi[i,y0:y1,x0:x1]=True
   rois={'wall_interior':wallroi,'object_boundary':np.zeros_like(wallroi),'non_target':np.zeros_like(wallroi)}
@@ -73,6 +93,6 @@ def run(code='H2',dedup=False):
   gplane=next((ROOT/'results/point_line_depth_refinement').glob('tum-freiburg1_desk-G1-*/stages/G1/artifacts/observations/wall_reference.npz'));gp=np.load(gplane);uv,z,vis=c.project(data['xyz'],data['k'][0],data['e'][0],h,w);old=vis&(uv[:,0]>=220)&(uv[:,0]<390)&(uv[:,1]>=5)&(uv[:,1]<65);oldids=np.flatnonzero(old)
   np.savez_compressed(out/'fixed_wall_reference.npz',ids=oldids,center=gp['center'],normal=gp['normal'],rgb_rectangles=np.array(rects));c.json_write(out/'frozen_roi_provenance.json',{'prior_G1_plane':c.record(gplane),'old_G6_wall_camera0_rectangle':[220,5,390,65],'old_ROI_source_counts':[int(np.sum(data['fid'][oldids]==i)) for i in range(3)],'new_rectangles':rects,'new_own_source_counts':[int(x.sum()) for x in wallroi],'freeze_before_corrected_output':True,'known_holdout_track_ids':sorted(int(x) for x in trackhold),'match_source':c.record(matchfile)})
   counts={k:{'candidates':len(v),'points':sum(x['points'] for x in v),'fit':sum(x['fit_count'] for x in v),'holdout':sum(x['holdout_count'] for x in v)} for k,v in sets.items()}
-  st.finish({'decision':'CANDIDATES_SPLITS_ROIS_FROZEN','candidate_support':counts,'candidates':sets,'normal7_vs21_angle_degree':c.stats(angle[valid&v21]),'timing_seconds':{'normals7':n7time,'normals21_diagnostic':n21time,'candidate_refinement':time.perf_counter()-start},'geometry_wall_review':review,'split_heldout_fraction':float(split.mean()),'known_holdout_excluded_fit':True,'raw_masks_sha256':[c.record(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') for i in range(3)]},f'# {code} 후보·평가 분리 동결\n\n' + ('보조 H2b는 H1 원본 마스크를 수정하지 않고 SAM predicted-IoU 순서의 mask IoU>0.5 NMS로 중복 후보만 제거했다. 나머지 규칙·ROI·split은 H2와 같다. 이는 기본 군을 대체하지 않는 진단이다.\n\n' if dedup else '') + '7×7 PCA 법선, 원본 confidence 하위 10% 제외, 3 px 마스크 erosion과 독립 8 px 영상 border를 적용했다. seed 0의 법선 K-means 5개/10회 및 연결 성분으로 원시 마스크를 분리했다. 21×21은 진단만 했다. 후보 최소 면적은 984 px다.\n\n기하 전용 군은 7×7 이웃 그래프에서 법선 15°·양방향 국소 접평면 거리/원본 Z 0.5%로 생성했다. RGB에서 사전에 정한 벽 사각형 지지 100 px·후보 5% 이상 규칙으로 벽 후보를 표시했으며 영상 마스크는 생성에 사용하지 않았다. 이 검토 규칙과 모든 기하 영역의 수용/제외를 보존했다.\n\n16×12 타일 SHA256으로 fit/holdout을 고정하고, 알려진 보류 track 관측 3 px 주변을 추가로 fit에서 제외했다. 중복 후보 관측은 모호로 제외한다. 벽/경계/비대상 ROI를 보정 결과 생성 전에 고정했다. 기존 G6 벽 ROI와 새 RGB 사각형 ROI를 구분했다. 정답 분할 없이 정확도라고 부르지 않는다.')
+  st.finish({'decision':'CANDIDATES_SPLITS_ROIS_FROZEN','candidate_support':counts,'candidates':sets,'normal7_vs21_angle_degree':c.stats(angle[valid&v21]),'timing_seconds':{'normals7':n7time,'normals21_diagnostic':n21time,'candidate_refinement':time.perf_counter()-start},'geometry_wall_review':review,'split_heldout_fraction':float(split.mean()),'known_holdout_excluded_fit':True,'track_split_contract_passed':not mixed_after,'mixed_tracks_before':mixed_before,'mixed_tracks_after':mixed_after,'raw_masks_sha256':[c.record(latest('H1')/f'artifacts/masks/camera_{i}_masks.npz') for i in range(3)]},f'# {code} 후보·평가 분리 동결\n\n' + ('추가 track audit에서 H2/H2b의 알려진 track 45개 중 10개가 타일 fit/holdout에 걸친 것을 발견했다. 이 실행은 track 전체 holdout 및 3px 주변 전파로 수정하고 최종 mixed=0을 검증했다. 기존 보류 matching track은 처음부터 fit 제외되어 있었다.\n\n' if strict_tracks else '') + ('보조 H2b는 H1 원본 마스크를 수정하지 않고 SAM predicted-IoU 순서의 mask IoU>0.5 NMS로 중복 후보만 제거했다. 나머지 규칙·ROI·split은 H2와 같다. 이는 기본 군을 대체하지 않는 진단이다.\n\n' if dedup else '') + '7×7 PCA 법선, 원본 confidence 하위 10% 제외, 3 px 마스크 erosion과 독립 8 px 영상 border를 적용했다. seed 0의 법선 K-means 5개/10회 및 연결 성분으로 원시 마스크를 분리했다. 21×21은 진단만 했다. 후보 최소 면적은 984 px다.\n\n기하 전용 군은 7×7 이웃 그래프에서 법선 15°·양방향 국소 접평면 거리/원본 Z 0.5%로 생성했다. RGB에서 사전에 정한 벽 사각형 지지 100 px·후보 5% 이상 규칙으로 벽 후보를 표시했으며 영상 마스크는 생성에 사용하지 않았다. 이 검토 규칙과 모든 기하 영역의 수용/제외를 보존했다.\n\n16×12 타일 SHA256으로 fit/holdout을 고정하고, 알려진 보류 track 관측 3 px 주변을 추가로 fit에서 제외했다. 중복 후보 관측은 모호로 제외한다. 벽/경계/비대상 ROI를 보정 결과 생성 전에 고정했다. 기존 G6 벽 ROI와 새 RGB 사각형 ROI를 구분했다. 정답 분할 없이 정확도라고 부르지 않는다.')
  except Exception as e:st.fail(e);raise
 if __name__=='__main__':run()
