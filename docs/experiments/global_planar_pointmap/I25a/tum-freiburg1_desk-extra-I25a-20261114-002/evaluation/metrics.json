@@ -1,0 +1,120 @@
+{
+  "decision": "POSTHOC_SCALE_SENSITIVITY_MEASURED",
+  "metrics": {
+    "omega_raw": {
+      "camera_baseline_scale": {
+        "count": 78993,
+        "mean_m": 0.11715664679768241,
+        "rmse_m": 0.13343059221146816,
+        "median_m": 0.1043024452417561,
+        "p95_m": 0.20199590574891413
+      },
+      "depth_FIT_scale": {
+        "count": 78993,
+        "mean_m": 0.06222972491582348,
+        "rmse_m": 0.08032193792049361,
+        "median_m": 0.05311870821022306,
+        "p95_m": 0.11980539448061889
+      },
+      "XYZ_hash": "45343e0f672446db8fa1eb3c4142d8649fbba2e4fca65196b1d957584864a63b"
+    },
+    "fov": {
+      "camera_baseline_scale": {
+        "count": 78993,
+        "mean_m": 0.09749120713326238,
+        "rmse_m": 0.11297581364024435,
+        "median_m": 0.08850931846624617,
+        "p95_m": 0.16198217859453776
+      },
+      "depth_FIT_scale": {
+        "count": 78993,
+        "mean_m": 0.0348416455373821,
+        "rmse_m": 0.058667480167018685,
+        "median_m": 0.026312747265558396,
+        "p95_m": 0.07190932772846721
+      },
+      "XYZ_hash": "7b09b4b0dc57633a3a25a3d0b59849678e86655031fcea5e088ac4aa525b0d6c"
+    },
+    "plane_fixed": {
+      "camera_baseline_scale": {
+        "count": 78993,
+        "mean_m": 0.09827532628884231,
+        "rmse_m": 0.11450673978315673,
+        "median_m": 0.08857635777222102,
+        "p95_m": 0.1707382089207508
+      },
+      "depth_FIT_scale": {
+        "count": 78993,
+        "mean_m": 0.036103585978382514,
+        "rmse_m": 0.0643141289395021,
+        "median_m": 0.0263999827000699,
+        "p95_m": 0.0736832422724126
+      },
+      "XYZ_hash": "a7a32aee102dfe7583e68d3361c4485d39d98ff88307f2a5d29c0b85eb791084"
+    }
+  },
+  "pose_scale": 1.1168058147383704,
+  "depth_scale": 1.203186364254182,
+  "ratio": 0.9282068413654635,
+  "rotation": [
+    [
+      0.6072075090585781,
+      0.5789840011666026,
+      -0.544129182580744
+    ],
+    [
+      0.7945059095437562,
+      -0.44909450047257615,
+      0.408747464023126
+    ],
+    [
+      -0.0077071812568393905,
+      -0.6805083805791077,
+      -0.7326997634220149
+    ]
+  ],
+  "fixed_predicted_camera_centroid": [
+    -0.09903590311118726,
+    -0.040268606943734846,
+    0.059218770676111344
+  ],
+  "fixed_GT_camera_centroid": [
+    0.9349392812398225,
+    -0.08424513998927959,
+    1.6094996943664732
+  ],
+  "inputs": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I21-20261114-002/stages/I21/manifest.json",
+      "bytes": 12229,
+      "sha256": "0e9bbc80a8f4cc398b38377337b037b9bf88a570424364a89c08f1cea8656cbf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I11-20261113-002/stages/I11/artifacts/gt/evaluation_arrays.npz",
+      "bytes": 21722364,
+      "sha256": "13a7880d13a37d14d5d6e42b155c9ee2a9dcc26745d97e5d0f3102ac403a9e11"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I12-20261114-002/stages/I12/artifacts/photometric/initial/pointmap.npz",
+      "bytes": 30038387,
+      "sha256": "4dd0f381f0c98fb30fb2feefeb2c2cac89a86486bed85adbe5828ea033006e47"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I12-20261114-002/stages/I12/artifacts/photometric/plane_fixed/pointmap.npz",
+      "bytes": 30045749,
+      "sha256": "0250a13d40a21b5c1ffe5257339f41829289c6d0b311247e6abfd182ef6c4879"
+    }
+  ],
+  "checks": {
+    "same_XYZ": true,
+    "same_rotation": true,
+    "same_camera_centroids": true,
+    "old_pose_metric_replayed": true,
+    "no_model_correction": true
+  },
+  "interpretation": "Only quantifies error sensitivity to scale choice; does not prove blur caused scale inconsistency or validate depth-scale alignment as a primary score.",
+  "elapsed_seconds": 0.33772150400909595,
+  "process_peak_rss_mib": 261.92578125,
+  "gt_status": "GT_DEPTH_AND_REGISTERED_POINTMAP_EVALUATED",
+  "completion_criteria_met": true
+}
