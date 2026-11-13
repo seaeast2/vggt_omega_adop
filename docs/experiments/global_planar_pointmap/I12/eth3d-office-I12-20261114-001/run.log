@@ -1,0 +1,7 @@
+{"time": "2026-11-14T06:12:50.488544+09:00", "event": "registered", "run_id": "eth3d-office-I12-20261114-001"}
+{"time": "2026-11-14T06:12:50.488806+09:00", "event": "protocol_frozen", "plan": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_plane_photometric_experiment_plan.md", "bytes": 6714, "sha256": "dfe8080d12f4dd8a07adff15a5a0fcffcec7f9d1da597c216731b6835114419f"}}
+{"time": "2026-11-14T06:12:50.501411+09:00", "event": "synthetic_controls", "analytic_jac_relative_error": 2.9177606442054582e-09, "synthetic_photo_parameter_error": 1.8735013540549517e-16, "forbidden_RGB_perturbation_invariant": true, "self_view_depth_gradient_zero": true}
+{"time": "2026-11-14T06:12:50.960303+09:00", "event": "plane_progress", "processed": 10, "supported": 5}
+{"time": "2026-11-14T06:12:51.382160+09:00", "event": "plane_progress", "processed": 40, "supported": 13}
+{"time": "2026-11-14T06:12:51.448447+09:00", "event": "plane_progress", "processed": 50, "supported": 14}
+{"time": "2026-11-14T06:13:01.812000+09:00", "event": "completed", "decision": "RGB_PLANE_OPTIMIZATION_EXECUTED", "criteria": true}

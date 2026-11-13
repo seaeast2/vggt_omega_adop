@@ -1,0 +1,17 @@
+{
+  "plane_fixed": {
+    "count": 1567,
+    "normalized_robust_mean": 0.46977313079074756,
+    "rgb_mae": 0.028409333930990946
+  },
+  "plane_distance": {
+    "count": 1567,
+    "normalized_robust_mean": 0.49861249441718164,
+    "rgb_mae": 0.02952027893675067
+  },
+  "plane_distance_normal": {
+    "count": 1567,
+    "normalized_robust_mean": 0.510287890839008,
+    "rgb_mae": 0.029628857184298585
+  }
+}
