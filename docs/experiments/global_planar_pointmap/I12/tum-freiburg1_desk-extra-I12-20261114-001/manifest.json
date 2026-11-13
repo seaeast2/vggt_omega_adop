@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "run_id": "tum-freiburg1_desk-extra-I12-20261114-001",
+  "experiment_code": "I12",
+  "dataset": "tum-freiburg1_desk-extra",
+  "started_at": "2026-11-14T05:30:24.268705+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I10-20261113-001/stages/I10/manifest.json",
+      "bytes": 16996,
+      "sha256": "2e319fc25d64fd0ff74dcaf358b58ccf24ccbaa8019172f98f6ec4848a69057f"
+    }
+  ],
+  "project_commit_at_start": "40e1933dbf5f6a517209322cc86dc1c6337f03ed",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": false,
+  "error": "(0, 0.04780431987941771)",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/global_planar_pointmap/photometric_planes.py\", line 230, in run\n    assert probe_error<2e-3,(pid,probe_error)\n           ^^^^^^^^^^^^^^^^\nAssertionError: (0, 0.04780431987941771)\n",
+  "ended_at": "2026-11-14T05:30:24.566443+09:00"
+}

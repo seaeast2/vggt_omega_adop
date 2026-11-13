@@ -1,0 +1,6 @@
+{"time": "2026-11-14T05:30:08.981275+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I12-20261114-001"}
+{"time": "2026-11-14T05:30:08.981599+09:00", "event": "protocol_frozen", "plan": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_plane_photometric_experiment_plan.md", "bytes": 6139, "sha256": "528a56204d95effba55f5488ce93fb60ecd970087b7efa89d9b8af05680bac02"}}
+{"time": "2026-11-14T05:30:08.992146+09:00", "event": "synthetic_controls", "analytic_jac_relative_error": 3.045158153414107e-10, "synthetic_photo_parameter_error": 1.8735013540549517e-16, "forbidden_RGB_perturbation_invariant": true, "self_view_depth_gradient_zero": true}
+{"time": "2026-11-14T05:30:10.099828+09:00", "event": "plane_progress", "processed": 40, "supported": 14}
+{"time": "2026-11-14T05:30:10.240442+09:00", "event": "plane_progress", "processed": 50, "supported": 17}
+{"time": "2026-11-14T05:30:24.132945+09:00", "event": "completed", "decision": "RGB_PLANE_OPTIMIZATION_EXECUTED", "criteria": true}

@@ -1,0 +1,2034 @@
+[
+  {
+    "plane_id": 0,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 398,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.05312186278193968,
+      "normalized_robust_mean": 1.073801960669682
+    },
+    "initial_validation": {
+      "count": 398,
+      "rgb_mae": 0.029191495904735,
+      "normalized_robust_mean": 0.3952025146181911
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.002408710474773908
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.052709366091787946,
+          "normalized_robust_mean": 1.0597259446665237
+        },
+        "validation_photo": {
+          "count": 398,
+          "rgb_mae": 0.029857467715353917,
+          "normalized_robust_mean": 0.40680919859247766
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.03849855539393855,
+          -0.07047733877642068,
+          0.00239669126538872
+        ],
+        "accepted": true,
+        "nfev": 25,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.05144041768850244,
+          "normalized_robust_mean": 1.0312590626359774
+        },
+        "validation_photo": {
+          "count": 398,
+          "rgb_mae": 0.027779764752591796,
+          "normalized_robust_mean": 0.3695064174156438
+        },
+        "normal_angle_degree": 4.591391618326707
+      }
+    },
+    "initial_jac_error": 2.2186367890430993e-09,
+    "probe_jac_error": 2.031523697005002e-09,
+    "jac_singular_values": [
+      53.553249691330045,
+      9.401497924172979,
+      2.456706826748333
+    ]
+  },
+  {
+    "plane_id": 1,
+    "tag": "screen",
+    "fit_photo": 264,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 2,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 39,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.061298960331470066,
+      "normalized_robust_mean": 1.3215856367890966
+    },
+    "initial_validation": {
+      "count": 39,
+      "rgb_mae": 0.01630980144118388,
+      "normalized_robust_mean": 0.16641195215683935
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.003442086670931378
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.06030454376377853,
+          "normalized_robust_mean": 1.2848153602429953
+        },
+        "validation_photo": {
+          "count": 39,
+          "rgb_mae": 0.01766626536935289,
+          "normalized_robust_mean": 0.18900405021352681
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.1763269807079505,
+          0.17250687335276643,
+          -0.009604720853171286
+        ],
+        "accepted": true,
+        "nfev": 28,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": true,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.05293610180110559,
+          "normalized_robust_mean": 1.0589277473089593
+        },
+        "validation_photo": {
+          "count": 39,
+          "rgb_mae": 0.010805358818738427,
+          "normalized_robust_mean": 0.06925915204154001
+        },
+        "normal_angle_degree": 13.856940597036461
+      }
+    },
+    "initial_jac_error": 2.101093444927775e-09,
+    "probe_jac_error": 2.685909068711045e-09,
+    "jac_singular_values": [
+      59.815094202402,
+      4.784092566910734,
+      1.5144611554999494
+    ]
+  },
+  {
+    "plane_id": 3,
+    "tag": "screen",
+    "fit_photo": 293,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 4,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 5,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 6,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 512,
+    "status": "OPTIMIZED",
+    "matches": 6,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.019496374146279253,
+      "normalized_robust_mean": 0.22843882145328742
+    },
+    "initial_validation": {
+      "count": 512,
+      "rgb_mae": 0.02286085589700013,
+      "normalized_robust_mean": 0.2538398178073867
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.014868952668799961
+        ],
+        "accepted": true,
+        "nfev": 21,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.022711740254727632,
+          "normalized_robust_mean": 0.31777108647767455
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.028283037608826975,
+          "normalized_robust_mean": 0.4347710294900396
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.006412585599922417,
+          -0.034316971978973834,
+          -0.007331712890192696
+        ],
+        "accepted": true,
+        "nfev": 22,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.021105473152538096,
+          "normalized_robust_mean": 0.26488128770772507
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.026861646562808886,
+          "normalized_robust_mean": 0.3858391619627841
+        },
+        "normal_angle_degree": 1.999439208851519
+      }
+    },
+    "initial_jac_error": 1.8918316955030618e-09,
+    "probe_jac_error": 2.1516633483160417e-09,
+    "jac_singular_values": [
+      40.86372706319698,
+      9.770121943892343,
+      6.21387573791127
+    ]
+  },
+  {
+    "plane_id": 7,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 8,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 9,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 10,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 11,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 12,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 13,
+    "tag": "table",
+    "fit_photo": 392,
+    "validation_photo": 29,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 392,
+      "rgb_mae": 0.04014606871839018,
+      "normalized_robust_mean": 0.7383972503872439
+    },
+    "initial_validation": {
+      "count": 29,
+      "rgb_mae": 0.04169491345609354,
+      "normalized_robust_mean": 0.722729553514126
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.0037046746666207333
+        ],
+        "accepted": true,
+        "nfev": 15,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 392,
+          "rgb_mae": 0.03887495308122391,
+          "normalized_robust_mean": 0.7195033828312623
+        },
+        "validation_photo": {
+          "count": 29,
+          "rgb_mae": 0.04478605363658625,
+          "normalized_robust_mean": 0.8119788051385921
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.0926786390309969,
+          0.04979968451190017,
+          -0.004969913026590674
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 392,
+          "rgb_mae": 0.03812248753454636,
+          "normalized_robust_mean": 0.6950886914548327
+        },
+        "validation_photo": {
+          "count": 29,
+          "rgb_mae": 0.04819443591396636,
+          "normalized_robust_mean": 0.9232725454365494
+        },
+        "normal_angle_degree": 6.006046006088093
+      }
+    },
+    "initial_jac_error": 2.2173732839925555e-09,
+    "probe_jac_error": 2.522084114362591e-09,
+    "jac_singular_values": [
+      45.27619819764535,
+      1.6866998567017524,
+      0.4530907829055986
+    ]
+  },
+  {
+    "plane_id": 14,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 119,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.01483393543964581,
+      "normalized_robust_mean": 0.1280653772083389
+    },
+    "initial_validation": {
+      "count": 119,
+      "rgb_mae": 0.009108491381579263,
+      "normalized_robust_mean": 0.05011573870350508
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.0023939253706448016
+        ],
+        "accepted": true,
+        "nfev": 21,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.014892871863736284,
+          "normalized_robust_mean": 0.12702484697494265
+        },
+        "validation_photo": {
+          "count": 119,
+          "rgb_mae": 0.009391320725196606,
+          "normalized_robust_mean": 0.05235733748237473
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.02799423178298196,
+          0.03687620092909351,
+          -0.0025614356332161223
+        ],
+        "accepted": true,
+        "nfev": 12,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.014700434811651166,
+          "normalized_robust_mean": 0.1241740951141097
+        },
+        "validation_photo": {
+          "count": 119,
+          "rgb_mae": 0.009083220538593208,
+          "normalized_robust_mean": 0.05114321995614406
+        },
+        "normal_angle_degree": 2.650803392771658
+      }
+    },
+    "initial_jac_error": 9.040792655622145e-09,
+    "probe_jac_error": 6.726090270060488e-09,
+    "jac_singular_values": [
+      19.812230024759703,
+      3.0632749905653447,
+      0.8373899214908143
+    ]
+  },
+  {
+    "plane_id": 15,
+    "tag": "table",
+    "fit_photo": 398,
+    "validation_photo": 512,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 398,
+      "rgb_mae": 0.021743311709580947,
+      "normalized_robust_mean": 0.2808638424665646
+    },
+    "initial_validation": {
+      "count": 512,
+      "rgb_mae": 0.013008274689399744,
+      "normalized_robust_mean": 0.11566073002160075
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.0036297594146022212
+        ],
+        "accepted": true,
+        "nfev": 12,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 398,
+          "rgb_mae": 0.021772090563977903,
+          "normalized_robust_mean": 0.27876494453383766
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.012706246023738746,
+          "normalized_robust_mean": 0.11021696897113457
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.05932299606997097,
+          -0.10278145019970607,
+          -0.012479722734278444
+        ],
+        "accepted": true,
+        "nfev": 22,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 398,
+          "rgb_mae": 0.019466565079106508,
+          "normalized_robust_mean": 0.2297906304239759
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.01328712251419442,
+          "normalized_robust_mean": 0.11163891535795138
+        },
+        "normal_angle_degree": 6.7678007963337805
+      }
+    },
+    "initial_jac_error": 6.619160505973585e-09,
+    "probe_jac_error": 4.359888208334964e-09,
+    "jac_singular_values": [
+      19.11406340074231,
+      2.1175441429213673,
+      1.238666015351549
+    ]
+  },
+  {
+    "plane_id": 16,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 344,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.021954449584703845,
+      "normalized_robust_mean": 0.27419408786527505
+    },
+    "initial_validation": {
+      "count": 344,
+      "rgb_mae": 0.016439499603184807,
+      "normalized_robust_mean": 0.17483402562337227
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.0008349884301245043
+        ],
+        "accepted": true,
+        "nfev": 5,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.021961396488960325,
+          "normalized_robust_mean": 0.2740442574511083
+        },
+        "validation_photo": {
+          "count": 344,
+          "rgb_mae": 0.016454539708582707,
+          "normalized_robust_mean": 0.17530695663329685
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.11293809446080423,
+          0.036521834699526724,
+          -0.003751012571360567
+        ],
+        "accepted": true,
+        "nfev": 16,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.021451782399674314,
+          "normalized_robust_mean": 0.2640993480209098
+        },
+        "validation_photo": {
+          "count": 344,
+          "rgb_mae": 0.016614435525863523,
+          "normalized_robust_mean": 0.17854391109236303
+        },
+        "normal_angle_degree": 6.7691368855247385
+      }
+    },
+    "initial_jac_error": 6.172444399364429e-09,
+    "probe_jac_error": 2.197304413445134e-09,
+    "jac_singular_values": [
+      16.284646359716998,
+      1.2363968298067656,
+      0.514607717962116
+    ]
+  },
+  {
+    "plane_id": 17,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 2,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 18,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 19,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 20,
+    "tag": "screen",
+    "fit_photo": 183,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 21,
+    "tag": "screen",
+    "fit_photo": 98,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 22,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 23,
+    "tag": "screen",
+    "fit_photo": 280,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 24,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 25,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 26,
+    "tag": "table",
+    "fit_photo": 159,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 27,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 28,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 29,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 30,
+    "tag": "table",
+    "fit_photo": 61,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 31,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 32,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 92,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.052029475551891725,
+      "normalized_robust_mean": 1.1044823732579945
+    },
+    "initial_validation": {
+      "count": 92,
+      "rgb_mae": 0.06045042400761571,
+      "normalized_robust_mean": 1.1598263581991357
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.0019159416306354104
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.051763781226299814,
+          "normalized_robust_mean": 1.0966116796398773
+        },
+        "validation_photo": {
+          "count": 92,
+          "rgb_mae": 0.060248383535292535,
+          "normalized_robust_mean": 1.1537886766429064
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.017100488611844166,
+          0.013651640170957064,
+          -0.002081831044398156
+        ],
+        "accepted": true,
+        "nfev": 24,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.05094078253450223,
+          "normalized_robust_mean": 1.0742531599011529
+        },
+        "validation_photo": {
+          "count": 92,
+          "rgb_mae": 0.06063869194517295,
+          "normalized_robust_mean": 1.1651120277117717
+        },
+        "normal_angle_degree": 1.2535096436777555
+      }
+    },
+    "initial_jac_error": 3.2122360162854343e-09,
+    "probe_jac_error": 3.5403797921257332e-09,
+    "jac_singular_values": [
+      67.17721512330598,
+      9.758261443369689,
+      2.0824533428852297
+    ]
+  },
+  {
+    "plane_id": 33,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 34,
+    "tag": "screen",
+    "fit_photo": 340,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 35,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 8,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 36,
+    "tag": "screen",
+    "fit_photo": 143,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 37,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 38,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 39,
+    "tag": "screen",
+    "fit_photo": 12,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 40,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 276,
+    "status": "OPTIMIZED",
+    "matches": 6,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.020389424744636325,
+      "normalized_robust_mean": 0.2825488292811598
+    },
+    "initial_validation": {
+      "count": 276,
+      "rgb_mae": 0.024875615176370134,
+      "normalized_robust_mean": 0.2722478917300582
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.00666441976180488
+        ],
+        "accepted": true,
+        "nfev": 6,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.020182705986246125,
+          "normalized_robust_mean": 0.2714102994014816
+        },
+        "validation_photo": {
+          "count": 276,
+          "rgb_mae": 0.025446415887221817,
+          "normalized_robust_mean": 0.2850491134752963
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.008848611660886234,
+          0.02254373576691411,
+          -0.006049965999123549
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.02015841317078791,
+          "normalized_robust_mean": 0.2727223982612157
+        },
+        "validation_photo": {
+          "count": 276,
+          "rgb_mae": 0.02556184774400483,
+          "normalized_robust_mean": 0.28797445557871687
+        },
+        "normal_angle_degree": 1.3873256023781853
+      }
+    },
+    "initial_jac_error": 3.984529308029072e-09,
+    "probe_jac_error": 3.5271484638201975e-09,
+    "jac_singular_values": [
+      27.340799705946267,
+      3.3408154983276734,
+      3.1555348047113028
+    ]
+  },
+  {
+    "plane_id": 41,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 44,
+    "status": "OPTIMIZED",
+    "matches": 3,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.014109377169187925,
+      "normalized_robust_mean": 0.1375841119728149
+    },
+    "initial_validation": {
+      "count": 44,
+      "rgb_mae": 0.012458243399571235,
+      "normalized_robust_mean": 0.10116458715221463
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.007637060807249914
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.014958991320633658,
+          "normalized_robust_mean": 0.14953995618500046
+        },
+        "validation_photo": {
+          "count": 44,
+          "rgb_mae": 0.013458215210602814,
+          "normalized_robust_mean": 0.11704197122759309
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.03117788693129433,
+          -0.06968755962012077,
+          -0.0055935421189712165
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.01584147904377749,
+          "normalized_robust_mean": 0.17334895097548741
+        },
+        "validation_photo": {
+          "count": 44,
+          "rgb_mae": 0.014982032007139148,
+          "normalized_robust_mean": 0.13761288195119323
+        },
+        "normal_angle_degree": 4.365724231854039
+      }
+    },
+    "initial_jac_error": 4.063096215991148e-09,
+    "probe_jac_error": 3.3998013751197317e-09,
+    "jac_singular_values": [
+      23.39962802266244,
+      7.0177392073002585,
+      2.359967274922742
+    ]
+  },
+  {
+    "plane_id": 42,
+    "tag": "table",
+    "fit_photo": 108,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 43,
+    "tag": "table",
+    "fit_photo": 362,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 44,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 45,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 43,
+    "status": "OPTIMIZED",
+    "matches": 6,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.024757447084395538,
+      "normalized_robust_mean": 0.2986849752026279
+    },
+    "initial_validation": {
+      "count": 43,
+      "rgb_mae": 0.01563994710186028,
+      "normalized_robust_mean": 0.12229120804103553
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.01663984850273918
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.026807193030270914,
+          "normalized_robust_mean": 0.3585013969145246
+        },
+        "validation_photo": {
+          "count": 43,
+          "rgb_mae": 0.04097467557594742,
+          "normalized_robust_mean": 0.623646211093162
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.17632698070846495,
+          0.09280158256809976,
+          -0.013776294869528296
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": true,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.026251394605653806,
+          "normalized_robust_mean": 0.3312246235137092
+        },
+        "validation_photo": {
+          "count": 43,
+          "rgb_mae": 0.02905435452975753,
+          "normalized_robust_mean": 0.34259622275982193
+        },
+        "normal_angle_degree": 11.268991241217917
+      }
+    },
+    "initial_jac_error": 6.94776062710072e-09,
+    "probe_jac_error": 6.516246109254941e-09,
+    "jac_singular_values": [
+      34.122383158686475,
+      4.124658008911687,
+      0.7397363925853823
+    ]
+  },
+  {
+    "plane_id": 46,
+    "tag": "table",
+    "fit_photo": 231,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 47,
+    "tag": "table",
+    "fit_photo": 41,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 48,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 49,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 512,
+    "status": "OPTIMIZED",
+    "matches": 1,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.015596419995419266,
+      "normalized_robust_mean": 0.16157750029806345
+    },
+    "initial_validation": {
+      "count": 512,
+      "rgb_mae": 0.013617197483497592,
+      "normalized_robust_mean": 0.11707848892623257
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.02432358708756047
+        ],
+        "accepted": true,
+        "nfev": 13,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.020049504845726776,
+          "normalized_robust_mean": 0.2937686709965058
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.014693615046016809,
+          "normalized_robust_mean": 0.13055010424837052
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.17632698070846495,
+          -0.17632697071718859,
+          -0.0006687880570938261
+        ],
+        "accepted": true,
+        "nfev": 22,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": true,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.018394412746180585,
+          "normalized_robust_mean": 0.2557495588885204
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.014508004918769678,
+          "normalized_robust_mean": 0.12509240364455365
+        },
+        "normal_angle_degree": 14.001941784425231
+      }
+    },
+    "initial_jac_error": 8.858104061131029e-09,
+    "probe_jac_error": 5.036863671386554e-09,
+    "jac_singular_values": [
+      21.214520521203724,
+      2.5353338306083577,
+      1.1785078984123276
+    ]
+  },
+  {
+    "plane_id": 50,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 1,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 51,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 52,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 2,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 53,
+    "tag": "table",
+    "fit_photo": 18,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 54,
+    "tag": "table",
+    "fit_photo": 336,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 55,
+    "tag": "screen",
+    "fit_photo": 350,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 56,
+    "tag": "screen",
+    "fit_photo": 218,
+    "validation_photo": 49,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 218,
+      "rgb_mae": 0.012884653073805083,
+      "normalized_robust_mean": 0.12039118229756746
+    },
+    "initial_validation": {
+      "count": 49,
+      "rgb_mae": 0.027048553734140748,
+      "normalized_robust_mean": 0.32307168248458457
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.10134972081771186
+        ],
+        "accepted": true,
+        "nfev": 20,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 218,
+          "rgb_mae": 0.018378643681454875,
+          "normalized_robust_mean": 0.24252181504100404
+        },
+        "validation_photo": {
+          "count": 49,
+          "rgb_mae": 0.02867873328769286,
+          "normalized_robust_mean": 0.3569015012216092
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.17632698070845798,
+          0.17632698070846495,
+          -0.09520521062837631
+        ],
+        "accepted": true,
+        "nfev": 16,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": true,
+        "fit_photo": {
+          "count": 218,
+          "rgb_mae": 0.017652358565760053,
+          "normalized_robust_mean": 0.23327048429625455
+        },
+        "validation_photo": {
+          "count": 49,
+          "rgb_mae": 0.028457858511641464,
+          "normalized_robust_mean": 0.35490276297371204
+        },
+        "normal_angle_degree": 14.001942165516637
+      }
+    },
+    "initial_jac_error": 3.3962414632435176e-09,
+    "probe_jac_error": 3.376181976869865e-09,
+    "jac_singular_values": [
+      25.85119197052351,
+      1.52911868817115,
+      0.45946266511884404
+    ]
+  },
+  {
+    "plane_id": 57,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 58,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 48,
+    "status": "OPTIMIZED",
+    "matches": 6,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.01820221873370846,
+      "normalized_robust_mean": 0.1871222267533643
+    },
+    "initial_validation": {
+      "count": 48,
+      "rgb_mae": 0.014688115797367722,
+      "normalized_robust_mean": 0.10938477014363829
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.006166018668190386
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.01703407892830722,
+          "normalized_robust_mean": 0.1646840381041995
+        },
+        "validation_photo": {
+          "count": 48,
+          "rgb_mae": 0.020507155931743556,
+          "normalized_robust_mean": 0.18566721514127446
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.021379591438593488,
+          -0.050527237148028606,
+          -0.005803062098073245
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.017805040268428895,
+          "normalized_robust_mean": 0.18011937885523222
+        },
+        "validation_photo": {
+          "count": 48,
+          "rgb_mae": 0.019365181595532195,
+          "normalized_robust_mean": 0.16947714770141106
+        },
+        "normal_angle_degree": 3.140343000443924
+      }
+    },
+    "initial_jac_error": 5.080889683951193e-09,
+    "probe_jac_error": 5.291242844130935e-09,
+    "jac_singular_values": [
+      48.213860010218305,
+      9.009948965927299,
+      3.8087852129877713
+    ]
+  },
+  {
+    "plane_id": 59,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 512,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.015907828686629093,
+      "normalized_robust_mean": 0.15102448078669203
+    },
+    "initial_validation": {
+      "count": 512,
+      "rgb_mae": 0.015198047841534399,
+      "normalized_robust_mean": 0.13257452348604454
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.008330621201289237
+        ],
+        "accepted": true,
+        "nfev": 15,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.015265247709579377,
+          "normalized_robust_mean": 0.1357922340641005
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.015626917478283295,
+          "normalized_robust_mean": 0.13725809625259974
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.057049507036888894,
+          0.036797364969531406,
+          0.006205794318861317
+        ],
+        "accepted": true,
+        "nfev": 13,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.014894311644410805,
+          "normalized_robust_mean": 0.12769095812387485
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.015607633123178524,
+          "normalized_robust_mean": 0.13706323275141433
+        },
+        "normal_angle_degree": 3.8836997065458254
+      }
+    },
+    "initial_jac_error": 7.962091705484826e-09,
+    "probe_jac_error": 5.120144070875056e-09,
+    "jac_singular_values": [
+      17.770855498644853,
+      2.7685855940068502,
+      1.0195871689134015
+    ]
+  },
+  {
+    "plane_id": 60,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 61,
+    "tag": "table",
+    "fit_photo": 188,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 62,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 493,
+    "status": "OPTIMIZED",
+    "matches": 2,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.022683766704233155,
+      "normalized_robust_mean": 0.33548507309917525
+    },
+    "initial_validation": {
+      "count": 493,
+      "rgb_mae": 0.01914255023738507,
+      "normalized_robust_mean": 0.17574896140701995
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.027003309783179396
+        ],
+        "accepted": true,
+        "nfev": 8,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.022505531435416667,
+          "normalized_robust_mean": 0.3359913382704008
+        },
+        "validation_photo": {
+          "count": 493,
+          "rgb_mae": 0.019078181048275206,
+          "normalized_robust_mean": 0.17386521709497385
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.07499210304284602,
+          -0.05612240306887968,
+          -0.006546338232399243
+        ],
+        "accepted": true,
+        "nfev": 11,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.021219859016316202,
+          "normalized_robust_mean": 0.3003785994802794
+        },
+        "validation_photo": {
+          "count": 493,
+          "rgb_mae": 0.01844047249819607,
+          "normalized_robust_mean": 0.16506113708297573
+        },
+        "normal_angle_degree": 5.3511208207021195
+      }
+    },
+    "initial_jac_error": 4.495322569104625e-09,
+    "probe_jac_error": 3.0451059293094435e-09,
+    "jac_singular_values": [
+      28.23143017000176,
+      4.1203577499552555,
+      1.1000409011340595
+    ]
+  },
+  {
+    "plane_id": 63,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 2,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 64,
+    "tag": "table",
+    "fit_photo": 432,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 65,
+    "tag": "table",
+    "fit_photo": 266,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 66,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 67,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 68,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 69,
+    "tag": "table",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 70,
+    "tag": "table",
+    "fit_photo": 111,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 71,
+    "tag": "table",
+    "fit_photo": 216,
+    "validation_photo": 21,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 216,
+      "rgb_mae": 0.04564378001071114,
+      "normalized_robust_mean": 0.8302369252738517
+    },
+    "initial_validation": {
+      "count": 21,
+      "rgb_mae": 0.05239517291252861,
+      "normalized_robust_mean": 0.9673295560234186
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.0031917075543492577
+        ],
+        "accepted": true,
+        "nfev": 9,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 216,
+          "rgb_mae": 0.04494047000433246,
+          "normalized_robust_mean": 0.8112774189937341
+        },
+        "validation_photo": {
+          "count": 21,
+          "rgb_mae": 0.04785575792324167,
+          "normalized_robust_mean": 0.8358866473586888
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.053668445537873456,
+          0.163929548360885,
+          0.002153078916879096
+        ],
+        "accepted": true,
+        "nfev": 10,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 216,
+          "rgb_mae": 0.044312144930043935,
+          "normalized_robust_mean": 0.7971505848648404
+        },
+        "validation_photo": {
+          "count": 21,
+          "rgb_mae": 0.060562154236081744,
+          "normalized_robust_mean": 1.2100874428617485
+        },
+        "normal_angle_degree": 9.786711578362493
+      }
+    },
+    "initial_jac_error": 3.1976374726233175e-09,
+    "probe_jac_error": 2.609204213921164e-09,
+    "jac_singular_values": [
+      46.51474305793163,
+      2.5466883516557397,
+      0.43899551003480547
+    ]
+  },
+  {
+    "plane_id": 72,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 268,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.0208285656685028,
+      "normalized_robust_mean": 0.3111589475953887
+    },
+    "initial_validation": {
+      "count": 268,
+      "rgb_mae": 0.014360138401453356,
+      "normalized_robust_mean": 0.10986646898054395
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.01409627034830059
+        ],
+        "accepted": true,
+        "nfev": 16,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.019512275490740784,
+          "normalized_robust_mean": 0.28373755352392194
+        },
+        "validation_photo": {
+          "count": 268,
+          "rgb_mae": 0.015790561863883917,
+          "normalized_robust_mean": 0.13246949782202555
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.06993801270514233,
+          -0.06695751007133037,
+          0.013952671902977573
+        ],
+        "accepted": true,
+        "nfev": 26,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.01939642065831457,
+          "normalized_robust_mean": 0.27659436892056766
+        },
+        "validation_photo": {
+          "count": 268,
+          "rgb_mae": 0.015886502312035384,
+          "normalized_robust_mean": 0.1335935856568443
+        },
+        "normal_angle_degree": 5.5302931395390855
+      }
+    },
+    "initial_jac_error": 1.6003044700175697e-08,
+    "probe_jac_error": 1.174296873020305e-08,
+    "jac_singular_values": [
+      17.241952065464424,
+      2.1079784360344047,
+      0.795175277744011
+    ]
+  },
+  {
+    "plane_id": 73,
+    "tag": "table",
+    "fit_photo": 280,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 74,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 75,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 476,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.017499157853114837,
+      "normalized_robust_mean": 0.18050423386170833
+    },
+    "initial_validation": {
+      "count": 476,
+      "rgb_mae": 0.01539032380406168,
+      "normalized_robust_mean": 0.15412475778702853
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.003581806744926412
+        ],
+        "accepted": true,
+        "nfev": 18,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.01747019249377729,
+          "normalized_robust_mean": 0.17854825555562123
+        },
+        "validation_photo": {
+          "count": 476,
+          "rgb_mae": 0.015707859653301064,
+          "normalized_robust_mean": 0.1596403575317735
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.01612669708884336,
+          0.00032929269282684637,
+          0.003483335910706943
+        ],
+        "accepted": true,
+        "nfev": 13,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.017454421101944548,
+          "normalized_robust_mean": 0.1784941526287954
+        },
+        "validation_photo": {
+          "count": 476,
+          "rgb_mae": 0.01572783136591026,
+          "normalized_robust_mean": 0.15988844538850755
+        },
+        "normal_angle_degree": 0.9241041465051755
+      }
+    },
+    "initial_jac_error": 6.065191224358439e-09,
+    "probe_jac_error": 3.969302512989448e-09,
+    "jac_singular_values": [
+      16.689890497490246,
+      1.3657849943741462,
+      0.6070893691859837
+    ]
+  },
+  {
+    "plane_id": 76,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 77,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 11,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 78,
+    "tag": "table",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 79,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 512,
+    "status": "OPTIMIZED",
+    "matches": 1,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.06600612907416614,
+      "normalized_robust_mean": 1.525012032182304
+    },
+    "initial_validation": {
+      "count": 512,
+      "rgb_mae": 0.03891203300957423,
+      "normalized_robust_mean": 0.6221310452538766
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          -0.019900851573188733
+        ],
+        "accepted": true,
+        "nfev": 59,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.08169021575016731,
+          "normalized_robust_mean": 2.084960005386103
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.038637256134795635,
+          "normalized_robust_mean": 0.6105524072297864
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          -0.015355474937034302,
+          -0.17632534334306768,
+          -0.018984431053754726
+        ],
+        "accepted": true,
+        "nfev": 35,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": true,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.07305428988080258,
+          "normalized_robust_mean": 1.7817815995647124
+        },
+        "validation_photo": {
+          "count": 512,
+          "rgb_mae": 0.03847134769559907,
+          "normalized_robust_mean": 0.6108694791073118
+        },
+        "normal_angle_degree": 10.03698876981397
+      }
+    },
+    "initial_jac_error": 1.0769473387634312e-09,
+    "probe_jac_error": 1.783238311127542e-09,
+    "jac_singular_values": [
+      91.24455310765772,
+      12.911572489713926,
+      5.541248058391314
+    ]
+  },
+  {
+    "plane_id": 80,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 376,
+    "status": "OPTIMIZED",
+    "matches": 0,
+    "initial_fit": {
+      "count": 512,
+      "rgb_mae": 0.025619246196817148,
+      "normalized_robust_mean": 0.4283163781912123
+    },
+    "initial_validation": {
+      "count": 376,
+      "rgb_mae": 0.01591608601120842,
+      "normalized_robust_mean": 0.13846491350534174
+    },
+    "arms": {
+      "plane_distance": {
+        "parameter": [
+          0.0,
+          0.0,
+          0.002984287688397831
+        ],
+        "accepted": true,
+        "nfev": 20,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.025918647653273175,
+          "normalized_robust_mean": 0.4255165658054904
+        },
+        "validation_photo": {
+          "count": 376,
+          "rgb_mae": 0.014174117390689911,
+          "normalized_robust_mean": 0.11343679988954586
+        },
+        "normal_angle_degree": 0.0
+      },
+      "plane_distance_normal": {
+        "parameter": [
+          0.1602051937643428,
+          -0.00804610236907985,
+          0.006295435243549645
+        ],
+        "accepted": true,
+        "nfev": 24,
+        "solver_success": true,
+        "solver_message": "`ftol` termination condition is satisfied.",
+        "bound_hit": false,
+        "fit_photo": {
+          "count": 512,
+          "rgb_mae": 0.0242150670913872,
+          "normalized_robust_mean": 0.37432565212225377
+        },
+        "validation_photo": {
+          "count": 376,
+          "rgb_mae": 0.014197809476029104,
+          "normalized_robust_mean": 0.11384790616491447
+        },
+        "normal_angle_degree": 9.113019438487365
+      }
+    },
+    "initial_jac_error": 3.950475104980085e-09,
+    "probe_jac_error": 2.7089128818085898e-09,
+    "jac_singular_values": [
+      40.899480227476445,
+      4.841352073699447,
+      0.6777945733654636
+    ]
+  },
+  {
+    "plane_id": 81,
+    "tag": "screen",
+    "fit_photo": 65,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 82,
+    "tag": "screen",
+    "fit_photo": 200,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 83,
+    "tag": "screen",
+    "fit_photo": 214,
+    "validation_photo": 1,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 84,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 85,
+    "tag": "screen",
+    "fit_photo": 151,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 86,
+    "tag": "screen",
+    "fit_photo": 193,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 87,
+    "tag": "screen",
+    "fit_photo": 390,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 88,
+    "tag": "screen",
+    "fit_photo": 65,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 89,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 90,
+    "tag": "screen",
+    "fit_photo": 512,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 91,
+    "tag": "screen",
+    "fit_photo": 67,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 92,
+    "tag": "screen",
+    "fit_photo": 184,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 93,
+    "tag": "screen",
+    "fit_photo": 132,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  }
+]
