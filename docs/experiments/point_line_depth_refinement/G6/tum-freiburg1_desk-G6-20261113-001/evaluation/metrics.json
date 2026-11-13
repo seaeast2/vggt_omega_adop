@@ -1,0 +1,2035 @@
+{
+  "decision": "COMPLETED_EFFECT_NOT_ESTABLISHED",
+  "scientific_improvement": false,
+  "baseline_geometry": {
+    "fit": {
+      "relative_3d": {
+        "count": 94,
+        "mean": 0.09849601072251708,
+        "median": 0.006202786207577441,
+        "p90": 0.010130990852235625,
+        "max": 1.962627058183428
+      },
+      "relative_z": {
+        "count": 94,
+        "mean": 0.044990137894534196,
+        "median": 0.004004524277934759,
+        "p90": 0.007897104933093205,
+        "max": 0.6879632568125513
+      },
+      "reprojection_px": {
+        "count": 94,
+        "mean": 39.59165941750335,
+        "median": 1.8277587916808404,
+        "p90": 4.024087837626846,
+        "max": 717.412987326914
+      },
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "relative_3d": {
+            "count": 48,
+            "mean": 0.0061931576687639656,
+            "median": 0.006010948032843786,
+            "p90": 0.008644929104921142,
+            "max": 0.010506557740003168
+          },
+          "relative_z": {
+            "count": 48,
+            "mean": 0.0036082226446891596,
+            "median": 0.0034727584077569066,
+            "p90": 0.006188487801543317,
+            "max": 0.009065670123798511
+          },
+          "reprojection_px": {
+            "count": 48,
+            "mean": 2.1578908155853296,
+            "median": 2.266797076804335,
+            "p90": 3.0092169349218882,
+            "max": 3.665800999997637
+          }
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "relative_3d": {
+            "count": 16,
+            "mean": 0.18556255338324812,
+            "median": 0.006108606437293662,
+            "p90": 0.46636065582161246,
+            "max": 1.962627058183428
+          },
+          "relative_z": {
+            "count": 16,
+            "mean": 0.08754495069985183,
+            "median": 0.005170936426773715,
+            "p90": 0.33154878508851854,
+            "max": 0.6879632568125513
+          },
+          "reprojection_px": {
+            "count": 16,
+            "mean": 79.57530181762282,
+            "median": 1.3921453192350963,
+            "p90": 269.23299719641176,
+            "max": 717.412987326914
+          }
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "relative_3d": {
+            "count": 30,
+            "mean": 0.10373232111553911,
+            "median": 0.008161928903922235,
+            "p90": 0.013718821732575805,
+            "max": 1.9592278103345633
+          },
+          "relative_z": {
+            "count": 30,
+            "mean": 0.04381724033906155,
+            "median": 0.002738640650361607,
+            "p90": 0.009825646273521582,
+            "max": 0.6641202894475583
+          },
+          "reprojection_px": {
+            "count": 30,
+            "mean": 37.04178561930187,
+            "median": 2.4508220324746253,
+            "p90": 4.192175622708195,
+            "max": 531.4713011611938
+          }
+        }
+      ]
+    },
+    "validation": {
+      "relative_3d": {
+        "count": 20,
+        "mean": 0.009058277229058912,
+        "median": 0.00886997118721421,
+        "p90": 0.013592456105976243,
+        "max": 0.01472187200582322
+      },
+      "relative_z": {
+        "count": 20,
+        "mean": 0.0032868623648517406,
+        "median": 0.0026955968200260915,
+        "p90": 0.00590374003345743,
+        "max": 0.01021987513073955
+      },
+      "reprojection_px": {
+        "count": 20,
+        "mean": 3.4322896525022366,
+        "median": 3.4246935333955735,
+        "p90": 4.588950589040924,
+        "max": 5.868888365924824
+      },
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "relative_3d": {
+            "count": 12,
+            "mean": 0.0075239187879655575,
+            "median": 0.007945522582254654,
+            "p90": 0.011916346672527911,
+            "max": 0.012516967454279061
+          },
+          "relative_z": {
+            "count": 12,
+            "mean": 0.0027817974587729635,
+            "median": 0.0020913929465774337,
+            "p90": 0.0058339748496522145,
+            "max": 0.007334717896163618
+          },
+          "reprojection_px": {
+            "count": 12,
+            "mean": 3.0652910358844068,
+            "median": 3.324790000714736,
+            "p90": 5.151731887913283,
+            "max": 5.868888365924824
+          }
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "relative_3d": {
+            "count": 6,
+            "mean": 0.009975022843523352,
+            "median": 0.007930518978032543,
+            "p90": 0.014515660273132124,
+            "max": 0.01472187200582322
+          },
+          "relative_z": {
+            "count": 6,
+            "mean": 0.004476777696056581,
+            "median": 0.004488766096455505,
+            "p90": 0.007824219987001273,
+            "max": 0.01021987513073955
+          },
+          "reprojection_px": {
+            "count": 6,
+            "mean": 3.492738589807782,
+            "median": 3.2568726000758352,
+            "p90": 4.482178392385062,
+            "max": 4.610161039798307
+          }
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "relative_3d": {
+            "count": 2,
+            "mean": 0.009675890055687825,
+            "median": 0.009675890055687825,
+            "p90": 0.010083782932319275,
+            "max": 0.010185756151477137
+          },
+          "relative_z": {
+            "count": 2,
+            "mean": 0.0026020119397256783,
+            "median": 0.0026020119397256783,
+            "p90": 0.003264121793850898,
+            "max": 0.0034296492573822027
+          },
+          "reprojection_px": {
+            "count": 2,
+            "mean": 3.738839331814522,
+            "median": 3.738839331814522,
+            "p90": 3.9896857200051787,
+            "max": 4.052397317052843
+          }
+        }
+      ]
+    }
+  },
+  "baseline_wall": {
+    "frames": [
+      {
+        "frame": 0,
+        "fixed_points": 10267,
+        "signed_distance": {
+          "count": 10267,
+          "mean": -1.2695482244376949e-07,
+          "median": 1.149111118668375e-05,
+          "p90": 0.002126468609606286,
+          "max": 0.003765481100935216
+        }
+      },
+      {
+        "frame": 1,
+        "fixed_points": 7517,
+        "signed_distance": {
+          "count": 7517,
+          "mean": 0.0016558488773423577,
+          "median": 0.001490586349579652,
+          "p90": 0.006415995592877336,
+          "max": 0.012226390093198265
+        }
+      },
+      {
+        "frame": 2,
+        "fixed_points": 0,
+        "signed_distance": {
+          "count": 0
+        }
+      }
+    ],
+    "layer_gap_model_units": 0.0014790952383929683,
+    "thickness_p95_p05": 0.008796177353108421,
+    "reference_plane_frozen": true,
+    "evaluation_ids_fixed": true,
+    "plot_clipped_fraction": 0.0,
+    "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+  },
+  "comparisons": [
+    {
+      "code": "G2",
+      "arm": "F-P",
+      "validation_3d": 0.00886997118721421,
+      "validation_z": 0.0026955968200260915,
+      "gain_3d_vs_B1": 0.0,
+      "gain_z_vs_B1": 0.0,
+      "per_pair_3d_guard": true,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": false,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66973,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 116714,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 122618,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 62346,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_loss_fraction": 0.0
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 113617,
+            "loss_fraction": 0.0028260736007863496,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120389,
+            "loss_fraction": 0.01151964004203887,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54710,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.01151964004203887
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": -1.2695482244376949e-07,
+              "median": 1.149111118668375e-05,
+              "p90": 0.002126468609606286,
+              "max": 0.003765481100935216
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": 0.0016558488773423577,
+              "median": 0.001490586349579652,
+              "p90": 0.006415995592877336,
+              "max": 0.012226390093198265
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.0014790952383929683,
+        "thickness_p95_p05": 0.008796177353108421,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0857902916357183,
+          1.040354115410115,
+          1.0971586621429754,
+          1.0496433049623297,
+          1.0756856742221124,
+          1.0244336827043332
+        ],
+        "depth_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-P/proposed"
+    },
+    {
+      "code": "G2",
+      "arm": "F-PL",
+      "validation_3d": 0.010158531357374913,
+      "validation_z": 0.0033378910871163766,
+      "gain_3d_vs_B1": -0.14527219344501618,
+      "gain_z_vs_B1": -0.23827534678723508,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": true,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66952,
+            "loss_fraction": 0.0003135591954966932,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 115318,
+            "loss_fraction": 0.011960861593296457,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 121852,
+            "loss_fraction": 0.006247043664062368,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 61788,
+            "loss_fraction": 0.008950052930420505,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.011960861593296457
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 112366,
+            "loss_fraction": 0.013805632838624127,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120026,
+            "loss_fraction": 0.01450013137151862,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54501,
+            "loss_fraction": 0.0038201425699141422,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.01450013137151862
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.0028589744723062213,
+              "median": 0.0027652169375264393,
+              "p90": 0.005287178517940891,
+              "max": 0.007314557773682271
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": -0.004309040371445198,
+              "median": -0.0045152636334064526,
+              "p90": 0.0013701389289649637,
+              "max": 0.007587818713487345
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.007280480570932892,
+        "thickness_p95_p05": 0.013929520999324057,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0978660516528678,
+          1.0244818887283786,
+          1.1111111109229506,
+          1.052529201901913,
+          1.0742252436046411,
+          1.0220522956538327
+        ],
+        "depth_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PL/proposed"
+    },
+    {
+      "code": "G2",
+      "arm": "F-PZ",
+      "validation_3d": 0.008667774987770863,
+      "validation_z": 0.0026765727233386163,
+      "gain_3d_vs_B1": 0.022795586950136525,
+      "gain_z_vs_B1": 0.007057471112201054,
+      "per_pair_3d_guard": true,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": false,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66940,
+            "loss_fraction": 0.000492735878637629,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 116672,
+            "loss_fraction": 0.00035985400209059826,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 122600,
+            "loss_fraction": 0.00014679737069600574,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 62280,
+            "loss_fraction": 0.0010586084111250393,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127680,
+            "loss_fraction": 0.0001487873828299735,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_loss_fraction": 0.0010586084111250393
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 113629,
+            "loss_fraction": 0.0027207540877135505,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120461,
+            "loss_fraction": 0.010928468208092457,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54710,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.010928468208092457
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": -0.0006495167854090163,
+              "median": -0.0006506302407281728,
+              "p90": 0.0014919616519190753,
+              "max": 0.0032172204381111444
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": 0.0010126158144639005,
+              "median": 0.0008450851594762991,
+              "p90": 0.005713832399314122,
+              "max": 0.011638221333154796
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.0014957154002044719,
+        "thickness_p95_p05": 0.008778363245058738,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0852834223986616,
+          1.0433750110453983,
+          1.0974936451426658,
+          1.0525508199572835,
+          1.075688992534833,
+          1.0279553935306445
+        ],
+        "depth_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PZ/proposed"
+    },
+    {
+      "code": "G2",
+      "arm": "F-PLZ",
+      "validation_3d": 0.010116561325684111,
+      "validation_z": 0.0033298339634201214,
+      "gain_3d_vs_B1": -0.1405404946824204,
+      "gain_z_vs_B1": -0.23528635242561644,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": true,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66954,
+            "loss_fraction": 0.0002836964149731669,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 115333,
+            "loss_fraction": 0.011832342306835497,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 121862,
+            "loss_fraction": 0.006165489569231242,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 61792,
+            "loss_fraction": 0.00888589484489788,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.011832342306835497
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 112380,
+            "loss_fraction": 0.013682760073372546,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120028,
+            "loss_fraction": 0.014483709931686795,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54502,
+            "loss_fraction": 0.0038018643757996573,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.014483709931686795
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.002795585425380098,
+              "median": 0.0027052435999185137,
+              "p90": 0.005207180534971522,
+              "max": 0.007235764761123456
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": -0.004347399503575034,
+              "median": -0.004552347070899135,
+              "p90": 0.0013275919771368067,
+              "max": 0.007551240972611697
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.007257590670817648,
+        "thickness_p95_p05": 0.013888009689166815,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0977251147353457,
+          1.0248006638213392,
+          1.1111111110209615,
+          1.0527469357462662,
+          1.0743748334631182,
+          1.0223299189335746
+        ],
+        "depth_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PLZ/proposed"
+    },
+    {
+      "code": "G3",
+      "arm": "D-P",
+      "validation_3d": 0.00976839079797746,
+      "validation_z": 0.0030656939105063964,
+      "gain_3d_vs_B1": -0.10128777104240137,
+      "gain_z_vs_B1": -0.13729690127647598,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": false,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 130644,
+            "loss_fraction": 0.002824125665959354,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66776,
+            "loss_fraction": 0.002941483881564233,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 116714,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 122379,
+            "loss_fraction": 0.0019491428664633048,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 62346,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_loss_fraction": 0.002941483881564233
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126044,
+            "loss_fraction": 9.519578599992418e-05,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 113725,
+            "loss_fraction": 0.00187819798313138,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120323,
+            "loss_fraction": 0.012061547556489804,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54710,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.012061547556489804
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": -8.534791276150357e-05,
+              "median": -9.609763663664429e-05,
+              "p90": 0.002087929000865226,
+              "max": 0.00368156287993247
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": 0.001147474414720929,
+              "median": 0.000971865446986242,
+              "p90": 0.005894930473796504,
+              "max": 0.011599694013131219
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.0010679630836228863,
+        "thickness_p95_p05": 0.008526128615538094,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0897351194002418,
+          1.0397025112561387,
+          1.0960849257875473,
+          1.045937009204245,
+          1.0718586370508436,
+          1.0202216352721487
+        ],
+        "depth_scale": [
+          1.0,
+          1.001173713516319,
+          1.001422850076448
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-P/proposed"
+    },
+    {
+      "code": "G3",
+      "arm": "D-PL",
+      "validation_3d": 0.010639658107445637,
+      "validation_z": 0.00276397033108923,
+      "gain_3d_vs_B1": -0.1995143933254683,
+      "gain_z_vs_B1": -0.02536488786274672,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": true,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66911,
+            "loss_fraction": 0.0009257461962283164,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 115308,
+            "loss_fraction": 0.012046541117603726,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 121765,
+            "loss_fraction": 0.00695656428909297,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 61772,
+            "loss_fraction": 0.00920668527251145,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.012046541117603726
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 112356,
+            "loss_fraction": 0.013893399099518144,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120042,
+            "loss_fraction": 0.0143687598528639,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54499,
+            "loss_fraction": 0.00385669895814289,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.0143687598528639
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.0029979043025329943,
+              "median": 0.002902176322860453,
+              "p90": 0.0054425984687876015,
+              "max": 0.007473724794645701
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": -0.00516924654235731,
+              "median": -0.005375357520083804,
+              "p90": 0.0005260672370417577,
+              "max": 0.006731727273092989
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.008277533842944256,
+        "thickness_p95_p05": 0.014952955660909609,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0980442692077594,
+          1.0238173702479234,
+          1.111111101958704,
+          1.0520108244247204,
+          1.072225438244348,
+          1.021894371772885
+        ],
+        "depth_scale": [
+          1.0,
+          1.0007026758887352,
+          1.0015452442367878
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PL/proposed"
+    },
+    {
+      "code": "G3",
+      "arm": "D-PZ",
+      "validation_3d": 0.01023091564980736,
+      "validation_z": 0.003113058697223877,
+      "gain_3d_vs_B1": -0.15343279407208335,
+      "gain_z_vs_B1": -0.1548680700675944,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": false,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 130611,
+            "loss_fraction": 0.003076007144274695,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66713,
+            "loss_fraction": 0.0038821614680543126,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 116714,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 122328,
+            "loss_fraction": 0.002365068750101895,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 62346,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_loss_fraction": 0.0038821614680543126
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126041,
+            "loss_fraction": 0.00011899473249987746,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 113755,
+            "loss_fraction": 0.0016148992004493268,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120356,
+            "loss_fraction": 0.011790593799264282,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54710,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.011790593799264282
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": -0.0007296266811553456,
+              "median": -0.0007459628851883421,
+              "p90": 0.0014581114884852865,
+              "max": 0.003154363769434145
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": 0.0006067445641687306,
+              "median": 0.0004349756368491938,
+              "p90": 0.005325593072805209,
+              "max": 0.011095388614198804
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.001180938522037536,
+        "thickness_p95_p05": 0.008523251413220717,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0904721839919707,
+          1.042375670702725,
+          1.0962871617218781,
+          1.0479798612489795,
+          1.0706257842647458,
+          1.0224126244564928
+        ],
+        "depth_scale": [
+          1.0,
+          1.001248827236997,
+          1.001658976008512
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PZ/proposed"
+    },
+    {
+      "code": "G3",
+      "arm": "D-PLZ",
+      "validation_3d": 0.010651031691098756,
+      "validation_z": 0.0026696095410631096,
+      "gain_3d_vs_B1": -0.20079665043916828,
+      "gain_z_vs_B1": 0.009640640161732496,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": true,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66900,
+            "loss_fraction": 0.0010899914891076001,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 115310,
+            "loss_fraction": 0.012029405212742206,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 121748,
+            "loss_fraction": 0.007095206250305797,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 61766,
+            "loss_fraction": 0.009302922400795555,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.012029405212742206
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 112358,
+            "loss_fraction": 0.013875845847339363,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120064,
+            "loss_fraction": 0.014188124014713588,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54497,
+            "loss_fraction": 0.003893255346371749,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.014188124014713588
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.0029621866203709086,
+              "median": 0.00286546002489246,
+              "p90": 0.005409894764065904,
+              "max": 0.007443221525580193
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": -0.005312498057225918,
+              "median": -0.005520885250691693,
+              "p90": 0.00038005444880733955,
+              "max": 0.0065904913972716535
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.008386345275584153,
+        "thickness_p95_p05": 0.015055181779930222,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0980991084182017,
+          1.0239619135711555,
+          1.1111111105592963,
+          1.0521248068071667,
+          1.0715789142186125,
+          1.022263234148481
+        ],
+        "depth_scale": [
+          1.0,
+          1.0007936190577016,
+          1.0017693968530221
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PLZ/proposed"
+    },
+    {
+      "code": "G4",
+      "arm": "D-P+E",
+      "validation_3d": 0.009930168410384337,
+      "validation_z": 0.0028534740674128105,
+      "gain_3d_vs_B1": -0.11952656900378308,
+      "gain_z_vs_B1": -0.058568568642691485,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": false,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 130356,
+            "loss_fraction": 0.005022364022165604,
+            "passed": false
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66556,
+            "loss_fraction": 0.0062263897391485745,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 116714,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 122005,
+            "loss_fraction": 0.004999266013146486,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 62346,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.0062263897391485745
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126016,
+            "loss_fraction": 0.0003173192866662289,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 113800,
+            "loss_fraction": 0.001219951026426469,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120172,
+            "loss_fraction": 0.013301366263793968,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54710,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.013301366263793968
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.0001315900549507447,
+              "median": 8.516690672672085e-05,
+              "p90": 0.0023080933455581357,
+              "max": 0.004176516128662967
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": 0.001311780621835862,
+              "median": 0.00112842356245092,
+              "p90": 0.006154204542243952,
+              "max": 0.011724006627878435
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.0010432566557241991,
+        "thickness_p95_p05": 0.00862020625015364,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.094141300007059,
+          1.0375863759214705,
+          1.0960003026109493,
+          1.0413874198353172,
+          1.0675853955370083,
+          1.0141768024270559
+        ],
+        "depth_scale": [
+          1.0,
+          1.001672301773021,
+          1.0029032471216142
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-P+E/proposed"
+    },
+    {
+      "code": "G4",
+      "arm": "D-PLZ+E",
+      "validation_3d": 0.01026128458786621,
+      "validation_z": 0.002181135651927133,
+      "gain_3d_vs_B1": -0.15685658626011487,
+      "gain_z_vs_B1": 0.19085241690334784,
+      "per_pair_3d_guard": false,
+      "numeric_3d_acceptance": false,
+      "scientific_improvement": false,
+      "support_decision": "LOW_SUPPORT_DIAGNOSTIC_ONLY",
+      "bound_limited": true,
+      "converged": true,
+      "coverage_B1": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 131014,
+            "retained_initial_count": 131014,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 66973,
+            "retained_initial_count": 66853,
+            "loss_fraction": 0.0017917668314096913,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 116714,
+            "retained_initial_count": 115297,
+            "loss_fraction": 0.012140788594341756,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 122618,
+            "retained_initial_count": 121669,
+            "loss_fraction": 0.007739483599471519,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 62346,
+            "retained_initial_count": 61741,
+            "loss_fraction": 0.009703910435312602,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 127699,
+            "retained_initial_count": 127699,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.012140788594341756
+      },
+      "coverage_raw": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "initial_valid_count": 126056,
+            "retained_initial_count": 126056,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "initial_valid_count": 59174,
+            "retained_initial_count": 59174,
+            "loss_fraction": 0.0,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "initial_valid_count": 113939,
+            "retained_initial_count": 112345,
+            "loss_fraction": 0.013989941986501497,
+            "passed": false
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "initial_valid_count": 121792,
+            "retained_initial_count": 120083,
+            "loss_fraction": 0.014032120336311071,
+            "passed": false
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "initial_valid_count": 54710,
+            "retained_initial_count": 54493,
+            "loss_fraction": 0.003966368122829467,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "initial_valid_count": 121571,
+            "retained_initial_count": 121571,
+            "loss_fraction": 0.0,
+            "passed": true
+          }
+        ],
+        "passed": false,
+        "maximum_loss_fraction": 0.014032120336311071
+      },
+      "wall": {
+        "frames": [
+          {
+            "frame": 0,
+            "fixed_points": 10267,
+            "signed_distance": {
+              "count": 10267,
+              "mean": 0.0030623937576950517,
+              "median": 0.002958007698438654,
+              "p90": 0.005539485581750083,
+              "max": 0.007574496164668467
+            }
+          },
+          {
+            "frame": 1,
+            "fixed_points": 7517,
+            "signed_distance": {
+              "count": 7517,
+              "mean": -0.005722383046789596,
+              "median": -0.005930805795583194,
+              "p90": -2.003272492727851e-05,
+              "max": 0.0061812728004437545
+            }
+          },
+          {
+            "frame": 2,
+            "fixed_points": 0,
+            "signed_distance": {
+              "count": 0
+            }
+          }
+        ],
+        "layer_gap_model_units": 0.008888813494021848,
+        "thickness_p95_p05": 0.015610798981436733,
+        "reference_plane_frozen": true,
+        "evaluation_ids_fixed": true,
+        "plot_clipped_fraction": 0.0,
+        "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+      },
+      "parameters": {
+        "beta": [
+          1.0983868041054163,
+          1.0234410291092428,
+          1.1111058966422682,
+          1.0517538015302093,
+          1.0697611319277098,
+          1.0222725411298856
+        ],
+        "depth_scale": [
+          1.0,
+          1.0011461300942612,
+          1.0027919473557285
+        ]
+      },
+      "source": "results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-PLZ+E/proposed"
+    }
+  ],
+  "ply_files_indexed": 80,
+  "review_directory": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/ply_review",
+  "all_original_observation_ids_rgb_poses_preserved": true,
+  "elapsed_seconds": 3.1096127033233643,
+  "process_peak_rss_mib": 228.0546875,
+  "gt_accuracy_evaluated": false
+}

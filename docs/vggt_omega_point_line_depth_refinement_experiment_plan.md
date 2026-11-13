@@ -1,10 +1,12 @@
 # C3a를 기준으로 한 점·선·깊이 제약 기반 Pointmap 보정 실험 계획
 
-> 작성일: 2026-11-13 · 상태: **계획 작성 완료, 실험 미착수**<br>
+> 작성일: 2026-11-13 · 상태: **G0~G6 및 G0a/G0b/G5a 실행 완료 · 효과 판정은 탐색적**<br>
 > 연구 용도: 대학원 졸업논문 실험<br>
 > 실험 계열: `point_line_depth_refinement`, 코드 `G0`~`G6`<br>
 > 주 입력: 기존 TUM `freiburg1_desk` 실내 RGB 3장(index 30/40/50)의 VGGT-Ω 공동 추론 결과<br>
 > 질문: **C3a의 FoV 보정에 선 대응과 깊이 제약을 추가하면 프레임별 표면의 정합과 형태가 어떻게 달라지는가?**
+
+실행 결과는 [종합 보고서](experiments/point_line_depth_refinement/summary.md)와 [구현·검증 기록](experiments/point_line_depth_refinement/amendments.md)을 따른다. 아래 내용은 사전 계획이며 실제 지원 부족·기술 검증·수치 변화는 실행 보고서와 구분한다.
 
 ## 1. 배경과 범위
 

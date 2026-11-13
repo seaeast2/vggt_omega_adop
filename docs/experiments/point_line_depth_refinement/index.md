@@ -1,17 +1,24 @@
-# 점·선·깊이 제약 기반 Pointmap 보정 실험
+# 점·선·깊이 제약 실험 실행 현황
 
-작성일: 2026-11-13. 상태: **계획 작성 완료, 실행 미착수**.
+2026-11-13. **G0~G6 및 G0a/G0b/G5a 실행 완료. 효과 판정은 탐색적/미확인.**
 
-[실험 계획](../../vggt_omega_point_line_depth_refinement_experiment_plan.md)에 따라 C3a `proposed_not_selected`를 주 기준선으로 사용한다. 기존 C 계열은 종료 이력을 유지하며, 이번 G 계열은 별도 실험이다. VGGT-Geo에서 착안한 자체 구현을 계획하며 공식 재현으로 표시하지 않는다.
+[실험 계획](../../vggt_omega_point_line_depth_refinement_experiment_plan.md) · [종합 보고서](summary.md)
 
-| 코드 | 검증 목적 | 상태 |
+| 코드 | 실행 | 판정·보고서 |
 | --- | --- | --- |
-| G0 | C3a 실제 제안값 재현·합성 수식/solver 검증 | 미착수 · 첫 작업 |
-| G1 | 점·선 대응, Depth 마스크, split·ROI 동결 | 미착수 |
-| G2 | FoV만 보정하며 P/PL/PZ/PLZ 비교 | 미착수 |
-| G3 | 동일 네 비교군에 제한된 깊이 배율·보존 prior 추가 | 미착수 |
-| G4 | 외부 MoGe-2 깊이 prior 추가 효과 | 미착수 · 모델 준비·선행 검증 조건부 |
-| G5 | 초기값·가중치 민감도와 고정 추가 실내 구간 | 미착수 |
-| G6 | PLY·투영·단면·수치 종합 비교 | 미착수 |
+| G0 | `tum-freiburg1_desk-G0-20261113-001` | [TECHNICAL_CHECKS_PASSED](G0/tum-freiburg1_desk-G0-20261113-001/report.md) |
+| G0a | `tum-freiburg1_desk-G0a-20261113-001` | [TECHNICAL_CHECKS_PASSED](G0a/tum-freiburg1_desk-G0a-20261113-001/report.md) |
+| G0b | `tum-freiburg1_desk-G0b-20261113-001` | [ARTIFACT_AND_OBJECTIVE_AUDIT_PASSED](G0b/tum-freiburg1_desk-G0b-20261113-001/report.md) |
+| G1 | `tum-freiburg1_desk-G1-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G1/tum-freiburg1_desk-G1-20261113-001/report.md) |
+| G2 | `tum-freiburg1_desk-G2-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G2/tum-freiburg1_desk-G2-20261113-001/report.md) |
+| G3 | `tum-freiburg1_desk-G3-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G3/tum-freiburg1_desk-G3-20261113-001/report.md) |
+| G4 | `tum-freiburg1_desk-G4-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G4/tum-freiburg1_desk-G4-20261113-001/report.md) |
+| G5 | `tum-freiburg1_desk-G5-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G5/tum-freiburg1_desk-G5-20261113-001/report.md) |
+| G5a | `tum-freiburg1_desk-G5a-20261113-001` | [LOW_SUPPORT_DIAGNOSTIC_ONLY](G5a/tum-freiburg1_desk-G5a-20261113-001/report.md) |
+| G6 | `tum-freiburg1_desk-G6-20261113-001` | [COMPLETED_EFFECT_NOT_ESTABLISHED](G6/tum-freiburg1_desk-G6-20261113-001/report.md) |
 
-P는 C3a 점 대응 손실, L은 선 재투영, Z는 교차 시점 깊이 손실이다. 주 비교에서 융합·점 삭제·색 혼합을 하지 않는다. 각 실행은 실제 제안값과 coverage 기준의 자동 선택값을 함께 보존한다.
+주 입력 30/40/50과 추가 실내 100/110/120에서 총 18개 주 최적화 비교군, 20개 초기값·민감도 비교를 실행했다. 주 비교군은 RGB/출처색 PLY와 initial/proposed/selected/last를 보존했다. G4는 실제 공식 MoGe-2 추론 결과를 사용했다.
+
+PLY 빠른 비교 경로: `results/point_line_depth_refinement/ply_review/`
+
+G0a는 numerical Jacobian 검증 보조 실행이다. G5a는 사전 지정한 추가 실내 구간이다. GT·pose 공동 최적화·융합·연속 SLAM은 미평가다.

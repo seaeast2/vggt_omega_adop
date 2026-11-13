@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G6-20261113-001/stages/G6/artifacts/external_source/README.md",
+      "bytes": 15822,
+      "sha256": "b940dbb7c39bdc96cdd9a707b0ec7c19733c8ef92681b734ac4d9393adad5c21"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G6-20261113-001/stages/G6/artifacts/external_source/LICENSE",
+      "bytes": 12500,
+      "sha256": "ad7d951c80c5fc2b2bce035f2041bc0a0dbf9028c8ecc4c9a8e1fba8130b6b59"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G6-20261113-001/stages/G6/artifacts/external_source/moge/model/v2.py",
+      "bytes": 15372,
+      "sha256": "d70c1be8c7c62770a98bbf9e7c84e7c6d536eb1cf31ac78fcc136d36a0eaab3f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G6-20261113-001/stages/G6/artifacts/external_source/moge/utils/geometry_torch.py",
+      "bytes": 16850,
+      "sha256": "1fd013761c30a411dc48b08031925518b980ab53c323a85e9d86e8a95c98c43f"
+    }
+  ]
+}

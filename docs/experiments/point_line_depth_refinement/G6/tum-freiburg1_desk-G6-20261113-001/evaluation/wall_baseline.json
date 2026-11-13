@@ -1,0 +1,39 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "fixed_points": 10267,
+      "signed_distance": {
+        "count": 10267,
+        "mean": -1.2695482244376949e-07,
+        "median": 1.149111118668375e-05,
+        "p90": 0.002126468609606286,
+        "max": 0.003765481100935216
+      }
+    },
+    {
+      "frame": 1,
+      "fixed_points": 7517,
+      "signed_distance": {
+        "count": 7517,
+        "mean": 0.0016558488773423577,
+        "median": 0.001490586349579652,
+        "p90": 0.006415995592877336,
+        "max": 0.012226390093198265
+      }
+    },
+    {
+      "frame": 2,
+      "fixed_points": 0,
+      "signed_distance": {
+        "count": 0
+      }
+    }
+  ],
+  "layer_gap_model_units": 0.0014790952383929683,
+  "thickness_p95_p05": 0.008796177353108421,
+  "reference_plane_frozen": true,
+  "evaluation_ids_fixed": true,
+  "plot_clipped_fraction": 0.0,
+  "semantic_scope": "RGB camera0 wall rectangle; projection overlap can contain occlusions; not geometric GT"
+}

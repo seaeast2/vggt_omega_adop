@@ -1,0 +1,53 @@
+{
+  "model_repo": "Ruicheng/moge-2-vitl",
+  "revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "checkpoint": {
+    "path": "/home/hlee221212/.cache/huggingface/hub/models--Ruicheng--moge-2-vitl/snapshots/39c4d5e957afe587e04eec59dc2bcc3be5ecd968/model.pt",
+    "bytes": 1305030700,
+    "sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5"
+  },
+  "source_commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+  "context": "host GPU outside sandbox",
+  "torch": "2.15.0+cu132",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "seed": 0,
+  "resolution_level": 9,
+  "use_fp16": true,
+  "depth_definition": "official output depth = points[...,2] camera Z",
+  "input_shapes": [
+    3,
+    384,
+    512,
+    3
+  ],
+  "input_provenance": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 5980036,
+      "sha256": "d820f18f5bb683efb89d331f82262b68e5cec55a7bbadf379d8091721a26afa4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/observations.npz",
+      "bytes": 20976590,
+      "sha256": "61ba80c7635bf00223b5011e6e0b59e27734ba386d1d2762064bd153084543bc"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/frames.json",
+      "bytes": 1070,
+      "sha256": "d004cdac4d1150fbb23ce5e1a24933b9f6479f06dd2ee28495675e7ed0abf70e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/manifest.json",
+      "bytes": 7861,
+      "sha256": "e90721675b0e2ed9733a3999a53ebe1453a9222cef031f5acfc856d56d1431aa"
+    }
+  ],
+  "peak_allocated_bytes": 2377264128,
+  "common_scale": 0.9313239010725576,
+  "fit_pixel_counts": [
+    1144,
+    1623,
+    896
+  ],
+  "fit_sampling": "fixed 4px stride; scale uses all fit pixels; validation tiles excluded"
+}

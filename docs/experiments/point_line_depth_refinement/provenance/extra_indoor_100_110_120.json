@@ -1,0 +1,27 @@
+{
+  "context": "host GPU outside sandbox",
+  "frame_indices": [
+    100,
+    110,
+    120
+  ],
+  "joint_forward_calls": 1,
+  "source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6",
+  "checkpoint": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/checkpoints/vggt_omega_1b_512.pt",
+    "bytes": 4576706117,
+    "sha256": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934"
+  },
+  "archive": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/pointmap_refinement/tum/rgbd_dataset_freiburg1_desk.tgz",
+    "bytes": 344011403,
+    "sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c"
+  },
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "torch": "2.15.0+cu132",
+  "raw": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/extra_indoor_100_110_120/raw.npz",
+    "bytes": 6116792,
+    "sha256": "5670b7a8f56f589287d1bcaf6e69a4a7edb6d671c7b9a84e255b6e1a65d0d0ee"
+  }
+}
