@@ -88,3 +88,28 @@ GT 동기·resize/K/pose·정렬을 이 실험에서 검증하지 않았으므�
 6군 모두 점 수·RGB·ID·K/pose·거절점 불변, H4e 제어 bitwise 재현, 5⊆20⊆uncapped 단조성·공통점 XYZ 동일성, 수치 교차 검사 및 기존 가시성 조건을 통과했고 retained=proposed다. 법선·거리·move를 다시 적용하는 숨은 gate는 없다. 음의 깊이 또는 평행 광선은 수용하지 않았다. 실제 제안점군은 각 군의 proposed에 보존했다.
 
 [H4f 상세 보고서](H4f/tum-freiburg1_desk-H4f-20261113-001/report.md) · [고정 축 단면](H4f/tum-freiburg1_desk-H4f-20261113-001/figures/wall_zoom_comparison.png). 주 PLY 디렉토리: `results/c3a_plane_refinement/tum-freiburg1_desk-H4f-20261113-001/stages/H4f/artifacts/arms/SAM_SHARED_UNCAPPED/proposed/`. 빠른 경로는 `results/c3a_plane_refinement/ply_review/H4f_*.ply`다.
+
+
+## H4g: 두 벽의 잘못된 소속 수정·수직 평면
+
+사용자가 H1 camera1의 작은 mask0이 오른쪽 벽이고, 큰 mask1의 왼쪽 부분은 오른쪽 벽에 수직인 다른 벽이라고 확인했다. 따라서 **H4f에서 큰 mask1 전체를 오른쪽 plane에 연결한 것은 잘못된 소속**이었다. H4f 원본 결과를 보존하고 H4g 5군으로 수정했다.
+
+작은 마스크에 오른쪽 우선권을 주고, 큰-minus-작은 8,521px 중 최대 연결 성분 8,290px을 왼쪽 벽으로 분리했다. 나머지 231px은 모호한 경계로 두어 C3a 원래 XYZ로 복원했다. 오른쪽 plane 계수와 camera0/1의 기존 오른쪽 H4f 보정 XYZ는 bitwise 유지했다. 작은 mask0의 H4f 비대상 16점은 같은 오른쪽 plane으로 추가 보정했다.
+
+왼쪽 plane은 H4f에서 잘못 이동된 점이 아니라 원래 C3a의 왼쪽 관측에서 추정했다. 이동 대상은 8,290점 전체이며, 적합에만 erosion·confidence·strict split을 적용해 322 fit 점을 사용했다. 기존 적합기의 자유 plane과 사용자 수직 prior를 반영한 plane을 비교했다.
+
+| 군 | camera1 왼쪽 이동 | 왼쪽→오른쪽 오소속 | 두 plane 각도 | camera0/1 기존 오른쪽 XYZ |
+| --- | --- | --- | --- | --- |
+| H4f 재현 | 8,290 | 8,290 | 한 plane | 그대로 |
+| 오소속 해제·왼쪽 C3a 복원 | 0 | 0 | 한 plane | 그대로 |
+| 별도 자유 왼쪽 plane | 8,290 | 0 | 약 73.13° | bitwise 동일 |
+| 별도 수직 왼쪽 plane | 8,290 | 0 | 90° 제약 | bitwise 동일 |
+| 수직 왼쪽 plane·camera2 연결 | 8,290 | 0 | 90° 제약 | bitwise 동일 |
+
+주 군 **TWO_PLANES_ORTHO_TRANSFER**는 오른쪽 71,627점과 왼쪽 9,098점을 각각 다른 global plane에 배치했다. 왼쪽은 camera1 8,290점과 camera2 808점이며, camera2 연결 성분에서 L 공간 지지 73.64%·R 지지0%를 확인했다. camera2의 기존 R 638점을 L로 다시 소속시키고 170점을 추가했다. 별도 camera2 L plane을 적합하지 않고 camera1에서 정한 같은 L plane을 재사용한다. 다른 모호한 성분은 L로 강제하지 않았다.
+
+수직은 사용자 제공 구조 prior이며 독립적인 각도 GT 측정이 아니다. 수직 적합은 기존 normalized 0.5% inlier 기준에서 236/322(73.29%) 지원을 얻었지만, 단일 시점·좁은 fit 지지다. 보류 관측 1,014점의 보정 전 상대 plane 잔차 median은 약 1.54%여서 실제 왼쪽 위치와 모서리 교선 정확도는 미검증이다. plane 위로 이동한 후 잔차0을 정확도 증거로 쓰지 않는다.
+
+5군 모두 점 수·RGB·카메라·비대상/거절점 불변·자기 재투영·기존 H4f 재현·오른쪽 보정값 보존·plane별 잔차 및 기존 가시성 조건을 통과했고 retained=proposed다. 이동 상한은 계속 없으며 잘못된 벽을 제한으로 숨기는 대신 plane ID를 나누었다.
+
+[H4g 상세 결과](H4g/tum-freiburg1_desk-H4g-20261113-001/report.md) · [고정 시점 모서리 단면](H4g/tum-freiburg1_desk-H4g-20261113-001/figures/corner_sections_comparison.png). 주 PLY 폴더는 `results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/`다. 원본 픽셀색·프레임색 외 `plane_colors.ply`는 오른쪽 초록/왼쪽 주황/미보정 회색이다.

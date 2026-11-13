@@ -279,3 +279,12 @@ H4d A4의 고정 벽 두께는 약 20.88% 감소했지만 source median 층 간�
 H4e의 법선·confidence·border/erosion·참조 Z 3%·이동 한도를 제거한다. uncapped는 None으로 100% 초과 이동도 허용하며 finite·positive Z와 수치 평행 방지 cos≥1e-8만 남긴다. 같은 주 SAM 소속에서 이동 5%/20%/무제한을 비교하고 H4e 35°·5% bitwise 제어와 NMS/전체 union 강제군을 추가해 6군으로 실행했다.
 
 [H4f 결과](experiments/c3a_plane_refinement/H4f/tum-freiburg1_desk-H4f-20261113-001/report.md): 주 무제한 군의 80,770점 전부를 수용했고 source0/1의 top-middle SAM ROI 17,640/8,751점도 전부 재투영했다. 자기 Z 변화 20% 초과 6,767점·100% 초과 790점을 포함한다. 제어 재현·비소속/거절점 불변·RGB/카메라/점 수·교차식·단조성·기존 가시성 조건을 통과했다. 전체 GT 정확도와 SAM 마스크 내 서로 다른 벽의 완전한 구분은 검증하지 않았다.
+
+
+## 15. H4g 후속: 두 벽의 plane ID 분리·사용자 수직 prior
+
+사용자가 H1 camera1에서 작은 경계는 오른쪽 벽, 큰 경계 왼쪽은 그 벽에 수직인 다른 벽이라고 확인했다. H4f의 단일 plane 연결을 수정하기 위해 [H4g 사전 설정](../experiments/c3a_plane_refinement/H4g/plan.md)에 따라 5군을 실행했다. 기존 H4f·H4e를 덮어쓰지 않았다.
+
+작은 mask0에 우선권을 주고 큰-minus-작은 최대 성분 8,290점을 왼쪽 L로 분리한다. 나머지 231개 모호한 점은 C3a에 복원한다. R plane은 고정하고 C3a 원래 왼쪽 fit 322점에서 자유/수직 L plane을 추정한다. 수직은 nL을 nR nullspace로 매개화해 강제하고 원래 Z로 정규화한 Huber0.005 training loss로 위치/방향을 정한다. 이동은 계속 uncapped이며 fit 지원 규칙은 이동 대상 축소에 사용하지 않는다.
+
+[H4g 실행 결과](experiments/c3a_plane_refinement/H4g/tum-freiburg1_desk-H4g-20261113-001/report.md): camera1 왼쪽 8,290점의 R 오소속은 0, camera0/1 기존 R XYZ는 bitwise 보존됐다. 자유 plane 각도는 약73.13°, 수직 prior 군은 정확히90°다. 주 전파군은 camera2의 명확한 808점에도 같은 L 계수를 재사용하며 새 L을 적합하지 않는다. 5군의 보존/가시성/수식 검사를 통과했다. 단일 프레임 L 적합 및 강제된90°는 독립 GT 정확도 증거가 아니다.

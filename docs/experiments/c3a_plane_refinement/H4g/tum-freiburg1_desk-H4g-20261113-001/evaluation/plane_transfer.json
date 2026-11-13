@@ -1,0 +1,52 @@
+[
+  {
+    "frame": 2,
+    "component": 1,
+    "pixels": 4713,
+    "left_supported": 0,
+    "right_supported": 0,
+    "left_fraction": 0.0,
+    "right_fraction": 0.0,
+    "assigned_left": false
+  },
+  {
+    "frame": 2,
+    "component": 2,
+    "pixels": 808,
+    "left_supported": 595,
+    "right_supported": 0,
+    "left_fraction": 0.7363861386138614,
+    "right_fraction": 0.0,
+    "assigned_left": true
+  },
+  {
+    "frame": 2,
+    "component": 3,
+    "pixels": 9915,
+    "left_supported": 0,
+    "right_supported": 7785,
+    "left_fraction": 0.0,
+    "right_fraction": 0.7851739788199698,
+    "assigned_left": false
+  },
+  {
+    "frame": 2,
+    "component": 5,
+    "pixels": 104,
+    "left_supported": 0,
+    "right_supported": 0,
+    "left_fraction": 0.0,
+    "right_fraction": 0.0,
+    "assigned_left": false
+  },
+  {
+    "frame": 2,
+    "component": 21,
+    "pixels": 127,
+    "left_supported": 0,
+    "right_supported": 23,
+    "left_fraction": 0.0,
+    "right_fraction": 0.18110236220472442,
+    "assigned_left": false
+  }
+]

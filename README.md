@@ -115,6 +115,8 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 
 **H4f**에서는 H1 SAM 벽 마스크를 직접 소속으로 사용하고 법선·신뢰도·경계·참조깊이·이동 상한을 제거했다. camera1의 NMS에서 빠진 넓은 마스크도 복원했다. 주 군 `SAM_SHARED_UNCAPPED`는 **80,770점(camera0/1/2: 40,065/32,089/8,616)**을 같은 평면으로 이동했다. 20% 초과 변화 6,767점·100% 초과 790점도 포함한다. 고정 벽 ROI 단면에서는 잔여 굴곡이 제거됐지만 전체 정확도를 입증한 것은 아니다. [H4f 상세 결과](docs/experiments/c3a_plane_refinement/H4f/tum-freiburg1_desk-H4f-20261113-001/report.md)
 
+**H4g**는 사용자 확인으로 드러난 H4f의 소속 오류를 수정했다. camera1 큰 마스크의 왼쪽 **8,290점**은 별도 벽이므로 오른쪽 plane에 보내지 않고 수직인 L plane에 배치한다. camera0/1의 기존 오른쪽 보정값은 bitwise 유지하고 모호한 231점은 C3a로 복원했다. 자유 적합(73.13°)과 사용자 수직 prior(90°)를 함께 보존했다. 주 군은 같은 왼쪽 plane을 camera2의 808점에도 적용한다. 수직은 부과한 제약이며 실제 위치/각도의 GT 검증은 아니다. [H4g 결과](docs/experiments/c3a_plane_refinement/H4g/tum-freiburg1_desk-H4g-20261113-001/report.md)
+
 ## 5. PLY와 결과 찾기
 
 대형 PLY/NPZ·checkpoint·입력 데이터는 로컬에 보관하며 `.gitignore` 대상이다. GitHub에는 코드·설정·보고서·그림·수치·파일 해시를 저장한다. 따라서 저장소를 clone하는 것만으로 모든 PLY가 내려오지는 않는다.

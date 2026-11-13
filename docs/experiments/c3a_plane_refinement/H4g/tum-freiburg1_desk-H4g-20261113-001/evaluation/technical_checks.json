@@ -1,0 +1,11 @@
+{
+  "known_orthogonal_plane_recovered": true,
+  "nested_mask_right_priority_left_component_ambiguity": true,
+  "H4f_control_bitwise": true,
+  "right_C01_unchanged_all_arms": true,
+  "corrected_left_never_on_right_plane": true,
+  "left_right_memberships_disjoint": true,
+  "orthogonality_dot_below_1e12": true,
+  "unassigned_and_ambiguous_C3a_restored": true,
+  "all_accepted_points_on_assigned_plane": true
+}

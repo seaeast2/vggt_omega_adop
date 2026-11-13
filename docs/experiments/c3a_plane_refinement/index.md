@@ -29,3 +29,4 @@ H0~H6 완료. 최종 split 보완: c=기본, d=마스크 NMS. a/b 및 보완 전
 | H6a | 완료·시각화/참고 수치 | [tum-freiburg1_desk-H6a-20261113-001](H6a/tum-freiburg1_desk-H6a-20261113-001/report.md) |
 | H4e | 완료·전역 재소속/이동·법선 완화 12군 | [tum-freiburg1_desk-H4e-20261113-001](H4e/tum-freiburg1_desk-H4e-20261113-001/report.md) |
 | H4f | 완료·SAM 전체/무제한 이동 6군 | [tum-freiburg1_desk-H4f-20261113-001](H4f/tum-freiburg1_desk-H4f-20261113-001/report.md) |
+| H4g | 완료·꺾인 두 벽 소속/수직 평면 5군 | [tum-freiburg1_desk-H4g-20261113-001](H4g/tum-freiburg1_desk-H4g-20261113-001/report.md) |

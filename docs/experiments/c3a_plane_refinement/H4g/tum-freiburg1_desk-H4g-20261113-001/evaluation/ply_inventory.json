@@ -1,0 +1,272 @@
+[
+  {
+    "arm": "F_CONTROL",
+    "state": "initial",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/initial/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "0bbf19ebfd005691d3c9c0edc285d2812c783a8997cefedf0bfb49cc4c2e4c35"
+  },
+  {
+    "arm": "F_CONTROL",
+    "state": "initial",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/initial/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "1445098517031f29b935f929d967f87140fca2fcf56680ec42e5a0ea3d248296"
+  },
+  {
+    "arm": "F_CONTROL",
+    "state": "proposed",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "b46fce1948e2e3b9878a62ba9ffb9cde4e6e03ace0d2dee7f53078036de21f8b"
+  },
+  {
+    "arm": "F_CONTROL",
+    "state": "proposed",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "50ceb8c07921e06291b1d50cb248d040684e28810c5ee8f9e9fe9a738a79d573"
+  },
+  {
+    "arm": "F_CONTROL",
+    "state": "retained",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/retained/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "b46fce1948e2e3b9878a62ba9ffb9cde4e6e03ace0d2dee7f53078036de21f8b"
+  },
+  {
+    "arm": "F_CONTROL",
+    "state": "retained",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/F_CONTROL/retained/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "50ceb8c07921e06291b1d50cb248d040684e28810c5ee8f9e9fe9a738a79d573"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "initial",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/initial/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "0bbf19ebfd005691d3c9c0edc285d2812c783a8997cefedf0bfb49cc4c2e4c35"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "initial",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/initial/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "1445098517031f29b935f929d967f87140fca2fcf56680ec42e5a0ea3d248296"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "proposed",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "cda53d44f301efe94f463753a2c0e719bb47fdd664a98897e553dcce093a2cfb"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "proposed",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "c3a0c5d5173db18837cb35476652e0ed3a620ce2d7a587c0fbcb4942b19bca4a"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "retained",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/retained/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "cda53d44f301efe94f463753a2c0e719bb47fdd664a98897e553dcce093a2cfb"
+  },
+  {
+    "arm": "SPLIT_RESTORE_LEFT",
+    "state": "retained",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/SPLIT_RESTORE_LEFT/retained/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "c3a0c5d5173db18837cb35476652e0ed3a620ce2d7a587c0fbcb4942b19bca4a"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "initial",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/initial/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "0bbf19ebfd005691d3c9c0edc285d2812c783a8997cefedf0bfb49cc4c2e4c35"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "initial",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/initial/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "1445098517031f29b935f929d967f87140fca2fcf56680ec42e5a0ea3d248296"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "proposed",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "35d32ba642d65a2b9b445c497167d8d82bf94de678d662bd2116a1a13ddf0a6d"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "proposed",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "4066a4ad98cc1bd9002b898c641beb8f43c6eb235019d0465e632c06110fa645"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "retained",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/retained/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "35d32ba642d65a2b9b445c497167d8d82bf94de678d662bd2116a1a13ddf0a6d"
+  },
+  {
+    "arm": "TWO_PLANES_FREE",
+    "state": "retained",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_FREE/retained/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "4066a4ad98cc1bd9002b898c641beb8f43c6eb235019d0465e632c06110fa645"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "initial",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/initial/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "0bbf19ebfd005691d3c9c0edc285d2812c783a8997cefedf0bfb49cc4c2e4c35"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "initial",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/initial/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "1445098517031f29b935f929d967f87140fca2fcf56680ec42e5a0ea3d248296"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "proposed",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "d6faf1ace1312e97c77bb152aa4ee1af3d3ff24d49334dd82e59a7525381ada7"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "proposed",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "aba77e9a834c3aba3eae2fef51bc21ae86610183f36422bcc749e2bdf7ff0eab"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "retained",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/retained/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "d6faf1ace1312e97c77bb152aa4ee1af3d3ff24d49334dd82e59a7525381ada7"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO",
+    "state": "retained",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO/retained/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "aba77e9a834c3aba3eae2fef51bc21ae86610183f36422bcc749e2bdf7ff0eab"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "initial",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/initial/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "0bbf19ebfd005691d3c9c0edc285d2812c783a8997cefedf0bfb49cc4c2e4c35"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "initial",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H0a-20261113-001/stages/H0a/artifacts/baseline/A0_C3a/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/initial/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "1445098517031f29b935f929d967f87140fca2fcf56680ec42e5a0ea3d248296"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "proposed",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "cc51c6b642600f49d3eea78dc500bb826a03f2242c318e6328c745526141f4d6"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "proposed",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "c5d69a9dbfdd60f29070bade8a9686d83d89a167f840a7028cc54f4e28cf65db"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "retained",
+    "color": "pixel_rgb",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/pixel_rgb.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/retained/pixel_rgb.ply",
+    "bytes": 20054314,
+    "sha256": "cc51c6b642600f49d3eea78dc500bb826a03f2242c318e6328c745526141f4d6"
+  },
+  {
+    "arm": "TWO_PLANES_ORTHO_TRANSFER",
+    "state": "retained",
+    "color": "frame_colors",
+    "resolved_file": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/proposed/frame_colors.ply",
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4g-20261113-001/stages/H4g/artifacts/arms/TWO_PLANES_ORTHO_TRANSFER/retained/frame_colors.ply",
+    "bytes": 20054314,
+    "sha256": "c5d69a9dbfdd60f29070bade8a9686d83d89a167f840a7028cc54f4e28cf65db"
+  }
+]

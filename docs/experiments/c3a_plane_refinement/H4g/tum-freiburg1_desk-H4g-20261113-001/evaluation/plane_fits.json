@@ -1,0 +1,175 @@
+{
+  "right": {
+    "valid": true,
+    "reason": "VALID",
+    "plane": [
+      0.4359138817265476,
+      -0.515594968821027,
+      0.7376590783312691,
+      -1.2745258105450552
+    ],
+    "centroid": [
+      0.06458261522919612,
+      -0.45371167568636156,
+      1.3725065203014148
+    ],
+    "eigenvalues": [
+      9.227261035684643e-06,
+      0.004005644699539482,
+      0.08042540068233166
+    ],
+    "second_first_ratio": 0.04980571642236737,
+    "second_axis_span_depth": 0.1860735693338779,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 11750,
+        "inliers": 11657,
+        "fraction": 0.9920851063829788
+      },
+      {
+        "frame": 1,
+        "fit_count": 12419,
+        "inliers": 11694,
+        "fraction": 0.9416217086721959
+      }
+    ],
+    "count": 24169,
+    "ransac_trials": 64,
+    "ransac_scoring_points": 4096,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 7,
+    "normalized_residual": {
+      "count": 24169,
+      "mean": 0.0020482789642630845,
+      "median": 0.0018034616261024426,
+      "p90": 0.0038801408390196673,
+      "max": 0.04547457522315455
+    },
+    "inlier_fraction": 0.9661549919318135,
+    "reference_depth": 1.3605406284332275
+  },
+  "left_free": {
+    "valid": true,
+    "reason": "VALID",
+    "plane": [
+      0.7261195991550559,
+      0.49704972394334623,
+      -0.47507041546569123,
+      2.681357810281051
+    ],
+    "centroid": [
+      -2.0842076000710694,
+      -0.5648973367838052,
+      1.8674952785412386
+    ],
+    "eigenvalues": [
+      1.6225161076247993e-05,
+      0.0008283569209528642,
+      0.004990407877524576
+    ],
+    "second_first_ratio": 0.16598982313320637,
+    "second_axis_span_depth": 0.047655390881866794,
+    "frames": [
+      {
+        "frame": 1,
+        "fit_count": 322,
+        "inliers": 275,
+        "fraction": 0.8540372670807453
+      }
+    ],
+    "count": 322,
+    "ransac_trials": 64,
+    "ransac_scoring_points": 322,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 4,
+    "normalized_residual": {
+      "count": 322,
+      "mean": 0.0029197069644093868,
+      "median": 0.0012964599699618275,
+      "p90": 0.008842516335186032,
+      "max": 0.022083604367959454
+    },
+    "inlier_fraction": 0.8540372670807453,
+    "reference_depth": 2.415776252746582,
+    "holdout_before_correction": {
+      "count": 1014,
+      "mean": 0.0031317090619411487,
+      "median": 0.0024929160217273634,
+      "p90": 0.006341480620234963,
+      "max": 0.012106360467121411
+    },
+    "angle_with_right_degree": 73.13062498738974
+  },
+  "left_orthogonal": {
+    "valid": true,
+    "reason": "VALID",
+    "method": "right-normal-nullspace theta/offset Huber least_squares, four training-loss starts",
+    "plane": [
+      0.8964728754916597,
+      0.1763811499064573,
+      -0.4064801021764669,
+      2.72598353510392
+    ],
+    "count": 322,
+    "frames": [
+      {
+        "frame": 1,
+        "fit_count": 322,
+        "inliers": 236,
+        "fraction": 0.7329192546583851
+      }
+    ],
+    "inlier_fraction": 0.7329192546583851,
+    "reference_depth": 2.415776252746582,
+    "normalized_residual": {
+      "count": 322,
+      "mean": 0.004091833052249732,
+      "median": 0.003243868144385766,
+      "p90": 0.008782775235526103,
+      "max": 0.02589721301273925
+    },
+    "centroid": [
+      -2.084046638830788,
+      -0.553457025409285,
+      1.8743518020490149
+    ],
+    "normal_dot_right": -1.3877787807814457e-17,
+    "angle_with_right_degree": 90.0,
+    "converged": true,
+    "cost": 0.0035912408693664975,
+    "nfev": 10,
+    "starts": [
+      {
+        "cost": 0.003591240869366503,
+        "success": true,
+        "nfev": 16
+      },
+      {
+        "cost": 0.0035912408693665066,
+        "success": true,
+        "nfev": 26
+      },
+      {
+        "cost": 0.003591240869366501,
+        "success": true,
+        "nfev": 25
+      },
+      {
+        "cost": 0.0035912408693664975,
+        "success": true,
+        "nfev": 10
+      }
+    ],
+    "holdout_before_correction": {
+      "count": 1014,
+      "mean": 0.01572897152933412,
+      "median": 0.015432733024380509,
+      "p90": 0.025493015340231608,
+      "max": 0.030008929436680657
+    }
+  },
+  "fit_source_count": 322,
+  "user_prior": "two walls perpendicular",
+  "not_gt": true
+}

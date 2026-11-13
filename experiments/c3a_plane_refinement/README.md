@@ -26,3 +26,6 @@ done
 
 
 H4f는 H1 SAM 전체 마스크를 기반으로 이동 상한·법선·confidence·경계·참조 깊이 gate를 제거하는 6군이다. [사전 설정](H4f/plan.md). 실행: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venvs/p2a/bin/python experiments/c3a_plane_refinement/H4f/run.py`. uncapped는 `max_relative_move=None`이며 양의 유한 교차와 수치 평행 방지 `minimum_ray_cosine=1e-8`만 유지한다. 기존 실험 기본값 2%/cos0.2는 유지한다.
+
+
+H4g는 중첩 SAM mask의 서로 다른 두 벽을 분리한다. [사전 설정](H4g/plan.md). 실행: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venvs/p2a/bin/python experiments/c3a_plane_refinement/H4g/run.py`. H4f 재현/왼쪽 복원/자유 L/수직 L/수직 L 전파의 5군이다. 기존 오른쪽 plane·camera0/1 XYZ는 유지하고 사용자 수직 prior를 적용한 새 왼쪽 plane을 비교한다. PLY는 pixel_rgb/frame_colors 외 plane_colors도 제공한다.
