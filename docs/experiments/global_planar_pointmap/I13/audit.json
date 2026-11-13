@@ -1,0 +1,84 @@
+{
+  "tum-freiburg1_desk": {
+    "verified": [
+      {
+        "run_id": "tum-freiburg1_desk-I12-20261114-002",
+        "manifest": {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I12-20261114-002/stages/I12/manifest.json",
+          "bytes": 16930,
+          "sha256": "740458ddd2eb1fad9890cd05c0a3b952c447683058ea247e3e41c9aeab9e4b5e"
+        },
+        "artifacts_verified": 53
+      },
+      {
+        "run_id": "tum-freiburg1_desk-I13-20261114-001",
+        "manifest": {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I13-20261114-001/stages/I13/manifest.json",
+          "bytes": 8981,
+          "sha256": "11d52150ecb63b2fcee8d6a8cc8705782591286ac0c3aa78a4bfbd45280187c5"
+        },
+        "artifacts_verified": 27
+      }
+    ],
+    "GT_flags_correct": true,
+    "optimizer_completed_before_GT": true,
+    "computation_source_matches_snapshots": true,
+    "plan_matches_snapshot": true,
+    "retained_equals_previous_I10_bitwise": true,
+    "first_completed_run_equals_rerun_bitwise": true,
+    "I13_checks": {
+      "metadata_preserved": true,
+      "I11_baseline_metrics_replayed_exactly": true,
+      "GT_alignment_masks_frozen": true,
+      "unknown_untouched": true,
+      "unsupported_planes_unchanged": true
+    },
+    "I12_synthetic_checks": {
+      "analytic_jac_relative_error": 2.9177606442054582e-09,
+      "synthetic_photo_parameter_error": 1.8735013540549517e-16,
+      "forbidden_RGB_perturbation_invariant": true,
+      "self_view_depth_gradient_zero": true
+    }
+  },
+  "tum-freiburg1_desk-extra": {
+    "verified": [
+      {
+        "run_id": "tum-freiburg1_desk-extra-I12-20261114-002",
+        "manifest": {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I12-20261114-002/stages/I12/manifest.json",
+          "bytes": 17257,
+          "sha256": "da8d5f6473a9b823e61edf10b63f230ba28749a52594d959d9b642b6ba43d7fd"
+        },
+        "artifacts_verified": 53
+      },
+      {
+        "run_id": "tum-freiburg1_desk-extra-I13-20261114-001",
+        "manifest": {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I13-20261114-001/stages/I13/manifest.json",
+          "bytes": 9167,
+          "sha256": "49d88c386c3c0869a8c8a60aa34ac44b89f047c916d2ba6b3c3b4289645611bf"
+        },
+        "artifacts_verified": 27
+      }
+    ],
+    "GT_flags_correct": true,
+    "optimizer_completed_before_GT": true,
+    "computation_source_matches_snapshots": true,
+    "plan_matches_snapshot": true,
+    "retained_equals_previous_I10_bitwise": true,
+    "first_completed_run_equals_rerun_bitwise": null,
+    "I13_checks": {
+      "metadata_preserved": true,
+      "I11_baseline_metrics_replayed_exactly": true,
+      "GT_alignment_masks_frozen": true,
+      "unknown_untouched": true,
+      "unsupported_planes_unchanged": true
+    },
+    "I12_synthetic_checks": {
+      "analytic_jac_relative_error": 2.9177606442054582e-09,
+      "synthetic_photo_parameter_error": 1.8735013540549517e-16,
+      "forbidden_RGB_perturbation_invariant": true,
+      "self_view_depth_gradient_zero": true
+    }
+  }
+}
