@@ -1,0 +1,12 @@
+{
+  "decision": "RELATION_EVIDENCE_INSUFFICIENT_FREE_RETAINED",
+  "pairs": 34453,
+  "active": 0,
+  "rgb_valid_planes": 1,
+  "user_structural_prior": false,
+  "limitations": "Conditional orientation model comparison; image-line family assignment uncertainty is not fully marginalized.",
+  "elapsed_seconds": 5.28177794101066,
+  "process_peak_rss_mib": 364.13671875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
