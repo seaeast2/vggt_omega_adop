@@ -1,0 +1,69 @@
+{
+  "plot_source": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/global_planar_pointmap/blur_plot.py",
+    "bytes": 4138,
+    "sha256": "95f7edfad7595e8398fc1f02aae5e5145bb6f527ad07a2cc43d363826f7bf0a2"
+  },
+  "data": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/summary.json",
+    "bytes": 1357158,
+    "sha256": "077eb0b644284f7c8a004f495bf5f133ae992dc976eed423970faa0c31b3cc01"
+  },
+  "figures": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/blur_diagnostics.pdf",
+      "bytes": 29868,
+      "sha256": "54caf1fed4e9bc78807d03d596efad77050c5dce996b06139140845857d26ef4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/blur_diagnostics.png",
+      "bytes": 398688,
+      "sha256": "84a1d808c188b95f358a12cddb19a29cdc0c7496d7a2563ec40e2a16f6307946"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/blur_diagnostics.svg",
+      "bytes": 182477,
+      "sha256": "6aa8e654c05b009af6679553cb20c8469f58437d11627baa44fd1846a0012f8b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/factorial_contrasts.pdf",
+      "bytes": 14725,
+      "sha256": "686bf8c937b66343fe2dc82923ef01e5d717ed619033bc8fcc32bdf2f25152bb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/factorial_contrasts.png",
+      "bytes": 70008,
+      "sha256": "1ce365a3259e3ee03ec604f369bbd8a2f089e6510d26d6727d64bc9ca6ed7676"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/factorial_contrasts.svg",
+      "bytes": 54862,
+      "sha256": "2328d8995bb53577b5de452a7866fe9919279b3767175af5cedb413a41a531d4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/frozen_plane_RGB.pdf",
+      "bytes": 19030,
+      "sha256": "643fe07d48127220f0a36ab76c37d947a1b077e4392774e47917fdf29b895d02"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/frozen_plane_RGB.png",
+      "bytes": 125817,
+      "sha256": "d6efbfaefd4f6218431ff5a83dced09e75e47a76b4c91738dae772e1a7035116"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/frozen_plane_RGB.svg",
+      "bytes": 67092,
+      "sha256": "0401f3ba604b573458b424e0326a3e4785330f1bb7bb1357b77be2ae15ae3f4b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/figures/plot_environment.json",
+      "bytes": 139,
+      "sha256": "09a0c23bae393dd710cf487f96dab06c598f5419429de658e041b7e34b6031c4"
+    }
+  ],
+  "requirements": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I25/report_requirements.txt",
+    "bytes": 187,
+    "sha256": "09176efa8b00dc1dd3807bad9260b8b51ea501ca0723a9f14e0ea7f616559e70"
+  }
+}
