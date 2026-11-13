@@ -1,0 +1,464 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0-20261113-001/stages/G0/artifacts/baselines/B0/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0-20261113-001/stages/G0/artifacts/baselines/B1/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0-20261113-001/stages/G0/artifacts/baselines/B2/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-P/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-P/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-P/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-P/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PL/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PL/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PL/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PL/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PLZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PLZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PLZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PLZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G2-20261113-001/stages/G2/artifacts/arms/F-PZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-P/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-P/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-P/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-P/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PL/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PL/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PL/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PL/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PLZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PLZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PLZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PLZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G3-20261113-001/stages/G3/artifacts/arms/D-PZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-P+E/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-P+E/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-P+E/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-P+E/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-PLZ+E/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-PLZ+E/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-PLZ+E/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G4-20261113-001/stages/G4/artifacts/arms/D-PLZ+E/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-P/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-P/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-P/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-P/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PL/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PL/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PL/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PL/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PLZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PLZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PLZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PLZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/D-PZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-P/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-P/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-P/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-P/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PL/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PL/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PL/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PL/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PLZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PLZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PLZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PLZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PZ/initial/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PZ/last/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PZ/proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/arms/F-PZ/selected/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/baselines/C3a_method_proposed/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/baselines/raw/pointmap.npz",
+    "vertices": 589824,
+    "finite": true,
+    "frame_pixel_IDs_preserved": true
+  }
+]

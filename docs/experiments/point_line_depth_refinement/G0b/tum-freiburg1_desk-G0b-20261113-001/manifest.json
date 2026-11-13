@@ -1,0 +1,105 @@
+{
+  "status": "completed",
+  "run_id": "tum-freiburg1_desk-G0b-20261113-001",
+  "code": "G0b",
+  "started_at": "2026-11-13T12:21:14.595934+09:00",
+  "ended_at": "2026-11-13T12:21:24.871371+09:00",
+  "decision": "ARTIFACT_AND_OBJECTIVE_AUDIT_PASSED",
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/environment.json",
+      "bytes": 254,
+      "sha256": "eeb549e7be6a6207f680b49b74c61d0b05b25819da4d0981b1c1858e25bfd4d2"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/config_resolved.json",
+      "bytes": 416,
+      "sha256": "73e22cb635dda257e9bf965754047db43fbacc4900a4cbb03dc210669a6decf1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/followup.py",
+      "bytes": 2569,
+      "sha256": "01584979546c0500b864acbbe57c8b156a883ffad441645f4270818aa8bc21cf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/controls.py",
+      "bytes": 3396,
+      "sha256": "cb48181cbcb7b5ec2da7b3a55c5538bba16fe150366587bc11a6f0def9979cc7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/summarize.py",
+      "bytes": 9648,
+      "sha256": "63fab901577e6f339da8616a1b350e3f3c2bf749a19dffaa9dd94071554cfe62"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/audit.py",
+      "bytes": 2361,
+      "sha256": "6fb79af39160bf2876e8c3ff36c4c85634d86168d538044d46ac158d47d046cb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/extra_indoor.py",
+      "bytes": 2228,
+      "sha256": "a3fc97038a9975bac15ec59feb4bbd1e2702942a80631ff7a5eadc6129c686ad"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/finalize.py",
+      "bytes": 6004,
+      "sha256": "980bf47f4cd3f7735d767ce75192e743b93a4fd0566daa42e7f58e5565a12b06"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/additional_window.py",
+      "bytes": 4409,
+      "sha256": "cbbd9d3cab4b7974a05fc9244306f2572b9acda5a3eedccc0337e914f79f602a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/plan.md",
+      "bytes": 22827,
+      "sha256": "eadaea000064df9c5522a147178e5a86431740a5fb2448ca3a41e85f5691f485"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/run.py",
+      "bytes": 21627,
+      "sha256": "300ea29a7b08d6fe4bd8a4c1151495b75b717d83e117a15fbc01d495d64b519a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/external_depth.py",
+      "bytes": 1965,
+      "sha256": "fa0151f568788eb29a473f2b4408b00b195e0c8e0604e216666dfe3d5920d150"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/matching.py",
+      "bytes": 7368,
+      "sha256": "6c43c247cadbe99fdbcb7239d018e400c2d4dfd2e7eb07a5272c726f1c49281e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/artifacts/source/diagnostics.py",
+      "bytes": 10293,
+      "sha256": "be489ce578d2d00944d6a2cf174f9a0c0f52e06500d0705fb5400063b534a280"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/evaluation/pointmap_identity.json",
+      "bytes": 21622,
+      "sha256": "1879dee72ffb479e97d4b84619824fae7a301a355f8069923c74614bc66badad"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/evaluation/metrics.json",
+      "bytes": 305,
+      "sha256": "ca7b593b0f37451ae39ad67ca02fa589d1044fbf79fa48bf0ad8910e4b37c48b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/evaluation/ply_files.json",
+      "bytes": 49854,
+      "sha256": "a2d37f3d182e976bc48545a2c80186b3e6551fefc823c6777b6647538cb65d9f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/point_line_depth_refinement/tum-freiburg1_desk-G0b-20261113-001/stages/G0b/logs/run.log",
+      "bytes": 117,
+      "sha256": "d831695484be2a2cfdce04f56a65cbfeae6056ef7d17247bf6d48c7695f16868"
+    }
+  ]
+}

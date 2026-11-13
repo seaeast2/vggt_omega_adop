@@ -1,0 +1,10 @@
+{
+  "decision": "ARTIFACT_AND_OBJECTIVE_AUDIT_PASSED",
+  "P_objective_max_abs": 6.505213034913027e-19,
+  "ply_files": 154,
+  "pointmaps_verified": 77,
+  "input_file_hashes_rechecked": true,
+  "elapsed_seconds": 10.28012466430664,
+  "process_peak_rss_mib": 160.36328125,
+  "gt_accuracy_evaluated": false
+}
