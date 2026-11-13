@@ -1,0 +1,12 @@
+{
+  "decision": "SOFT_RELATIONS",
+  "pairs": 51681,
+  "active": 1,
+  "rgb_valid_planes": 7,
+  "user_structural_prior": false,
+  "limitations": "Conditional orientation model comparison; image-line family assignment uncertainty is not fully marginalized.",
+  "elapsed_seconds": 5.5333973259839695,
+  "process_peak_rss_mib": 430.390625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

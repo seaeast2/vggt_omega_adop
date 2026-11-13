@@ -1,0 +1,2 @@
+{"time": "2026-11-13T17:29:15.249372+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I5-20261113-001"}
+{"time": "2026-11-13T17:29:20.393539+09:00", "event": "completed", "decision": "RELATION_EVIDENCE_INSUFFICIENT_FREE_RETAINED", "criteria": true}
