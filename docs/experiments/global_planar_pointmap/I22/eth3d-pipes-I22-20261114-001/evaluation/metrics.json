@@ -1,0 +1,302 @@
+{
+  "decision": "BLUR_INPUTS_AND_PROTOCOL_FROZEN",
+  "conditions": [
+    {
+      "case": "clean",
+      "quality": [
+        {
+          "laplacian_variance": 0.007090207336901526,
+          "contrast_std": 0.1550434561340701,
+          "normalized_laplacian": 0.2949524810234867,
+          "sobel_energy": 0.11441007729685009
+        },
+        {
+          "laplacian_variance": 0.0067326041560912524,
+          "contrast_std": 0.14981852946703597,
+          "normalized_laplacian": 0.29995217878774577,
+          "sobel_energy": 0.11005691295615468
+        },
+        {
+          "laplacian_variance": 0.007993102587755927,
+          "contrast_std": 0.15490993460373714,
+          "normalized_laplacian": 0.33308635786995383,
+          "sobel_energy": 0.13724326244999632
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_0.png",
+          "bytes": 197883,
+          "sha256": "95fe8c0ef20560ac72d91d5c85be47ba85dccb6d6603b9ccdf01c1c22dc7074d"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_1.png",
+          "bytes": 192805,
+          "sha256": "f0e7ccb99a045b2b2dcfd565a356653cfe73eec4f96c90e43946c3e2f67dca73"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_2.png",
+          "bytes": 218692,
+          "sha256": "e1a776ba22b5c466b6cbc196bf7cdde0362967784d5720f6c69a3a1468732537"
+        }
+      ],
+      "arrays_sha256": "5f765c57ef276325029d5107169fe917602c852364a6d36d5f9a37a1b0dcb2b0"
+    },
+    {
+      "case": "g075",
+      "quality": [
+        {
+          "laplacian_variance": 0.0011664756291596937,
+          "contrast_std": 0.150651690929078,
+          "normalized_laplacian": 0.05139580212869777,
+          "sobel_energy": 0.0674851497992988
+        },
+        {
+          "laplacian_variance": 0.0011098464173439234,
+          "contrast_std": 0.14543766547912787,
+          "normalized_laplacian": 0.05246976207717444,
+          "sobel_energy": 0.06497759990434082
+        },
+        {
+          "laplacian_variance": 0.0013198934135907423,
+          "contrast_std": 0.14969311931876728,
+          "normalized_laplacian": 0.05890269761671948,
+          "sobel_energy": 0.08427713707010583
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_0.png",
+          "bytes": 154450,
+          "sha256": "0be80430c1ca396043286fc32e70d8f70c84521be5433992f22d6d63744573ad"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_1.png",
+          "bytes": 150117,
+          "sha256": "ed64446fe4963c9970071dbf9298eb81d182f9c2f4c978c24c53807351e78276"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_2.png",
+          "bytes": 172335,
+          "sha256": "59e10f8cda1e325f4c709ffd7941eeaca538cac6feb30b36394cea593513dbfc"
+        }
+      ],
+      "arrays_sha256": "b62de56069a9ceef0755192e5863c36beba5f66e464ccc4e8119d054fba84c68"
+    },
+    {
+      "case": "g150",
+      "quality": [
+        {
+          "laplacian_variance": 0.00019147897287059577,
+          "contrast_std": 0.14582969360638162,
+          "normalized_laplacian": 0.009003868892868317,
+          "sobel_energy": 0.03356893714900176
+        },
+        {
+          "laplacian_variance": 0.00017782061108908542,
+          "contrast_std": 0.14058861730113775,
+          "normalized_laplacian": 0.008996669759060442,
+          "sobel_energy": 0.03319341926925999
+        },
+        {
+          "laplacian_variance": 0.00022612779291236116,
+          "contrast_std": 0.14346647531397094,
+          "normalized_laplacian": 0.010986341297341893,
+          "sobel_energy": 0.04513081961236293
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_0.png",
+          "bytes": 128512,
+          "sha256": "196936bd443ea3136c44b41ad99be829b46f311d96dfaa358541f8b9d61f4820"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_1.png",
+          "bytes": 125043,
+          "sha256": "60fdcd74ec3a7881f010b92b489a294f4d6f21cd2a86d9e99e632181d3ae8b7b"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_2.png",
+          "bytes": 142899,
+          "sha256": "cfbf9541a4f807fdc0ac4ecf5c416b294a6b0118b138e05becccdfac1af8220e"
+        }
+      ],
+      "arrays_sha256": "c4641c67373ce257413c65387926cfc1b6f23d5e4ace646abef8b4fce1beca4c"
+    },
+    {
+      "case": "g300",
+      "quality": [
+        {
+          "laplacian_variance": 4.122244652014652e-05,
+          "contrast_std": 0.1380978115028888,
+          "normalized_laplacian": 0.0021615245420387435,
+          "sobel_energy": 0.013148075381091981
+        },
+        {
+          "laplacian_variance": 4.126630732290775e-05,
+          "contrast_std": 0.13236217980421838,
+          "normalized_laplacian": 0.0023554168998509055,
+          "sobel_energy": 0.014036917105485986
+        },
+        {
+          "laplacian_variance": 4.9960391851555126e-05,
+          "contrast_std": 0.1324597799283551,
+          "normalized_laplacian": 0.002847460955073386,
+          "sobel_energy": 0.01832226862865244
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_0.png",
+          "bytes": 109703,
+          "sha256": "16f31d4c81fa75d3a92b0900b8c8305e4090bf8baae5460718900ab279b0bf6f"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_1.png",
+          "bytes": 107121,
+          "sha256": "99e03e8463649b16e6b81c3e1557c8d9b78b4175dbbe26f373b0525a9dbcc245"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_2.png",
+          "bytes": 119000,
+          "sha256": "81203f665e5b95483e284b9ef72bbde7959b87862ed9063ffd380d3b2b54facd"
+        }
+      ],
+      "arrays_sha256": "e237c16eeeaf60ebd1b00cb2a2a90e3265872475f926379e1d6a98ee49efafa5"
+    },
+    {
+      "case": "motion9",
+      "quality": [
+        {
+          "laplacian_variance": 0.0012862814671454656,
+          "contrast_std": 0.14514062474880737,
+          "normalized_laplacian": 0.06106017378818895,
+          "sobel_energy": 0.04353099100649246
+        },
+        {
+          "laplacian_variance": 0.001458074782897172,
+          "contrast_std": 0.13978406476091554,
+          "normalized_laplacian": 0.07462158488655082,
+          "sobel_energy": 0.0443216941086075
+        },
+        {
+          "laplacian_variance": 0.002038031883094979,
+          "contrast_std": 0.1443245730062594,
+          "normalized_laplacian": 0.09784314666307382,
+          "sobel_energy": 0.06750187227668845
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_0.png",
+          "bytes": 137743,
+          "sha256": "fbfe8d5b7eca0fe7c247d9160acb81bd317fa353ba50369a64235cf9fe65e84f"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_1.png",
+          "bytes": 132740,
+          "sha256": "4b5617d2c500f6c4efa255871cc11a9f0559ea76fe815f3abeac6134a5dc75c8"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_2.png",
+          "bytes": 151981,
+          "sha256": "e88e3871e0b760c7813d2579c190a635a4bb1559a7147db7f0505bc904d759f1"
+        }
+      ],
+      "arrays_sha256": "02755ed72bdd1907b7e31e09e999afd9c6136b107656a3bc22c55e6edd0791e1"
+    },
+    {
+      "case": "frame1_g300",
+      "quality": [
+        {
+          "laplacian_variance": 0.007090207336901526,
+          "contrast_std": 0.1550434561340701,
+          "normalized_laplacian": 0.2949524810234867,
+          "sobel_energy": 0.11441007729685009
+        },
+        {
+          "laplacian_variance": 4.126630732290775e-05,
+          "contrast_std": 0.13236217980421838,
+          "normalized_laplacian": 0.0023554168998509055,
+          "sobel_energy": 0.014036917105485986
+        },
+        {
+          "laplacian_variance": 0.007993102587755927,
+          "contrast_std": 0.15490993460373714,
+          "normalized_laplacian": 0.33308635786995383,
+          "sobel_energy": 0.13724326244999632
+        }
+      ],
+      "files": [
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_0.png",
+          "bytes": 197883,
+          "sha256": "95fe8c0ef20560ac72d91d5c85be47ba85dccb6d6603b9ccdf01c1c22dc7074d"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_1.png",
+          "bytes": 107121,
+          "sha256": "99e03e8463649b16e6b81c3e1557c8d9b78b4175dbbe26f373b0525a9dbcc245"
+        },
+        {
+          "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_2.png",
+          "bytes": 218692,
+          "sha256": "e1a776ba22b5c466b6cbc196bf7cdde0362967784d5720f6c69a3a1468732537"
+        }
+      ],
+      "arrays_sha256": "9e46d428b0438ecd8740a06805514489ffe5e7677aadc8bc12b2fe96cc18599b"
+    }
+  ],
+  "TUM_reference": {
+    "tum-freiburg1_desk": [
+      {
+        "laplacian_variance": 0.004051757577711308,
+        "contrast_std": 0.3504718853584389,
+        "normalized_laplacian": 0.03298656423445549,
+        "sobel_energy": 0.15455221846640518
+      },
+      {
+        "laplacian_variance": 0.0021042346190334156,
+        "contrast_std": 0.3623456361310696,
+        "normalized_laplacian": 0.016026846992217486,
+        "sobel_energy": 0.10866281351248118
+      },
+      {
+        "laplacian_variance": 0.005494021823040683,
+        "contrast_std": 0.35580649484277893,
+        "normalized_laplacian": 0.04339729271261286,
+        "sobel_energy": 0.19070587600146774
+      }
+    ],
+    "tum-freiburg1_desk-extra": [
+      {
+        "laplacian_variance": 0.009358342784672182,
+        "contrast_std": 0.31527695693753954,
+        "normalized_laplacian": 0.09414873490999891,
+        "sobel_energy": 0.2557275223233953
+      },
+      {
+        "laplacian_variance": 0.005974696048313129,
+        "contrast_std": 0.31639861426928834,
+        "normalized_laplacian": 0.05968245382999682,
+        "sobel_energy": 0.2124480145982515
+      },
+      {
+        "laplacian_variance": 0.002521850310109744,
+        "contrast_std": 0.2868510998464865,
+        "normalized_laplacian": 0.03064829122415703,
+        "sobel_energy": 0.1327338355940824
+      }
+    ]
+  },
+  "checks": {
+    "clean_input_bitwise_equal": true,
+    "shape_dtype_unchanged": true,
+    "split_safe_blur_control": true
+  },
+  "elapsed_seconds": 1.2551920910191257,
+  "process_peak_rss_mib": 398.296875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

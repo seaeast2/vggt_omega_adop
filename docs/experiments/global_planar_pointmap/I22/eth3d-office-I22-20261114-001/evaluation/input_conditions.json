@@ -1,0 +1,248 @@
+[
+  {
+    "case": "clean",
+    "quality": [
+      {
+        "laplacian_variance": 0.005287082827870435,
+        "contrast_std": 0.15126073465201417,
+        "normalized_laplacian": 0.23108071540444874,
+        "sobel_energy": 0.09513858137209133
+      },
+      {
+        "laplacian_variance": 0.005259787683333268,
+        "contrast_std": 0.16970077047094387,
+        "normalized_laplacian": 0.1826419711426765,
+        "sobel_energy": 0.09333732103952694
+      },
+      {
+        "laplacian_variance": 0.00470518858843787,
+        "contrast_std": 0.15847008420547284,
+        "normalized_laplacian": 0.1873624072668686,
+        "sobel_energy": 0.0829407822412053
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_0.png",
+        "bytes": 183182,
+        "sha256": "c252b5a2f2b8d69485a8aba5d02fcd549c92676dc9311c6a94dd9f2810c6e614"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_1.png",
+        "bytes": 182559,
+        "sha256": "18f47bea4c32a9401bcbbc53d6ddf7019b3e1b213491e41efd56bfb47ff6aac5"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/clean/frame_2.png",
+        "bytes": 181451,
+        "sha256": "7bf3264fddd0382e4e06af71e604426e18cc0b344c80d8c3aca5fad805171dd4"
+      }
+    ],
+    "arrays_sha256": "2282b9bce1e28e813c98aa79682d150336b96555ec465e720f96491beb986653"
+  },
+  {
+    "case": "g075",
+    "quality": [
+      {
+        "laplacian_variance": 0.0009113160809608927,
+        "contrast_std": 0.14761076920249064,
+        "normalized_laplacian": 0.04182471084260239,
+        "sobel_energy": 0.0596288567254925
+      },
+      {
+        "laplacian_variance": 0.00090500226407453,
+        "contrast_std": 0.1664963018333284,
+        "normalized_laplacian": 0.0326467897738065,
+        "sobel_energy": 0.05766306793346423
+      },
+      {
+        "laplacian_variance": 0.0008003152988050495,
+        "contrast_std": 0.15541391648553726,
+        "normalized_laplacian": 0.0331345677161232,
+        "sobel_energy": 0.051891578731165684
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_0.png",
+        "bytes": 141089,
+        "sha256": "1d343a07028e1af0873d666730ae5a5929ed7fbdbf10698a647d19ddf9db27ef"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_1.png",
+        "bytes": 139902,
+        "sha256": "576a8f17d4ff67572087c1bb85121fc98dac2819f00fd9e41ba7beba03d64cad"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g075/frame_2.png",
+        "bytes": 138256,
+        "sha256": "ea431ec06d8a308ea320b19b2e42ead87640a33cbfdf640e017ea57c1dc99965"
+      }
+    ],
+    "arrays_sha256": "a11cd4d73f423cdbb1c96724ff23cb906184894e6b6a92fa3ba85d9e504f91b5"
+  },
+  {
+    "case": "g150",
+    "quality": [
+      {
+        "laplacian_variance": 0.00017154607901803456,
+        "contrast_std": 0.14314687872148488,
+        "normalized_laplacian": 0.008371765027425147,
+        "sobel_energy": 0.03179772978942393
+      },
+      {
+        "laplacian_variance": 0.00016404786399662165,
+        "contrast_std": 0.1626789518725296,
+        "normalized_laplacian": 0.006198803202627311,
+        "sobel_energy": 0.030853565435569656
+      },
+      {
+        "laplacian_variance": 0.00014965018781588075,
+        "contrast_std": 0.1517059347469961,
+        "normalized_laplacian": 0.0065023766851031554,
+        "sobel_energy": 0.0282623815202143
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_0.png",
+        "bytes": 118552,
+        "sha256": "b794f0909e1b189be1ceac049b441fe7150a2a2045bd47e6a47302243b6b9012"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_1.png",
+        "bytes": 116275,
+        "sha256": "4c9767559743a9fd3a6174f8b7354e559be70c9c8ae8a46cf62613495b46db80"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g150/frame_2.png",
+        "bytes": 116118,
+        "sha256": "1436598bbec6511323ad1562cb399918ac58fbf34fe4ff72144fac21c9dd848e"
+      }
+    ],
+    "arrays_sha256": "5c0acf2315423b4a2700b85e1f949a6aed726ec2914559cb6da25915b744dd31"
+  },
+  {
+    "case": "g300",
+    "quality": [
+      {
+        "laplacian_variance": 4.257934480061302e-05,
+        "contrast_std": 0.13534767615846255,
+        "normalized_laplacian": 0.002324327749589265,
+        "sobel_energy": 0.01342604303261337
+      },
+      {
+        "laplacian_variance": 4.224538252024157e-05,
+        "contrast_std": 0.15602300163469945,
+        "normalized_laplacian": 0.0017354095750273094,
+        "sobel_energy": 0.01325028967367176
+      },
+      {
+        "laplacian_variance": 4.118338160381592e-05,
+        "contrast_std": 0.14508650519426142,
+        "normalized_laplacian": 0.0019564464474310203,
+        "sobel_energy": 0.01232633346434979
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_0.png",
+        "bytes": 104217,
+        "sha256": "36740e81e2d19bb80857af219bb4ae76eb713e5e89e1f7cc8c2ee97f403bae9a"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_1.png",
+        "bytes": 102083,
+        "sha256": "0f0107fe703313f68a07003a8601958c39661733ed464768522c26979b57e83b"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/g300/frame_2.png",
+        "bytes": 102139,
+        "sha256": "785955fba166e9133988ed3e68d9d44507665da04c55b9099759e81ce7a6f2bd"
+      }
+    ],
+    "arrays_sha256": "ecc6d7d627209e7c965f70730e725c5b9b284a3ad0c5dbd884ebd5b7fcd2edd9"
+  },
+  {
+    "case": "motion9",
+    "quality": [
+      {
+        "laplacian_variance": 0.0013322713014018795,
+        "contrast_std": 0.14312264182864476,
+        "normalized_laplacian": 0.0650393189112841,
+        "sobel_energy": 0.04448455125003433
+      },
+      {
+        "laplacian_variance": 0.001262781826489887,
+        "contrast_std": 0.1629403492547696,
+        "normalized_laplacian": 0.047563196882663396,
+        "sobel_energy": 0.043571477023203076
+      },
+      {
+        "laplacian_variance": 0.0012577113292709832,
+        "contrast_std": 0.15227740849231025,
+        "normalized_laplacian": 0.05423879326231502,
+        "sobel_energy": 0.04227151037089672
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_0.png",
+        "bytes": 130944,
+        "sha256": "51ebe5b5b568e5f2f9fdbd982f3c38ba1e76c2f57b35afdca001132f15e8b895"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_1.png",
+        "bytes": 130408,
+        "sha256": "6e54c900cb694f465c001494647c24db2c492aad56c37f8652144e112ea33c66"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/motion9/frame_2.png",
+        "bytes": 129855,
+        "sha256": "99d49d8f21f726ae182d40c73bf285f85c7931a6bf764a63ebee586e6f6a2db6"
+      }
+    ],
+    "arrays_sha256": "af79e06b697155b87580dbb39120141ece1df3a9ef1373be34b1fc2b9ce5e554"
+  },
+  {
+    "case": "frame1_g300",
+    "quality": [
+      {
+        "laplacian_variance": 0.005287082827870435,
+        "contrast_std": 0.15126073465201417,
+        "normalized_laplacian": 0.23108071540444874,
+        "sobel_energy": 0.09513858137209133
+      },
+      {
+        "laplacian_variance": 4.224538252024157e-05,
+        "contrast_std": 0.15602300163469945,
+        "normalized_laplacian": 0.0017354095750273094,
+        "sobel_energy": 0.01325028967367176
+      },
+      {
+        "laplacian_variance": 0.00470518858843787,
+        "contrast_std": 0.15847008420547284,
+        "normalized_laplacian": 0.1873624072668686,
+        "sobel_energy": 0.0829407822412053
+      }
+    ],
+    "files": [
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_0.png",
+        "bytes": 183182,
+        "sha256": "c252b5a2f2b8d69485a8aba5d02fcd549c92676dc9311c6a94dd9f2810c6e614"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_1.png",
+        "bytes": 102083,
+        "sha256": "0f0107fe703313f68a07003a8601958c39661733ed464768522c26979b57e83b"
+      },
+      {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/frame_2.png",
+        "bytes": 181451,
+        "sha256": "7bf3264fddd0382e4e06af71e604426e18cc0b344c80d8c3aca5fad805171dd4"
+      }
+    ],
+    "arrays_sha256": "32a6ddb93c7955b1bf029164fb7cfefce0335bc16c3af3bdf186201ea9a824d4"
+  }
+]

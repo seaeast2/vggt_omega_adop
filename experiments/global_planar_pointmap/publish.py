@@ -17,6 +17,8 @@ def summary():
     if (ROOT/plane_photo_plan).exists():paths.append(plane_photo_plan)
     laser_plan='docs/vggt_omega_eth3d_laser_experiment_plan.md'
     if (ROOT/laser_plan).exists():paths.append(laser_plan)
+    blur_plan='docs/vggt_omega_blur_causal_experiment_plan.md'
+    if (ROOT/blur_plan).exists():paths.append(blur_plan)
     paths += [f'docs/experiments/global_planar_pointmap/{name}' for name in ['index.md','canonical_results.json','excluded_runs.json','holdout_perturbation_audit.json','visual_review.json','environment_snapshot.json','final_audit.json','provenance_amendment.json']]
     subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
     if subprocess.run(['git','diff','--cached','--quiet','--',*paths],cwd=ROOT).returncode:

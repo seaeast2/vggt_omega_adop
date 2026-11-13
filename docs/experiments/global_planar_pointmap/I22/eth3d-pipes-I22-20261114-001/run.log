@@ -1,0 +1,3 @@
+{"time": "2026-11-14T07:03:58.140505+09:00", "event": "registered", "run_id": "eth3d-pipes-I22-20261114-001"}
+{"time": "2026-11-14T07:03:58.140716+09:00", "event": "blur_protocol_frozen", "plan": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_blur_causal_experiment_plan.md", "bytes": 7522, "sha256": "65a84026d28eb4b9426ed0724b41118c854a606f347975425c87620d804d6a39"}}
+{"time": "2026-11-14T07:03:59.392086+09:00", "event": "completed", "decision": "BLUR_INPUTS_AND_PROTOCOL_FROZEN", "criteria": true}

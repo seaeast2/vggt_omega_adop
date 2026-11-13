@@ -1,0 +1,42 @@
+{
+  "tum-freiburg1_desk": [
+    {
+      "laplacian_variance": 0.004051757577711308,
+      "contrast_std": 0.3504718853584389,
+      "normalized_laplacian": 0.03298656423445549,
+      "sobel_energy": 0.15455221846640518
+    },
+    {
+      "laplacian_variance": 0.0021042346190334156,
+      "contrast_std": 0.3623456361310696,
+      "normalized_laplacian": 0.016026846992217486,
+      "sobel_energy": 0.10866281351248118
+    },
+    {
+      "laplacian_variance": 0.005494021823040683,
+      "contrast_std": 0.35580649484277893,
+      "normalized_laplacian": 0.04339729271261286,
+      "sobel_energy": 0.19070587600146774
+    }
+  ],
+  "tum-freiburg1_desk-extra": [
+    {
+      "laplacian_variance": 0.009358342784672182,
+      "contrast_std": 0.31527695693753954,
+      "normalized_laplacian": 0.09414873490999891,
+      "sobel_energy": 0.2557275223233953
+    },
+    {
+      "laplacian_variance": 0.005974696048313129,
+      "contrast_std": 0.31639861426928834,
+      "normalized_laplacian": 0.05968245382999682,
+      "sobel_energy": 0.2124480145982515
+    },
+    {
+      "laplacian_variance": 0.002521850310109744,
+      "contrast_std": 0.2868510998464865,
+      "normalized_laplacian": 0.03064829122415703,
+      "sobel_energy": 0.1327338355940824
+    }
+  ]
+}

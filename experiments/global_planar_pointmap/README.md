@@ -37,4 +37,21 @@ OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/globa
 `prepare/infer/freeze/segment/pipeline`의 `--scene office|pipes|all`로 범위를 지정한다. 기본은 두 장면이다. 모델 체크포인트와 `.venvs/p2a`는 기존 환경을 사용한다. 다운로드 helper는 공식 archive와 pinned camera/GT source를 캐시하고, 새 패키지를 설치하지 않는다. 기존 system libarchive와 g++가 필요하다. ETH3D 전처리는 512×336이며 Stage별 입력/source hash와 실패를 보존한다.
 
 대형 NPZ/PLY/mask는 results에 남기고 manifest의 SHA256/크기/경로만 Git에 저장한다.
+
+블러 원인 분리: [계획](../../docs/vggt_omega_blur_causal_experiment_plan.md) · [I25 결과](../../docs/experiments/global_planar_pointmap/I25/index.md).
+
+```bash
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_inputs.py prepare
+# 호스트 GPU, 샌드박스 밖
+I_HOST_GPU=1 OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_inputs.py infer
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_optimize.py
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_evaluate.py
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_alignment_diagnostic.py
+# 그래프 전용 환경: 모델·GT 계산 환경과 분리. 설치에는 호스트 네트워크 필요.
+.venvs/p2a/bin/python -m venv .venvs/blur-report
+.venvs/blur-report/bin/python -m pip install -r docs/experiments/global_planar_pointmap/I25/report_requirements.txt
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 .venvs/p2a/bin/python experiments/global_planar_pointmap/blur_report.py
+```
+
+I25a는 원래 TUM의 정렬 scale에 대한 **사후 보조 진단**이다. 출력 XYZ·회전·centroid를 고정하며 원래 I21 지표를 덮어쓰지 않는다. 이를 모델 보정이나 새 성능 점수로 해석하지 않는다.
 `publish.py`는 계획에서 허가한 단계별 커밋·푸시에만 사용하며 기존 사용자 변경을 staging하지 않는다.
