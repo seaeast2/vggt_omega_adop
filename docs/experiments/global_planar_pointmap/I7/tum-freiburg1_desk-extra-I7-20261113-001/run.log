@@ -1,0 +1,2 @@
+{"time": "2026-11-13T18:13:32.681331+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I7-20261113-001"}
+{"time": "2026-11-13T18:13:35.899313+09:00", "event": "completed", "decision": "HARD_REPROJECTION_PASSED_RETAIN_INITIAL", "criteria": true}
