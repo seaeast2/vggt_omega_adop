@@ -34,8 +34,8 @@ def tags_load(dataset):
             for mid,mask in zip(z['mask_ids'],z['masks']):masks[int(mid)]=mask
     return records,masks
 
-def candidates(dataset,semantic_only=False):
-    code='I3a' if semantic_only else 'I3'
+def candidates(dataset,semantic_only=False,code_override=None):
+    code=code_override or ('I3a' if semantic_only else 'I3')
     st=Stage(code,dataset,[latest('I2',dataset)],dict(semantic_only=semantic_only))
     try:
         d=load(dataset,True);sp=split_load(dataset);records,masks=tags_load(dataset);n,h,w=d['depth'].shape;minimum=int(np.ceil(.001*h*w))
@@ -78,7 +78,8 @@ def candidates(dataset,semantic_only=False):
         for prop in proposals:
             mask=prop['mask'];f=prop['frame'];ids=np.flatnonzero(mask)+f*h*w
             interior=ndimage.binary_erosion(mask,iterations=3);seed=np.flatnonzero(interior)+f*h*w
-            seed=seed[(~fit_excluded[seed])&(d['conf'].ravel()[seed]>=np.percentile(d['conf'][f],10))]
+            eligible_conf=d['conf'][f].ravel()[~fit_excluded[f*h*w:(f+1)*h*w]]
+            seed=seed[(~fit_excluded[seed])&(d['conf'].ravel()[seed]>=np.percentile(eligible_conf,10))]
             remaining=seed.copy();models=[];localfits=[]
             # Compare k=1/2/3 and unknown. Further residual components recurse below.
             for k in range(3):
@@ -116,13 +117,21 @@ def candidates(dataset,semantic_only=False):
             model_records.append(dict(proposal_id=prop['proposal_id'],source_masks=prop['source_masks'],kind=prop['kind'],frame=f,area=len(ids),fit_count=len(seed),models=models,variants=variants,selected_k=bestk,state=state,quadratic_alternative=quadratic))
             if len(models)==3 and len(remaining)>=50 and not curved:
                 ps=[np.array(t['plane']) for t in models]
-                unexplained=np.min(np.stack([abs(d['xyz'][ids]@p[:3]+p[3])/d['d0'][ids] for p in ps]),axis=0)>.005
-                residual_mask=np.zeros(h*w,bool);residual_mask[ids[unexplained]%(h*w)]=True
-                for child in components(residual_mask.reshape(h,w),minimum):
+                seed_unexplained=np.min(np.stack([abs(d['xyz'][seed]@p[:3]+p[3])/d['d0'][seed] for p in ps]),axis=0)>.005
+                seed_missing=np.ones((h,w),bool);seed_missing.ravel()[seed%(h*w)]=False
+                nearest=ndimage.distance_transform_edt(seed_missing,return_distances=False,return_indices=True)
+                seed_field=np.zeros((h,w),bool);seed_field.ravel()[seed%(h*w)]=seed_unexplained
+                residual_mask=seed_field[nearest[0],nearest[1]]&mask
+                for child in components(residual_mask,minimum):
                     if child.sum()<mask.sum():add(child,f,prop['source_masks'],prop['semantic_tag'],'recursive_residual_component')
             if bestk:
-                rr=np.stack([abs(d['xyz'][ids]@np.array(t['plane'])[:3]+t['plane'][3])/d['d0'][ids] for t in models[:bestk]])
-                label=rr.argmin(0) if bestk>1 else np.zeros(len(ids),int)
+                rr=np.stack([abs(d['xyz'][seed]@np.array(t['plane'])[:3]+t['plane'][3])/d['d0'][seed] for t in models[:bestk]])
+                if bestk>1:
+                    missing=np.ones((h,w),bool);missing.ravel()[seed%(h*w)]=False
+                    nearest=ndimage.distance_transform_edt(missing,return_distances=False,return_indices=True)
+                    field=np.zeros((h,w),np.int32);field.ravel()[seed%(h*w)]=rr.argmin(0)
+                    label=field[nearest[0],nearest[1]].ravel()[ids%(h*w)]
+                else:label=np.zeros(len(ids),int)
                 for k in range(bestk):
                     moveids=ids[label==k]
                     if len(moveids)<minimum:continue
@@ -146,7 +155,7 @@ def candidates(dataset,semantic_only=False):
             if r['state']=='planar':planar_cover[ids]=True
         metrics=dict(decision='CANDIDATES_EVALUATED',raw_masks=len(records),proposals=len(proposals),regions=len(output),planar_candidate_coverage=float(planar_cover.mean()),
             fit_validation_mixed=int(sum(sp['excluded'][a].sum() for a in fits)),state_counts={s:sum(r['state']==s for r in output) for s in ['planar','material_uncertain']},
-            limitations=['Each proposal compares up to three planes and recursively processes unresolved connected components; no fixed scene plane count.',
+            fit_only_partition=True,limitations=['Each proposal compares up to three planes and recursively processes unresolved connected components; no fixed scene plane count.',
                 'RGB edges are evaluated later; initial multi-plane partition uses fit depth, so large-error multi-face pixels may be ambiguous.',
                 'No learned dynamic/reflection detector; material labels conservative and not complete.'])
         assert metrics['fit_validation_mixed']==0
@@ -169,8 +178,8 @@ def overlap(d,source,target,p):
     uv=np.rint(uv[good]).astype(int);pix=np.unique(uv[:,1]*w+uv[:,0]);mask=np.zeros(h*w,bool);mask[target%(h*w)]=True
     return float(mask[pix].mean())
 
-def graph_build(d,rs,ids,fits,semantic_only=False):
-    n,h,w=d['depth'].shape;matches=m.load(split_path(d['dataset'])/'matches.npz');train=~matches['validation'];edges=[];compatible={}
+def graph_build(d,rs,ids,fits,semantic_only=False,matches_override=None):
+    n,h,w=d['depth'].shape;matches=m.load(split_path(d['dataset'])/'matches.npz') if matches_override is None else matches_override;train=~matches['validation'];edges=[];compatible={}
     sets=[set(a.tolist()) for a in ids]
     for a,b in itertools.combinations(range(len(rs)),2):
         ra,rb=rs[a],rs[b]
@@ -220,6 +229,8 @@ def graph_build(d,rs,ids,fits,semantic_only=False):
             planes.append(dict(plane_id=pid,uuid=hashlib.sha256((d['dataset']+str(sub)).encode()).hexdigest()[:32],version=0,active=True,
                 status='single_view' if len(set(rs[i]['frame'] for i in sub))==1 else 'multi_view',source_regions=sub,source_masks=sorted(set(itertools.chain.from_iterable(rs[i]['source_masks'] for i in sub))),
                 frames=sorted(set(rs[i]['frame'] for i in sub)),plane=ft['plane'],fit=ft,parent_ids=[],alias_ids=[],created_reason='all-pair compatible group; joint original fit'))
+            frames=planes[-1]['frames'];centers=d['centers'][frames];baseline=max((np.linalg.norm(a-b) for a,b in itertools.combinations(centers,2)),default=0.)/ft['reference_depth']
+            planes[-1]['position_observability']=dict(relative_baseline=float(baseline),status='LOW_PARALLAX_RAW_ANCHORED' if baseline<.01 else 'MULTIVIEW_POSITION_NOT_GT_VALIDATED',independent_position_accuracy_established=False)
             mem.append(np.unique(np.concatenate([ids[i] for i in sub])));fitmem.append(ff)
     return planes,mem,fitmem,dict(edges=edges,group_order_invariant=True,unconditional_transitive_chaining=False)
 
@@ -362,11 +373,13 @@ def optimize(dataset,struct=True,arm='A4',**kwargs):
     from joint import run_joint
     return run_joint(dataset,struct=struct,**kwargs)
 
-def joint(dataset,semantic_only=False):
-    code='I6a' if semantic_only else 'I6';regcode='I4a' if semantic_only else 'I4';relcode='I5a' if semantic_only else 'I5'
-    st=Stage(code,dataset,[latest(regcode,dataset),latest(relcode,dataset)])
+def joint(dataset,semantic_only=False,struct=True):
+    code='I6a' if semantic_only else 'I6' if struct else 'I6b';regcode='I4a' if semantic_only else 'I4';relcode='I5a' if semantic_only else 'I5'
+    st=Stage(code,dataset,[latest(regcode,dataset),latest(relcode,dataset)],dict(struct_enabled=struct,semantic_only=semantic_only))
     try:
-        runs=[optimize(dataset,registry_code=regcode,relations_code=relcode),optimize(dataset,reverse=True,registry_code=regcode,relations_code=relcode),optimize(dataset,seed=1,registry_code=regcode,relations_code=relcode)]
+        runs=[optimize(dataset,struct=struct,registry_code=regcode,relations_code=relcode,logger=st.log,checkpoint_dir=st.path/'artifacts/optimization/seed0'),
+            optimize(dataset,struct=struct,reverse=True,registry_code=regcode,relations_code=relcode,logger=st.log,checkpoint_dir=st.path/'artifacts/optimization/reversed'),
+            optimize(dataset,struct=struct,seed=1,registry_code=regcode,relations_code=relcode,logger=st.log,checkpoint_dir=st.path/'artifacts/optimization/seed1')]
         from scipy.optimize import linear_sum_assignment
         stability=[];reference=runs[0][4]
         for i,run in enumerate(runs):
@@ -391,10 +404,13 @@ def joint(dataset,semantic_only=False):
             '원본 FoV fit·고정 RGB 대응을 계속 사용하며 보정된 점에 plane을 다시 맞추지 않았다. 목적함수 비증가를 검사했다.\n\n'
             'merge/split/revert 제안은 같은 목적함수로 평가하고 신규 ID를 할당하며 이전 ID를 재사용하지 않는다. '
             '관측/변수 역순과 별도 초기값을 반복하고 label permutation 보정 후 안정성을 기록했다. '
-            'RGB 대응의 재투영을 경계 증거의 대리 잔차로 사용한다. 직접적인 RGB 교선 경계 항과 관계의 반복 재선택은 후속 보완 대상이다.',criteria=False)
+            '고정 RGB 대응 재투영과 후보 인접 경계에서 plane 교선의 영상 잔차를 사용하며 관계도 동일 목적함수로 반복 재선택한다. '
+            '표면 GT가 없는 국소 최적화이며 전역 최적해나 실제 소속 정확도를 보장하지 않는다.')
     except Exception as e:st.fail(e);raise
 
 if __name__=='__main__':
     import argparse
-    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I2','I3','I4','I5','I6']);parser.add_argument('--dataset',default='tum-freiburg1_desk');args=parser.parse_args()
-    dict(I2=fov,I3=candidates,I4=associate,I5=relations,I6=joint)[args.code](args.dataset)
+    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I2','I3','I4','I5','I6','I3a','I4a','I5a','I6a','I6b']);parser.add_argument('--dataset',default='tum-freiburg1_desk');args=parser.parse_args()
+    functions=dict(I2=fov,I3=candidates,I4=associate,I5=relations,I6=joint,
+        I3a=lambda name:candidates(name,True),I4a=lambda name:associate(name,True),I5a=lambda name:relations(name,True),I6a=lambda name:joint(name,True),I6b=lambda name:joint(name,False,False))
+    functions[args.code](args.dataset)

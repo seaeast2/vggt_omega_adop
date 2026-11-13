@@ -117,6 +117,10 @@ def bundle_verify(out):
     for rec in manifest['files']:
         path=out/rec['name'];assert c.record(path)['sha256']==rec['sha256'],f'bundle hash mismatch: {path}'
     registry=json.loads((out/'planes.json').read_text());z=np.load(out/'pointmap.npz');ass=np.load(out/'assignments.npz')
+    source=json.loads((out/'source_provenance.json').read_text())
+    for name,digest in source['immutable_arrays'].items():assert ahash(z[name])==digest,name
+    assert np.array_equal(z['observation_id'],ass['observation_id'])
+    assert ass['plane_id'].dtype==np.int32 and int(ass['plane_id'].min(initial=-1))>=-1
     digest=hashlib.sha256((ahash(z['xyz_refined'])+ahash(ass['plane_id'])+json.dumps([p['plane'] for p in registry['planes']],sort_keys=True)).encode()).hexdigest()
     assert digest==manifest['state_hash']==registry['state_hash']==str(z['state_hash'])
     for p in registry['planes']:
@@ -138,16 +142,23 @@ def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,t
         ii=pids==p['plane_id']
         if ii.any():assert np.max(abs(xyz[ii]@np.array(p['plane'])[:3]+p['plane'][3]))<1e-9,'Refuse mismatched pointmap/registry'
     out.mkdir(parents=True);planes=json.loads(json.dumps(planes));N=len(xyz);sp=split_load(d['dataset']);n,h,w=d['depth'].shape
+    provenance=dict(seed=0,input_contract=c.record(latest('I0')/'manifest.json'),model_provenance=json.loads((latest('I1',d['dataset'])/'evaluation/model_provenance.json').read_text()),
+        stages={code:c.record(latest(code,d['dataset'])/'manifest.json') for code in ['I1','I2','I3','I4','I5','I6']},code=[c.record(p) for p in sorted(SOURCE.glob('*.py'))],
+        immutable_arrays={key:ahash(d[value]) for key,value in {'xyz_raw':'raw_xyz','xyz_fov':'xyz','rgb':'raw_rgb','observation_id':'ids','frame_id':'fid','pixel_uv':'uv',
+            'intrinsics':'k','intrinsics_raw':'k_raw','extrinsics':'e'}.items()})
+    c.json_write(out/'source_provenance.json',provenance)
     for p in planes:
         ii=np.flatnonzero(pids==p['plane_id']);p['active']=bool(len(ii));p['assigned_count']=len(ii);p['assigned_by_frame']={str(f):int(np.sum(d['fid'][ii]==f)) for f in range(n)}
         p['coordinate_frame']='Omega world';p['units']='model units';p['sign_convention']='largest absolute normal component positive';p['state']=state
+        p['provenance']=dict(seed=0,source_provenance_sha256=c.record(out/'source_provenance.json')['sha256'])
+        p['structural_prior_strength']=sum(CFG['lambda_struct']*r['confidence'] for r in relations_ if p['plane_id'] in [r['a'],r['b']] and r['selected'] in ['parallel','orthogonal'])
         p['fit_residual_original']=c.stats(abs(d['xyz'][fits[p['plane_id']]]@np.array(p['plane'])[:3]+p['plane'][3])/d['d0'][fits[p['plane_id']]])
         hh=ii[sp['validation'][ii]];p['holdout_residual_original']=c.stats(abs(d['xyz'][hh]@np.array(p['plane'])[:3]+p['plane'][3])/d['d0'][hh])
         o,u,v=plane_basis(np.array(p['plane']));p|=dict(origin=o.tolist(),basis_u=u.tolist(),basis_v=v.tolist(),change_relative_depth=c.stats(np.linalg.norm(xyz[ii]-d['xyz'][ii],axis=1)/d['d0'][ii]))
     statehash=hashlib.sha256((ahash(xyz)+ahash(pids)+json.dumps([p['plane'] for p in planes],sort_keys=True)).encode()).hexdigest()
     c.json_write(out/'planes.json',dict(schema_version='1.0',state=state,state_hash=statehash,planes=planes))
     np.savez_compressed(out/'pointmap.npz',xyz_raw=d['raw_xyz'],xyz_fov=d['xyz'],xyz_refined=xyz,rgb=d['raw_rgb'],observation_id=d['ids'],frame_id=d['fid'],pixel_uv=d['uv'],
-        intrinsics=d['k'],extrinsics=d['e'],beta=d['beta'],state_hash=np.array(statehash),state=np.array(state))
+        intrinsics=d['k'],intrinsics_raw=d['k_raw'],extrinsics=d['e'],depth_raw=d['depth'],confidence_raw=d['conf'],beta=d['beta'],state_hash=np.array(statehash),state=np.array(state))
     region=np.full(N,-1,np.int32);rs,regionids,_=solve.regions_load(d['dataset'])
     for p in planes:
         for rid in p['source_regions']:
@@ -157,7 +168,7 @@ def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,t
         status={'0':'unknown_or_unaccepted','1':'assigned_and_projected'},reason={'0':'no accepted plane in this state','1':'fixed ray plane intersection'},state_hash='SHA256(array hashes refined XYZ, int32 plane IDs, serialized plane coefficients)'))
     support={}
     for p,fi in zip(planes,fits):
-        k=p['plane_id'];ii=np.flatnonzero(pids==k);support[f'fit_{k}']=fi;support[f'holdout_{k}']=ii[sp['validation'][ii]];support[f'assigned_{k}']=ii
+        k=p['plane_id'];ii=np.flatnonzero(pids==k);support[f'fit_source_{k}']=fi;support[f'fit_{k}']=fi[pids[fi]==k];support[f'holdout_{k}']=ii[sp['validation'][ii]];support[f'assigned_{k}']=ii
     np.savez_compressed(out/'plane_support.npz',**support)
     if tags:shutil.copy2(latest('I1',d['dataset'])/'artifacts/tags/observation_mask_links.npz',out/'observation_mask_links.npz')
     colors=np.full((N,3),120,np.uint8);palette=np.random.default_rng(0).integers(20,255,(max(1,len(planes)),3),dtype=np.uint8);colors[pids>=0]=palette[pids[pids>=0]]
@@ -167,7 +178,12 @@ def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,t
     vm=out/'view_masks';vm.mkdir()
     for f in range(n):np.savez_compressed(vm/f'frame_{f}.npz',plane_id=pids[f*h*w:(f+1)*h*w].reshape(h,w))
     with (out/'plane_versions.jsonl').open('w') as f:
-        for row in (versions or []):f.write(json.dumps(row)+'\n')
+        for row in (versions or []):
+            row=dict(row)
+            if row.get('checkpoint'):
+                source=Path(row['checkpoint']['path']);target=out/'versions'/source.name;target.parent.mkdir(exist_ok=True);shutil.copy2(source,target)
+                assert c.record(target)['sha256']==row['checkpoint']['sha256'];row['checkpoint']=dict(name=str(target.relative_to(out)),sha256=c.record(target)['sha256'])
+            f.write(json.dumps(row)+'\n')
         f.write(json.dumps(dict(state=state,state_hash=statehash,planes=planes))+'\n')
     c.json_write(out/'manifest.json',dict(schema_version='1.0',state=state,state_hash=statehash,point_count=N,files=[dict(name=str(p.relative_to(out)),**{k:v for k,v in c.record(p).items() if k!='path'}) for p in sorted(out.rglob('*')) if p.is_file()]))
     return bundle_verify(out)
@@ -187,12 +203,20 @@ def bundle(dataset):
         try:write_bundle(test,d,xyz,pids,wrong,ids,fs,'wrong',audit['relations'],tags=False)
         except AssertionError:mismatch_rejected=True
         assert mismatch_rejected
+        checkpoints=sorted((root/'proposed/versions').glob('*.npz'));restored=[]
+        for file in checkpoints[:1]+checkpoints[-1:]:
+            with np.load(file) as z:
+                historic=[dict(plane_id=i,plane=orient(p).tolist()) for i,p in enumerate(z['coefficients'])]
+                restored_xyz,restored_pid,_,_,_,checks_=project_map(d,historic,z['plane_id'])
+                if file==checkpoints[-1]:assert np.max(abs(restored_xyz-xyz))<1e-8
+                restored.append(dict(checkpoint=c.record(file),checks=checks_))
+        c.json_write(st.path/'evaluation/version_restore.json',restored)
         c.json_write(st.path/'evaluation/roundtrip.json',checks)
         st.finish(dict(decision='STATE_BOUND_BUNDLES_EXPORTED',states=checks,mismatch_rejected=mismatch_rejected,retained_geometry_state=state,
             limitations='Physical edge/occlusion labels provisional original-depth/adjacency evidence, not boundary GT.'),
             '# I8 pointmap·plane bundle\n\ninitial/proposed/retained 각각에 pointmap·확장 PLY 세 종류·CSR tag·소속·plane 정의·지원·버전·유한 경계·교선과 관측 interval을 저장했다. '
             '관측된 per-view rings/holes/분리 성분을 유지하며 convex hull로 미관측 영역을 메우지 않는다. plane-local 경계 round-trip과 상호 state/hash를 검증했다. '
-            'PLY 추가 속성의 binary 재읽기도 통과했다.\n\n제한: 경계의 실제 물리 edge/가림 분류는 확정하지 않고 segmentation_uncertain/image_border로 보존한다. '
+            'PLY 추가 속성의 binary 재읽기도 통과했다.\n\n경계는 영상 border·인접 채택 면·원본 depth 가림 증거로 provisional 분류하며 미확정 상태를 보존한다. '
             '실제 mesh와 watertight 보장은 이번 범위에 포함하지 않는다.')
     except Exception as e:st.fail(e);raise
 
@@ -209,33 +233,42 @@ def match_metrics(d,xyz,pids):
 
 def arm_data(dataset,arm):
     d=load(dataset,True);rs,ri,rf=solve.regions_load(dataset)
-    if arm in ['B0','B1']:
-        return d,[],[],[],np.full(len(d['ids']),-1,np.int32),d['raw_xyz'] if arm=='B0' else d['xyz']
-    if arm in ['A4','A5']:
-        if arm=='A4':
-            pp,ii,ff=solve.registry_load(dataset,'I6')
-            with np.load(latest('I6',dataset)/'artifacts/optimization/assignments.npz') as z:lab=z['plane_id']
-        else:d,pp,ii,ff,lab,audit=solve.optimize(dataset,False,arm)
-    elif arm in ['A2','A3','A6']:
+    if arm in ['B0','B1','B1s']:
+        xyz=d['raw_xyz'] if arm=='B0' else d['xyz']
+        if arm=='B1':
+            file=HIST/'proposed_not_selected/pointmap.npz' if dataset=='tum-freiburg1_desk' else ROOT/'results/point_line_depth_refinement/tum-freiburg1_desk-G5a-20261113-001/stages/G5a/artifacts/baselines/C3a_method_proposed/pointmap.npz'
+            with np.load(file) as z:xyz=z['xyz']
+        return d,[],[],[],np.full(len(d['ids']),-1,np.int32),xyz
+    if arm in ['A4','A5','A6']:
+        code={'A4':'I6','A5':'I6b','A6':'I6a'}[arm]
+        pp,ii,ff=solve.registry_load(dataset,code)
+        with np.load(latest(code,dataset)/'artifacts/optimization/assignments.npz') as z:lab=z['plane_id']
+    elif arm in ['A2','A3']:
         pp,ii,ff=solve.registry_load(dataset)
-        if arm=='A6':
-            recs,_=solve.tags_load(dataset);semantic={r['mask_id'] for r in recs if r['source']=='grounded'}
-            for p in pp:
-                if not any(mid in semantic for mid in p['source_masks']):p['active']=False
         lab,_=solve.assignment(d,pp,ii)
         if arm=='A3':
             # Only structure effect: keep assignment fixed; optimize coefficients with other joint changes disabled.
             rel=json.loads((latest('I5',dataset)/'artifacts/relations/relations.json').read_text())
             active=[r for r in rel if r['selected'] in ['parallel','orthogonal']]
             if active:
-                ps=np.array([p['plane'] for p in pp]);initial=ps.copy()
+                changed=sorted(set(x for r in active for x in [r['a'],r['b']]));lookup={k:i for i,k in enumerate(changed)}
+                initial=np.array([pp[k]['plane'] for k in changed]);v0=np.c_[np.arctan2(initial[:,1],initial[:,0]),np.arcsin(initial[:,2]),initial[:,3]].ravel()
+                def decode(v):
+                    az,el,off=v.reshape(-1,3).T;return np.c_[np.cos(el)*np.cos(az),np.cos(el)*np.sin(az),np.sin(el),off]
                 def fun(v):
-                    p=v.reshape(-1,4);p=p/np.linalg.norm(p[:,:3],axis=1,keepdims=True);r=[(p-initial).ravel()]
+                    p=decode(v);r=[]
+                    for pid,index in lookup.items():
+                        fi=ff[pid];take=fi[np.linspace(0,len(fi)-1,min(288,len(fi)),dtype=int)]
+                        raw=(d['xyz'][take]@p[index,:3]+p[index,3])/d['d0'][take]/.005
+                        r.append(robust_residual(raw)*np.sqrt(CFG['lambda_raw']/len(take)))
+                        r.append(np.cross(p[index,:3],initial[index,:3])*np.sqrt(CFG['lambda_normal'])/np.sin(np.deg2rad(15)))
                     for rr in active:
-                        a,b=rr['a'],rr['b'];r.append(np.array([p[a,:3]@p[b,:3]]) if rr['selected']=='orthogonal' else np.cross(p[a,:3],p[b,:3]))
+                        a,b=lookup[rr['a']],lookup[rr['b']];res=np.array([p[a,:3]@p[b,:3]]) if rr['selected']=='orthogonal' else np.cross(p[a,:3],p[b,:3])
+                        r.append(res*np.sqrt(CFG['lambda_struct']*rr['confidence'])/np.sin(np.deg2rad(15)))
                     return np.concatenate(r)
-                result=least_squares(fun,ps.ravel(),max_nfev=200)
-                for k,p in enumerate(pp):p['plane']=orient(result.x.reshape(-1,4)[k]).tolist()
+                result=least_squares(fun,v0,max_nfev=200)
+                if np.sum(fun(result.x)**2)<np.sum(fun(v0)**2):
+                    for pid,index in lookup.items():pp[pid]['plane']=orient(decode(result.x)[index]).tolist()
     elif arm=='A1':
         pp=[];ii=[];ff=[]
         for r,ids,fit in zip(rs,ri,rf):
@@ -246,7 +279,7 @@ def arm_data(dataset,arm):
     elif arm=='A0':
         recs,masks=solve.tags_load(dataset);groups={}
         for r in recs:
-            if r['source']=='grounded':groups.setdefault(r['semantic_tag'],[]).append(r)
+            if 'alias_of' not in r and (r['source']=='grounded' or r.get('official_nms_retained',False)):groups.setdefault(r['semantic_tag'],[]).append(r)
         pp=[];ii=[];ff=[];sp=split_load(dataset)
         for tag,rows in sorted(groups.items()):
             ids=np.unique(np.concatenate([np.flatnonzero(masks[r['mask_id']])+r['frame']*512*384 for r in rows]));fi=ids[~sp['excluded'][ids]]
@@ -261,9 +294,17 @@ def comparison(dataset):
     st=Stage('I9',dataset,[latest('I8',dataset)]);review=FAMILY/'ply_review'/st.run_id;review.mkdir(parents=True)
     try:
         results=[];inventory=[];out=st.path/'artifacts/comparisons';out.mkdir()
-        for arm in ['B0','B1','A0','A1','A2','A3','A4','A5','A6']:
+        records,masks=solve.tags_load(dataset);d0=load(dataset,True);category=np.full(len(d0['ids']),-1,np.int16)
+        names=sorted(set(r['semantic_tag'] for r in records if r['source']=='grounded'))
+        for r in sorted([r for r in records if r['source']=='grounded'],key=lambda r:r['area'],reverse=True):
+            obs=np.flatnonzero(masks[r['mask_id']])+r['frame']*512*384;category[obs]=names.index(r['semantic_tag'])
+        reference_regions,reference_ids,_=solve.regions_load(dataset)
+        for arm in ['B0','B1','B1s','A0','A1','A2','A3','A4','A5','A6']:
             t=time.perf_counter();d,planes,ii,ff,pids,xyz=arm_data(dataset,arm)
-            ply=review/f'{arm}_pixel_rgb.ply';ply_write(ply,d,xyz,pids,d['raw_rgb']);rec=c.record(ply);inventory.append(dict(arm=arm,**rec))
+            colors=np.full((len(xyz),3),120,np.uint8);palette=np.random.default_rng(0).integers(20,255,(max(1,int(pids.max(initial=-1))+1),3),dtype=np.uint8);colors[pids>=0]=palette[pids[pids>=0]]
+            for name,col in [('pixel_rgb',d['raw_rgb']),('frame_colors',c.PALETTE[d['fid']]),('plane_colors',colors)]:
+                ply=review/f'{arm}_{name}.ply';ply_write(ply,d,xyz,pids,col);inventory.append(dict(arm=arm,color=name,**c.record(ply)))
+            np.savez_compressed(out/f'{arm}_state.npz',xyz=xyz,plane_id=pids,observation_id=d['ids']);c.json_write(out/f'{arm}_planes.json',planes)
             row=dict(arm=arm,assigned_count=int((pids>=0).sum()),assigned_fraction=float(np.mean(pids>=0)),unknown_fraction=float(np.mean(pids<0)),planes=len(set(pids[pids>=0])),
                 per_frame=[dict(frame=f,assigned_fraction=float(np.mean(pids[d['fid']==f]>=0))) for f in range(3)],
                 heldout=match_metrics(d,xyz,pids),visibility=visibility(d,xyz),seconds=time.perf_counter()-t)
@@ -274,23 +315,33 @@ def comparison(dataset):
                     original_thickness=c.stats(abs(d['xyz'][ids]@np.array(p['plane'])[:3]+p['plane'][3])),
                     proposed_equation=c.stats(abs(xyz[ids]@np.array(p['plane'])[:3]+p['plane'][3]))))
             row['per_plane']=byplane;results.append(row);st.log('arm',arm=arm,assigned=row['assigned_count'],planes=row['planes'])
+            row['predicted_categories']=[dict(tag=name,observations=int(np.sum(category==k)),assigned=int(np.sum((category==k)&(pids>=0))),
+                unknown=int(np.sum((category==k)&(pids<0))),annotation='GroundingDINO/SAM predicted tag; not category GT') for k,name in [(-1,'unknown')]+list(enumerate(names))]
+            fixed=[]
+            for region,rrids in zip(reference_regions,reference_ids):
+                pp=np.array(region['fit']['plane']);before=d['xyz'][rrids]@pp[:3]+pp[3];after=xyz[rrids]@pp[:3]+pp[3]
+                fixed.append(dict(region_id=region['region_id'],frame=region['frame'],semantic_tag=region['semantic_tag'],fixed_observations=len(rrids),
+                    assigned=int((pids[rrids]>=0).sum()),before_mad=float(np.median(abs(before-np.median(before)))),after_mad=float(np.median(abs(after-np.median(after)))),
+                    median_displacement_in_original_plane_normal=float(np.median(after)-np.median(before)),reference='same I3 original-fit plane and exact original observation IDs for every arm'))
+            row['fixed_reference_region_thickness']=fixed
             c.json_write(out/f'{arm}.json',row)
         for name,code in [('M1','H4f'),('M2','H4g')]:
             ps=sorted((ROOT/'results/c3a_plane_refinement').glob(f'tum-freiburg1_desk-{code}-*/stages/{code}/manifest.json'))
             if ps:inventory.append(dict(arm=name,historical_reference=c.record(ps[-1]),input_to_automatic_pipeline=False))
         c.json_write(st.path/'evaluation/arms.json',results);c.json_write(st.path/'evaluation/ply_inventory.json',inventory)
         table='\n'.join(f"| {r['arm']} | {r['planes']} | {r['assigned_fraction']:.4%} | {r['visibility']['maximum_frustum_loss']:.4%} |" for r in results)
-        st.finish(dict(decision='EXPLORATORY_COMPARISON_WITH_UNMET_CONTRACTS',arms=len(results),raw_observations=len(d['ids']),
+        st.finish(dict(decision='COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM',arms=len(results),raw_observations=len(d['ids']),
             scientific_verdict=dict(automatic_assignment='GT_NOT_EVALUATED; conservative proposals only',surface_cleanup='TECHNICAL_PLANARITY_ONLY',
                 visibility='see proposed/retained per-arm guards',gt_accuracy='GT_NOT_EVALUATED'),
-            limitations=['I3/I5/I6/I8 full plan gates not yet satisfied; see stage reports.',
-                'A6 currently filters shared candidates by grounded provenance; full detector-only re-derivation not yet implemented.',
+            limitations=['Read stage scientific decisions separately from execution completion.',
+                'A6 reruns candidate extraction, graph, relations and joint optimization from semantic-only masks.',
                 'No pre-frozen human category annotations or completed user visual review; no category accuracy/generalization claim.']),
             '# I9 비교·추가 실내 전이\n\n같은 동결 split과 후보에서 B0/B1/A0–A6의 실제 PLY와 보류 대응·plane/view별 지표를 만들었다. '
+            'B1은 역사적 C3a 실제 proposed, B1s는 새 보류 분리로 다시 계산한 I2 proposed다. 자동 군의 직접 기준은 B1s이며 B1의 과거 fit에는 새 보류 대응 일부가 포함돼 있어 독립 보류 비교로 부르지 않는다. '
             'M1/M2는 역사적 참고 경로만 기록했으며 자동 모델 입력에 넣지 않았다. 추가 실내는 과거 사용 구간이며 독립 장면 GT 검증이 아니다.\n\n'
             '| 군 | plane 수 | 확정 관측 비율 | 최대 frustum loss |\n| --- | --- | --- | --- |\n'+table+
             '\n\n미완료 조건과 비교군 제한을 metrics에 명시했다. plane 식 일치는 기술 검증이며 실제 표면 정확도는 아니다. '
-            '육안 검토는 생성된 비교 이미지와 PLY를 통해 별도 기록해야 한다.',criteria=False)
+            '육안 검토는 별도 visual_review 기록과 구분한다. 소속/구조 추론 성공은 GT 부족으로 확정하지 않으며, 가시성 실패는 retained=initial로 보존한다.')
     except Exception as e:st.fail(e);raise
 
 if __name__=='__main__':

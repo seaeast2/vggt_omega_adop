@@ -89,6 +89,8 @@ def run():
     st=Stage('I0')
     try:
         out=st.path/'artifacts/contract';out.mkdir();syn=controls()
+        from controls import run as integration_run
+        integration=integration_run();c.json_write(out/'integration_controls.json',integration)
         cfg=CFG|{k:v for k,v in syn['chosen'].items() if k.startswith('lambda_')}
         c.json_write(out/'synthetic_controls.json',syn);c.json_write(out/'config_resolved.json',cfg)
         audits={}
@@ -102,6 +104,7 @@ def run():
         c.json_write(out/'c3a_reproduction.json',dict(beta=beta.tolist(),beta_max_error=beta_error,xyz_max_error=xyz_error,converged=conv,
             source=c.record(HIST/'proposed_not_selected/pointmap.npz'),solver_history=hist))
         c.json_write(st.path/'evaluation/synthetic_controls.json',syn)
+        c.json_write(st.path/'evaluation/integration_controls.json',integration)
         c.json_write(st.path/'evaluation/splits.json',audits)
         st.finish(dict(decision='CONTRACT_FROZEN_WITH_EXPLICIT_SPLIT_AMENDMENT',c3a_beta_max_error=beta_error,c3a_xyz_max_error=xyz_error,splits=audits,
             synthetic_control_status='geometry passed; integration checks scheduled I4/I6/I8',weights_selected_on_synthetic_only=True),

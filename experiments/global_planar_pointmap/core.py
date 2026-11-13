@@ -26,6 +26,10 @@ CFG = dict(seed=0, schema_version='1.0', prompt='wall. floor. ceiling. door. win
     lambda_image=.2, lambda_raw=1., lambda_normal=.05, lambda_cross=.2, lambda_edge=.1,
     lambda_struct=.05, lambda_complex=.02, lambda_unknown=.6,
     gt_status='GT_NOT_EVALUATED', evaluation_annotation='NONE: no surface GT; no manual ROI input',
+    objective_complexity_normalization='lambda_complex * sum(sqrt(assigned_plane_count / all_observations))',
+    objective_relation_selection='fit-only orientation likelihood+dof costs plus active soft relation residual; monotone updates',
+    objective_image_edge='fixed RGB correspondence reprojection + candidate-adjacency RGB edge to projected plane-intersection line',
+    objective_amendment='explicit area-normalized complexity and direct edge residual frozen before real heldout metrics; initial I0 grid used planar/curved controls only',
     fov_policy='historical C3a reproduced; main fit removes holdout contamination if present')
 
 def ahash(a):
@@ -175,7 +179,8 @@ def normals(d,window,excluded):
     for i in range(n):
         x=d['xyz'][i*h*w:(i+1)*h*w].reshape(h,w,3)
         # Exclude the whole validation halo from moments; do not compute on heldout XYZ.
-        good=(~excluded[i*h*w:(i+1)*h*w].reshape(h,w))&(d['conf'][i]>=np.percentile(d['conf'][i],10))
+        allowed=~excluded[i*h*w:(i+1)*h*w].reshape(h,w)
+        good=allowed&(d['conf'][i]>=np.percentile(d['conf'][i][allowed],10))
         count=ndimage.uniform_filter(good.astype(float),window,mode='constant')
         mean=np.stack([ndimage.uniform_filter(x[...,j]*good,window,mode='constant')/np.maximum(count,1e-15) for j in range(3)],-1)
         cov=np.empty((h,w,3,3))

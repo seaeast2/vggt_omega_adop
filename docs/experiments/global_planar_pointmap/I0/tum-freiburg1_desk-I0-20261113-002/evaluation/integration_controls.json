@@ -1,0 +1,20 @@
+{
+  "same_surface_shared": true,
+  "parallel_different_planes_kept": true,
+  "pure_rotation_position_uncertain": true,
+  "group_order_reversal": true,
+  "orthogonal_scores": {
+    "free": 0.08,
+    "parallel": 7.504101615137756,
+    "orthogonal": 0.06
+  },
+  "nonorthogonal_scores": {
+    "free": 0.08,
+    "parallel": 3.7720508206555454,
+    "orthogonal": 1.0599999999999998
+  },
+  "nonorthogonal_not_forced": true,
+  "reflection_unknown": true,
+  "synthetic_plane_count": 1,
+  "parallel_plane_count": 3
+}

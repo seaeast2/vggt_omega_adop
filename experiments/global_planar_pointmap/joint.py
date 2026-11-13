@@ -2,7 +2,7 @@
 from core import *
 from scipy import sparse
 
-def run_joint(dataset,struct=True,seed=0,reverse=False,grounded_only=False,continuous=True,update_labels=True,topology=True,registry_code='I4',relations_code='I5'):
+def run_joint(dataset,struct=True,seed=0,reverse=False,grounded_only=False,continuous=True,update_labels=True,topology=True,registry_code='I4',relations_code='I5',logger=None,checkpoint_dir=None):
     import solve
     d=load(dataset,True);planes,ids,fits=solve.registry_load(dataset,registry_code);initial=json.loads(json.dumps(planes));N=len(d['ids']);n,h,w=d['depth'].shape
     if grounded_only:
@@ -96,11 +96,35 @@ def run_joint(dataset,struct=True,seed=0,reverse=False,grounded_only=False,conti
         supported=[r for r in rel if struct and r['rgb_support'] and all(r['model_scores'].get(k) is not None for k in ['free','parallel','orthogonal'])]
         relation_prior=float(np.mean([r['model_scores'][r['selected'] if r['selected'] in ['parallel','orthogonal'] else 'free'] for r in supported]))*CFG['lambda_struct'] if supported else 0.
         return dict(evidence=float(.5*rr@rr),image=float(image),unknown=float(CFG['lambda_unknown']*np.mean(lab<0)),complexity=complexity,relation_prior=relation_prior)
-    def objective(ps,lab):return sum(terms(ps,lab).values())
+    validity_cache={}
+    def invalid_active(lab):
+        invalid=[];sample_counts=np.bincount(sp[lab[ss]==sp],minlength=len(fits))
+        for k in np.unique(lab[lab>=0]):
+            fi=fits[k];selected=lab[fi]==k;key=(int(k),ahash(selected))
+            if key not in validity_cache:
+                use=fi[selected];valid=len(use)>=CFG['minimum_fit']
+                if valid:
+                    _,ev,_=svd_plane(d['xyz'][use],np.ones(len(use)))
+                    valid=ev[1]/max(ev[2],1e-30)>=1e-4 and 4*np.sqrt(max(0,ev[1]))/np.median(d['d0'][use])>=.01
+                valid=valid and int(sample_counts[k])>=3
+                validity_cache[key]=bool(valid)
+            if not validity_cache[key]:invalid.append(int(k))
+        return invalid
+    def objective(ps,lab):
+        invalid=invalid_active(lab)
+        return 1e8+len(invalid) if invalid else sum(terms(ps,lab).values())
     def candidate_score(ps,lab,k,ii):
         trial=lab.copy();trial[ii]=k
         return objective(ps,trial),trial
-    ps=coeff();old=objective(ps,label);history.append(dict(iteration=0,objective=old,terms=terms(ps,label),assignment_changes=0))
+    initial_invalid=invalid_active(label)
+    for k in initial_invalid:label[label==k]=-1;planes[k]['unknown_reason']='INSUFFICIENT_EFFECTIVE_ASSIGNED_FIT_SUPPORT'
+    ps=coeff();old=objective(ps,label);history.append(dict(iteration=0,objective=old,terms=terms(ps,label),assignment_changes=0,initial_unobservable_planes=initial_invalid))
+    def checkpoint(iteration,ps,label):
+        if checkpoint_dir is None:return None
+        out=Path(checkpoint_dir);out.mkdir(parents=True,exist_ok=True);file=out/f'version_{iteration:02d}.npz'
+        np.savez_compressed(file,plane_id=label,coefficients=ps,observation_id=d['ids'])
+        return c.record(file)
+    versions[0]['checkpoint']=checkpoint(0,ps,label)
     patience=0
     for iteration in range(1,21):
         start=old;old_label=label.copy();continuous_info=dict(attempted=False)
@@ -187,15 +211,21 @@ def run_joint(dataset,struct=True,seed=0,reverse=False,grounded_only=False,conti
                     ss,sp,sw=make_context()
         delta=float(np.mean(label!=old_label));rel_decrease=(start-old)/max(abs(start),1e-12)
         history.append(dict(iteration=iteration,objective=old,terms=terms(ps,label),assignment_changes=delta,continuous=continuous_info))
-        versions.append(dict(version=iteration,state='proposed',coefficients=ps.tolist(),assignment_hash=ahash(label),allocated_ids=list(range(len(planes)))))
-        print(json.dumps(dict(event='joint_iteration',dataset=dataset,iteration=iteration,objective=old,active_planes=len(np.unique(label[label>=0])),change=delta)),flush=True)
+        versions.append(dict(version=iteration,state='proposed',coefficients=ps.tolist(),assignment_hash=ahash(label),allocated_ids=list(range(len(planes))),checkpoint=checkpoint(iteration,ps,label)))
+        event=dict(dataset=dataset,iteration=iteration,objective=old,active_planes=len(np.unique(label[label>=0])),change=delta)
+        if logger:logger('joint_iteration',**event)
+        else:print(json.dumps(dict(event='joint_iteration',**event)),flush=True)
         if rel_decrease<1e-5 and delta<.001:patience+=1
         else:patience=0
         if patience>=3:break
     assert all(b['objective']<=a['objective']+1e-8 for a,b in zip(history,history[1:]))
     for k,p in enumerate(planes):
         p['plane']=orient(ps[k]).tolist();p['version']=len(history)-1;p['active']=bool(np.any(label==k));p['status']=p['status'] if p['active'] or p['status'] in ['merged','split','rejected'] else 'inactive'
+        centers=d['centers'][p['frames']];baseline=max((np.linalg.norm(a-b) for a,b in itertools.combinations(centers,2)),default=0.)/p['fit']['reference_depth']
+        p['position_observability']=dict(relative_baseline=float(baseline),status='LOW_PARALLAX_RAW_ANCHORED' if baseline<.01 else 'MULTIVIEW_POSITION_NOT_GT_VALIDATED',independent_position_accuracy_established=False)
+    assert [p['plane_id'] for p in planes]==list(range(len(planes)))
+    assert len({p['uuid'] for p in planes})==len(planes)
     return d,planes,ids,fits,label,dict(history=history,versions=versions,initial=initial,relations=rel,topology_history=topology_history,relation_updates=relation_updates,
         struct_enabled=struct,objective_formula='sum robust original-fit/normal/cross3D/fixed-RGB-correspondence reprojection + image membership + unknown + area-normalized complexity',
-        topology_proposals='merge/split/revert evaluated against same objective; allocated IDs never reused',
+        topology_proposals='merge/split/revert evaluated against same objective; allocated IDs never reused',effective_fit_support_feasibility=True,
         limitations='RGB correspondence reprojection is edge evidence surrogate; no direct photometric residual. Local optimum only.')
