@@ -1,0 +1,5 @@
+{"time": "2026-11-14T06:06:45.129771+09:00", "event": "registered", "run_id": "eth3d-pipes-I0-20261114-002"}
+{"time": "2026-11-14T06:06:45.333181+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 1], "features": [579, 522], "forward_ratio": 136, "mutual_ratio": 99, "ransac_inliers": 82}
+{"time": "2026-11-14T06:06:45.337185+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 2], "features": [579, 614], "forward_ratio": 63, "mutual_ratio": 45, "ransac_inliers": 39}
+{"time": "2026-11-14T06:06:45.341062+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [1, 2], "features": [522, 614], "forward_ratio": 173, "mutual_ratio": 145, "ransac_inliers": 138}
+{"time": "2026-11-14T06:06:45.761669+09:00", "event": "completed", "decision": "NEW_SCENE_RGB_FIT_HOLDOUT_FROZEN", "criteria": true}

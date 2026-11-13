@@ -1,0 +1,5 @@
+{"time": "2026-11-14T05:59:41.284781+09:00", "event": "registered", "run_id": "eth3d-office-I0-20261114-002"}
+{"time": "2026-11-14T05:59:41.457128+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 1], "features": [343, 352], "forward_ratio": 69, "mutual_ratio": 59, "ransac_inliers": 48}
+{"time": "2026-11-14T05:59:41.458937+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 2], "features": [343, 297], "forward_ratio": 79, "mutual_ratio": 57, "ransac_inliers": 42}
+{"time": "2026-11-14T05:59:41.461417+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [1, 2], "features": [352, 297], "forward_ratio": 138, "mutual_ratio": 113, "ransac_inliers": 104}
+{"time": "2026-11-14T05:59:41.810778+09:00", "event": "completed", "decision": "NEW_SCENE_RGB_FIT_HOLDOUT_FROZEN", "criteria": true}

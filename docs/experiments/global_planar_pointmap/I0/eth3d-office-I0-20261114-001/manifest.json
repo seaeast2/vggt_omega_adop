@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "run_id": "eth3d-office-I0-20261114-001",
+  "experiment_code": "I0",
+  "dataset": "eth3d-office",
+  "started_at": "2026-11-14T05:59:17.442566+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I15-20261114-001/stages/I15/manifest.json",
+      "bytes": 10260,
+      "sha256": "eb8e7709e5b6ce99e54a14549650d245a5fcb5609b289edb814501663d1a6f61"
+    }
+  ],
+  "project_commit_at_start": "672a5f3457c1096d1e46ed28972a30d957102a09",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": false,
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/global_planar_pointmap/eth3d_laser.py\", line 155, in freeze\n    result=freeze_split(load(dataset),out/dataset,st)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/global_planar_pointmap/prepare.py\", line 49, in freeze_split\n    rec=c.record(p);assert rec['sha256']==frame['sha256'];rows.append(rec)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "ended_at": "2026-11-14T05:59:17.960217+09:00"
+}

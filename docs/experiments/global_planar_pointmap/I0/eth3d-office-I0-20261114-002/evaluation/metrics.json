@@ -1,0 +1,18 @@
+{
+  "decision": "NEW_SCENE_RGB_FIT_HOLDOUT_FROZEN",
+  "split": {
+    "mixed": 0,
+    "fit_correspondences": 64,
+    "validation_correspondences": 79,
+    "original_fit_now_heldout": 36,
+    "fit_observations": 393156,
+    "heldout_with_halo": 122940,
+    "normal_fit_observations": 320293,
+    "split_method": "seed0 tile holdout + full known tracks fixed-point closure + 3px halo; 21px normals exclude 10px halo",
+    "limitations": "Known SIFT tracks only; undetected physical correspondences may cross split. RGB joint inference shared. Internal consistency only."
+  },
+  "elapsed_seconds": 0.5354549790208694,
+  "process_peak_rss_mib": 214.796875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
