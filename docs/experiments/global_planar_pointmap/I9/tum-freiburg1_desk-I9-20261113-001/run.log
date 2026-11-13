@@ -1,0 +1,12 @@
+{"time": "2026-11-13T18:14:31.587473+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I9-20261113-001"}
+{"time": "2026-11-13T18:14:35.441141+09:00", "event": "arm", "arm": "B0", "assigned": 0, "planes": 0}
+{"time": "2026-11-13T18:14:37.269541+09:00", "event": "arm", "arm": "B1", "assigned": 0, "planes": 0}
+{"time": "2026-11-13T18:14:39.002625+09:00", "event": "arm", "arm": "B1s", "assigned": 0, "planes": 0}
+{"time": "2026-11-13T18:14:43.206565+09:00", "event": "arm", "arm": "A0", "assigned": 323961, "planes": 6}
+{"time": "2026-11-13T18:14:45.899946+09:00", "event": "arm", "arm": "A1", "assigned": 540346, "planes": 637}
+{"time": "2026-11-13T18:14:48.255363+09:00", "event": "arm", "arm": "A2", "assigned": 540346, "planes": 330}
+{"time": "2026-11-13T18:14:50.834643+09:00", "event": "arm", "arm": "A3", "assigned": 540346, "planes": 330}
+{"time": "2026-11-13T18:14:53.154399+09:00", "event": "arm", "arm": "A4", "assigned": 480284, "planes": 245}
+{"time": "2026-11-13T18:14:55.511425+09:00", "event": "arm", "arm": "A5", "assigned": 480284, "planes": 245}
+{"time": "2026-11-13T18:14:57.521307+09:00", "event": "arm", "arm": "A6", "assigned": 244207, "planes": 67}
+{"time": "2026-11-13T18:14:58.390600+09:00", "event": "completed", "decision": "COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM", "criteria": true}
