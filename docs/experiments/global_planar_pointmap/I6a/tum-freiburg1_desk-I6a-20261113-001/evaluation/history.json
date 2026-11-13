@@ -1,0 +1,140 @@
+[
+  {
+    "iteration": 0,
+    "objective": 33.63801895625884,
+    "terms": {
+      "evidence": 33.1446926880995,
+      "image": 0.05999452972204702,
+      "unknown": 0.34190673828125,
+      "complexity": 0.09142500015604257,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0
+  },
+  {
+    "iteration": 1,
+    "objective": 29.914132330176013,
+    "terms": {
+      "evidence": 29.42197288919138,
+      "image": 0.06043915219672755,
+      "unknown": 0.34241333007812497,
+      "complexity": 0.08930695870977977,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.054343329535590276,
+    "continuous": {
+      "attempted": true,
+      "nfev": 45,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 2,
+    "objective": 29.88376479770753,
+    "terms": {
+      "evidence": 29.393273431205344,
+      "image": 0.06072610656554732,
+      "unknown": 0.34241333007812497,
+      "complexity": 0.08735192985851775,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.09069315592447917,
+    "continuous": {
+      "attempted": true,
+      "nfev": 20,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 3,
+    "objective": 29.859708835907124,
+    "terms": {
+      "evidence": 29.372843731323442,
+      "image": 0.06175356278065621,
+      "unknown": 0.3423685709635417,
+      "complexity": 0.08274297083948837,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.029468112521701388,
+    "continuous": {
+      "attempted": true,
+      "nfev": 19,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 4,
+    "objective": 29.859345617332508,
+    "terms": {
+      "evidence": 29.372480512748826,
+      "image": 0.06175356278065621,
+      "unknown": 0.3423685709635417,
+      "complexity": 0.08274297083948837,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 7,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 5,
+    "objective": 29.859342906867088,
+    "terms": {
+      "evidence": 29.372477802283406,
+      "image": 0.06175356278065621,
+      "unknown": 0.3423685709635417,
+      "complexity": 0.08274297083948837,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 6,
+    "objective": 29.85934066309914,
+    "terms": {
+      "evidence": 29.372475558515458,
+      "image": 0.06175356278065621,
+      "unknown": 0.3423685709635417,
+      "complexity": 0.08274297083948837,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 7,
+    "objective": 29.859338694124578,
+    "terms": {
+      "evidence": 29.372473589540895,
+      "image": 0.06175356278065621,
+      "unknown": 0.3423685709635417,
+      "complexity": 0.08274297083948837,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  }
+]
