@@ -1,0 +1,131 @@
+{
+  "decision": "LOW_SUPPORT_PROPOSED_PRESERVED",
+  "beta": [
+    1.0817057490401587,
+    1.0534305237983927,
+    1.0919474617870495,
+    1.062317748033135,
+    1.0827281311746209,
+    1.0401167920433896
+  ],
+  "support": {
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "total": 30,
+        "fit": 16,
+        "validation": 14,
+        "occupied_4x4_cells": [
+          7,
+          8
+        ],
+        "passed": false
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "total": 11,
+        "fit": 4,
+        "validation": 7,
+        "occupied_4x4_cells": [
+          5,
+          5
+        ],
+        "passed": false
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "total": 16,
+        "fit": 7,
+        "validation": 9,
+        "occupied_4x4_cells": [
+          6,
+          5
+        ],
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "rank": {
+    "rank": 6,
+    "dimension": 6,
+    "singular_values": [
+      1.9612712007195214,
+      1.786818610148449,
+      1.2863178944347053,
+      1.021608588316755,
+      0.8509310250099649,
+      0.21849943313634418
+    ],
+    "condition": 8.976092855562163,
+    "identifiable": true
+  },
+  "coverage": {
+    "pairs": [
+      {
+        "source": 0,
+        "target": 1,
+        "initial_valid_count": 126056,
+        "retained_initial_count": 126056,
+        "loss_fraction": 0.0,
+        "passed": true
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "initial_valid_count": 59174,
+        "retained_initial_count": 59174,
+        "loss_fraction": 0.0,
+        "passed": true
+      },
+      {
+        "source": 1,
+        "target": 0,
+        "initial_valid_count": 113939,
+        "retained_initial_count": 113677,
+        "loss_fraction": 0.0022994760354224653,
+        "passed": true
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "initial_valid_count": 121792,
+        "retained_initial_count": 120744,
+        "loss_fraction": 0.008604834471886535,
+        "passed": false
+      },
+      {
+        "source": 2,
+        "target": 0,
+        "initial_valid_count": 54710,
+        "retained_initial_count": 54710,
+        "loss_fraction": 0.0,
+        "passed": true
+      },
+      {
+        "source": 2,
+        "target": 1,
+        "initial_valid_count": 121571,
+        "retained_initial_count": 121571,
+        "loss_fraction": 0.0,
+        "passed": true
+      }
+    ],
+    "passed": false,
+    "maximum_loss_fraction": 0.008604834471886535
+  },
+  "tag_bitwise_identical": true,
+  "elapsed_seconds": 2.0602159170084633,
+  "process_peak_rss_mib": 244.3671875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

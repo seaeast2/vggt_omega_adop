@@ -1,0 +1,131 @@
+{
+  "decision": "FOV_PROPOSED",
+  "beta": [
+    1.0754581834625945,
+    1.0843124773626276,
+    1.0880116143654317,
+    1.0833751459529681,
+    1.0884362731294366,
+    1.0867683706142837
+  ],
+  "support": {
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "total": 290,
+        "fit": 160,
+        "validation": 130,
+        "occupied_4x4_cells": [
+          14,
+          13
+        ],
+        "passed": true
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "total": 132,
+        "fit": 62,
+        "validation": 70,
+        "occupied_4x4_cells": [
+          11,
+          14
+        ],
+        "passed": true
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "total": 191,
+        "fit": 97,
+        "validation": 94,
+        "occupied_4x4_cells": [
+          11,
+          15
+        ],
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "rank": {
+    "rank": 6,
+    "dimension": 6,
+    "singular_values": [
+      6.866311287577843,
+      4.4780984466224005,
+      3.9740850420515375,
+      3.004938766573052,
+      1.8114242631194213,
+      1.0765591836601374
+    ],
+    "condition": 6.378015618457157,
+    "identifiable": true
+  },
+  "coverage": {
+    "pairs": [
+      {
+        "source": 0,
+        "target": 1,
+        "initial_valid_count": 143277,
+        "retained_initial_count": 143277,
+        "loss_fraction": 0.0,
+        "passed": true
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "initial_valid_count": 141761,
+        "retained_initial_count": 141608,
+        "loss_fraction": 0.0010792813256114142,
+        "passed": true
+      },
+      {
+        "source": 1,
+        "target": 0,
+        "initial_valid_count": 151639,
+        "retained_initial_count": 151631,
+        "loss_fraction": 5.2756876529169716e-05,
+        "passed": true
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "initial_valid_count": 150062,
+        "retained_initial_count": 149446,
+        "loss_fraction": 0.00410496994575571,
+        "passed": true
+      },
+      {
+        "source": 2,
+        "target": 0,
+        "initial_valid_count": 187025,
+        "retained_initial_count": 186312,
+        "loss_fraction": 0.0038123245555407026,
+        "passed": true
+      },
+      {
+        "source": 2,
+        "target": 1,
+        "initial_valid_count": 181520,
+        "retained_initial_count": 181520,
+        "loss_fraction": 0.0,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "maximum_loss_fraction": 0.00410496994575571
+  },
+  "tag_bitwise_identical": true,
+  "elapsed_seconds": 1.9327100420196075,
+  "process_peak_rss_mib": 235.0078125,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
