@@ -1,9 +1,11 @@
 # VGGT-Ω 화면 전체 자동 평면 정렬·Pointmap 생성 실험 계획
 
 > 작성일: 2026-11-13 KST<br>
-> 상태: **계획 작성 완료 · I0~I9 미실행**<br>
+> 상태: **I0~I9 및 두 실내 구간 A0~A6 실행 완료 · A4 가시성 보존 실패, retained=initial · GT 미평가**<br>
 > 실험 계열: `global_planar_pointmap`<br>
 > 목표: **영상 전체에서 평면 후보와 관측점 소속을 자동으로 판단하고, 모든 프레임이 공유하는 평면으로 pointmap을 정렬한다. 사용한 평면·공간 경계·관측 관계는 점군과 함께 영구 보존한다.**
+
+[실행 결과·canonical run·판정·PLY 경로](experiments/global_planar_pointmap/index.md). 이후 사용자의 I0~I9 실행 요청에 따라 진행했다. 원계획과 실제 구현의 split·effective fit 지원 보완 및 제외 run을 결과 문서에서 구분한다.
 
 ## 1. 출발점과 검증 범위
 
@@ -289,7 +291,7 @@ plane 교선은 무한 line과 관측 지지 interval을 함께 저장한다. �
 | **I8** | plane registry·폴리곤 준비 export | 계수/지원/유한 경계/교선/관계·ID lineage·round-trip 검증 |
 | **I9** | 종합 비교·추가 실내 전이 | 카테고리·plane·view별 수치·육안·비용·PLY inventory·실패 포함 보고 |
 
-I1a/I2a 등은 한 요인 변경의 보조 검증으로 분리한다. 첫 실행은 I0이며 **이번 요청은 계획 수립이므로 I0도 실행하지 않는다**. 코드·설치·추론·새 PLY 생성 완료로 표시하지 않는다.
+I1a/I2a 등은 한 요인 변경의 보조 검증으로 분리한다. 원계획 작성 당시에는 I0를 포함해 미실행이었다. 이후 사용자의 명시적 I0~I9 실행 요청에 따라 [실제 실행 결과](experiments/global_planar_pointmap/index.md)를 별도 보존했다. 선택 민감도 I1a/I2a 및 야외 I9b는 이번 필수 범위에 합산하지 않았다.
 
 ## 13. 비교군: 자동화 각 단계의 효과 분리
 
@@ -359,7 +361,7 @@ results/global_planar_pointmap/ply_review/
 
 각 단계는 입력·모델·코드·schema version과 hash, parent run, 실패·선택 근거를 남긴다. plane registry와 점군의 state/version/hash가 다르면 export를 거절한다. initial/proposed/retained의 plane registry도 각각 해당 pointmap과 맞아야 한다.
 
-GPU는 샌드박스 밖 호스트에서 실행하고 CPU geometry와 구분한다. 기존 환경과 호환성을 확인한 후 필요한 설치만 하며 변경 버전을 기록한다. 완료 단계마다 코드·경량 결과·보고서를 GitHub에 커밋·푸시한다. 대형 NPZ/PLY·모델·전체 mask 캐시는 로컬에 보존하고 Git에는 경로·크기·hash를 저장한다. 이 계획은 문서 작성 시점에서 미실행이다.
+GPU는 샌드박스 밖 호스트에서 실행하고 CPU geometry와 구분한다. 기존 환경과 호환성을 확인한 후 필요한 설치만 하며 변경 버전을 기록한다. 완료 단계마다 코드·경량 결과·보고서를 GitHub에 커밋·푸시한다. 대형 NPZ/PLY·모델·전체 mask 캐시는 로컬에 보존하고 Git에는 경로·크기·hash를 저장한다. 계획 작성 당시의 미실행 상태와 이후 실제 실행은 canonical 결과 문서에서 구분한다.
 
 ## 16. 공식 방법과 자체 확장 구분
 

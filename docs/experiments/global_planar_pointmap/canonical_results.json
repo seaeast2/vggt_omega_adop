@@ -1,0 +1,378 @@
+{
+  "tum-freiburg1_desk": {
+    "canonical_stages": {
+      "I0": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I0-20261113-002/stages/I0/manifest.json",
+        "bytes": 13112,
+        "sha256": "aa2987f69913b7824df0431e4f94b55ec3819ce455a8d91478d008b80ed73187"
+      },
+      "I1": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I1-20261113-001/stages/I1/manifest.json",
+        "bytes": 11240,
+        "sha256": "f9faaf6275701c71f47532de46803eb750f3474825a08811653e04a4b3a7c089"
+      },
+      "I2": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I2-20261113-001/stages/I2/manifest.json",
+        "bytes": 5991,
+        "sha256": "96588efc12414bf14ad9498d1224871db4021543979970ccf2c6bf02ba9f6334"
+      },
+      "I3": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I3-20261113-002/stages/I3/manifest.json",
+        "bytes": 7168,
+        "sha256": "fc9354b52587eb31ec4d26ed0ebfdd66c91363d714dd707f71572afad5cdb61c"
+      },
+      "I4": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I4-20261113-002/stages/I4/manifest.json",
+        "bytes": 6273,
+        "sha256": "370888dda28d86ba6a68fa9c22059bbff5e97e0dc012fefbf2f610173970fb7f"
+      },
+      "I5": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5-20261113-003/stages/I5/manifest.json",
+        "bytes": 6304,
+        "sha256": "64ba07a2ca6644ca20c66aef80ab2e14210e1eaa64ff02b16bd4a657f050ed4b"
+      },
+      "I6": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6-20261113-004/stages/I6/manifest.json",
+        "bytes": 15448,
+        "sha256": "fda8bab4aa739016c346c1adae6481635593cf5ccd548b96f2bb85b1de991568"
+      },
+      "I7": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I7-20261113-002/stages/I7/manifest.json",
+        "bytes": 8115,
+        "sha256": "3bde73f8d22b211ab88584bea68ae563c30ab09a7826060cd5faa094d36d69f5"
+      },
+      "I8": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-002/stages/I8/manifest.json",
+        "bytes": 24594,
+        "sha256": "197b63160eeebc7b3330dce202baca3c4c413f5ac6bce8fa6769eee2dd28b969"
+      },
+      "I9": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I9-20261113-001/stages/I9/manifest.json",
+        "bytes": 17523,
+        "sha256": "6e7c3f88ba3e024d78515345929b1903c0d6286526d4feef17423507c25197aa"
+      }
+    },
+    "accepted": 480284,
+    "accepted_fraction": 0.8142835828993056,
+    "retained": "initial",
+    "visibility": {
+      "pairs": [
+        {
+          "source": 0,
+          "target": 1,
+          "baseline_frustum_count": 130828,
+          "retained_frustum_count": 106180,
+          "frustum_loss_fraction": 0.1884000366893937,
+          "baseline_pixel_coverage": 0.5568389892578125,
+          "proposed_pixel_coverage": 0.444580078125,
+          "passed": false
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "baseline_frustum_count": 67375,
+          "retained_frustum_count": 50457,
+          "frustum_loss_fraction": 0.25110204081632653,
+          "baseline_pixel_coverage": 0.2843577067057292,
+          "proposed_pixel_coverage": 0.20633443196614584,
+          "passed": false
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "baseline_frustum_count": 116668,
+          "retained_frustum_count": 116361,
+          "frustum_loss_fraction": 0.0026313984983028765,
+          "baseline_pixel_coverage": 0.5553232828776041,
+          "proposed_pixel_coverage": 0.5019989013671875,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "baseline_frustum_count": 123462,
+          "retained_frustum_count": 122744,
+          "frustum_loss_fraction": 0.005815554583596572,
+          "baseline_pixel_coverage": 0.5643870035807291,
+          "proposed_pixel_coverage": 0.5473531087239584,
+          "passed": false
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "baseline_frustum_count": 62193,
+          "retained_frustum_count": 60232,
+          "frustum_loss_fraction": 0.03153087968099304,
+          "baseline_pixel_coverage": 0.2825775146484375,
+          "proposed_pixel_coverage": 0.2675933837890625,
+          "passed": false
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "baseline_frustum_count": 126987,
+          "retained_frustum_count": 126976,
+          "frustum_loss_fraction": 8.662304015371652e-05,
+          "baseline_pixel_coverage": 0.5637919108072916,
+          "proposed_pixel_coverage": 0.5492960611979166,
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "maximum_frustum_loss": 0.25110204081632653,
+      "maximum_pixel_coverage_loss": 0.1122589111328125,
+      "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+    },
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 5.115907697472721e-13,
+      "plane_equation_max": 6.095820666274752e-13,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 480284,
+        "mean": 0.22181045105333097,
+        "median": 0.0033253347323950458,
+        "p90": 0.5921630435156584,
+        "max": 14062.9420287364
+      },
+      "moved_over_100pct": 3200
+    },
+    "stability": [
+      {
+        "run": 0,
+        "seed": 0,
+        "reversed_evidence_and_variables": false,
+        "agreement_after_label_permutation": 1.0,
+        "objective_final": 18.8407335643145,
+        "assigned": 498371
+      },
+      {
+        "run": 1,
+        "seed": 0,
+        "reversed_evidence_and_variables": true,
+        "agreement_after_label_permutation": 0.9948001437717013,
+        "objective_final": 19.208251678283123,
+        "assigned": 498375
+      },
+      {
+        "run": 2,
+        "seed": 1,
+        "reversed_evidence_and_variables": false,
+        "agreement_after_label_permutation": 0.9958919949001737,
+        "objective_final": 18.8132852520737,
+        "assigned": 497424
+      }
+    ],
+    "heldout_3d_pair_medians": {
+      "B1s": [
+        0.007974095155875353,
+        0.005394425104897326,
+        0.005732453966444455
+      ],
+      "A4": [
+        0.511895842237216,
+        0.20330515398503884,
+        0.008402806863276656
+      ]
+    },
+    "review_directory": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/ply_review/tum-freiburg1_desk-I9-20261113-001",
+    "verdicts": {
+      "automatic_assignment": "NOT_ESTABLISHED_NO_SURFACE_LABEL_GT",
+      "structure": "NO_ACTIVE_STRUCTURAL_RELATIONS",
+      "surface_cleanup": "WHOLE_IMAGE_IMPROVEMENT_NOT_ESTABLISHED",
+      "technical_planarity": "PASSED",
+      "visibility": "FAILED_RETAIN_INITIAL",
+      "gt_accuracy": "GT_NOT_EVALUATED"
+    }
+  },
+  "tum-freiburg1_desk-extra": {
+    "canonical_stages": {
+      "I0": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I0-20261113-002/stages/I0/manifest.json",
+        "bytes": 13112,
+        "sha256": "aa2987f69913b7824df0431e4f94b55ec3819ce455a8d91478d008b80ed73187"
+      },
+      "I1": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I1-20261113-001/stages/I1/manifest.json",
+        "bytes": 11462,
+        "sha256": "13d350e6540ef3de1dbbcc76fa8caf6c2a4e3a3c83460c7f4daaa7d8a2f1c215"
+      },
+      "I2": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I2-20261113-001/stages/I2/manifest.json",
+        "bytes": 6074,
+        "sha256": "b6ec94d030eb6f34d287fe86526a7197369033a18fca40f72d78b39311875538"
+      },
+      "I3": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I3-20261113-002/stages/I3/manifest.json",
+        "bytes": 7318,
+        "sha256": "adc5f954ba9871fa523d32fefcdd75f78e99dc3a5cf8249edcc7a055928a7df1"
+      },
+      "I4": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I4-20261113-002/stages/I4/manifest.json",
+        "bytes": 6405,
+        "sha256": "5ddb949999f605160d2ed8667824ed8b8461a1761f1ed9d65c19e45b5b916e48"
+      },
+      "I5": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I5-20261113-002/stages/I5/manifest.json",
+        "bytes": 6436,
+        "sha256": "b7cdc761507a4fdb9660c73525dc419f182e41a56f78d4ff5d01c19ce9dfa8e3"
+      },
+      "I6": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I6-20261113-003/stages/I6/manifest.json",
+        "bytes": 15126,
+        "sha256": "7f7966e84101759ae123f2e7ac8910786ea727195d1bedabd137b4815680622a"
+      },
+      "I7": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I7-20261113-001/stages/I7/manifest.json",
+        "bytes": 8283,
+        "sha256": "bae412e1a30640c42cf5fa29be8089e00e65fb09309320d0d8fcb8e5472d465d"
+      },
+      "I8": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I8-20261113-001/stages/I8/manifest.json",
+        "bytes": 25074,
+        "sha256": "06291bcf40fbc286fefb6a17f04e28c46d1f93a327bdfefda113f0c1711104de"
+      },
+      "I9": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I9-20261113-001/stages/I9/manifest.json",
+        "bytes": 17883,
+        "sha256": "f06b23fd1e4863b0d939b89a59b594316ad9117852e58cf49dd9f7662e325ba9"
+      }
+    },
+    "accepted": 467051,
+    "accepted_fraction": 0.7918480767144097,
+    "retained": "initial",
+    "visibility": {
+      "pairs": [
+        {
+          "source": 0,
+          "target": 1,
+          "baseline_frustum_count": 146194,
+          "retained_frustum_count": 145717,
+          "frustum_loss_fraction": 0.003262787802508995,
+          "baseline_pixel_coverage": 0.6623433430989584,
+          "proposed_pixel_coverage": 0.6395060221354166,
+          "passed": true
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "baseline_frustum_count": 143906,
+          "retained_frustum_count": 142556,
+          "frustum_loss_fraction": 0.009381123789140133,
+          "baseline_pixel_coverage": 0.6519368489583334,
+          "proposed_pixel_coverage": 0.6199798583984375,
+          "passed": false
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "baseline_frustum_count": 153019,
+          "retained_frustum_count": 152724,
+          "frustum_loss_fraction": 0.0019278651670707558,
+          "baseline_pixel_coverage": 0.6633961995442709,
+          "proposed_pixel_coverage": 0.646148681640625,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "baseline_frustum_count": 152256,
+          "retained_frustum_count": 151822,
+          "frustum_loss_fraction": 0.0028504623791509036,
+          "baseline_pixel_coverage": 0.7389424641927084,
+          "proposed_pixel_coverage": 0.7220408121744791,
+          "passed": true
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "baseline_frustum_count": 186342,
+          "retained_frustum_count": 186295,
+          "frustum_loss_fraction": 0.00025222440458941086,
+          "baseline_pixel_coverage": 0.658538818359375,
+          "proposed_pixel_coverage": 0.641998291015625,
+          "passed": true
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "baseline_frustum_count": 182984,
+          "retained_frustum_count": 182840,
+          "frustum_loss_fraction": 0.0007869540506273773,
+          "baseline_pixel_coverage": 0.7388153076171875,
+          "proposed_pixel_coverage": 0.7231953938802084,
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "maximum_frustum_loss": 0.009381123789140133,
+      "maximum_pixel_coverage_loss": 0.03195699055989587,
+      "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+    },
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 2.8421709430404007e-13,
+      "plane_equation_max": 1.3489209749195652e-14,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 467051,
+        "mean": 0.05237679240918964,
+        "median": 0.004553701725540995,
+        "p90": 0.06390030926115925,
+        "max": 70.97649498265729
+      },
+      "moved_over_100pct": 1728
+    },
+    "stability": [
+      {
+        "run": 0,
+        "seed": 0,
+        "reversed_evidence_and_variables": false,
+        "agreement_after_label_permutation": 1.0,
+        "objective_final": 12.693444711139211,
+        "assigned": 469980
+      },
+      {
+        "run": 1,
+        "seed": 0,
+        "reversed_evidence_and_variables": true,
+        "agreement_after_label_permutation": 1.0,
+        "objective_final": 12.697717714349878,
+        "assigned": 469980
+      },
+      {
+        "run": 2,
+        "seed": 1,
+        "reversed_evidence_and_variables": false,
+        "agreement_after_label_permutation": 0.9891323513454862,
+        "objective_final": 12.70218368511034,
+        "assigned": 466921
+      }
+    ],
+    "heldout_3d_pair_medians": {
+      "B1s": [
+        0.00592655524934526,
+        0.004195071390946612,
+        0.004614521340609069
+      ],
+      "A4": [
+        0.007789175314084128,
+        0.008077345150518,
+        0.006970445219176781
+      ]
+    },
+    "review_directory": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/ply_review/tum-freiburg1_desk-extra-I9-20261113-001",
+    "verdicts": {
+      "automatic_assignment": "NOT_ESTABLISHED_NO_SURFACE_LABEL_GT",
+      "structure": "NO_ACTIVE_STRUCTURAL_RELATIONS",
+      "surface_cleanup": "WHOLE_IMAGE_IMPROVEMENT_NOT_ESTABLISHED",
+      "technical_planarity": "PASSED",
+      "visibility": "FAILED_RETAIN_INITIAL",
+      "gt_accuracy": "GT_NOT_EVALUATED"
+    }
+  }
+}

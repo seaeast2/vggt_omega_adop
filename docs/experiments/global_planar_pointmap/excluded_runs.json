@@ -1,0 +1,140 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I0-20261113-001/stages/I0/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I0-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I3-20261113-001/stages/I3/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I3-20261113-001",
+    "reason": "KNOWN_HOLDOUT_GEOMETRY_LEAK in pre-fix region partition; excluded from canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I3a-20261113-001/stages/I3a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I3a-20261113-001",
+    "reason": "KNOWN_HOLDOUT_GEOMETRY_LEAK in pre-fix region partition; excluded from canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I4-20261113-001/stages/I4/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I4-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I4a-20261113-001/stages/I4a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I4a-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5-20261113-001/stages/I5/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I5-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5-20261113-002/stages/I5/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I5-20261113-002",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5a-20261113-001/stages/I5a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I5a-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6-20261113-001/stages/I6/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I6-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6-20261113-002/stages/I6/manifest.json",
+    "status": "superseded",
+    "run_id": "tum-freiburg1_desk-I6-20261113-002",
+    "reason": "I3 partition used heldout depth; replaced by fit-only spatial propagation. Partial checkpoints/logs retained."
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6-20261113-003/stages/I6/manifest.json",
+    "status": "superseded",
+    "run_id": "tum-freiburg1_desk-I6-20261113-003",
+    "reason": "Add frozen minimum-fit/rank feasibility to effective assigned supports after reassignment; original candidate fit alone is insufficient. Partial checkpoints/logs retained."
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6a-20261113-001/stages/I6a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I6a-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I6b-20261113-001/stages/I6b/manifest.json",
+    "status": "superseded",
+    "run_id": "tum-freiburg1_desk-I6b-20261113-001",
+    "reason": "I3 partition used heldout depth; replaced by fit-only spatial propagation. Partial checkpoints/logs retained."
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I7-20261113-001/stages/I7/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I7-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-001/stages/I8/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-I8-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I3-20261113-001/stages/I3/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I3-20261113-001",
+    "reason": "KNOWN_HOLDOUT_GEOMETRY_LEAK in pre-fix region partition; excluded from canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I3a-20261113-001/stages/I3a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I3a-20261113-001",
+    "reason": "KNOWN_HOLDOUT_GEOMETRY_LEAK in pre-fix region partition; excluded from canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I4-20261113-001/stages/I4/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I4-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I4a-20261113-001/stages/I4a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I4a-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I5-20261113-001/stages/I5/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I5-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I5a-20261113-001/stages/I5a/manifest.json",
+    "status": "completed",
+    "run_id": "tum-freiburg1_desk-extra-I5a-20261113-001",
+    "reason": "earlier run retained as provenance; superseded by canonical result"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I6-20261113-001/stages/I6/manifest.json",
+    "status": "superseded",
+    "run_id": "tum-freiburg1_desk-extra-I6-20261113-001",
+    "reason": "I3 partition used heldout depth; replaced by fit-only spatial propagation. Partial checkpoints/logs retained."
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I6-20261113-002/stages/I6/manifest.json",
+    "status": "superseded",
+    "run_id": "tum-freiburg1_desk-extra-I6-20261113-002",
+    "reason": "Add frozen minimum-fit/rank feasibility to effective assigned supports after reassignment; original candidate fit alone is insufficient. Partial checkpoints/logs retained."
+  }
+]

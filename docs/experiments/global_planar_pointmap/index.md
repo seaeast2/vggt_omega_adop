@@ -1,24 +1,67 @@
-# 화면 전체 자동 평면 정렬·Pointmap 실험
+# I0–I9 전역 자동 평면 pointmap 실행 결과
 
-> 상태: **계획 작성 완료 · 전 단계 미실행**
+주 구간 30/40/50과 추가 실내 100/110/120에서 I0–I9 및 A0–A6 비교를 실행했다. 각 구간은 589,824개 원본 관측을 유지한다. 실험 실행 완료와 알고리즘의 과학적 성공은 구분한다. GT_NOT_EVALUATED이며 실제 소속/구조 정확도·전체 SLAM 정확도의 향상을 주장하지 않는다.
 
-[전체 실험 계획](../../vggt_omega_global_planar_pointmap_experiment_plan.md) · [앞선 H 계열 결과](../c3a_plane_refinement/summary.md)
+**자동 주 결과 A4는 두 구간 모두 가시성 보존 기준을 통과하지 못해 retained=initial이다.** 평면식 일치 기술 검증은 통과했지만 화면 전체 개선은 확정하지 않았다.
 
-원본 이미지 → VGGT-Ω raw pointmap → SAM 전체 영상 분할·관측 tag → FoV 최적화 → 평면 후보 분리 → 전역 plane 연결 → 구조 관계 추론 → 소속/평면 공동 최적화 → 전체 재투영 → pointmap/plane registry 보존 순서다.
+| 구간 | 수용 관측 | 최대 frustum loss | retained |
+| --- | --- | --- | --- |
+| tum-freiburg1_desk | 480,284 (81.4284%) | 25.1102% | initial |
+| tum-freiburg1_desk-extra | 467,051 (79.1848%) | 0.9381% | initial |
 
-| 코드 | 목적 | 상태 |
-| --- | --- | --- |
-| I0 | 데이터·좌표·tag·평가 split·합성·objective 계약 | 계획 |
-| I1 | 전체 영상 SAM 분할·tag·중첩 계층 | 계획 |
-| I2 | FoV 최적화·tag 유지 | 계획 |
-| I3 | 여러 대상의 평면 후보 분리·평면성 판단 | 계획 |
-| I4 | 모든 frame의 전역 plane ID·관측 소속 연결 | 계획 |
-| I5 | 평행·수직·인접 관계 자동 추론 | 계획 |
-| I6 | 전역 소속/평면 공동 최적화 | 계획 |
-| I7 | 전체 frame·확정 소속 무제한 hard 재투영 | 계획 |
-| I8 | 점군/plane 계수·경계·관계·이력 bundle 및 round-trip | 계획 |
-| I9 | 전체 화면·추가 실내·지표/육안·비용 종합 평가 | 계획 |
+B1은 기존 C3a 실제 proposed이고 B1s는 공통 fit/보류 분리를 적용한 새 I2 proposed다. 자동 군은 B1s에서 시작한다. 기존 C3a split 재현은 I0에서 별도 검증했다. historical fit와 새 보류의 겹침 때문에 B1을 새 독립 보류 기준으로 해석하지 않는다.
 
-첫 실행 단계는 I0다. 현재 코드 구현·설치·모델 추론·새 PLY 생성은 수행하지 않았다. 보조 검증은 I1a 등으로 구분하고 기존 H 및 실패 결과를 덮어쓰지 않는다.
+| 구간 | 단계 | canonical run·보고서 | stage wall time | 판정 |
+| --- | --- | --- | --- | --- |
+| desk | I0 | [tum-freiburg1_desk-I0-20261113-002](I0/tum-freiburg1_desk-I0-20261113-002/report.md) | 2.14s | CONTRACT_FROZEN_WITH_EXPLICIT_SPLIT_AMENDMENT |
+| desk | I1 | [tum-freiburg1_desk-I1-20261113-001](I1/tum-freiburg1_desk-I1-20261113-001/report.md) | 547.14s | FULL_IMAGE_CANDIDATES_TAGGED |
+| desk | I2 | [tum-freiburg1_desk-I2-20261113-001](I2/tum-freiburg1_desk-I2-20261113-001/report.md) | 2.06s | LOW_SUPPORT_PROPOSED_PRESERVED |
+| desk | I3 | [tum-freiburg1_desk-I3-20261113-002](I3/tum-freiburg1_desk-I3-20261113-002/report.md) | 14.46s | CANDIDATES_EVALUATED |
+| desk | I4 | [tum-freiburg1_desk-I4-20261113-002](I4/tum-freiburg1_desk-I4-20261113-002/report.md) | 70.36s | CONSERVATIVE_GLOBAL_IDS |
+| desk | I5 | [tum-freiburg1_desk-I5-20261113-003](I5/tum-freiburg1_desk-I5-20261113-003/report.md) | 5.13s | RELATION_EVIDENCE_INSUFFICIENT_FREE_RETAINED |
+| desk | I6 | [tum-freiburg1_desk-I6-20261113-004](I6/tum-freiburg1_desk-I6-20261113-004/report.md) | 768.45s | JOINT_SOLVE_EXECUTED |
+| desk | I7 | [tum-freiburg1_desk-I7-20261113-002](I7/tum-freiburg1_desk-I7-20261113-002/report.md) | 3.01s | HARD_REPROJECTION_PASSED_RETAIN_INITIAL |
+| desk | I8 | [tum-freiburg1_desk-I8-20261113-002](I8/tum-freiburg1_desk-I8-20261113-002/report.md) | 165.24s | STATE_BOUND_BUNDLES_EXPORTED |
+| desk | I9 | [tum-freiburg1_desk-I9-20261113-001](I9/tum-freiburg1_desk-I9-20261113-001/report.md) | 26.81s | COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM |
+| desk-extra | I0 | [tum-freiburg1_desk-I0-20261113-002](I0/tum-freiburg1_desk-I0-20261113-002/report.md) | 2.14s | CONTRACT_FROZEN_WITH_EXPLICIT_SPLIT_AMENDMENT |
+| desk-extra | I1 | [tum-freiburg1_desk-extra-I1-20261113-001](I1/tum-freiburg1_desk-extra-I1-20261113-001/report.md) | 948.60s | FULL_IMAGE_CANDIDATES_TAGGED |
+| desk-extra | I2 | [tum-freiburg1_desk-extra-I2-20261113-001](I2/tum-freiburg1_desk-extra-I2-20261113-001/report.md) | 1.93s | FOV_PROPOSED |
+| desk-extra | I3 | [tum-freiburg1_desk-extra-I3-20261113-002](I3/tum-freiburg1_desk-extra-I3-20261113-002/report.md) | 16.33s | CANDIDATES_EVALUATED |
+| desk-extra | I4 | [tum-freiburg1_desk-extra-I4-20261113-002](I4/tum-freiburg1_desk-extra-I4-20261113-002/report.md) | 184.08s | CONSERVATIVE_GLOBAL_IDS |
+| desk-extra | I5 | [tum-freiburg1_desk-extra-I5-20261113-002](I5/tum-freiburg1_desk-extra-I5-20261113-002/report.md) | 5.28s | RELATION_EVIDENCE_INSUFFICIENT_FREE_RETAINED |
+| desk-extra | I6 | [tum-freiburg1_desk-extra-I6-20261113-003](I6/tum-freiburg1_desk-extra-I6-20261113-003/report.md) | 1186.19s | JOINT_SOLVE_EXECUTED |
+| desk-extra | I7 | [tum-freiburg1_desk-extra-I7-20261113-001](I7/tum-freiburg1_desk-extra-I7-20261113-001/report.md) | 3.23s | HARD_REPROJECTION_PASSED_RETAIN_INITIAL |
+| desk-extra | I8 | [tum-freiburg1_desk-extra-I8-20261113-001](I8/tum-freiburg1_desk-extra-I8-20261113-001/report.md) | 104.10s | STATE_BOUND_BUNDLES_EXPORTED |
+| desk-extra | I9 | [tum-freiburg1_desk-extra-I9-20261113-001](I9/tum-freiburg1_desk-extra-I9-20261113-001/report.md) | 26.74s | COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM |
 
-평면·관측 소속·유한 경계·교선·인접 관계는 후속 폴리곤 재구성을 위해 보존한다. plane 후보가 병합/분할/탈락해도 이전 ID와 version을 삭제하지 않는다. 실제 mesh 생성은 이번 범위에 포함하지 않는다.
+## tum-freiburg1_desk
+
+확정·수용 관측 480,284/589,824 (81.4284%). 최대 frustum loss 25.1102%; retained=`initial`.
+
+고정 보류 camera pair 01/02/12 상대 3D median: B1s `[0.007974095155875353, 0.005394425104897326, 0.005732453966444455]`, A4 `[0.511895842237216, 0.20330515398503884, 0.008402806863276656]`. 이는 동일 joint inference의 내부 정합이며 GT 오차가 아니다.
+
+PLY 검토 폴더: `/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/ply_review/tum-freiburg1_desk-I9-20261113-001`. pixel RGB/frame/plane 색을 구분한 B0/B1/B1s/A0–A6 파일이 있다.
+
+## tum-freiburg1_desk-extra
+
+확정·수용 관측 467,051/589,824 (79.1848%). 최대 frustum loss 0.9381%; retained=`initial`.
+
+고정 보류 camera pair 01/02/12 상대 3D median: B1s `[0.00592655524934526, 0.004195071390946612, 0.004614521340609069]`, A4 `[0.007789175314084128, 0.008077345150518, 0.006970445219176781]`. 이는 동일 joint inference의 내부 정합이며 GT 오차가 아니다.
+
+PLY 검토 폴더: `/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/ply_review/tum-freiburg1_desk-extra-I9-20261113-001`. pixel RGB/frame/plane 색을 구분한 B0/B1/B1s/A0–A6 파일이 있다.
+
+## 보존·재현성과 제한
+
+- I1 GPU는 호스트에서 실행했고 CPU geometry와 환경 기록을 구분했다. 모델 SHA256와 source revision은 I1 보고서에 있다.
+- I3 보류 XYZ의 분할 유입을 고친 뒤 후보·모델 선택·소속·normal의 보류 perturbation 불변 검증을 통과했다. 초기·중단 실행은 제외 목록에 남겼다.
+- 소속 변경 뒤 effective fit의 최소 50개/퇴화 조건도 검사한다. 이 조건은 동결된 원래 fit 기준을 적용한 정확성 수정이며 이동 크기 gate가 아니다.
+- initial/proposed/retained bundle은 각각 state/hash로 연결하며 RGB/ID/UV/K/pose·비대상 XYZ를 검사한다. PLY 속성 재읽기·경계 round-trip·이전 checkpoint 복원·잘못된 registry export 거부를 검사했다.
+- 경계의 물리 edge/가림 분류는 provisional이다. 미관측 hole을 실제 구멍으로 확정하거나 watertight mesh를 생성하지 않았다.
+- semantic tag는 모델 예측이며 수동 category/plane annotation이 없다. 추가 실내는 과거 사용 구간이고 threshold를 바꾸는 데 사용하지 않았다.
+- 비용은 각 stage의 wall time/peak RSS이며 모델 GPU peak는 shared process 기준이다. 병렬 실행 시간은 단순 합산한 전체 경과시간과 다르다.
+
+SAM inference와 pre-NMS 보존/계층 처리의 세부 CPU/GPU 시간은 묶여 있다. A6의 end-to-end GPU 비용 절감량은 별도로 측정하지 않았다. plane 불확실성은 원본 fit에 조건부인 근사이며 공동 solve의 보정된 posterior가 아니다. 선택 민감도 I1a/I2a와 야외 I9b는 이번 필수 실행 범위에 합산하지 않았다.
+
+실행 코드의 권위 있는 원본은 각 stage `artifacts/source`와 해당 manifest hash다. 주 구간 retained bundle의 중복 code 관측 필드 한 곳은 직렬화 시점의 후속 I9 그림 편집 버전을 기록했다. 실행 snapshot을 별도로 특정했고 geometry/bundle 함수 AST가 동일함을 검증했다. 수치·원본 bundle을 바꾸지 않은 [출처 보완 기록](provenance_amendment.json)을 함께 보존한다.
+
+[수치 원본](canonical_results.json) · [제외·중단 실행](excluded_runs.json) · [보류 유입 회귀 검증](holdout_perturbation_audit.json) · [별도 육안 검토](visual_review.json) · [최종 보존 검사](final_audit.json) · [환경 snapshot](environment_snapshot.json)

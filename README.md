@@ -148,7 +148,8 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 | [PlanarGS 재사용 조사](docs/research/planargs_reuse_review.md) | 공식 소스·분할 정제·평면 깊이 계산과 적용 조건 |
 | [PlanarGS 조사 소스 manifest](docs/research/planargs_source_manifest.json) | 확인한 commit·파일 해시·immutable URL |
 | [C3a 기준 공유 평면 보정 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md) | H 계열의 사전 범위·비교군·판정 기준과 실행 보완 기록 |
-| [화면 전체 자동 평면 Pointmap 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md) | I0~I9 자동화·무제한 재투영·평면/경계/관계 보존 설계, 미실행 |
+| [화면 전체 자동 평면 Pointmap 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md) | I0~I9 자동화·무제한 재투영·평면/경계/관계 보존 설계 |
+| [I0~I9 실행 결과](docs/experiments/global_planar_pointmap/index.md) | 주/추가 실내·A0~A6 실행 완료. 기술 검증 통과, A4 가시성 실패로 retained=initial, GT 미평가 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 

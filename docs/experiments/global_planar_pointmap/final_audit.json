@@ -1,0 +1,24 @@
+{
+  "tum-freiburg1_desk": {
+    "completed_stages": 10,
+    "source_and_environment_files_verified": 142,
+    "canonical_parent_chain": true,
+    "retained_equals_initial_bitwise": true,
+    "unknown_xyz_bitwise": true,
+    "rgb_ids_uv_k_pose_preserved": true,
+    "plane_uuid_unique_in_run_namespace": true,
+    "comparison_ply_files": 30,
+    "all_comparison_ply_vertices": 589824
+  },
+  "tum-freiburg1_desk-extra": {
+    "completed_stages": 10,
+    "source_and_environment_files_verified": 143,
+    "canonical_parent_chain": true,
+    "retained_equals_initial_bitwise": true,
+    "unknown_xyz_bitwise": true,
+    "rgb_ids_uv_k_pose_preserved": true,
+    "plane_uuid_unique_in_run_namespace": true,
+    "comparison_ply_files": 30,
+    "all_comparison_ply_vertices": 589824
+  }
+}

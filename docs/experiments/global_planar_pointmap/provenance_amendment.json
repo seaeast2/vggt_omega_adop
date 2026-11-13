@@ -1,0 +1,30 @@
+{
+  "affected_bundle": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-002/stages/I8/artifacts/bundle/retained/source_provenance.json",
+    "bytes": 9031,
+    "sha256": "e711ba24523181a27bec5d598f25a9e692a2a749cda244923e283fdf514b7d27"
+  },
+  "affected_field": "code entry for export.py in primary retained source_provenance.json",
+  "meaning": "This entry observed the workspace file at serialization time, after an I9-only figure edit; it is not the loaded execution module hash.",
+  "authoritative_execution_source": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-002/stages/I8/artifacts/source/export.py",
+    "bytes": 32975,
+    "sha256": "969b4385bacae8aa984497f39d4634e263c59b4bd78b9572c916d243b0c4ed58"
+  },
+  "observed_workspace_version_archived_at": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I9-20261113-001/stages/I9/artifacts/source/export.py",
+    "bytes": 33816,
+    "sha256": "b34f48b655adaf1f7114de2ab04a261dbb8ebd41ab46c1fd3a39a4a9bf143f1e"
+  },
+  "geometry_and_bundle_functions_ast_identical": {
+    "project_map": true,
+    "visibility": true,
+    "contours": true,
+    "intersection_records": true,
+    "bundle_verify": true,
+    "write_bundle": true,
+    "bundle": true
+  },
+  "numeric_data_changed": false,
+  "authority": "The I8 stage manifest artifacts/source hashes remain the execution source authority. Original bundles preserved."
+}

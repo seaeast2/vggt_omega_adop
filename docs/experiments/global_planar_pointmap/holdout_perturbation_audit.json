@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "dataset": "tum-freiburg1_desk",
+  "reference": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I3-20261113-002/stages/I3/artifacts/regions",
+  "probe": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I3v-20261113-001/stages/I3v/artifacts/regions",
+  "checks": {
+    "regions.json": true,
+    "model_selection.json": true,
+    "proposal_events.json": true,
+    "memberships.npz": true,
+    "normals_7.npz": true,
+    "normals_21.npz": true
+  },
+  "mutation": "excluded XYZ += N(0,100); Z *=100; confidence=1e8; original files untouched",
+  "scope": "candidate geometry, model selection, membership, normals invariant to heldout geometry/confidence"
+}
