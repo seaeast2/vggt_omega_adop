@@ -1,0 +1,20 @@
+{
+  "initial": {
+    "hash_binding": true,
+    "assignment_plane_equations": true,
+    "boundary_roundtrip": true,
+    "observation_ids_unique": true
+  },
+  "proposed": {
+    "hash_binding": true,
+    "assignment_plane_equations": true,
+    "boundary_roundtrip": true,
+    "observation_ids_unique": true
+  },
+  "retained": {
+    "hash_binding": true,
+    "assignment_plane_equations": true,
+    "boundary_roundtrip": true,
+    "observation_ids_unique": true
+  }
+}

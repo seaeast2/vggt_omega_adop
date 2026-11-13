@@ -1,0 +1,48 @@
+[
+  {
+    "checkpoint": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-002/stages/I8/artifacts/bundle/proposed/versions/version_00.npz",
+      "bytes": 969734,
+      "sha256": "b6b6987769d779c46cfe70d3d240f6adb0915eb9ab17e40306eb9e2b11dd569f"
+    },
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 2.2737367544323206e-13,
+      "plane_equation_max": 1.3322676295501878e-15,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 511806,
+        "mean": 0.014099194770534642,
+        "median": 0.002257147716413479,
+        "p90": 0.011209943535967482,
+        "max": 3.242642637451099
+      },
+      "moved_over_100pct": 943
+    }
+  },
+  {
+    "checkpoint": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I8-20261113-002/stages/I8/artifacts/bundle/proposed/versions/version_06.npz",
+      "bytes": 971526,
+      "sha256": "8743373d7418317d08ced0612b0d2ff9e5c84820acc2e26404c33a73cd77d097"
+    },
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 5.115907697472721e-13,
+      "plane_equation_max": 6.095820666274752e-13,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 480284,
+        "mean": 0.22181045105333097,
+        "median": 0.0033253347323950458,
+        "p90": 0.5921630435156584,
+        "max": 14062.9420287364
+      },
+      "moved_over_100pct": 3200
+    }
+  }
+]
