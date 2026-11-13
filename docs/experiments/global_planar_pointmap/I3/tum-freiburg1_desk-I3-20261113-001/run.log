@@ -1,0 +1,17 @@
+{"time": "2026-11-13T17:15:27.438201+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I3-20261113-001"}
+{"time": "2026-11-13T17:15:31.977430+09:00", "event": "region_progress", "proposal": 0, "total": 554, "planes": 3}
+{"time": "2026-11-13T17:15:32.806271+09:00", "event": "region_progress", "proposal": 50, "total": 580, "planes": 66}
+{"time": "2026-11-13T17:15:33.352345+09:00", "event": "region_progress", "proposal": 100, "total": 588, "planes": 121}
+{"time": "2026-11-13T17:15:33.853461+09:00", "event": "region_progress", "proposal": 150, "total": 597, "planes": 180}
+{"time": "2026-11-13T17:15:34.556603+09:00", "event": "region_progress", "proposal": 200, "total": 625, "planes": 253}
+{"time": "2026-11-13T17:15:34.924862+09:00", "event": "region_progress", "proposal": 250, "total": 633, "planes": 294}
+{"time": "2026-11-13T17:15:35.441421+09:00", "event": "region_progress", "proposal": 300, "total": 637, "planes": 353}
+{"time": "2026-11-13T17:15:35.988109+09:00", "event": "region_progress", "proposal": 350, "total": 648, "planes": 417}
+{"time": "2026-11-13T17:15:36.632962+09:00", "event": "region_progress", "proposal": 400, "total": 677, "planes": 485}
+{"time": "2026-11-13T17:15:37.039550+09:00", "event": "region_progress", "proposal": 450, "total": 679, "planes": 539}
+{"time": "2026-11-13T17:15:37.703851+09:00", "event": "region_progress", "proposal": 500, "total": 693, "planes": 612}
+{"time": "2026-11-13T17:15:38.622499+09:00", "event": "region_progress", "proposal": 550, "total": 718, "planes": 716}
+{"time": "2026-11-13T17:15:38.792850+09:00", "event": "region_progress", "proposal": 600, "total": 718, "planes": 734}
+{"time": "2026-11-13T17:15:38.912531+09:00", "event": "region_progress", "proposal": 650, "total": 718, "planes": 745}
+{"time": "2026-11-13T17:15:39.072524+09:00", "event": "region_progress", "proposal": 700, "total": 719, "planes": 761}
+{"time": "2026-11-13T17:15:40.485144+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}
