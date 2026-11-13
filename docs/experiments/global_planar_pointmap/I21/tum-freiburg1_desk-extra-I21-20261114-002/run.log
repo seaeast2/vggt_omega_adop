@@ -1,0 +1,3 @@
+{"time": "2026-11-14T06:38:19.824410+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I21-20261114-002"}
+{"time": "2026-11-14T06:38:19.824593+09:00", "event": "protocol_frozen", "protocol": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I21-20261114-002/stages/I21/evaluation/protocol.json", "bytes": 863, "sha256": "66a636b07d74f3c423698fb9e3e56a8f063bf024e77891cbe5c48f3cda07d7ce"}}
+{"time": "2026-11-14T06:38:22.696574+09:00", "event": "completed", "decision": "UNCORRECTED_OMEGA_BASELINE_ADDED", "criteria": true}

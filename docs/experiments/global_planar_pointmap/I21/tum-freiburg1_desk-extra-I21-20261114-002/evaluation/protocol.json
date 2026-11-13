@@ -1,0 +1,13 @@
+{
+  "version": "I21.2",
+  "raw_definition": "Unmodified cached Omega depth + decoded predicted intrinsics/extrinsics; backproject with beta=1. No world_points head exists in these caches.",
+  "primary_alignment": "Depth: one RAW FIT median GT/Z scale. 3D: common camera-pose-only Sim(3), no surface fitting; same transform across all arms",
+  "sensitivity_alignment": "RAW FIT and previously frozen FoV FIT Sim(3), each shared across all arms; replay old results",
+  "evaluation": "Frozen previous valid GT and I0 validation, identical IDs for every arm; no shift in depth",
+  "sample_cap": 30000,
+  "inference": false,
+  "optimizer_rerun": false,
+  "point_filtering": false,
+  "gt_status": "GT_DEPTH_AND_REGISTERED_POINTMAP_EVALUATED",
+  "evaluation_annotation": "Post-hoc baseline extension; existing Kinect/FARO GT reused; no GT reconstruction optimization"
+}
