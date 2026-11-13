@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/initial/frame_colors.ply",
+    "bytes": 25289075,
+    "sha256": "7b0bcd550f9f1a00f3274f1754eb8b8be30319d8127de20911cf4972aeb36cbb"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/initial/pixel_rgb.ply",
+    "bytes": 25289075,
+    "sha256": "d3c15e095f74fbe169f1ec8c724c9e51f7208debed868571433bcbd47e4189af"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/frame_colors.ply",
+    "bytes": 25289075,
+    "sha256": "abb4670e24010b11c24834af1689517ceafe3c8f6aa5ad526674e5fc3430c186"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/pixel_rgb.ply",
+    "bytes": 25289075,
+    "sha256": "c584e9fc63196a8eb8f18c18c33e814f600aa7af247d49d44711a791fdd08a9d"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/named_local/frame_colors.ply",
+    "bytes": 25289075,
+    "sha256": "20d8c94f594574ffe0dd7170b3f0eed3316ebc6931a1ef40b6eaad8b543f9727"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/named_local/pixel_rgb.ply",
+    "bytes": 25289075,
+    "sha256": "096ec0dcc5cf99ede5d45f7773da990d05d12e7d2f808ecf322b1b666f1d3062"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/retained/frame_colors.ply",
+    "bytes": 25289075,
+    "sha256": "abb4670e24010b11c24834af1689517ceafe3c8f6aa5ad526674e5fc3430c186"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/artifacts/named_or/retained/pixel_rgb.ply",
+    "bytes": 25289075,
+    "sha256": "c584e9fc63196a8eb8f18c18c33e814f600aa7af247d49d44711a791fdd08a9d"
+  }
+]

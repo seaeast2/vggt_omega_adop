@@ -1,0 +1,5 @@
+{"time": "2026-11-14T06:11:10.434291+09:00", "event": "registered", "run_id": "eth3d-office-I10-20261114-001"}
+{"time": "2026-11-14T06:12:43.045098+09:00", "event": "surface_groups", "regions": 1078, "groups": 355, "association_edges": 2465}
+{"time": "2026-11-14T06:12:45.563283+09:00", "event": "arm_finished", "arm": "named_local", "accepted": 193444, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T06:12:47.509976+09:00", "event": "arm_finished", "arm": "named_OR", "accepted": 193444, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T06:12:50.377394+09:00", "event": "completed", "decision": "NAMED_OR_PLANE_TEST_EXECUTED", "criteria": true}

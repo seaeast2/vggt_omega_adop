@@ -1,0 +1,5 @@
+{"time": "2026-11-14T06:15:01.860705+09:00", "event": "registered", "run_id": "eth3d-pipes-I10-20261114-001"}
+{"time": "2026-11-14T06:15:18.064756+09:00", "event": "surface_groups", "regions": 641, "groups": 271, "association_edges": 442}
+{"time": "2026-11-14T06:15:20.423756+09:00", "event": "arm_finished", "arm": "named_local", "accepted": 91595, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T06:15:22.338763+09:00", "event": "arm_finished", "arm": "named_OR", "accepted": 91595, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T06:15:25.147142+09:00", "event": "completed", "decision": "NAMED_OR_PLANE_TEST_EXECUTED", "criteria": true}
