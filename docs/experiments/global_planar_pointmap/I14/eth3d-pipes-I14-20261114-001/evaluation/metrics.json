@@ -1,0 +1,243 @@
+{
+  "decision": "LASER_DATASET_RGB_TRIPLE_FROZEN",
+  "pair_shared_tracks": [
+    717,
+    495,
+    635
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "name": "DSC_0634.JPG",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images_undistorted/DSC_0634.JPG",
+      "sha256": "661b824a1db24687e7ba7aa9efefc12d3efc9d95994bd75473363de7e496dcf7",
+      "source_member": "dslr_images_undistorted/DSC_0634.JPG",
+      "original_wh": [
+        6220,
+        4141
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 6220,
+        "height": 4141,
+        "params": [
+          3430.27,
+          3429.23,
+          3119.2,
+          2057.75
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 6048,
+        "height": 4032,
+        "params": [
+          3430.27,
+          3429.23,
+          3032.95,
+          2003.59,
+          0.218983,
+          0.155576,
+          -0.000274629,
+          -0.000387159,
+          -0.0364669,
+          0.302935,
+          0.00133613,
+          0.00101227
+        ]
+      },
+      "original_image": "dslr_images/DSC_0634.JPG",
+      "dataset_extrinsics": [
+        [
+          0.9874869062271818,
+          -0.15757071013356466,
+          -0.006409472511349629,
+          0.841517
+        ],
+        [
+          -0.0022551459240646443,
+          0.026529506623167498,
+          -0.9996454869578479,
+          0.181774
+        ],
+        [
+          0.15768488940520198,
+          0.987151283535779,
+          0.025842195474335472,
+          0.202188
+        ]
+      ],
+      "image_id": 1
+    },
+    {
+      "index": 1,
+      "name": "DSC_0635.JPG",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images_undistorted/DSC_0635.JPG",
+      "sha256": "d0f5a55f79373850317eab550438058e765a75ba90c2f411c9a20317a7dbb049",
+      "source_member": "dslr_images_undistorted/DSC_0635.JPG",
+      "original_wh": [
+        6220,
+        4141
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 6220,
+        "height": 4141,
+        "params": [
+          3430.27,
+          3429.23,
+          3119.2,
+          2057.75
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 6048,
+        "height": 4032,
+        "params": [
+          3430.27,
+          3429.23,
+          3032.95,
+          2003.59,
+          0.218983,
+          0.155576,
+          -0.000274629,
+          -0.000387159,
+          -0.0364669,
+          0.302935,
+          0.00133613,
+          0.00101227
+        ]
+      },
+      "original_image": "dslr_images/DSC_0635.JPG",
+      "dataset_extrinsics": [
+        [
+          0.9984989587943982,
+          0.05462354450890793,
+          -0.0040121903974858625,
+          0.291006
+        ],
+        [
+          -0.005424767399157447,
+          0.025736562303868615,
+          -0.999654040785833,
+          0.181953
+        ],
+        [
+          -0.054501387002234745,
+          0.9981752840789349,
+          0.025994250686838305,
+          0.0599135
+        ]
+      ],
+      "image_id": 2
+    },
+    {
+      "index": 10,
+      "name": "DSC_0644.JPG",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images_undistorted/DSC_0644.JPG",
+      "sha256": "598d5ec54a3ec21065a2d19d92ea5f20f3abc334f90dfcfac0c98cbc1d9b5f62",
+      "source_member": "dslr_images_undistorted/DSC_0644.JPG",
+      "original_wh": [
+        6220,
+        4141
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 6220,
+        "height": 4141,
+        "params": [
+          3430.27,
+          3429.23,
+          3119.2,
+          2057.75
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 6048,
+        "height": 4032,
+        "params": [
+          3430.27,
+          3429.23,
+          3032.95,
+          2003.59,
+          0.218983,
+          0.155576,
+          -0.000274629,
+          -0.000387159,
+          -0.0364669,
+          0.302935,
+          0.00133613,
+          0.00101227
+        ]
+      },
+      "original_image": "dslr_images/DSC_0644.JPG",
+      "dataset_extrinsics": [
+        [
+          0.9796369676666936,
+          0.20075834420337524,
+          -0.002738396159290099,
+          0.0192445
+        ],
+        [
+          -0.06077243101678781,
+          0.2834958092140179,
+          -0.9570458911600841,
+          0.187231
+        ],
+        [
+          -0.1913586246008156,
+          0.9377239537256201,
+          0.2899235475087801,
+          -0.0333083
+        ]
+      ],
+      "image_id": 11
+    }
+  ],
+  "camera_files": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/dslr_calibration_undistorted/cameras.txt",
+      "bytes": 168,
+      "sha256": "c578c441c9fe0aa0624cca280eaa6881e48d7a8df1a106fe27482da80636aecc"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/dslr_calibration_undistorted/images.txt",
+      "bytes": 971781,
+      "sha256": "52313d210be6c18191fea051655a41f6b67a365e4ef3d99b8bc8940c63eb1256"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/dslr_calibration_jpg/cameras.txt",
+      "bytes": 266,
+      "sha256": "716ff4341a488591ab1b63bf95aae3d4385815ece70a770436d991caa1a0af5c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/dslr_calibration_jpg/images.txt",
+      "bytes": 971348,
+      "sha256": "de0bdd684786a3e7f8ff01117679cbd19f5d8d5beb5aee5b005177ba6622f933"
+    }
+  ],
+  "archives": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/pipes_dslr_undistorted.7z",
+      "bytes": 145321540,
+      "sha256": "718981351c14e84759fcc73215e7251fce93d6e9ea1fe24f9e15f1028232c12c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/pipes_dslr_jpg.7z",
+      "bytes": 109668393,
+      "sha256": "e2f81386e24dbefcd7090b02431e510b288f61df69591c04fb483056ad0f6ab6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/pipes_dslr_depth.7z",
+      "bytes": 127725253,
+      "sha256": "12300888d47911d453727c439072ea1da309f307ed443a5c43abb53bdee6c628"
+    }
+  ],
+  "laser_GT_content_used": false,
+  "elapsed_seconds": 5.895744473004015,
+  "process_peak_rss_mib": 305.9765625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

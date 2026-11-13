@@ -64,6 +64,8 @@ class Stage:
         for name in ['common.py','matching.py']:
             shutil.copy2(ROOT/'experiments/camera_fov_alignment'/name,self.path/'artifacts/source'/name)
         shutil.copy2(ROOT/'docs/vggt_omega_global_planar_pointmap_experiment_plan.md',self.path/'artifacts/source/plan.md')
+        if dataset.startswith('eth3d-'):
+            shutil.copy2(ROOT/'docs/vggt_omega_eth3d_laser_experiment_plan.md',self.path/'artifacts/source/eth3d_plan.md')
         c.json_write(self.path/'config_resolved.json',self.config)
         c.json_write(self.path/'environment.json',dict(python=sys.version,platform=platform.platform(),numpy=np.__version__,
             scipy=__import__('scipy').__version__,opencv=c.cv2.__version__,execution_context='CPU geometry; GPU I1 must run host outside sandbox',
@@ -94,7 +96,11 @@ class Stage:
         (self.doc/'report.md').write_text(f'# {self.code} 실패\n\n실패 보존: `{self.run_id}`\n\n```text\n{traceback.format_exc()}\n```\n')
 
 def load(dataset='tum-freiburg1_desk',fov=False):
-    if dataset=='tum-freiburg1_desk':
+    if dataset.startswith('eth3d-'):
+        from eth3d_laser import load_raw
+        d=load_raw(dataset)
+        d['raw_xyz']=c.points(d,np.ones(6))
+    elif dataset=='tum-freiburg1_desk':
         d=c.load_data(dataset)
         d['raw_xyz']=c.points(d,np.ones(6));d['image_paths']=[ROOT/f['path'] for f in d['frames']]
     else:
@@ -115,7 +121,9 @@ def load(dataset='tum-freiburg1_desk',fov=False):
     assert np.max(abs(d['centers'][d['fid']]+d['d0'][:,None]*d['q']-d['xyz']))<1e-8
     return d
 
-def split_path(dataset): return latest('I0')/'artifacts/contract'/dataset
+def split_path(dataset):
+    stage=latest('I0',dataset) if dataset.startswith('eth3d-') else latest('I0')
+    return stage/'artifacts/contract'/dataset
 def split_load(dataset):
     with np.load(split_path(dataset)/'split.npz') as z:return {k:z[k] for k in z.files}
 

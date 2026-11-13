@@ -1,0 +1,3 @@
+{"time": "2026-11-14T05:56:59.208217+09:00", "event": "registered", "run_id": "eth3d-office-I14-20261114-001"}
+{"time": "2026-11-14T05:56:59.208268+09:00", "event": "extract_RGB", "scene": "office"}
+{"time": "2026-11-14T05:57:10.673051+09:00", "event": "completed", "decision": "LASER_DATASET_RGB_TRIPLE_FROZEN", "criteria": true}

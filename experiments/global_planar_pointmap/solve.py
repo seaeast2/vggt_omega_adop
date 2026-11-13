@@ -3,7 +3,7 @@ from core import *
 from scipy import sparse
 
 def fov(dataset):
-    st=Stage('I2',dataset,[latest('I0'),latest('I1',dataset)])
+    st=Stage('I2',dataset,[latest('I0',dataset) if dataset.startswith('eth3d-') else latest('I0'),latest('I1',dataset)])
     try:
         d=load(dataset);matches=m.load(split_path(dataset)/'matches.npz');train=m.subset(matches,~matches['validation'])
         a,b,w,_=c.build_system(d,train);rank=c.rank_info(a);support=m.pair_support(matches,*d['depth'].shape[1:])

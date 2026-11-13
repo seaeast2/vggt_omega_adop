@@ -1,0 +1,3 @@
+{"time": "2026-11-14T05:57:10.679401+09:00", "event": "registered", "run_id": "eth3d-pipes-I14-20261114-001"}
+{"time": "2026-11-14T05:57:10.679443+09:00", "event": "extract_RGB", "scene": "pipes"}
+{"time": "2026-11-14T05:57:16.571498+09:00", "event": "completed", "decision": "LASER_DATASET_RGB_TRIPLE_FROZEN", "criteria": true}

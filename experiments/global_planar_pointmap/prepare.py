@@ -48,9 +48,9 @@ def freeze_split(d,out,st):
     for p,frame in zip(d['image_paths'],d['frames']):
         rec=c.record(p);assert rec['sha256']==frame['sha256'];rows.append(rec)
     c.json_write(out/'inputs.json',dict(files=d['inputs']+rows,arrays={k:dict(shape=list(d[k].shape),dtype=str(d[k].dtype),sha256=ahash(d[k])) for k in ['depth','k','e','raw_xyz','uv','raw_rgb','fid']},
-        preprocessing='Omega max_size 512: 640x480 -> 512x384, no crop; raw images are normalized preprocessed RGB; SAM nearest mapping from original',
+        preprocessing=(f"Omega max_size 512: original sizes={[f['original_wh'] for f in d['frames']]} -> {list(d['depth'].shape[1:])}, no crop; SAM uses processed RGB" if d['dataset'].startswith('eth3d-') else 'Omega max_size 512: 640x480 -> 512x384, no crop; raw images are normalized preprocessed RGB; SAM nearest mapping from original'),
         camera_convention='X_camera=R X_world+t; C=-R^-1 t; depth is camera Z; R not assumed exactly orthonormal',
-        annotations='NONE; no human labels or H4g mask/plane inputs',frame_indices=[30,40,50] if d['dataset']=='tum-freiburg1_desk' else [100,110,120]))
+        annotations='NONE; no human labels or H4g mask/plane inputs',frame_indices=([f['index'] for f in d['frames']] if d['dataset'].startswith('eth3d-') else [30,40,50] if d['dataset']=='tum-freiburg1_desk' else [100,110,120])))
     return json.loads((out/'split_audit.json').read_text())
 
 def controls():

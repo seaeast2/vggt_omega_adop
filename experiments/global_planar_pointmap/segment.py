@@ -2,8 +2,8 @@
 from core import *
 import gc
 
-def run():
-    stages=[Stage('I1',name,[latest('I0')],dict(execution_context='host CUDA outside sandbox')) for name in ['tum-freiburg1_desk','tum-freiburg1_desk-extra']]
+def run(dataset_names=None):
+    stages=[Stage('I1',name,[latest('I0',name) if name.startswith('eth3d-') else latest('I0')],dict(execution_context='host CUDA outside sandbox')) for name in (dataset_names or ['tum-freiburg1_desk','tum-freiburg1_desk-extra'])]
     try:
         import torch,transformers
         from transformers import AutoProcessor,AutoModelForZeroShotObjectDetection
@@ -59,7 +59,8 @@ def run():
                     selected_hashes={ahash(r['segmentation']) for r in official}
                     for r in traced:
                         mask=rle_to_mask(r['rle']);raw.append(mask);records.append(dict(source='automatic',semantic_tag='unknown',sam_predicted_iou=r['iou'],stability=r['stability'],point=r['point'],official_nms_retained=ahash(mask) in selected_hashes))
-                    raw=np.array(raw,bool);mapped=np.array([c.cv2.resize(a.astype('uint8'),(512,384),interpolation=c.cv2.INTER_NEAREST)>0 for a in raw])
+                    hh,ww=d['depth'].shape[1:]
+                    raw=np.array(raw,bool);mapped=np.array([c.cv2.resize(a.astype('uint8'),(ww,hh),interpolation=c.cv2.INTER_NEAREST)>0 for a in raw])
                     seen={};unique=[];aliases=[]
                     for k,(a,r) in enumerate(zip(mapped,records)):
                         r|=dict(mask_id=nextid,frame=f,raw_hash=ahash(raw[k]),processed_hash=ahash(a),area=int(a.sum()),mapping='640x480->512x384 nearest, no crop');nextid+=1
@@ -88,7 +89,7 @@ def run():
                     st.log('sam_frame',**frame_metrics[-1]);del amg,raw,mapped;gc.collect();torch.cuda.empty_cache()
             obs=[];maskids=[]
             for f,a,mid in allmasks:
-                ids=np.flatnonzero(a)+f*512*384;obs.append(ids);maskids.append(np.full(len(ids),mid,np.int32))
+                ids=np.flatnonzero(a)+f*int(np.prod(d['depth'].shape[1:]));obs.append(ids);maskids.append(np.full(len(ids),mid,np.int32))
             obs=np.concatenate(obs);maskids=np.concatenate(maskids);order=np.lexsort((maskids,obs));obs=obs[order];maskids=maskids[order]
             indptr=np.r_[0,np.cumsum(np.bincount(obs,minlength=len(d['ids'])))].astype(np.int64)
             np.savez_compressed(out/'observation_mask_links.npz',indptr=indptr,mask_ids=maskids,observation_id=d['ids'])

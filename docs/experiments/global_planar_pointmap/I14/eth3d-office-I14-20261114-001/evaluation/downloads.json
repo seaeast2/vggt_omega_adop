@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/office_dslr_undistorted.7z",
+    "bytes": 288765137,
+    "sha256": "316c0c10c79cc173e4b5c26102fed3caedbde7e1865fd896ae15423f0f8cf04c",
+    "url": "https://eth3d.ethz.ch/data/office_dslr_undistorted.7z"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/office_dslr_jpg.7z",
+    "bytes": 231734054,
+    "sha256": "bc2bfdf784b0cb8139832b8339ad533be022901a635969fefe9d8bc2b9fff07d",
+    "url": "https://eth3d.ethz.ch/data/office_dslr_jpg.7z"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/archives/office_dslr_depth.7z",
+    "bytes": 441352937,
+    "sha256": "aa2e421079eff69a25332e41c81f2f7ecfea54de97bd30f49e2435cc7c700d8b",
+    "url": "https://eth3d.ethz.ch/data/office_dslr_depth.7z"
+  }
+]
