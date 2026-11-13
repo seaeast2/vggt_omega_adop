@@ -1,0 +1,2 @@
+{"time": "2026-11-14T06:14:22.934902+09:00", "event": "registered", "run_id": "eth3d-pipes-I4-20261114-001"}
+{"time": "2026-11-14T06:15:01.851504+09:00", "event": "completed", "decision": "CONSERVATIVE_GLOBAL_IDS", "criteria": true}
