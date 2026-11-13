@@ -1,0 +1,282 @@
+{
+  "status": "completed",
+  "run_id": "eth3d-pipes-I1-20261114-001",
+  "experiment_code": "I1",
+  "dataset": "eth3d-pipes",
+  "started_at": "2026-11-14T06:00:17.683481+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I0-20261114-001/stages/I0/manifest.json",
+      "bytes": 13090,
+      "sha256": "9178f121fbe032dea2d5b5aee1886254f05465d6a5f879a4a9c8501763062a0d"
+    }
+  ],
+  "project_commit_at_start": "672a5f3457c1096d1e46ed28972a30d957102a09",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": true,
+  "execution_completed": true,
+  "decision": "FULL_IMAGE_CANDIDATES_TAGGED",
+  "ended_at": "2026-11-14T06:13:58.230710+09:00",
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/figures/frame_0_all_masks.png",
+      "bytes": 122732,
+      "sha256": "e5caa0b268e5ba356d9ada3292c3ef4826c23da7872ba65e9a5b0bda33ca5d60"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/figures/frame_1_all_masks.png",
+      "bytes": 121840,
+      "sha256": "f80bc8c9ccda1530dc0eb9473fc614b13c4b2437010e372c7cb79e0c77ce3537"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/figures/frame_2_all_masks.png",
+      "bytes": 114060,
+      "sha256": "5fd18e58f5f8f389a1fe54717a33a4ad08d1e5d64927ab3af24475021b0020d9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/cancel_superseded.py",
+      "bytes": 2049,
+      "sha256": "f44af55d07839885500f4723f587a706a2815111e71ba0ffd3f2a2ba2d4f378b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/check_holdout.py",
+      "bytes": 1423,
+      "sha256": "bcd172d24128251d3def9a64a3376b5ea2d2138e23a3919754a6b3bc552fa6a8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/controls.py",
+      "bytes": 2601,
+      "sha256": "a24aca0fb2e79c044c2e5f821b085a753eaa36bdda80fbd73a5b55480cb22b4d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/core.py",
+      "bytes": 15221,
+      "sha256": "2193ddcc875717823c6d9d905d8e35b0982ad9bf4e3c233402ce2a5a2e1caacf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/eth3d_laser.py",
+      "bytes": 12604,
+      "sha256": "259c750eed2bbe0b931c96cfac9990b25a0495c103ab3d5fe581c61c1ebb4779"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/eth3d_plan.md",
+      "bytes": 5380,
+      "sha256": "6a2c1bf5ea63127dc209001af097c051abe31c84d66dbee220fe4327d357a9d0"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/evaluate_gt.py",
+      "bytes": 18286,
+      "sha256": "9de0bf4d2f061528488433f164d3b54eb7e18819a5af5b505931dbb0a4a3f9e9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/evaluate_photometric_planes.py",
+      "bytes": 10273,
+      "sha256": "5d56caad34bf600f3ead40cf57d61bcb5ae6f573c95224b8df6254b1b5ffb0a4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/export.py",
+      "bytes": 33992,
+      "sha256": "3db9552e61b46faeff741b108524737d24a26471983ea1c5caea51b11fda0b01"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/joint.py",
+      "bytes": 18802,
+      "sha256": "3313a852e61e701f7d543d743ceb1f0f9b25480273b85eb0b7141ccc19f1b994"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/matching.py",
+      "bytes": 7368,
+      "sha256": "6c43c247cadbe99fdbcb7239d018e400c2d4dfd2e7eb07a5272c726f1c49281e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/named_or.py",
+      "bytes": 14111,
+      "sha256": "3f42dfe7c90f8587fda0169608bef73ba3c9b74ae683cfd0409ae92170ccfd5d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/photometric_planes.py",
+      "bytes": 20798,
+      "sha256": "5f86e9f852b6a79d337344a48346a83164baf8a761e330ece9add9c33b0fd3f4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/plan.md",
+      "bytes": 34837,
+      "sha256": "e28088bc7a3bc81aea7936deb15a02969aa8703891573e777e454dff7964bf06"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/prepare.py",
+      "bytes": 10087,
+      "sha256": "1d9973156b29d82433770eb2550c6466b476da50997a1e358fbdb714c7b46cc2"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/publish.py",
+      "bytes": 2639,
+      "sha256": "e593d29457ea1a5e589c00a01bec1880fa835c59244bd18e62c4aaab0b008b04"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/remaining.py",
+      "bytes": 1861,
+      "sha256": "f6f1d38c0f352f9072a1f8f9c6e9a59caeaef0f849b9f671c8b4a3b88e72d95e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/segment.py",
+      "bytes": 10624,
+      "sha256": "2b00cc7fafc7b0cfc0f68db1f17c40e4c1d2fbba26c9c69899ac865577b37e35"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/solve.py",
+      "bytes": 35283,
+      "sha256": "cd8e6b1217105db530844f2274512f8a487ee0564f66697eb862c945b381fed7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/summarize.py",
+      "bytes": 8207,
+      "sha256": "3f6ab1ecb125517e673928b2c79b688efd14f887f0af9b8c6ed7687ca8f44973"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/summarize_photometric.py",
+      "bytes": 11509,
+      "sha256": "03bb0f5b98fcb63368ff0b74afcc334aabdf2dfe839b7a6f89a8839b27e4a8c6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/source/visualize_unknown.py",
+      "bytes": 8360,
+      "sha256": "e5fa6a8e9711b9a75b070c2bdce1d7092cc68232fa985ef317c9631a572009c7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/detections.json",
+      "bytes": 4897,
+      "sha256": "4cd08e8beeb822f2dfa965e0fd7c0734d5c18eb53ffd917246363d95f547161f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_automatic_post_nms.npz",
+      "bytes": 29101,
+      "sha256": "59ffafd1effc749dba6fbc7dcff83b56995aa24daa37a90a5cc3ce889130883f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_automatic_pre_nms_rle.json",
+      "bytes": 7036554,
+      "sha256": "a7349ec0029f52ef8caa366f50b3ec6d15cc06301765c59cdb3104950e5b2f09"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_detector_queries.npz",
+      "bytes": 98101,
+      "sha256": "1f01dee1da5d324e0746259cbe5c4fb3264385fa0b2956245441a8f1a8047d0e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_hierarchy.json",
+      "bytes": 60433567,
+      "sha256": "dec386585eaeca1645fbb88375fb1e380c4d8d4902145be7ecc6e0c3cbedd275"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_masks.npz",
+      "bytes": 3625329,
+      "sha256": "563e5eac0ebf9d77a0c9ef14d7e7a395483c4b84ace68ac3d6861654e3ebdff0"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_0_uncovered.png",
+      "bytes": 10583,
+      "sha256": "85fd49c6361fb18c9582befd594a3c665c81d3a88d9b45c58e4c4ca620961366"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_automatic_post_nms.npz",
+      "bytes": 24536,
+      "sha256": "5456e1567c0a53b01c911ad3f5896d90ab7c5170b0cfa144fad32eb53acb6d60"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_automatic_pre_nms_rle.json",
+      "bytes": 5605475,
+      "sha256": "3970bc49bb8f0961535edb32fa746fc25156a4b29f8a1294c3f6a15ef3b3df02"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_detector_queries.npz",
+      "bytes": 98180,
+      "sha256": "ef34b81b2702088af04f99ad3f93f081556f16cac586d3523852e066e1ce61ac"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_hierarchy.json",
+      "bytes": 39854665,
+      "sha256": "f7ca1640fd67bb6934d2861cc03f744c0eb22040f01c874edddc4afb6bebeda8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_masks.npz",
+      "bytes": 3004127,
+      "sha256": "295bbd4c2aa317e8e79bd43bf9748e3205b40f1d85359b9dd4f46a1f21e56d7b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_1_uncovered.png",
+      "bytes": 11533,
+      "sha256": "a73b457f8d436b0edd4e483502c10d7da2e084ff4034c6c44ac3d725a568182f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_automatic_post_nms.npz",
+      "bytes": 29424,
+      "sha256": "d642c0d59e9c2096fc37cbfe8e4aae16bfb145f8f8cf893f20eeab6cd73a3eff"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_automatic_pre_nms_rle.json",
+      "bytes": 3805940,
+      "sha256": "8a921df21fb8574400be45286e5f78079672262f6dab304cf3a664c85289623b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_detector_queries.npz",
+      "bytes": 98260,
+      "sha256": "4a7718d149ada35c239a6f264c2c15e3132ceaf008f6942ffbe101d65e6bcf4c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_hierarchy.json",
+      "bytes": 16593447,
+      "sha256": "d33221b4434fbd608988bb15b8b8cd099bdf6e8ea49a5bf87527af60dba47ba2"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_masks.npz",
+      "bytes": 1617350,
+      "sha256": "4dbc86b1be1df93bd482f103d2fe72a5fda024150c72ee2ae59714a481f37111"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/frame_2_uncovered.png",
+      "bytes": 12020,
+      "sha256": "6553aa5c663a7ffc5983ae2bc0b5501f52648414cab23ef02fe4d847415c1767"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/mask_registry.json",
+      "bytes": 2149545,
+      "sha256": "9a72581771c30f657109e5b30e7733352366d68f7f22eda0acaeb6765a733889"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/artifacts/tags/observation_mask_links.npz",
+      "bytes": 6447675,
+      "sha256": "96439624ca0aedd378583414c8dbc69d02b47c86477c543c18c96f8a39d09d4b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/config_resolved.json",
+      "bytes": 2168,
+      "sha256": "a145574ab12f3581399ab4dadf32f48ab6e133428f7b0ebed03c9f072cc7c2db"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/environment.json",
+      "bytes": 358,
+      "sha256": "51129f9355b47aa7fd88311a5057be5ba1cddbb2e9f5012bfa0e63d9e0dca11e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/evaluation/metrics.json",
+      "bytes": 4505,
+      "sha256": "63b0864bb44c9e1fd21d8d4660455c34127a6df2a001baffdff0b641c553712d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/evaluation/model_provenance.json",
+      "bytes": 3238,
+      "sha256": "eaaf0e40611e9648cf5f44ff0d8860ba8ba752c8426f10e71009142e45fff5e1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/logs/run.log",
+      "bytes": 1383,
+      "sha256": "17d44e5961340ddbe74eb88c822d6dc95e860b125071e3b615613787a062f4b7"
+    }
+  ]
+}

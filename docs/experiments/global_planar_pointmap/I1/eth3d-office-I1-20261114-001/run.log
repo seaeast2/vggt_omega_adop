@@ -1,0 +1,8 @@
+{"time": "2026-11-14T06:00:17.682962+09:00", "event": "registered", "run_id": "eth3d-office-I1-20261114-001"}
+{"time": "2026-11-14T06:00:22.272606+09:00", "event": "detector", "frame": 0, "detections": 12}
+{"time": "2026-11-14T06:00:22.529987+09:00", "event": "detector", "frame": 1, "detections": 13}
+{"time": "2026-11-14T06:00:22.785821+09:00", "event": "detector", "frame": 2, "detections": 11}
+{"time": "2026-11-14T06:02:12.412387+09:00", "event": "sam_frame", "frame": 0, "semantic_masks": 12, "automatic_pre_nms": 1249, "automatic_post_nms": 76, "raw_candidates": 1261, "exact_unique": 1243, "uncovered_fraction": 0.03102911086309524, "batch": 16, "seconds": 102.51388834998943}
+{"time": "2026-11-14T06:04:55.263495+09:00", "event": "sam_frame", "frame": 1, "semantic_masks": 13, "automatic_pre_nms": 1560, "automatic_post_nms": 91, "raw_candidates": 1573, "exact_unique": 1544, "uncovered_fraction": 0.030622209821428572, "batch": 16, "seconds": 162.71928023800137}
+{"time": "2026-11-14T06:06:58.122076+09:00", "event": "sam_frame", "frame": 2, "semantic_masks": 11, "automatic_pre_nms": 1338, "automatic_post_nms": 83, "raw_candidates": 1349, "exact_unique": 1331, "uncovered_fraction": 0.04395112537202381, "batch": 16, "seconds": 122.72191325298627}
+{"time": "2026-11-14T06:07:03.604298+09:00", "event": "completed", "decision": "FULL_IMAGE_CANDIDATES_TAGGED", "criteria": true}
