@@ -1,0 +1,20 @@
+{
+  "decision": "COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM",
+  "arms": 10,
+  "raw_observations": 589824,
+  "scientific_verdict": {
+    "automatic_assignment": "GT_NOT_EVALUATED; conservative proposals only",
+    "surface_cleanup": "TECHNICAL_PLANARITY_ONLY",
+    "visibility": "see proposed/retained per-arm guards",
+    "gt_accuracy": "GT_NOT_EVALUATED"
+  },
+  "limitations": [
+    "Read stage scientific decisions separately from execution completion.",
+    "A6 reruns candidate extraction, graph, relations and joint optimization from semantic-only masks.",
+    "No pre-frozen human category annotations or completed user visual review; no category accuracy/generalization claim."
+  ],
+  "elapsed_seconds": 26.739480504998937,
+  "process_peak_rss_mib": 2016.15625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

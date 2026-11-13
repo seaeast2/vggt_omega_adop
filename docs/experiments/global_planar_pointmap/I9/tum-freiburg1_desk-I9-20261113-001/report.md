@@ -15,6 +15,6 @@
 | A5 | 245 | 81.4284% | 25.1102% |
 | A6 | 67 | 41.4034% | 4.4215% |
 
-미완료 조건과 비교군 제한을 metrics에 명시했다. plane 식 일치는 기술 검증이며 실제 표면 정확도는 아니다. 육안 검토는 별도 visual_review 기록과 구분한다. 소속/구조 추론 성공은 GT 부족으로 확정하지 않으며, 가시성 실패는 retained=initial로 보존한다.
+해석상 제한과 비교군 출처를 metrics에 명시했다. plane 식 일치는 기술 검증이며 실제 표면 정확도는 아니다. 육안 검토는 별도 visual_review 기록과 구분한다. 소속/구조 추론 성공은 GT 부족으로 확정하지 않으며, 가시성 실패는 retained=initial로 보존한다.
 
 Stage: `results/global_planar_pointmap/tum-freiburg1_desk-I9-20261113-001/stages/I9`. GT_NOT_EVALUATED.
