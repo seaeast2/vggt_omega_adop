@@ -1,5 +1,7 @@
 # I0–I9 전역 자동 평면 pointmap 실행 결과
 
+후속 [I10 named OR 평면 테스트](I10/index.md): `wall/table/screen`만 허용하고 대응 표면의 named 정보를 OR했다. 주 구간은 가시성 통과, 추가 실내는 기준 초과로 initial 유지. 박스·원통·구 보정은 적용하지 않았다. 아래 I0–I9/A4 판정은 기존 실행 결과로 보존한다.
+
 추가 시각 검토: [주 구간 unknown 표시](I1u/tum-freiburg1_desk-I1u-20261113-001/report.md) · [추가 실내 unknown 표시](I1u/tum-freiburg1_desk-extra-I1u-20261113-001/report.md). 빨강은 이름 있는 마스크를 뺀 unknown-only, 초록은 이름 있는 마스크, 파랑은 미포함이다. 평면 판정이나 새로운 보정 결과가 아니다.
 
 주 구간 30/40/50과 추가 실내 100/110/120에서 I0–I9 및 A0–A6 비교를 실행했다. 각 구간은 589,824개 원본 관측을 유지한다. 실험 실행 완료와 알고리즘의 과학적 성공은 구분한다. GT_NOT_EVALUATED이며 실제 소속/구조 정확도·전체 SLAM 정확도의 향상을 주장하지 않는다.
