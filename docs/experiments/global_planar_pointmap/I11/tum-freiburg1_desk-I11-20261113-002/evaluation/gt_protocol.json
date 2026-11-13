@@ -1,0 +1,38 @@
+{
+  "version": "I11.2",
+  "gt_status": "GT_DEPTH_AND_REGISTERED_POINTMAP_EVALUATED",
+  "source_url": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats",
+  "evaluation_annotation": "TUM registered sensor depth and mocap poses; no semantic or ideal-surface GT; no manual ROI",
+  "primary": "camera-Z depth, common baseline median-ratio scale, no shift",
+  "secondary": "corresponding world points, baseline FIT-only least-squares Sim(3), ROS default K",
+  "depth_divisor": 5000.0,
+  "additional_depth_correction": 1.0,
+  "rgb_depth_max_dt_seconds": 0.02,
+  "pose_max_bracket_gap_seconds": 0.04,
+  "resize": "PIL bicubic RGB 640x480 -> 512x384; no crop",
+  "depth_sampling": "nearest source pixel at half-pixel resize centers; no depth interpolation",
+  "gt_intrinsics_native": [
+    [
+      525.0,
+      0.0,
+      319.5
+    ],
+    [
+      0.0,
+      525.0,
+      239.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion": "no rectification, ROS default per TUM recommendation; secondary 3D calibration approximate",
+  "fit_mask": "I0 FIT AND valid sensor depth; baseline only",
+  "evaluation_mask": "I0 validation AND valid sensor depth; identical for every arm",
+  "edge_sensitivity": "additional fixed sensor mask: 3x3 all valid, max-min <= 0.05 metres",
+  "sim3_fit_cap": 30000,
+  "subsets": "all, OR projected, OR rescue, eligible, all-views-unknown, each assigned named tag",
+  "uncertainty": "sensor depth reference, not semantic or ideal-surface GT; six RGB frames only; no SLAM benchmark"
+}

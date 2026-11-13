@@ -1,0 +1,4 @@
+{"time": "2026-11-13T20:26:28.918599+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I11-20261113-001"}
+{"time": "2026-11-13T20:26:28.918862+09:00", "event": "protocol_frozen", "protocol_sha256": "83a1baba603b04c5c79df52702829c503b43f641bd3d40c7b1b2f25177908488"}
+{"time": "2026-11-13T20:26:33.158754+09:00", "event": "gt_evaluation_saved", "mae_initial": 0.05376734239550747, "mae_OR": 0.05511359124599032}
+{"time": "2026-11-13T20:26:33.159727+09:00", "event": "completed", "decision": "DEPTH_GT_MIXED_OR_WORSE", "criteria": true}

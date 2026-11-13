@@ -1,0 +1,44 @@
+{
+  "tum-freiburg1_desk": {
+    "stage_manifest": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I11-20261113-002/stages/I11/manifest.json",
+      "bytes": 11548,
+      "sha256": "c41dce3a6b331eb1593985e1b343c5fd30ff491de8193e5f0199ece3693b01ce"
+    },
+    "artifacts_verified": 36,
+    "source_inputs_verified": 7,
+    "checks": {
+      "sim3_recovery": true,
+      "metric_sanity": true,
+      "unchanged_OR_xyz_bitwise": true,
+      "shared_metadata": true,
+      "shared_gt_mask": true,
+      "disjoint_alignment_evaluation": true,
+      "unknown_xyz_bitwise": true
+    },
+    "preserved_first_run": "tum-freiburg1_desk-I11-20261113-001",
+    "reason": "I11.2 clarifies inherited evaluation_annotation: sensor GT exists, ideal surface and semantic GT unavailable",
+    "first_run_metrics_identical": true
+  },
+  "tum-freiburg1_desk-extra": {
+    "stage_manifest": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I11-20261113-002/stages/I11/manifest.json",
+      "bytes": 11782,
+      "sha256": "79259b9157eb4a4caf2acb334579d57d717a1ec91846630c2a15d5d47790f073"
+    },
+    "artifacts_verified": 36,
+    "source_inputs_verified": 7,
+    "checks": {
+      "sim3_recovery": true,
+      "metric_sanity": true,
+      "unchanged_OR_xyz_bitwise": true,
+      "shared_metadata": true,
+      "shared_gt_mask": true,
+      "disjoint_alignment_evaluation": true,
+      "unknown_xyz_bitwise": true
+    },
+    "preserved_first_run": "tum-freiburg1_desk-extra-I11-20261113-001",
+    "reason": "I11.2 clarifies inherited evaluation_annotation: sensor GT exists, ideal surface and semantic GT unavailable",
+    "first_run_metrics_identical": true
+  }
+}

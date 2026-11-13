@@ -73,14 +73,16 @@ class Stage:
         row=json.dumps(dict(time=c.stamp(),event=event)|data,ensure_ascii=False)
         print(row,flush=True)
         with (self.path/'logs/run.log').open('a') as f:f.write(row+'\n')
-    def finish(self,metrics,report,criteria=True):
+    def finish(self,metrics,report,criteria=True,gt_status='GT_NOT_EVALUATED'):
+        assert gt_status in ('GT_NOT_EVALUATED','GT_DEPTH_AND_REGISTERED_POINTMAP_EVALUATED')
         metrics|=dict(elapsed_seconds=time.perf_counter()-self.started,process_peak_rss_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,
-                      gt_status='GT_NOT_EVALUATED',completion_criteria_met=criteria)
+                      gt_status=gt_status,completion_criteria_met=criteria)
         c.json_write(self.path/'evaluation/metrics.json',metrics);self.log('completed',decision=metrics['decision'],criteria=criteria)
         self.manifest|=dict(status='completed',execution_completed=True,completion_criteria_met=criteria,decision=metrics['decision'],ended_at=c.stamp())
+        self.manifest['gt_accuracy_evaluated']=gt_status!='GT_NOT_EVALUATED'
         self.manifest['artifacts']=[c.record(p) for p in sorted(self.path.rglob('*')) if p.is_file() and p.name!='manifest.json']
         c.json_write(self.path/'manifest.json',self.manifest)
-        (self.doc/'report.md').write_text(report+f'\n\nStage: `{self.path.relative_to(ROOT)}`. GT_NOT_EVALUATED.\n')
+        (self.doc/'report.md').write_text(report+f'\n\nStage: `{self.path.relative_to(ROOT)}`. {gt_status}.\n')
         for name in ['manifest.json','config_resolved.json','environment.json']:shutil.copy2(self.path/name,self.doc/name)
         for p in (self.path/'evaluation').rglob('*.json'):
             dst=self.doc/'evaluation'/p.relative_to(self.path/'evaluation');dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dst)
