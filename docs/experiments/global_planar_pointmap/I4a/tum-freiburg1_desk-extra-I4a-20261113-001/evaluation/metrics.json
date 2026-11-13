@@ -1,0 +1,29 @@
+{
+  "decision": "CONSERVATIVE_GLOBAL_IDS",
+  "planes": 41,
+  "multi_view": 15,
+  "single_view": 26,
+  "tested_edges": 413,
+  "order_invariant": true,
+  "cycle_control": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "absent": [
+      0,
+      2
+    ],
+    "triple_all_pair_compatible": false
+  },
+  "elapsed_seconds": 2.414805250009522,
+  "process_peak_rss_mib": 244.27734375,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
