@@ -1,0 +1,22 @@
+{"time": "2026-11-14T06:08:39.875498+09:00", "event": "registered", "run_id": "eth3d-office-I3-20261114-001"}
+{"time": "2026-11-14T06:08:43.609800+09:00", "event": "region_progress", "proposal": 0, "total": 522, "planes": 2}
+{"time": "2026-11-14T06:08:44.389747+09:00", "event": "region_progress", "proposal": 50, "total": 545, "planes": 81}
+{"time": "2026-11-14T06:08:45.227735+09:00", "event": "region_progress", "proposal": 100, "total": 578, "planes": 156}
+{"time": "2026-11-14T06:08:45.770236+09:00", "event": "region_progress", "proposal": 150, "total": 590, "planes": 220}
+{"time": "2026-11-14T06:08:46.755063+09:00", "event": "region_progress", "proposal": 200, "total": 618, "planes": 303}
+{"time": "2026-11-14T06:08:47.253079+09:00", "event": "region_progress", "proposal": 250, "total": 621, "planes": 360}
+{"time": "2026-11-14T06:08:47.886692+09:00", "event": "region_progress", "proposal": 300, "total": 636, "planes": 430}
+{"time": "2026-11-14T06:08:48.751093+09:00", "event": "region_progress", "proposal": 350, "total": 663, "planes": 515}
+{"time": "2026-11-14T06:08:49.858760+09:00", "event": "region_progress", "proposal": 400, "total": 739, "planes": 605}
+{"time": "2026-11-14T06:08:51.484634+09:00", "event": "region_progress", "proposal": 450, "total": 871, "planes": 731}
+{"time": "2026-11-14T06:08:53.174695+09:00", "event": "region_progress", "proposal": 500, "total": 987, "planes": 860}
+{"time": "2026-11-14T06:08:53.508966+09:00", "event": "region_progress", "proposal": 550, "total": 988, "planes": 901}
+{"time": "2026-11-14T06:08:53.707501+09:00", "event": "region_progress", "proposal": 600, "total": 988, "planes": 925}
+{"time": "2026-11-14T06:08:53.836552+09:00", "event": "region_progress", "proposal": 650, "total": 988, "planes": 938}
+{"time": "2026-11-14T06:08:54.023841+09:00", "event": "region_progress", "proposal": 700, "total": 988, "planes": 964}
+{"time": "2026-11-14T06:08:54.254224+09:00", "event": "region_progress", "proposal": 750, "total": 988, "planes": 994}
+{"time": "2026-11-14T06:08:54.421610+09:00", "event": "region_progress", "proposal": 800, "total": 988, "planes": 1018}
+{"time": "2026-11-14T06:08:54.568763+09:00", "event": "region_progress", "proposal": 850, "total": 988, "planes": 1037}
+{"time": "2026-11-14T06:08:54.694313+09:00", "event": "region_progress", "proposal": 900, "total": 988, "planes": 1052}
+{"time": "2026-11-14T06:08:54.828860+09:00", "event": "region_progress", "proposal": 950, "total": 988, "planes": 1069}
+{"time": "2026-11-14T06:08:56.776801+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}

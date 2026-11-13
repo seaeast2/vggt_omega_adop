@@ -1,0 +1,22 @@
+{
+  "decision": "CANDIDATES_EVALUATED",
+  "raw_masks": 4192,
+  "proposals": 689,
+  "regions": 641,
+  "planar_candidate_coverage": 0.8435853019593254,
+  "fit_validation_mixed": 0,
+  "state_counts": {
+    "planar": 605,
+    "material_uncertain": 36
+  },
+  "fit_only_partition": true,
+  "limitations": [
+    "Each proposal compares up to three planes and recursively processes unresolved connected components; no fixed scene plane count.",
+    "RGB edges are evaluated later; initial multi-plane partition uses fit depth, so large-error multi-face pixels may be ambiguous.",
+    "No learned dynamic/reflection detector; material labels conservative and not complete."
+  ],
+  "elapsed_seconds": 12.39850939399912,
+  "process_peak_rss_mib": 1314.3125,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

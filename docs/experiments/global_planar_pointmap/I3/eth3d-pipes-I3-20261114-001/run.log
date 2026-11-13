@@ -1,0 +1,16 @@
+{"time": "2026-11-14T06:14:10.512292+09:00", "event": "registered", "run_id": "eth3d-pipes-I3-20261114-001"}
+{"time": "2026-11-14T06:14:14.244172+09:00", "event": "region_progress", "proposal": 0, "total": 553, "planes": 2}
+{"time": "2026-11-14T06:14:14.659893+09:00", "event": "region_progress", "proposal": 50, "total": 553, "planes": 47}
+{"time": "2026-11-14T06:14:14.906683+09:00", "event": "region_progress", "proposal": 100, "total": 553, "planes": 78}
+{"time": "2026-11-14T06:14:15.466916+09:00", "event": "region_progress", "proposal": 150, "total": 559, "planes": 140}
+{"time": "2026-11-14T06:14:15.908166+09:00", "event": "region_progress", "proposal": 200, "total": 559, "planes": 184}
+{"time": "2026-11-14T06:14:16.296906+09:00", "event": "region_progress", "proposal": 250, "total": 562, "planes": 231}
+{"time": "2026-11-14T06:14:16.974294+09:00", "event": "region_progress", "proposal": 300, "total": 575, "planes": 294}
+{"time": "2026-11-14T06:14:17.648596+09:00", "event": "region_progress", "proposal": 350, "total": 598, "planes": 339}
+{"time": "2026-11-14T06:14:18.184150+09:00", "event": "region_progress", "proposal": 400, "total": 615, "planes": 388}
+{"time": "2026-11-14T06:14:18.779282+09:00", "event": "region_progress", "proposal": 450, "total": 633, "planes": 441}
+{"time": "2026-11-14T06:14:19.510767+09:00", "event": "region_progress", "proposal": 500, "total": 640, "planes": 507}
+{"time": "2026-11-14T06:14:20.907421+09:00", "event": "region_progress", "proposal": 550, "total": 676, "planes": 586}
+{"time": "2026-11-14T06:14:21.169302+09:00", "event": "region_progress", "proposal": 600, "total": 682, "planes": 608}
+{"time": "2026-11-14T06:14:21.323335+09:00", "event": "region_progress", "proposal": 650, "total": 682, "planes": 623}
+{"time": "2026-11-14T06:14:22.905797+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}
