@@ -1,0 +1,31 @@
+{
+  "decision": "STATE_BOUND_BUNDLES_EXPORTED",
+  "states": {
+    "initial": {
+      "hash_binding": true,
+      "assignment_plane_equations": true,
+      "boundary_roundtrip": true,
+      "observation_ids_unique": true
+    },
+    "proposed": {
+      "hash_binding": true,
+      "assignment_plane_equations": true,
+      "boundary_roundtrip": true,
+      "observation_ids_unique": true
+    },
+    "retained": {
+      "hash_binding": true,
+      "assignment_plane_equations": true,
+      "boundary_roundtrip": true,
+      "observation_ids_unique": true
+    }
+  },
+  "mismatch_rejected": true,
+  "retained_geometry_state": "initial",
+  "registry_lineage_relations_complete": true,
+  "limitations": "Physical edge/occlusion labels provisional original-depth/adjacency evidence, not boundary GT.",
+  "elapsed_seconds": 104.10248664402752,
+  "process_peak_rss_mib": 649.62890625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
