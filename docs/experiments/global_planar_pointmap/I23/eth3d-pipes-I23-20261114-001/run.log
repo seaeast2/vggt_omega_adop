@@ -1,0 +1,9 @@
+{"time": "2026-11-14T07:06:23.412613+09:00", "event": "registered", "run_id": "eth3d-pipes-I23-20261114-001"}
+{"time": "2026-11-14T07:06:23.412863+09:00", "event": "blur_protocol_frozen", "plan": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_blur_causal_experiment_plan.md", "bytes": 7522, "sha256": "65a84026d28eb4b9426ed0724b41118c854a606f347975425c87620d804d6a39"}}
+{"time": "2026-11-14T07:06:23.978803+09:00", "event": "joint_forward_completed", "case": "clean", "seconds": 0.5550665259943344, "clean_replay": {"images": {"bitwise": true, "max_absolute_difference": 0.0}, "depth": {"bitwise": true, "max_absolute_difference": 0.0}, "depth_conf": {"bitwise": true, "max_absolute_difference": 0.0}, "intrinsics": {"bitwise": true, "max_absolute_difference": 0.0}, "extrinsics": {"bitwise": true, "max_absolute_difference": 0.0}}}
+{"time": "2026-11-14T07:06:24.454327+09:00", "event": "joint_forward_completed", "case": "g075", "seconds": 0.4621037970064208, "clean_replay": {}}
+{"time": "2026-11-14T07:06:24.909362+09:00", "event": "joint_forward_completed", "case": "g150", "seconds": 0.4415243960102089, "clean_replay": {}}
+{"time": "2026-11-14T07:06:25.344861+09:00", "event": "joint_forward_completed", "case": "g300", "seconds": 0.4226288950012531, "clean_replay": {}}
+{"time": "2026-11-14T07:06:25.793756+09:00", "event": "joint_forward_completed", "case": "motion9", "seconds": 0.435198760998901, "clean_replay": {}}
+{"time": "2026-11-14T07:06:26.271320+09:00", "event": "joint_forward_completed", "case": "frame1_g300", "seconds": 0.4637670250085648, "clean_replay": {}}
+{"time": "2026-11-14T07:06:27.528734+09:00", "event": "completed", "decision": "CONTROLLED_BLUR_OMEGA_INFERRED", "criteria": true}

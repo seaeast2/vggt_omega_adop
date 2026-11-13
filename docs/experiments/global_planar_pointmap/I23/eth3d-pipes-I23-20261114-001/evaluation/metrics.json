@@ -1,0 +1,139 @@
+{
+  "decision": "CONTROLLED_BLUR_OMEGA_INFERRED",
+  "conditions": [
+    {
+      "case": "clean",
+      "seconds": 0.5550665259943344,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/clean/images.npz",
+        "bytes": 918117,
+        "sha256": "341877aa67917023757fa7c962db777d64c56753da352c76ed5d26c18a607896"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/clean/raw.npz",
+        "bytes": 5057157,
+        "sha256": "02ed8f5f586229c0cadba0d4b18819fd59be2aa2a2555d6296e23adeb1e533b7"
+      },
+      "clean_replay": {
+        "images": {
+          "bitwise": true,
+          "max_absolute_difference": 0.0
+        },
+        "depth": {
+          "bitwise": true,
+          "max_absolute_difference": 0.0
+        },
+        "depth_conf": {
+          "bitwise": true,
+          "max_absolute_difference": 0.0
+        },
+        "intrinsics": {
+          "bitwise": true,
+          "max_absolute_difference": 0.0
+        },
+        "extrinsics": {
+          "bitwise": true,
+          "max_absolute_difference": 0.0
+        }
+      },
+      "gpu_peak_mib": 4698.7705078125
+    },
+    {
+      "case": "g075",
+      "seconds": 0.4621037970064208,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g075/images.npz",
+        "bytes": 798651,
+        "sha256": "65296863adefe4de430bdcdc51c0a8ed30a1762a5b6fa793e18dfb483e00bfbf"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/g075/raw.npz",
+        "bytes": 4896063,
+        "sha256": "4f4643ece18d6c496329e38f290fc258b622e10d1b85495f8a3bc83b704044cd"
+      },
+      "clean_replay": {},
+      "gpu_peak_mib": 4698.7705078125
+    },
+    {
+      "case": "g150",
+      "seconds": 0.4415243960102089,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g150/images.npz",
+        "bytes": 716379,
+        "sha256": "70ab8682b39ba69568d704c6ed4b4f4c10a5c52d91e5a34c930f8b14e6aba8fe"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/g150/raw.npz",
+        "bytes": 4758933,
+        "sha256": "5111d955178d97bbdb1094f246fbff74fe5a25c936e78555a96ee1da98c41193"
+      },
+      "clean_replay": {},
+      "gpu_peak_mib": 4698.7705078125
+    },
+    {
+      "case": "g300",
+      "seconds": 0.4226288950012531,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/g300/images.npz",
+        "bytes": 659863,
+        "sha256": "c4222c27dc0ca58500a7cbc2a23d976b02a94e8d2ca0bd9cfebbad46ddbddfff"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/g300/raw.npz",
+        "bytes": 4636226,
+        "sha256": "5f73a6e79dce1c4b518d1c3aabdb8021fbf34b48c631ff0bec87d451cb17b535"
+      },
+      "clean_replay": {},
+      "gpu_peak_mib": 4698.7705078125
+    },
+    {
+      "case": "motion9",
+      "seconds": 0.435198760998901,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/motion9/images.npz",
+        "bytes": 745223,
+        "sha256": "7db5f4cf0e8c8ca65386221f82514cb043eb7de151897da43072c58a0b07a234"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/motion9/raw.npz",
+        "bytes": 4755464,
+        "sha256": "b6caacb070804c9a37f0f326231a9367a1b6efa837bf5b2c88114f326d313ba8"
+      },
+      "clean_replay": {},
+      "gpu_peak_mib": 4698.7705078125
+    },
+    {
+      "case": "frame1_g300",
+      "seconds": 0.4637670250085648,
+      "input": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I22-20261114-001/stages/I22/artifacts/inputs/frame1_g300/images.npz",
+        "bytes": 829453,
+        "sha256": "494497f13ae4f4319e54381dd9d5fbf308617e63adb5135bba25d0c54ca86c2a"
+      },
+      "raw": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I23-20261114-001/stages/I23/artifacts/inference/frame1_g300/raw.npz",
+        "bytes": 4930617,
+        "sha256": "bc94ae1795f835ec11d78cf9a70823dcda53eb95c1766e6916028a944908f251"
+      },
+      "clean_replay": {},
+      "gpu_peak_mib": 4698.7705078125
+    }
+  ],
+  "provenance": {
+    "context": "host GPU outside sandbox",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "torch": "2.15.0+cu132",
+    "cuda": "13.2",
+    "checkpoint": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/checkpoints/vggt_omega_1b_512.pt",
+      "bytes": 4576706117,
+      "sha256": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934"
+    },
+    "joint_forward_calls": 6,
+    "source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6"
+  },
+  "elapsed_seconds": 4.119496783998329,
+  "process_peak_rss_mib": 9372.5078125,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

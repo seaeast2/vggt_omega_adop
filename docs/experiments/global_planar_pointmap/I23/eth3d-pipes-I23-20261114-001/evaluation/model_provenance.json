@@ -1,0 +1,13 @@
+{
+  "context": "host GPU outside sandbox",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "torch": "2.15.0+cu132",
+  "cuda": "13.2",
+  "checkpoint": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/checkpoints/vggt_omega_1b_512.pt",
+    "bytes": 4576706117,
+    "sha256": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934"
+  },
+  "joint_forward_calls": 6,
+  "source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6"
+}
