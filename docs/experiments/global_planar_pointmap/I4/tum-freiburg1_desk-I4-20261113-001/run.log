@@ -1,0 +1,2 @@
+{"time": "2026-11-13T17:21:07.214047+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I4-20261113-001"}
+{"time": "2026-11-13T17:22:12.479191+09:00", "event": "completed", "decision": "CONSERVATIVE_GLOBAL_IDS", "criteria": true}
