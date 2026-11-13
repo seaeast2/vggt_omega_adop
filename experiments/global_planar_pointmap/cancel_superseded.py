@@ -14,7 +14,8 @@ for proc in Path('/proc').iterdir():
     except (FileNotFoundError,PermissionError,ProcessLookupError):continue
 for target in targets:os.kill(target['pid'],signal.SIGTERM)
 for dataset,code,seq in [('tum-freiburg1_desk','I6',3),('tum-freiburg1_desk-extra','I6',2)]:
-    for path in FAMILY.glob(f'{dataset}-{code}-*-{seq:03d}/stages/{code}/manifest.json'):
+    for path in [FAMILY/f'{dataset}-{code}-20261113-{seq:03d}/stages/{code}/manifest.json']:
+        if not path.exists():continue
         value=json.loads(path.read_text())
         if value['status']=='running':
             value|=dict(status='superseded',ended_at=c.stamp(),completion_criteria_met=False,reason='Add frozen minimum-fit/rank feasibility to effective assigned supports after reassignment; original candidate fit alone is insufficient. Partial checkpoints/logs retained.')

@@ -1,0 +1,20 @@
+{"time": "2026-11-13T18:01:45.621994+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-extra-I6b-20261113-001"}
+{"time": "2026-11-13T18:03:23.736539+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 1, "objective": 12.758967504978948, "active_planes": 221, "change": 0.09820048014322917}
+{"time": "2026-11-13T18:05:37.096671+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 2, "objective": 12.698873708157286, "active_planes": 220, "change": 0.008741590711805556}
+{"time": "2026-11-13T18:06:32.750575+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 3, "objective": 12.693448411184297, "active_planes": 220, "change": 1.1867947048611111e-05}
+{"time": "2026-11-13T18:06:56.286417+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 4, "objective": 12.693446881619687, "active_planes": 220, "change": 2.8822157118055555e-05}
+{"time": "2026-11-13T18:07:19.572361+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 5, "objective": 12.69344588249681, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:07:44.520669+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 6, "objective": 12.693444711139211, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:09:15.059187+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 1, "objective": 12.753011004382731, "active_planes": 221, "change": 0.09820048014322917}
+{"time": "2026-11-13T18:10:49.379677+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 2, "objective": 12.703153842279649, "active_planes": 220, "change": 0.008741590711805556}
+{"time": "2026-11-13T18:12:15.272644+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 3, "objective": 12.697720838311904, "active_planes": 220, "change": 1.1867947048611111e-05}
+{"time": "2026-11-13T18:12:44.791323+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 4, "objective": 12.697719350510535, "active_planes": 220, "change": 2.8822157118055555e-05}
+{"time": "2026-11-13T18:13:13.794395+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 5, "objective": 12.69771850962686, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:13:42.624195+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 6, "objective": 12.697717714349878, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:16:15.907957+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 1, "objective": 12.738426821679644, "active_planes": 220, "change": 0.09803263346354167}
+{"time": "2026-11-13T18:17:19.039361+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 2, "objective": 12.70496054727086, "active_planes": 220, "change": 0.008266872829861112}
+{"time": "2026-11-13T18:18:33.015388+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 3, "objective": 12.702187242240703, "active_planes": 220, "change": 1.1867947048611111e-05}
+{"time": "2026-11-13T18:18:58.041061+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 4, "objective": 12.70218552388907, "active_planes": 220, "change": 2.8822157118055555e-05}
+{"time": "2026-11-13T18:19:23.023453+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 5, "objective": 12.702184520573287, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:19:50.553820+09:00", "event": "joint_iteration", "dataset": "tum-freiburg1_desk-extra", "iteration": 6, "objective": 12.70218368511034, "active_planes": 220, "change": 0.0}
+{"time": "2026-11-13T18:19:51.537497+09:00", "event": "completed", "decision": "JOINT_SOLVE_EXECUTED", "criteria": true}

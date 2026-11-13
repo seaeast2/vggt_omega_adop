@@ -137,14 +137,15 @@ def bundle_verify(out):
                 assert np.max(abs(restored-z['xyz_refined'][ids]),initial=0)<1e-8
     return dict(hash_binding=True,assignment_plane_equations=True,boundary_roundtrip=True,observation_ids_unique=len(np.unique(z['observation_id']))==len(z['observation_id']))
 
-def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,tags=True):
+def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,tags=True,source_dir=None):
     # Refuse a geometry/registry mismatch before writing ANY export file.
     for p in planes:
         ii=pids==p['plane_id']
         if ii.any():assert np.max(abs(xyz[ii]@np.array(p['plane'])[:3]+p['plane'][3]))<1e-9,'Refuse mismatched pointmap/registry'
     out.mkdir(parents=True);planes=json.loads(json.dumps(planes));N=len(xyz);sp=split_load(d['dataset']);n,h,w=d['depth'].shape
     provenance=dict(seed=0,input_contract=c.record(latest('I0')/'manifest.json'),model_provenance=json.loads((latest('I1',d['dataset'])/'evaluation/model_provenance.json').read_text()),
-        stages={code:c.record(latest(code,d['dataset'])/'manifest.json') for code in ['I1','I2','I3','I4','I5','I6']},code=[c.record(p) for p in sorted(SOURCE.glob('*.py'))],
+        stages={code:c.record(latest(code,d['dataset'])/'manifest.json') for code in ['I1','I2','I3','I4','I5','I6']},
+        code=[c.record(p) for p in sorted(Path(source_dir or SOURCE).glob('*.py'))],code_scope='registration_source_snapshot' if source_dir else 'current_workspace_observation',
         immutable_arrays={key:ahash(d[value]) for key,value in {'xyz_raw':'raw_xyz','xyz_fov':'xyz','rgb':'raw_rgb','observation_id':'ids','frame_id':'fid','pixel_uv':'uv',
             'intrinsics':'k','intrinsics_raw':'k_raw','extrinsics':'e'}.items()})
     c.json_write(out/'source_provenance.json',provenance)
@@ -209,7 +210,7 @@ def bundle(dataset):
             initial_state=name=='initial' or (name=='retained' and state=='initial')
             pp,ii,ff=(original_planes,original_ids,original_fits) if initial_state else (planes,ids,fs)
             versions=audit.get('versions',[])[:1] if initial_state else audit.get('versions',[])
-            checks[name]=write_bundle(root/name,d,x,p,pp,ii,ff,name,audit['relations'],versions)
+            checks[name]=write_bundle(root/name,d,x,p,pp,ii,ff,name,audit['relations'],versions,source_dir=st.path/'artifacts/source')
         # Reject a deliberately mismatched state hash; do not alter original successful bundle.
         test=root/'mismatch_probe';mismatch_rejected=False;wrong=json.loads(json.dumps(planes))
         for p in wrong:p['plane'][3]+=.1
@@ -366,7 +367,7 @@ def comparison(dataset):
             'B1은 역사적 C3a 실제 proposed, B1s는 새 보류 분리로 다시 계산한 I2 proposed다. 자동 군의 직접 기준은 B1s이며 B1의 과거 fit에는 새 보류 대응 일부가 포함돼 있어 독립 보류 비교로 부르지 않는다. '
             'M1/M2는 역사적 참고 경로만 기록했으며 자동 모델 입력에 넣지 않았다. 추가 실내는 과거 사용 구간이며 독립 장면 GT 검증이 아니다.\n\n'
             '| 군 | plane 수 | 확정 관측 비율 | 최대 frustum loss |\n| --- | --- | --- | --- |\n'+table+
-            '\n\n미완료 조건과 비교군 제한을 metrics에 명시했다. plane 식 일치는 기술 검증이며 실제 표면 정확도는 아니다. '
+            '\n\n해석상 제한과 비교군 출처를 metrics에 명시했다. plane 식 일치는 기술 검증이며 실제 표면 정확도는 아니다. '
             '육안 검토는 별도 visual_review 기록과 구분한다. 소속/구조 추론 성공은 GT 부족으로 확정하지 않으며, 가시성 실패는 retained=initial로 보존한다.')
     except Exception as e:st.fail(e);raise
 

@@ -14,7 +14,7 @@ def run():
             accepted=m7['accepted'],accepted_fraction=m7['accepted']/589824,retained=m7['retained'],visibility=m7['visibility'],
             checks=m7['checks'],stability=m6['stability'],heldout_3d_pair_medians=dict(B1s=[r['relative_3d'].get('median') for r in b1['heldout']],A4=[r['relative_3d'].get('median') for r in a4['heldout']]),
             review_directory=str(FAMILY/'ply_review'/stages['I9'].parents[1].name),
-            verdicts=dict(automatic_assignment='NOT_ESTABLISHED_NO_SURFACE_LABEL_GT',structure='AUTOMATIC_HYPOTHESES_ONLY',surface_cleanup='TECHNICAL_PLANARITY_AND_SEPARATE_VISUAL_REVIEW',
+            verdicts=dict(automatic_assignment='NOT_ESTABLISHED_NO_SURFACE_LABEL_GT',structure='NO_ACTIVE_STRUCTURAL_RELATIONS',surface_cleanup='WHOLE_IMAGE_IMPROVEMENT_NOT_ESTABLISHED',technical_planarity='PASSED',
                 visibility='PASSED' if m7['visibility']['passed'] else 'FAILED_RETAIN_INITIAL',gt_accuracy='GT_NOT_EVALUATED'))
     excluded=[]
     canonical={v['path'] for d in summary.values() for v in d['canonical_stages'].values()}
@@ -35,6 +35,10 @@ def run():
     text='# I0–I9 전역 자동 평면 pointmap 실행 결과\n\n'
     text+='주 구간 30/40/50과 추가 실내 100/110/120에서 I0–I9 및 A0–A6 비교를 실행했다. 각 구간은 589,824개 원본 관측을 유지한다. '
     text+='실험 실행 완료와 알고리즘의 과학적 성공은 구분한다. GT_NOT_EVALUATED이며 실제 소속/구조 정확도·전체 SLAM 정확도의 향상을 주장하지 않는다.\n\n'
+    text+='**자동 주 결과 A4는 두 구간 모두 가시성 보존 기준을 통과하지 못해 retained=initial이다.** 평면식 일치 기술 검증은 통과했지만 화면 전체 개선은 확정하지 않았다.\n\n'
+    text+='| 구간 | 수용 관측 | 최대 frustum loss | retained |\n| --- | --- | --- | --- |\n'
+    for dataset,s in summary.items():text+=f"| {dataset} | {s['accepted']:,} ({s['accepted_fraction']:.4%}) | {s['visibility']['maximum_frustum_loss']:.4%} | {s['retained']} |\n"
+    text+='\n'
     text+='B1은 기존 C3a 실제 proposed이고 B1s는 공통 fit/보류 분리를 적용한 새 I2 proposed다. 자동 군은 B1s에서 시작한다. '
     text+='기존 C3a split 재현은 I0에서 별도 검증했다. historical fit와 새 보류의 겹침 때문에 B1을 새 독립 보류 기준으로 해석하지 않는다.\n\n'
     text+='| 구간 | 단계 | canonical run·보고서 | stage wall time | 판정 |\n| --- | --- | --- | --- | --- |\n'+'\n'.join(rows)+'\n\n'
@@ -50,6 +54,8 @@ def run():
     text+='- 경계의 물리 edge/가림 분류는 provisional이다. 미관측 hole을 실제 구멍으로 확정하거나 watertight mesh를 생성하지 않았다.\n'
     text+='- semantic tag는 모델 예측이며 수동 category/plane annotation이 없다. 추가 실내는 과거 사용 구간이고 threshold를 바꾸는 데 사용하지 않았다.\n'
     text+='- 비용은 각 stage의 wall time/peak RSS이며 모델 GPU peak는 shared process 기준이다. 병렬 실행 시간은 단순 합산한 전체 경과시간과 다르다.\n\n'
-    text+='[수치 원본](canonical_results.json) · [제외·중단 실행](excluded_runs.json) · [보류 유입 회귀 검증](holdout_perturbation_audit.json)\n'
+    text+='SAM inference와 pre-NMS 보존/계층 처리의 세부 CPU/GPU 시간은 묶여 있다. A6의 end-to-end GPU 비용 절감량은 별도로 측정하지 않았다. plane 불확실성은 원본 fit에 조건부인 근사이며 공동 solve의 보정된 posterior가 아니다. 선택 민감도 I1a/I2a와 야외 I9b는 이번 필수 실행 범위에 합산하지 않았다.\n\n'
+    text+='실행 코드의 권위 있는 원본은 각 stage `artifacts/source`와 해당 manifest hash다. 주 구간 retained bundle의 중복 code 관측 필드 한 곳은 직렬화 시점의 후속 I9 그림 편집 버전을 기록했다. 실행 snapshot을 별도로 특정했고 geometry/bundle 함수 AST가 동일함을 검증했다. 수치·원본 bundle을 바꾸지 않은 [출처 보완 기록](provenance_amendment.json)을 함께 보존한다.\n\n'
+    text+='[수치 원본](canonical_results.json) · [제외·중단 실행](excluded_runs.json) · [보류 유입 회귀 검증](holdout_perturbation_audit.json) · [별도 육안 검토](visual_review.json) · [최종 보존 검사](final_audit.json) · [환경 snapshot](environment_snapshot.json)\n'
     (DOC/'index.md').write_text(text)
 if __name__=='__main__':run()
