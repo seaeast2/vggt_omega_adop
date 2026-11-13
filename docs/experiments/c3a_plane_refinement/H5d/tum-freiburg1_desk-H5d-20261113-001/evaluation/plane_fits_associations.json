@@ -1,0 +1,12 @@
+{
+  "frozen_H4_A4_groups": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4d-20261113-001/stages/H4d/artifacts/associations/refined/groups.json",
+    "bytes": 1363,
+    "sha256": "541e0b9cd3c72d8f725b96b00a98f5240363bd5a6ba87c33474e20277925eea9"
+  },
+  "frozen_H4_A4_observations": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H4d-20261113-001/stages/H4d/artifacts/associations/refined/group_observations.npz",
+    "bytes": 47424,
+    "sha256": "9f50b94611e6a1dfb6b0b8f001bb2a3093cf50f9c410216c99d8a7d390ae548f"
+  }
+}
