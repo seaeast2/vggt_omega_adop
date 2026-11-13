@@ -1,0 +1,130 @@
+# VGGT-Ω Pointmap 정렬·보정 실험
+
+대학원 졸업논문을 위한 실험 저장소다. 여러 RGB 이미지로 추론한 프레임별 pointmap의 불일치와 벽의 층 분리를 진단하고, 점군 융합·RGB 기반 정점 이동·FoV 보정·점/선/깊이 제약을 비교했다.
+
+**현재 후속 기준선은 C3a의 실제 FoV 제안 점군이다.** 이를 고정하고 영상 분할과 공유 평면 재투영을 적용할 H0~H6 계획을 작성했다. **H 계열은 아직 실행하지 않았다.**
+
+최종 갱신: 2026-11-13 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
+
+## 1. 데이터와 비교 조건
+
+| 데이터 | 용도 | 입력 |
+| --- | --- | --- |
+| TUM `freiburg1_desk` | 주 실내 실험 | 원본 RGB index 30/40/50, 3장 공동 추론 |
+| 같은 실내의 추가 구간 | G5a의 고정 구간 재검증 | index 100/110/120, 3장 공동 추론 |
+| UAVScenes `HKairport01`, `AMtown01` | 야외·드론 전이 비교 | 기존 E0d에서 고정한 각 3장 |
+| 일반 VGGT | 같은 실내 원본의 모델 출력 육안 비교 | 주 실내와 같은 RGB 3장, V0 |
+
+VGGT-Ω 주 실내 출력은 512×384×3 = **589,824개 관측점**이다. 일반 VGGT는 공식 전처리 격자 518×392×3 = **609,168점**으로, 점 수·해상도·좌표계가 다르다. 두 모델의 점군을 직접 점별 차분하거나 강제로 같은 scale에 맞춘 결과가 아니다.
+
+## 2. 지금까지의 실험 흐름
+
+| 계열·코드 | 검증 목적 | 실행 내용과 확인 사항 | 상태 |
+| --- | --- | --- | --- |
+| **P0/P1** | 환경·공동 추론·좌표계 검증 | 공식 모델 접근과 호스트 추론, 카메라 규약·depth 역투영·관측 출처 확인 | 완료 |
+| **P2/P2a~c** | 렌더링·미분 검증 | PyTorch3D 비교, 검은 테두리·색 합성·가림·gradient 진단 | 완료, 제한 기록 |
+| **E0/E0a/E1** | 보정 전 원본과 층 분리 진단 | raw 관측 보존, 프레임별 빨강/초록/파랑 PLY 및 카메라별 투영 | 완료 |
+| **E2** | 보수적인 공유점 융합 | 589,824 → 510,427점, 가시성과 내부 기하 비교 | 완료, 기하 개선 미확인 |
+| **E0b/E0c** | 순차 깊이 평균·색 조건 융합 | 각각 341,325점 / 419,864점. E0c는 원본 RGB 채널 범위 ≤30 적용 | 완료 |
+| **E3/E3b/E3c** | 카메라 고정·RGB 손실로 정점 이동 | 원본/융합 초기값에서 owner ray 방향 이동. E3c는 실제 이동과 RGB 감소 확인 | 실행 완료, 지표 상충 |
+| **E3d/E0d/E3e** | ADOP에서 착안한 최소 보정과 드론 전이 | 실내 및 두 드론 장면 검증, selected/last 결과 보존 | 해당 방법 종료 |
+| **C0~C3/C2a/C3a** | 원본 depth·pose 고정 FoV 보정 | 역투영·solver 검증. 실내 정식 군은 지원 부족, 보조 군은 실제 제안값 산출 | 완료, 저지원 탐색 |
+| **C4/C4a** | 드론 FoV 보정 | 일부 고정 보류 대응의 3D 잔차 감소, 깊이축 목표 기준 미충족 | 완료 |
+| **C5/C5b 및 보조 검증** | FoV 전후 색+깊이 조건 융합 | 대표점 수 감소와 provenance 보존, 이전 카메라의 coverage 손실 확인 | 완료, 압축 기준 미달 |
+| **V0** | 일반 VGGT와 육안 비교 | 동일 실내 3장으로 depth 기반·point-head 기반 PLY를 각각 생성 | 완료 |
+| **G0~G6/G0a/G0b/G5a** | C3a에 점·선·깊이 제약 추가 | 18개 주 비교군, 20개 초기값·가중치 비교, 실제 MoGe-2 prior 포함 | 완료, 탐색적 결과 |
+| **PlanarGS 조사** | 영상 분할·평면 보정 요소의 재사용 검토 | 공식 코드 commit·함수·임계값 의미와 이식 조건 조사 | 정적 조사 완료 |
+| **H0~H6** | C3a에 분할·공유 평면 재투영 | 원본 RGB·ID·카메라를 보존하는 점군 기반 비교 계획 | **미착수** |
+
+실행별 상세 근거와 실패 이력은 다음 문서를 따른다.
+
+- [P/E 계열 전체 현황](docs/experiments/pointmap_refinement/index.md)
+- [C 계열 전체 현황](docs/experiments/camera_fov_alignment/index.md) · [종합 결과](docs/experiments/camera_fov_alignment/summary.md)
+- [V0 일반 VGGT 비교](docs/experiments/vggt_baseline/index.md)
+- [G 계열 전체 현황](docs/experiments/point_line_depth_refinement/index.md) · [종합 결과](docs/experiments/point_line_depth_refinement/summary.md)
+- [H 계열 계획·상태](docs/experiments/c3a_plane_refinement/index.md)
+
+## 3. 주요 관찰과 해석
+
+### 원본부터 존재한 벽 층과 RGB 최적화의 한계
+
+원본 E0 PLY에서도 프레임별 벽이 분리된 것이 관찰됐다. E0a는 출처별 색과 타 프레임 투영으로 이를 확인하기 위한 실험이다. 여러 이미지가 공동 입력이었다는 사실만으로 각 관측점이 정확히 같은 표면에 놓이거나 중복점이 융합되는 것은 아니다.
+
+E0b는 새 카메라 픽셀에 겹친 이전 점의 깊이를 평균·치환했고, E0c는 여기에 색 유사도를 추가했다. **E0c에는 명시적인 깊이 차이 gate가 없었다.** 이후 C5에서 전체 그룹의 깊이 범위 조건을 별도로 추가했다.
+
+RGB 기반 이동에서 E3c 처치군은 RGB 손실이 약 2.33% 감소했지만 고정 공통 영역의 GT 깊이 오차가 늘었다. 이는 RGB 손실 감소가 깊이 정확도 개선을 보장하지 않는 사례다. 반대로 해당 지표만으로 PLY 전체 표면의 육안 품질이 악화됐다고 단정하지 않는다. 이 방법은 실내·드론의 최소 후속 검증 뒤 종료했다.
+
+### C3a: 현재 후속 실험의 기준선
+
+C3a는 카메라 중심·회전·원본 Z-depth·RGB·주점을 고정하고, **카메라별 fx/fy에 대응하는 역초점거리 배율 β 6개**를 보정했다. 매 후보에서 depth를 다시 역투영했으며 점 융합이나 자유 정점 이동은 하지 않았다.
+
+사용자는 **실제 제안 점군의 표면 정합이 특히 좋다**고 관찰했다. 이 점군은 다음 경로다.
+
+```text
+results/camera_fov_alignment/tum-freiburg1_desk-C3a-20261112-001/
+  stages/C3a/artifacts/fit/proposed_not_selected/
+```
+
+`proposed_not_selected`는 단순 실패 파일이 아니다. 실제 solver는 수렴했지만 원래 coverage 기준 때문에 자동 선택되지 않은 후보다. **기존 selected는 β=1이므로, 이번 후속 기준선과 다르다.** 대응 지원 부족·GT 미평가라는 한계와 육안 관찰을 함께 보존한다. [C3a 보고서](docs/experiments/camera_fov_alignment/C3a/tum-freiburg1_desk-C3a-20261112-001/report.md)
+
+드론에서는 C4a의 보류 대응 3D median이 HKairport01 약 10.42%, AMtown01 약 23.16% 감소했지만, 깊이축 개선의 사전 기준에는 미달했다. C5/C5b는 점 수를 줄였으나 이전 시점의 픽셀 coverage 손실로 압축 기준을 통과하지 못했다.
+
+### 일반 VGGT와 VGGT-Ω 비교
+
+V0는 동일 실내 원본 3장을 일반 VGGT에 함께 입력해 보정·융합 없는 PLY를 생성했다. 사용자는 일반 VGGT의 벽 깊이와 프레임 간 겹침이 더 좋다고 관찰했다. 이는 이 샘플의 육안 관찰이며, 모델 전체의 우열이나 점군 융합 기능의 유무를 증명하는 결과는 아니다.
+
+### G: 전체 지표와 국소 벽 개선이 다르게 나타남
+
+G는 C3a proposed를 기준으로 점(P), 선(L), 교차 시점 깊이(Z), 제한된 프레임별 깊이 배율, 외부 MoGe-2 prior(E)를 비교했다. 아래는 모두 **제안 결과**의 탐색적 수치다.
+
+| 비교 | 관찰된 변화 | 함께 볼 한계 |
+| --- | --- | --- |
+| 기존 실내 G2 F-PZ | C3a 대비 보류 대응 3D median 약 2.28% 감소 | 사전 5% 개선 기준 미달 |
+| 기존 실내 G3 D-P | 고정 벽 ROI 층 간격 약 27.80% 감소 | 전체 보류 대응 3D 오차 약 10.13% 증가 |
+| 기존 실내 G4 D-P+E | 같은 벽 ROI 층 간격 약 29.47% 감소 | 전체 보류 대응 3D 오차 약 11.95% 증가 |
+| 추가 실내 G5a D-PL | 해당 구간 기준선 대비 3D median 약 8.85% 감소 | Z 오차 약 27.97% 증가, 선 구조 지원 부족 |
+
+고정 벽 ROI는 프레임 0/1만 지지하며 프레임 2의 지지점은 없다. 사용자는 G 일부 PLY에서도 더 정확한 벽 겹침을 확인했다. **일관된 전체 개선이 미확인이라는 판정과 국소·육안 개선은 양립한다.** 전체 품질을 단일 잔차나 coverage로 단정하지 않는다.
+
+## 4. 다음 계획: C3a → 영상 분할 → 공유 평면 재투영
+
+[H0~H6 실험 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md)은 C3a의 실제 FoV 제안값만을 초기값으로 고정한다. G 결과를 초기값으로 혼용하지 않는다.
+
+1. **H0:** C3a 재현과 평면·광선 교차 수식 검증.
+2. **H1~H2:** 영상의 벽 후보 분할, 법선·거리·연결 성분 정제, 평가 영역 동결.
+3. **H3:** 프레임별 독립 평면 재투영.
+4. **H4:** 같은 벽의 관측을 연결한 공유 평면 재투영.
+5. **H5:** 동일 공유 평면에서 원래 깊이를 보존하는 soft 보정.
+6. **H6:** PLY·벽 단면·투영·정합성·보존 조건 종합 비교.
+
+원본 픽셀색·관측점 ID·카메라를 유지하고, 점 추가·삭제·융합이나 RGB 학습은 포함하지 않는다. **현재는 계획만 작성했으며 첫 실행 단계는 H0다.**
+
+## 5. PLY와 결과 찾기
+
+대형 PLY/NPZ·checkpoint·입력 데이터는 로컬에 보관하며 `.gitignore` 대상이다. GitHub에는 코드·설정·보고서·그림·수치·파일 해시를 저장한다. 따라서 저장소를 clone하는 것만으로 모든 PLY가 내려오지는 않는다.
+
+| 경로·목록 | 내용 |
+| --- | --- |
+| `results/point_line_depth_refinement/ply_review/` | C3a와 G 주 비교군의 원본 픽셀색·프레임색 PLY에 대한 빠른 symlink 경로 |
+| [G 전체 PLY 목록](docs/experiments/point_line_depth_refinement/G0b/tum-freiburg1_desk-G0b-20261113-001/evaluation/ply_files.json) | G0/G2/G3/G4/G5a의 상태·색상별 154개 PLY 경로·크기·해시. 동일 후보의 중복 상태 포함 |
+| [기존 PLY inventory](docs/ply_inventory/files.csv) | 앞선 E/C/V 및 표시용 PLY 목록. G/H를 포함한 최신 전체 목록은 아니므로 범위를 확인 |
+| `results/vggt_baseline/tum-freiburg1_desk-V0-20261113-002/stages/V0/artifacts/maps/` | 일반 VGGT의 `vggt_depth_rgb.ply`, `vggt_depth_frames.ply` 및 point-head 결과 |
+| `results/ply_visualization/E3b_pixel_rgb-001/` | E3b geometry에 원본 관측 픽셀색을 표시한 버전 |
+| `results/ply_visualization/E3c_pixel_rgb-001/` | E3c의 control_E0b / treatment_E0c 원본 관측 픽셀색 버전 |
+
+`initial`, `proposed` 또는 `proposed_not_selected`, `selected`, `last`는 서로 다를 수 있다. 자동 selected가 초기값이면 실제 이동 결과는 proposed/last에서 확인해야 한다. RGB 색과 프레임 팔레트도 구분한다. 표시용 픽셀색 재출력은 geometry나 과거 최적화를 다시 실행한 것이 아니다.
+
+## 6. 문서와 저장 규칙
+
+| 문서 | 범위 |
+| --- | --- |
+| [초기 Pointmap Refinement 계획](docs/vggt_omega_pointmap_refinement_experiment_plan.md) | P/E 계열 설계와 종료 이력 |
+| [FoV 정렬·융합 계획](docs/vggt_omega_fov_pointmap_alignment_experiment_plan.md) | C 계열 설계·실행 결과 연결 |
+| [점·선·깊이 제약 계획](docs/vggt_omega_point_line_depth_refinement_experiment_plan.md) | G 계열 사전 설계·구현 변경·결과 연결 |
+| [PlanarGS 재사용 조사](docs/research/planargs_reuse_review.md) | 공식 소스·분할 정제·평면 깊이 계산과 적용 조건 |
+| [PlanarGS 조사 소스 manifest](docs/research/planargs_source_manifest.json) | 확인한 commit·파일 해시·immutable URL |
+| [C3a 기준 공유 평면 보정 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md) | 현재 미착수 H 계열의 범위·비교군·판정 기준 |
+
+실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
+
+GPU 작업은 호스트에서 실행하며 실행 환경·입력·코드·모델의 출처와 해시를 기록한다. 실험 완료 후 코드·경량 결과·보고서를 커밋·푸시하고 원격 반영을 확인한다. 단일 샘플의 내부 정합성·육안 개선을 GT 기반 전체 정확도나 연속 SLAM 성능으로 확대 해석하지 않는다.
