@@ -1,0 +1,93 @@
+{
+  "decision": "HARD_REPROJECTION_PASSED",
+  "checks": {
+    "count": 589824,
+    "self_projection_max_pixel": 2.2737367544323206e-13,
+    "plane_equation_max": 4.1444275854056467e-13,
+    "unchanged_unknown_bitwise": true,
+    "unit_normals": true,
+    "max_relative_move": null,
+    "relative_depth_move": {
+      "count": 522467,
+      "mean": 0.24347225400734682,
+      "median": 0.0031696610360060326,
+      "p90": 0.8519324011137507,
+      "max": 34056.88395229137
+    },
+    "moved_over_100pct": 3225
+  },
+  "visibility": {
+    "pairs": [
+      {
+        "source": 0,
+        "target": 1,
+        "baseline_frustum_count": 130828,
+        "retained_frustum_count": 96476,
+        "frustum_loss_fraction": 0.26257376096859997,
+        "baseline_pixel_coverage": 0.5568389892578125,
+        "proposed_pixel_coverage": 0.3898671468098958,
+        "passed": false
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "baseline_frustum_count": 67375,
+        "retained_frustum_count": 43759,
+        "frustum_loss_fraction": 0.35051576994434136,
+        "baseline_pixel_coverage": 0.2843577067057292,
+        "proposed_pixel_coverage": 0.1797332763671875,
+        "passed": false
+      },
+      {
+        "source": 1,
+        "target": 0,
+        "baseline_frustum_count": 116668,
+        "retained_frustum_count": 116643,
+        "frustum_loss_fraction": 0.00021428326533411046,
+        "baseline_pixel_coverage": 0.5553232828776041,
+        "proposed_pixel_coverage": 0.5255584716796875,
+        "passed": true
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "baseline_frustum_count": 123462,
+        "retained_frustum_count": 123382,
+        "frustum_loss_fraction": 0.0006479726555539356,
+        "baseline_pixel_coverage": 0.5643870035807291,
+        "proposed_pixel_coverage": 0.5565287272135416,
+        "passed": true
+      },
+      {
+        "source": 2,
+        "target": 0,
+        "baseline_frustum_count": 62193,
+        "retained_frustum_count": 60282,
+        "frustum_loss_fraction": 0.030726930683517437,
+        "baseline_pixel_coverage": 0.2825775146484375,
+        "proposed_pixel_coverage": 0.2668507893880208,
+        "passed": false
+      },
+      {
+        "source": 2,
+        "target": 1,
+        "baseline_frustum_count": 126987,
+        "retained_frustum_count": 126972,
+        "frustum_loss_fraction": 0.00011812232748234072,
+        "baseline_pixel_coverage": 0.5637919108072916,
+        "proposed_pixel_coverage": 0.5445149739583334,
+        "passed": true
+      }
+    ],
+    "passed": false,
+    "maximum_frustum_loss": 0.35051576994434136,
+    "maximum_pixel_coverage_loss": 0.16697184244791669,
+    "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+  },
+  "accepted": 522467,
+  "retained": "initial",
+  "elapsed_seconds": 3.1558735170110594,
+  "process_peak_rss_mib": 294.41015625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}
