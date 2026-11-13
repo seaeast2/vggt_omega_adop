@@ -1,0 +1,18 @@
+{
+  "decision": "UNKNOWN_COVERAGE_VISUALIZED",
+  "aggregate_fractions": {
+    "grounded_semantic": 0.3626335991753472,
+    "unknown_only": 0.5167456732855903,
+    "uncovered": 0.1206207275390625,
+    "automatic_post_nms_union": 0.7801971435546875,
+    "automatic_pre_nms_union": 0.7967936197916666,
+    "semantic_automatic_overlap": 0.2634514702690972,
+    "exact_table_screen_wall_union": 0.3303256564670139
+  },
+  "geometry_changed": false,
+  "models_rerun": false,
+  "elapsed_seconds": 1.734092251979746,
+  "process_peak_rss_mib": 840.4765625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

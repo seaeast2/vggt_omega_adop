@@ -1,0 +1,128 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "source_index": 100,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 75988,
+        "unknown_only": 102442,
+        "uncovered": 18178,
+        "automatic_post_nms_union": 167492,
+        "automatic_pre_nms_union": 169237,
+        "semantic_automatic_overlap": 65050,
+        "exact_table_screen_wall_union": 59488
+      },
+      "fractions": {
+        "grounded_semantic": 0.3864949544270833,
+        "unknown_only": 0.5210469563802084,
+        "uncovered": 0.09245808919270833,
+        "automatic_post_nms_union": 0.8519083658854166,
+        "automatic_pre_nms_union": 0.8607838948567709,
+        "semantic_automatic_overlap": 0.3308614095052083,
+        "exact_table_screen_wall_union": 0.3025716145833333
+      },
+      "semantic_labels": [
+        "cabinet shelf",
+        "door",
+        "floor",
+        "screen",
+        "table"
+      ]
+    },
+    {
+      "frame": 1,
+      "source_index": 110,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 78648,
+        "unknown_only": 94482,
+        "uncovered": 23478,
+        "automatic_post_nms_union": 150310,
+        "automatic_pre_nms_union": 152365,
+        "semantic_automatic_overlap": 55828,
+        "exact_table_screen_wall_union": 78648
+      },
+      "fractions": {
+        "grounded_semantic": 0.4000244140625,
+        "unknown_only": 0.480560302734375,
+        "uncovered": 0.119415283203125,
+        "automatic_post_nms_union": 0.7645161946614584,
+        "automatic_pre_nms_union": 0.7749684651692709,
+        "semantic_automatic_overlap": 0.2839558919270833,
+        "exact_table_screen_wall_union": 0.4000244140625
+      },
+      "semantic_labels": [
+        "screen",
+        "table"
+      ]
+    },
+    {
+      "frame": 2,
+      "source_index": 120,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 59254,
+        "unknown_only": 107865,
+        "uncovered": 29489,
+        "automatic_post_nms_union": 142377,
+        "automatic_pre_nms_union": 148366,
+        "semantic_automatic_overlap": 34512,
+        "exact_table_screen_wall_union": 56698
+      },
+      "fractions": {
+        "grounded_semantic": 0.3013814290364583,
+        "unknown_only": 0.5486297607421875,
+        "uncovered": 0.14998881022135416,
+        "automatic_post_nms_union": 0.7241668701171875,
+        "automatic_pre_nms_union": 0.7546284993489584,
+        "semantic_automatic_overlap": 0.175537109375,
+        "exact_table_screen_wall_union": 0.2883809407552083
+      },
+      "semantic_labels": [
+        "screen",
+        "table",
+        "wall door"
+      ]
+    }
+  ],
+  "aggregate_fractions": {
+    "grounded_semantic": 0.3626335991753472,
+    "unknown_only": 0.5167456732855903,
+    "uncovered": 0.1206207275390625,
+    "automatic_post_nms_union": 0.7801971435546875,
+    "automatic_pre_nms_union": 0.7967936197916666,
+    "semantic_automatic_overlap": 0.2634514702690972,
+    "exact_table_screen_wall_union": 0.3303256564670139
+  },
+  "inputs": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I1-20261113-001/stages/I1/artifacts/tags/frame_0_masks.npz",
+      "bytes": 1749085,
+      "sha256": "86b51210106ae5a6d1bd725ef8f9038c23166caed10f0bd0b52871101c8152ea"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I1-20261113-001/stages/I1/artifacts/tags/frame_1_masks.npz",
+      "bytes": 1798668,
+      "sha256": "0bb9992ec51c49c1c5c192f76bf782a07fe7a79d86970b90106acc00d81b24fe"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I1-20261113-001/stages/I1/artifacts/tags/frame_2_masks.npz",
+      "bytes": 1336301,
+      "sha256": "fc8d2d8c7b3e71c5cf44d2ba96c45b0572d8ec39f1368adf175de4f04da3fc01"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I1-20261113-001/stages/I1/artifacts/tags/mask_registry.json",
+      "bytes": 2054047,
+      "sha256": "db41f556698fb9b9fa8dd99d49b31d8d32929d9d2ba9733b5120daaa6e2e888e"
+    }
+  ],
+  "definitions": {
+    "grounded_semantic": "union of all GroundingDINO+SAM named masks, including mixed labels; predicted categories, not GT",
+    "unknown_only": "official post-NMS automatic-mask union minus grounded-semantic union",
+    "uncovered": "neither grounded nor official post-NMS automatic mask",
+    "automatic_union": "all automatic masks have unknown semantic tags; overlaps with named masks retained"
+  },
+  "geometry_changed": false,
+  "models_rerun": false
+}

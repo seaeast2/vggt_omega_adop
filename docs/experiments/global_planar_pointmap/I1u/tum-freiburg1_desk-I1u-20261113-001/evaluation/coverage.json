@@ -1,0 +1,132 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "source_index": 30,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 129611,
+        "unknown_only": 57346,
+        "uncovered": 9651,
+        "automatic_post_nms_union": 186623,
+        "automatic_pre_nms_union": 188786,
+        "semantic_automatic_overlap": 129277,
+        "exact_table_screen_wall_union": 62840
+      },
+      "fractions": {
+        "grounded_semantic": 0.6592356363932291,
+        "unknown_only": 0.2916768391927083,
+        "uncovered": 0.0490875244140625,
+        "automatic_post_nms_union": 0.9492136637369791,
+        "automatic_pre_nms_union": 0.9602152506510416,
+        "semantic_automatic_overlap": 0.6575368245442709,
+        "exact_table_screen_wall_union": 0.3196207682291667
+      },
+      "semantic_labels": [
+        "door",
+        "floor",
+        "screen",
+        "table",
+        "wall ceiling",
+        "wall table"
+      ]
+    },
+    {
+      "frame": 1,
+      "source_index": 40,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 118932,
+        "unknown_only": 68002,
+        "uncovered": 9674,
+        "automatic_post_nms_union": 165889,
+        "automatic_pre_nms_union": 170323,
+        "semantic_automatic_overlap": 97887,
+        "exact_table_screen_wall_union": 92617
+      },
+      "fractions": {
+        "grounded_semantic": 0.60491943359375,
+        "unknown_only": 0.3458760579427083,
+        "uncovered": 0.049204508463541664,
+        "automatic_post_nms_union": 0.8437550862630209,
+        "automatic_pre_nms_union": 0.8663075764973959,
+        "semantic_automatic_overlap": 0.4978790283203125,
+        "exact_table_screen_wall_union": 0.4710744222005208
+      },
+      "semantic_labels": [
+        "door",
+        "screen",
+        "table",
+        "wall ceiling"
+      ]
+    },
+    {
+      "frame": 2,
+      "source_index": 50,
+      "pixels": 196608,
+      "pixels_by_category": {
+        "grounded_semantic": 105994,
+        "unknown_only": 74061,
+        "uncovered": 16553,
+        "automatic_post_nms_union": 163950,
+        "automatic_pre_nms_union": 166771,
+        "semantic_automatic_overlap": 89889,
+        "exact_table_screen_wall_union": 105970
+      },
+      "fractions": {
+        "grounded_semantic": 0.5391133626302084,
+        "unknown_only": 0.3766937255859375,
+        "uncovered": 0.08419291178385417,
+        "automatic_post_nms_union": 0.833892822265625,
+        "automatic_pre_nms_union": 0.8482411702473959,
+        "semantic_automatic_overlap": 0.4571990966796875,
+        "exact_table_screen_wall_union": 0.5389912923177084
+      },
+      "semantic_labels": [
+        "door",
+        "screen",
+        "table",
+        "wall"
+      ]
+    }
+  ],
+  "aggregate_fractions": {
+    "grounded_semantic": 0.6010894775390625,
+    "unknown_only": 0.3380822075737847,
+    "uncovered": 0.060828314887152776,
+    "automatic_post_nms_union": 0.8756205240885416,
+    "automatic_pre_nms_union": 0.8915879991319444,
+    "semantic_automatic_overlap": 0.5375383165147569,
+    "exact_table_screen_wall_union": 0.4432288275824653
+  },
+  "inputs": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I1-20261113-001/stages/I1/artifacts/tags/frame_0_masks.npz",
+      "bytes": 2260060,
+      "sha256": "2fa6f87f661934b95c65abfa352eb8717cadf981919779a8874bcd4c40b64946"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I1-20261113-001/stages/I1/artifacts/tags/frame_1_masks.npz",
+      "bytes": 3133701,
+      "sha256": "ae245079a7873a6edf0f5613bbd3a1fa3795099fc9e03a5ea4ea1d64d0b92c49"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I1-20261113-001/stages/I1/artifacts/tags/frame_2_masks.npz",
+      "bytes": 2549766,
+      "sha256": "80c22f7e9f0d0590d4f5bb0cdb2c3f2ea530c5e6913d3667b378db830c6aec1d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I1-20261113-001/stages/I1/artifacts/tags/mask_registry.json",
+      "bytes": 2284035,
+      "sha256": "b4690fc5daef7759ac94838ff85b13696a6587a70670d83736085ada4daa5fa5"
+    }
+  ],
+  "definitions": {
+    "grounded_semantic": "union of all GroundingDINO+SAM named masks, including mixed labels; predicted categories, not GT",
+    "unknown_only": "official post-NMS automatic-mask union minus grounded-semantic union",
+    "uncovered": "neither grounded nor official post-NMS automatic mask",
+    "automatic_union": "all automatic masks have unknown semantic tags; overlaps with named masks retained"
+  },
+  "geometry_changed": false,
+  "models_rerun": false
+}
