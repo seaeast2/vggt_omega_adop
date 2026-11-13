@@ -1,0 +1,3 @@
+{"time": "2026-11-14T06:22:16.231144+09:00", "event": "registered", "run_id": "eth3d-pipes-I20-20261114-002"}
+{"time": "2026-11-14T06:22:17.150284+09:00", "event": "open_laser_GT_after_optimizer", "source_run": "eth3d-pipes-I12-20261114-001"}
+{"time": "2026-11-14T06:22:19.291456+09:00", "event": "completed", "decision": "NO_CONFIRMED_GAIN", "criteria": true}

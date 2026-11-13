@@ -1,0 +1,146 @@
+{
+  "eth3d-office": {
+    "manifests": {
+      "I0": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I0-20261114-003/stages/I0/manifest.json",
+        "bytes": 13446,
+        "sha256": "97152fd964646eaf4b8b0cdac0a40b8c1782c356cca452efb3d3170fc388a9aa"
+      },
+      "I1": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I1-20261114-001/stages/I1/manifest.json",
+        "bytes": 15931,
+        "sha256": "d753fd5c66e2f5f4ed683c3c65a10e98465d179693d7bffc000d0946624c5404"
+      },
+      "I2": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I2-20261114-001/stages/I2/manifest.json",
+        "bytes": 10215,
+        "sha256": "d125250c3f792d6efbc9bc5b3ec748e3ffef11d3b1893bd3989ae61784b545a3"
+      },
+      "I3": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I3-20261114-001/stages/I3/manifest.json",
+        "bytes": 10533,
+        "sha256": "b101607a22f1932fade4b6e1721a4cc9e4eb2751aedf37e1f3648cf37d1cd01d"
+      },
+      "I4": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I4-20261114-001/stages/I4/manifest.json",
+        "bytes": 9657,
+        "sha256": "4d2d313e0b22a171249d874796558f09a14e1aac8f5861d61590950d7509bb38"
+      },
+      "I10": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I10-20261114-001/stages/I10/manifest.json",
+        "bytes": 18404,
+        "sha256": "53139333763b8cead0dceccd4b267073057b8c5b0bffbc3f9a07d48514a8a5c1"
+      },
+      "I12": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I12-20261114-001/stages/I12/manifest.json",
+        "bytes": 18081,
+        "sha256": "3fc3d7a2bf1e28f77823479b9b408feed739a151d2751171e00d02cc2954e0d9"
+      },
+      "I14": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I14-20261114-001/stages/I14/manifest.json",
+        "bytes": 9124,
+        "sha256": "86f805d22ad0ab8f6477afae0953c4687c645e3ad35c50730eeb581e0736bbbd"
+      },
+      "I15": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I15-20261114-001/stages/I15/manifest.json",
+        "bytes": 10260,
+        "sha256": "eb8e7709e5b6ce99e54a14549650d245a5fcb5609b289edb814501663d1a6f61"
+      },
+      "I20": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-office-I20-20261114-002/stages/I20/manifest.json",
+        "bytes": 12967,
+        "sha256": "2e6c56ce19e6535486eac0f0e69ec0afd99d495ca31ccd9b72e0118c561082b5"
+      }
+    },
+    "artifact_records_verified": 425,
+    "GT_flags_and_execution_order_verified": true,
+    "I20_checks": {
+      "shared_metadata": true,
+      "disjoint_scale_evaluation": true,
+      "unchanged_unknown": true,
+      "unchanged_unsupported": true
+    },
+    "I12_controls": {
+      "analytic_jac_relative_error": 2.9177606442054582e-09,
+      "synthetic_photo_parameter_error": 1.8735013540549517e-16,
+      "forbidden_RGB_perturbation_invariant": true,
+      "self_view_depth_gradient_zero": true
+    },
+    "same_optimizer_source": true,
+    "metadata_corrected_I0_split_bitwise_identical_to_I1_parent": true,
+    "retained_unchanged_from_I10": true,
+    "standalone_download_bootstrap_GT_replay_identical": true
+  },
+  "eth3d-pipes": {
+    "manifests": {
+      "I0": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I0-20261114-002/stages/I0/manifest.json",
+        "bytes": 13387,
+        "sha256": "1322c175f90a1a7541c112965b1acbe9070cf9240ae42838226bb5ed7d010fbe"
+      },
+      "I1": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I1-20261114-001/stages/I1/manifest.json",
+        "bytes": 15881,
+        "sha256": "d03a3ad943f51306eb2e627cffa58952592c7f8141d212ff42b06dcd2a20d198"
+      },
+      "I2": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I2-20261114-001/stages/I2/manifest.json",
+        "bytes": 10179,
+        "sha256": "e681acd1101864255d2caefa92c6007fbb419555d5c70c70c36473e259016570"
+      },
+      "I3": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I3-20261114-001/stages/I3/manifest.json",
+        "bytes": 10496,
+        "sha256": "7a005163d81d05443dda20ca4e6f194bf85fc62509157d0bcd67d292cc4f7ae1"
+      },
+      "I4": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I4-20261114-001/stages/I4/manifest.json",
+        "bytes": 9622,
+        "sha256": "2c441538222c2b70e5776c17f6967e4549c3d9aeb063f6ff4c85d024385c891e"
+      },
+      "I10": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I10-20261114-001/stages/I10/manifest.json",
+        "bytes": 18337,
+        "sha256": "987b0581138b9bba4635f089a15dedb2da42d34265a1fe50b71737d24807db50"
+      },
+      "I12": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I12-20261114-001/stages/I12/manifest.json",
+        "bytes": 18015,
+        "sha256": "cd9c44b69b8493fdb616e7789c3dddad4207d1f93d5c64b004c7ad8c7ef35cc1"
+      },
+      "I14": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I14-20261114-001/stages/I14/manifest.json",
+        "bytes": 9092,
+        "sha256": "207553c785bc00d435e11f3bf9a06d62da95cb83160ed0d2b92352daba1a3c5b"
+      },
+      "I15": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I15-20261114-001/stages/I15/manifest.json",
+        "bytes": 10224,
+        "sha256": "2579b532c5cafec666915f8094c2e8268659827886501c7e56d1a2fe8a5b20b0"
+      },
+      "I20": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-pipes-I20-20261114-002/stages/I20/manifest.json",
+        "bytes": 12922,
+        "sha256": "370eab8bfc703ce8778cb6df8ea47650f7808ccb03a8f8acf1ce4945c196bba5"
+      }
+    },
+    "artifact_records_verified": 425,
+    "GT_flags_and_execution_order_verified": true,
+    "I20_checks": {
+      "shared_metadata": true,
+      "disjoint_scale_evaluation": true,
+      "unchanged_unknown": true,
+      "unchanged_unsupported": true
+    },
+    "I12_controls": {
+      "analytic_jac_relative_error": 2.9177606442054582e-09,
+      "synthetic_photo_parameter_error": 1.8735013540549517e-16,
+      "forbidden_RGB_perturbation_invariant": true,
+      "self_view_depth_gradient_zero": true
+    },
+    "same_optimizer_source": true,
+    "metadata_corrected_I0_split_bitwise_identical_to_I1_parent": true,
+    "retained_unchanged_from_I10": true,
+    "standalone_download_bootstrap_GT_replay_identical": true
+  }
+}

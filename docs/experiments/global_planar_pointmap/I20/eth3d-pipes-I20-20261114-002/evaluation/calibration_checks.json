@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "frame": "DSC_0634.JPG",
+      "official_cpp_max_pixel_error": 0.0007339026033150731,
+      "undistorted_vs_original_RGB_MAE": 0.003820082720588235,
+      "raw_shape": [
+        4032,
+        6048,
+        3
+      ],
+      "undistorted_shape": [
+        4141,
+        6220,
+        3
+      ],
+      "original_RGB": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images/DSC_0634.JPG",
+        "bytes": 7792021,
+        "sha256": "ecdbc6513d261882ce4d0d88e95b0e02a50c2ab409545ef8d3a14145c8021c9d"
+      }
+    },
+    {
+      "frame": "DSC_0635.JPG",
+      "official_cpp_max_pixel_error": 0.0007339026033150731,
+      "undistorted_vs_original_RGB_MAE": 0.0037051930147058826,
+      "raw_shape": [
+        4032,
+        6048,
+        3
+      ],
+      "undistorted_shape": [
+        4141,
+        6220,
+        3
+      ],
+      "original_RGB": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images/DSC_0635.JPG",
+        "bytes": 7735968,
+        "sha256": "f8d3c315d7ff26b53719016d15a58e670a1312aef9369480a1937754b06073bf"
+      }
+    },
+    {
+      "frame": "DSC_0644.JPG",
+      "official_cpp_max_pixel_error": 0.0007339026033150731,
+      "undistorted_vs_original_RGB_MAE": 0.0039030586192810453,
+      "raw_shape": [
+        4032,
+        6048,
+        3
+      ],
+      "undistorted_shape": [
+        4141,
+        6220,
+        3
+      ],
+      "original_RGB": {
+        "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/extracted/pipes/images/dslr_images/DSC_0644.JPG",
+        "bytes": 8231562,
+        "sha256": "8ec41dae3b2163a5c854642f79d06b47f803e6fdaa7202a1d092e7cb564ba081"
+      }
+    }
+  ],
+  "pixel_origin": "COLMAP corner; official class uses center, cx/cy shifted -0.5; original nearest array index=floor(projected corner coord)",
+  "official_sources": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/official_camera/camera.h",
+      "bytes": 25071,
+      "sha256": "92a6a7d621b115ab733709360540a6b873025a5f49fb4f8a9feeb6325e304e79"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/official_camera/camera.cc",
+      "bytes": 6761,
+      "sha256": "1ac7ecf4ac7bc6fe083917333eaaf594067a2fdf9049eb8db20c0d056c8e0d8d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/official_camera/util.h",
+      "bytes": 2143,
+      "sha256": "b67aef53fd6a6c47f15e65a218ea77644c6e735759c8782ce964512cca4f41e3"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/official_camera/ground_truth_creator.cc",
+      "bytes": 20953,
+      "sha256": "af94b0baf1f692352b3804afde7e8b2eec92689da11060838faf0dec5dd0e600"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/eth3d_laser/official_camera/colmap_model.cc",
+      "bytes": 37083,
+      "sha256": "d1a7169961bfd3c501015b5e445b1353474bddd3930cb2a613476a9ca69c1e48"
+    }
+  ],
+  "camera_source_commit": "d1bb0163229925f44ce9b52b384ab458f42712ba",
+  "camera_source_url": "https://github.com/ETH3D/camera-model-implementations/tree/d1bb0163229925f44ce9b52b384ab458f42712ba",
+  "depth_source_url": "https://github.com/ETH3D/dataset-pipeline/blob/e09275b39b30c9c59abf535b849fcc539dc03efd/src/exe/ground_truth_creator.cc",
+  "depth_definition": "gt_depth_map(iy,ix)=min(..., image_point.z()); observed in >=2 images, occlusion and masks checked"
+}
