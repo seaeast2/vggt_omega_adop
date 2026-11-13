@@ -12,6 +12,8 @@
 
 최종 갱신: 2026-11-14 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
 
+**I21에서 무보정 Omega raw를 ETH3D 2장면과 TUM 2구간 모두에 추가했다.** 기존 initial은 `fov`로 구분했다. raw는 원래 depth·K·pose 그대로 역투영한 전체 점군이며 원본 beta1 캐시와 bitwise 동일하다. depth Z는 FoV와 같지만 3D 점 오차는 다르다. 공정 비교를 위해 카메라 pose만으로 구한 공통 3D 정렬과 raw/FoV 표면 기준 정렬의 민감도 표를 함께 보고한다. [raw 포함 비교표·출처·오차 이미지](docs/experiments/global_planar_pointmap/I21/index.md)
+
 ## 1. 데이터와 비교 조건
 
 | 데이터 | 용도 | 입력 |
@@ -161,6 +163,7 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 | [I12~I13 평면 RGB 최적화 결과](docs/experiments/global_planar_pointmap/I13/index.md) | 거리만/거리·법선 모두 전체 GT 정확도 악화. 주 처치군 보류 RGB도 악화, 기존 retained 유지 |
 | [ETH3D 실내 레이저 GT 계획](docs/vggt_omega_eth3d_laser_experiment_plan.md) | 데이터 조사·새 장면 선택·왜곡/픽셀 좌표·동결 설정·독립 GT 평가 규약 |
 | [ETH3D office/pipes 레이저 GT 결과](docs/experiments/global_planar_pointmap/I20/index.md) | pipes 고정 평면 소폭 개선, RGB 거리·법선 재정렬은 두 장면 모두 전체 개선 실패 |
+| [I21 무보정 Omega raw 포함 비교](docs/experiments/global_planar_pointmap/I21/index.md) | raw/FoV/평면/거리/거리·법선/retained를 4구간에서 비교. 고정 depth mask·공통 정렬, 3D 정렬 민감도 분리 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 
