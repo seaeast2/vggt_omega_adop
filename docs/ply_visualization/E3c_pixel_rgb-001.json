@@ -1,0 +1,110 @@
+{
+  "purpose": "E3c 두 arm의 기존 좌표를 원본 owner 픽셀색으로 표시",
+  "color": "E0 원본 처리 RGB 중 각 대표점 owner 카메라·owner 픽셀의 색; 평균/중앙값 아님",
+  "training_color_difference": "원래 학습의 rgb_fixed 그룹 중앙값과는 별도 표시 색",
+  "geometry_changed": false,
+  "optimization_performed": false,
+  "original_observations": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/observations.npz",
+    "bytes": 20976590,
+    "sha256": "61ba80c7635bf00223b5011e6e0b59e27734ba386d1d2762064bd153084543bc"
+  },
+  "arms": {
+    "control_E0b": {
+      "selected_equals_last": true,
+      "last_equals_initial": false,
+      "files": [
+        {
+          "state": "initial",
+          "vertices": 341325,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/control_E0b/initial_pixel_rgb.ply",
+            "bytes": 11605377,
+            "sha256": "7a310f252351b1b53797981a05f02f7425128964a9874ce1e2c89cccaaf5bed1"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/control_E0b/maps/shared_map_initial.npz",
+            "bytes": 31692815,
+            "sha256": "80d50f37a4c38c57aaea685a00b8a65ebd453905d2ca05467d538b6d31cd56e8"
+          }
+        },
+        {
+          "state": "selected",
+          "vertices": 341325,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/control_E0b/selected_pixel_rgb.ply",
+            "bytes": 11605377,
+            "sha256": "05b482548b67c51715995ab9cdff438bb481190a44201cfbca71df0b8bac25e3"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/control_E0b/maps/shared_map_selected.npz",
+            "bytes": 31928904,
+            "sha256": "340b72dc4ce9e6795361d73104de1c8bd213c54e66e28918904a8e69e0a74c7c"
+          }
+        },
+        {
+          "state": "last",
+          "vertices": 341325,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/control_E0b/last_pixel_rgb.ply",
+            "bytes": 11605377,
+            "sha256": "05b482548b67c51715995ab9cdff438bb481190a44201cfbca71df0b8bac25e3"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/control_E0b/maps/shared_map_last.npz",
+            "bytes": 31928904,
+            "sha256": "340b72dc4ce9e6795361d73104de1c8bd213c54e66e28918904a8e69e0a74c7c"
+          }
+        }
+      ]
+    },
+    "treatment_E0c": {
+      "selected_equals_last": true,
+      "last_equals_initial": false,
+      "files": [
+        {
+          "state": "initial",
+          "vertices": 419864,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/treatment_E0c/initial_pixel_rgb.ply",
+            "bytes": 14275703,
+            "sha256": "add8fce85e30780f67fb397e56a7aedffdb1455cccf4c4a3d95b39f8b04e0f6b"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/treatment_E0c/maps/shared_map_initial.npz",
+            "bytes": 37869442,
+            "sha256": "e06e95b00943d8f969774dfa1021a6bd110e92ebfb525ba5a6f8d69269871dcd"
+          }
+        },
+        {
+          "state": "selected",
+          "vertices": 419864,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/treatment_E0c/selected_pixel_rgb.ply",
+            "bytes": 14275703,
+            "sha256": "3a98edeb44328b8109464c8c8d6d82007fedfd12ba00da805ab69137ee935762"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/treatment_E0c/maps/shared_map_selected.npz",
+            "bytes": 38076580,
+            "sha256": "22577321e02320f451859863998224b23caf12952c1769ae93d857d7d1def342"
+          }
+        },
+        {
+          "state": "last",
+          "vertices": 419864,
+          "file": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/ply_visualization/E3c_pixel_rgb-001/treatment_E0c/last_pixel_rgb.ply",
+            "bytes": 14275703,
+            "sha256": "3a98edeb44328b8109464c8c8d6d82007fedfd12ba00da805ab69137ee935762"
+          },
+          "source": {
+            "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E3c-20261112-001/stages/E3c/arms/treatment_E0c/maps/shared_map_last.npz",
+            "bytes": 38076580,
+            "sha256": "22577321e02320f451859863998224b23caf12952c1769ae93d857d7d1def342"
+          }
+        }
+      ]
+    }
+  }
+}

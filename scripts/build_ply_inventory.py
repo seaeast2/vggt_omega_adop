@@ -126,11 +126,12 @@ def main():
         if 'stages' in parts:
             i=parts.index('stages');series,code,run=parts[1],parts[i+1],parts[i-1]
         else:
-            assert parts[1]=='ply_visualization' and parts[2].startswith('E3b_pixel_rgb-')
-            series,code,run=parts[1],'E3b',parts[2]
+            assert parts[1]=='ply_visualization' and parts[2].startswith(('E3b_pixel_rgb-','E3c_pixel_rgb-'))
+            series,code,run=parts[1],parts[2].split('_pixel_rgb-',1)[0],parts[2]
         assert code in PURPOSE,code
         count,geometry,color,file_hash=read(path)
         kind,color_kind,state,arm,subset=classify(relative,code)
+        if series=='ply_visualization' and code=='E3c':arm=parts[3]
         report=Path('docs/experiments')/series/code/run/'report.md'
         if series=='ply_visualization':report=Path('docs/ply_visualization')/(run+'.json')
         assert (ROOT/report).is_file(),report
