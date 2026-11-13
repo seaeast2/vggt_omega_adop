@@ -1,0 +1,470 @@
+{
+  "decision": "NAMED_OR_PLANE_TEST_EXECUTED",
+  "allowed_tags": [
+    "screen",
+    "table",
+    "wall"
+  ],
+  "arms": {
+    "named_local": {
+      "accepted": 261427,
+      "accepted_fraction": 0.4432288275824653,
+      "rescued_unknown_pixels": 0,
+      "active_planes": 94,
+      "checks": {
+        "count": 589824,
+        "self_projection_max_pixel": 2.2737367544323206e-13,
+        "plane_equation_max": 1.3322676295501878e-15,
+        "unchanged_unknown_bitwise": true,
+        "unit_normals": true,
+        "max_relative_move": null,
+        "relative_depth_move": {
+          "count": 261427,
+          "mean": 0.008053517247827083,
+          "median": 0.001647323359803118,
+          "p90": 0.0063692049753547916,
+          "max": 2.165187298445486
+        },
+        "moved_over_100pct": 171
+      },
+      "visibility": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "baseline_frustum_count": 130828,
+            "retained_frustum_count": 130791,
+            "frustum_loss_fraction": 0.0002828140764973859,
+            "baseline_pixel_coverage": 0.5568389892578125,
+            "proposed_pixel_coverage": 0.5552164713541666,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "baseline_frustum_count": 67375,
+            "retained_frustum_count": 67359,
+            "frustum_loss_fraction": 0.00023747680890538034,
+            "baseline_pixel_coverage": 0.2843577067057292,
+            "proposed_pixel_coverage": 0.2823028564453125,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "baseline_frustum_count": 116668,
+            "retained_frustum_count": 116660,
+            "frustum_loss_fraction": 6.857064490691535e-05,
+            "baseline_pixel_coverage": 0.5553232828776041,
+            "proposed_pixel_coverage": 0.5525105794270834,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "baseline_frustum_count": 123462,
+            "retained_frustum_count": 123460,
+            "frustum_loss_fraction": 1.619931638884839e-05,
+            "baseline_pixel_coverage": 0.5643870035807291,
+            "proposed_pixel_coverage": 0.5617319742838541,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "baseline_frustum_count": 62193,
+            "retained_frustum_count": 62173,
+            "frustum_loss_fraction": 0.00032157959899024006,
+            "baseline_pixel_coverage": 0.2825775146484375,
+            "proposed_pixel_coverage": 0.2823588053385417,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "baseline_frustum_count": 126987,
+            "retained_frustum_count": 126981,
+            "frustum_loss_fraction": 4.7248930992936286e-05,
+            "baseline_pixel_coverage": 0.5637919108072916,
+            "proposed_pixel_coverage": 0.5629323323567709,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_frustum_loss": 0.00032157959899024006,
+        "maximum_pixel_coverage_loss": 0.0028127034505207593,
+        "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+      },
+      "heldout": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "tracks": 14,
+          "relative_3d": {
+            "count": 14,
+            "mean": 0.011483447018292523,
+            "median": 0.007974095155875353,
+            "p90": 0.0124366311961839,
+            "max": 0.0666863643389592
+          },
+          "corrected": {
+            "count": 2,
+            "mean": 0.03960359775710809,
+            "median": 0.03960359775710809,
+            "p90": 0.06126981102258898,
+            "max": 0.0666863643389592
+          },
+          "non_target": {
+            "count": 12,
+            "mean": 0.0067967552284899264,
+            "median": 0.006938337276463891,
+            "p90": 0.009321727976766798,
+            "max": 0.012240164578346749
+          },
+          "relative_z": {
+            "count": 28,
+            "mean": 0.007804075206573864,
+            "median": 0.0037732090182256333,
+            "p90": 0.008371809048401542,
+            "max": 0.06348631213405875
+          },
+          "reprojection_pixel": {
+            "count": 14,
+            "mean": 2.8548239894642,
+            "median": 2.9333617777871357,
+            "p90": 4.527714624106605,
+            "max": 5.21121698838118
+          }
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "tracks": 7,
+          "relative_3d": {
+            "count": 7,
+            "mean": 0.18565607877673915,
+            "median": 0.007136737618037782,
+            "p90": 0.5111887248929333,
+            "max": 1.2589371563209732
+          },
+          "corrected": {
+            "count": 2,
+            "mean": 0.009958186591826136,
+            "median": 0.009958186591826136,
+            "p90": 0.012143453804423339,
+            "max": 0.01268977060757264
+          },
+          "non_target": {
+            "count": 5,
+            "mean": 0.25593523565070436,
+            "median": 0.005394425104897326,
+            "p90": 0.7582169888397992,
+            "max": 1.2589371563209732
+          },
+          "relative_z": {
+            "count": 14,
+            "mean": 0.09979395253551315,
+            "median": 0.0044948887885064,
+            "p90": 0.29573643102751823,
+            "max": 0.9348280164820372
+          },
+          "reprojection_pixel": {
+            "count": 7,
+            "mean": 77.98834156808077,
+            "median": 2.052670764180401,
+            "p90": 216.09218665907466,
+            "max": 532.9615209902771
+          }
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "tracks": 9,
+          "relative_3d": {
+            "count": 9,
+            "mean": 0.1493954664115262,
+            "median": 0.005732453966444455,
+            "p90": 0.26830319364622046,
+            "max": 1.2898453349747818
+          },
+          "corrected": {
+            "count": 3,
+            "mean": 0.009577333193693473,
+            "median": 0.011068950633086575,
+            "p90": 0.012547916777881172,
+            "max": 0.012917658314079821
+          },
+          "non_target": {
+            "count": 6,
+            "mean": 0.2193045330204426,
+            "median": 0.005620244271050286,
+            "p90": 0.6484441693234277,
+            "max": 1.2898453349747818
+          },
+          "relative_z": {
+            "count": 18,
+            "mean": 0.0686260479085891,
+            "median": 0.004157896586809509,
+            "p90": 0.13773589447826193,
+            "max": 0.741233221113543
+          },
+          "reprojection_pixel": {
+            "count": 9,
+            "mean": 60.504442279589675,
+            "median": 2.156642063310065,
+            "p90": 108.49207158502645,
+            "max": 528.2085643788417
+          }
+        }
+      ],
+      "accepted_by_tag": {
+        "screen": 101867,
+        "table": 127151,
+        "wall": 32409
+      }
+    },
+    "named_OR": {
+      "accepted": 264880,
+      "accepted_fraction": 0.4490831163194444,
+      "rescued_unknown_pixels": 3453,
+      "active_planes": 94,
+      "checks": {
+        "count": 589824,
+        "self_projection_max_pixel": 2.3447910280083306e-13,
+        "plane_equation_max": 1.3322676295501878e-15,
+        "unchanged_unknown_bitwise": true,
+        "unit_normals": true,
+        "max_relative_move": null,
+        "relative_depth_move": {
+          "count": 264880,
+          "mean": 0.00833058435865433,
+          "median": 0.0016904840749279635,
+          "p90": 0.0066889529441347025,
+          "max": 2.164928232096504
+        },
+        "moved_over_100pct": 171
+      },
+      "visibility": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "baseline_frustum_count": 130828,
+            "retained_frustum_count": 130791,
+            "frustum_loss_fraction": 0.0002828140764973859,
+            "baseline_pixel_coverage": 0.5568389892578125,
+            "proposed_pixel_coverage": 0.555328369140625,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "baseline_frustum_count": 67375,
+            "retained_frustum_count": 67357,
+            "frustum_loss_fraction": 0.0002671614100185529,
+            "baseline_pixel_coverage": 0.2843577067057292,
+            "proposed_pixel_coverage": 0.2822825113932292,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "baseline_frustum_count": 116668,
+            "retained_frustum_count": 116660,
+            "frustum_loss_fraction": 6.857064490691535e-05,
+            "baseline_pixel_coverage": 0.5553232828776041,
+            "proposed_pixel_coverage": 0.5524953206380209,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "baseline_frustum_count": 123462,
+            "retained_frustum_count": 123461,
+            "frustum_loss_fraction": 8.099658194424195e-06,
+            "baseline_pixel_coverage": 0.5643870035807291,
+            "proposed_pixel_coverage": 0.5614166259765625,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "baseline_frustum_count": 62193,
+            "retained_frustum_count": 62171,
+            "frustum_loss_fraction": 0.00035373755888926404,
+            "baseline_pixel_coverage": 0.2825775146484375,
+            "proposed_pixel_coverage": 0.2822367350260417,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "baseline_frustum_count": 126987,
+            "retained_frustum_count": 126982,
+            "frustum_loss_fraction": 3.9374109160780234e-05,
+            "baseline_pixel_coverage": 0.5637919108072916,
+            "proposed_pixel_coverage": 0.562896728515625,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_frustum_loss": 0.00035373755888926404,
+        "maximum_pixel_coverage_loss": 0.0029703776041666297,
+        "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+      },
+      "heldout": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "tracks": 14,
+          "relative_3d": {
+            "count": 14,
+            "mean": 0.011446949263041512,
+            "median": 0.007974095155875353,
+            "p90": 0.012171073985365571,
+            "max": 0.0666863643389592
+          },
+          "corrected": {
+            "count": 2,
+            "mean": 0.03934811347035101,
+            "median": 0.03934811347035101,
+            "p90": 0.06121871416523757,
+            "max": 0.0666863643389592
+          },
+          "non_target": {
+            "count": 12,
+            "mean": 0.0067967552284899264,
+            "median": 0.006938337276463891,
+            "p90": 0.009321727976766798,
+            "max": 0.012240164578346749
+          },
+          "relative_z": {
+            "count": 28,
+            "mean": 0.0077113474835288935,
+            "median": 0.003265131240263613,
+            "p90": 0.008371809048401542,
+            "max": 0.06348631213405875
+          },
+          "reprojection_pixel": {
+            "count": 14,
+            "mean": 2.858089069365706,
+            "median": 2.9333617777871357,
+            "p90": 4.559712407141365,
+            "max": 5.21121698838118
+          }
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "tracks": 7,
+          "relative_3d": {
+            "count": 7,
+            "mean": 0.18578432922059082,
+            "median": 0.007136737618037782,
+            "p90": 0.5111887248929333,
+            "max": 1.2589371563209732
+          },
+          "corrected": {
+            "count": 2,
+            "mean": 0.010407063145307077,
+            "median": 0.010407063145307077,
+            "p90": 0.012233229115119527,
+            "max": 0.01268977060757264
+          },
+          "non_target": {
+            "count": 5,
+            "mean": 0.25593523565070436,
+            "median": 0.005394425104897326,
+            "p90": 0.7582169888397992,
+            "max": 1.2589371563209732
+          },
+          "relative_z": {
+            "count": 14,
+            "mean": 0.09991487123302537,
+            "median": 0.0044948887885064,
+            "p90": 0.2957873927958271,
+            "max": 0.9348280164820372
+          },
+          "reprojection_pixel": {
+            "count": 7,
+            "mean": 77.99728547358723,
+            "median": 2.052670764180401,
+            "p90": 216.09218665907466,
+            "max": 532.9615209902771
+          }
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "tracks": 9,
+          "relative_3d": {
+            "count": 9,
+            "mean": 0.14940005700091702,
+            "median": 0.005732453966444455,
+            "p90": 0.26830319364622046,
+            "max": 1.2898453349747818
+          },
+          "corrected": {
+            "count": 3,
+            "mean": 0.009591104961865896,
+            "median": 0.011110265937603843,
+            "p90": 0.012556179838784626,
+            "max": 0.012917658314079821
+          },
+          "non_target": {
+            "count": 6,
+            "mean": 0.2193045330204426,
+            "median": 0.005620244271050286,
+            "p90": 0.6484441693234277,
+            "max": 1.2898453349747818
+          },
+          "relative_z": {
+            "count": 18,
+            "mean": 0.06863233681511047,
+            "median": 0.004157896586809509,
+            "p90": 0.13773589447826193,
+            "max": 0.741233221113543
+          },
+          "reprojection_pixel": {
+            "count": 9,
+            "mean": 60.50450456720211,
+            "median": 2.156642063310065,
+            "p90": 108.49252005583598,
+            "max": 528.2085643788417
+          }
+        }
+      ],
+      "accepted_by_tag": {
+        "screen": 101753,
+        "table": 130718,
+        "wall": 32409
+      }
+    }
+  },
+  "retained": "proposed",
+  "no_named_support_unchanged_bitwise": true,
+  "other_named_blocked_bitwise": true,
+  "OR_order_invariant": true,
+  "geometry_types": [
+    "plane"
+  ],
+  "raw_named_fraction": 0.4432288275824653,
+  "eligible_OR_fraction": 0.4490831163194444,
+  "box_cylinder_sphere_applied": false,
+  "elapsed_seconds": 90.72763744698022,
+  "process_peak_rss_mib": 1205.4921875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

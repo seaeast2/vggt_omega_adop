@@ -1,0 +1,38 @@
+{
+  "tum-freiburg1_desk": {
+    "source": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/manifest.json",
+      "bytes": 16661,
+      "sha256": "8767ca2d241a979105cbdfcdaa385fc8166e7c3a6028be791cb9a0960b6bf493"
+    },
+    "local_points": 261427,
+    "OR_points": 264880,
+    "newly_named_points": 3453,
+    "frustum_loss": 0.00035373755888926404,
+    "retained": "proposed",
+    "excluded_XYZ_bitwise": true,
+    "invariant_arrays_preserved": true,
+    "retained_choice_verified": true,
+    "geometry_types": [
+      "plane"
+    ]
+  },
+  "tum-freiburg1_desk-extra": {
+    "source": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-extra-I10-20261113-001/stages/I10/manifest.json",
+      "bytes": 16996,
+      "sha256": "2e319fc25d64fd0ff74dcaf358b58ccf24ccbaa8019172f98f6ec4848a69057f"
+    },
+    "local_points": 194834,
+    "OR_points": 194950,
+    "newly_named_points": 116,
+    "frustum_loss": 0.005871689785624212,
+    "retained": "initial",
+    "excluded_XYZ_bitwise": true,
+    "invariant_arrays_preserved": true,
+    "retained_choice_verified": true,
+    "geometry_types": [
+      "plane"
+    ]
+  }
+}

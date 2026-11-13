@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/initial/frame_colors.ply",
+    "bytes": 28901747,
+    "sha256": "4592ecda6c6df7560c2b46c0a9ee663358187aff7ffce5c6d8a7624c401b41a5"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/initial/pixel_rgb.ply",
+    "bytes": 28901747,
+    "sha256": "e97da9445f8801186904cf904a5fe5818e657d2ca73e1a9d184faec89a2900ef"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/named_OR/frame_colors.ply",
+    "bytes": 28901747,
+    "sha256": "ce8da734f685b342d796fbe1606fbc883749524c1a14a5a0ec42a26dab89050b"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/named_OR/pixel_rgb.ply",
+    "bytes": 28901747,
+    "sha256": "3b66ff6ebadba4a0af79806a9f7533f6d788dabb89bb6a0b3f4cdf4b96be2ba6"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/named_local/frame_colors.ply",
+    "bytes": 28901747,
+    "sha256": "6e6657524de852f6d9b419bde82979e3b9f17a58afc630b56c8fa490773e1d53"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/named_local/pixel_rgb.ply",
+    "bytes": 28901747,
+    "sha256": "6f200e4a6bd4355ce714091a0981362aac871f574e6978a78110680f23fdec91"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/retained/frame_colors.ply",
+    "bytes": 28901747,
+    "sha256": "ce8da734f685b342d796fbe1606fbc883749524c1a14a5a0ec42a26dab89050b"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I10-20261113-001/stages/I10/artifacts/named_or/retained/pixel_rgb.ply",
+    "bytes": 28901747,
+    "sha256": "3b66ff6ebadba4a0af79806a9f7533f6d788dabb89bb6a0b3f4cdf4b96be2ba6"
+  }
+]

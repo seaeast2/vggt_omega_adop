@@ -1,0 +1,5 @@
+{"time": "2026-11-13T19:55:10.888740+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I10-20261113-001"}
+{"time": "2026-11-13T19:56:31.097733+09:00", "event": "surface_groups", "regions": 773, "groups": 380, "association_edges": 1068}
+{"time": "2026-11-13T19:56:34.839402+09:00", "event": "arm_finished", "arm": "named_local", "accepted": 261427, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-13T19:56:37.634888+09:00", "event": "arm_finished", "arm": "named_OR", "accepted": 264880, "rescued": 3453, "coverage_passed": true}
+{"time": "2026-11-13T19:56:41.608715+09:00", "event": "completed", "decision": "NAMED_OR_PLANE_TEST_EXECUTED", "criteria": true}

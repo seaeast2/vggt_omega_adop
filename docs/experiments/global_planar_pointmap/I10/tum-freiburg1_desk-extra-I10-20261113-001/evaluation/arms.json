@@ -1,0 +1,448 @@
+{
+  "named_local": {
+    "accepted": 194834,
+    "accepted_fraction": 0.3303256564670139,
+    "rescued_unknown_pixels": 0,
+    "active_planes": 90,
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 2.8421709430404007e-13,
+      "plane_equation_max": 6.661338147750939e-16,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 194834,
+        "mean": 0.01330729855291906,
+        "median": 0.0018005935199909813,
+        "p90": 0.011486437702549404,
+        "max": 0.8343846818034878
+      },
+      "moved_over_100pct": 0
+    },
+    "visibility": {
+      "pairs": [
+        {
+          "source": 0,
+          "target": 1,
+          "baseline_frustum_count": 146194,
+          "retained_frustum_count": 146191,
+          "frustum_loss_fraction": 2.0520678003201227e-05,
+          "baseline_pixel_coverage": 0.6623433430989584,
+          "proposed_pixel_coverage": 0.6609853108723959,
+          "passed": true
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "baseline_frustum_count": 143906,
+          "retained_frustum_count": 143884,
+          "frustum_loss_fraction": 0.00015287757286006144,
+          "baseline_pixel_coverage": 0.6519368489583334,
+          "proposed_pixel_coverage": 0.6500193277994791,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "baseline_frustum_count": 153019,
+          "retained_frustum_count": 152976,
+          "frustum_loss_fraction": 0.000281010854861161,
+          "baseline_pixel_coverage": 0.6633961995442709,
+          "proposed_pixel_coverage": 0.6621246337890625,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "baseline_frustum_count": 152256,
+          "retained_frustum_count": 151494,
+          "frustum_loss_fraction": 0.005004728877679697,
+          "baseline_pixel_coverage": 0.7389424641927084,
+          "proposed_pixel_coverage": 0.7349650065104166,
+          "passed": false
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "baseline_frustum_count": 186342,
+          "retained_frustum_count": 186324,
+          "frustum_loss_fraction": 9.659658048105097e-05,
+          "baseline_pixel_coverage": 0.658538818359375,
+          "proposed_pixel_coverage": 0.6583913167317709,
+          "passed": true
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "baseline_frustum_count": 182984,
+          "retained_frustum_count": 182977,
+          "frustum_loss_fraction": 3.825471079438639e-05,
+          "baseline_pixel_coverage": 0.7388153076171875,
+          "proposed_pixel_coverage": 0.73681640625,
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "maximum_frustum_loss": 0.005004728877679697,
+      "maximum_pixel_coverage_loss": 0.003977457682291741,
+      "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+    },
+    "heldout": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "tracks": 130,
+        "relative_3d": {
+          "count": 130,
+          "mean": 0.005992289226323992,
+          "median": 0.005940874691678333,
+          "p90": 0.009079974572489945,
+          "max": 0.021912266563066978
+        },
+        "corrected": {
+          "count": 5,
+          "mean": 0.009275628611761153,
+          "median": 0.006419099277493924,
+          "p90": 0.01568596906620607,
+          "max": 0.01705692164035695
+        },
+        "non_target": {
+          "count": 125,
+          "mean": 0.005860955650906506,
+          "median": 0.005923121353116685,
+          "p90": 0.008952762243445461,
+          "max": 0.021912266563066978
+        },
+        "relative_z": {
+          "count": 260,
+          "mean": 0.002785071244763154,
+          "median": 0.0023712676443453755,
+          "p90": 0.005333688906018789,
+          "max": 0.015233911308217373
+        },
+        "reprojection_pixel": {
+          "count": 130,
+          "mean": 2.2927844881853745,
+          "median": 2.121860977855536,
+          "p90": 3.605477936539879,
+          "max": 8.954294596551087
+        }
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "tracks": 70,
+        "relative_3d": {
+          "count": 70,
+          "mean": 0.004980887313944326,
+          "median": 0.004157570615357108,
+          "p90": 0.008760466067049251,
+          "max": 0.016997036811599163
+        },
+        "corrected": {
+          "count": 3,
+          "mean": 0.004390397793111008,
+          "median": 0.0044200994476812265,
+          "p90": 0.0059620453980461915,
+          "max": 0.006347531885637432
+        },
+        "non_target": {
+          "count": 67,
+          "mean": 0.005007327143235369,
+          "median": 0.004155938662873846,
+          "p90": 0.00887782742141068,
+          "max": 0.016997036811599163
+        },
+        "relative_z": {
+          "count": 140,
+          "mean": 0.0027937760037501976,
+          "median": 0.001995637365637711,
+          "p90": 0.00693131970926962,
+          "max": 0.015558396727553285
+        },
+        "reprojection_pixel": {
+          "count": 70,
+          "mean": 1.71691652792346,
+          "median": 1.6338580579678568,
+          "p90": 2.963096286360536,
+          "max": 7.217796586503047
+        }
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "tracks": 94,
+        "relative_3d": {
+          "count": 94,
+          "mean": 0.0055685769156477195,
+          "median": 0.0047428176456923935,
+          "p90": 0.008987106874875764,
+          "max": 0.04011970842346098
+        },
+        "corrected": {
+          "count": 8,
+          "mean": 0.011717537742432615,
+          "median": 0.00858112768198624,
+          "p90": 0.021080890223858895,
+          "max": 0.04011970842346098
+        },
+        "non_target": {
+          "count": 86,
+          "mean": 0.00499658055966773,
+          "median": 0.004470141982518655,
+          "p90": 0.007959404743487941,
+          "max": 0.015137489309647319
+        },
+        "relative_z": {
+          "count": 188,
+          "mean": 0.0029024874843243203,
+          "median": 0.0019014648052144822,
+          "p90": 0.006612336379742742,
+          "max": 0.030681103263598634
+        },
+        "reprojection_pixel": {
+          "count": 94,
+          "mean": 1.917684752661917,
+          "median": 1.7390477285830102,
+          "p90": 3.247281993260336,
+          "max": 5.84264629008081
+        }
+      }
+    ],
+    "accepted_by_tag": {
+      "screen": 53426,
+      "table": 141408,
+      "wall": 0
+    }
+  },
+  "named_OR": {
+    "accepted": 194950,
+    "accepted_fraction": 0.3305223253038194,
+    "rescued_unknown_pixels": 116,
+    "active_planes": 90,
+    "checks": {
+      "count": 589824,
+      "self_projection_max_pixel": 2.8421709430404007e-13,
+      "plane_equation_max": 6.661338147750939e-16,
+      "unchanged_unknown_bitwise": true,
+      "unit_normals": true,
+      "max_relative_move": null,
+      "relative_depth_move": {
+        "count": 194950,
+        "mean": 0.013753911724628433,
+        "median": 0.0018262136395822714,
+        "p90": 0.011752324612138562,
+        "max": 0.8346350814885011
+      },
+      "moved_over_100pct": 0
+    },
+    "visibility": {
+      "pairs": [
+        {
+          "source": 0,
+          "target": 1,
+          "baseline_frustum_count": 146194,
+          "retained_frustum_count": 146191,
+          "frustum_loss_fraction": 2.0520678003201227e-05,
+          "baseline_pixel_coverage": 0.6623433430989584,
+          "proposed_pixel_coverage": 0.6604817708333334,
+          "passed": true
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "baseline_frustum_count": 143906,
+          "retained_frustum_count": 143884,
+          "frustum_loss_fraction": 0.00015287757286006144,
+          "baseline_pixel_coverage": 0.6519368489583334,
+          "proposed_pixel_coverage": 0.6495310465494791,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "baseline_frustum_count": 153019,
+          "retained_frustum_count": 153003,
+          "frustum_loss_fraction": 0.00010456217855299015,
+          "baseline_pixel_coverage": 0.6633961995442709,
+          "proposed_pixel_coverage": 0.6624908447265625,
+          "passed": true
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "baseline_frustum_count": 152256,
+          "retained_frustum_count": 151362,
+          "frustum_loss_fraction": 0.005871689785624212,
+          "baseline_pixel_coverage": 0.7389424641927084,
+          "proposed_pixel_coverage": 0.7350616455078125,
+          "passed": false
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "baseline_frustum_count": 186342,
+          "retained_frustum_count": 186324,
+          "frustum_loss_fraction": 9.659658048105097e-05,
+          "baseline_pixel_coverage": 0.658538818359375,
+          "proposed_pixel_coverage": 0.6581776936848959,
+          "passed": true
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "baseline_frustum_count": 182984,
+          "retained_frustum_count": 182977,
+          "frustum_loss_fraction": 3.825471079438639e-05,
+          "baseline_pixel_coverage": 0.7388153076171875,
+          "proposed_pixel_coverage": 0.7370503743489584,
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "maximum_frustum_loss": 0.005871689785624212,
+      "maximum_pixel_coverage_loss": 0.0038808186848958703,
+      "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+    },
+    "heldout": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "tracks": 130,
+        "relative_3d": {
+          "count": 130,
+          "mean": 0.006033011087788947,
+          "median": 0.005940874691678333,
+          "p90": 0.00920007280368604,
+          "max": 0.021912266563066978
+        },
+        "corrected": {
+          "count": 6,
+          "mean": 0.00961221001201814,
+          "median": 0.008956738745957269,
+          "p90": 0.015326186596871955,
+          "max": 0.01705692164035695
+        },
+        "non_target": {
+          "count": 124,
+          "mean": 0.00585982404306818,
+          "median": 0.005816558733985332,
+          "p90": 0.00895940011240802,
+          "max": 0.021912266563066978
+        },
+        "relative_z": {
+          "count": 260,
+          "mean": 0.0028256611203982956,
+          "median": 0.0023712676443453755,
+          "p90": 0.005404356581619287,
+          "max": 0.015233911308217373
+        },
+        "reprojection_pixel": {
+          "count": 130,
+          "mean": 2.294643599707167,
+          "median": 2.121860977855536,
+          "p90": 3.605477936539879,
+          "max": 8.954294596551087
+        }
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "tracks": 70,
+        "relative_3d": {
+          "count": 70,
+          "mean": 0.004981437262066203,
+          "median": 0.004157570615357108,
+          "p90": 0.008760466067049251,
+          "max": 0.016997036811599163
+        },
+        "corrected": {
+          "count": 3,
+          "mean": 0.0044032299159548075,
+          "median": 0.0044200994476812265,
+          "p90": 0.005992842492871311,
+          "max": 0.006386028254168832
+        },
+        "non_target": {
+          "count": 67,
+          "mean": 0.005007327143235369,
+          "median": 0.004155938662873846,
+          "p90": 0.00887782742141068,
+          "max": 0.016997036811599163
+        },
+        "relative_z": {
+          "count": 140,
+          "mean": 0.0027887219404309238,
+          "median": 0.001995637365637711,
+          "p90": 0.00693131970926962,
+          "max": 0.015558396727553285
+        },
+        "reprojection_pixel": {
+          "count": 70,
+          "mean": 1.7172852374890526,
+          "median": 1.6338580579678568,
+          "p90": 2.965677253319686,
+          "max": 7.217796586503047
+        }
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "tracks": 94,
+        "relative_3d": {
+          "count": 94,
+          "mean": 0.0055631385338494425,
+          "median": 0.0047428176456923935,
+          "p90": 0.008987106874875764,
+          "max": 0.039721675672527816
+        },
+        "corrected": {
+          "count": 8,
+          "mean": 0.011653636756302849,
+          "median": 0.00858112768198624,
+          "p90": 0.02096148039857895,
+          "max": 0.039721675672527816
+        },
+        "non_target": {
+          "count": 86,
+          "mean": 0.00499658055966773,
+          "median": 0.004470141982518655,
+          "p90": 0.007959404743487941,
+          "max": 0.015137489309647319
+        },
+        "relative_z": {
+          "count": 188,
+          "mean": 0.002904834723165279,
+          "median": 0.0019014648052144822,
+          "p90": 0.006612336379742742,
+          "max": 0.0302359573829272
+        },
+        "reprojection_pixel": {
+          "count": 94,
+          "mean": 1.9183836594575792,
+          "median": 1.7390477285830102,
+          "p90": 3.247281993260336,
+          "max": 5.893490133473689
+        }
+      }
+    ],
+    "accepted_by_tag": {
+      "screen": 53426,
+      "table": 141524,
+      "wall": 0
+    }
+  }
+}
