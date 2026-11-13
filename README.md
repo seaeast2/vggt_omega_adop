@@ -111,6 +111,8 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 
 위 벽 ROI는 camera0/1만 포함한다. 서로 다른 표면 패치의 signed median과 두께를 함께 보며, 보류 matching 지표가 거의 그대로인 것을 벽 정확도 검증으로 해석하지 않는다. 확대 단면에서는 H4d A3의 수용된 두 출처가 얇은 띠로 모이는 모습과 마스크 밖·거절점의 잔여 굴곡을 함께 볼 수 있다. A4는 법선 분리로 보정 범위가 줄어든다. 이 지표만으로 전체 PLY 육안 품질을 단정하지 않는다. [H 종합 결과](docs/experiments/c3a_plane_refinement/summary.md) · [벽 확대 단면](docs/experiments/c3a_plane_refinement/H6a/tum-freiburg1_desk-H6a-20261113-001/report.md)
 
+후속 **H4e**에서는 확정한 공유 평면을 기준으로 모든 프레임의 점을 다시 소속시키고, 법선 15/25/35°와 이동 2/5/10%를 12군으로 비교했다. 기존 소속에서 이동 제한만 풀면 31,352→31,367점으로 변화가 작았지만, 재소속·35°·5%에서는 **56,160점(프레임 0/1/2: 32,262/18,643/5,255)**으로 늘었다. 같은 설정에서 10%는 추가 수용이 없었다. 12군 모두 기술·가시성 보존 조건을 통과했다. [H4e 보고서](docs/experiments/c3a_plane_refinement/H4e/tum-freiburg1_desk-H4e-20261113-001/report.md)
+
 ## 5. PLY와 결과 찾기
 
 대형 PLY/NPZ·checkpoint·입력 데이터는 로컬에 보관하며 `.gitignore` 대상이다. GitHub에는 코드·설정·보고서·그림·수치·파일 해시를 저장한다. 따라서 저장소를 clone하는 것만으로 모든 PLY가 내려오지는 않는다.

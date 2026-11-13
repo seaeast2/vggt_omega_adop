@@ -52,20 +52,21 @@ def fit(x,depth,frame):
  valid=not degenerate and all(r['inliers']>=100 and r['fraction']>=.7 for r in rows)
  return {'valid':bool(valid),'reason':'VALID' if valid else ('DEGENERATE_PLANE_SUPPORT' if degenerate else 'INSUFFICIENT_INLIERS'),'plane':p.tolist(),'centroid':mean.tolist(),'eigenvalues':vals.tolist(),'second_first_ratio':axis_ratio,'second_axis_span_depth':float(second_span),'frames':rows,'count':N,'ransac_trials':trials,'ransac_scoring_points':len(scoreids),'ransac_scoring_cap':4096,'irls_iterations':it+1,'normalized_residual':c.stats(res),'inlier_fraction':float(support.mean()),'reference_depth':float(np.median(depth))}
 
-def depth_gate(d0,q,centers,p):
+def depth_gate(d0,q,centers,p,max_relative_move=.02):
+ assert 0<=max_relative_move<1
  nq=q@p[:3];cos=abs(nq)/np.linalg.norm(q,axis=1)
  with np.errstate(divide='ignore',invalid='ignore'):target=-(centers@p[:3]+p[3])/nq
  finite=np.isfinite(target);positive=finite&(target>0);angle=cos>=.2
  move=np.zeros(len(d0));move[finite]=abs(target[finite]-d0[finite])/d0[finite]
- bounded=finite&(move<=.02+1e-14);accepted=positive&angle&bounded
+ bounded=finite&(move<=max_relative_move+1e-14);accepted=positive&angle&bounded
  reason=np.full(len(d0),0,np.uint8);reason[~finite]=1;reason[finite&~positive]=2;reason[positive&~angle]=3;reason[positive&angle&~bounded]=4
  return target,accepted,reason
 
-def update(data,groups,soft=False):
+def update(data,groups,soft=False,max_relative_move=.02):
  xyz=data['xyz'].copy();D=data['d0'];accepted=np.zeros(len(D),bool);local=np.full(len(D),-1,np.int32);shared=local.copy();targets=D.copy();reason=np.full(len(D),5,np.uint8);plane_records=[]
  for gid,g in enumerate(groups):
   if not g['fit']['valid']:continue
-  ids=np.asarray(g['ids'],np.int64);p=np.array(g['fit']['plane']);tar,gate,r=depth_gate(D[ids],data['q'][ids],data['center_points'][ids],p)
+  ids=np.asarray(g['ids'],np.int64);p=np.array(g['fit']['plane']);tar,gate,r=depth_gate(D[ids],data['q'][ids],data['center_points'][ids],p,max_relative_move)
   assert not accepted[ids].any(),'conflicting membership'
   safe=ids[gate];delta=tar[gate]-D[safe]
   if soft:

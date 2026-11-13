@@ -1,0 +1,26 @@
+{"time": "2026-11-13T14:38:38.467463+09:00", "event": "registered", "config": {"seed": 0, "normal_window": 7, "normal_sensitivity_window": 21, "confidence_percentile": 10, "mask_erosion_px": 3, "image_border_px": 8, "normal_kmeans_clusters": 5, "normal_kmeans_iterations": 10, "minimum_area_fraction": 0.005, "minimum_frame_fit_support": 100, "minimum_inlier_fraction": 0.7, "ransac_iterations": 2000, "huber_irls_iterations": 20, "inlier_relative_distance": 0.005, "huber_delta": 0.005, "normal_angle_degree": 15, "association_depth_gate": 0.03, "association_overlap": 0.2, "association_min_pixels": 100, "association_centroid_distance": 0.01, "max_relative_move": "per arm 0.02/0.05/0.10", "minimum_ray_cosine": 0.2, "coverage_loss_limit": 0.005, "degenerate_second_first_eigen_ratio": 0.0001, "minimum_second_axis_span_depth": 0.01, "fit_tiles": [16, 12], "sam_model": "ViT-H", "detector": "IDEA-Research/grounding-dino-tiny (Swin-T)", "box_threshold": 0.25, "text_threshold": 0.2, "prompt": "wall.", "multimask_output": false, "execution_context": "host CPU; no CUDA or model inference", "gt_accuracy_evaluated": false, "experiment_code": "H4e", "run_id": "tum-freiburg1_desk-H4e-20261113-001", "point_membership_angle_grid_degree": [15, 25, 35], "movement_grid": [0.02, 0.05, 0.1], "frozen_reference_depth_gate": 0.03, "point_membership": "cross-view plane intersection footprint, no source-local cluster restriction", "refit_plane": false, "default_candidate_selection": "none; fixed 12-arm diagnostic", "plan": {"path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/c3a_plane_refinement/H4e/plan.md", "bytes": 3498, "sha256": "1df8fe2cf48cb667488dda6dbf45bc5b159a92fc5254e543e473397f7941d69e"}}}
+{"time": "2026-11-13T14:38:39.346672+09:00", "event": "arm_started", "name": "LEGACY_M02", "candidates": 31367}
+{"time": "2026-11-13T14:38:43.151789+09:00", "event": "arm_completed", "name": "LEGACY_M02", "moved": 31352, "frames": [14864, 16488, 0]}
+{"time": "2026-11-13T14:38:43.151870+09:00", "event": "arm_started", "name": "LEGACY_M05", "candidates": 31367}
+{"time": "2026-11-13T14:38:46.941426+09:00", "event": "arm_completed", "name": "LEGACY_M05", "moved": 31364, "frames": [14864, 16500, 0]}
+{"time": "2026-11-13T14:38:46.941513+09:00", "event": "arm_started", "name": "LEGACY_M10", "candidates": 31367}
+{"time": "2026-11-13T14:38:50.758715+09:00", "event": "arm_completed", "name": "LEGACY_M10", "moved": 31367, "frames": [14864, 16503, 0]}
+{"time": "2026-11-13T14:38:50.759209+09:00", "event": "arm_started", "name": "EXP_N15_M02", "candidates": 52704}
+{"time": "2026-11-13T14:38:54.523688+09:00", "event": "arm_completed", "name": "EXP_N15_M02", "moved": 52596, "frames": [30677, 17697, 4222]}
+{"time": "2026-11-13T14:38:54.523784+09:00", "event": "arm_started", "name": "EXP_N15_M05", "candidates": 52704}
+{"time": "2026-11-13T14:38:58.286331+09:00", "event": "arm_completed", "name": "EXP_N15_M05", "moved": 52704, "frames": [30677, 17697, 4330]}
+{"time": "2026-11-13T14:38:58.286400+09:00", "event": "arm_started", "name": "EXP_N15_M10", "candidates": 52704}
+{"time": "2026-11-13T14:39:02.025220+09:00", "event": "arm_completed", "name": "EXP_N15_M10", "moved": 52704, "frames": [30677, 17697, 4330]}
+{"time": "2026-11-13T14:39:02.025681+09:00", "event": "arm_started", "name": "EXP_N25_M02", "candidates": 55536}
+{"time": "2026-11-13T14:39:05.810719+09:00", "event": "arm_completed", "name": "EXP_N25_M02", "moved": 55306, "frames": [32079, 18350, 4877]}
+{"time": "2026-11-13T14:39:05.810803+09:00", "event": "arm_started", "name": "EXP_N25_M05", "candidates": 55536}
+{"time": "2026-11-13T14:39:09.573385+09:00", "event": "arm_completed", "name": "EXP_N25_M05", "moved": 55536, "frames": [32081, 18361, 5094]}
+{"time": "2026-11-13T14:39:09.573456+09:00", "event": "arm_started", "name": "EXP_N25_M10", "candidates": 55536}
+{"time": "2026-11-13T14:39:13.337690+09:00", "event": "arm_completed", "name": "EXP_N25_M10", "moved": 55536, "frames": [32081, 18361, 5094]}
+{"time": "2026-11-13T14:39:13.338174+09:00", "event": "arm_started", "name": "EXP_N35_M02", "candidates": 56160}
+{"time": "2026-11-13T14:39:17.248200+09:00", "event": "arm_completed", "name": "EXP_N35_M02", "moved": 55884, "frames": [32260, 18626, 4998]}
+{"time": "2026-11-13T14:39:17.248277+09:00", "event": "arm_started", "name": "EXP_N35_M05", "candidates": 56160}
+{"time": "2026-11-13T14:39:21.117742+09:00", "event": "arm_completed", "name": "EXP_N35_M05", "moved": 56160, "frames": [32262, 18643, 5255]}
+{"time": "2026-11-13T14:39:21.117817+09:00", "event": "arm_started", "name": "EXP_N35_M10", "candidates": 56160}
+{"time": "2026-11-13T14:39:24.902152+09:00", "event": "arm_completed", "name": "EXP_N35_M10", "moved": 56160, "frames": [32262, 18643, 5255]}
+{"time": "2026-11-13T14:39:25.862480+09:00", "event": "completed", "decision": "COMPLETED_THRESHOLD_AND_MEMBERSHIP_DIAGNOSTIC"}

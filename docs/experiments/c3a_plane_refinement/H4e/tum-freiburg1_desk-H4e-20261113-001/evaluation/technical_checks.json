@@ -1,0 +1,12 @@
+{
+  "depth_2_5_10pct_boundaries": true,
+  "normal_sign_invariance": true,
+  "corner_normal_rejection": true,
+  "parallel_wall_outside_10pct_rejection": true,
+  "reference_occlusion_and_negative_depth_rejection": true,
+  "legacy_A4_xyz_and_accepted_bitwise_reproduction": true,
+  "angle_and_move_acceptance_monotonic": true,
+  "common_accepted_xyz_bitwise_identical_across_all_caps_and_angles": true,
+  "all_accepted_points_on_same_frozen_plane": true,
+  "all_rejected_xyz_bitwise_unchanged": true
+}
