@@ -1,0 +1,360 @@
+{
+  "planar": {
+    "valid": true,
+    "state": "planar",
+    "plane": [
+      0.0,
+      8.296730944497246e-30,
+      1.0,
+      -1.9999999999999647
+    ],
+    "count": 1200,
+    "centroid": [
+      -0.003388821538855925,
+      -0.0031810703803097865,
+      1.9999999999999647
+    ],
+    "eigenvalues": [
+      1.2464495340557759e-27,
+      0.07825874440699923,
+      0.09044396394761153
+    ],
+    "second_first_ratio": 0.8652732696714793,
+    "second_axis_span": 0.5594952882982992,
+    "inlier_fraction": 1.0,
+    "normalized_residual": {
+      "count": 1200,
+      "mean": 1.765254609153999e-14,
+      "median": 1.765254609153999e-14,
+      "p90": 1.765254609153999e-14,
+      "max": 1.765254609153999e-14
+    },
+    "ransac_trials": 64,
+    "irls_iterations": 1,
+    "reference_depth": 2.0,
+    "uncertainty": {
+      "normal_rms_radian": 3.6431771458990765e-15,
+      "offset_standard_error": 1.0191702237832893e-15,
+      "method": "linearized covariance conditional on selected support; model bias excluded"
+    }
+  },
+  "curved": {
+    "valid": false,
+    "state": "ambiguous",
+    "plane": [
+      0.6736386187286477,
+      -0.5171968426477653,
+      0.5279379104710537,
+      -0.8805386506722411
+    ],
+    "count": 1200,
+    "centroid": [
+      -0.34050590678854864,
+      0.27068518588027096,
+      2.367539966515733
+    ],
+    "eigenvalues": [
+      4.2102415675504425e-05,
+      0.007923651597629333,
+      0.02517004811162896
+    ],
+    "second_first_ratio": 0.31480478553270946,
+    "second_axis_span": 0.15561154442184447,
+    "inlier_fraction": 0.09916666666666667,
+    "normalized_residual": {
+      "count": 1200,
+      "mean": 0.14343343829626326,
+      "median": 0.13215782049092512,
+      "p90": 0.2950542645191731,
+      "max": 0.423458148230483
+    },
+    "ransac_trials": 2000,
+    "irls_iterations": 13,
+    "reference_depth": 2.2881308890069034,
+    "uncertainty": {
+      "normal_rms_radian": 0.002104263870859158,
+      "offset_standard_error": 0.00018731082829418508,
+      "method": "linearized covariance conditional on selected support; model bias excluded"
+    }
+  },
+  "large_error_recovery": {
+    "0.5": {
+      "raw_z": 3.0,
+      "recovered_z": 1.9999999999999647,
+      "max_relative_move": null
+    },
+    "1.0": {
+      "raw_z": 4.0,
+      "recovered_z": 1.9999999999999647,
+      "max_relative_move": null
+    },
+    "5.0": {
+      "raw_z": 12.0,
+      "recovered_z": 1.9999999999999647,
+      "max_relative_move": null
+    }
+  },
+  "grid": [
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 12.346770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 12.346770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 12.346770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 12.356770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 12.356770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 12.356770589844846
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 12.386770589844847
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 12.386770589844847
+    },
+    {
+      "lambda_raw": 0.5,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 12.386770589844847
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 24.683541179689694
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 24.683541179689694
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 24.683541179689694
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 24.693541179689692
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 24.693541179689692
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 24.693541179689692
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 24.723541179689693
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 24.723541179689693
+    },
+    {
+      "lambda_raw": 1.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 24.723541179689693
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 49.35708235937938
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 49.35708235937938
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.01,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.01,
+      "curved_forced_plane_loss": 49.35708235937938
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 49.36708235937939
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 49.36708235937939
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.02,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.02,
+      "curved_forced_plane_loss": 49.36708235937939
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.4,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 49.39708235937938
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.6,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 49.39708235937938
+    },
+    {
+      "lambda_raw": 2.0,
+      "lambda_complex": 0.05,
+      "lambda_unknown": 0.8,
+      "control_score": 2,
+      "planar_loss": 0.05,
+      "curved_forced_plane_loss": 49.39708235937938
+    }
+  ],
+  "chosen": {
+    "lambda_raw": 1.0,
+    "lambda_complex": 0.02,
+    "lambda_unknown": 0.6,
+    "control_score": 2,
+    "planar_loss": 0.02,
+    "curved_forced_plane_loss": 24.693541179689692
+  },
+  "relations": [
+    {
+      "angle": 0,
+      "geometry_hypothesis": "parallel",
+      "selected": "uncertain",
+      "reason": "independent RGB evidence absent"
+    },
+    {
+      "angle": 60,
+      "geometry_hypothesis": "free",
+      "selected": "uncertain",
+      "reason": "independent RGB evidence absent"
+    },
+    {
+      "angle": 90,
+      "geometry_hypothesis": "orthogonal",
+      "selected": "uncertain",
+      "reason": "independent RGB evidence absent"
+    }
+  ],
+  "checked": [
+    "unit normal",
+    "collinear support rejection",
+    "small plane",
+    "curved not forced planar",
+    "negative intersection",
+    "50/100/500pct depth errors",
+    "nested masks and differences",
+    "rings and holes",
+    "nonorthogonal free hypothesis"
+  ],
+  "deferred_integration_controls": [
+    "association cycles and order",
+    "merge/split IDs",
+    "registry previous-version restoration",
+    "pure rotation observability audit"
+  ]
+}

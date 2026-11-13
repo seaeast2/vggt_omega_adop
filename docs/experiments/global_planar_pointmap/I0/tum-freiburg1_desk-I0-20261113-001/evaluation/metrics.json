@@ -1,0 +1,35 @@
+{
+  "decision": "CONTRACT_FROZEN_WITH_EXPLICIT_SPLIT_AMENDMENT",
+  "c3a_beta_max_error": 0.0,
+  "c3a_xyz_max_error": 0.0,
+  "splits": {
+    "tum-freiburg1_desk": {
+      "mixed": 0,
+      "fit_correspondences": 27,
+      "validation_correspondences": 30,
+      "original_fit_now_heldout": 20,
+      "fit_observations": 451996,
+      "heldout_with_halo": 137828,
+      "normal_fit_observations": 374530,
+      "split_method": "seed0 tile holdout + full known tracks fixed-point closure + 3px halo; 21px normals exclude 10px halo",
+      "limitations": "Known SIFT tracks only; undetected physical correspondences may cross split. RGB joint inference shared. Internal consistency only."
+    },
+    "tum-freiburg1_desk-extra": {
+      "mixed": 0,
+      "fit_correspondences": 319,
+      "validation_correspondences": 294,
+      "original_fit_now_heldout": 186,
+      "fit_observations": 447704,
+      "heldout_with_halo": 142120,
+      "normal_fit_observations": 352753,
+      "split_method": "seed0 tile holdout + full known tracks fixed-point closure + 3px halo; 21px normals exclude 10px halo",
+      "limitations": "Known SIFT tracks only; undetected physical correspondences may cross split. RGB joint inference shared. Internal consistency only."
+    }
+  },
+  "synthetic_control_status": "geometry passed; integration checks scheduled I4/I6/I8",
+  "weights_selected_on_synthetic_only": true,
+  "elapsed_seconds": 2.0148208040045574,
+  "process_peak_rss_mib": 318.4140625,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

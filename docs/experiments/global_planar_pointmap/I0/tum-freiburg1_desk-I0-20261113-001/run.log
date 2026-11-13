@@ -1,0 +1,5 @@
+{"time": "2026-11-13T16:35:39.345975+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I0-20261113-001"}
+{"time": "2026-11-13T16:35:40.001562+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 1], "features": [1512, 1238], "forward_ratio": 383, "mutual_ratio": 325, "ransac_inliers": 291}
+{"time": "2026-11-13T16:35:40.014277+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 2], "features": [1512, 819], "forward_ratio": 173, "mutual_ratio": 124, "ransac_inliers": 101}
+{"time": "2026-11-13T16:35:40.024857+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [1, 2], "features": [1238, 819], "forward_ratio": 262, "mutual_ratio": 221, "ransac_inliers": 191}
+{"time": "2026-11-13T16:35:41.353663+09:00", "event": "completed", "decision": "CONTRACT_FROZEN_WITH_EXPLICIT_SPLIT_AMENDMENT", "criteria": true}
