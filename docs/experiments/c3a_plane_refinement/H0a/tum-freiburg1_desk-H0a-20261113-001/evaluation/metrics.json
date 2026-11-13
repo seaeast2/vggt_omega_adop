@@ -1,0 +1,369 @@
+{
+  "decision": "TECHNICAL_CHECKS_PASSED",
+  "baseline_rebuild_max_xyz": 0.0,
+  "baseline_invariants": {
+    "all_invariants_passed": true,
+    "self_projection_max_pixel": 2.2737367544323206e-13,
+    "point_count": 589824,
+    "unchanged_xyz_rejected_bitwise": true
+  },
+  "soft_numeric_max_relative_error": 9.78336252679366e-10,
+  "synthetic_plane": {
+    "valid": true,
+    "reason": "VALID",
+    "plane": [
+      8.85681759668968e-31,
+      -3.0814370189219357e-30,
+      1.0,
+      -1.9999999999999483
+    ],
+    "centroid": [
+      -0.012449173584470197,
+      0.0016241802875173184,
+      1.9999999999999483
+    ],
+    "eigenvalues": [
+      2.676654355221467e-27,
+      0.08149574271945781,
+      0.08678925258480136
+    ],
+    "second_first_ratio": 0.939007311300771,
+    "second_axis_span_depth": 0.5709491841467428,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      },
+      {
+        "frame": 1,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      },
+      {
+        "frame": 2,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      }
+    ],
+    "count": 1800,
+    "ransac_trials": 64,
+    "ransac_scoring_points": 1800,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 1,
+    "normalized_residual": {
+      "count": 1800,
+      "mean": 2.5868196473766147e-14,
+      "median": 2.5868196473766147e-14,
+      "p90": 2.5868196473766147e-14,
+      "max": 2.5868196473766147e-14
+    },
+    "inlier_fraction": 1.0,
+    "reference_depth": 2.0
+  },
+  "curved_surface": {
+    "valid": false,
+    "reason": "INSUFFICIENT_INLIERS",
+    "plane": [
+      -0.5749007204008122,
+      0.6319018316374714,
+      -0.5197973036250145,
+      0.8570672362023204
+    ],
+    "centroid": [
+      -0.3088602120981837,
+      0.3248523110154411,
+      2.385364364793846
+    ],
+    "eigenvalues": [
+      4.0971673010971623e-05,
+      0.006449069942807394,
+      0.024659658655483058
+    ],
+    "second_first_ratio": 0.2615230824119071,
+    "second_axis_span_depth": 0.14066091575834613,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 600,
+        "inliers": 54,
+        "fraction": 0.09
+      },
+      {
+        "frame": 1,
+        "fit_count": 600,
+        "inliers": 51,
+        "fraction": 0.085
+      },
+      {
+        "frame": 2,
+        "fit_count": 600,
+        "inliers": 61,
+        "fraction": 0.10166666666666667
+      }
+    ],
+    "count": 1800,
+    "ransac_trials": 2000,
+    "ransac_scoring_points": 1800,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 7,
+    "normalized_residual": {
+      "count": 1800,
+      "mean": 0.1421370545515378,
+      "median": 0.13106951821918672,
+      "p90": 0.2895940270327337,
+      "max": 0.4298501903307829
+    },
+    "inlier_fraction": 0.09222222222222222,
+    "reference_depth": 2.28367918966482
+  },
+  "parallel_walls": {
+    "valid": false,
+    "reason": "INSUFFICIENT_INLIERS",
+    "plane": [
+      -3.0403749222539743e-30,
+      3.5741169081827017e-31,
+      1.0,
+      -2.000000000000019
+    ],
+    "centroid": [
+      -0.03146027162384968,
+      -0.005226563985244142,
+      2.000000000000019
+    ],
+    "eigenvalues": [
+      3.646509534384125e-28,
+      0.07971734834795617,
+      0.09211610675026348
+    ],
+    "second_first_ratio": 0.8654007552021097,
+    "second_axis_span_depth": 0.5646852161973295,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      },
+      {
+        "frame": 1,
+        "fit_count": 600,
+        "inliers": 0,
+        "fraction": 0.0
+      },
+      {
+        "frame": 2,
+        "fit_count": 600,
+        "inliers": 0,
+        "fraction": 0.0
+      }
+    ],
+    "count": 1800,
+    "ransac_trials": 245,
+    "ransac_scoring_points": 1800,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 1,
+    "normalized_residual": {
+      "count": 1800,
+      "mean": 0.06734006734007117,
+      "median": 0.09090909090908231,
+      "p90": 0.1111111111111217,
+      "max": 0.1111111111111217
+    },
+    "inlier_fraction": 0.3333333333333333,
+    "reference_depth": 2.0
+  },
+  "corner": {
+    "valid": false,
+    "reason": "INSUFFICIENT_INLIERS",
+    "plane": [
+      4.386427572617025e-05,
+      6.132268355529672e-05,
+      0.9999999971577269,
+      -1.9999921759136272
+    ],
+    "centroid": [
+      -0.011834848245925086,
+      -0.0036739721157659964,
+      1.9999929260230294
+    ],
+    "eigenvalues": [
+      1.1675214812090233e-07,
+      0.08296034946792097,
+      0.08916520070988657
+    ],
+    "second_first_ratio": 0.930411739192355,
+    "second_axis_span_depth": 0.5760567661886143,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      },
+      {
+        "frame": 1,
+        "fit_count": 600,
+        "inliers": 6,
+        "fraction": 0.01
+      },
+      {
+        "frame": 2,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      }
+    ],
+    "count": 1800,
+    "ransac_trials": 64,
+    "ransac_scoring_points": 1800,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 2,
+    "normalized_residual": {
+      "count": 1800,
+      "mean": 0.04207622217754134,
+      "median": 1.353573459694779e-05,
+      "p90": 0.16197313788087725,
+      "max": 0.3310168420240651
+    },
+    "inlier_fraction": 0.67,
+    "reference_depth": 2.0
+  },
+  "near_line": {
+    "valid": false,
+    "reason": "DEGENERATE_PLANE_SUPPORT",
+    "count": 1000
+  },
+  "single_frame": {
+    "valid": true,
+    "reason": "VALID",
+    "plane": [
+      -3.234649357544575e-30,
+      6.320330423856674e-31,
+      1.0,
+      -2.000000000000019
+    ],
+    "centroid": [
+      -0.03146027162384968,
+      -0.005226563985244142,
+      2.000000000000019
+    ],
+    "eigenvalues": [
+      3.6465095343841244e-28,
+      0.07971734834795617,
+      0.09211610675026348
+    ],
+    "second_first_ratio": 0.8654007552021097,
+    "second_axis_span_depth": 0.5646852161973295,
+    "frames": [
+      {
+        "frame": 0,
+        "fit_count": 600,
+        "inliers": 600,
+        "fraction": 1.0
+      }
+    ],
+    "count": 600,
+    "ransac_trials": 64,
+    "ransac_scoring_points": 600,
+    "ransac_scoring_cap": 4096,
+    "irls_iterations": 1,
+    "normalized_residual": {
+      "count": 600,
+      "mean": 9.547918011776346e-15,
+      "median": 9.547918011776346e-15,
+      "p90": 9.547918011776346e-15,
+      "max": 9.547918011776346e-15
+    },
+    "inlier_fraction": 1.0,
+    "reference_depth": 2.0
+  },
+  "occlusion": {
+    "source": 0,
+    "target": 1,
+    "source_points": 400,
+    "in_frustum": 400,
+    "mask_overlap_points": 400,
+    "valid_unique_pixels": 0,
+    "overlap_fraction": 0.0,
+    "behind_target_occluded": 400,
+    "in_front_depth_mismatch": 0,
+    "passed": false
+  },
+  "visible": {
+    "source": 0,
+    "target": 1,
+    "source_points": 400,
+    "in_frustum": 400,
+    "mask_overlap_points": 400,
+    "valid_unique_pixels": 400,
+    "overlap_fraction": 1.0,
+    "behind_target_occluded": 0,
+    "in_front_depth_mismatch": 0,
+    "passed": true
+  },
+  "movement_2pct_boundary_passed": true,
+  "synthetic_layer_gap": {
+    "initial": 0.011999999999999789,
+    "independent": 0.01200000297870929,
+    "shared": 0.0,
+    "ground_truth_recovery_claim": false
+  },
+  "baseline_render": [
+    {
+      "camera": 0,
+      "covered_pixels": 196608,
+      "coverage": 1.0,
+      "other_source_covered_pixels": 123038
+    },
+    {
+      "camera": 1,
+      "covered_pixels": 196608,
+      "coverage": 1.0,
+      "other_source_covered_pixels": 171992
+    },
+    {
+      "camera": 2,
+      "covered_pixels": 196608,
+      "coverage": 1.0,
+      "other_source_covered_pixels": 122538
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/vggt_omega_raw.npz",
+      "bytes": 5980036,
+      "sha256": "d820f18f5bb683efb89d331f82262b68e5cec55a7bbadf379d8091721a26afa4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/observations.npz",
+      "bytes": 20976590,
+      "sha256": "61ba80c7635bf00223b5011e6e0b59e27734ba386d1d2762064bd153084543bc"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/artifacts/baseline/frames.json",
+      "bytes": 1070,
+      "sha256": "d004cdac4d1150fbb23ce5e1a24933b9f6479f06dd2ee28495675e7ed0abf70e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/pointmap_refinement/tum-freiburg1_desk-E0-20261112-001/stages/E0/manifest.json",
+      "bytes": 7861,
+      "sha256": "e90721675b0e2ed9733a3999a53ebe1453a9222cef031f5acfc856d56d1431aa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/tum-freiburg1_desk-C3a-20261112-001/stages/C3a/artifacts/fit/proposed_not_selected/pointmap.npz",
+      "bytes": 15636952,
+      "sha256": "5d8caa83b11031348f95b43509febce2b8fadbb12ae9f554947d7e061a73cf35"
+    }
+  ],
+  "implementation_notes": [
+    "RANSAC scoring uses deterministic max4096 fit samples; final IRLS/support evaluated on every fit point; max2000 trials and adaptive 99.99pct bound min64.",
+    "Degenerate support rejected if second/largest covariance eigenvalue<1e-4 or four-sigma second-axis span / original median Z<.01."
+  ],
+  "gt_accuracy_evaluated": false,
+  "elapsed_seconds": 3.2895101179892663,
+  "process_peak_rss_mib": 286.2109375
+}

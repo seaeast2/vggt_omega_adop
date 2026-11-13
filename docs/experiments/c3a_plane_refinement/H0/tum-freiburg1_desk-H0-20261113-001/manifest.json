@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "experiment_code": "H0",
+  "run_id": "tum-freiburg1_desk-H0-20261113-001",
+  "started_at": "2026-11-13T14:00:39.878032+09:00",
+  "project_commit_at_start": "26f6f02785272991e27e859612145efc9e6534b5",
+  "parents": [],
+  "baseline": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/camera_fov_alignment/tum-freiburg1_desk-C3a-20261112-001/stages/C3a/artifacts/fit/proposed_not_selected/pointmap.npz",
+    "bytes": 15636952,
+    "sha256": "5d8caa83b11031348f95b43509febce2b8fadbb12ae9f554947d7e061a73cf35"
+  },
+  "gt_accuracy_evaluated": false,
+  "ended_at": "2026-11-13T14:00:42.084091+09:00",
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/c3a_plane_refinement/h0.py\", line 39, in run\n    shared=fit(X,D3,f);assert shared['valid'];pp=np.array(shared['plane']);td,ag,_=depth_gate(D3,q3,np.zeros_like(q3),pp);assert ag.all();joint=q3*td[:,None]\n                              ~~~~~~^^^^^^^^^\nAssertionError\n"
+}
