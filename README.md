@@ -4,6 +4,8 @@
 
 **C3a의 실제 FoV 제안 점군을 기준으로 H0~H6 실행을 완료했다.** 영상 분할·독립/공유 평면·hard/soft 깊이 보정을 비교했다. 기본 군은 공유 평면 지지가 부족했고, 중복 마스크 정리 보조 군은 앞의 두 카메라가 공유하는 벽 하나를 보정했다. 벽 두께와 층 간격 지표는 상충했으며 GT 정확도 개선은 미확인이다.
 
+후속 **I0~I9 전체 화면 자동 평면 파이프라인**을 계획했다. SAM tag를 FoV 전후 유지하고 자동 평면 분리·전역 연결·구조 관계·공동 최적화·전체 재투영을 수행하며, 평면 계수·유한 경계·교선·관측 소속·이력을 점군과 함께 보존한다. **I 계열은 아직 미실행**이다. [전체 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md)
+
 최종 갱신: 2026-11-13 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
 
 ## 1. 데이터와 비교 조건
@@ -35,6 +37,7 @@ VGGT-Ω 주 실내 출력은 512×384×3 = **589,824개 관측점**이다. 일�
 | **G0~G6/G0a/G0b/G5a** | C3a에 점·선·깊이 제약 추가 | 18개 주 비교군, 20개 초기값·가중치 비교, 실제 MoGe-2 prior 포함 | 완료, 탐색적 결과 |
 | **PlanarGS 조사** | 영상 분할·평면 보정 요소의 재사용 검토 | 공식 코드 commit·함수·임계값 의미와 이식 조건 조사 | 정적 조사 완료 |
 | **H0~H6 및 보조 검증** | C3a에 분할·공유 평면 재투영 | GroundingDINO+SAM ViT-H, 독립/공유 평면, hard/soft, 실제 PLY·보존 검증 | **완료, 지표 상충·탐색적 결과** |
+| **I0~I9** | 화면 전체 자동 평면 정렬·기록 | SAM 전체 영상 tag → FoV → 후보 분리·전역 연결·관계 추론·공동 최적화 → 재투영·plane registry | **계획 작성, 미실행** |
 
 실행별 상세 근거와 실패 이력은 다음 문서를 따른다.
 
@@ -43,6 +46,7 @@ VGGT-Ω 주 실내 출력은 512×384×3 = **589,824개 관측점**이다. 일�
 - [V0 일반 VGGT 비교](docs/experiments/vggt_baseline/index.md)
 - [G 계열 전체 현황](docs/experiments/point_line_depth_refinement/index.md) · [종합 결과](docs/experiments/point_line_depth_refinement/summary.md)
 - [H 계열 계획·상태](docs/experiments/c3a_plane_refinement/index.md)
+- [I 계열 전체 화면 자동 평면 계획·상태](docs/experiments/global_planar_pointmap/index.md)
 
 ## 3. 주요 관찰과 해석
 
@@ -144,6 +148,7 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 | [PlanarGS 재사용 조사](docs/research/planargs_reuse_review.md) | 공식 소스·분할 정제·평면 깊이 계산과 적용 조건 |
 | [PlanarGS 조사 소스 manifest](docs/research/planargs_source_manifest.json) | 확인한 commit·파일 해시·immutable URL |
 | [C3a 기준 공유 평면 보정 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md) | H 계열의 사전 범위·비교군·판정 기준과 실행 보완 기록 |
+| [화면 전체 자동 평면 Pointmap 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md) | I0~I9 자동화·무제한 재투영·평면/경계/관계 보존 설계, 미실행 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 

@@ -288,3 +288,10 @@ H4e의 법선·confidence·border/erosion·참조 Z 3%·이동 한도를 제거�
 작은 mask0에 우선권을 주고 큰-minus-작은 최대 성분 8,290점을 왼쪽 L로 분리한다. 나머지 231개 모호한 점은 C3a에 복원한다. R plane은 고정하고 C3a 원래 왼쪽 fit 322점에서 자유/수직 L plane을 추정한다. 수직은 nL을 nR nullspace로 매개화해 강제하고 원래 Z로 정규화한 Huber0.005 training loss로 위치/방향을 정한다. 이동은 계속 uncapped이며 fit 지원 규칙은 이동 대상 축소에 사용하지 않는다.
 
 [H4g 실행 결과](experiments/c3a_plane_refinement/H4g/tum-freiburg1_desk-H4g-20261113-001/report.md): camera1 왼쪽 8,290점의 R 오소속은 0, camera0/1 기존 R XYZ는 bitwise 보존됐다. 자유 plane 각도는 약73.13°, 수직 prior 군은 정확히90°다. 주 전파군은 camera2의 명확한 808점에도 같은 L 계수를 재사용하며 새 L을 적합하지 않는다. 5군의 보존/가시성/수식 검사를 통과했다. 단일 프레임 L 적합 및 강제된90°는 독립 GT 정확도 증거가 아니다.
+
+
+## 17. 전체 화면 자동화 후속 계획
+
+H4f/H4g의 효과를 특정 벽·사람의 소속/구조 지정에서 전체 화면의 자동 처리로 확장하는 [I0~I9 계획](vggt_omega_global_planar_pointmap_experiment_plan.md)을 별도 작성했다. 계열은 `global_planar_pointmap`이며 H 결과는 그대로 보존한다.
+
+raw pointmap → SAM 전체 영상 분할/tag → FoV → 평면 후보 분리 → 전역 ID 연결 → 구조 관계 추론 → 소속/평면 공동 최적화 → 모든 frame의 확정 소속 재투영 순서다. 평면 계수·관측 소속·유한 경계·가림·교선·인접·version 이력을 점군과 함께 저장해 폴리곤 재구성에 대비한다. 주 이동은 상한 없이 유지하고, 잘못된 면 연결은 이동 제한 대신 자동 소속·모델 선택에서 해결한다. **현재 I0~I9는 계획 상태이며 실행하지 않았다.**
