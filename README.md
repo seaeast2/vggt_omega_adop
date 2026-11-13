@@ -8,6 +8,8 @@
 
 **I12~I13에서는 평면의 거리·법선을 타 시점 RGB로 미분 최적화하고 GT로 평가했다.** 두 구간 모두 보류 RGB와 전체 깊이 정확도가 악화돼 기존 retained를 유지했다. 평면 고정→거리·법선 최적화 MAE는 주 구간 5.5114→6.1364 cm, 추가 구간 2.1514→2.4524 cm다. [계획](docs/vggt_omega_plane_photometric_experiment_plan.md) · [실행 결과·오차 이미지](docs/experiments/global_planar_pointmap/I13/index.md)
 
+**ETH3D office/pipes의 레이저 GT로 새 실내 2장면을 재검증했다.** 초기/평면 고정/거리·법선의 MAE는 office 1.3286/1.6068/2.1235 cm, pipes 2.2731/2.2031/2.4325 cm다. pipes의 고정 평면은 소폭 개선됐지만 RGB 재정렬은 두 장면 모두 전체 개선 기준을 실패했다. 공식 왜곡 모델·C++ 구현·RGB 대응을 검증했으며 기존 retained를 유지했다. [계획·데이터 조사](docs/vggt_omega_eth3d_laser_experiment_plan.md) · [레이저 GT 결과·이미지](docs/experiments/global_planar_pointmap/I20/index.md)
+
 최종 갱신: 2026-11-14 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
 
 ## 1. 데이터와 비교 조건
@@ -16,6 +18,7 @@
 | --- | --- | --- |
 | TUM `freiburg1_desk` | 주 실내 실험 | 원본 RGB index 30/40/50, 3장 공동 추론 |
 | 같은 실내의 추가 구간 | G5a의 고정 구간 재검증 | index 100/110/120, 3장 공동 추론 |
+| ETH3D `office`, `pipes` | 독립 레이저 스캔에서 렌더한 GT로 새 실내 전이 평가 | RGB 공시성으로 선택한 각 3장, 512×336 공동 추론, FARO Focus X330 GT |
 | UAVScenes `HKairport01`, `AMtown01` | 야외·드론 전이 비교 | 기존 E0d에서 고정한 각 3장 |
 | 일반 VGGT | 같은 실내 원본의 모델 출력 육안 비교 | 주 실내와 같은 RGB 3장, V0 |
 
@@ -156,6 +159,8 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 | [I11 현재 I10의 TUM GT 평가](docs/experiments/global_planar_pointmap/I11/index.md) | 두 구간의 전체 깊이 MAE·RMSE 악화. 주 구간 wall 개선, table·screen 악화. 공통 baseline FIT 정렬·validation 평가 |
 | [평면 거리·법선 RGB 최적화 계획](docs/vggt_omega_plane_photometric_experiment_plan.md) | I12 RGB 최적화와 I13 별도 GT 평가의 비교군·미분·지원·손실·성공 기준 |
 | [I12~I13 평면 RGB 최적화 결과](docs/experiments/global_planar_pointmap/I13/index.md) | 거리만/거리·법선 모두 전체 GT 정확도 악화. 주 처치군 보류 RGB도 악화, 기존 retained 유지 |
+| [ETH3D 실내 레이저 GT 계획](docs/vggt_omega_eth3d_laser_experiment_plan.md) | 데이터 조사·새 장면 선택·왜곡/픽셀 좌표·동결 설정·독립 GT 평가 규약 |
+| [ETH3D office/pipes 레이저 GT 결과](docs/experiments/global_planar_pointmap/I20/index.md) | pipes 고정 평면 소폭 개선, RGB 거리·법선 재정렬은 두 장면 모두 전체 개선 실패 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 
