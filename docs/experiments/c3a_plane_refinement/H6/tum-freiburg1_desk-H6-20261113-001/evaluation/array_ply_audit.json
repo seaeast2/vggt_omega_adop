@@ -1,0 +1,218 @@
+[
+  {
+    "code": "H3",
+    "arm": "A1_FRAME_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01999240127941441,
+    "same_as_A0": false
+  },
+  {
+    "code": "H3",
+    "arm": "A2_FRAME_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01748841636506878,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4",
+    "arm": "A3_SHARED_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H4",
+    "arm": "A4_SHARED_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H4",
+    "arm": "A6_GEOMETRY_ONLY",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H5",
+    "arm": "A5_SHARED_SOFT",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H3b",
+    "arm": "A1_FRAME_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01995607414615382,
+    "same_as_A0": false
+  },
+  {
+    "code": "H3b",
+    "arm": "A2_FRAME_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019547286789842334,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4b",
+    "arm": "A3_SHARED_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019966346661681837,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4b",
+    "arm": "A4_SHARED_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019363348165613397,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4b",
+    "arm": "A6_GEOMETRY_ONLY",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H5b",
+    "arm": "A5_SHARED_SOFT",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.007592963322751278,
+    "same_as_A0": false
+  },
+  {
+    "code": "H3c",
+    "arm": "A1_FRAME_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01999240127941441,
+    "same_as_A0": false
+  },
+  {
+    "code": "H3c",
+    "arm": "A2_FRAME_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01748841636506878,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4c",
+    "arm": "A3_SHARED_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H4c",
+    "arm": "A4_SHARED_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H4c",
+    "arm": "A6_GEOMETRY_ONLY",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H5c",
+    "arm": "A5_SHARED_SOFT",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H3d",
+    "arm": "A1_FRAME_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.01995607414615382,
+    "same_as_A0": false
+  },
+  {
+    "code": "H3d",
+    "arm": "A2_FRAME_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019547286789842334,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4d",
+    "arm": "A3_SHARED_RAWMASK",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019966346661681837,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4d",
+    "arm": "A4_SHARED_REFINED",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.019363348165613397,
+    "same_as_A0": false
+  },
+  {
+    "code": "H4d",
+    "arm": "A6_GEOMETRY_ONLY",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 4.2814546875366785e-16,
+    "same_as_A0": true
+  },
+  {
+    "code": "H5d",
+    "arm": "A5_SHARED_SOFT",
+    "point_count": 589824,
+    "all_arrays_and_ply_verified": true,
+    "rejected_xyz_bitwise_unchanged": true,
+    "max_relative_depth_move": 0.007592963322751278,
+    "same_as_A0": false
+  }
+]

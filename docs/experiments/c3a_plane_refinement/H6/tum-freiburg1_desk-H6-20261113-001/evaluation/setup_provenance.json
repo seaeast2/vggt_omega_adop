@@ -1,0 +1,21 @@
+{
+  "commands": [
+    ".venvs/p2a/bin/python -m pip install transformers==4.57.1",
+    "git clone --depth 1 https://github.com/facebookresearch/segment-anything.git thirdparty/segment-anything",
+    "curl -L --fail --retry 3 -o checkpoints/sam/sam_vit_h_4b8939.pth https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+    "huggingface_hub.snapshot_download(IDEA-Research/grounding-dino-tiny, local_dir=checkpoints/grounding-dino-tiny)"
+  ],
+  "grounding_dino_hf_commit": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "setup_download_time_instrumented": false,
+  "segmentation_model_loading_and_inference_timed": true,
+  "model_sources": [
+    "https://huggingface.co/IDEA-Research/grounding-dino-tiny",
+    "https://github.com/facebookresearch/segment-anything"
+  ],
+  "cuda_execution": "outside sandbox host RTX5060, H1",
+  "missing_evidence": [
+    "network download / package installation duration not separately instrumented",
+    "GT RGB-D/pose alignment not validated for H; no GT accuracy claim",
+    "No human semantic mask annotation; automatic mask errors not an accuracy score"
+  ]
+}

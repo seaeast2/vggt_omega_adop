@@ -1,19 +1,28 @@
-# C3a 기준 영상 분할·공유 평면 보정
+# H 실험 실행 목록
 
-2026-11-13. 상태: **계획 작성 완료 · 실험 미착수**.
+[사전 계획](../../c3a_planargs_plane_refinement_experiment_plan.md) · [종합 결과](summary.md)
 
-[실험 계획](../../c3a_planargs_plane_refinement_experiment_plan.md) · [PlanarGS 조사](../../research/planargs_reuse_review.md)
+H0~H6 완료. 최종 split 보완: c=기본, d=마스크 NMS. a/b 및 보완 전 실패도 보존.
 
-초기값은 C3a `proposed_not_selected`의 실제 FoV 보정 점군으로 고정한다. 카메라·픽셀 RGB·관측점 ID를 유지하고, 영상 분할과 평면 적합·광선 방향 재투영만 비교한다.
-
-| 코드 | 목적 | 상태 |
+| 코드 | 상태 | 보고서 |
 | --- | --- | --- |
-| H0 | C3a 재현·평면 교차 수식·합성 제어 | 미착수 · 첫 작업 |
-| H1 | 영상의 벽 후보 검출·분할 | 미착수 |
-| H2 | 기하 정제·기하 전용 제어·평가 split/ROI 동결 | 미착수 |
-| H3 | 프레임별 독립 평면 재투영 | 미착수 |
-| H4 | 공유 평면 연결·hard 재투영 | 미착수 |
-| H5 | 동일 공유 평면의 깊이 보존 soft 보정 | 미착수 |
-| H6 | PLY·단면·가시성·지표 종합 비교 | 미착수 |
-
-보조 검증은 H0a/H1a 등으로 별도 보존한다. 새 실험은 아직 실행하지 않았으며 기존 C/G 계열의 결과와 종료 이력은 유지한다.
+| H0 | 실패 보존 | [tum-freiburg1_desk-H0-20261113-001](H0/tum-freiburg1_desk-H0-20261113-001/report.md) |
+| H0a | 완료 | [tum-freiburg1_desk-H0a-20261113-001](H0a/tum-freiburg1_desk-H0a-20261113-001/report.md) |
+| H1 | 완료 | [tum-freiburg1_desk-H1-20261113-001](H1/tum-freiburg1_desk-H1-20261113-001/report.md) |
+| H2 | 완료·보완 전 진단 | [tum-freiburg1_desk-H2-20261113-001](H2/tum-freiburg1_desk-H2-20261113-001/report.md) |
+| H2b | 완료·보완 전 진단 | [tum-freiburg1_desk-H2b-20261113-001](H2b/tum-freiburg1_desk-H2b-20261113-001/report.md) |
+| H2c | 완료 | [tum-freiburg1_desk-H2c-20261113-001](H2c/tum-freiburg1_desk-H2c-20261113-001/report.md) |
+| H2d | 완료 | [tum-freiburg1_desk-H2d-20261113-001](H2d/tum-freiburg1_desk-H2d-20261113-001/report.md) |
+| H3 | 완료·보완 전 진단 | [tum-freiburg1_desk-H3-20261113-001](H3/tum-freiburg1_desk-H3-20261113-001/report.md) |
+| H3b | 완료·보완 전 진단 | [tum-freiburg1_desk-H3b-20261113-001](H3b/tum-freiburg1_desk-H3b-20261113-001/report.md) |
+| H3c | 완료 | [tum-freiburg1_desk-H3c-20261113-001](H3c/tum-freiburg1_desk-H3c-20261113-001/report.md) |
+| H3d | 완료 | [tum-freiburg1_desk-H3d-20261113-001](H3d/tum-freiburg1_desk-H3d-20261113-001/report.md) |
+| H4 | 완료·보완 전 진단 | [tum-freiburg1_desk-H4-20261113-001](H4/tum-freiburg1_desk-H4-20261113-001/report.md) |
+| H4b | 완료·보완 전 진단 | [tum-freiburg1_desk-H4b-20261113-001](H4b/tum-freiburg1_desk-H4b-20261113-001/report.md) |
+| H4c | 완료 | [tum-freiburg1_desk-H4c-20261113-001](H4c/tum-freiburg1_desk-H4c-20261113-001/report.md) |
+| H4d | 완료 | [tum-freiburg1_desk-H4d-20261113-001](H4d/tum-freiburg1_desk-H4d-20261113-001/report.md) |
+| H5 | 완료·보완 전 진단 | [tum-freiburg1_desk-H5-20261113-001](H5/tum-freiburg1_desk-H5-20261113-001/report.md) |
+| H5b | 완료·보완 전 진단 | [tum-freiburg1_desk-H5b-20261113-001](H5b/tum-freiburg1_desk-H5b-20261113-001/report.md) |
+| H5c | 완료 | [tum-freiburg1_desk-H5c-20261113-001](H5c/tum-freiburg1_desk-H5c-20261113-001/report.md) |
+| H5d | 완료 | [tum-freiburg1_desk-H5d-20261113-001](H5d/tum-freiburg1_desk-H5d-20261113-001/report.md) |
+| H6 | 완료 | [tum-freiburg1_desk-H6-20261113-001](H6/tum-freiburg1_desk-H6-20261113-001/report.md) |
