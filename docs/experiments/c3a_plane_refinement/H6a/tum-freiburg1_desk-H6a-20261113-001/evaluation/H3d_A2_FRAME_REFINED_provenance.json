@@ -1,0 +1,11 @@
+{
+  "frozen_proposal": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/c3a_plane_refinement/tum-freiburg1_desk-H3d-20261113-001/stages/H3d/artifacts/arms/A2_FRAME_REFINED/proposed/pointmap.npz",
+    "bytes": 24299635,
+    "sha256": "9b77db5b5d5bdf6582e818e708862b66e9646bf1571d38ec236c0f3f50af45ab"
+  },
+  "changes_to_geometry": false,
+  "plane_color_random_seed": 0,
+  "magenta": "shared candidate rejected by hard target gate",
+  "no_shared_group": "unchanged original image"
+}

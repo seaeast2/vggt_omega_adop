@@ -26,3 +26,4 @@ H0~H6 완료. 최종 split 보완: c=기본, d=마스크 NMS. a/b 및 보완 전
 | H5c | 완료 | [tum-freiburg1_desk-H5c-20261113-001](H5c/tum-freiburg1_desk-H5c-20261113-001/report.md) |
 | H5d | 완료 | [tum-freiburg1_desk-H5d-20261113-001](H5d/tum-freiburg1_desk-H5d-20261113-001/report.md) |
 | H6 | 완료 | [tum-freiburg1_desk-H6-20261113-001](H6/tum-freiburg1_desk-H6-20261113-001/report.md) |
+| H6a | 완료·시각화/참고 수치 | [tum-freiburg1_desk-H6a-20261113-001](H6a/tum-freiburg1_desk-H6a-20261113-001/report.md) |

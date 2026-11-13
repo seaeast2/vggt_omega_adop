@@ -1,7 +1,7 @@
 # C3a FoV 기준선에 PlanarGS의 분할·평면 보정 원리를 적용하는 실험 계획
 
 > 작성일: 2026-11-13<br>
-> 상태: **계획 작성 완료 · H0~H6 미착수**<br>
+> 상태: **H0~H6 및 보조 검증 완료 · 2026-11-13**<br>
 > 연구 용도: 대학원 졸업논문 실험<br>
 > 실험 계열: `c3a_plane_refinement`, 코드 `H0`~`H6`<br>
 > 목표: **C3a로 프레임 간 정렬을 마친 점군에서, 영상 분할과 공유 평면 재투영이 벽의 잔여 굴곡·층 분리를 줄이는지 확인한다.**
@@ -246,4 +246,18 @@ NPZ에는 XYZ·Z-depth·원본 ID/RGB/K/pose, local/shared plane ID, 수용·거
 
 매 실험 완료 후 코드·설정·경량 중간 결과·보고서를 커밋·푸시하고 원격 반영을 확인한다. 대형 PLY/NPZ·모델은 기존 `.gitignore` 정책을 유지하며 경로·크기·해시를 추적한다. 보조 검증은 H0a/H1a 등으로 구분하고 이전 실행을 덮어쓰지 않는다.
 
-현재는 계획만 작성했다. 모델 설치·추론·새 PLY 생성은 아직 수행하지 않았다.
+## 12. 실행 완료와 보완 기록 (2026-11-13)
+
+[종합 결과](experiments/c3a_plane_refinement/summary.md) · [전체 실행 목록](experiments/c3a_plane_refinement/index.md)
+
+- **H0a:** H0 합성 층 offset 0.6%는 고정 inlier 0.5% 밖인데 공동 적합 성공을 기대한 제어 오류를 수정했다. 실패를 보존하고 합성 offset만 0.3%로 낮춰 전 검사를 다시 통과했다. 실제 데이터 임계값은 변경하지 않았다.
+- **적합 구현:** RANSAC 가설 채점은 seed 0의 최대 4,096 fit 점, 최종 IRLS·지지 비율은 전체 fit 점을 사용한다. 최소 64회·99.99% 적응 종료·최대 2,000회다. 퇴화 기준은 second/largest covariance eigenvalue <1e-4 또는 4-sigma 두 번째 축 범위/원본 median Z <0.01이다. 수학 검증과 값을 H0a에서 고정했다.
+- **H1:** 공식 GroundingDINO Swin-T의 IDEA-Research HF 변환 가중치를 Transformers 4.57.1의 custom-kernel 비활성 float32 경로로 실행했다. 원본 SAM ViT-H 공식 소스·checkpoint를 호스트 RTX 5060에서 실행했다. 원래 LP3 런타임과 수치적으로 동일함을 입증한 것은 아니다. checkpoint SHA256·소스/HF revision을 보존했다. 설치 중 huggingface_hub 2.4.0→0.36.2 변경을 기록했다.
+- **H2/H2b:** 기본의 중복 마스크 관측은 모호로 제외했다. H2b는 원시 H1을 덮어쓰지 않고 SAM predicted-IoU 순서·mask IoU>0.5 NMS로 중복을 정리한 보조 검증이다. geometry-only 후보는 영상 분할 없이 생성하고 보정 전 RGB 사각형 지지 ≥100 px 및 후보 비율 ≥5%로 벽 검토를 표시했다. seed 지역의 전역 평면을 강제하지 않은 국소 그래프는 큰 곡면/물체 연결 후보를 만들 수 있으며 최종 robust support로 거절했다.
+- **H2c/H2d:** 추가 audit에서 알려진 track 45개 중 10개가 타일 fit/holdout 양쪽에 걸린 것을 발견했다. 원래 matching validation track은 처음부터 제외됐지만 전체 track 분리 계약을 보완해야 했다. c는 기본 마스크, d는 NMS 마스크에서 track 전체와 3 px 주변을 holdout으로 전파하며 mixed=0을 확인했다. **H3c/H4c/H5c와 H3d/H4d/H5d를 각각 재실행해 최종 비교로 사용**한다. 이전 실행은 보완 전 진단으로 남긴다.
+- **H3~H5:** 기본 공유군은 유효 공유 평면 0으로 실제 A0 유지다. 최종 NMS 군은 camera0/1의 공유 벽 하나에서 raw hard 50,934점, refined hard/soft 31,352점을 이동했다. H5는 H4의 평면·target·gate 동일성을 통과했다.
+- **H6/H6a:** 24개 제안군의 배열·두 색상 PLY·입력/산출물 해시와 split을 검증했다. 전체·타 프레임·출처별 투영, 고정 외부 시점·벽 단면·수용 마스크 및 E0 참고 수치를 저장했다. H6a 확대 축은 A0 percentile로만 정하고 모든 군에 공통 적용했다. 새 점군 최적화는 없다.
+
+H4d A4의 고정 벽 두께는 약 20.88% 감소했지만 source median 층 간격은 약 41.22% 증가했다. 수치 상충을 보존하며 전체 육안 품질 악화나 GT 정확도 개선으로 단정하지 않는다. 같은 벽의 frame2 지지는 없다. 모델 설치/네트워크 다운로드 시간은 별도 계측하지 않았고 모델 로딩·추론·기하 시간 및 memory는 기록했다. GT 정렬 검증은 미완료여서 H의 기하 정확도는 평가하지 않았다.
+
+빠른 PLY 경로: `results/c3a_plane_refinement/ply_review/`. 코드·보고서는 단계별 커밋·푸시했으며 대형 결과는 로컬에 보존했다.

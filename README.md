@@ -2,7 +2,7 @@
 
 대학원 졸업논문을 위한 실험 저장소다. 여러 RGB 이미지로 추론한 프레임별 pointmap의 불일치와 벽의 층 분리를 진단하고, 점군 융합·RGB 기반 정점 이동·FoV 보정·점/선/깊이 제약을 비교했다.
 
-**현재 후속 기준선은 C3a의 실제 FoV 제안 점군이다.** 이를 고정하고 영상 분할과 공유 평면 재투영을 적용할 H0~H6 계획을 작성했다. **H 계열은 아직 실행하지 않았다.**
+**C3a의 실제 FoV 제안 점군을 기준으로 H0~H6 실행을 완료했다.** 영상 분할·독립/공유 평면·hard/soft 깊이 보정을 비교했다. 기본 군은 공유 평면 지지가 부족했고, 중복 마스크 정리 보조 군은 앞의 두 카메라가 공유하는 벽 하나를 보정했다. 벽 두께와 층 간격 지표는 상충했으며 GT 정확도 개선은 미확인이다.
 
 최종 갱신: 2026-11-13 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
 
@@ -34,7 +34,7 @@ VGGT-Ω 주 실내 출력은 512×384×3 = **589,824개 관측점**이다. 일�
 | **V0** | 일반 VGGT와 육안 비교 | 동일 실내 3장으로 depth 기반·point-head 기반 PLY를 각각 생성 | 완료 |
 | **G0~G6/G0a/G0b/G5a** | C3a에 점·선·깊이 제약 추가 | 18개 주 비교군, 20개 초기값·가중치 비교, 실제 MoGe-2 prior 포함 | 완료, 탐색적 결과 |
 | **PlanarGS 조사** | 영상 분할·평면 보정 요소의 재사용 검토 | 공식 코드 commit·함수·임계값 의미와 이식 조건 조사 | 정적 조사 완료 |
-| **H0~H6** | C3a에 분할·공유 평면 재투영 | 원본 RGB·ID·카메라를 보존하는 점군 기반 비교 계획 | **미착수** |
+| **H0~H6 및 보조 검증** | C3a에 분할·공유 평면 재투영 | GroundingDINO+SAM ViT-H, 독립/공유 평면, hard/soft, 실제 PLY·보존 검증 | **완료, 지표 상충·탐색적 결과** |
 
 실행별 상세 근거와 실패 이력은 다음 문서를 따른다.
 
@@ -86,7 +86,7 @@ G는 C3a proposed를 기준으로 점(P), 선(L), 교차 시점 깊이(Z), 제�
 
 고정 벽 ROI는 프레임 0/1만 지지하며 프레임 2의 지지점은 없다. 사용자는 G 일부 PLY에서도 더 정확한 벽 겹침을 확인했다. **일관된 전체 개선이 미확인이라는 판정과 국소·육안 개선은 양립한다.** 전체 품질을 단일 잔차나 coverage로 단정하지 않는다.
 
-## 4. 다음 계획: C3a → 영상 분할 → 공유 평면 재투영
+## 4. H 완료: C3a → 영상 분할 → 공유 평면 재투영
 
 [H0~H6 실험 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md)은 C3a의 실제 FoV 제안값만을 초기값으로 고정한다. G 결과를 초기값으로 혼용하지 않는다.
 
@@ -97,7 +97,19 @@ G는 C3a proposed를 기준으로 점(P), 선(L), 교차 시점 깊이(Z), 제�
 5. **H5:** 동일 공유 평면에서 원래 깊이를 보존하는 soft 보정.
 6. **H6:** PLY·벽 단면·투영·정합성·보존 조건 종합 비교.
 
-원본 픽셀색·관측점 ID·카메라를 유지하고, 점 추가·삭제·융합이나 RGB 학습은 포함하지 않는다. **현재는 계획만 작성했으며 첫 실행 단계는 H0다.**
+원본 픽셀색·관측점 ID·카메라와 **589,824점**을 유지하고, 수용된 관측의 자기 광선 Z-depth만 최대 2% 이동했다. 전체 24개 제안군의 NPZ·두 색상 PLY를 다시 읽어 좌표·RGB·출처와 거절점 bitwise 보존을 검증했다.
+
+H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서 알려진 track 10개가 양쪽 split에 걸린 것을 발견해, **c=track 전체 holdout을 적용한 기본 최종 군, d=같은 분리와 중복 마스크 NMS를 적용한 보조 최종 군**으로 재실행했다. 보완 전 결과도 보존한다. H6a는 E0 참고 수치·고정 축 확대 단면·공유 평면색을 추가했다.
+
+| 최종 비교 | 실제 변경 | C3a 대비 고정 벽 ROI 관찰 |
+| --- | --- | --- |
+| H4c 기본 공유 평면 | 유효 공유 평면 0, A0 유지 | 중복 마스크를 모호 영역으로 제외해 벽 지지 부족 |
+| H4d A3 원시 마스크 공유 hard | 공유 벽 1개, 50,934점 이동 | 두께 약 18.51% 감소, source median 층 간격 약 5.17% 증가 |
+| H4d A4 법선 정제 공유 hard | 같은 카메라 0/1의 공유 벽 1개, 31,352점 이동 | 두께 약 20.88% 감소, 층 간격 약 41.22% 증가 |
+| H5d A5 공유 soft | A4와 같은 평면·관측·gate, 31,352점 이동 | 두께 약 18.18% 감소, 층 간격 약 29.11% 증가 |
+| H4d A6 기하 전용 | 유효 공유 평면 0, A0 유지 | 큰 연결 후보의 robust 지지 부족 |
+
+위 벽 ROI는 camera0/1만 포함한다. 서로 다른 표면 패치의 signed median과 두께를 함께 보며, 보류 matching 지표가 거의 그대로인 것을 벽 정확도 검증으로 해석하지 않는다. 확대 단면에서는 H4d A3의 수용된 두 출처가 얇은 띠로 모이는 모습과 마스크 밖·거절점의 잔여 굴곡을 함께 볼 수 있다. A4는 법선 분리로 보정 범위가 줄어든다. 이 지표만으로 전체 PLY 육안 품질을 단정하지 않는다. [H 종합 결과](docs/experiments/c3a_plane_refinement/summary.md) · [벽 확대 단면](docs/experiments/c3a_plane_refinement/H6a/tum-freiburg1_desk-H6a-20261113-001/report.md)
 
 ## 5. PLY와 결과 찾기
 
@@ -105,6 +117,8 @@ G는 C3a proposed를 기준으로 점(P), 선(L), 교차 시점 깊이(Z), 제�
 
 | 경로·목록 | 내용 |
 | --- | --- |
+| `results/c3a_plane_refinement/ply_review/` | H 기준선·모든 군의 RGB/프레임색 빠른 경로. 최종 기본=c, 중복 정리 보조=d |
+| [H PLY inventory](docs/experiments/c3a_plane_refinement/H6/tum-freiburg1_desk-H6-20261113-001/evaluation/ply_inventory.json) | 146개 상태·색상별 항목, 실제 경로·해시. initial/retained는 동일 파일을 가리킬 수 있음 |
 | `results/point_line_depth_refinement/ply_review/` | C3a와 G 주 비교군의 원본 픽셀색·프레임색 PLY에 대한 빠른 symlink 경로 |
 | [G 전체 PLY 목록](docs/experiments/point_line_depth_refinement/G0b/tum-freiburg1_desk-G0b-20261113-001/evaluation/ply_files.json) | G0/G2/G3/G4/G5a의 상태·색상별 154개 PLY 경로·크기·해시. 동일 후보의 중복 상태 포함 |
 | [기존 PLY inventory](docs/ply_inventory/files.csv) | 앞선 E/C/V 및 표시용 PLY 목록. G/H를 포함한 최신 전체 목록은 아니므로 범위를 확인 |
@@ -123,7 +137,7 @@ G는 C3a proposed를 기준으로 점(P), 선(L), 교차 시점 깊이(Z), 제�
 | [점·선·깊이 제약 계획](docs/vggt_omega_point_line_depth_refinement_experiment_plan.md) | G 계열 사전 설계·구현 변경·결과 연결 |
 | [PlanarGS 재사용 조사](docs/research/planargs_reuse_review.md) | 공식 소스·분할 정제·평면 깊이 계산과 적용 조건 |
 | [PlanarGS 조사 소스 manifest](docs/research/planargs_source_manifest.json) | 확인한 commit·파일 해시·immutable URL |
-| [C3a 기준 공유 평면 보정 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md) | 현재 미착수 H 계열의 범위·비교군·판정 기준 |
+| [C3a 기준 공유 평면 보정 계획](docs/c3a_planargs_plane_refinement_experiment_plan.md) | H 계열의 사전 범위·비교군·판정 기준과 실행 보완 기록 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 
