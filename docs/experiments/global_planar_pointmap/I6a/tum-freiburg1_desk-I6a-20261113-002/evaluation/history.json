@@ -1,0 +1,99 @@
+[
+  {
+    "iteration": 0,
+    "objective": 33.41975894572594,
+    "terms": {
+      "evidence": 32.9211316962683,
+      "image": 0.057180659870854286,
+      "unknown": 0.35244547526041664,
+      "complexity": 0.08900111432637464,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0,
+    "initial_unobservable_planes": [
+      3,
+      9,
+      15,
+      17,
+      18,
+      20,
+      22,
+      43,
+      47,
+      54,
+      61
+    ]
+  },
+  {
+    "iteration": 1,
+    "objective": 30.59905152113272,
+    "terms": {
+      "evidence": 30.104222703423027,
+      "image": 0.05855453204913325,
+      "unknown": 0.34958801269531253,
+      "complexity": 0.08668627296524588,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.051457722981770836,
+    "continuous": {
+      "attempted": true,
+      "nfev": 47,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 2,
+    "objective": 30.5990512908969,
+    "terms": {
+      "evidence": 30.104222703423027,
+      "image": 0.05855460964114296,
+      "unknown": 0.34958801269531253,
+      "complexity": 0.08668596513741694,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 5.086263020833333e-06,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": false
+    }
+  },
+  {
+    "iteration": 3,
+    "objective": 30.5990512908969,
+    "terms": {
+      "evidence": 30.104222703423027,
+      "image": 0.05855460964114296,
+      "unknown": 0.34958801269531253,
+      "complexity": 0.08668596513741694,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": false
+    }
+  },
+  {
+    "iteration": 4,
+    "objective": 30.5990512908969,
+    "terms": {
+      "evidence": 30.104222703423027,
+      "image": 0.05855460964114296,
+      "unknown": 0.34958801269531253,
+      "complexity": 0.08668596513741694,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": false
+    }
+  }
+]

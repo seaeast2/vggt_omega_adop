@@ -1,0 +1,107 @@
+[
+  {
+    "iteration": 0,
+    "objective": 15.656840068957507,
+    "terms": {
+      "evidence": 15.1269976975429,
+      "image": 0.037737568320197805,
+      "unknown": 0.43921813964843753,
+      "complexity": 0.05288666344597221,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0,
+    "initial_unobservable_planes": [
+      20
+    ]
+  },
+  {
+    "iteration": 1,
+    "objective": 15.539370117515139,
+    "terms": {
+      "evidence": 15.004512138793537,
+      "image": 0.034902258082077996,
+      "unknown": 0.45290425618489577,
+      "complexity": 0.04705146445462846,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.022884792751736112,
+    "continuous": {
+      "attempted": true,
+      "nfev": 16,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 2,
+    "objective": 15.539032520228773,
+    "terms": {
+      "evidence": 15.004098509312243,
+      "image": 0.034697258480342726,
+      "unknown": 0.45406494140625,
+      "complexity": 0.046171811029938115,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.001934475368923611,
+    "continuous": {
+      "attempted": true,
+      "nfev": 5,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 3,
+    "objective": 15.539013329666933,
+    "terms": {
+      "evidence": 15.004079318750403,
+      "image": 0.034697258480342726,
+      "unknown": 0.45406494140625,
+      "complexity": 0.046171811029938115,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 5,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 4,
+    "objective": 15.539012957470675,
+    "terms": {
+      "evidence": 15.004078946554145,
+      "image": 0.034697258480342726,
+      "unknown": 0.45406494140625,
+      "complexity": 0.046171811029938115,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 5,
+    "objective": 15.539012731194228,
+    "terms": {
+      "evidence": 15.004078720277699,
+      "image": 0.034697258480342726,
+      "unknown": 0.45406494140625,
+      "complexity": 0.046171811029938115,
+      "relation_prior": 0.0
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "run": 0,
+    "seed": 0,
+    "reversed_evidence_and_variables": false,
+    "agreement_after_label_permutation": 1.0,
+    "objective_final": 15.53901296821002,
+    "assigned": 143460
+  },
+  {
+    "run": 1,
+    "seed": 0,
+    "reversed_evidence_and_variables": true,
+    "agreement_after_label_permutation": 1.0,
+    "objective_final": 15.539012731194228,
+    "assigned": 143460
+  },
+  {
+    "run": 2,
+    "seed": 1,
+    "reversed_evidence_and_variables": false,
+    "agreement_after_label_permutation": 1.0,
+    "objective_final": 15.539012770845314,
+    "assigned": 143460
+  }
+]
