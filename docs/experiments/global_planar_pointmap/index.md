@@ -1,5 +1,7 @@
 # I0–I9 전역 자동 평면 pointmap 실행 결과
 
+후속 **[I11 현재 I10의 TUM GT 평가](I11/index.md)**: baseline FIT의 공통 scale을 고정해 validation에서 평가했다. 보정 전→named OR 깊이 MAE는 주 구간 5.3767→5.5114 cm, 추가 구간 2.0196→2.1514 cm로 전체 정확도 개선이 없었다. 아래 GT 미평가 표기는 당시 I0–I9 실행의 상태이며, I11은 별도의 사후 평가다.
+
 후속 [I10 named OR 평면 테스트](I10/index.md): `wall/table/screen`만 허용하고 대응 표면의 named 정보를 OR했다. 주 구간은 가시성 통과, 추가 실내는 기준 초과로 initial 유지. 박스·원통·구 보정은 적용하지 않았다. 아래 I0–I9/A4 판정은 기존 실행 결과로 보존한다.
 
 추가 시각 검토: [주 구간 unknown 표시](I1u/tum-freiburg1_desk-I1u-20261113-001/report.md) · [추가 실내 unknown 표시](I1u/tum-freiburg1_desk-extra-I1u-20261113-001/report.md). 빨강은 이름 있는 마스크를 뺀 unknown-only, 초록은 이름 있는 마스크, 파랑은 미포함이다. 평면 판정이나 새로운 보정 결과가 아니다.

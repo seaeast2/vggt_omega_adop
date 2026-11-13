@@ -1,7 +1,8 @@
 # VGGT-Ω 화면 전체 자동 평면 정렬·Pointmap 생성 실험 계획
 
 > 작성일: 2026-11-13 KST<br>
-> 상태: **I0~I9 및 두 실내 구간 A0~A6 실행 완료 · A4 가시성 보존 실패, retained=initial · GT 미평가**<br>
+> 상태: **I0~I9 및 두 실내 구간 A0~A6 실행 완료 · A4 가시성 보존 실패, retained=initial · 당시 GT 미평가**<br>
+> 후속 **[I11: 현재 I10의 TUM 센서 GT 평가](experiments/global_planar_pointmap/I11/index.md)** 완료. 공통 scale 정렬 깊이 MAE는 주 구간 5.3767→5.5114 cm, 추가 구간 2.0196→2.1514 cm로 악화. 기존 실행과 별도 보존한다.<br>
 > 실험 계열: `global_planar_pointmap`<br>
 > 목표: **영상 전체에서 평면 후보와 관측점 소속을 자동으로 판단하고, 모든 프레임이 공유하는 평면으로 pointmap을 정렬한다. 사용한 평면·공간 경계·관측 관계는 점군과 함께 영구 보존한다.**
 

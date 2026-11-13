@@ -4,7 +4,7 @@
 
 **C3a의 실제 FoV 제안 점군을 기준으로 H0~H6 실행을 완료했다.** 영상 분할·독립/공유 평면·hard/soft 깊이 보정을 비교했다. 기본 군은 공유 평면 지지가 부족했고, 중복 마스크 정리 보조 군은 앞의 두 카메라가 공유하는 벽 하나를 보정했다. 벽 두께와 층 간격 지표는 상충했으며 GT 정확도 개선은 미확인이다.
 
-후속 **I0~I9 전체 화면 자동 평면 파이프라인**을 계획했다. SAM tag를 FoV 전후 유지하고 자동 평면 분리·전역 연결·구조 관계·공동 최적화·전체 재투영을 수행하며, 평면 계수·유한 경계·교선·관측 소속·이력을 점군과 함께 보존한다. **I 계열은 아직 미실행**이다. [전체 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md)
+후속 **I0~I9 전체 화면 자동 평면 파이프라인**과 **I10 named OR 평면 테스트**를 실행했다. I10은 wall/table/screen만 투영하고 모든 view에서 이름 지지가 없는 영역을 제외한다. **I11 TUM 센서 GT 평가에서는 전체 깊이 정확도가 개선되지 않았다.** 보정 전→OR의 scale 정렬 MAE는 주 구간 5.3767→5.5114 cm, 추가 구간 2.0196→2.1514 cm다. 추가 구간 retained는 기존 가시성 판정에 따라 initial이다. [전체 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md) · [GT 평가](docs/experiments/global_planar_pointmap/I11/index.md)
 
 최종 갱신: 2026-11-13 KST. 실행 완료, 사전 기준 통과, 육안 개선, GT 정확도는 구분해서 기록한다.
 
@@ -151,6 +151,7 @@ H0의 합성 제어 오류는 H0a로 보완했다. H2/H2b의 타일 분리에서
 | [화면 전체 자동 평면 Pointmap 계획](docs/vggt_omega_global_planar_pointmap_experiment_plan.md) | I0~I9 자동화·무제한 재투영·평면/경계/관계 보존 설계 |
 | [I0~I9 실행 결과](docs/experiments/global_planar_pointmap/index.md) | 주/추가 실내·A0~A6 실행 완료. 기술 검증 통과, A4 가시성 실패로 retained=initial, GT 미평가 |
 | [I10 named OR 평면 테스트](docs/experiments/global_planar_pointmap/I10/index.md) | wall/table/screen만 투영, 대응 영역 named OR. 주 구간 가시성 통과·추가 실내 initial 유지 |
+| [I11 현재 I10의 TUM GT 평가](docs/experiments/global_planar_pointmap/I11/index.md) | 두 구간의 전체 깊이 MAE·RMSE 악화. 주 구간 wall 개선, table·screen 악화. 공통 baseline FIT 정렬·validation 평가 |
 
 실험은 `experiments/<계열>/<코드>/`, 결과는 `results/<계열>/<run_id>/stages/<코드>/`, 보고서는 `docs/experiments/<계열>/<코드>/<run_id>/`로 구분한다. 보조 검증은 a/b/c 접미사를 붙이고 실패·중간 결과를 덮어쓰지 않는다. 실제 실행 명령은 각 계열의 코드·실행 보고서를 따른다.
 
