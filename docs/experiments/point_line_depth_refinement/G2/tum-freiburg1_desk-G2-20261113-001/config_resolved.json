@@ -1,0 +1,24 @@
+{
+  "code": "G2",
+  "beta_bounds": [
+    0.9090909090909091,
+    1.1111111111111112
+  ],
+  "s0": 0,
+  "depth_scale_bounds": [
+    0.95,
+    1.05
+  ],
+  "loss_weights": {
+    "L": 0.25,
+    "Z": 0.25,
+    "A": 1,
+    "E": 0.25
+  },
+  "jacobian": "3-point numerical; amendment G0a",
+  "ftol": 1e-08,
+  "xtol": 1e-08,
+  "gtol": 1e-08,
+  "max_nfev": 200,
+  "source_commit": "c1d4b6dabdb2a6eee040518c4bd4f8d5dbe4fc49"
+}
