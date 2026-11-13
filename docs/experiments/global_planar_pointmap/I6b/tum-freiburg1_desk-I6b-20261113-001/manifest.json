@@ -1,0 +1,24 @@
+{
+  "status": "superseded",
+  "run_id": "tum-freiburg1_desk-I6b-20261113-001",
+  "experiment_code": "I6b",
+  "dataset": "tum-freiburg1_desk",
+  "started_at": "2026-11-13T17:40:58.884606+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I4-20261113-001/stages/I4/manifest.json",
+      "bytes": 5111,
+      "sha256": "d38a7f27c9132d8c47a0468a8428f0c1df90991cf615afd47af94a77504b73b4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5-20261113-002/stages/I5/manifest.json",
+      "bytes": 5682,
+      "sha256": "005f18ae76bbd1f8d7bdc8ad35c4a9c7ff525650b42a128c622eb6f20755bc6e"
+    }
+  ],
+  "project_commit_at_start": "b031515e5a8825e04686a26ae52330273be70d2c",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": false,
+  "ended_at": "2026-11-13T17:48:40.363351+09:00",
+  "reason": "I3 partition used heldout depth; replaced by fit-only spatial propagation. Partial checkpoints/logs retained."
+}
