@@ -1,0 +1,24 @@
+{
+  "code": "G4",
+  "beta_bounds": [
+    0.9090909090909091,
+    1.1111111111111112
+  ],
+  "s0": 0,
+  "depth_scale_bounds": [
+    0.95,
+    1.05
+  ],
+  "loss_weights": {
+    "L": 0.25,
+    "Z": 0.25,
+    "A": 1,
+    "E": 0.25
+  },
+  "jacobian": "3-point numerical; amendment G0a",
+  "ftol": 1e-08,
+  "xtol": 1e-08,
+  "gtol": 1e-08,
+  "max_nfev": 200,
+  "source_commit": "48a17ace9fb6ea4bf666bb1ecc1f58c91ffa8168"
+}
