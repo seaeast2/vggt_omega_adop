@@ -23,3 +23,6 @@ done
 
 
 후속 H4e는 기존 H4d A4 평면을 고정한 전체 프레임 재소속과 점 법선/이동 제한 완화 12군이다. [사전 설정](H4e/plan.md). 실행: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venvs/p2a/bin/python experiments/c3a_plane_refinement/H4e/run.py`. GPU 재추론은 없다. 기존 기본값 2%는 유지하고 새 한도는 각 군의 인자로만 전달한다.
+
+
+H4f는 H1 SAM 전체 마스크를 기반으로 이동 상한·법선·confidence·경계·참조 깊이 gate를 제거하는 6군이다. [사전 설정](H4f/plan.md). 실행: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venvs/p2a/bin/python experiments/c3a_plane_refinement/H4f/run.py`. uncapped는 `max_relative_move=None`이며 양의 유한 교차와 수치 평행 방지 `minimum_ray_cosine=1e-8`만 유지한다. 기존 실험 기본값 2%/cos0.2는 유지한다.

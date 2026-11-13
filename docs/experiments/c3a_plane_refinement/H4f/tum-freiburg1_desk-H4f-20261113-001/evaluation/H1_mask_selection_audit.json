@@ -1,0 +1,152 @@
+[
+  {
+    "camera": 0,
+    "H1_mask": 0,
+    "pixels": 40065,
+    "positive_intersections": 40065,
+    "H4e_accepted": 32226,
+    "H4e_valid_normal_border": 34811,
+    "H4e_reference_footprint": 33047,
+    "H4e_angle_le35": 38766,
+    "move_above_5pct": 202,
+    "move_above_20pct": 15,
+    "move_above_100pct": 0,
+    "relative_move_if_positive": {
+      "count": 40065,
+      "mean": 0.004947873082482137,
+      "median": 0.002608347417601964,
+      "p90": 0.011433877164117085,
+      "max": 0.7250466824523558
+    },
+    "top_middle_pixels": 17640,
+    "top_middle_positive": 17640,
+    "top_middle_H4e_accepted": 15655,
+    "top_middle_relative_move": {
+      "count": 17640,
+      "mean": 0.0027777979969528643,
+      "median": 0.0021293272838849566,
+      "p90": 0.004266840155046502,
+      "max": 0.7250466824523558
+    }
+  },
+  {
+    "camera": 0,
+    "H1_mask": 1,
+    "pixels": 55684,
+    "positive_intersections": 55684,
+    "H4e_accepted": 32261,
+    "H4e_valid_normal_border": 49640,
+    "H4e_reference_footprint": 33098,
+    "H4e_angle_le35": 40112,
+    "move_above_5pct": 14799,
+    "move_above_20pct": 14547,
+    "move_above_100pct": 479,
+    "relative_move_if_positive": {
+      "count": 55684,
+      "mean": 0.1976377128738304,
+      "median": 0.0038418599627675918,
+      "p90": 0.8090630118857693,
+      "max": 1.0532072780898416
+    },
+    "top_middle_pixels": 17630,
+    "top_middle_positive": 17630,
+    "top_middle_H4e_accepted": 15655,
+    "top_middle_relative_move": {
+      "count": 17630,
+      "mean": 0.0027582354107652937,
+      "median": 0.0021286037070364066,
+      "p90": 0.004262330160556814,
+      "max": 0.7250466824523558
+    }
+  },
+  {
+    "camera": 1,
+    "H1_mask": 0,
+    "pixels": 23584,
+    "positive_intersections": 23584,
+    "H4e_accepted": 18631,
+    "H4e_valid_normal_border": 20254,
+    "H4e_reference_footprint": 20294,
+    "H4e_angle_le35": 22222,
+    "move_above_5pct": 419,
+    "move_above_20pct": 136,
+    "move_above_100pct": 0,
+    "relative_move_if_positive": {
+      "count": 23584,
+      "mean": 0.008289766479963986,
+      "median": 0.0022515578985118504,
+      "p90": 0.008479149803527031,
+      "max": 0.7272798516431368
+    },
+    "top_middle_pixels": 8588,
+    "top_middle_positive": 8588,
+    "top_middle_H4e_accepted": 6119,
+    "top_middle_relative_move": {
+      "count": 8588,
+      "mean": 0.011461053578668995,
+      "median": 0.004196673925653808,
+      "p90": 0.012578170739572106,
+      "max": 0.726040446226985
+    }
+  },
+  {
+    "camera": 1,
+    "H1_mask": 1,
+    "pixels": 32089,
+    "positive_intersections": 32089,
+    "H4e_accepted": 18643,
+    "H4e_valid_normal_border": 20696,
+    "H4e_reference_footprint": 20307,
+    "H4e_angle_le35": 23741,
+    "move_above_5pct": 8608,
+    "move_above_20pct": 6632,
+    "move_above_100pct": 739,
+    "relative_move_if_positive": {
+      "count": 32089,
+      "mean": 0.15466543895650653,
+      "median": 0.0037029768126797366,
+      "p90": 0.6142684642071788,
+      "max": 5.816580295534181
+    },
+    "top_middle_pixels": 8751,
+    "top_middle_positive": 8751,
+    "top_middle_H4e_accepted": 6131,
+    "top_middle_relative_move": {
+      "count": 8751,
+      "mean": 0.011841885333922086,
+      "median": 0.004269627315125031,
+      "p90": 0.01339152634488732,
+      "max": 0.7011280810602827
+    }
+  },
+  {
+    "camera": 2,
+    "H1_mask": 0,
+    "pixels": 15853,
+    "positive_intersections": 11094,
+    "H4e_accepted": 5248,
+    "H4e_valid_normal_border": 10592,
+    "H4e_reference_footprint": 5983,
+    "H4e_angle_le35": 10614,
+    "move_above_5pct": 996,
+    "move_above_20pct": 246,
+    "move_above_100pct": 175,
+    "relative_move_if_positive": {
+      "count": 11094,
+      "mean": 0.04408784510650484,
+      "median": 0.00827564297943124,
+      "p90": 0.042049785330932066,
+      "max": 1.9584490128886536
+    },
+    "top_middle_pixels": 1052,
+    "top_middle_positive": 1052,
+    "top_middle_H4e_accepted": 0,
+    "top_middle_relative_move": {
+      "count": 1052,
+      "mean": 0.3594262019040852,
+      "median": 0.10643504921576544,
+      "p90": 1.3217714035320682,
+      "max": 1.9584490128886536
+    }
+  }
+]

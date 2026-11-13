@@ -1,0 +1,61 @@
+{
+  "seed": 0,
+  "normal_window": 7,
+  "normal_sensitivity_window": 21,
+  "confidence_percentile": 10,
+  "mask_erosion_px": 3,
+  "image_border_px": 8,
+  "normal_kmeans_clusters": 5,
+  "normal_kmeans_iterations": 10,
+  "minimum_area_fraction": 0.005,
+  "minimum_frame_fit_support": 100,
+  "minimum_inlier_fraction": 0.7,
+  "ransac_iterations": 2000,
+  "huber_irls_iterations": 20,
+  "inlier_relative_distance": 0.005,
+  "huber_delta": 0.005,
+  "normal_angle_degree": 15,
+  "association_depth_gate": 0.03,
+  "association_overlap": 0.2,
+  "association_min_pixels": 100,
+  "association_centroid_distance": 0.01,
+  "max_relative_move": "per arm: 0.05/0.20/None (unbounded)",
+  "minimum_ray_cosine": "1e-8 for SAM arms; old 0.2 for H4e control",
+  "coverage_loss_limit": 0.005,
+  "degenerate_second_first_eigen_ratio": 0.0001,
+  "minimum_second_axis_span_depth": 0.01,
+  "fit_tiles": [
+    16,
+    12
+  ],
+  "sam_model": "ViT-H",
+  "detector": "IDEA-Research/grounding-dino-tiny (Swin-T)",
+  "box_threshold": 0.25,
+  "text_threshold": 0.2,
+  "prompt": "wall.",
+  "multimask_output": false,
+  "execution_context": "host CPU; no CUDA or model inference",
+  "gt_accuracy_evaluated": false,
+  "experiment_code": "H4f",
+  "run_id": "tum-freiburg1_desk-H4f-20261113-001",
+  "normal_membership_gate": null,
+  "confidence_gate": false,
+  "source_border_exclusion_px": 0,
+  "source_mask_erosion_px": 0,
+  "reference_depth_gate": null,
+  "primary_SAM_masks": {
+    "camera0": [
+      0
+    ],
+    "camera1": [
+      1
+    ],
+    "camera2": "mask0 intersect no-depth shared-plane 2D transfer"
+  },
+  "refit_plane": false,
+  "plan": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/c3a_plane_refinement/H4f/plan.md",
+    "bytes": 3157,
+    "sha256": "360c46cae2fe671963c19511ad3c7b8f01f56d93fc62c1f238404feb403d751a"
+  }
+}

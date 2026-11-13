@@ -270,3 +270,12 @@ H4d A4의 고정 벽 두께는 약 20.88% 감소했지만 source median 층 간�
 원래 공유 벽의 camera0/1 원시 NMS 영역으로 평면 교차점을 투영하고 참조 깊이 3% 확인을 요구해 공간 범위를 정한다. 각 출처의 원래 refined cluster에 제한하지 않으며 frame2도 평가한다. 자기 프레임 mask 밖 점도 다른 참조가 확인한 벽 범위에 재소속할 수 있다. confidence·영상 border·스침각은 고정했다.
 
 [실행 결과](experiments/c3a_plane_refinement/H4e/tum-freiburg1_desk-H4e-20261113-001/report.md): 기존 소속 이동 10%는 31,367점, 재소속 35°·5%는 56,160점이며 세 번째 프레임 5,255점을 포함했다. 35°에서 5→10%의 추가 수용은 없다. 자동 최적 설정 선정이나 GT 정확도 개선 주장은 하지 않는다. 원본 RGB·카메라·점 수·거절점 보존, 기존 2%군 bitwise 재현 및 수용 집합 단조성 검증을 통과했다. 모든 실제 제안값을 보존했다.
+
+
+## 14. H4f 후속: H1 SAM 전체 영역과 이동 상한 없는 hard 재투영
+
+사용자의 최신 지시에 따라 [H4f 사전 설정](../experiments/c3a_plane_refinement/H4f/plan.md)을 별도 추가했다. 기존 결과를 보존하고 H4d A4 공유 평면·C3a 카메라·RGB·점 수를 고정한다. 주 군은 camera0 H1 mask0과 camera1의 더 넓은 H1 mask1 전체를 신뢰한다. camera1 mask1은 이전 NMS에서 제외됐던 결과다. camera2 mask0은 같은 평면의 2D 참조 벽 범위 연결만 요구하며 참조 깊이를 보지 않는다. source0/1은 이 연결 gate도 요구하지 않는다. 다른 벽/책상 false positive까지 포함한 전체 mask union은 별도 stress 군으로 보존한다.
+
+H4e의 법선·confidence·border/erosion·참조 Z 3%·이동 한도를 제거한다. uncapped는 None으로 100% 초과 이동도 허용하며 finite·positive Z와 수치 평행 방지 cos≥1e-8만 남긴다. 같은 주 SAM 소속에서 이동 5%/20%/무제한을 비교하고 H4e 35°·5% bitwise 제어와 NMS/전체 union 강제군을 추가해 6군으로 실행했다.
+
+[H4f 결과](experiments/c3a_plane_refinement/H4f/tum-freiburg1_desk-H4f-20261113-001/report.md): 주 무제한 군의 80,770점 전부를 수용했고 source0/1의 top-middle SAM ROI 17,640/8,751점도 전부 재투영했다. 자기 Z 변화 20% 초과 6,767점·100% 초과 790점을 포함한다. 제어 재현·비소속/거절점 불변·RGB/카메라/점 수·교차식·단조성·기존 가시성 조건을 통과했다. 전체 GT 정확도와 SAM 마스크 내 서로 다른 벽의 완전한 구분은 검증하지 않았다.

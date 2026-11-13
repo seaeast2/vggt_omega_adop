@@ -1,0 +1,12 @@
+{
+  "unbounded_200pct_move_accepted": true,
+  "20pct_gate_rejects_same_move": true,
+  "parallel_rejected": true,
+  "negative_depth_rejected": true,
+  "H4e_control_xyz_accepted_bitwise": true,
+  "5_20_unbounded_monotonic": true,
+  "common_accepted_xyz_bitwise": true,
+  "no_hidden_distance_or_normal_gate_in_SAM_uncapped": true,
+  "all_uncapped_positive_selected_points_accepted": true,
+  "same_frozen_plane_and_all_rejected_xyz_unchanged": true
+}

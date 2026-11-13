@@ -63,3 +63,28 @@ GT 동기·resize/K/pose·정렬을 이 실험에서 검증하지 않았으므�
 12군 모두 가시성 보존 조건과 수식·점 수·RGB·카메라·거절점 불변을 통과했다. 기존 2%군 bitwise 재현, 각도/이동 완화에 따른 소속 단조성, 공통 수용점 XYZ 동일성도 확인했다. GT 정확도는 미평가다. 원래 제안값은 모두 유지하고 최적 설정을 자동 선택하지 않았다.
 
 [H4e 전체 결과·설정·거절 근거](H4e/tum-freiburg1_desk-H4e-20261113-001/report.md) · [고정 축 단면 비교](H4e/tum-freiburg1_desk-H4e-20261113-001/figures/wall_zoom_grid.png). PLY는 `results/c3a_plane_refinement/ply_review/H4e_*.ply`와 각 군의 `proposed/`에 있다.
+
+
+## H4f: SAM 전체 소속 신뢰·이동 상한 제거
+
+사용자의 지시에 따라 기존 H4e의 점 법선·confidence·경계 erosion·참조 깊이 3%·이동 한도 때문에 제외되던 벽을, H1 SAM 원본 마스크 전체에서 다시 선택했다. H1 RGB 검토 결과 camera1의 넓은 mask1은 H2d NMS에서 제외됐으며, 이 마스크를 주 군에서 복원했다. camera0은 벽 mask0 전체, camera1은 넓은 벽 mask1 전체를 사용한다. camera2는 mask0 중 그 평면이 camera0/1 벽 범위에 연결되는 부분을 사용하며 참조 depth는 확인하지 않는다. 카메라0/1에는 이 연결 gate도 없다.
+
+이번 **SAM_SHARED_UNCAPPED**는 이동 상한·법선·신뢰도·영상/마스크 경계 제외 없이 같은 H4d A4 평면으로 정확히 재투영한다. 원본 광선에서 유한한 양의 교차 깊이와 수치 평행 방지 cos≥1e-8만 요구한다. 100% 초과 깊이 변화도 허용한다. 새로운 평면 추정이나 RGB 학습은 하지 않았다.
+
+| 비교 | 총 이동점 | camera0 / camera1 / camera2 |
+| --- | --- | --- |
+| H4e 35°·5% 재현 제어 | 56,160 | 32,262 / 18,643 / 5,255 |
+| 같은 주 SAM 소속·이동 5% | 71,311 | 39,863 / 23,481 / 7,967 |
+| 같은 주 SAM 소속·이동 20% | 74,003 | 40,050 / 25,457 / 8,496 |
+| **주 SAM 소속·상한 없음** | **80,770** | **40,065 / 32,089 / 8,616** |
+| H1 모든 wall 마스크 union 강제 | 99,000 | 55,801 / 32,105 / 11,094 |
+
+주 군에는 자기 깊이 변화 20% 초과 6,767점, 100% 초과 790점이 실제로 포함된다. 최대 상대 깊이 변화는 약 581.66%이며 camera1의 넓은 마스크 일부에서 발생했다. 이 값은 원래 예측 깊이에 대한 변화로서 실제 기하 정확도나 world 거리의 오차가 아니다. 모든 mask union 군에는 camera0 책상 false positive와 camera2의 다른 면이 포함될 수 있어 별도 강제 진단군으로 구분한다.
+
+사전에 고정한 top-middle ROI(처리좌표 x=[154,358), y=[0,96))에서 camera0 17,640점·camera1 8,751점을 모두 이동했다. 해당 ROI의 최대 자기 깊이 변화는 각각 72.50%·70.11%다. 번호 혼동을 피하도록 두 카메라를 모두 기록했다. ROI와 SAM의 교집합이며 수동 벽 GT annotation은 아니다.
+
+주 군의 고정 벽 두께는 C3a 대비 약 24.37% 감소하고 source median 층 간격은 약 11.66% 감소했다. 수용점의 실제 공유 평면 잔차는 1e-9 이내이며 확대 단면에서 기존 잔여 굴곡이 제거된 모습을 확인했다. 기존 고정 벽 ROI의 source0/1 외 다른 부분에서 큰 이동이 발생하므로 이 두 수치만으로 전체 효과를 대표하지 않는다. 전체 GT 정확도는 여전히 미평가다.
+
+6군 모두 점 수·RGB·ID·K/pose·거절점 불변, H4e 제어 bitwise 재현, 5⊆20⊆uncapped 단조성·공통점 XYZ 동일성, 수치 교차 검사 및 기존 가시성 조건을 통과했고 retained=proposed다. 법선·거리·move를 다시 적용하는 숨은 gate는 없다. 음의 깊이 또는 평행 광선은 수용하지 않았다. 실제 제안점군은 각 군의 proposed에 보존했다.
+
+[H4f 상세 보고서](H4f/tum-freiburg1_desk-H4f-20261113-001/report.md) · [고정 축 단면](H4f/tum-freiburg1_desk-H4f-20261113-001/figures/wall_zoom_comparison.png). 주 PLY 디렉토리: `results/c3a_plane_refinement/tum-freiburg1_desk-H4f-20261113-001/stages/H4f/artifacts/arms/SAM_SHARED_UNCAPPED/proposed/`. 빠른 경로는 `results/c3a_plane_refinement/ply_review/H4f_*.ply`다.
