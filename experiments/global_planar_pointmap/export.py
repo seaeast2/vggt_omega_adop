@@ -48,7 +48,7 @@ def reproject(dataset):
             for x in [d['xyz'],xyz]:
                 _,win,_=c.front(x,d['k'][f],d['e'][f],*d['depth'].shape[1:]);photo=np.zeros_like(d['rgb'][f]);hit=win>=0;photo[hit]=d['raw_rgb'][win[hit]];rgb.append(photo)
             rows.append([d['rgb'][f],*rgb])
-        c.panel(st.path/'artifacts/figures/initial_proposed.png',rows,['Original RGB','B1 initial','A4 proposed'])
+        c.panel(st.path/'artifacts/figures/initial_proposed.png',rows,['Original RGB','B1s I2 initial','A4 proposed'])
         st.finish(dict(decision='HARD_REPROJECTION_PASSED' if cov['passed'] else 'HARD_REPROJECTION_PASSED_RETAIN_INITIAL',checks=checks,visibility=cov,accepted=int(acc.sum()),retained='proposed' if cov['passed'] else 'initial'),
             '# I7 전체 frame 재투영\n\n확정 소속 전체를 같은 world plane과 자기 픽셀 광선의 교차로 이동했다. 최대 이동 한도는 없으며 수치 평행·음의 깊이·비유한 교차만 거절한다. '
             'plane 식·자기 투영·unit normal·unknown XYZ bitwise 보존을 검사하고 initial/proposed/retained PLY를 모두 생성했다. '
@@ -148,16 +148,18 @@ def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,t
         immutable_arrays={key:ahash(d[value]) for key,value in {'xyz_raw':'raw_xyz','xyz_fov':'xyz','rgb':'raw_rgb','observation_id':'ids','frame_id':'fid','pixel_uv':'uv',
             'intrinsics':'k','intrinsics_raw':'k_raw','extrinsics':'e'}.items()})
     c.json_write(out/'source_provenance.json',provenance)
+    namespace=json.loads((latest('I4',d['dataset'])/'manifest.json').read_text())['run_id']
     for p in planes:
         ii=np.flatnonzero(pids==p['plane_id']);p['active']=bool(len(ii));p['assigned_count']=len(ii);p['assigned_by_frame']={str(f):int(np.sum(d['fid'][ii]==f)) for f in range(n)}
         p['coordinate_frame']='Omega world';p['units']='model units';p['sign_convention']='largest absolute normal component positive';p['state']=state
+        p['source_uuid']=p['uuid'];p['uuid']=hashlib.sha256((namespace+':'+p['uuid']).encode()).hexdigest()[:32];p['id_namespace']=namespace
         p['provenance']=dict(seed=0,source_provenance_sha256=c.record(out/'source_provenance.json')['sha256'])
         p['structural_prior_strength']=sum(CFG['lambda_struct']*r['confidence'] for r in relations_ if p['plane_id'] in [r['a'],r['b']] and r['selected'] in ['parallel','orthogonal'])
         p['fit_residual_original']=c.stats(abs(d['xyz'][fits[p['plane_id']]]@np.array(p['plane'])[:3]+p['plane'][3])/d['d0'][fits[p['plane_id']]])
         hh=ii[sp['validation'][ii]];p['holdout_residual_original']=c.stats(abs(d['xyz'][hh]@np.array(p['plane'])[:3]+p['plane'][3])/d['d0'][hh])
         o,u,v=plane_basis(np.array(p['plane']));p|=dict(origin=o.tolist(),basis_u=u.tolist(),basis_v=v.tolist(),change_relative_depth=c.stats(np.linalg.norm(xyz[ii]-d['xyz'][ii],axis=1)/d['d0'][ii]))
     statehash=hashlib.sha256((ahash(xyz)+ahash(pids)+json.dumps([p['plane'] for p in planes],sort_keys=True)).encode()).hexdigest()
-    c.json_write(out/'planes.json',dict(schema_version='1.0',state=state,state_hash=statehash,planes=planes))
+    c.json_write(out/'planes.json',dict(schema_version='1.0',id_namespace=namespace,state=state,state_hash=statehash,planes=planes))
     np.savez_compressed(out/'pointmap.npz',xyz_raw=d['raw_xyz'],xyz_fov=d['xyz'],xyz_refined=xyz,rgb=d['raw_rgb'],observation_id=d['ids'],frame_id=d['fid'],pixel_uv=d['uv'],
         intrinsics=d['k'],intrinsics_raw=d['k_raw'],extrinsics=d['e'],depth_raw=d['depth'],confidence_raw=d['conf'],beta=d['beta'],state_hash=np.array(statehash),state=np.array(state))
     region=np.full(N,-1,np.int32);rs,regionids,_=solve.regions_load(d['dataset'])
@@ -175,7 +177,13 @@ def write_bundle(out,d,xyz,pids,planes,ids,fits,state,relations_,versions=None,t
     colors=np.full((N,3),120,np.uint8);palette=np.random.default_rng(0).integers(20,255,(max(1,len(planes)),3),dtype=np.uint8);colors[pids>=0]=palette[pids[pids>=0]]
     for name,col in [('pixel_rgb',d['raw_rgb']),('frame_colors',c.PALETTE[d['fid']]),('plane_colors',colors)]:ply_write(out/f'pointcloud_{name}.ply',d,xyz,pids,col)
     bounds=contours(d,xyz,pids,planes);c.json_write(out/'plane_boundaries.json',bounds)
-    c.json_write(out/'plane_relations.json',dict(relations=relations_,intersections=intersection_records(planes,bounds,relations_)))
+    expanded_relations=json.loads(json.dumps(relations_));keys={(r['a'],r['b']) for r in expanded_relations};active=np.unique(pids[pids>=0])
+    for a,b in itertools.combinations(active.tolist(),2):
+        if (a,b) in keys:continue
+        pa,pb=np.array(planes[a]['plane']),np.array(planes[b]['plane']);angle=float(np.degrees(np.arccos(np.clip(abs(pa[:3]@pb[:3]),0,1))))
+        expanded_relations.append(dict(a=a,b=b,angle_before=angle,hypothesis='parallel' if angle<=15 else 'orthogonal' if abs(angle-90)<=20 else 'free',
+            selected='uncertain',confidence=0.,source='post-merge active registry; no new optimization prior or physical adjacency claim'))
+    c.json_write(out/'plane_relations.json',dict(relations=expanded_relations,intersections=intersection_records(planes,bounds,expanded_relations)))
     vm=out/'view_masks';vm.mkdir()
     for f in range(n):np.savez_compressed(vm/f'frame_{f}.npz',plane_id=pids[f*h*w:(f+1)*h*w].reshape(h,w))
     with (out/'plane_versions.jsonl').open('w') as f:
@@ -217,7 +225,7 @@ def bundle(dataset):
                 restored.append(dict(checkpoint=c.record(file),checks=checks_))
         c.json_write(st.path/'evaluation/version_restore.json',restored)
         c.json_write(st.path/'evaluation/roundtrip.json',checks)
-        st.finish(dict(decision='STATE_BOUND_BUNDLES_EXPORTED',states=checks,mismatch_rejected=mismatch_rejected,retained_geometry_state=state,
+        st.finish(dict(decision='STATE_BOUND_BUNDLES_EXPORTED',states=checks,mismatch_rejected=mismatch_rejected,retained_geometry_state=state,registry_lineage_relations_complete=True,
             limitations='Physical edge/occlusion labels provisional original-depth/adjacency evidence, not boundary GT.'),
             '# I8 pointmap·plane bundle\n\ninitial/proposed/retained 각각에 pointmap·확장 PLY 세 종류·CSR tag·소속·plane 정의·지원·버전·유한 경계·교선과 관측 interval을 저장했다. '
             '관측된 per-view rings/holes/분리 성분을 유지하며 convex hull로 미관측 영역을 메우지 않는다. plane-local 경계 round-trip과 상호 state/hash를 검증했다. '
@@ -335,6 +343,17 @@ def comparison(dataset):
         for name,code in [('M1','H4f'),('M2','H4g')]:
             ps=sorted((ROOT/'results/c3a_plane_refinement').glob(f'tum-freiburg1_desk-{code}-*/stages/{code}/manifest.json'))
             if ps:inventory.append(dict(arm=name,historical_reference=c.record(ps[-1]),input_to_automatic_pipeline=False,applicability='historical primary window only; not extra-window baseline'))
+        with np.load(out/'B1s_state.npz') as z:before=z['xyz']
+        with np.load(out/'A4_state.npz') as z:after=z['xyz']
+        rows=[];sources=[]
+        for f in range(3):
+            photos=[];palettes=[]
+            for x in [before,after]:
+                _,win,_=c.front(x,d['k'][f],d['e'][f],*d['depth'].shape[1:]);hit=win>=0;photo=np.zeros_like(d['rgb'][f]);palette=photo.copy()
+                photo[hit]=d['raw_rgb'][win[hit]];palette[hit]=c.PALETTE[d['fid'][win[hit]]];photos.append(photo);palettes.append(palette)
+            rows.append([d['rgb'][f],*photos]);sources.append(palettes)
+        c.panel(st.path/'artifacts/figures/rgb_comparison.png',rows,['Original RGB','B1s I2 initial','A4 proposed'])
+        c.panel(st.path/'artifacts/figures/source_comparison.png',sources,['B1s source cameras','A4 source cameras'])
         c.json_write(st.path/'evaluation/arms.json',results);c.json_write(st.path/'evaluation/ply_inventory.json',inventory)
         table='\n'.join(f"| {r['arm']} | {r['planes']} | {r['assigned_fraction']:.4%} | {r['visibility']['maximum_frustum_loss']:.4%} |" for r in results)
         st.finish(dict(decision='COMPARISON_EXECUTED_NO_GT_ACCURACY_CLAIM',arms=len(results),raw_observations=len(d['ids']),
