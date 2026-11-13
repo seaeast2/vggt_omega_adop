@@ -1,0 +1,24 @@
+{
+  "status": "superseded",
+  "run_id": "tum-freiburg1_desk-I6-20261113-003",
+  "experiment_code": "I6",
+  "dataset": "tum-freiburg1_desk",
+  "started_at": "2026-11-13T17:47:17.021683+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I4-20261113-002/stages/I4/manifest.json",
+      "bytes": 6273,
+      "sha256": "370888dda28d86ba6a68fa9c22059bbff5e97e0dc012fefbf2f610173970fb7f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/tum-freiburg1_desk-I5-20261113-003/stages/I5/manifest.json",
+      "bytes": 6304,
+      "sha256": "64ba07a2ca6644ca20c66aef80ab2e14210e1eaa64ff02b16bd4a657f050ed4b"
+    }
+  ],
+  "project_commit_at_start": "b031515e5a8825e04686a26ae52330273be70d2c",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": false,
+  "ended_at": "2026-11-13T17:53:06.652174+09:00",
+  "reason": "Add frozen minimum-fit/rank feasibility to effective assigned supports after reassignment; original candidate fit alone is insufficient. Partial checkpoints/logs retained."
+}

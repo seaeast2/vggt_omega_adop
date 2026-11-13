@@ -1,0 +1,98 @@
+[
+  {
+    "iteration": 0,
+    "objective": 33.14809971274805,
+    "terms": {
+      "evidence": 32.70573155414757,
+      "image": 0.12089621834260991,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.271142350414123
+    },
+    "assignment_changes": 0
+  },
+  {
+    "iteration": 1,
+    "objective": 15.842119021991408,
+    "terms": {
+      "evidence": 15.428375586529352,
+      "image": 0.12448576070623098,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.23892808491207496
+    },
+    "assignment_changes": 0.2687055799696181,
+    "continuous": {
+      "attempted": true,
+      "nfev": 103,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 2,
+    "objective": 15.833773279526318,
+    "terms": {
+      "evidence": 15.420115148220324,
+      "image": 0.1243756132925064,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.2389529281697365
+    },
+    "assignment_changes": 0.05258009168836805,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 3,
+    "objective": 15.833727443176711,
+    "terms": {
+      "evidence": 15.420059248993626,
+      "image": 0.12437438343711014,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.23896422090222408
+    },
+    "assignment_changes": 0.0005154079861111111,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 4,
+    "objective": 15.833717755056774,
+    "terms": {
+      "evidence": 15.42004956087369,
+      "image": 0.12437438343711014,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.23896422090222408
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  },
+  {
+    "iteration": 5,
+    "objective": 15.833708120487113,
+    "terms": {
+      "evidence": 15.420039926304028,
+      "image": 0.12437438343711014,
+      "unknown": 0.050329589843749994,
+      "complexity": 0.23896422090222408
+    },
+    "assignment_changes": 0.0,
+    "continuous": {
+      "attempted": true,
+      "nfev": 2,
+      "converged": true,
+      "accepted": true
+    }
+  }
+]

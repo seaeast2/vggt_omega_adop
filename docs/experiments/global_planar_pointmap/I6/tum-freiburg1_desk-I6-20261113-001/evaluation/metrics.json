@@ -1,0 +1,40 @@
+{
+  "decision": "JOINT_SOLVE_EXECUTED",
+  "active_planes": 318,
+  "assigned": 540348,
+  "iterations": 5,
+  "objective_initial": 33.14809971274805,
+  "objective_final": 15.833708120487113,
+  "topology_proposals": "merge/split/revert evaluated against same objective; allocated IDs never reused",
+  "stability": [
+    {
+      "run": 0,
+      "seed": 0,
+      "reversed_evidence_and_variables": false,
+      "agreement_after_label_permutation": 1.0,
+      "objective_final": 15.833708120487113,
+      "assigned": 540348
+    },
+    {
+      "run": 1,
+      "seed": 0,
+      "reversed_evidence_and_variables": true,
+      "agreement_after_label_permutation": 1.0,
+      "objective_final": 15.911005310729214,
+      "assigned": 540348
+    },
+    {
+      "run": 2,
+      "seed": 1,
+      "reversed_evidence_and_variables": false,
+      "agreement_after_label_permutation": 0.9641927083333334,
+      "objective_final": 16.166045513155545,
+      "assigned": 540348
+    }
+  ],
+  "topology_events": 1091,
+  "elapsed_seconds": 636.4030783060007,
+  "process_peak_rss_mib": 840.6875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": false
+}

@@ -1,0 +1,2 @@
+{"time": "2026-11-13T17:25:46.625001+09:00", "event": "registered", "run_id": "tum-freiburg1_desk-I6-20261113-001"}
+{"time": "2026-11-13T17:36:23.022309+09:00", "event": "completed", "decision": "JOINT_SOLVE_EXECUTED", "criteria": false}
