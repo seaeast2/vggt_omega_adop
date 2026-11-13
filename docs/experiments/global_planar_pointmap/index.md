@@ -1,5 +1,7 @@
 # I0–I9 전역 자동 평면 pointmap 실행 결과
 
+후속 **[I12–I13 평면 거리·법선의 RGB 미분 최적화](I13/index.md)** 완료: 거리만/거리·법선 군을 실행했으나 전체 GT 정확도 개선이 없었다. 평면 고정→거리·법선 MAE는 주 구간 5.5114→6.1364 cm, 추가 구간 2.1514→2.4524 cm. 보류 RGB 조건도 실패해 기존 I10 retained를 유지했다. [사전 계획](../../vggt_omega_plane_photometric_experiment_plan.md).
+
 후속 **[I11 현재 I10의 TUM GT 평가](I11/index.md)**: baseline FIT의 공통 scale을 고정해 validation에서 평가했다. 보정 전→named OR 깊이 MAE는 주 구간 5.3767→5.5114 cm, 추가 구간 2.0196→2.1514 cm로 전체 정확도 개선이 없었다. 아래 GT 미평가 표기는 당시 I0–I9 실행의 상태이며, I11은 별도의 사후 평가다.
 
 후속 [I10 named OR 평면 테스트](I10/index.md): `wall/table/screen`만 허용하고 대응 표면의 named 정보를 OR했다. 주 구간은 가시성 통과, 추가 실내는 기준 초과로 initial 유지. 박스·원통·구 보정은 적용하지 않았다. 아래 I0–I9/A4 판정은 기존 실행 결과로 보존한다.
