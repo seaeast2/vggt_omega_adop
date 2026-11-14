@@ -373,5 +373,5 @@ def comparison(dataset):
 
 if __name__=='__main__':
     import argparse
-    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I7','I8','I9']);parser.add_argument('--dataset',default='tum-freiburg1_desk');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I7','I8','I9']);parser.add_argument('--dataset',default=ACTIVE_DATASETS[0]);args=parser.parse_args()
     dict(I7=reproject,I8=bundle,I9=comparison)[args.code](args.dataset)

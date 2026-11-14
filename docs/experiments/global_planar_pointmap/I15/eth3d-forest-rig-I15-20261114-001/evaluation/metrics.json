@@ -1,0 +1,32 @@
+{
+  "decision": "NEW_SCENE_OMEGA_INFERRED",
+  "provenance": {
+    "context": "host GPU outside sandbox",
+    "GPU": "NVIDIA GeForce RTX 5060",
+    "torch": "2.15.0+cu132",
+    "CUDA": "13.2",
+    "gpu_peak_mib": 4654.0205078125,
+    "joint_forward_calls": 1,
+    "image_shape": [
+      3,
+      3,
+      288,
+      512
+    ],
+    "checkpoint": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/checkpoints/vggt_omega_1b_512.pt",
+      "bytes": 4576706117,
+      "sha256": "c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934"
+    },
+    "source_commit": "48b23c8ce72c9a8fcf987f0d7f43d8e4870759f6"
+  },
+  "raw": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I15-20261114-001/stages/I15/artifacts/raw/raw.npz",
+    "bytes": 4566335,
+    "sha256": "6f3e3740bd9e09627626c0cf7f30c8a2c0f28a38e4c81f5b853d8162002e9f39"
+  },
+  "elapsed_seconds": 1.8078945510205813,
+  "process_peak_rss_mib": 9520.1953125,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

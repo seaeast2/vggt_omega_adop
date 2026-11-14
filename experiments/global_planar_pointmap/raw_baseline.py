@@ -8,7 +8,7 @@ from core import *
 from evaluate_gt import camera_z, depth_metrics, point_metrics, fit_sim3, GT_STATUS
 from PIL import Image, ImageDraw
 
-DATASETS=['eth3d-office','eth3d-pipes','tum-freiburg1_desk','tum-freiburg1_desk-extra']
+DATASETS=list(ACTIVE_DATASETS)
 ARMS=['omega_raw','fov','plane_fixed','plane_distance','plane_distance_normal','retained']
 PROTOCOL=dict(version='I21.2',raw_definition='Unmodified cached Omega depth + decoded predicted intrinsics/extrinsics; backproject with beta=1. No world_points head exists in these caches.',
     primary_alignment='Depth: one RAW FIT median GT/Z scale. 3D: common camera-pose-only Sim(3), no surface fitting; same transform across all arms',
@@ -190,7 +190,7 @@ def summary():
     out=DOC/'I21';c.json_write(out/'summary.json',data)
     text='''# I21 — 무보정 Omega raw를 포함한 공정 비교
 
-**무보정 Omega raw를 4개 구간 모두의 비교군에 추가했다.** 기존 initial은 FoV 보정 후였으므로 이 문서에서는 `fov`로 표시한다. 이후는 평면 고정, 평면 거리만 조정, 평면 거리·법선 조정, 기존 retained다. 기존 출력·판정·실패 기록은 수정하지 않았다.
+**현재 활성 데이터셋의 무보정 Omega raw 비교다.** 기존 initial은 FoV 보정 후였으므로 이 문서에서는 `fov`로 표시한다. 이후는 평면 고정, 평면 거리만 조정, 평면 거리·법선 조정, 기존 retained다. TUM은 사용자 지시에 따라 신규 실행에서 제외하며 기존 4구간 결과는 과거 기록으로 보존한다.
 
 raw는 Omega가 예측한 depth·K·pose를 그대로 역투영한 점군이며 저장 캐시에 별도 XYZ head는 없다. FoV/평면/융합/점 필터 없이 모든 관측을 유지했다. I2에 저장된 원본 beta1 점군과 bitwise 동일함을 확인했고, 원래 모델 좌표의 raw NPZ/PLY를 새 run에 보존했다. GPU 재추론은 하지 않았다.
 

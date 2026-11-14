@@ -45,9 +45,7 @@ def prepare(dataset):
             rows.append(dict(case=case,quality=[quality(im) for im in ims],files=records,arrays_sha256=ahash(np.array(ims))))
         canvas.save(st.path/'artifacts/figures/blur_inputs.png');c.json_write(st.path/'evaluation/input_conditions.json',rows)
         reference={}
-        for ds in ['tum-freiburg1_desk','tum-freiburg1_desk-extra']:
-            ref=load(ds);reference[ds]=[quality(x) for x in ref['rgb']]
-        c.json_write(st.path/'evaluation/TUM_quality_reference.json',reference)
+        c.json_write(st.path/'evaluation/reference_policy.json',dict(TUM='retired; no automatic sample loading',historical_reports='preserved'))
         # Split-aware blur must not see forbidden colors.
         from photometric_planes import fill_split
         test=np.zeros((16,16,3),np.uint8);test[::2]=180;allowed=np.indices((16,16))[1]<8

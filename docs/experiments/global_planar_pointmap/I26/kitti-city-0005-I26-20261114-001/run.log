@@ -1,0 +1,3 @@
+{"time": "2026-11-14T10:07:21.925881+09:00", "event": "registered", "run_id": "kitti-city-0005-I26-20261114-001"}
+{"time": "2026-11-14T10:07:22.001416+09:00", "event": "open_GT_after_optimizer", "optimizer_run": "kitti-city-0005-I12-20261114-001"}
+{"time": "2026-11-14T10:07:23.657579+09:00", "event": "completed", "decision": "INSUFFICIENT_SUPPORT", "criteria": true}

@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/report_source/outdoor_report.py",
+      "bytes": 10819,
+      "sha256": "2c1af22367367af31c771e0d61696ba85d8611737983d328120b04ba18ff7bd1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/report_source/outdoor_plot.py",
+      "bytes": 2213,
+      "sha256": "4cbb67218ee6e567a1f0fbd640c52447c2af37ef6cd18a74d641da4935cbe89f"
+    }
+  ],
+  "summary": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/summary.json",
+    "bytes": 83679,
+    "sha256": "dae7926908f2ba23c87a74eac1e16d0e248514fb25d0beaf239175a69ac4ff5f"
+  },
+  "audit": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/audit.json",
+    "bytes": 2867,
+    "sha256": "0e6d5af10b9db5e537fd4fc3e688e4659306593ab964e95a35dd3e1e208268d3"
+  }
+}

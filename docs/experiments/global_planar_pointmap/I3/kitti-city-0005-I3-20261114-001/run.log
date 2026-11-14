@@ -1,0 +1,21 @@
+{"time": "2026-11-14T10:03:23.988391+09:00", "event": "registered", "run_id": "kitti-city-0005-I3-20261114-001"}
+{"time": "2026-11-14T10:03:27.069195+09:00", "event": "region_progress", "proposal": 0, "total": 613, "planes": 1}
+{"time": "2026-11-14T10:03:27.493009+09:00", "event": "region_progress", "proposal": 50, "total": 621, "planes": 46}
+{"time": "2026-11-14T10:03:27.935161+09:00", "event": "region_progress", "proposal": 100, "total": 640, "planes": 95}
+{"time": "2026-11-14T10:03:28.255168+09:00", "event": "region_progress", "proposal": 150, "total": 643, "planes": 139}
+{"time": "2026-11-14T10:03:28.735530+09:00", "event": "region_progress", "proposal": 200, "total": 660, "planes": 187}
+{"time": "2026-11-14T10:03:29.020569+09:00", "event": "region_progress", "proposal": 250, "total": 660, "planes": 225}
+{"time": "2026-11-14T10:03:29.391735+09:00", "event": "region_progress", "proposal": 300, "total": 662, "planes": 274}
+{"time": "2026-11-14T10:03:29.915285+09:00", "event": "region_progress", "proposal": 350, "total": 682, "planes": 325}
+{"time": "2026-11-14T10:03:30.290327+09:00", "event": "region_progress", "proposal": 400, "total": 683, "planes": 377}
+{"time": "2026-11-14T10:03:31.141021+09:00", "event": "region_progress", "proposal": 450, "total": 706, "planes": 458}
+{"time": "2026-11-14T10:03:32.525365+09:00", "event": "region_progress", "proposal": 500, "total": 782, "planes": 572}
+{"time": "2026-11-14T10:03:33.886059+09:00", "event": "region_progress", "proposal": 550, "total": 867, "planes": 659}
+{"time": "2026-11-14T10:03:34.531726+09:00", "event": "region_progress", "proposal": 600, "total": 891, "planes": 731}
+{"time": "2026-11-14T10:03:34.902264+09:00", "event": "region_progress", "proposal": 650, "total": 893, "planes": 785}
+{"time": "2026-11-14T10:03:35.031518+09:00", "event": "region_progress", "proposal": 700, "total": 895, "planes": 801}
+{"time": "2026-11-14T10:03:35.235987+09:00", "event": "region_progress", "proposal": 750, "total": 895, "planes": 831}
+{"time": "2026-11-14T10:03:35.441617+09:00", "event": "region_progress", "proposal": 800, "total": 895, "planes": 863}
+{"time": "2026-11-14T10:03:35.738351+09:00", "event": "region_progress", "proposal": 850, "total": 900, "planes": 904}
+{"time": "2026-11-14T10:03:35.867612+09:00", "event": "region_progress", "proposal": 900, "total": 903, "planes": 918}
+{"time": "2026-11-14T10:03:37.255829+09:00", "event": "completed", "decision": "CANDIDATES_EVALUATED", "criteria": true}

@@ -1,6 +1,30 @@
 """Stop only this task's obsolete processes, selected by exact stdout log paths."""
 from core import *
 import signal
+if '--outdoor-no-named' in sys.argv:
+    dataset='eth3d-forest-rig'
+    tagpath=latest('I1',dataset)/'artifacts/tags/mask_registry.json'
+    tags=json.loads(tagpath.read_text())
+    assert not any(row['source']=='grounded' and row['semantic_tag'] in {'wall','table','screen'} for row in tags)
+    path=FAMILY/'eth3d-forest-rig-I3-20261114-001/stages/I3/manifest.json'
+    value=json.loads(path.read_text());assert value['status']=='running',value['status']
+    selected=[]
+    for proc in Path('/proc').iterdir():
+        if not proc.name.isdecimal():continue
+        try:
+            if proc.stat().st_uid!=os.getuid() or (proc/'cwd').resolve()!=ROOT:continue
+            args=(proc/'cmdline').read_bytes().decode().strip('\0').split('\0')
+            if len(args)==3 and args[1:] == ['experiments/global_planar_pointmap/outdoor.py','pipeline']:
+                selected.append(dict(pid=int(proc.name),argv=args))
+        except (FileNotFoundError,PermissionError,ProcessLookupError):continue
+    assert len(selected)==1,selected
+    reason='No allowed grounded semantic anchor exists in any view; named-OR output is provably unchanged. Partial unrestricted geometry candidates preserved; replace with explicitly recorded no-support branch.'
+    c.json_write(FAMILY/'outdoor_no_named_stop.json',dict(time=c.stamp(),targets=selected,semantic_registry=c.record(tagpath),reason=reason))
+    os.kill(selected[0]['pid'],signal.SIGTERM)
+    value.update(status='superseded',ended_at=c.stamp(),completion_criteria_met=False,reason=reason)
+    c.json_write(path,value);doc=DOC/'I3'/value['run_id'];shutil.copy2(path,doc/'manifest.json')
+    (doc/'report.md').write_text('# I3 — no-named 지원 조건으로 중단\n\n'+reason+'\n\n기존 후보 계산·로그는 보존했다. I10의 명시적 NO_NAMED_SUPPORT branch로 이어간다.\n')
+    print(json.dumps(selected));sys.exit(0)
 logs={'/tmp/global_planar_I6_clean.log','/tmp/global_planar_extra_I6_clean.log','/tmp/global_planar_remaining_clean.log'}
 targets=[]
 for proc in Path('/proc').iterdir():

@@ -12,6 +12,13 @@ import matching as m
 FAMILY = ROOT/'results/global_planar_pointmap'
 DOC = ROOT/'docs/experiments/global_planar_pointmap'
 SOURCE = Path(__file__).parent
+DATASET_POLICY=json.loads((SOURCE/'dataset_policy.json').read_text())
+ACTIVE_DATASETS=tuple(DATASET_POLICY['active_datasets'])
+
+def require_active_dataset(dataset):
+    if dataset.lower().startswith(tuple(DATASET_POLICY['retired_prefixes'])):
+        raise ValueError(f'{dataset}: TUM is retired by user instruction (2026-11-14). Use ETH3D for new experiments; existing reports remain available.')
+
 HIST = ROOT/'results/camera_fov_alignment/tum-freiburg1_desk-C3a-20261112-001/stages/C3a/artifacts/fit'
 EXTRA = ROOT/'results/point_line_depth_refinement/extra_indoor_100_110_120'
 CFG = dict(seed=0, schema_version='1.0', prompt='wall. floor. ceiling. door. window. table. cabinet. shelf. screen. whiteboard. blackboard.',
@@ -43,7 +50,8 @@ def latest(code,dataset='tum-freiburg1_desk'):
     return ps[-1]
 
 class Stage:
-    def __init__(self,code,dataset='tum-freiburg1_desk',parents=(),extra=None):
+    def __init__(self,code,dataset=ACTIVE_DATASETS[0],parents=(),extra=None):
+        require_active_dataset(dataset)
         self.code,self.dataset=code,dataset
         date=c.stamp()[:10].replace('-','');seq=1
         while (FAMILY/f'{dataset}-{code}-{date}-{seq:03}').exists(): seq+=1
@@ -63,9 +71,12 @@ class Stage:
             dest=self.path/'artifacts/source'/p.relative_to(SOURCE);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)
         for name in ['common.py','matching.py']:
             shutil.copy2(ROOT/'experiments/camera_fov_alignment'/name,self.path/'artifacts/source'/name)
+        shutil.copy2(SOURCE/'dataset_policy.json',self.path/'artifacts/source/dataset_policy.json')
         shutil.copy2(ROOT/'docs/vggt_omega_global_planar_pointmap_experiment_plan.md',self.path/'artifacts/source/plan.md')
         if dataset.startswith('eth3d-'):
             shutil.copy2(ROOT/'docs/vggt_omega_eth3d_laser_experiment_plan.md',self.path/'artifacts/source/eth3d_plan.md')
+        if dataset in ('kitti-city-0005','eth3d-forest-rig'):
+            shutil.copy2(ROOT/'docs/vggt_omega_outdoor_lidar_experiment_plan.md',self.path/'artifacts/source/outdoor_plan.md')
         c.json_write(self.path/'config_resolved.json',self.config)
         c.json_write(self.path/'environment.json',dict(python=sys.version,platform=platform.platform(),numpy=np.__version__,
             scipy=__import__('scipy').__version__,opencv=c.cv2.__version__,execution_context='CPU geometry; GPU I1 must run host outside sandbox',
@@ -95,8 +106,9 @@ class Stage:
         c.json_write(self.path/'manifest.json',self.manifest);shutil.copy2(self.path/'manifest.json',self.doc/'manifest.json')
         (self.doc/'report.md').write_text(f'# {self.code} 실패\n\n실패 보존: `{self.run_id}`\n\n```text\n{traceback.format_exc()}\n```\n')
 
-def load(dataset='tum-freiburg1_desk',fov=False):
-    if dataset.startswith('eth3d-'):
+def load(dataset=ACTIVE_DATASETS[0],fov=False):
+    require_active_dataset(dataset)
+    if dataset.startswith(('eth3d-','kitti-')):
         from eth3d_laser import load_raw
         d=load_raw(dataset)
         d['raw_xyz']=c.points(d,np.ones(6))
@@ -122,7 +134,7 @@ def load(dataset='tum-freiburg1_desk',fov=False):
     return d
 
 def split_path(dataset):
-    stage=latest('I0',dataset) if dataset.startswith('eth3d-') else latest('I0')
+    stage=latest('I0',dataset) if dataset.startswith(('eth3d-','kitti-')) else latest('I0')
     return stage/'artifacts/contract'/dataset
 def split_load(dataset):
     with np.load(split_path(dataset)/'split.npz') as z:return {k:z[k] for k in z.files}

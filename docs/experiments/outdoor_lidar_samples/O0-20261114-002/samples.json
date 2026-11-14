@@ -1,0 +1,333 @@
+[
+  {
+    "dataset": "kitti-city-0005",
+    "category": "urban street; vehicle-mounted ground camera",
+    "frames": [
+      {
+        "name": "0000000030",
+        "image": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000030.png",
+          "bytes": 946674,
+          "sha256": "98e02d6516291247fb493b504df2cbb2151844fad95993372b275fa20ac957fc"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/kitti_city/val/2011_09_26_drive_0005_sync/proj_depth/groundtruth/image_02/0000000030.png",
+          "bytes": 128633,
+          "sha256": "96d2f49fd31ef7f5b55a71210ae9bb1c2039900b953aeb9c489fa767f906f84f"
+        },
+        "raw_lidar": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/velodyne_points/data/0000000030.bin",
+          "bytes": 1960256,
+          "sha256": "49cff2dc17e41f8a71a70bb91576f3b6447e9b85de85b928d0ba413a3b2df406"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/kitti-city-0005/0000000030.npz",
+          "bytes": 175055,
+          "sha256": "bf64edd8a24aa56339b388a14575e5af032ce6c75b55a6cfb09bde9e6b7b190c"
+        },
+        "width": 1242,
+        "height": 375,
+        "color_mode": "RGB",
+        "valid_pixels": 52567,
+        "valid_fraction": 0.11286527106816961,
+        "depth_range_m": [
+          5.890625,
+          79.875
+        ],
+        "lidar_points": 122516
+      },
+      {
+        "name": "0000000040",
+        "image": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000040.png",
+          "bytes": 942676,
+          "sha256": "5a1a4a9c790d57046f314ff8612c930245b439b269bae41c9b2e5f6718a711cb"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/kitti_city/val/2011_09_26_drive_0005_sync/proj_depth/groundtruth/image_02/0000000040.png",
+          "bytes": 137179,
+          "sha256": "7b9978ff83c5abe8fdc6c8e46fe0cfad94bf20d1c571a8746bba1a4ee2c7245f"
+        },
+        "raw_lidar": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/velodyne_points/data/0000000040.bin",
+          "bytes": 1963056,
+          "sha256": "ed31aaf0e447f82cbeefa92ed6136b2b17290f8a4c1a90649d8596e79d89134f"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/kitti-city-0005/0000000040.npz",
+          "bytes": 186073,
+          "sha256": "646d4b0f1358ea3a347d5104756db0e05643c75b216e7febc91f8bb94ba5f118"
+        },
+        "width": 1242,
+        "height": 375,
+        "color_mode": "RGB",
+        "valid_pixels": 56355,
+        "valid_fraction": 0.12099838969404186,
+        "depth_range_m": [
+          3.9609375,
+          76.16015625
+        ],
+        "lidar_points": 122691
+      },
+      {
+        "name": "0000000050",
+        "image": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000050.png",
+          "bytes": 915078,
+          "sha256": "4ccca5f0306a49484f75f40ca42395f66154fdb759467744909ccb7af4ae7e8b"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/kitti_city/val/2011_09_26_drive_0005_sync/proj_depth/groundtruth/image_02/0000000050.png",
+          "bytes": 105061,
+          "sha256": "213e8789e809e0211fa5c26ac110a5f60c7325783c2e62207455df9fcc21b5c3"
+        },
+        "raw_lidar": {
+          "path": "data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/velodyne_points/data/0000000050.bin",
+          "bytes": 1960720,
+          "sha256": "bdb077c42da6fb2f7e87bb8a1cea20b23e4592115725a4487021d721b2a962f0"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/kitti-city-0005/0000000050.npz",
+          "bytes": 145291,
+          "sha256": "63e1a50b94bb20353aa6c02850a2bbc6de67a400d0c970de457b0ffecaf38dfc"
+        },
+        "width": 1242,
+        "height": 375,
+        "color_mode": "RGB",
+        "valid_pixels": 40018,
+        "valid_fraction": 0.08592163177670424,
+        "depth_range_m": [
+          3.50390625,
+          74.64453125
+        ],
+        "lidar_points": 122545
+      }
+    ],
+    "acquisition": {
+      "path": "data/outdoor_lidar_samples/kitti_city/acquisition.json",
+      "bytes": 8792,
+      "sha256": "8080578ba17662fe208fb69eaf57b54fe221376ef6a92c7fb3d0e7961dab2866"
+    },
+    "depth_definition": "Official annotated accumulated/filtered LiDAR depth, meters; native rectified image_02 coordinates",
+    "limitations": [
+      "GT is semi-dense; only valid pixels can be evaluated.",
+      "Cars, cyclists and pedestrians can move; static multiview geometry must mask dynamic objects.",
+      "These are acquisition checks, not a calibrated reprojection/pose validation or an Omega accuracy result."
+    ],
+    "model_inference": false,
+    "GT_accuracy_evaluated": false
+  },
+  {
+    "dataset": "eth3d-forest-rig",
+    "category": "forest; ground-based camera rig",
+    "frames": [
+      {
+        "name": "images_rig_cam4/1474982939982507972.png",
+        "image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982939982507972.png",
+          "bytes": 352662,
+          "sha256": "89a673f21bcc0442e51097521e69d52c2a54adf207d49ab2010e12725e5af5b9"
+        },
+        "original_image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4/1474982939982507972.png",
+          "bytes": 584245,
+          "sha256": "a6e8d26d4a2846d463aad97aeed308323b219cf44994ccb812947ae8f090e82d"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/ground_truth_depth/images_rig_cam4/1474982939982507972.png",
+          "bytes": 1443840,
+          "sha256": "b4c33ec51e56ed07d41005c95257b2fbd32b084450e5db1fd1140ac0efc2ae57"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/eth3d-forest-rig/images_rig_cam4_1474982939982507972.npz",
+          "bytes": 7395631,
+          "sha256": "16e1769cdb7713cea316029eb89093d130f726031b9097f0999e9f29c926a062"
+        },
+        "width": 908,
+        "height": 517,
+        "color_mode": "RGB",
+        "valid_pixels": 194212,
+        "valid_fraction": 0.4137134774495352,
+        "depth_range_m": [
+          1.1721062660217285,
+          9.383720397949219
+        ],
+        "distortion_image_MAE_0_to_1": 0.00021114198114082332,
+        "camera": {
+          "model": "PINHOLE",
+          "width": 908,
+          "height": 517,
+          "params": [
+            543.476,
+            542.696,
+            495.679,
+            244.091
+          ]
+        },
+        "original_camera": {
+          "model": "THIN_PRISM_FISHEYE",
+          "width": 752,
+          "height": 480,
+          "params": [
+            543.476,
+            542.696,
+            410.518,
+            226.622,
+            -0.0696259,
+            -0.0619737,
+            0.00136507,
+            -0.00207556,
+            0.097466,
+            -0.063834,
+            0.00976896,
+            -0.00190205
+          ]
+        }
+      },
+      {
+        "name": "images_rig_cam4/1474982940351147972.png",
+        "image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982940351147972.png",
+          "bytes": 383848,
+          "sha256": "be910983011d045737fa11f06ca4ab8715c64be2ecbe2cc31c238787c7e9db5d"
+        },
+        "original_image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4/1474982940351147972.png",
+          "bytes": 638241,
+          "sha256": "9751751c3f8639340f17fa443ab5d733637926f39be080a5d2ffe297636020ee"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/ground_truth_depth/images_rig_cam4/1474982940351147972.png",
+          "bytes": 1443840,
+          "sha256": "8054c42871abda023aff458e9a94db289cce355afb6b715018778a19d1680cd3"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/eth3d-forest-rig/images_rig_cam4_1474982940351147972.npz",
+          "bytes": 7450049,
+          "sha256": "b3b1c8c5dd2d1b2103e5197be04462e2ac921df378f5f859ab87c07022c20ce5"
+        },
+        "width": 908,
+        "height": 517,
+        "color_mode": "RGB",
+        "valid_pixels": 217365,
+        "valid_fraction": 0.4630343646418255,
+        "depth_range_m": [
+          1.2280230522155762,
+          9.647375106811523
+        ],
+        "distortion_image_MAE_0_to_1": 0.00025468192201939766,
+        "camera": {
+          "model": "PINHOLE",
+          "width": 908,
+          "height": 517,
+          "params": [
+            543.476,
+            542.696,
+            495.679,
+            244.091
+          ]
+        },
+        "original_camera": {
+          "model": "THIN_PRISM_FISHEYE",
+          "width": 752,
+          "height": 480,
+          "params": [
+            543.476,
+            542.696,
+            410.518,
+            226.622,
+            -0.0696259,
+            -0.0619737,
+            0.00136507,
+            -0.00207556,
+            0.097466,
+            -0.063834,
+            0.00976896,
+            -0.00190205
+          ]
+        }
+      },
+      {
+        "name": "images_rig_cam4/1474982940719787972.png",
+        "image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982940719787972.png",
+          "bytes": 374326,
+          "sha256": "ca534e2d2f46414ebe25e974eda1cb7c213f429bab4b6c3858791a7b78800592"
+        },
+        "original_image": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4/1474982940719787972.png",
+          "bytes": 623246,
+          "sha256": "2e86094a413db7961b5c2c31c62c920fe8171860beafea26d64be8a2326d246f"
+        },
+        "gt_source": {
+          "path": "data/outdoor_lidar_samples/eth3d_forest/extracted/forest/ground_truth_depth/images_rig_cam4/1474982940719787972.png",
+          "bytes": 1443840,
+          "sha256": "8a8dcf24000f81c637b88a081269cf6b0c2d73c539fc941ab0967ea556f4a1ba"
+        },
+        "prepared": {
+          "path": "results/outdoor_lidar_samples/O0-20261114-002/eth3d-forest-rig/images_rig_cam4_1474982940719787972.npz",
+          "bytes": 7458706,
+          "sha256": "3b3749c55cc91b99f42689116e665e91f3932867145ef3bc541492e1d6721558"
+        },
+        "width": 908,
+        "height": 517,
+        "color_mode": "RGB",
+        "valid_pixels": 218754,
+        "valid_fraction": 0.4659932344345129,
+        "depth_range_m": [
+          1.3271663188934326,
+          9.86782169342041
+        ],
+        "distortion_image_MAE_0_to_1": 0.00024110701719827656,
+        "camera": {
+          "model": "PINHOLE",
+          "width": 908,
+          "height": 517,
+          "params": [
+            543.476,
+            542.696,
+            495.679,
+            244.091
+          ]
+        },
+        "original_camera": {
+          "model": "THIN_PRISM_FISHEYE",
+          "width": 752,
+          "height": 480,
+          "params": [
+            543.476,
+            542.696,
+            410.518,
+            226.622,
+            -0.0696259,
+            -0.0619737,
+            0.00136507,
+            -0.00207556,
+            0.097466,
+            -0.063834,
+            0.00976896,
+            -0.00190205
+          ]
+        }
+      }
+    ],
+    "acquisition": {
+      "path": "data/outdoor_lidar_samples/eth3d_forest/acquisition.json",
+      "bytes": 1050,
+      "sha256": "75e3a4a24e0d0811b26eaef9cc29e2bb595f8a4ec08c88800dfa681fbce8cf51"
+    },
+    "selection": {
+      "path": "results/outdoor_lidar_samples/O0-20261114-002/eth3d-forest-rig/selection.json",
+      "bytes": 418,
+      "sha256": "1353047b1c996a933ead7933189e4b7d1b3f1a7179ac2e595d9d4aa9c9d69ae4"
+    },
+    "depth_definition": "FARO laser-rendered camera-Z, nearest valid original pixel mapped to undistorted image; meters",
+    "limitations": [
+      "Grayscale imagery: repeating channels does not supply color information.",
+      "Moving leaves, thin branches and missing laser returns require valid-mask and boundary handling.",
+      "Image mapping is checked against supplied images; no Omega accuracy experiment has run."
+    ],
+    "model_inference": false,
+    "GT_accuracy_evaluated": false
+  }
+]

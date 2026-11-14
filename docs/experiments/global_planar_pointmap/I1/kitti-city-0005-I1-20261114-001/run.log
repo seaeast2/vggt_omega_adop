@@ -1,0 +1,8 @@
+{"time": "2026-11-14T09:58:49.634775+09:00", "event": "registered", "run_id": "kitti-city-0005-I1-20261114-001"}
+{"time": "2026-11-14T09:58:54.316008+09:00", "event": "detector", "frame": 0, "detections": 7}
+{"time": "2026-11-14T09:58:54.548754+09:00", "event": "detector", "frame": 1, "detections": 7}
+{"time": "2026-11-14T09:58:54.781398+09:00", "event": "detector", "frame": 2, "detections": 9}
+{"time": "2026-11-14T09:59:53.439892+09:00", "event": "sam_frame", "frame": 0, "semantic_masks": 7, "automatic_pre_nms": 986, "automatic_post_nms": 131, "raw_candidates": 993, "exact_unique": 963, "uncovered_fraction": 0.1302947998046875, "batch": 16, "seconds": 51.026712197985034}
+{"time": "2026-11-14T10:01:43.246592+09:00", "event": "sam_frame", "frame": 1, "semantic_masks": 7, "automatic_pre_nms": 1469, "automatic_post_nms": 128, "raw_candidates": 1476, "exact_unique": 1439, "uncovered_fraction": 0.2845916748046875, "batch": 16, "seconds": 109.67162357500638}
+{"time": "2026-11-14T10:02:42.128809+09:00", "event": "sam_frame", "frame": 2, "semantic_masks": 9, "automatic_pre_nms": 1054, "automatic_post_nms": 139, "raw_candidates": 1063, "exact_unique": 1034, "uncovered_fraction": 0.22540283203125, "batch": 16, "seconds": 58.75024364201818}
+{"time": "2026-11-14T10:02:43.536654+09:00", "event": "completed", "decision": "FULL_IMAGE_CANDIDATES_TAGGED", "criteria": true}

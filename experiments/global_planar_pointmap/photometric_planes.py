@@ -288,5 +288,5 @@ def run(dataset):
 
 if __name__=='__main__':
     import argparse
-    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['tum-freiburg1_desk','tum-freiburg1_desk-extra','all'],default='all');args=p.parse_args()
-    for ds in (['tum-freiburg1_desk','tum-freiburg1_desk-extra'] if args.dataset=='all' else [args.dataset]):run(ds)
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=[*ACTIVE_DATASETS,'all'],default='all');args=p.parse_args()
+    for ds in (ACTIVE_DATASETS if args.dataset=='all' else [args.dataset]):run(ds)

@@ -1,0 +1,202 @@
+{
+  "decision": "NO_NAMED_SUPPORT",
+  "allowed_tags": [
+    "screen",
+    "table",
+    "wall"
+  ],
+  "arms": {
+    "named_local": {
+      "accepted": 0,
+      "accepted_fraction": 0.0,
+      "rescued_unknown_pixels": 0,
+      "active_planes": 0,
+      "accepted_by_tag": {
+        "screen": 0,
+        "table": 0,
+        "wall": 0
+      },
+      "visibility": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "baseline_frustum_count": 136708,
+            "retained_frustum_count": 136708,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.80792236328125,
+            "proposed_pixel_coverage": 0.80792236328125,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "baseline_frustum_count": 136850,
+            "retained_frustum_count": 136850,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.7152777777777778,
+            "proposed_pixel_coverage": 0.7152777777777778,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "baseline_frustum_count": 125415,
+            "retained_frustum_count": 125415,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8077528211805556,
+            "proposed_pixel_coverage": 0.8077528211805556,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "baseline_frustum_count": 146197,
+            "retained_frustum_count": 146197,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8539767795138888,
+            "proposed_pixel_coverage": 0.8539767795138888,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "baseline_frustum_count": 114706,
+            "retained_frustum_count": 114706,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.7159762912326388,
+            "proposed_pixel_coverage": 0.7159762912326388,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "baseline_frustum_count": 132719,
+            "retained_frustum_count": 132719,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8545193142361112,
+            "proposed_pixel_coverage": 0.8545193142361112,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_frustum_loss": 0.0,
+        "maximum_pixel_coverage_loss": 0.0,
+        "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+      }
+    },
+    "named_OR": {
+      "accepted": 0,
+      "accepted_fraction": 0.0,
+      "rescued_unknown_pixels": 0,
+      "active_planes": 0,
+      "accepted_by_tag": {
+        "screen": 0,
+        "table": 0,
+        "wall": 0
+      },
+      "visibility": {
+        "pairs": [
+          {
+            "source": 0,
+            "target": 1,
+            "baseline_frustum_count": 136708,
+            "retained_frustum_count": 136708,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.80792236328125,
+            "proposed_pixel_coverage": 0.80792236328125,
+            "passed": true
+          },
+          {
+            "source": 0,
+            "target": 2,
+            "baseline_frustum_count": 136850,
+            "retained_frustum_count": 136850,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.7152777777777778,
+            "proposed_pixel_coverage": 0.7152777777777778,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 0,
+            "baseline_frustum_count": 125415,
+            "retained_frustum_count": 125415,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8077528211805556,
+            "proposed_pixel_coverage": 0.8077528211805556,
+            "passed": true
+          },
+          {
+            "source": 1,
+            "target": 2,
+            "baseline_frustum_count": 146197,
+            "retained_frustum_count": 146197,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8539767795138888,
+            "proposed_pixel_coverage": 0.8539767795138888,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 0,
+            "baseline_frustum_count": 114706,
+            "retained_frustum_count": 114706,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.7159762912326388,
+            "proposed_pixel_coverage": 0.7159762912326388,
+            "passed": true
+          },
+          {
+            "source": 2,
+            "target": 1,
+            "baseline_frustum_count": 132719,
+            "retained_frustum_count": 132719,
+            "frustum_loss_fraction": 0.0,
+            "baseline_pixel_coverage": 0.8545193142361112,
+            "proposed_pixel_coverage": 0.8545193142361112,
+            "passed": true
+          }
+        ],
+        "passed": true,
+        "maximum_frustum_loss": 0.0,
+        "maximum_pixel_coverage_loss": 0.0,
+        "reference": "B1 I2 diagnostic proposed; frustum and actual unique pixel coverage separate"
+      }
+    }
+  },
+  "raw_named_fraction": 0.0,
+  "eligible_OR_fraction": 0.0,
+  "no_named_support_unchanged_bitwise": true,
+  "other_named_blocked_bitwise": true,
+  "OR_order_invariant": true,
+  "retained": "initial",
+  "geometry_types": [
+    "plane"
+  ],
+  "box_cylinder_sphere_applied": false,
+  "proof": {
+    "allowed_tags": [
+      "screen",
+      "table",
+      "wall"
+    ],
+    "allowed_grounded_anchors": 0,
+    "registry": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I1-20261114-001/stages/I1/artifacts/tags/mask_registry.json",
+      "bytes": 488565,
+      "sha256": "e084cdf625f7dbec7226e597b63a9d4a677651c1520cb478d0cd217cf4c43637"
+    },
+    "reason": "Every I10 plane requires a group with a permitted named anchor. None exist in any view, regardless of geometry candidates or edges.",
+    "geometry_search_completed": false,
+    "amendment": {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_outdoor_lidar_amendment_A1.md",
+      "bytes": 1355,
+      "sha256": "04dc5cdb0bba17bdd793f067578a3761c7254ac88481c8d7132382f653575a89"
+    }
+  },
+  "elapsed_seconds": 4.493975974997738,
+  "process_peak_rss_mib": 215.92578125,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

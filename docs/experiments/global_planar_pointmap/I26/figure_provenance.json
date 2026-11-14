@@ -1,0 +1,31 @@
+{
+  "source": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/experiments/global_planar_pointmap/outdoor_plot.py",
+    "bytes": 2213,
+    "sha256": "4cbb67218ee6e567a1f0fbd640c52447c2af37ef6cd18a74d641da4935cbe89f"
+  },
+  "data": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/summary.json",
+    "bytes": 83679,
+    "sha256": "dae7926908f2ba23c87a74eac1e16d0e248514fb25d0beaf239175a69ac4ff5f"
+  },
+  "figures": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/figures/outdoor_comparison.pdf",
+      "bytes": 23452,
+      "sha256": "c3d6d92f0df040bed842fd4248042f9d365680b15657ef53295c6c49b6c363f8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/figures/outdoor_comparison.png",
+      "bytes": 230586,
+      "sha256": "2b5f0f1adef44720ade5dffa26113409ef0b03d25116a27f124c6ed31d05b212"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/experiments/global_planar_pointmap/I26/figures/outdoor_comparison.svg",
+      "bytes": 154885,
+      "sha256": "690e45a1876b861c9ae0c13b5f02d3febe2d9f5740ab1baeef43d078e95fe51d"
+    }
+  ],
+  "reporting_python": "/home/hlee221212/works/gradresearch/vggt_omega_adop/.venvs/blur-report/bin/python",
+  "requirements": "contourpy==1.3.3\ncycler==0.12.1\nfonttools==4.68.0\nkiwisolver==1.5.1\nmatplotlib==3.10.8\nnumpy==1.26.4\npackaging==26.3\npillow==13.0.0\npyparsing==3.3.3\npython-dateutil==4.0.0\ntzdata==2026.6\n"
+}

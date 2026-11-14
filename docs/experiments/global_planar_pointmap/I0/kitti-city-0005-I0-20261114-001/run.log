@@ -1,0 +1,5 @@
+{"time": "2026-11-14T09:33:34.369530+09:00", "event": "registered", "run_id": "kitti-city-0005-I0-20261114-001"}
+{"time": "2026-11-14T09:33:34.716384+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 1], "features": [1431, 1580], "forward_ratio": 164, "mutual_ratio": 142, "ransac_inliers": 131}
+{"time": "2026-11-14T09:33:34.741706+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 2], "features": [1431, 1799], "forward_ratio": 52, "mutual_ratio": 36, "ransac_inliers": 33}
+{"time": "2026-11-14T09:33:34.769343+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [1, 2], "features": [1580, 1799], "forward_ratio": 130, "mutual_ratio": 101, "ransac_inliers": 87}
+{"time": "2026-11-14T09:33:35.122686+09:00", "event": "completed", "decision": "NEW_SCENE_RGB_FIT_HOLDOUT_FROZEN", "criteria": true}

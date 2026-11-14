@@ -1,0 +1,5 @@
+{"time": "2026-11-14T10:05:09.525096+09:00", "event": "registered", "run_id": "kitti-city-0005-I10-20261114-001"}
+{"time": "2026-11-14T10:06:51.709032+09:00", "event": "surface_groups", "regions": 918, "groups": 379, "association_edges": 3085}
+{"time": "2026-11-14T10:06:53.371626+09:00", "event": "arm_finished", "arm": "named_local", "accepted": 18999, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T10:06:54.681827+09:00", "event": "arm_finished", "arm": "named_OR", "accepted": 18999, "rescued": 0, "coverage_passed": true}
+{"time": "2026-11-14T10:06:56.749663+09:00", "event": "completed", "decision": "NAMED_OR_PLANE_TEST_EXECUTED", "criteria": true}

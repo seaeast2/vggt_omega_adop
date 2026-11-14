@@ -1,0 +1,5 @@
+{"time": "2026-11-14T09:33:35.131146+09:00", "event": "registered", "run_id": "eth3d-forest-rig-I0-20261114-001"}
+{"time": "2026-11-14T09:33:35.283166+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 1], "features": [405, 395], "forward_ratio": 125, "mutual_ratio": 116, "ransac_inliers": 115}
+{"time": "2026-11-14T09:33:35.285438+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [0, 2], "features": [405, 484], "forward_ratio": 63, "mutual_ratio": 59, "ransac_inliers": 54}
+{"time": "2026-11-14T09:33:35.287757+09:00", "event": "image_correspondences", "detector": "SIFT", "pair": [1, 2], "features": [395, 484], "forward_ratio": 117, "mutual_ratio": 111, "ransac_inliers": 109}
+{"time": "2026-11-14T09:33:35.681949+09:00", "event": "completed", "decision": "NEW_SCENE_RGB_FIT_HOLDOUT_FROZEN", "criteria": true}

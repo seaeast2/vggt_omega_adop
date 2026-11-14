@@ -150,4 +150,4 @@ def run(dataset):
 
 if __name__=='__main__':
     import argparse
-    parser=argparse.ArgumentParser();parser.add_argument('--dataset',default='tum-freiburg1_desk');args=parser.parse_args();run(args.dataset)
+    parser=argparse.ArgumentParser();parser.add_argument('--dataset',default=ACTIVE_DATASETS[0]);args=parser.parse_args();run(args.dataset)

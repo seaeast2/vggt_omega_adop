@@ -1,0 +1,2 @@
+{"time": "2026-11-14T09:33:05.325955+09:00", "event": "registered", "run_id": "kitti-city-0005-I15-20261114-001"}
+{"time": "2026-11-14T09:33:10.759665+09:00", "event": "completed", "decision": "NEW_SCENE_OMEGA_INFERRED", "criteria": true}

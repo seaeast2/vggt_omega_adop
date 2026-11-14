@@ -3,7 +3,7 @@ from core import *
 from scipy import sparse
 
 def fov(dataset):
-    st=Stage('I2',dataset,[latest('I0',dataset) if dataset.startswith('eth3d-') else latest('I0'),latest('I1',dataset)])
+    st=Stage('I2',dataset,[latest('I0',dataset) if dataset.startswith(('eth3d-','kitti-')) else latest('I0'),latest('I1',dataset)])
     try:
         d=load(dataset);matches=m.load(split_path(dataset)/'matches.npz');train=m.subset(matches,~matches['validation'])
         a,b,w,_=c.build_system(d,train);rank=c.rank_info(a);support=m.pair_support(matches,*d['depth'].shape[1:])
@@ -410,7 +410,7 @@ def joint(dataset,semantic_only=False,struct=True):
 
 if __name__=='__main__':
     import argparse
-    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I2','I3','I4','I5','I6','I3a','I4a','I5a','I6a','I6b']);parser.add_argument('--dataset',default='tum-freiburg1_desk');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('code',choices=['I2','I3','I4','I5','I6','I3a','I4a','I5a','I6a','I6b']);parser.add_argument('--dataset',default=ACTIVE_DATASETS[0]);args=parser.parse_args()
     functions=dict(I2=fov,I3=candidates,I4=associate,I5=relations,I6=joint,
         I3a=lambda name:candidates(name,True),I4a=lambda name:associate(name,True),I5a=lambda name:relations(name,True),I6a=lambda name:joint(name,True),I6b=lambda name:joint(name,False,False))
     functions[args.code](args.dataset)

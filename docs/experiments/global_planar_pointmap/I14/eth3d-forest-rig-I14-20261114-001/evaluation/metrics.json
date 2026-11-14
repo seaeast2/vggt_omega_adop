@@ -1,0 +1,241 @@
+{
+  "decision": "OUTDOOR_RGB_CAMERA_INPUTS_FROZEN",
+  "frames": [
+    {
+      "index": 0,
+      "name": "images_rig_cam4/1474982939982507972.png",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982939982507972.png",
+      "sha256": "89a673f21bcc0442e51097521e69d52c2a54adf207d49ab2010e12725e5af5b9",
+      "original_wh": [
+        908,
+        517
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 908,
+        "height": 517,
+        "params": [
+          543.476,
+          542.696,
+          495.679,
+          244.091
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 752,
+        "height": 480,
+        "params": [
+          543.476,
+          542.696,
+          410.518,
+          226.622,
+          -0.0696259,
+          -0.0619737,
+          0.00136507,
+          -0.00207556,
+          0.097466,
+          -0.063834,
+          0.00976896,
+          -0.00190205
+        ]
+      },
+      "dataset_extrinsics": [
+        [
+          -0.6554938532468096,
+          -0.7482038650462576,
+          0.10256112658064953,
+          -0.773056
+        ],
+        [
+          -0.28962918278779115,
+          0.12363924317256289,
+          -0.9491197364007307,
+          1.32981
+        ],
+        [
+          0.6974544750973548,
+          -0.6518468484832598,
+          -0.2977464379117169,
+          -2.71404
+        ]
+      ],
+      "crop_box": [
+        0,
+        0,
+        908,
+        517
+      ],
+      "sample_index": 0,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    },
+    {
+      "index": 1,
+      "name": "images_rig_cam4/1474982940351147972.png",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982940351147972.png",
+      "sha256": "be910983011d045737fa11f06ca4ab8715c64be2ecbe2cc31c238787c7e9db5d",
+      "original_wh": [
+        908,
+        517
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 908,
+        "height": 517,
+        "params": [
+          543.476,
+          542.696,
+          495.679,
+          244.091
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 752,
+        "height": 480,
+        "params": [
+          543.476,
+          542.696,
+          410.518,
+          226.622,
+          -0.0696259,
+          -0.0619737,
+          0.00136507,
+          -0.00207556,
+          0.097466,
+          -0.063834,
+          0.00976896,
+          -0.00190205
+        ]
+      },
+      "dataset_extrinsics": [
+        [
+          -0.6023046907148193,
+          -0.7937733544513248,
+          0.08457494490697165,
+          -0.917457
+        ],
+        [
+          -0.30099918896505806,
+          0.12770260261254937,
+          -0.9450352022693962,
+          1.32701
+        ],
+        [
+          0.7393433219995316,
+          -0.5946561250412483,
+          -0.31584101248195134,
+          -2.55634
+        ]
+      ],
+      "crop_box": [
+        0,
+        0,
+        908,
+        517
+      ],
+      "sample_index": 1,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    },
+    {
+      "index": 2,
+      "name": "images_rig_cam4/1474982940719787972.png",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/eth3d_forest/extracted/forest/images/images_rig_cam4_undistorted/1474982940719787972.png",
+      "sha256": "ca534e2d2f46414ebe25e974eda1cb7c213f429bab4b6c3858791a7b78800592",
+      "original_wh": [
+        908,
+        517
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 908,
+        "height": 517,
+        "params": [
+          543.476,
+          542.696,
+          495.679,
+          244.091
+        ]
+      },
+      "original_camera": {
+        "model": "THIN_PRISM_FISHEYE",
+        "width": 752,
+        "height": 480,
+        "params": [
+          543.476,
+          542.696,
+          410.518,
+          226.622,
+          -0.0696259,
+          -0.0619737,
+          0.00136507,
+          -0.00207556,
+          0.097466,
+          -0.063834,
+          0.00976896,
+          -0.00190205
+        ]
+      },
+      "dataset_extrinsics": [
+        [
+          -0.5878152808772282,
+          -0.8021995914559062,
+          0.10463752211899363,
+          -0.877284
+        ],
+        [
+          -0.29927634725291663,
+          0.09546068153439372,
+          -0.9493792320542624,
+          1.22086
+        ],
+        [
+          0.7516028629151019,
+          -0.589375155354352,
+          -0.2961926108275768,
+          -2.45585
+        ]
+      ],
+      "crop_box": [
+        0,
+        0,
+        908,
+        517
+      ],
+      "sample_index": 2,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    }
+  ],
+  "calibration": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/eth3d_forest/extracted/forest/rig_calibration_undistorted/images.txt",
+      "bytes": 168061684,
+      "sha256": "aae421584db1e82ff10f3ff821d2745adcb53109f784579d11f551ea6acde9ac"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/eth3d_forest/extracted/forest/rig_calibration_undistorted/cameras.txt",
+      "bytes": 316,
+      "sha256": "53758ac3021a8aac348b362006a2bf5f0d528a934c82d022e8cb1050d5302911"
+    }
+  ],
+  "pose_baselines_m": [
+    0.10062918222477107,
+    0.2559295851493011,
+    0.15572916989002622
+  ],
+  "GT_arrays_read": false,
+  "selection": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/outdoor_lidar_samples/O0-20261114-002/samples.json",
+    "bytes": 12558,
+    "sha256": "0cb954eb17934db821e10900c544ba2d2a955fe384b5937715d02c7d88b77051"
+  },
+  "plan": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_outdoor_lidar_experiment_plan.md",
+    "bytes": 3581,
+    "sha256": "b9be04981f89aca473a5f81964a13180ab6ad8dad93e27f83569dfb45745a5f9"
+  },
+  "elapsed_seconds": 0.2761361040174961,
+  "process_peak_rss_mib": 421.19921875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

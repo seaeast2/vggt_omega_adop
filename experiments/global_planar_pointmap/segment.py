@@ -3,7 +3,7 @@ from core import *
 import gc
 
 def run(dataset_names=None):
-    stages=[Stage('I1',name,[latest('I0',name) if name.startswith('eth3d-') else latest('I0')],dict(execution_context='host CUDA outside sandbox')) for name in (dataset_names or ['tum-freiburg1_desk','tum-freiburg1_desk-extra'])]
+    stages=[Stage('I1',name,[latest('I0',name) if name.startswith(('eth3d-','kitti-')) else latest('I0')],dict(execution_context='host CUDA outside sandbox')) for name in (dataset_names or ACTIVE_DATASETS)]
     try:
         import torch,transformers
         from transformers import AutoProcessor,AutoModelForZeroShotObjectDetection
@@ -63,7 +63,7 @@ def run(dataset_names=None):
                     raw=np.array(raw,bool);mapped=np.array([c.cv2.resize(a.astype('uint8'),(ww,hh),interpolation=c.cv2.INTER_NEAREST)>0 for a in raw])
                     seen={};unique=[];aliases=[]
                     for k,(a,r) in enumerate(zip(mapped,records)):
-                        r|=dict(mask_id=nextid,frame=f,raw_hash=ahash(raw[k]),processed_hash=ahash(a),area=int(a.sum()),mapping='640x480->512x384 nearest, no crop');nextid+=1
+                        r|=dict(mask_id=nextid,frame=f,raw_hash=ahash(raw[k]),processed_hash=ahash(a),area=int(a.sum()),mapping=f'{im.shape[1]}x{im.shape[0]} -> {ww}x{hh} nearest; input is frozen processed RGB');nextid+=1
                         key=ahash(a)
                         if key in seen:r['alias_of']=seen[key];aliases.append(dict(mask_id=r['mask_id'],alias_of=seen[key],reason='exact processed mask equality'))
                         else:seen[key]=r['mask_id'];unique.append(k)

@@ -1,0 +1,8 @@
+{"time": "2026-11-14T09:58:49.638903+09:00", "event": "registered", "run_id": "eth3d-forest-rig-I1-20261114-001"}
+{"time": "2026-11-14T09:58:55.046196+09:00", "event": "detector", "frame": 0, "detections": 3}
+{"time": "2026-11-14T09:58:55.309421+09:00", "event": "detector", "frame": 1, "detections": 3}
+{"time": "2026-11-14T09:58:55.568500+09:00", "event": "detector", "frame": 2, "detections": 2}
+{"time": "2026-11-14T10:02:54.717558+09:00", "event": "sam_frame", "frame": 0, "semantic_masks": 3, "automatic_pre_nms": 344, "automatic_post_nms": 78, "raw_candidates": 347, "exact_unique": 344, "uncovered_fraction": 0.0029161241319444445, "batch": 16, "seconds": 11.153552451025462}
+{"time": "2026-11-14T10:03:02.383972+09:00", "event": "sam_frame", "frame": 1, "semantic_masks": 3, "automatic_pre_nms": 252, "automatic_post_nms": 81, "raw_candidates": 255, "exact_unique": 251, "uncovered_fraction": 0.022128634982638888, "batch": 16, "seconds": 7.56632080298732}
+{"time": "2026-11-14T10:03:12.183427+09:00", "event": "sam_frame", "frame": 2, "semantic_masks": 2, "automatic_pre_nms": 314, "automatic_post_nms": 69, "raw_candidates": 316, "exact_unique": 311, "uncovered_fraction": 0.003445095486111111, "batch": 16, "seconds": 9.701866749994224}
+{"time": "2026-11-14T10:03:13.060577+09:00", "event": "completed", "decision": "FULL_IMAGE_CANDIDATES_TAGGED", "criteria": true}

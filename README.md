@@ -1,5 +1,13 @@
 # VGGT-Ω Pointmap 정렬·보정 실험
 
+**실험 묶음 종료 (2026-11-14): 실패.** 자동 평면 보정·FoV·점군 축소에서 일반화 가능한 정확도나 SLAM 성능 이득을 입증하지 못했다. 실행 기록과 실패 판정 근거는 [종료 결론](docs/experiments/global_planar_pointmap/closure.md)에 보존한다.
+
+**데이터셋 정책 (2026-11-14): 앞으로 TUM 샘플은 신규 실험·최적화·GT 평가에 사용하지 않는다.** 현재 사용 대상은 레이저 GT가 있는 ETH3D `office`·`pipes`다. 아래 TUM 수치와 기존 데이터·실행 기록은 과거 결과로 보존한다. 실행 정책은 [dataset_policy.json](experiments/global_planar_pointmap/dataset_policy.json)에 기록했다.
+
+**야외 지상 촬영 샘플 O0 추가:** 도시 길거리 KITTI `drive_0005` 컬러 3장과 ETH3D `forest` 흑백 3장의 LiDAR 기반 GT·캘리브레이션을 확보하고 입력을 검증했다. 데이터 준비에 약 2.2 GiB를 추가했고 후속 실험은 아래 I26에 기록했다. [샘플 미리보기·GT 지원율·제한사항](docs/experiments/outdoor_lidar_samples/index.md).
+
+**I26 야외 전이 평가 완료:** raw 대비 FoV focal 오차는 KITTI 1.8617→3.5132%로 악화, forest 7.2131→4.4395%로 개선됐다. 고정 평면은 KITTI 전체 depth MAE를 1.094496→1.093736 m로 약 0.07% 줄였고, 숲은 허용 named anchor가 0개라 평면을 적용하지 않았다. 두 장면 모두 RGB 최적화 지지 부족으로 거리·법선 parameter 업데이트는 0개였다. [지표·오차 그림·원본 보존 검증](docs/experiments/global_planar_pointmap/I26/index.md).
+
 대학원 졸업논문을 위한 실험 저장소다. 여러 RGB 이미지로 추론한 프레임별 pointmap의 불일치와 벽의 층 분리를 진단하고, 점군 융합·RGB 기반 정점 이동·FoV 보정·점/선/깊이 제약을 비교했다.
 
 **C3a의 실제 FoV 제안 점군을 기준으로 H0~H6 실행을 완료했다.** 영상 분할·독립/공유 평면·hard/soft 깊이 보정을 비교했다. 기본 군은 공유 평면 지지가 부족했고, 중복 마스크 정리 보조 군은 앞의 두 카메라가 공유하는 벽 하나를 보정했다. 벽 두께와 층 간격 지표는 상충했으며 GT 정확도 개선은 미확인이다.

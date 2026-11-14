@@ -1,0 +1,19 @@
+{
+  "status": "superseded",
+  "run_id": "eth3d-forest-rig-I3-20261114-001",
+  "experiment_code": "I3",
+  "dataset": "eth3d-forest-rig",
+  "started_at": "2026-11-14T10:07:05.517987+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I2-20261114-001/stages/I2/manifest.json",
+      "bytes": 14490,
+      "sha256": "a42b9ca2902ffe7ec9c2c022028ceaf3fb5bd4127e22d6b7e0eb92f581fd49f6"
+    }
+  ],
+  "project_commit_at_start": "3bb851a9e5a52058eadcf8d14c90c6d8e790ed2c",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": false,
+  "ended_at": "2026-11-14T10:12:56.472791+09:00",
+  "reason": "No allowed grounded semantic anchor exists in any view; named-OR output is provably unchanged. Partial unrestricted geometry candidates preserved; replace with explicitly recorded no-support branch."
+}

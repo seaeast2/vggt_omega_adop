@@ -1,0 +1,342 @@
+{
+  "status": "completed",
+  "run_id": "kitti-city-0005-I1-20261114-001",
+  "experiment_code": "I1",
+  "dataset": "kitti-city-0005",
+  "started_at": "2026-11-14T09:58:49.625462+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I0-20261114-001/stages/I0/manifest.json",
+      "bytes": 16871,
+      "sha256": "cb97ad64754d352c0fe892c7cad9b6bd70c1f48ebcce96d5321c3e73e12125ea"
+    }
+  ],
+  "project_commit_at_start": "3bb851a9e5a52058eadcf8d14c90c6d8e790ed2c",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": true,
+  "execution_completed": true,
+  "decision": "FULL_IMAGE_CANDIDATES_TAGGED",
+  "ended_at": "2026-11-14T10:02:43.536726+09:00",
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/figures/frame_0_all_masks.png",
+      "bytes": 106110,
+      "sha256": "fd4eca5861119780011fbeb4dda7db77e1bc1b9e67a6d2ec9e1d6bb540320521"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/figures/frame_1_all_masks.png",
+      "bytes": 139636,
+      "sha256": "9fdbae48f9b4df9442d44c4dbde146b81d0a08fbe5d22deb603f8cdc6156b01b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/figures/frame_2_all_masks.png",
+      "bytes": 158073,
+      "sha256": "2c7603eca2f6c33edbf5d7b4776b2ec9e4b07862cd4d6d755c1ec2ba26b1b7e6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_alignment_diagnostic.py",
+      "bytes": 4093,
+      "sha256": "13c14ef1c6bdc2e995c9bb2c8f341e6c430458ac5917bff643163e6c47576e71"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_evaluate.py",
+      "bytes": 7994,
+      "sha256": "ee63d3e945fc22003ab7c168a2b2e9de6d374cc6a1f5ca1e771e47ea51cb6e68"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_inputs.py",
+      "bytes": 8530,
+      "sha256": "34802117f91542ffced40cdfecc3bea6bcb1986df74b310fe21301c7dfe262d4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_optimize.py",
+      "bytes": 11256,
+      "sha256": "a7ffad26602d99835dcbd2db620fe8cbb0f4b7a779dff1e5d54ba67a812d6ace"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_plot.py",
+      "bytes": 4186,
+      "sha256": "58ff01a0cb00c9e5d435d75a18057d64fbbd88b503ce6f1b4079e2accd7b2f55"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/blur_report.py",
+      "bytes": 19057,
+      "sha256": "e985734ca967848c49dc96936cae950abb355498b966264b14f1ed37bf0adc16"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/cancel_superseded.py",
+      "bytes": 2049,
+      "sha256": "f44af55d07839885500f4723f587a706a2815111e71ba0ffd3f2a2ba2d4f378b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/check_holdout.py",
+      "bytes": 1423,
+      "sha256": "bcd172d24128251d3def9a64a3376b5ea2d2138e23a3919754a6b3bc552fa6a8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/controls.py",
+      "bytes": 2601,
+      "sha256": "a24aca0fb2e79c044c2e5f821b085a753eaa36bdda80fbd73a5b55480cb22b4d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/core.py",
+      "bytes": 16003,
+      "sha256": "0dc73655b484e4e639f0ccb8045266ea0d76d95ad7d8f61d779a1e3577f59737"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/dataset_policy.json",
+      "bytes": 675,
+      "sha256": "55e6a34004f3db7380c69388149c110507dee5fdcdea145ceea72f28b504f424"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/eth3d_laser.py",
+      "bytes": 12604,
+      "sha256": "259c750eed2bbe0b931c96cfac9990b25a0495c103ab3d5fe581c61c1ebb4779"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/eth3d_laser_download.py",
+      "bytes": 1736,
+      "sha256": "8af2bbbfac374be99c64666e6f9a69e7207563e7f198cb4bcec84375b96e6954"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/eth3d_laser_evaluate.py",
+      "bytes": 15413,
+      "sha256": "b68712260c8e741e6ebd634e96a94cfc5bd9171204eab013df1098df5511ebaf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/eth3d_laser_report.py",
+      "bytes": 16636,
+      "sha256": "899d55fc49b5999f12e0b9898743457286fcf6a7cc96b068a5b973cec89ad096"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/evaluate_gt.py",
+      "bytes": 18286,
+      "sha256": "9de0bf4d2f061528488433f164d3b54eb7e18819a5af5b505931dbb0a4a3f9e9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/evaluate_photometric_planes.py",
+      "bytes": 10273,
+      "sha256": "5d56caad34bf600f3ead40cf57d61bcb5ae6f573c95224b8df6254b1b5ffb0a4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/export.py",
+      "bytes": 33990,
+      "sha256": "ae20d752cf06164d3fea32449d18444655f4259bb881f8a0c68f9472264faa2f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/joint.py",
+      "bytes": 18802,
+      "sha256": "3313a852e61e701f7d543d743ceb1f0f9b25480273b85eb0b7141ccc19f1b994"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/matching.py",
+      "bytes": 7368,
+      "sha256": "6c43c247cadbe99fdbcb7239d018e400c2d4dfd2e7eb07a5272c726f1c49281e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/named_or.py",
+      "bytes": 14109,
+      "sha256": "1a4ed1b129626977d8cbc72c081aeb1cffbcfdcac8416e0f2aaae0944b218afa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/outdoor.py",
+      "bytes": 16708,
+      "sha256": "b827c6139b892c980d411b8ee033694d11eee581e4ab7eacb0d7e591cb266324"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/outdoor_plan.md",
+      "bytes": 3581,
+      "sha256": "b9be04981f89aca473a5f81964a13180ab6ad8dad93e27f83569dfb45745a5f9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/photometric_planes.py",
+      "bytes": 20733,
+      "sha256": "f478997b457d63c8864048c62e3b0697e82a8009b90895d6278bf3fe9ee6dd8e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/plan.md",
+      "bytes": 34837,
+      "sha256": "e28088bc7a3bc81aea7936deb15a02969aa8703891573e777e454dff7964bf06"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/prepare.py",
+      "bytes": 10573,
+      "sha256": "f5b1b416aedb1bd9ca601945603568ffdf005ede357d6366edb6076b6827c258"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/publish.py",
+      "bytes": 2882,
+      "sha256": "4f0b4de16b8c3a0d696bb794123c94232f31ace3b6d87f4cb522a395365a8599"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/raw_baseline.py",
+      "bytes": 21352,
+      "sha256": "450ca0c699e34710ed5d0746b6ede6181ce3a72e5f1a9ac7a03ec1113a9c747c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/remaining.py",
+      "bytes": 1861,
+      "sha256": "f6f1d38c0f352f9072a1f8f9c6e9a59caeaef0f849b9f671c8b4a3b88e72d95e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/segment.py",
+      "bytes": 10648,
+      "sha256": "8c80de1bdf7a58f3cd8624d41a752ac14d76316ffa84dc7fdfba2877e992a337"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/solve.py",
+      "bytes": 35292,
+      "sha256": "bbd47829faf61373192c12093810c0c10deefb97cbd25ee918d69cd253b41808"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/summarize.py",
+      "bytes": 8207,
+      "sha256": "3f6ab1ecb125517e673928b2c79b688efd14f887f0af9b8c6ed7687ca8f44973"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/summarize_photometric.py",
+      "bytes": 11509,
+      "sha256": "03bb0f5b98fcb63368ff0b74afcc334aabdf2dfe839b7a6f89a8839b27e4a8c6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/source/visualize_unknown.py",
+      "bytes": 8360,
+      "sha256": "e5fa6a8e9711b9a75b070c2bdce1d7092cc68232fa985ef317c9631a572009c7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/detections.json",
+      "bytes": 4171,
+      "sha256": "835ec6613f232a5291fc116875aca79d222a6baf0d4ccac3d4be486f64892c75"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_automatic_post_nms.npz",
+      "bytes": 30974,
+      "sha256": "2ba3711379ffac4f69a1bac1cef3e0fd43027bac02df1cf7f02e8533e6a10289"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_automatic_pre_nms_rle.json",
+      "bytes": 2858886,
+      "sha256": "907e569c838301567fbf40e410cf08f8211ddfc9fbf6946c2b107533e7f22283"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_detector_queries.npz",
+      "bytes": 97994,
+      "sha256": "e9915cd79805c0fea337edda1b58668abb586234e6e2e181e548f9cf0075b332"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_hierarchy.json",
+      "bytes": 4278786,
+      "sha256": "a2132b1a3ddfe2a1a48591e99321f901914c5bbca3f1ae787c271f7192f6f388"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_masks.npz",
+      "bytes": 757835,
+      "sha256": "97764a4fad4a1f1b3029e076fcb4eb2ed4a63b360bd852d7246e39d1441b0ba0"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_0_uncovered.png",
+      "bytes": 7201,
+      "sha256": "9b5f08c493d550c356f9cf9613928b97dba75b413a115bdab22481b97aed3464"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_automatic_post_nms.npz",
+      "bytes": 29963,
+      "sha256": "5878eabae1d901b1ba3ad50bdbbd7b6659bc8f84a031bfb4be50cc6ee07bfaaa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_automatic_pre_nms_rle.json",
+      "bytes": 7195611,
+      "sha256": "26242ee7207ce5361079a1a40dbcd2ced55ac5c67df8dcf168d6a53bdd1a5229"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_detector_queries.npz",
+      "bytes": 97862,
+      "sha256": "3c29a8af2361fc1a847252992bc3c4fdf3e45c44da4b2a7b79a575fc8541962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_hierarchy.json",
+      "bytes": 26493048,
+      "sha256": "3800d2d66029ba9d9904cb544db0c0765b3f9e692d2553a544aa84df678c99f1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_masks.npz",
+      "bytes": 1572512,
+      "sha256": "68b5cbeff6d295f418616e78cd9bc9a364131980c248932387094b623efb5c3d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_1_uncovered.png",
+      "bytes": 9472,
+      "sha256": "9e9e29a17b78b26a3e619c90899056b680b04982e35b04167328f16272a84f32"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_automatic_post_nms.npz",
+      "bytes": 31795,
+      "sha256": "9ca17da3380ee731648b99ba47f59cd233d3588579b36cd08f6e01fe4084fa4b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_automatic_pre_nms_rle.json",
+      "bytes": 2629719,
+      "sha256": "56dc53fcf70c43a29919a0f649e5a1cd2db0d8616dcbe2d236ac63a5329ac1ff"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_detector_queries.npz",
+      "bytes": 97990,
+      "sha256": "69e48d7e527c793ca1a42a969c8f4dabf38697440bf91c2b33637f1a4ab669b6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_hierarchy.json",
+      "bytes": 5212847,
+      "sha256": "2527afaa9bb7f47fd0ab5855d1737830dc36f9324a7a0d33b462c90709d558fb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_masks.npz",
+      "bytes": 826462,
+      "sha256": "eb1b6206c5da6c6c4d81779c302da889f86a778dc3e3b0cfe642d5fac008696e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/frame_2_uncovered.png",
+      "bytes": 11613,
+      "sha256": "ee622dc58591b9b3172f68ba8aa0074b5f24d3ada67a8888d4b34e9e1e3ef0ea"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/mask_registry.json",
+      "bytes": 1889701,
+      "sha256": "5c9c19c73a0c3cb0324c8563b942fc579cc4643886edc5ca54b7eea8002c7091"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/artifacts/tags/observation_mask_links.npz",
+      "bytes": 2420842,
+      "sha256": "08a68e4db418b3607cca108679e8b582c74e89f3f65967b1ed89d2c328f6f1aa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/config_resolved.json",
+      "bytes": 2176,
+      "sha256": "e1de1dbb78925d760768aed9f3714604ccbad04a9e155b51cf35e74f7d6bfc62"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/environment.json",
+      "bytes": 358,
+      "sha256": "51129f9355b47aa7fd88311a5057be5ba1cddbb2e9f5012bfa0e63d9e0dca11e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/evaluation/metrics.json",
+      "bytes": 4500,
+      "sha256": "8a229e2f4168215f8802052e6edcc14c2ea031e7b2a228e09f96f24d1d62918a"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/evaluation/model_provenance.json",
+      "bytes": 3239,
+      "sha256": "f3284ad662dbaea1d5b0dae0f84d899394bbe57f271f6edf885ccbc48b0b55de"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I1-20261114-001/stages/I1/logs/run.log",
+      "bytes": 1379,
+      "sha256": "0d36c6e1897ad5b63933be4c59444825d9c7c052d864b0083f6c0bc098cda132"
+    }
+  ]
+}

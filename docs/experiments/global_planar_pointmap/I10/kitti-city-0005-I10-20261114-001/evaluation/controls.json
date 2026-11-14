@@ -1,0 +1,8 @@
+{
+  "named_unknown_OR": true,
+  "all_unknown_stays_unknown": true,
+  "no_transitive_bridge": true,
+  "no_class_conflict_merge": true,
+  "no_RGB_support_no_cross_view_transfer": true,
+  "order_invariant": true
+}

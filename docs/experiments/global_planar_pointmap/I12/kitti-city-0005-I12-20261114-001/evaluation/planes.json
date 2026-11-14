@@ -1,0 +1,169 @@
+[
+  {
+    "plane_id": 0,
+    "tag": "screen",
+    "fit_photo": 164,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 1,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 2,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 3,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 4,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 5,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 6,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 7,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 8,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 9,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 10,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 11,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 12,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 13,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 14,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 15,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 16,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 17,
+    "tag": "screen",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 18,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 19,
+    "status": "NO_FIT_GEOMETRY"
+  },
+  {
+    "plane_id": 20,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 21,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 22,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 23,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 24,
+    "tag": "screen",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  },
+  {
+    "plane_id": 25,
+    "tag": "wall",
+    "fit_photo": 0,
+    "validation_photo": 0,
+    "status": "INSUFFICIENT_RGB_SUPPORT"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "updated": "2026-11-14",
+  "stage": "O0-20261114-002",
+  "status": "ACQUIRED_AND_INPUT_VALIDATED",
+  "samples": [
+    {
+      "id": "kitti-city-0005",
+      "category": "urban_street",
+      "platform": "ground_vehicle",
+      "sequence": "2011_09_26_drive_0005_sync",
+      "frames": [30, 40, 50],
+      "imagery": "color",
+      "GT": "official KITTI annotated accumulated and filtered LiDAR depth",
+      "sensor": "Velodyne HDL-64E",
+      "source": "https://www.cvlibs.net/datasets/kitti/eval_depth_all.php"
+    },
+    {
+      "id": "eth3d-forest-rig",
+      "category": "forest_vegetation",
+      "platform": "ground_camera_rig",
+      "camera": "images_rig_cam4",
+      "frames": ["1474982939982507972", "1474982940351147972", "1474982940719787972"],
+      "imagery": "grayscale stored as three identical RGB channels",
+      "GT": "laser-rendered camera-Z depth mapped to undistorted images",
+      "sensor": "FARO Focus X330",
+      "source": "https://eth3d.ethz.ch/datasets"
+    }
+  ],
+  "pipeline_integration": "Explicit outdoor.py adapter: I14/I15/I0/I1/I2/I10/I12/I26 completed. Urban I3/I4 completed; forest unrestricted I3 superseded and I4 skipped under documented A1 no-named-anchor proof. No supported RGB plane updates in either sample. Not added to legacy DSLR/blur defaults.",
+  "test_results": "docs/experiments/global_planar_pointmap/I26/index.md",
+  "manifest": "results/outdoor_lidar_samples/O0-20261114-002/manifest.json"
+}

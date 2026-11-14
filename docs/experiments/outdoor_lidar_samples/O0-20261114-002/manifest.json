@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "run_id": "O0-20261114-002",
+  "stage": "O0 acquisition and validation only",
+  "datasets": [
+    "kitti-city-0005",
+    "eth3d-forest-rig"
+  ],
+  "model_inference": false,
+  "GT_accuracy_evaluated": false,
+  "samples": {
+    "path": "results/outdoor_lidar_samples/O0-20261114-002/samples.json",
+    "bytes": 12558,
+    "sha256": "0cb954eb17934db821e10900c544ba2d2a955fe384b5937715d02c7d88b77051"
+  },
+  "preview": {
+    "path": "results/outdoor_lidar_samples/O0-20261114-002/selected_samples.png",
+    "bytes": 558051,
+    "sha256": "9c61f5b3ae97ccda10e280ca09d7814ca1c68e66eeb0581de73be310dde06fbd"
+  }
+}

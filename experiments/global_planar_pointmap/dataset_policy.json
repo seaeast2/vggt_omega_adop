@@ -1,0 +1,9 @@
+{
+  "effective_date": "2026-11-14",
+  "authority": "User instruction: do not use TUM samples in future experiments",
+  "active_datasets": ["eth3d-office", "eth3d-pipes"],
+  "retired_prefixes": ["tum-", "tum_"],
+  "historical_reporting_allowed": true,
+  "additional_sample_catalog": "experiments/outdoor_lidar_samples/catalog.json",
+  "policy": "Exclude TUM from new inference, optimization, evaluation and automatic sample/reference loading. Preserve existing data, results, reports and source snapshots for historical inspection. Use laser-GT samples for future experiments. Additional outdoor acquisitions are tracked separately until pipeline integration is validated."
+}

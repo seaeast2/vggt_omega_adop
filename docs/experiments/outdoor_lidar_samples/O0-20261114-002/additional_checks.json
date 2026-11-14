@@ -1,0 +1,23 @@
+{
+  "forest": [
+    {
+      "frame": "images_rig_cam4/1474982939982507972.png",
+      "grayscale_channels_identical": true,
+      "official_cpp_max_pixel_error": 6.318384089354367e-05
+    },
+    {
+      "frame": "images_rig_cam4/1474982940351147972.png",
+      "grayscale_channels_identical": true,
+      "official_cpp_max_pixel_error": 6.318384089354367e-05
+    },
+    {
+      "frame": "images_rig_cam4/1474982940719787972.png",
+      "grayscale_channels_identical": true,
+      "official_cpp_max_pixel_error": 6.318384089354367e-05
+    }
+  ],
+  "input_records_verified": 24,
+  "model_inference": false,
+  "GT_accuracy_evaluated": false,
+  "official_camera_commit": "d1bb0163229925f44ce9b52b384ab458f42712ba"
+}

@@ -1,0 +1,382 @@
+{
+  "status": "completed",
+  "run_id": "eth3d-forest-rig-I10-20261114-001",
+  "experiment_code": "I10",
+  "dataset": "eth3d-forest-rig",
+  "started_at": "2026-11-14T10:13:44.890730+09:00",
+  "parents": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I1-20261114-001/stages/I1/manifest.json",
+      "bytes": 19987,
+      "sha256": "ab743f04a5d5f675237b702fc4458e034d35b9a245b44ebb54e5f918e8ab0c7e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I2-20261114-001/stages/I2/manifest.json",
+      "bytes": 14490,
+      "sha256": "a42b9ca2902ffe7ec9c2c022028ceaf3fb5bd4127e22d6b7e0eb92f581fd49f6"
+    }
+  ],
+  "project_commit_at_start": "3bb851a9e5a52058eadcf8d14c90c6d8e790ed2c",
+  "gt_accuracy_evaluated": false,
+  "completion_criteria_met": true,
+  "execution_completed": true,
+  "decision": "NO_NAMED_SUPPORT",
+  "ended_at": "2026-11-14T10:13:49.384748+09:00",
+  "artifacts": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/figures/named_OR_mask.png",
+      "bytes": 1362585,
+      "sha256": "b3760b402ac7a88003e5845ceaeb3fe48c8972d1caf102ea636ab8a9a529e874"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/association.json",
+      "bytes": 904,
+      "sha256": "07499ed0de3343b961c05b4582f4c6135cdde2febaf412c3f68831767ebae490"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/fit_support.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/frame_colors.ply",
+      "bytes": 21676403,
+      "sha256": "5d5197ea4b92d2814763b0a6eb2687a7d28c680fb057a80f922afc0fec41e2b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/pixel_rgb.ply",
+      "bytes": 21676403,
+      "sha256": "7b614fb8d57c164bae84a0f04b4a1ec980cef95252d6fbb0311c6ff9b37e8c70"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/plane_boundaries.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/planes.json",
+      "bytes": 219,
+      "sha256": "f831cee11602851c7a37ed8db8af6a6cc1aa02e276d0bcf4266ef0e9d7792cdd"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/initial/pointmap.npz",
+      "bytes": 21995762,
+      "sha256": "38a0513f57e046983ab6f9a3300b74b8527f4fb288d2d023a99af3c2b1fa9d5e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/fit_support.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/frame_colors.ply",
+      "bytes": 21676403,
+      "sha256": "5d5197ea4b92d2814763b0a6eb2687a7d28c680fb057a80f922afc0fec41e2b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/pixel_rgb.ply",
+      "bytes": 21676403,
+      "sha256": "7b614fb8d57c164bae84a0f04b4a1ec980cef95252d6fbb0311c6ff9b37e8c70"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/plane_boundaries.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/planes.json",
+      "bytes": 220,
+      "sha256": "b6acd00b302b8cac996d65bd08bfee2276b8e892da542eeed6f10072fef5e13d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/pointmap.npz",
+      "bytes": 21995768,
+      "sha256": "373a597c8503fcbcc3fd6fc54302c9a2711544485cf7eaf14ffd1a3f53778aa1"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/fit_support.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/frame_colors.ply",
+      "bytes": 21676403,
+      "sha256": "5d5197ea4b92d2814763b0a6eb2687a7d28c680fb057a80f922afc0fec41e2b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/pixel_rgb.ply",
+      "bytes": 21676403,
+      "sha256": "7b614fb8d57c164bae84a0f04b4a1ec980cef95252d6fbb0311c6ff9b37e8c70"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/plane_boundaries.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/planes.json",
+      "bytes": 223,
+      "sha256": "ed38719a001f23dd4626b00dc5d0dddd44f16961896684b5ef23c9f43fb61205"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/named_local/pointmap.npz",
+      "bytes": 21995773,
+      "sha256": "01dd0e5bc105c421c03a89f7e5ce63e8f5c20204ed792b370596f6ea3aa1a384"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/no_named_proof.json",
+      "bytes": 817,
+      "sha256": "96ed7cbc8c36b9cf1c9366dadb908d7d868f5f5547c327faa1ec1262dda69aeb"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/fit_support.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/frame_colors.ply",
+      "bytes": 21676403,
+      "sha256": "5d5197ea4b92d2814763b0a6eb2687a7d28c680fb057a80f922afc0fec41e2b8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/pixel_rgb.ply",
+      "bytes": 21676403,
+      "sha256": "7b614fb8d57c164bae84a0f04b4a1ec980cef95252d6fbb0311c6ff9b37e8c70"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/plane_boundaries.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/planes.json",
+      "bytes": 220,
+      "sha256": "a1791c0e57673b66408eeeed0e54582ffa0c46e13d237e9d7bee6db7e677c77c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/retained/pointmap.npz",
+      "bytes": 21995766,
+      "sha256": "e0a1b5a949c43e83371cfe33b49df7b8f2b6f482fb9f32491e3f1ee19c33cfe6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/named_or/semantic_OR.npz",
+      "bytes": 672530,
+      "sha256": "0c9a906a3cc84941d6c144202d563050e58efc030dd3e7e8f45eeb80cd83d90c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/amendment_A1.md",
+      "bytes": 1355,
+      "sha256": "04dc5cdb0bba17bdd793f067578a3761c7254ac88481c8d7132382f653575a89"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_alignment_diagnostic.py",
+      "bytes": 4093,
+      "sha256": "13c14ef1c6bdc2e995c9bb2c8f341e6c430458ac5917bff643163e6c47576e71"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_evaluate.py",
+      "bytes": 7994,
+      "sha256": "ee63d3e945fc22003ab7c168a2b2e9de6d374cc6a1f5ca1e771e47ea51cb6e68"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_inputs.py",
+      "bytes": 8530,
+      "sha256": "34802117f91542ffced40cdfecc3bea6bcb1986df74b310fe21301c7dfe262d4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_optimize.py",
+      "bytes": 11256,
+      "sha256": "a7ffad26602d99835dcbd2db620fe8cbb0f4b7a779dff1e5d54ba67a812d6ace"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_plot.py",
+      "bytes": 4186,
+      "sha256": "58ff01a0cb00c9e5d435d75a18057d64fbbd88b503ce6f1b4079e2accd7b2f55"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/blur_report.py",
+      "bytes": 19057,
+      "sha256": "e985734ca967848c49dc96936cae950abb355498b966264b14f1ed37bf0adc16"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/cancel_superseded.py",
+      "bytes": 3927,
+      "sha256": "c712a7d49c2e8671fb523483e5e0f77af9fadf1d6e64527f34cfd7c37c65ddc7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/check_holdout.py",
+      "bytes": 1423,
+      "sha256": "bcd172d24128251d3def9a64a3376b5ea2d2138e23a3919754a6b3bc552fa6a8"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/common.py",
+      "bytes": 17943,
+      "sha256": "c07733975cb5e01aae5e893ece6746882920d2a16b4df5bd3106d4551a34962b"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/controls.py",
+      "bytes": 2601,
+      "sha256": "a24aca0fb2e79c044c2e5f821b085a753eaa36bdda80fbd73a5b55480cb22b4d"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/core.py",
+      "bytes": 16003,
+      "sha256": "0dc73655b484e4e639f0ccb8045266ea0d76d95ad7d8f61d779a1e3577f59737"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/dataset_policy.json",
+      "bytes": 675,
+      "sha256": "55e6a34004f3db7380c69388149c110507dee5fdcdea145ceea72f28b504f424"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/eth3d_laser.py",
+      "bytes": 12604,
+      "sha256": "259c750eed2bbe0b931c96cfac9990b25a0495c103ab3d5fe581c61c1ebb4779"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/eth3d_laser_download.py",
+      "bytes": 1736,
+      "sha256": "8af2bbbfac374be99c64666e6f9a69e7207563e7f198cb4bcec84375b96e6954"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/eth3d_laser_evaluate.py",
+      "bytes": 15413,
+      "sha256": "b68712260c8e741e6ebd634e96a94cfc5bd9171204eab013df1098df5511ebaf"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/eth3d_laser_report.py",
+      "bytes": 16636,
+      "sha256": "899d55fc49b5999f12e0b9898743457286fcf6a7cc96b068a5b973cec89ad096"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/eth3d_plan.md",
+      "bytes": 5380,
+      "sha256": "6a2c1bf5ea63127dc209001af097c051abe31c84d66dbee220fe4327d357a9d0"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/evaluate_gt.py",
+      "bytes": 18286,
+      "sha256": "9de0bf4d2f061528488433f164d3b54eb7e18819a5af5b505931dbb0a4a3f9e9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/evaluate_photometric_planes.py",
+      "bytes": 10273,
+      "sha256": "5d56caad34bf600f3ead40cf57d61bcb5ae6f573c95224b8df6254b1b5ffb0a4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/export.py",
+      "bytes": 33990,
+      "sha256": "ae20d752cf06164d3fea32449d18444655f4259bb881f8a0c68f9472264faa2f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/joint.py",
+      "bytes": 18802,
+      "sha256": "3313a852e61e701f7d543d743ceb1f0f9b25480273b85eb0b7141ccc19f1b994"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/matching.py",
+      "bytes": 7368,
+      "sha256": "6c43c247cadbe99fdbcb7239d018e400c2d4dfd2e7eb07a5272c726f1c49281e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/named_or.py",
+      "bytes": 14109,
+      "sha256": "1a4ed1b129626977d8cbc72c081aeb1cffbcfdcac8416e0f2aaae0944b218afa"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/outdoor.py",
+      "bytes": 20286,
+      "sha256": "1916a8084ff20cba3399a75c236530311171b621a81e52048532a0ed08e78ce7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/outdoor_plan.md",
+      "bytes": 3581,
+      "sha256": "b9be04981f89aca473a5f81964a13180ab6ad8dad93e27f83569dfb45745a5f9"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/outdoor_plot.py",
+      "bytes": 2213,
+      "sha256": "4cbb67218ee6e567a1f0fbd640c52447c2af37ef6cd18a74d641da4935cbe89f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/outdoor_report.py",
+      "bytes": 9132,
+      "sha256": "8dcdb4cf4dfdfd8f4656e99b1d20985412129cc835986d2c6db6cd4a10a0e20f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/photometric_planes.py",
+      "bytes": 20733,
+      "sha256": "f478997b457d63c8864048c62e3b0697e82a8009b90895d6278bf3fe9ee6dd8e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/plan.md",
+      "bytes": 34837,
+      "sha256": "e28088bc7a3bc81aea7936deb15a02969aa8703891573e777e454dff7964bf06"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/prepare.py",
+      "bytes": 10573,
+      "sha256": "f5b1b416aedb1bd9ca601945603568ffdf005ede357d6366edb6076b6827c258"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/publish.py",
+      "bytes": 2882,
+      "sha256": "4f0b4de16b8c3a0d696bb794123c94232f31ace3b6d87f4cb522a395365a8599"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/raw_baseline.py",
+      "bytes": 21352,
+      "sha256": "450ca0c699e34710ed5d0746b6ede6181ce3a72e5f1a9ac7a03ec1113a9c747c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/remaining.py",
+      "bytes": 1861,
+      "sha256": "f6f1d38c0f352f9072a1f8f9c6e9a59caeaef0f849b9f671c8b4a3b88e72d95e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/segment.py",
+      "bytes": 10648,
+      "sha256": "8c80de1bdf7a58f3cd8624d41a752ac14d76316ffa84dc7fdfba2877e992a337"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/solve.py",
+      "bytes": 35292,
+      "sha256": "bbd47829faf61373192c12093810c0c10deefb97cbd25ee918d69cd253b41808"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/summarize.py",
+      "bytes": 8207,
+      "sha256": "3f6ab1ecb125517e673928b2c79b688efd14f887f0af9b8c6ed7687ca8f44973"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/summarize_photometric.py",
+      "bytes": 11509,
+      "sha256": "03bb0f5b98fcb63368ff0b74afcc334aabdf2dfe839b7a6f89a8839b27e4a8c6"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/artifacts/source/visualize_unknown.py",
+      "bytes": 8360,
+      "sha256": "e5fa6a8e9711b9a75b070c2bdce1d7092cc68232fa985ef317c9631a572009c7"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/config_resolved.json",
+      "bytes": 2217,
+      "sha256": "6992f04c06ca58e4585c12847f1ad697570b791886f8dd51aacbd355d823d5a4"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/environment.json",
+      "bytes": 358,
+      "sha256": "51129f9355b47aa7fd88311a5057be5ba1cddbb2e9f5012bfa0e63d9e0dca11e"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/evaluation/metrics.json",
+      "bytes": 6651,
+      "sha256": "ce37f283fe02f504a0a55efbe288c777f3805789d8fc52b8e05916e1d349c975"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/eth3d-forest-rig-I10-20261114-001/stages/I10/logs/run.log",
+      "bytes": 232,
+      "sha256": "0be4b7b2ccf79324017b41a1b2dab6865c534a0e83c0b0fe744b6147c2eb1f83"
+    }
+  ]
+}

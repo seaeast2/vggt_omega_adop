@@ -89,10 +89,6 @@ def run(dataset):
             st.log('condition_evaluated',case=case,depth_MAE_cm=100*raw_metrics['depth']['mae_m'],raw_focal_error_pct=ctx['raw_intrinsics']['mean_abs_relative_percent'],
                 native_focal_error_pct=arms['native']['focal']['mean_abs_relative_percent'],scale_ratio=ctx['pose_to_depth_scale_ratio'])
         reference={}
-        for ds in ['tum-freiburg1_desk','tum-freiburg1_desk-extra']:
-            old=json.loads((latest('I21',ds)/'evaluation/metrics.json').read_text());a=old['alignments'];reference[ds]=dict(depth_scale=a['raw_anchor']['depth_scale'],
-                camera_scale=a['camera_pose_anchor']['sim3_scale'],ratio=a['camera_pose_anchor']['sim3_scale']/a['raw_anchor']['depth_scale'],
-                pose_center_errors=a['camera_pose_anchor']['camera_center_errors_m'],pose_angle_errors=a['camera_pose_anchor']['camera_orientation_errors_degree'])
         c.json_write(st.path/'evaluation/conditions.json',rows);c.json_write(st.path/'evaluation/TUM_scale_reference.json',reference)
         inputs=[c.record(p/'manifest.json') for p in [parent,latest('I22',dataset),latest('I23',dataset),gtstage]]+[c.record(gtfile),c.record(PLAN)]
         st.finish(dict(decision='BLUR_CAUSAL_DIAGNOSTICS_EVALUATED',conditions=rows,TUM_reference=reference,inputs=inputs,

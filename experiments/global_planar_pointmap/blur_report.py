@@ -153,4 +153,11 @@ clean geometry/K/pose·고정 plane 소속·기존 I12 active plane과 photo sup
         (DOC/code/'index.md').write_text(f'# {code} — {label}\n\n[종합 GT 진단](../I25/index.md)\n\n'+ '\n'.join(f"- [{ds}]({latest(code,ds).parents[1].name}/report.md)" for ds in DATASETS)+'\n')
     print(json.dumps(dict(unique_hashes_verified=len(verified),causal_data='I25/summary.json',checks=audit)))
 
-if __name__=='__main__':run()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description='Historical I22–I25 report, including archived TUM diagnostics. Not a new experiment entry point.')
+    parser.add_argument('--historical',action='store_true',help='Explicitly regenerate the archived report with its original TUM references')
+    args=parser.parse_args()
+    if not args.historical:
+        parser.error('This historical report includes retired TUM references. Use --historical only to inspect archived results; use ETH3D for new experiments.')
+    run()

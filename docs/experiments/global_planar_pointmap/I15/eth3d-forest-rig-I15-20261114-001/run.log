@@ -1,0 +1,2 @@
+{"time": "2026-11-14T09:33:10.769122+09:00", "event": "registered", "run_id": "eth3d-forest-rig-I15-20261114-001"}
+{"time": "2026-11-14T09:33:12.572962+09:00", "event": "completed", "decision": "NEW_SCENE_OMEGA_INFERRED", "criteria": true}

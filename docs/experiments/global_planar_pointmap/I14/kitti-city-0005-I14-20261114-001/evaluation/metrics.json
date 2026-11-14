@@ -1,0 +1,207 @@
+{
+  "decision": "OUTDOOR_RGB_CAMERA_INPUTS_FROZEN",
+  "frames": [
+    {
+      "index": 30,
+      "name": "0000000030",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000030.png",
+      "sha256": "98e02d6516291247fb493b504df2cbb2151844fad95993372b275fa20ac957fc",
+      "original_wh": [
+        1242,
+        375
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 1242,
+        "height": 375,
+        "params": [
+          721.5377,
+          721.5377,
+          610.0593,
+          173.354
+        ]
+      },
+      "original_camera": null,
+      "dataset_extrinsics": [
+        [
+          -0.7536491359405237,
+          -0.6567175253842309,
+          -0.027110436827585953,
+          -0.25422760500525077
+        ],
+        [
+          0.01797265151133556,
+          0.020640855180221823,
+          -0.9996254268157124,
+          0.7190941084821952
+        ],
+        [
+          0.6570311128469755,
+          -0.7538540787802561,
+          -0.003753007512508639,
+          -1.0863370561924168
+        ]
+      ],
+      "crop_box": [
+        246,
+        0,
+        996,
+        375
+      ],
+      "sample_index": 0,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    },
+    {
+      "index": 40,
+      "name": "0000000040",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000040.png",
+      "sha256": "5a1a4a9c790d57046f314ff8612c930245b439b269bae41c9b2e5f6718a711cb",
+      "original_wh": [
+        1242,
+        375
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 1242,
+        "height": 375,
+        "params": [
+          721.5377,
+          721.5377,
+          610.0593,
+          173.354
+        ]
+      },
+      "original_camera": null,
+      "dataset_extrinsics": [
+        [
+          -0.654995946590056,
+          -0.7552059563067923,
+          -0.02538065296655645,
+          -0.6321784630552161
+        ],
+        [
+          0.015384664575360446,
+          0.02025348534480141,
+          -0.9996765294177441,
+          0.6957657381253713
+        ],
+        [
+          0.7554757088273956,
+          -0.6551745416168575,
+          -0.001647360567178605,
+          -4.795839781570592
+        ]
+      ],
+      "crop_box": [
+        246,
+        0,
+        996,
+        375
+      ],
+      "sample_index": 1,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    },
+    {
+      "index": 50,
+      "name": "0000000050",
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/image_02/data/0000000050.png",
+      "sha256": "4ccca5f0306a49484f75f40ca42395f66154fdb759467744909ccb7af4ae7e8b",
+      "original_wh": [
+        1242,
+        375
+      ],
+      "camera": {
+        "model": "PINHOLE",
+        "width": 1242,
+        "height": 375,
+        "params": [
+          721.5377,
+          721.5377,
+          610.0593,
+          173.354
+        ]
+      },
+      "original_camera": null,
+      "dataset_extrinsics": [
+        [
+          -0.5026193047763464,
+          -0.864212519826527,
+          -0.02259334142831269,
+          -1.7147812381816494
+        ],
+        [
+          0.013383235983978392,
+          0.018352942569205357,
+          -0.999742023491592,
+          0.45705886236484006
+        ],
+        [
+          0.864404219373772,
+          -0.5027920083935672,
+          0.0023414167369228724,
+          -8.981042901346106
+        ]
+      ],
+      "crop_box": [
+        246,
+        0,
+        996,
+        375
+      ],
+      "sample_index": 2,
+      "preprocessing": "official Omega central aspect crop then bicubic max_size 512, patch multiple"
+    }
+  ],
+  "calibration": [
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/calib_cam_to_cam.txt",
+      "bytes": 3001,
+      "sha256": "edc1eae281cb95e41798a98dcc545521449527145477ff852dbf3a4ec48c643c"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/calib_velo_to_cam.txt",
+      "bytes": 271,
+      "sha256": "9dc0c3e92dfceceb9500caa2c9488261a52640e43c3f7c3045ca1ed7927e7266"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/calib_imu_to_velo.txt",
+      "bytes": 200,
+      "sha256": "07ca9ed33a2d968fc6358617d2c70e048b6f8e0f6ee5b73ae963afc1b19456ce"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/oxts/data/0000000030.txt",
+      "bytes": 419,
+      "sha256": "2d429f6afbd3fb89a9b8982760342bed43f3394dd26bd2a2141d7436a8f69852"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/oxts/data/0000000040.txt",
+      "bytes": 419,
+      "sha256": "76e6a24e7c7ec61fae6f62e780fd038a9f0bb4e2d231dfbf930679564a74ee3f"
+    },
+    {
+      "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/data/outdoor_lidar_samples/kitti_city/2011_09_26/2011_09_26_drive_0005_sync/oxts/data/0000000050.txt",
+      "bytes": 421,
+      "sha256": "b9f87a3a91c655ceaa5ec01affee1a4657304a8dbf36bc3673370a9dd679368d"
+    }
+  ],
+  "pose_baselines_m": [
+    3.7636199354389928,
+    8.118204173223152,
+    4.398722867022155
+  ],
+  "GT_arrays_read": false,
+  "selection": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/outdoor_lidar_samples/O0-20261114-002/samples.json",
+    "bytes": 12558,
+    "sha256": "0cb954eb17934db821e10900c544ba2d2a955fe384b5937715d02c7d88b77051"
+  },
+  "plan": {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/docs/vggt_omega_outdoor_lidar_experiment_plan.md",
+    "bytes": 3581,
+    "sha256": "b9be04981f89aca473a5f81964a13180ab6ad8dad93e27f83569dfb45745a5f9"
+  },
+  "elapsed_seconds": 0.06944995699450374,
+  "process_peak_rss_mib": 100.44921875,
+  "gt_status": "GT_NOT_EVALUATED",
+  "completion_criteria_met": true
+}

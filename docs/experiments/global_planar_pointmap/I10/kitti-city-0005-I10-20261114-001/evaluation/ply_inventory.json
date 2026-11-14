@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/initial/frame_colors.ply",
+    "bytes": 19267955,
+    "sha256": "f7165d529924eb480ae43f69337d6997865c9ace4860da4ce87d0efd097cb618"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/initial/pixel_rgb.ply",
+    "bytes": 19267955,
+    "sha256": "b300e4c57b91ec2485d7516bcb6a6efa49b090f24de72904eeb4b25e3fa80d66"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/frame_colors.ply",
+    "bytes": 19267955,
+    "sha256": "64c3a944a0101b7805543b2614684d2a4fcbcbb014a413995db76ee6ac5bd27c"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/named_OR/pixel_rgb.ply",
+    "bytes": 19267955,
+    "sha256": "a5514cb59f8da9fe7d80c03c18c0e541cab0807475e73b6af0ec3d8ac5664461"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/named_local/frame_colors.ply",
+    "bytes": 19267955,
+    "sha256": "aa20d6eada917980ac1b40d3adf3c441979b54904930591a9a105dec5054b188"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/named_local/pixel_rgb.ply",
+    "bytes": 19267955,
+    "sha256": "839716c10239408cd1a960a2e2b082d913bf0c4ad30362fe42036fbef7ac53dc"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/retained/frame_colors.ply",
+    "bytes": 19267955,
+    "sha256": "64c3a944a0101b7805543b2614684d2a4fcbcbb014a413995db76ee6ac5bd27c"
+  },
+  {
+    "path": "/home/hlee221212/works/gradresearch/vggt_omega_adop/results/global_planar_pointmap/kitti-city-0005-I10-20261114-001/stages/I10/artifacts/named_or/retained/pixel_rgb.ply",
+    "bytes": 19267955,
+    "sha256": "a5514cb59f8da9fe7d80c03c18c0e541cab0807475e73b6af0ec3d8ac5664461"
+  }
+]

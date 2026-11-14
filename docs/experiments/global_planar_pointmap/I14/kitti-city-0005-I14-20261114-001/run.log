@@ -1,0 +1,2 @@
+{"time": "2026-11-14T09:27:23.659554+09:00", "event": "registered", "run_id": "kitti-city-0005-I14-20261114-001"}
+{"time": "2026-11-14T09:27:23.721774+09:00", "event": "completed", "decision": "OUTDOOR_RGB_CAMERA_INPUTS_FROZEN", "criteria": true}
